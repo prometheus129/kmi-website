@@ -67,41 +67,23 @@ export default function ValueProps() {
           </h2>
         </RevealDiv>
 
-        {/* Asymmetric layout: featured first item + two compact items */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8">
-          {/* Featured value prop */}
-          <RevealDiv className="lg:col-span-5">
-            <div className={`border-l-[3px] ${props[0].accent} pl-6 lg:pl-8`}>
-              <div className={`w-10 h-10 rounded-lg border flex items-center justify-center mb-4 ${props[0].iconBg} ${props[0].iconColor}`}>
-                {props[0].icon}
-              </div>
-              <h3 className="font-serif text-xl lg:text-2xl font-bold text-white mb-4 leading-tight">
-                {props[0].title}
-              </h3>
-              <p className="font-sans text-[15px] text-body-text leading-relaxed">
-                {props[0].text}
-              </p>
-            </div>
-          </RevealDiv>
-
-          {/* Two compact value props stacked */}
-          <div className="lg:col-span-7 flex flex-col gap-10 lg:gap-8">
-            {props.slice(1).map((p, i) => (
-              <RevealDiv key={i} delay={(i + 1) * 150}>
-                <div className={`border-l-[3px] ${p.accent} pl-6`}>
-                  <div className={`w-10 h-10 rounded-lg border flex items-center justify-center mb-3 ${p.iconBg} ${p.iconColor}`}>
-                    {p.icon}
-                  </div>
-                  <h3 className="font-serif text-xl lg:text-2xl font-bold text-white mb-3">
-                    {p.title}
-                  </h3>
-                  <p className="font-sans text-[14.5px] text-body-text leading-relaxed">
-                    {p.text}
-                  </p>
+        {/* Three columns, single row */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          {props.map((p, i) => (
+            <RevealDiv key={i} delay={i * 150}>
+              <div className={`border-l-[3px] ${p.accent} pl-6`}>
+                <div className={`w-10 h-10 rounded-lg border flex items-center justify-center mb-4 ${p.iconBg} ${p.iconColor}`}>
+                  {p.icon}
                 </div>
-              </RevealDiv>
-            ))}
-          </div>
+                <h3 className="font-serif text-xl lg:text-2xl font-bold text-white mb-3 leading-tight">
+                  {p.title}
+                </h3>
+                <p className="font-sans text-[14.5px] text-body-text leading-relaxed">
+                  {p.text}
+                </p>
+              </div>
+            </RevealDiv>
+          ))}
         </div>
       </div>
     </section>
