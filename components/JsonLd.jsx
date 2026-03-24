@@ -77,14 +77,18 @@ export function buildArticleSchema({ title, description, date, slug, author, loc
       ? `https://kantormaterials.com/insights/${slug}`
       : `https://kantormaterials.com/vi/insights/${slug}`;
 
+  // Ensure date is full ISO 8601 with timezone
+  const isoDate = date && date.length === 10 ? `${date}T00:00:00+08:00` : date;
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: title,
     description,
     url,
-    datePublished: date,
-    dateModified: date,
+    image: "https://kantormaterials.com/kantor-icon.png",
+    datePublished: isoDate,
+    dateModified: isoDate,
     author: {
       "@type": "Organization",
       name: author || "Kantor Materials Research",
