@@ -4,18 +4,6 @@ import { useState } from "react";
 import RevealDiv from "@/components/RevealDiv";
 import { FORM_ENDPOINTS, submitForm } from "@/lib/forms";
 
-const countries = [
-  "Vietnam",
-  "Philippines",
-  "Bangladesh",
-  "Peru",
-  "Turkey",
-  "Thailand",
-  "Other",
-];
-
-const messagingApps = ["Zalo", "WhatsApp", "LINE", "Viber", "Other"];
-
 const polymerGrades = [
   "PP",
   "PE (HDPE)",
@@ -26,8 +14,6 @@ const polymerGrades = [
   "PET",
   "Engineering Polymers",
 ];
-
-const volumeRanges = ["< 30 MT", "30–80 MT", "80–150 MT", "150+ MT"];
 
 const inputClasses =
   "w-full px-4 py-3 rounded-lg border border-white/[0.1] bg-white/[0.04] font-sans text-sm text-white placeholder:text-muted focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal transition-colors";
@@ -149,18 +135,14 @@ export default function SubscriptionForm() {
               <label htmlFor="sub-country" className={labelClasses}>
                 Country *
               </label>
-              <select
+              <input
                 id="sub-country"
                 name="country"
                 required
                 autoComplete="country-name"
                 className={inputClasses}
-              >
-                <option value="">Select country</option>
-                {countries.map((c) => (
-                  <option key={c} value={c}>{c}</option>
-                ))}
-              </select>
+                placeholder="e.g. Vietnam, Philippines"
+              />
             </div>
 
             {/* Phone + Messaging App */}
@@ -183,17 +165,13 @@ export default function SubscriptionForm() {
                 <label htmlFor="sub-app" className={labelClasses}>
                   App *
                 </label>
-                <select
+                <input
                   id="sub-app"
                   name="messagingApp"
                   required
                   className={inputClasses}
-                >
-                  <option value="">Select</option>
-                  {messagingApps.map((app) => (
-                    <option key={app} value={app}>{app}</option>
-                  ))}
-                </select>
+                  placeholder="e.g. Zalo, WhatsApp"
+                />
               </div>
             </div>
 
@@ -226,16 +204,12 @@ export default function SubscriptionForm() {
               <label htmlFor="sub-volume" className={labelClasses}>
                 Monthly Volume (Optional)
               </label>
-              <select
+              <input
                 id="sub-volume"
                 name="volume"
                 className={inputClasses}
-              >
-                <option value="">Select range</option>
-                {volumeRanges.map((v) => (
-                  <option key={v} value={v}>{v}</option>
-                ))}
-              </select>
+                placeholder="e.g. 50 MT, 100 MT"
+              />
             </div>
 
             {/* Email */}
@@ -249,7 +223,7 @@ export default function SubscriptionForm() {
                 type="email"
                 autoComplete="email"
                 className={inputClasses}
-                placeholder="For web dashboard access"
+                placeholder="your@email.com"
               />
             </div>
 
