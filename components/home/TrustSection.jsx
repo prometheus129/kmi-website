@@ -15,8 +15,8 @@ export default function TrustSection() {
               Validated by Production.
             </h2>
             <p className="font-sans text-[15px] text-body-text max-w-[600px] mx-auto">
-              Our compounds are validated in our own production lines — over 2
-              million finished goods manufactured annually with Remay materials.
+              Our compounds are validated in Remay&apos;s production lines — over 2
+              million finished goods manufactured annually using Remay materials.
             </p>
           </div>
         </RevealDiv>

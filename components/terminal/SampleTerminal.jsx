@@ -1,11 +1,11 @@
 import RevealDiv from "@/components/RevealDiv";
 
 const rows = [
-  { grade: "PP T30S (Kunlun)", price: "$1,015", dir: "▼", chg: "$8", signal: "HOLD", dirColor: "text-ticker-red", sigColor: "text-gold", sigBg: "bg-gold/10" },
-  { grade: "HDPE 5000S (Yangzi)", price: "$940", dir: "▲", chg: "$5", signal: "BUY", dirColor: "text-ticker-green", sigColor: "text-ticker-green", sigBg: "bg-ticker-green/10" },
-  { grade: "LLDPE 7042 (Dushanzi)", price: "$925", dir: "▲", chg: "$3", signal: "HOLD", dirColor: "text-ticker-green", sigColor: "text-gold", sigBg: "bg-gold/10" },
+  { grade: "PP T30S (Kunlun)", price: "$1,180", dir: "▼", chg: "$10", signal: "HOLD", dirColor: "text-ticker-red", sigColor: "text-gold", sigBg: "bg-gold/10" },
+  { grade: "HDPE 5000S (Yangzi)", price: "$1,210", dir: "▲", chg: "$8", signal: "BUY", dirColor: "text-ticker-green", sigColor: "text-ticker-green", sigBg: "bg-ticker-green/10" },
+  { grade: "LLDPE 7042 (Dushanzi)", price: "$1,245", dir: "▲", chg: "$5", signal: "HOLD", dirColor: "text-ticker-green", sigColor: "text-gold", sigBg: "bg-gold/10" },
   { grade: "PA6 Chips (Hengyi)", price: "$1,680", dir: "▼", chg: "$15", signal: "WAIT", dirColor: "text-ticker-red", sigColor: "text-ticker-red", sigBg: "bg-ticker-red/10" },
-  { grade: "HDPE HHM 5502 (Sinopec)", price: "$960", dir: "▲", chg: "$12", signal: "BUY", dirColor: "text-ticker-green", sigColor: "text-ticker-green", sigBg: "bg-ticker-green/10" },
+  { grade: "HDPE HHM 5502 (Sinopec)", price: "$1,230", dir: "▲", chg: "$12", signal: "BUY", dirColor: "text-ticker-green", sigColor: "text-ticker-green", sigBg: "bg-ticker-green/10" },
   { grade: "ABS 750A (Chimei equiv.)", price: "$1,240", dir: "—", chg: "flat", signal: "HOLD", dirColor: "text-muted", sigColor: "text-gold", sigBg: "bg-gold/10" },
 ];
 
@@ -26,8 +26,8 @@ export default function SampleTerminal() {
           <div className="bg-[#0F1D2F] rounded-xl p-6 lg:p-8 border border-white/[0.06]">
             {/* Header */}
             <div className="flex justify-between items-center mb-4">
-              <span className="font-mono text-[10px] text-muted">MON 7:00 AM · MARCH 24, 2026</span>
-              <span className="font-mono text-[10px] text-teal">● LIVE</span>
+              <span className="font-mono text-[10px] text-muted">WEEKLY · SAMPLE</span>
+              <span className="font-mono text-[10px] text-muted">PREVIEW</span>
             </div>
             <div className="text-[11px] tracking-widest text-teal font-sans font-bold mb-1">KANTOR TERMINAL</div>
             <div className="font-serif text-lg font-bold text-white mb-1">Weekly Market Brief</div>

@@ -12,10 +12,9 @@ export default function WhyItMatters() {
             <p className="font-sans text-[15px] text-body-text leading-relaxed">
               Your current trading company shares prices. Kantor Materials
               shares intelligence. The difference: a price tells you what the
-              market was. A signal tells you what it&apos;s becoming. Our
-              subscribers consistently time their purchases better — and when
-              they&apos;re ready to buy, Kantor Materials is already their most
-              trusted source.
+              market was. A signal tells you what it&apos;s becoming. Better
+              timing means better margins — and when you&apos;re ready to buy,
+              Kantor Materials is already your most trusted source.
             </p>
           </div>
         </RevealDiv>

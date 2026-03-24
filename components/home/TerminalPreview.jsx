@@ -4,9 +4,9 @@ import RevealDiv from "@/components/RevealDiv";
 const pricingRows = [
   {
     grade: "PP T30S",
-    price: "$1,015",
+    price: "$1,180",
     dir: "▼",
-    chg: "$8",
+    chg: "$10",
     signal: "HOLD",
     dirColor: "text-ticker-red",
     sigColor: "text-gold",
@@ -14,9 +14,9 @@ const pricingRows = [
   },
   {
     grade: "HDPE 5000S",
-    price: "$940",
+    price: "$1,210",
     dir: "▲",
-    chg: "$5",
+    chg: "$8",
     signal: "BUY",
     dirColor: "text-ticker-green",
     sigColor: "text-ticker-green",
@@ -24,9 +24,9 @@ const pricingRows = [
   },
   {
     grade: "LLDPE 7042",
-    price: "$925",
+    price: "$1,245",
     dir: "▲",
-    chg: "$3",
+    chg: "$5",
     signal: "HOLD",
     dirColor: "text-ticker-green",
     sigColor: "text-gold",
@@ -86,9 +86,8 @@ export default function TerminalPreview() {
             Competitors Don&apos;t Have.
           </h2>
           <p className="font-sans text-[15px] text-body-text leading-relaxed mb-7">
-            Every Monday at 7 AM, subscribers receive pricing direction, timing
-            signals, and supply disruption alerts via their preferred messaging
-            app. Free for qualified distributors.
+            Weekly pricing direction, timing signals, and supply disruption
+            alerts delivered to your phone. Free for distributors.
           </p>
 
           <div className="flex flex-col gap-4 mb-8">
@@ -123,9 +122,9 @@ export default function TerminalPreview() {
             {/* Header */}
             <div className="flex justify-between items-center mb-4">
               <span className="font-mono text-[10px] text-muted">
-                MON 7:00 AM
+                WEEKLY
               </span>
-              <span className="font-mono text-[10px] text-teal">● LIVE</span>
+              <span className="font-mono text-[10px] text-muted">SAMPLE</span>
             </div>
             <div className="text-[11px] tracking-widest text-teal font-sans font-bold mb-2">
               KANTOR TERMINAL
@@ -176,6 +175,9 @@ export default function TerminalPreview() {
               </div>
             </div>
           </div>
+          <p className="text-center font-sans text-xs text-muted mt-4 italic">
+            Illustrative content. Actual Terminal reflects live market conditions.
+          </p>
         </RevealDiv>
       </div>
     </section>

@@ -72,7 +72,7 @@ export default function SubscriptionForm() {
             You&apos;re Subscribed
           </h2>
           <p className="font-sans text-[15px] text-body-text leading-relaxed">
-            Your first Morning Terminal arrives next Monday at 7 AM. A member
+            Your first Morning Terminal arrives within 24 hours. A member
             of our team may reach out via your selected messaging app to
             confirm your grade preferences.
           </p>
@@ -93,7 +93,7 @@ export default function SubscriptionForm() {
               Get the Morning Terminal
             </h2>
             <p className="font-sans text-[15px] text-body-text">
-              30 seconds. Free for qualified distributors.
+              30 seconds. Free for distributors.
             </p>
           </div>
         </RevealDiv>

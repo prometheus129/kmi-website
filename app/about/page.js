@@ -11,16 +11,15 @@ export const metadata = {
 };
 
 const milestones = [
-  { year: "2026", label: "Phase 1A", detail: "Vietnam + Philippines launch" },
+  { year: "2026", label: "Phase 1", detail: "Vietnam + Philippines launch" },
   {
-    year: "2026",
-    label: "Phase 1B",
-    detail: "Bangladesh expansion",
+    year: "2026–27",
+    label: "Phase 2",
+    detail: "Additional emerging markets",
   },
-  { year: "2026–27", label: "Phase 1C", detail: "Peru + Turkey (exploratory)" },
   {
     year: "2027+",
-    label: "Phase 2",
+    label: "Phase 3",
     detail: "Demand aggregation + platform services",
   },
 ];
@@ -95,7 +94,7 @@ export default function AboutPage() {
       </section>
 
       {/* Two Lanes */}
-      <section className="py-16 lg:py-20 px-6 lg:px-10 bg-navy-deep">
+      <section id="lanes" className="py-16 lg:py-20 px-6 lg:px-10 bg-navy-deep">
         <div className="max-w-[1200px] mx-auto">
           <RevealDiv>
             <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
@@ -214,7 +213,7 @@ export default function AboutPage() {
             </h2>
           </RevealDiv>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {milestones.map((m, i) => (
               <RevealDiv key={m.label}>
                 <div

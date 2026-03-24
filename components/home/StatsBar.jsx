@@ -1,10 +1,10 @@
 import RevealDiv from "@/components/RevealDiv";
 
 const stats = [
-  { value: "600+", label: "ACTIVE MERCHANTS" },
+  { value: "600+", label: "MERCHANTS EVALUATED" },
   { value: "1,600+", label: "CHINESE PRODUCERS" },
-  { value: "15,000+", label: "DOWNSTREAM ENTITIES" },
-  { value: "5", label: "TARGET MARKETS" },
+  { value: "2", label: "ACTIVE MARKETS" },
+  { value: "7", label: "POLYMER CATEGORIES" },
 ];
 
 export default function StatsBar() {

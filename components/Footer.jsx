@@ -5,8 +5,8 @@ const columns = [
   {
     title: "PLATFORM",
     links: [
-      { label: "Syndicate", href: "/syndicate" },
-      { label: "Advanced Materials", href: "/materials" },
+      { label: "Syndicate", href: "/about#lanes" },
+      { label: "Advanced Materials", href: "/about#lanes" },
       { label: "Morning Terminal", href: "/terminal" },
     ],
   },
@@ -23,8 +23,6 @@ const columns = [
     links: [
       { label: "Vietnam", href: "/contact" },
       { label: "Philippines", href: "/contact" },
-      { label: "Bangladesh", href: "/contact" },
-      { label: "Nigeria", href: "/contact" },
     ],
   },
 ];

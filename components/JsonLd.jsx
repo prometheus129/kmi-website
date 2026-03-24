@@ -19,8 +19,8 @@ export const organizationSchema = {
   "@type": "Organization",
   name: "Kantor Materials International",
   alternateName: "KMI",
-  url: "https://kantor-m.com",
-  logo: "https://kantor-m.com/kantor-icon.png",
+  url: "https://kantormaterials.com",
+  logo: "https://kantormaterials.com/kantor-icon.png",
   description:
     "Discretionary polymer procurement platform aggregating cross-buyer demand for China-origin industrial polymers. Serving mid-tier distributors across emerging markets.",
   foundingDate: "2026",
@@ -64,7 +64,7 @@ export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Kantor Materials International",
-  url: "https://kantor-m.com",
+  url: "https://kantormaterials.com",
   inLanguage: ["en", "vi"],
 };
 
@@ -74,8 +74,8 @@ export const websiteSchema = {
 export function buildArticleSchema({ title, description, date, slug, author, locale = "en" }) {
   const url =
     locale === "en"
-      ? `https://kantor-m.com/insights/${slug}`
-      : `https://kantor-m.com/vi/insights/${slug}`;
+      ? `https://kantormaterials.com/insights/${slug}`
+      : `https://kantormaterials.com/vi/insights/${slug}`;
 
   return {
     "@context": "https://schema.org",
@@ -88,15 +88,15 @@ export function buildArticleSchema({ title, description, date, slug, author, loc
     author: {
       "@type": "Organization",
       name: author || "Kantor Materials Research",
-      url: "https://kantor-m.com",
+      url: "https://kantormaterials.com",
     },
     publisher: {
       "@type": "Organization",
       name: "Kantor Materials International",
-      url: "https://kantor-m.com",
+      url: "https://kantormaterials.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://kantor-m.com/kantor-icon.png",
+        url: "https://kantormaterials.com/kantor-icon.png",
       },
     },
     inLanguage: locale === "vi" ? "vi" : "en",

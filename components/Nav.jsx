@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Insights", href: "/insights" },
   { label: "Morning Terminal", href: "/terminal" },
   { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Nav() {
