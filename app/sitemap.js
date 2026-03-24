@@ -1,6 +1,6 @@
 import { getAllArticles } from "@/lib/insights";
 
-const BASE_URL = "https://kantor-m.com";
+const BASE_URL = "https://kantormaterials.com";
 
 export default function sitemap() {
   const now = new Date().toISOString();
@@ -12,6 +12,8 @@ export default function sitemap() {
     { path: "/insights", changeFrequency: "weekly", priority: 0.8 },
     { path: "/about", changeFrequency: "monthly", priority: 0.7 },
     { path: "/contact", changeFrequency: "monthly", priority: 0.7 },
+    { path: "/syndicate", changeFrequency: "monthly", priority: 0.7 },
+    { path: "/materials", changeFrequency: "monthly", priority: 0.7 },
     { path: "/vi/insights", changeFrequency: "weekly", priority: 0.7 },
   ];
 

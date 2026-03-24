@@ -7,6 +7,6 @@ export default function robots() {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://kantor-m.com/sitemap.xml",
+    sitemap: "https://kantormaterials.com/sitemap.xml",
   };
 }

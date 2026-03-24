@@ -26,7 +26,7 @@ export const metadata = {
   title: "Kantor Materials International — Global Polymer Procurement Infrastructure",
   description:
     "Aggregated commodity procurement and application-specific advanced materials for distributors and manufacturers across emerging markets. Hong Kong headquartered, sourcing across China.",
-  metadataBase: new URL("https://kantor-m.com"),
+  metadataBase: new URL("https://kantormaterials.com"),
   openGraph: {
     title: "Kantor Materials International",
     description:
