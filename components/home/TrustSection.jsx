@@ -1,7 +1,7 @@
 import RevealDiv from "@/components/RevealDiv";
 
 const certifications = ["UL LISTED", "ISO 9001", "GRS CERTIFIED", "REACH", "RoHS"];
-const brands = ["BYD", "CATL", "CASIO", "IKEA", "ATL", "Herman Miller"];
+const brands = ["BYD", "CATL", "CALB"];
 
 export default function TrustSection() {
   return (

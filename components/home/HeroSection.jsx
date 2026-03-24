@@ -102,7 +102,7 @@ export default function HeroSection() {
             lane="LANE 1"
             title="The Kantor Syndicate"
             subtitle="For Distributors"
-            description="Aggregated commodity procurement with volume-based economics. PP, PE, PA6, ABS across emerging markets."
+            description="Aggregated commodity procurement with volume-based economics. PP, PE, LDPE, PA6, PVC, ABS across emerging markets."
             cta="Explore Syndicate"
             href="/syndicate"
             accent="teal"

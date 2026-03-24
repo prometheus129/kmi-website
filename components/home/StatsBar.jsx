@@ -5,14 +5,12 @@ import useCounter from "@/components/useCounter";
 export default function StatsBar() {
   const [c1, r1] = useCounter(600, 2000);
   const [c2, r2] = useCounter(1600, 2200);
-  const [c3, r3] = useCounter(5400, 2400);
-  const [c4, r4] = useCounter(6, 1500);
+  const [c3, r3] = useCounter(5, 1500);
 
   const stats = [
     { value: `${c1}+`, label: "ACTIVE MERCHANTS", ref: r1 },
     { value: `${c2.toLocaleString()}+`, label: "CHINESE PRODUCERS", ref: r2 },
-    { value: `${c3.toLocaleString()}+`, label: "CERTIFIED GRADES", ref: r3 },
-    { value: String(c4), label: "TARGET MARKETS", ref: r4 },
+    { value: String(c3), label: "TARGET MARKETS", ref: r3 },
   ];
 
   return (
@@ -27,13 +25,13 @@ export default function StatsBar() {
         }}
       />
 
-      <div className="max-w-[1200px] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+      <div className="max-w-[1200px] mx-auto grid grid-cols-3 gap-6 relative z-10">
         {stats.map((s, i) => (
           <div
             key={i}
             ref={s.ref}
             className={`text-center py-2 ${
-              i < 3 ? "lg:border-r lg:border-white/[0.08]" : ""
+              i < 2 ? "lg:border-r lg:border-white/[0.08]" : ""
             }`}
           >
             <div className="font-mono text-4xl lg:text-5xl font-bold text-teal-light leading-none">

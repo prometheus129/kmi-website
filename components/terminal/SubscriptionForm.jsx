@@ -2,14 +2,14 @@
 
 import { useState } from "react";
 import RevealDiv from "@/components/RevealDiv";
+import { FORM_ENDPOINTS, submitForm } from "@/lib/forms";
 
 const countries = [
   "Vietnam",
   "Philippines",
   "Bangladesh",
-  "Nigeria",
   "Peru",
-  "Ghana",
+  "Turkey",
   "Thailand",
   "Other",
 ];
@@ -41,21 +41,16 @@ export default function SubscriptionForm() {
     );
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     const formData = new FormData(e.target);
-    const data = {
-      name: formData.get("name"),
-      company: formData.get("company"),
-      country: formData.get("country"),
-      phone: formData.get("phone"),
-      messagingApp: formData.get("messagingApp"),
-      grades: selectedGrades,
-      volume: formData.get("volume"),
-      email: formData.get("email"),
-    };
-    console.log("Terminal Subscription:", JSON.stringify(data, null, 2));
-    setSubmitted(true);
+    // Append multi-select grades as a single field
+    formData.set("grades", selectedGrades.join(", "));
+
+    const result = await submitForm(FORM_ENDPOINTS.subscription, formData);
+    if (result.ok) {
+      setSubmitted(true);
+    }
   }
 
   if (submitted) {

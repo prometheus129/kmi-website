@@ -1,0 +1,320 @@
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
+import RevealDiv from "@/components/RevealDiv";
+import Link from "next/link";
+import JsonLd, { organizationSchema } from "@/components/JsonLd";
+
+export const metadata = {
+  title: "About — Kantor Materials International",
+  description:
+    "Kantor Materials is a discretionary polymer procurement platform headquartered in Hong Kong, serving mid-tier distributors across emerging markets with intelligence-driven sourcing from China.",
+};
+
+const milestones = [
+  { year: "2026", label: "Phase 1A", detail: "Vietnam + Philippines launch" },
+  {
+    year: "2026",
+    label: "Phase 1B",
+    detail: "Bangladesh expansion",
+  },
+  { year: "2026–27", label: "Phase 1C", detail: "Peru + Turkey (exploratory)" },
+  {
+    year: "2027+",
+    label: "Phase 2",
+    detail: "Demand aggregation + platform services",
+  },
+];
+
+export default function AboutPage() {
+  return (
+    <div className="bg-navy min-h-screen text-white">
+      <JsonLd data={organizationSchema} />
+      <Nav />
+
+      {/* Hero */}
+      <section className="pt-36 pb-16 lg:pt-44 lg:pb-20 px-6 lg:px-10">
+        <div className="max-w-[1200px] mx-auto">
+          <RevealDiv>
+            <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
+              ABOUT
+            </span>
+            <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white mb-6 max-w-3xl leading-tight">
+              The Full Market on Every Order
+            </h1>
+            <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-2xl">
+              Kantor Materials is a discretionary polymer procurement platform.
+              We aggregate cross-buyer demand for China-origin industrial
+              polymers and deliver institutional-grade sourcing to mid-tier
+              distributors across emerging markets.
+            </p>
+          </RevealDiv>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-10">
+        <div className="border-t border-white/[0.08]" />
+      </div>
+
+      {/* The Thesis */}
+      <section className="py-16 lg:py-20 px-6 lg:px-10">
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+          <RevealDiv>
+            <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
+              THE THESIS
+            </span>
+            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-white mb-5">
+              Trading houses profit from knowing more than the buyer.
+              We profit from making the buyer know more.
+            </h2>
+          </RevealDiv>
+          <RevealDiv>
+            <div className="space-y-5 text-body-text text-[15px] leading-[1.75]">
+              <p>
+                The polymer trade between China and Southeast Asia runs through
+                intermediaries who capture margin from information asymmetry.
+                When a buyer in Ho Chi Minh City doesn&apos;t know the factory
+                price, the merchant spread, or the current freight market, the
+                trading house captures that gap.
+              </p>
+              <p>
+                Kantor inverts this. We evaluate 600+ merchants across
+                approximately 1,600 producers on every order. Buyers delegate
+                procurement optimization to us and judge on outcomes: price
+                quality, execution reliability, and market guidance accuracy.
+              </p>
+              <p>
+                This isn&apos;t a marketplace. We don&apos;t connect buyers to
+                sellers. We operate the procurement function on the buyer&apos;s
+                behalf — sourcing, evaluation, execution, and intelligence —
+                with economics that improve as we aggregate more demand.
+              </p>
+            </div>
+          </RevealDiv>
+        </div>
+      </section>
+
+      {/* Two Lanes */}
+      <section className="py-16 lg:py-20 px-6 lg:px-10 bg-navy-deep">
+        <div className="max-w-[1200px] mx-auto">
+          <RevealDiv>
+            <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
+              WHAT WE DO
+            </span>
+            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-white mb-10">
+              Two Product Lanes
+            </h2>
+          </RevealDiv>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Lane 1 */}
+            <RevealDiv>
+              <div className="bg-gradient-to-br from-white/[0.04] to-white/[0.01] border border-white/[0.08] rounded-lg p-8 h-full">
+                <div className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-3">
+                  LANE 1 — THE KANTOR SYNDICATE
+                </div>
+                <h3 className="font-serif text-2xl font-bold text-white mb-3">
+                  Commodity Polymers
+                </h3>
+                <p className="text-body-text text-sm leading-relaxed mb-5">
+                  Aggregated procurement of PP, PE, LDPE, PA6, PVC, and ABS.
+                  Volume-based economics through purchasing pods that combine
+                  demand across multiple buyers. Your 50 MT becomes part of a
+                  300 MT order.
+                </p>
+                <div className="font-mono text-xs text-muted">
+                  PP &middot; HDPE &middot; LDPE &middot; LLDPE &middot; PA6
+                  &middot; ABS &middot; PVC
+                </div>
+              </div>
+            </RevealDiv>
+
+            {/* Lane 2 */}
+            <RevealDiv>
+              <div className="bg-gradient-to-br from-white/[0.04] to-white/[0.01] border border-white/[0.08] rounded-lg p-8 h-full">
+                <div className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-gold mb-3">
+                  LANE 2 — ADVANCED MATERIALS
+                </div>
+                <h3 className="font-serif text-2xl font-bold text-white mb-3">
+                  Engineering Polymers
+                </h3>
+                <p className="text-body-text text-sm leading-relaxed mb-5">
+                  UL-certified, application-specific compounds through our
+                  manufacturing partner Remay. Reverse-engineered to match
+                  incumbent specifications — same performance, competitive
+                  pricing, full certification chain.
+                </p>
+                <div className="font-mono text-xs text-muted">
+                  PA66 &middot; PBT &middot; PC &middot; POM &middot; PPO
+                  &middot; Custom Compounds
+                </div>
+              </div>
+            </RevealDiv>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="py-16 lg:py-20 px-6 lg:px-10">
+        <div className="max-w-[1200px] mx-auto">
+          <RevealDiv>
+            <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
+              HOW IT WORKS
+            </span>
+            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-white mb-10">
+              Best-Execution Procurement
+            </h2>
+          </RevealDiv>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                num: "01",
+                title: "Intelligence",
+                desc: "The Morning Terminal delivers pricing direction, buy-timing signals, and supply disruption alerts before your market opens. Free for all subscribers.",
+              },
+              {
+                num: "02",
+                title: "Evaluation",
+                desc: "On every order, we evaluate 600+ merchants across China's producer network. You see one price — the best available for your grade, quantity, and timeline.",
+              },
+              {
+                num: "03",
+                title: "Execution",
+                desc: "Quality certification, logistics coordination, and payment facilitation. We handle the supply chain complexity so you can focus on selling.",
+              },
+            ].map((step) => (
+              <RevealDiv key={step.num}>
+                <div className="border-l-2 border-teal/30 pl-6">
+                  <span className="font-mono text-xs text-teal/60">
+                    {step.num}
+                  </span>
+                  <h3 className="font-serif text-xl font-bold text-white mt-1 mb-3">
+                    {step.title}
+                  </h3>
+                  <p className="text-body-text text-sm leading-relaxed">
+                    {step.desc}
+                  </p>
+                </div>
+              </RevealDiv>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Roadmap */}
+      <section className="py-16 lg:py-20 px-6 lg:px-10 bg-navy-deep">
+        <div className="max-w-[1200px] mx-auto">
+          <RevealDiv>
+            <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
+              ROADMAP
+            </span>
+            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-white mb-10">
+              Market Expansion
+            </h2>
+          </RevealDiv>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {milestones.map((m, i) => (
+              <RevealDiv key={m.label}>
+                <div
+                  className={`rounded-lg p-6 border transition-all duration-350 ${
+                    i === 0
+                      ? "border-teal/30 bg-teal/[0.06]"
+                      : "border-white/[0.08] bg-gradient-to-br from-white/[0.03] to-white/[0.01]"
+                  }`}
+                >
+                  <div className="font-mono text-xs text-muted mb-2">
+                    {m.year}
+                  </div>
+                  <div className="font-sans text-sm font-semibold text-white mb-1">
+                    {m.label}
+                  </div>
+                  <div className="font-sans text-xs text-body-text">
+                    {m.detail}
+                  </div>
+                  {i === 0 && (
+                    <div className="font-mono text-[10px] text-teal mt-3 uppercase tracking-[2px]">
+                      Active
+                    </div>
+                  )}
+                </div>
+              </RevealDiv>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership */}
+      <section className="py-16 lg:py-20 px-6 lg:px-10">
+        <div className="max-w-[1200px] mx-auto">
+          <RevealDiv>
+            <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
+              LEADERSHIP
+            </span>
+            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-white mb-10">
+              Founded by Operators
+            </h2>
+          </RevealDiv>
+
+          <RevealDiv>
+            <div className="bg-gradient-to-br from-white/[0.04] to-white/[0.01] border border-white/[0.08] rounded-lg p-8 max-w-2xl">
+              <div className="flex flex-col sm:flex-row gap-6">
+                {/* Placeholder for photo */}
+                <div className="w-20 h-20 rounded-lg bg-gradient-to-br from-teal/20 to-teal/5 border border-teal/20 flex items-center justify-center shrink-0">
+                  <span className="font-serif text-2xl font-bold text-teal">
+                    DW
+                  </span>
+                </div>
+                <div>
+                  <h3 className="font-serif text-xl font-bold text-white">
+                    David Wu
+                  </h3>
+                  <div className="font-sans text-xs text-teal mt-0.5 mb-3">
+                    Founder &amp; CEO
+                  </div>
+                  <p className="text-body-text text-sm leading-relaxed">
+                    Cross-border commodity procurement background spanning
+                    China, Southeast Asia, and emerging markets. Full-time,
+                    exclusive to KMI. Based between Hong Kong and Shenzhen.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </RevealDiv>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 lg:py-20 px-6 lg:px-10 bg-navy-deep">
+        <div className="max-w-[1200px] mx-auto text-center">
+          <RevealDiv>
+            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-white mb-4">
+              Ready to optimize your procurement?
+            </h2>
+            <p className="text-body-text text-base mb-8 max-w-lg mx-auto">
+              Start with the Morning Terminal — free market intelligence
+              delivered weekly. Or get in touch for pricing on specific grades.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/terminal"
+                className="inline-flex items-center justify-center bg-teal hover:bg-teal-light text-white font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:-translate-y-px"
+              >
+                Subscribe to Terminal
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center border border-white/[0.15] hover:border-teal/40 text-white font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:-translate-y-px"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </RevealDiv>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+}
