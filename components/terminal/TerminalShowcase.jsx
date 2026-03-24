@@ -2,22 +2,43 @@ import RevealDiv from "@/components/RevealDiv";
 
 const pillars = [
   {
-    num: "01",
     title: "Pricing Direction",
     desc: "Kantor indicative pricing for key grades with directional signals — firming, softening, or stable. Know where the market is heading before you commit.",
     accent: "border-teal",
+    iconColor: "text-teal",
+    iconBg: "bg-teal/10 border-teal/20",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+        <polyline points="16 7 22 7 22 13" />
+      </svg>
+    ),
   },
   {
-    num: "02",
     title: "Timing Intelligence",
     desc: "BUY / HOLD / WAIT signals for the next 7–14 days. Your current supplier never says \"wait.\" Kantor Materials does — because our incentive is your outcome, not the transaction.",
     accent: "border-gold",
+    iconColor: "text-gold",
+    iconBg: "bg-gold/10 border-gold/20",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <polyline points="12 6 12 12 16 14" />
+      </svg>
+    ),
   },
   {
-    num: "03",
     title: "Supply Context",
     desc: "Disruption alerts, port congestion updates, producer maintenance schedules, and inventory dynamics. The context that turns a price into a decision.",
     accent: "border-white/20",
+    iconColor: "text-body-text",
+    iconBg: "bg-white/[0.06] border-white/10",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z" />
+        <circle cx="12" cy="10" r="3" />
+      </svg>
+    ),
   },
 ];
 
@@ -47,8 +68,8 @@ export default function TerminalShowcase() {
           {pillars.map((p, i) => (
             <RevealDiv key={i} delay={i * 150}>
               <div className={`border-l-[3px] ${p.accent} pl-6`}>
-                <div className="font-mono text-xs text-muted mb-2">
-                  {p.num}
+                <div className={`w-10 h-10 rounded-lg border flex items-center justify-center mb-4 ${p.iconBg} ${p.iconColor}`}>
+                  {p.icon}
                 </div>
                 <h3 className="font-serif text-xl font-bold text-white mb-3">
                   {p.title}
