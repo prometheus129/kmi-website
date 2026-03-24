@@ -134,17 +134,13 @@ export default async function ViInsightArticlePage({ params }) {
             </div>
           </RevealDiv>
 
-          {/* Article body */}
-          <RevealDiv>
-            <div className="prose-kantor">
-              <MDXRemote source={content} components={mdxComponents} />
-            </div>
-          </RevealDiv>
+          {/* Article body — no RevealDiv, content must be immediately visible */}
+          <div className="prose-kantor">
+            <MDXRemote source={content} components={mdxComponents} />
+          </div>
 
           {/* Morning Terminal CTA */}
-          <RevealDiv>
-            <MorningTerminalCTA locale="vi" />
-          </RevealDiv>
+          <MorningTerminalCTA locale="vi" />
         </div>
       </article>
 

@@ -135,17 +135,13 @@ export default async function InsightArticlePage({ params }) {
             </div>
           </RevealDiv>
 
-          {/* Article body */}
-          <RevealDiv>
-            <div className="prose-kantor">
-              <MDXRemote source={content} components={mdxComponents} />
-            </div>
-          </RevealDiv>
+          {/* Article body — no RevealDiv, content must be immediately visible */}
+          <div className="prose-kantor">
+            <MDXRemote source={content} components={mdxComponents} />
+          </div>
 
           {/* Morning Terminal CTA */}
-          <RevealDiv>
-            <MorningTerminalCTA locale="en" />
-          </RevealDiv>
+          <MorningTerminalCTA locale="en" />
         </div>
       </article>
 
