@@ -178,7 +178,7 @@ export default function MaterialsPage() {
                 Request a Quote
               </Link>
               <Link
-                href="/terminal"
+                href="/terminal#subscribe"
                 className="inline-flex items-center justify-center border border-white/[0.15] text-white font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:border-white/30 hover:bg-white/[0.03]"
               >
                 Subscribe to Terminal

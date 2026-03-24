@@ -123,7 +123,7 @@ export default function HeroSection() {
           style={{ opacity: loaded ? 1 : 0 }}
         >
           <Link
-            href="/terminal"
+            href="/terminal#subscribe"
             className="text-teal-light text-sm font-sans inline-flex items-center gap-2 tracking-wide hover:underline"
           >
             Get free weekly market intelligence →
