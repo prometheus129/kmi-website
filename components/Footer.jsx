@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const columns = [
   {
@@ -12,6 +13,7 @@ const columns = [
   {
     title: "COMPANY",
     links: [
+      { label: "Insights", href: "/insights" },
       { label: "About", href: "/about" },
       { label: "Contact", href: "/contact" },
     ],
@@ -29,19 +31,20 @@ const columns = [
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-deep pt-16 pb-10 px-6 lg:px-10 border-t border-teal/10">
-      <div className="max-w-[1200px] mx-auto">
+    <footer className="bg-navy-deep pt-16 pb-10 px-6 lg:px-10 border-t border-gold/10">
+      <div className="max-w-[1280px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand Column */}
           <div>
-            <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-7 h-7 bg-gradient-to-br from-teal to-teal-light rounded flex items-center justify-center text-white font-serif text-sm font-extrabold">
-                K
-              </div>
-              <span className="font-serif text-[15px] font-bold text-white tracking-wide">
-                KANTOR MATERIALS
-              </span>
-            </div>
+            <Link href="/" className="inline-block mb-4">
+              <Image
+                src="/kantor-logo-transparent.png"
+                alt="Kantor Materials International"
+                width={200}
+                height={30}
+                className="h-8 w-auto"
+              />
+            </Link>
             <p className="font-sans text-[13px] text-muted leading-relaxed max-w-[280px]">
               Global polymer procurement infrastructure. Hong Kong
               headquartered, sourcing across China, serving emerging markets
@@ -52,14 +55,14 @@ export default function Footer() {
           {/* Link Columns */}
           {columns.map((col) => (
             <div key={col.title}>
-              <div className="font-sans text-[11px] font-bold text-teal tracking-widest mb-4">
+              <div className="font-sans text-[11px] font-bold text-gold/70 tracking-widest mb-4">
                 {col.title}
               </div>
               {col.links.map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="block font-sans text-[13px] text-muted hover:text-white transition-colors duration-200 mb-2.5"
+                  className="block font-sans text-[13px] text-muted hover:text-[#E8E4D9] transition-colors duration-200 mb-2.5"
                 >
                   {link.label}
                 </Link>
@@ -79,7 +82,7 @@ export default function Footer() {
                 key={lang}
                 className={`font-sans text-[11px] tracking-wide cursor-pointer ${
                   i === 0
-                    ? "text-teal-light font-semibold"
+                    ? "text-gold-light font-semibold"
                     : "text-subtle"
                 }`}
               >

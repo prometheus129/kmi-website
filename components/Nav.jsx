@@ -5,7 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 const navLinks = [
-  { label: "Morning Terminal", href: "/terminal", highlight: true },
+  { label: "Insights", href: "/insights" },
+  { label: "Morning Terminal", href: "/terminal" },
 ];
 
 export default function Nav() {
@@ -22,19 +23,19 @@ export default function Nav() {
     <nav
       className={`sticky top-0 z-50 backdrop-blur-lg transition-all duration-300 px-6 lg:px-10 ${
         scrolled
-          ? "bg-navy-deep/97 border-b border-teal/15"
-          : "bg-navy-deep/92 border-b border-teal/[0.08]"
+          ? "bg-navy-deep/[0.98] border-b border-gold/10"
+          : "bg-navy-deep/95 border-b border-white/[0.04]"
       }`}
     >
-      <div className="max-w-[1200px] mx-auto flex items-center justify-between h-16">
+      <div className="max-w-[1280px] mx-auto flex items-center justify-between h-20">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center shrink-0">
           <Image
             src="/kantor-logo-transparent.png"
-            alt="Kantor Materials"
-            width={200}
-            height={36}
-            className="h-7 w-auto"
+            alt="Kantor Materials International"
+            width={320}
+            height={48}
+            className="h-12 w-auto"
             priority
           />
         </Link>
@@ -45,18 +46,14 @@ export default function Nav() {
             <Link
               key={link.label}
               href={link.href}
-              className={`text-[13px] font-sans tracking-wide transition-colors duration-200 hover:text-white ${
-                link.highlight
-                  ? "text-teal-light font-semibold"
-                  : "text-body-text"
-              }`}
+              className="text-[13px] font-sans font-medium tracking-wide text-[#E8E4D9]/70 transition-colors duration-200 hover:text-gold-light"
             >
               {link.label}
             </Link>
           ))}
           <Link
             href="/terminal"
-            className="bg-gradient-to-br from-teal to-teal-light text-white text-xs font-semibold tracking-wider px-5 py-2.5 rounded transition-all duration-200 hover:-translate-y-px shadow-[0_2px_12px_rgba(46,139,139,0.3)]"
+            className="bg-gold text-navy-deep text-xs font-semibold tracking-wider px-5 py-2.5 rounded-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-px shadow-[0_2px_12px_rgba(212,168,67,0.25)]"
           >
             SUBSCRIBE TO TERMINAL
           </Link>
@@ -69,17 +66,17 @@ export default function Nav() {
           aria-label="Toggle menu"
         >
           <span
-            className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
+            className={`block w-6 h-0.5 bg-[#E8E4D9] transition-all duration-300 ${
               mobileOpen ? "rotate-45 translate-y-2" : ""
             }`}
           />
           <span
-            className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
+            className={`block w-6 h-0.5 bg-[#E8E4D9] transition-all duration-300 ${
               mobileOpen ? "opacity-0" : ""
             }`}
           />
           <span
-            className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
+            className={`block w-6 h-0.5 bg-[#E8E4D9] transition-all duration-300 ${
               mobileOpen ? "-rotate-45 -translate-y-2" : ""
             }`}
           />
@@ -95,11 +92,7 @@ export default function Nav() {
                 key={link.label}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className={`text-sm font-sans px-2 ${
-                  link.highlight
-                    ? "text-teal-light font-semibold"
-                    : "text-body-text"
-                }`}
+                className="text-sm font-sans font-medium px-2 text-[#E8E4D9]/70"
               >
                 {link.label}
               </Link>
@@ -107,7 +100,7 @@ export default function Nav() {
             <Link
               href="/terminal"
               onClick={() => setMobileOpen(false)}
-              className="bg-gradient-to-br from-teal to-teal-light text-white text-xs font-semibold tracking-wider px-5 py-3 rounded text-center mt-2"
+              className="bg-gold text-navy-deep text-xs font-semibold tracking-wider px-5 py-3 rounded-lg text-center mt-2"
             >
               SUBSCRIBE TO TERMINAL
             </Link>
