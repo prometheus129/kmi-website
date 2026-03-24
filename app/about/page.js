@@ -237,8 +237,8 @@ export default function AboutPage() {
               Ready to optimize your procurement?
             </h2>
             <p className="text-body-text text-base mb-8 max-w-lg mx-auto">
-              Start with the Morning Terminal — free market intelligence
-              delivered weekly. Or get in touch for pricing on specific grades.
+              Start with the Morning Terminal — free daily market intelligence
+              delivered to your phone. Or get in touch for pricing on specific grades.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

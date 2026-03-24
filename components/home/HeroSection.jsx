@@ -39,9 +39,9 @@ export default function HeroSection() {
             <span className="text-teal-light">We share intelligence.</span>
           </h1>
           <p className="font-sans text-lg text-body-text leading-relaxed max-w-[640px] mx-auto mb-10">
-            Weekly polymer pricing direction, buy-timing signals, and supply
-            disruption alerts — delivered free to distributors across Southeast
-            Asia. Know what the market is doing before you buy.
+            Daily polymer pricing, buy-timing signals, and supply disruption
+            alerts — delivered free to distributors across Southeast Asia.
+            Know what the market is doing before you buy.
           </p>
 
           {/* Primary CTA cluster */}
@@ -50,7 +50,7 @@ export default function HeroSection() {
               href="/terminal#subscribe"
               className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-sm tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
             >
-              Get Free Weekly Pricing
+              Get Free Daily Pricing
             </Link>
             <Link
               href="/terminal"

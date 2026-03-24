@@ -23,7 +23,7 @@ export default function TerminalHero() {
             The Morning Terminal
           </h1>
           <p className="font-sans text-lg text-body-text leading-relaxed max-w-[640px] mb-8">
-            Weekly polymer market signals, pricing context, and timing guidance
+            Daily polymer pricing, market signals, and timing guidance
             delivered to your phone. Free for distributors.
           </p>
           <Link

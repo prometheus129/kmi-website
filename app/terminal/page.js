@@ -9,7 +9,7 @@ import SubscriptionForm from "@/components/terminal/SubscriptionForm";
 export const metadata = {
   title: "Morning Terminal — Kantor Materials International",
   description:
-    "Weekly polymer market intelligence for distributors. Pricing direction, timing signals, and supply context. Free.",
+    "Daily polymer market intelligence for distributors. Pricing direction, timing signals, and supply context. Free.",
 };
 
 export default function TerminalPage() {

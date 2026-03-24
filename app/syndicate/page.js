@@ -22,7 +22,7 @@ const howItWorks = [
   {
     num: "01",
     title: "Intelligence",
-    desc: "Receive weekly pricing direction, timing signals, and supply context via the Morning Terminal. Know where the market is heading before you commit.",
+    desc: "Receive daily pricing direction, timing signals, and supply context via the Morning Terminal. Know where the market is heading before you commit.",
   },
   {
     num: "02",
@@ -186,8 +186,8 @@ export default function SyndicatePage() {
               Ready to Optimize Your Procurement?
             </h2>
             <p className="font-sans text-[15px] text-body-text mb-8">
-              Start with the Morning Terminal — free weekly market intelligence
-              for qualified distributors.
+              Start with the Morning Terminal — free daily market intelligence
+              for distributors.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

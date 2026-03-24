@@ -86,7 +86,7 @@ export default function TerminalPreview() {
             Competitors Don&apos;t Have.
           </h2>
           <p className="font-sans text-[15px] text-body-text leading-relaxed mb-7">
-            Weekly pricing direction, timing signals, and supply disruption
+            Daily pricing direction, timing signals, and supply disruption
             alerts delivered to your phone. Free for distributors.
           </p>
 

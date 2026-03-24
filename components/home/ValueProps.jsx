@@ -3,7 +3,7 @@ import RevealDiv from "@/components/RevealDiv";
 const props = [
   {
     title: "Market Intelligence",
-    text: "Weekly market signals, pricing context, and timing guidance delivered to your phone before you make purchasing decisions.",
+    text: "Daily market signals, pricing context, and timing guidance delivered to your phone before you make purchasing decisions.",
     accent: "border-teal",
     iconColor: "text-teal",
     iconBg: "bg-teal/10 border-teal/20",

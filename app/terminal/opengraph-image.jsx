@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Morning Terminal — Weekly Polymer Market Intelligence by Kantor Materials";
+export const alt = "Morning Terminal — Daily Polymer Market Intelligence by Kantor Materials";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -108,7 +108,7 @@ export default function Image() {
             maxWidth: "700px",
           }}
         >
-          Weekly polymer market signals, pricing direction, and timing
+          Daily polymer market signals, pricing direction, and timing
           intelligence. Delivered every Monday at 7 AM. Free for qualified
           distributors.
         </div>
