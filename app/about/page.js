@@ -10,18 +10,15 @@ export const metadata = {
     "Kantor Materials is a discretionary polymer procurement platform headquartered in Hong Kong, serving mid-tier distributors across emerging markets with intelligence-driven sourcing from China.",
 };
 
-const milestones = [
-  { year: "2026", label: "Phase 1", detail: "Vietnam + Philippines launch" },
-  {
-    year: "2026–27",
-    label: "Phase 2",
-    detail: "Additional emerging markets",
-  },
-  {
-    year: "2027+",
-    label: "Phase 3",
-    detail: "Demand aggregation + platform services",
-  },
+const markets = [
+  "Vietnam",
+  "Philippines",
+  "Thailand",
+  "Bangladesh",
+  "Peru",
+  "Turkey",
+  "Nigeria",
+  "Indonesia",
 ];
 
 export default function AboutPage() {
@@ -201,46 +198,37 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Roadmap */}
+      {/* Markets */}
       <section className="py-16 lg:py-20 px-6 lg:px-10 bg-navy-deep">
         <div className="max-w-[1200px] mx-auto">
           <RevealDiv>
             <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
-              ROADMAP
+              MARKETS
             </span>
-            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-white mb-10">
-              Market Expansion
+            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-white mb-4">
+              Where We Operate
             </h2>
+            <p className="text-body-text text-[15px] leading-relaxed max-w-xl mb-10">
+              Sourcing from China, serving distributors and manufacturers
+              across emerging markets.
+            </p>
           </RevealDiv>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {milestones.map((m, i) => (
-              <RevealDiv key={m.label}>
-                <div
-                  className={`rounded-lg p-6 border transition-all duration-350 ${
-                    i === 0
-                      ? "border-teal/30 bg-teal/[0.06]"
-                      : "border-white/[0.08] bg-gradient-to-br from-white/[0.03] to-white/[0.01]"
-                  }`}
+          <RevealDiv>
+            <div className="flex flex-wrap gap-3">
+              {markets.map((m) => (
+                <span
+                  key={m}
+                  className="font-sans text-sm font-medium text-white bg-gradient-to-br from-white/[0.06] to-white/[0.02] border border-white/[0.1] px-5 py-2.5 rounded-lg"
                 >
-                  <div className="font-mono text-xs text-muted mb-2">
-                    {m.year}
-                  </div>
-                  <div className="font-sans text-sm font-semibold text-white mb-1">
-                    {m.label}
-                  </div>
-                  <div className="font-sans text-xs text-body-text">
-                    {m.detail}
-                  </div>
-                  {i === 0 && (
-                    <div className="font-mono text-[10px] text-teal mt-3 uppercase tracking-[2px]">
-                      Active
-                    </div>
-                  )}
-                </div>
-              </RevealDiv>
-            ))}
-          </div>
+                  {m}
+                </span>
+              ))}
+              <span className="font-sans text-sm font-medium text-muted bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/[0.06] px-5 py-2.5 rounded-lg">
+                + Emerging Markets
+              </span>
+            </div>
+          </RevealDiv>
         </div>
       </section>
 
