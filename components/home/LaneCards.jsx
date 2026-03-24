@@ -4,7 +4,7 @@ import RevealDiv from "@/components/RevealDiv";
 export default function LaneCards() {
   return (
     <section className="bg-navy-deep py-20 lg:py-[90px] px-6 lg:px-10">
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-[900px] mx-auto">
         <RevealDiv>
           <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
             BEYOND INTELLIGENCE
@@ -18,7 +18,7 @@ export default function LaneCards() {
           </p>
         </RevealDiv>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[900px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <RevealDiv>
             <Link href="/syndicate" className="group block h-full">
               <div className="rounded-lg p-8 border border-white/[0.08] bg-gradient-to-br from-white/5 to-white/[0.01] hover:from-white/[0.08] hover:to-white/[0.03] hover:border-teal/40 hover:-translate-y-[3px] transition-all duration-350 h-full">
