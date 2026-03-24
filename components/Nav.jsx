@@ -27,15 +27,15 @@ export default function Nav() {
           : "bg-navy-deep/95 border-b border-white/[0.04]"
       }`}
     >
-      <div className="max-w-[1280px] mx-auto flex items-center justify-between h-20">
+      <div className="max-w-[1280px] mx-auto flex items-center justify-between h-24">
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0">
           <Image
             src="/kantor-logo-transparent.png"
             alt="Kantor Materials International"
-            width={320}
-            height={48}
-            className="h-12 w-auto"
+            width={480}
+            height={64}
+            className="h-16 w-auto"
             priority
           />
         </Link>
