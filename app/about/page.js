@@ -245,46 +245,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Leadership */}
-      <section className="py-16 lg:py-20 px-6 lg:px-10">
-        <div className="max-w-[1200px] mx-auto">
-          <RevealDiv>
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
-              LEADERSHIP
-            </span>
-            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-white mb-10">
-              Founded by Operators
-            </h2>
-          </RevealDiv>
-
-          <RevealDiv>
-            <div className="bg-gradient-to-br from-white/[0.04] to-white/[0.01] border border-white/[0.08] rounded-lg p-8 max-w-2xl">
-              <div className="flex flex-col sm:flex-row gap-6">
-                {/* Placeholder for photo */}
-                <div className="w-20 h-20 rounded-lg bg-gradient-to-br from-teal/20 to-teal/5 border border-teal/20 flex items-center justify-center shrink-0">
-                  <span className="font-serif text-2xl font-bold text-teal">
-                    DW
-                  </span>
-                </div>
-                <div>
-                  <h3 className="font-serif text-xl font-bold text-white">
-                    David Wu
-                  </h3>
-                  <div className="font-sans text-xs text-teal mt-0.5 mb-3">
-                    Founder &amp; CEO
-                  </div>
-                  <p className="text-body-text text-sm leading-relaxed">
-                    Cross-border commodity procurement background spanning
-                    China, Southeast Asia, and emerging markets. Full-time,
-                    exclusive to KMI. Based between Hong Kong and Shenzhen.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </RevealDiv>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-16 lg:py-20 px-6 lg:px-10 bg-navy-deep">
         <div className="max-w-[1200px] mx-auto text-center">
