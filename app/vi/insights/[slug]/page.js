@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
@@ -136,7 +137,7 @@ export default async function ViInsightArticlePage({ params }) {
 
           {/* Article body — no RevealDiv, content must be immediately visible */}
           <div className="prose-kantor">
-            <MDXRemote source={content} components={mdxComponents} />
+            <MDXRemote source={content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
           </div>
 
           {/* Morning Terminal CTA */}
