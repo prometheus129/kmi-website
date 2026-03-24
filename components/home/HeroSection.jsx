@@ -104,16 +104,16 @@ export default function HeroSection() {
             subtitle="PP, PE, PA6, PVC, ABS — China origin"
             description="Volume-aggregated procurement. Your 50 MT joins a 300 MT order. Best-execution pricing across 600+ merchants."
             cta="Learn More"
-            href="/about#lanes"
+            href="/syndicate"
             accent="teal"
           />
           <SplitCard
             lane="LANE 2"
             title="Engineering Compounds"
-            subtitle="UL-certified, application-specific"
-            description="Reverse-engineered to match your incumbent spec. Same performance, competitive pricing, full certification chain."
-            cta="Learn More"
-            href="/about#lanes"
+            subtitle="Free specification matching"
+            description="Send us your current material spec. We evaluate whether our UL-certified compounds can match performance at a competitive price."
+            cta="Request Free Evaluation"
+            href="/materials"
             accent="gold"
           />
         </div>
