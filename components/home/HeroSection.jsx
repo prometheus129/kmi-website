@@ -100,20 +100,20 @@ export default function HeroSection() {
         >
           <SplitCard
             lane="LANE 1"
-            title="The Kantor Syndicate"
-            subtitle="For Distributors"
-            description="Aggregated commodity procurement with volume-based economics. PP, PE, LDPE, PA6, PVC, ABS across emerging markets."
-            cta="Explore Syndicate"
-            href="/syndicate"
+            title="Commodity Polymers"
+            subtitle="PP, PE, PA6, PVC, ABS — China origin"
+            description="Volume-aggregated procurement. Your 50 MT joins a 300 MT order. Best-execution pricing across 600+ merchants."
+            cta="Learn More"
+            href="/about#lanes"
             accent="teal"
           />
           <SplitCard
             lane="LANE 2"
-            title="Advanced Materials"
-            subtitle="For Engineers & Manufacturers"
-            description="UL-certified, application-specific compounds. Reverse-engineered to match your incumbent specification."
-            cta="Explore Materials"
-            href="/materials"
+            title="Engineering Compounds"
+            subtitle="UL-certified, application-specific"
+            description="Reverse-engineered to match your incumbent spec. Same performance, competitive pricing, full certification chain."
+            cta="Learn More"
+            href="/about#lanes"
             accent="gold"
           />
         </div>
