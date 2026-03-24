@@ -72,9 +72,9 @@ export default function SubscriptionForm() {
             You&apos;re Subscribed
           </h2>
           <p className="font-sans text-[15px] text-body-text leading-relaxed">
-            Your first Morning Terminal arrives within 24 hours. A member
-            of our team may reach out via your selected messaging app to
-            confirm your grade preferences.
+            Your first Morning Terminal arrives within 24 hours. We&apos;ll
+            reach out to confirm your grade preferences and preferred
+            messaging channel.
           </p>
         </div>
       </section>
@@ -93,13 +93,29 @@ export default function SubscriptionForm() {
               Get the Morning Terminal
             </h2>
             <p className="font-sans text-[15px] text-body-text">
-              30 seconds. Free for distributors.
+              15 seconds. Free for distributors.
             </p>
           </div>
         </RevealDiv>
 
         <RevealDiv delay={150}>
           <form onSubmit={handleSubmit} className="space-y-6">
+            {/* Email — primary field */}
+            <div>
+              <label htmlFor="sub-email" className={labelClasses}>
+                Email *
+              </label>
+              <input
+                id="sub-email"
+                name="email"
+                type="email"
+                required
+                autoComplete="email"
+                className={inputClasses}
+                placeholder="your@email.com"
+              />
+            </div>
+
             {/* Name & Company */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
@@ -145,40 +161,10 @@ export default function SubscriptionForm() {
               />
             </div>
 
-            {/* Phone + Messaging App */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div className="sm:col-span-2">
-                <label htmlFor="sub-phone" className={labelClasses}>
-                  Phone / Messaging *
-                </label>
-                <input
-                  id="sub-phone"
-                  name="phone"
-                  required
-                  type="tel"
-                  autoComplete="tel"
-                  className={inputClasses}
-                  placeholder="+84 xxx xxx xxxx"
-                />
-              </div>
-              <div>
-                <label htmlFor="sub-app" className={labelClasses}>
-                  App *
-                </label>
-                <input
-                  id="sub-app"
-                  name="messagingApp"
-                  required
-                  className={inputClasses}
-                  placeholder="e.g. Zalo, WhatsApp"
-                />
-              </div>
-            </div>
-
-            {/* Polymer Grades */}
+            {/* Polymer Grades — optional, reduces friction */}
             <fieldset>
               <legend className={labelClasses}>
-                Primary Polymer Grades *
+                Polymer Grades of Interest (Optional)
               </legend>
               <div className="flex flex-wrap gap-2" role="group" aria-label="Select polymer grades">
                 {polymerGrades.map((grade) => (
@@ -199,32 +185,32 @@ export default function SubscriptionForm() {
               </div>
             </fieldset>
 
-            {/* Volume */}
-            <div>
-              <label htmlFor="sub-volume" className={labelClasses}>
-                Monthly Volume (Optional)
-              </label>
-              <input
-                id="sub-volume"
-                name="volume"
-                className={inputClasses}
-                placeholder="e.g. 50 MT, 100 MT"
-              />
-            </div>
-
-            {/* Email */}
-            <div>
-              <label htmlFor="sub-email" className={labelClasses}>
-                Email (Optional)
-              </label>
-              <input
-                id="sub-email"
-                name="email"
-                type="email"
-                autoComplete="email"
-                className={inputClasses}
-                placeholder="your@email.com"
-              />
+            {/* Phone — optional, captured later in relationship */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="sm:col-span-2">
+                <label htmlFor="sub-phone" className={labelClasses}>
+                  Phone / WhatsApp (Optional)
+                </label>
+                <input
+                  id="sub-phone"
+                  name="phone"
+                  type="tel"
+                  autoComplete="tel"
+                  className={inputClasses}
+                  placeholder="+84 xxx xxx xxxx"
+                />
+              </div>
+              <div>
+                <label htmlFor="sub-app" className={labelClasses}>
+                  Messaging App
+                </label>
+                <input
+                  id="sub-app"
+                  name="messagingApp"
+                  className={inputClasses}
+                  placeholder="e.g. Zalo"
+                />
+              </div>
             </div>
 
             {/* Submit */}
@@ -239,8 +225,12 @@ export default function SubscriptionForm() {
               disabled={submitting}
               className="w-full bg-gold text-navy-deep font-semibold text-sm tracking-wider py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              {submitting ? "Submitting..." : "Subscribe to Morning Terminal"}
+              {submitting ? "Submitting..." : "Subscribe — Free"}
             </button>
+
+            <p className="text-center text-xs text-muted font-sans">
+              No credit card. Unsubscribe anytime.
+            </p>
           </form>
         </RevealDiv>
       </div>

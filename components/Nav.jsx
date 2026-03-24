@@ -57,7 +57,7 @@ export default function Nav() {
             href="/terminal#subscribe"
             className="bg-gold text-navy-deep text-xs font-semibold tracking-wider px-5 py-2.5 rounded-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-px shadow-[0_2px_12px_rgba(212,168,67,0.25)]"
           >
-            SUBSCRIBE TO TERMINAL
+            FREE WEEKLY PRICING
           </Link>
         </div>
 
@@ -104,7 +104,7 @@ export default function Nav() {
               onClick={() => setMobileOpen(false)}
               className="bg-gold text-navy-deep text-xs font-semibold tracking-wider px-5 py-3 rounded-lg text-center mt-2"
             >
-              SUBSCRIBE TO TERMINAL
+              FREE WEEKLY PRICING
             </Link>
           </div>
         </div>

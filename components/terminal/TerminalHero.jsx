@@ -1,3 +1,4 @@
+import Link from "next/link";
 import RevealDiv from "@/components/RevealDiv";
 
 export default function TerminalHero() {
@@ -21,10 +22,16 @@ export default function TerminalHero() {
           <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-[800px]">
             The Morning Terminal
           </h1>
-          <p className="font-sans text-lg text-body-text leading-relaxed max-w-[640px]">
+          <p className="font-sans text-lg text-body-text leading-relaxed max-w-[640px] mb-8">
             Weekly polymer market signals, pricing context, and timing guidance
             delivered to your phone. Free for distributors.
           </p>
+          <Link
+            href="#subscribe"
+            className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-sm tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
+          >
+            Subscribe — Free
+          </Link>
         </RevealDiv>
       </div>
     </section>
