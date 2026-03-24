@@ -2,13 +2,10 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
-  { label: "Syndicate", href: "/syndicate", highlight: false },
-  { label: "Advanced Materials", href: "/materials", highlight: false },
   { label: "Morning Terminal", href: "/terminal", highlight: true },
-  { label: "About", href: "/about", highlight: false },
-  { label: "Contact", href: "/contact", highlight: false },
 ];
 
 export default function Nav() {
@@ -31,13 +28,15 @@ export default function Nav() {
     >
       <div className="max-w-[1200px] mx-auto flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5">
-          <div className="w-8 h-8 bg-gradient-to-br from-teal to-teal-light rounded flex items-center justify-center text-white font-serif text-base font-extrabold">
-            K
-          </div>
-          <span className="font-serif text-lg font-bold text-white tracking-wide">
-            KANTOR MATERIALS
-          </span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/kantor-logo.png"
+            alt="Kantor Materials"
+            width={220}
+            height={40}
+            className="h-8 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
