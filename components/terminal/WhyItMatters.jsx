@@ -2,7 +2,7 @@ import RevealDiv from "@/components/RevealDiv";
 
 export default function WhyItMatters() {
   return (
-    <section className="bg-navy-deep py-16 lg:py-20 px-6 lg:px-10 border-t border-white/[0.06]">
+    <section className="bg-navy py-16 lg:py-20 px-6 lg:px-10">
       <div className="max-w-[800px] mx-auto">
         <RevealDiv>
           <div className="border-l-[3px] border-teal pl-6 lg:pl-8">

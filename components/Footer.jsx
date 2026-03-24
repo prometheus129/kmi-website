@@ -31,7 +31,7 @@ const columns = [
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-deep pt-16 pb-10 px-6 lg:px-10 border-t border-gold/10">
+    <footer className="bg-ticker-bg pt-16 pb-10 px-6 lg:px-10 border-t border-gold/10">
       <div className="max-w-[1280px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand Column */}

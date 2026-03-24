@@ -9,7 +9,7 @@ const stats = [
 
 export default function StatsBar() {
   return (
-    <section className="bg-gradient-to-br from-navy-deep to-navy py-16 px-6 lg:px-10 relative overflow-hidden">
+    <section className="bg-navy py-16 px-6 lg:px-10 relative overflow-hidden">
       {/* Vertical line pattern */}
       <div
         className="absolute inset-0"

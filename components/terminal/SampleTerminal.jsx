@@ -11,7 +11,7 @@ const rows = [
 
 export default function SampleTerminal() {
   return (
-    <section className="bg-navy-deep py-20 lg:py-[90px] px-6 lg:px-10">
+    <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10">
       <div className="max-w-[700px] mx-auto">
         <RevealDiv>
           <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4 text-center">

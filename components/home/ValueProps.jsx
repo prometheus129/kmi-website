@@ -29,8 +29,18 @@ const accentColors = {
 
 export default function ValueProps() {
   return (
-    <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.06]">
-      <div className="max-w-[1200px] mx-auto">
+    <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
+      {/* Subtle grid texture */}
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(46,139,139,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(46,139,139,0.03) 1px, transparent 1px)",
+          backgroundSize: "60px 60px",
+        }}
+      />
+
+      <div className="max-w-[1200px] mx-auto relative z-10">
         <RevealDiv>
           <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
             HOW WE CREATE VALUE

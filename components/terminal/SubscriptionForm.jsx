@@ -60,7 +60,7 @@ export default function SubscriptionForm() {
 
   if (submitted) {
     return (
-      <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.06]">
+      <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 ">
         <div className="max-w-[600px] mx-auto text-center">
           <div className="w-12 h-12 bg-teal/10 border border-teal/30 rounded-lg flex items-center justify-center mx-auto mb-5">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -87,7 +87,7 @@ export default function SubscriptionForm() {
   }
 
   return (
-    <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.06]" id="subscribe">
+    <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 " id="subscribe">
       <div className="max-w-[640px] mx-auto">
         <RevealDiv>
           <div className="text-center mb-10">

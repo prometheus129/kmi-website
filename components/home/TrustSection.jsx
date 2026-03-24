@@ -4,7 +4,7 @@ const certifications = ["UL LISTED", "ISO 9001", "GRS CERTIFIED", "REACH", "RoHS
 
 export default function TrustSection() {
   return (
-    <section className="bg-navy py-20 px-6 lg:px-10 border-t border-white/[0.06]">
+    <section className="bg-navy py-20 px-6 lg:px-10">
       <div className="max-w-[1200px] mx-auto">
         <RevealDiv>
           <div className="text-center mb-10">
