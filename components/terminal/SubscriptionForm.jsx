@@ -37,6 +37,8 @@ const labelClasses =
 
 export default function SubscriptionForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(null);
   const [selectedGrades, setSelectedGrades] = useState([]);
 
   function toggleGrade(grade) {
@@ -49,12 +51,19 @@ export default function SubscriptionForm() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    setSubmitting(true);
+    setError(null);
+
     const formData = new FormData(e.target);
     formData.set("grades", selectedGrades.join(", "));
 
     const result = await submitForm(FORM_ENDPOINTS.subscription, formData);
+    setSubmitting(false);
+
     if (result.ok) {
       setSubmitted(true);
+    } else {
+      setError(result.error);
     }
   }
 
@@ -245,11 +254,18 @@ export default function SubscriptionForm() {
             </div>
 
             {/* Submit */}
+            {error && (
+              <div className="p-4 rounded-lg bg-ticker-red/[0.08] border border-ticker-red/20 text-sm text-body-text">
+                {error}
+              </div>
+            )}
+
             <button
               type="submit"
-              className="w-full bg-gold text-navy-deep font-semibold text-sm tracking-wider py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
+              disabled={submitting}
+              className="w-full bg-gold text-navy-deep font-semibold text-sm tracking-wider py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              Subscribe to Morning Terminal
+              {submitting ? "Submitting..." : "Subscribe to Morning Terminal"}
             </button>
           </form>
         </RevealDiv>
