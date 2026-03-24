@@ -6,16 +6,18 @@ export default function LaneCards() {
     <section className="bg-navy-deep py-20 lg:py-[90px] px-6 lg:px-10">
       <div className="max-w-[900px] mx-auto">
         <RevealDiv>
-          <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
-            BEYOND INTELLIGENCE
+          <div className="text-center mb-12">
+            <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
+              BEYOND INTELLIGENCE
+            </div>
+            <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-4 leading-tight">
+              When You&apos;re Ready to Buy
+            </h2>
+            <p className="font-sans text-[15px] text-body-text leading-relaxed max-w-[600px] mx-auto">
+              Morning Terminal subscribers get priority access to Kantor&apos;s
+              procurement infrastructure. Two product lanes, one sourcing desk.
+            </p>
           </div>
-          <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-4 leading-tight">
-            When You&apos;re Ready to Buy
-          </h2>
-          <p className="font-sans text-[15px] text-body-text leading-relaxed max-w-[600px] mb-12">
-            Morning Terminal subscribers get priority access to Kantor&apos;s
-            procurement infrastructure. Two product lanes, one sourcing desk.
-          </p>
         </RevealDiv>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
