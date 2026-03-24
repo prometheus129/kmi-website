@@ -77,18 +77,15 @@ export default function Footer() {
             © 2026 Kantor Materials International Limited. All rights reserved.
           </span>
           <div className="flex gap-5">
-            {["EN", "VN", "中文"].map((lang, i) => (
-              <span
-                key={lang}
-                className={`font-sans text-[11px] tracking-wide cursor-pointer ${
-                  i === 0
-                    ? "text-gold-light font-semibold"
-                    : "text-subtle"
-                }`}
-              >
-                {lang}
-              </span>
-            ))}
+            <span className="font-sans text-[11px] tracking-wide text-gold-light font-semibold">
+              EN
+            </span>
+            <Link
+              href="/vi/insights"
+              className="font-sans text-[11px] tracking-wide text-subtle hover:text-cream transition-colors duration-200"
+            >
+              VN
+            </Link>
           </div>
         </div>
       </div>

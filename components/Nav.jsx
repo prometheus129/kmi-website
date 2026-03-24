@@ -7,6 +7,7 @@ import Image from "next/image";
 const navLinks = [
   { label: "Insights", href: "/insights" },
   { label: "Morning Terminal", href: "/terminal" },
+  { label: "About", href: "/about" },
 ];
 
 export default function Nav() {

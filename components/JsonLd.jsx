@@ -20,7 +20,7 @@ export const organizationSchema = {
   name: "Kantor Materials International",
   alternateName: "KMI",
   url: "https://kantor-m.com",
-  logo: "https://kantor-m.com/icon.svg",
+  logo: "https://kantor-m.com/kantor-icon.png",
   description:
     "Discretionary polymer procurement platform aggregating cross-buyer demand for China-origin industrial polymers. Serving mid-tier distributors across emerging markets.",
   foundingDate: "2026",
@@ -96,7 +96,7 @@ export function buildArticleSchema({ title, description, date, slug, author, loc
       url: "https://kantor-m.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://kantor-m.com/icon.svg",
+        url: "https://kantor-m.com/kantor-icon.png",
       },
     },
     inLanguage: locale === "vi" ? "vi" : "en",
