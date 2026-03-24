@@ -30,11 +30,11 @@ export default function Nav() {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/kantor-logo.png"
+            src="/kantor-logo-transparent.png"
             alt="Kantor Materials"
-            width={220}
-            height={40}
-            className="h-8 w-auto"
+            width={200}
+            height={36}
+            className="h-7 w-auto"
             priority
           />
         </Link>
