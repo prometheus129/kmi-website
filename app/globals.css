@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  /* KMI Color Palette */
+  --color-navy: #1B2A4A;
+  --color-navy-deep: #111D35;
+  --color-slate: #3D4F5F;
+  --color-teal: #2E8B8B;
+  --color-teal-light: #3AADAD;
+  --color-gold: #D4A843;
+  --color-gold-light: #E8C97A;
+  --color-light-gray: #F2F3F5;
+  --color-mid-gray: #E5E7EB;
+  --color-dark-text: #1A1A1A;
+  --color-body-text: #94A3B8;
+  --color-ticker-bg: #0A1628;
+  --color-ticker-green: #22C55E;
+  --color-ticker-red: #EF4444;
+  --color-muted: #64748B;
+  --color-subtle: #475569;
+}
+
+/* Ticker scroll animation */
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Selection color */
+::selection {
+  background: rgba(46, 139, 139, 0.27);
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
