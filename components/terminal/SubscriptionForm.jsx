@@ -29,6 +29,12 @@ const polymerGrades = [
 
 const volumeRanges = ["< 30 MT", "30–80 MT", "80–150 MT", "150+ MT"];
 
+const inputClasses =
+  "w-full px-4 py-3 rounded-lg border border-white/[0.1] bg-white/[0.04] font-sans text-sm text-white placeholder:text-muted focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal transition-colors";
+
+const labelClasses =
+  "block font-sans text-[10px] font-bold uppercase tracking-[2px] text-body-text mb-2";
+
 export default function SubscriptionForm() {
   const [submitted, setSubmitted] = useState(false);
   const [selectedGrades, setSelectedGrades] = useState([]);
@@ -44,7 +50,6 @@ export default function SubscriptionForm() {
   async function handleSubmit(e) {
     e.preventDefault();
     const formData = new FormData(e.target);
-    // Append multi-select grades as a single field
     formData.set("grades", selectedGrades.join(", "));
 
     const result = await submitForm(FORM_ENDPOINTS.subscription, formData);
@@ -55,13 +60,23 @@ export default function SubscriptionForm() {
 
   if (submitted) {
     return (
-      <section className="bg-light-gray py-20 lg:py-[90px] px-6 lg:px-10">
+      <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.06]">
         <div className="max-w-[600px] mx-auto text-center">
-          <div className="text-4xl mb-4">✓</div>
-          <h2 className="font-serif text-3xl font-bold text-navy mb-4">
+          <div className="w-12 h-12 bg-teal/10 border border-teal/30 rounded-lg flex items-center justify-center mx-auto mb-5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M5 13l4 4L19 7"
+                stroke="#2E8B8B"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+          <h2 className="font-serif text-3xl font-bold text-white mb-4">
             You&apos;re Subscribed
           </h2>
-          <p className="font-sans text-[15px] text-slate leading-relaxed">
+          <p className="font-sans text-[15px] text-body-text leading-relaxed">
             Your first Morning Terminal arrives next Monday at 7 AM. A member
             of our team may reach out via your selected messaging app to
             confirm your grade preferences.
@@ -72,17 +87,17 @@ export default function SubscriptionForm() {
   }
 
   return (
-    <section className="bg-light-gray py-20 lg:py-[90px] px-6 lg:px-10" id="subscribe">
+    <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.06]" id="subscribe">
       <div className="max-w-[640px] mx-auto">
         <RevealDiv>
           <div className="text-center mb-10">
             <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
               SUBSCRIBE
             </div>
-            <h2 className="font-serif text-3xl lg:text-[36px] font-bold text-navy mb-3">
+            <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-3">
               Get the Morning Terminal
             </h2>
-            <p className="font-sans text-[15px] text-slate">
+            <p className="font-sans text-[15px] text-body-text">
               30 seconds. Free for qualified distributors.
             </p>
           </div>
@@ -93,28 +108,28 @@ export default function SubscriptionForm() {
             {/* Name & Company */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="sub-name" className="block font-sans text-xs font-semibold text-navy mb-1.5 tracking-wide">
-                  FULL NAME *
+                <label htmlFor="sub-name" className={labelClasses}>
+                  Full Name *
                 </label>
                 <input
                   id="sub-name"
                   name="name"
                   required
                   autoComplete="name"
-                  className="w-full px-4 py-3 rounded-md border border-mid-gray bg-white font-sans text-sm text-dark-text focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal transition-colors"
+                  className={inputClasses}
                   placeholder="Your name"
                 />
               </div>
               <div>
-                <label htmlFor="sub-company" className="block font-sans text-xs font-semibold text-navy mb-1.5 tracking-wide">
-                  COMPANY NAME *
+                <label htmlFor="sub-company" className={labelClasses}>
+                  Company Name *
                 </label>
                 <input
                   id="sub-company"
                   name="company"
                   required
                   autoComplete="organization"
-                  className="w-full px-4 py-3 rounded-md border border-mid-gray bg-white font-sans text-sm text-dark-text focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal transition-colors"
+                  className={inputClasses}
                   placeholder="Your company"
                 />
               </div>
@@ -122,15 +137,15 @@ export default function SubscriptionForm() {
 
             {/* Country */}
             <div>
-              <label htmlFor="sub-country" className="block font-sans text-xs font-semibold text-navy mb-1.5 tracking-wide">
-                COUNTRY *
+              <label htmlFor="sub-country" className={labelClasses}>
+                Country *
               </label>
               <select
                 id="sub-country"
                 name="country"
                 required
                 autoComplete="country-name"
-                className="w-full px-4 py-3 rounded-md border border-mid-gray bg-white font-sans text-sm text-dark-text focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal transition-colors"
+                className={inputClasses}
               >
                 <option value="">Select country</option>
                 {countries.map((c) => (
@@ -142,8 +157,8 @@ export default function SubscriptionForm() {
             {/* Phone + Messaging App */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="sm:col-span-2">
-                <label htmlFor="sub-phone" className="block font-sans text-xs font-semibold text-navy mb-1.5 tracking-wide">
-                  PHONE / MESSAGING *
+                <label htmlFor="sub-phone" className={labelClasses}>
+                  Phone / Messaging *
                 </label>
                 <input
                   id="sub-phone"
@@ -151,19 +166,19 @@ export default function SubscriptionForm() {
                   required
                   type="tel"
                   autoComplete="tel"
-                  className="w-full px-4 py-3 rounded-md border border-mid-gray bg-white font-sans text-sm text-dark-text focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal transition-colors"
+                  className={inputClasses}
                   placeholder="+84 xxx xxx xxxx"
                 />
               </div>
               <div>
-                <label htmlFor="sub-app" className="block font-sans text-xs font-semibold text-navy mb-1.5 tracking-wide">
-                  APP *
+                <label htmlFor="sub-app" className={labelClasses}>
+                  App *
                 </label>
                 <select
                   id="sub-app"
                   name="messagingApp"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-mid-gray bg-white font-sans text-sm text-dark-text focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal transition-colors"
+                  className={inputClasses}
                 >
                   <option value="">Select</option>
                   {messagingApps.map((app) => (
@@ -175,8 +190,8 @@ export default function SubscriptionForm() {
 
             {/* Polymer Grades */}
             <fieldset>
-              <legend className="block font-sans text-xs font-semibold text-navy mb-2 tracking-wide">
-                PRIMARY POLYMER GRADES *
+              <legend className={labelClasses}>
+                Primary Polymer Grades *
               </legend>
               <div className="flex flex-wrap gap-2" role="group" aria-label="Select polymer grades">
                 {polymerGrades.map((grade) => (
@@ -185,10 +200,10 @@ export default function SubscriptionForm() {
                     type="button"
                     onClick={() => toggleGrade(grade)}
                     aria-pressed={selectedGrades.includes(grade)}
-                    className={`px-4 py-2 rounded-md font-sans text-xs font-medium border transition-colors ${
+                    className={`px-4 py-2 rounded-lg font-sans text-xs font-medium border transition-colors ${
                       selectedGrades.includes(grade)
                         ? "bg-teal text-white border-teal"
-                        : "bg-white text-slate border-mid-gray hover:border-teal/50"
+                        : "bg-white/[0.04] text-body-text border-white/[0.1] hover:border-teal/50"
                     }`}
                   >
                     {grade}
@@ -199,13 +214,13 @@ export default function SubscriptionForm() {
 
             {/* Volume */}
             <div>
-              <label htmlFor="sub-volume" className="block font-sans text-xs font-semibold text-navy mb-1.5 tracking-wide">
-                MONTHLY VOLUME (OPTIONAL)
+              <label htmlFor="sub-volume" className={labelClasses}>
+                Monthly Volume (Optional)
               </label>
               <select
                 id="sub-volume"
                 name="volume"
-                className="w-full px-4 py-3 rounded-md border border-mid-gray bg-white font-sans text-sm text-dark-text focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal transition-colors"
+                className={inputClasses}
               >
                 <option value="">Select range</option>
                 {volumeRanges.map((v) => (
@@ -216,23 +231,23 @@ export default function SubscriptionForm() {
 
             {/* Email */}
             <div>
-              <label htmlFor="sub-email" className="block font-sans text-xs font-semibold text-navy mb-1.5 tracking-wide">
-                EMAIL (OPTIONAL)
+              <label htmlFor="sub-email" className={labelClasses}>
+                Email (Optional)
               </label>
               <input
                 id="sub-email"
                 name="email"
                 type="email"
                 autoComplete="email"
-                className="w-full px-4 py-3 rounded-md border border-mid-gray bg-white font-sans text-sm text-dark-text focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal transition-colors"
-                placeholder="For web dashboard access (coming soon)"
+                className={inputClasses}
+                placeholder="For web dashboard access"
               />
             </div>
 
             {/* Submit */}
             <button
               type="submit"
-              className="w-full bg-gradient-to-br from-teal to-teal-light text-white font-semibold text-sm tracking-wider py-4 rounded-md shadow-[0_4px_20px_rgba(46,139,139,0.3)] hover:-translate-y-px transition-transform duration-200"
+              className="w-full bg-gold text-navy-deep font-semibold text-sm tracking-wider py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
             >
               Subscribe to Morning Terminal
             </button>

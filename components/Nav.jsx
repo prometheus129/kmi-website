@@ -46,7 +46,7 @@ export default function Nav() {
             <Link
               key={link.label}
               href={link.href}
-              className="text-[13px] font-sans font-medium tracking-wide text-[#E8E4D9]/70 transition-colors duration-200 hover:text-gold-light"
+              className="text-[13px] font-sans font-medium tracking-wide text-cream/70 transition-colors duration-200 hover:text-gold-light"
             >
               {link.label}
             </Link>
@@ -66,17 +66,17 @@ export default function Nav() {
           aria-label="Toggle menu"
         >
           <span
-            className={`block w-6 h-0.5 bg-[#E8E4D9] transition-all duration-300 ${
+            className={`block w-6 h-0.5 bg-cream transition-all duration-300 ${
               mobileOpen ? "rotate-45 translate-y-2" : ""
             }`}
           />
           <span
-            className={`block w-6 h-0.5 bg-[#E8E4D9] transition-all duration-300 ${
+            className={`block w-6 h-0.5 bg-cream transition-all duration-300 ${
               mobileOpen ? "opacity-0" : ""
             }`}
           />
           <span
-            className={`block w-6 h-0.5 bg-[#E8E4D9] transition-all duration-300 ${
+            className={`block w-6 h-0.5 bg-cream transition-all duration-300 ${
               mobileOpen ? "-rotate-45 -translate-y-2" : ""
             }`}
           />
@@ -92,7 +92,7 @@ export default function Nav() {
                 key={link.label}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-sm font-sans font-medium px-2 text-[#E8E4D9]/70"
+                className="text-sm font-sans font-medium px-2 text-cream/70"
               >
                 {link.label}
               </Link>

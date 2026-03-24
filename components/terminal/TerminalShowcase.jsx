@@ -17,19 +17,19 @@ const pillars = [
     num: "03",
     title: "Supply Context",
     desc: "Disruption alerts, port congestion updates, producer maintenance schedules, and inventory dynamics. The context that turns a price into a decision.",
-    accent: "border-navy",
+    accent: "border-white/20",
   },
 ];
 
 export default function TerminalShowcase() {
   return (
-    <section className="bg-light-gray py-20 lg:py-[90px] px-6 lg:px-10">
+    <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.06]">
       <div className="max-w-[1200px] mx-auto">
         <RevealDiv>
           <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
             WHAT YOU RECEIVE
           </div>
-          <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-navy mb-12 lg:mb-16 leading-tight">
+          <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-12 lg:mb-16 leading-tight">
             Three Pillars of Market Intelligence
           </h2>
         </RevealDiv>
@@ -41,10 +41,10 @@ export default function TerminalShowcase() {
                 <div className="font-mono text-xs text-muted mb-2">
                   {p.num}
                 </div>
-                <h3 className="font-serif text-xl font-bold text-navy mb-3">
+                <h3 className="font-serif text-xl font-bold text-white mb-3">
                   {p.title}
                 </h3>
-                <p className="font-sans text-sm text-slate leading-relaxed">
+                <p className="font-sans text-sm text-body-text leading-relaxed">
                   {p.desc}
                 </p>
               </div>

@@ -24,9 +24,10 @@
 ### Neutrals
 | Token | Hex | Usage |
 |-------|-----|-------|
-| `light-gray` | `#F2F3F5` | Light section backgrounds (rare — site is predominantly dark) |
-| `mid-gray` | `#E5E7EB` | Borders on light backgrounds |
-| `dark-text` | `#1A1A1A` | Text on light backgrounds |
+| `cream` | `#E8E4D9` | Logo-derived neutral. Nav links, footer hovers, hamburger lines |
+| `light-gray` | `#F2F3F5` | DEPRECATED for section backgrounds. Use only for form input fields if needed |
+| `mid-gray` | `#E5E7EB` | Borders on light backgrounds (rare) |
+| `dark-text` | `#1A1A1A` | Text on light backgrounds (rare) |
 | `body-text` | `#94A3B8` | Body copy on dark backgrounds |
 | `muted` | `#64748B` | Secondary text, captions |
 | `subtle` | `#475569` | Tertiary text, metadata |
@@ -40,10 +41,11 @@
 
 ### Rules
 - **No pure black (#000000).** Darkest color is `navy-deep` (#111D35).
-- **No pure white (#FFFFFF) as background.** Use `light-gray` (#F2F3F5) for light sections.
+- **No light section backgrounds.** The site is fully dark. Use depth variation (navy, navy-deep, `#0F1D2F`) for visual rhythm. `light-gray` is deprecated for section backgrounds.
 - **White text (#FFFFFF or near-white) only on dark backgrounds.**
 - **Body text on dark backgrounds is always `body-text` (#94A3B8).** Never gray-on-teal or gray-on-gold.
-- **Teal = Lane 1 (commodity). Gold = Lane 2 (engineering).** This mapping is consistent everywhere.
+- **CTA hierarchy:** Gold (`#D4A843`) = primary conversion CTAs (subscribe, sign up). Teal (`#2E8B8B`) = functional/secondary actions (form focus, inline links, Lane 1 accent).
+- **Teal = Lane 1 (commodity). Gold = Lane 2 (engineering) AND primary CTA.** Gold serves double duty as both Lane 2 accent and the site's primary action color.
 - **Selection color:** `rgba(46, 139, 139, 0.27)` with white text.
 
 ## Typography
@@ -105,9 +107,11 @@
 - Position: top of page, above nav.
 
 ### Navigation
-- Transparent over hero, becoming `navy-deep` on scroll.
-- DM Sans 500 for nav links. White text, teal on hover.
-- Logo: text-based "KANTOR MATERIALS" in tracked uppercase.
+- `navy-deep/95` backdrop-blur, becoming `navy-deep/98` on scroll with `border-gold/10`.
+- DM Sans 500 for nav links. Cream text at 70% opacity, gold-light on hover.
+- Logo: `kantor-logo-transparent.png` at h-16 (64px). Nav height h-24 (96px).
+- CTA: Solid gold background, navy-deep text. No gradient.
+- Section depth rhythm (no light/dark alternation): ticker-bg → navy-deep → navy gradient → navy → navy-deep, etc.
 
 ### Dividers & Borders
 - Subtle: `border-white/[0.06]` to `border-white/[0.10]` on dark backgrounds.

@@ -78,7 +78,7 @@ export default function HeroSection() {
           <div className="text-xs tracking-[4px] text-teal font-sans font-semibold mb-6">
             POLYMER PROCUREMENT INFRASTRUCTURE
           </div>
-          <h1 className="font-serif text-[42px] md:text-5xl lg:text-7xl font-bold text-white leading-[1.05] mb-6 max-w-[700px]">
+          <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-[1.05] mb-6 max-w-[700px]">
             Global Polymer
             <br />
             <span className="text-teal-light">Infrastructure.</span>

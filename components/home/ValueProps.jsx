@@ -11,7 +11,7 @@ const props = [
     num: "02",
     title: "Best-Execution Procurement",
     text: "Kantor Materials evaluates 600+ merchants on every order. You see one price — the best one available for your grade, quantity, and timeline.",
-    accent: "navy",
+    accent: "white",
   },
   {
     num: "03",
@@ -23,19 +23,19 @@ const props = [
 
 const accentColors = {
   teal: "border-teal",
-  navy: "border-slate",
+  white: "border-white/20",
   gold: "border-gold",
 };
 
 export default function ValueProps() {
   return (
-    <section className="bg-light-gray py-20 lg:py-[90px] px-6 lg:px-10">
+    <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.06]">
       <div className="max-w-[1200px] mx-auto">
         <RevealDiv>
           <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
             HOW WE CREATE VALUE
           </div>
-          <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-navy mb-12 lg:mb-16 leading-tight">
+          <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-12 lg:mb-16 leading-tight">
             Intelligence. Execution. Economics.
           </h2>
         </RevealDiv>
@@ -48,10 +48,10 @@ export default function ValueProps() {
               <div className="font-mono text-xs text-muted mb-3">
                 {props[0].num}
               </div>
-              <h3 className="font-serif text-[26px] lg:text-[30px] font-bold text-navy mb-4 leading-tight">
+              <h3 className="font-serif text-xl lg:text-2xl font-bold text-white mb-4 leading-tight">
                 {props[0].title}
               </h3>
-              <p className="font-sans text-[15px] text-slate leading-relaxed">
+              <p className="font-sans text-[15px] text-body-text leading-relaxed">
                 {props[0].text}
               </p>
             </div>
@@ -65,10 +65,10 @@ export default function ValueProps() {
                   <div className="font-mono text-xs text-muted mb-2">
                     {p.num}
                   </div>
-                  <h3 className="font-serif text-[22px] font-bold text-navy mb-3">
+                  <h3 className="font-serif text-xl lg:text-2xl font-bold text-white mb-3">
                     {p.title}
                   </h3>
-                  <p className="font-sans text-[14.5px] text-slate leading-relaxed">
+                  <p className="font-sans text-[14.5px] text-body-text leading-relaxed">
                     {p.text}
                   </p>
                 </div>
