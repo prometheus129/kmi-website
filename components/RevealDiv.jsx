@@ -21,7 +21,7 @@ export default function RevealDiv({ delay = 0, children, className = "" }) {
           setTimeout(() => setVisible(true), delay);
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.01 }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
