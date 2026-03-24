@@ -3,50 +3,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-function SplitCard({ lane, title, subtitle, description, cta, href, accent }) {
-  return (
-    <Link
-      href={href}
-      className={`group block rounded-lg p-8 cursor-pointer transition-all duration-350 border
-        bg-gradient-to-br from-white/5 to-white/[0.01]
-        hover:from-white/[0.08] hover:to-white/[0.03]
-        hover:-translate-y-[3px]
-        ${
-          accent === "teal"
-            ? "border-white/[0.08] hover:border-teal/40 hover:shadow-[0_12px_40px_rgba(0,0,0,0.3),0_0_0_1px_rgba(46,139,139,0.13)]"
-            : "border-white/[0.08] hover:border-gold/40 hover:shadow-[0_12px_40px_rgba(0,0,0,0.3),0_0_0_1px_rgba(212,168,67,0.13)]"
-        }`}
-    >
-      <div
-        className={`text-[10px] tracking-[3px] font-bold font-sans mb-3 ${
-          accent === "teal" ? "text-teal" : "text-gold"
-        }`}
-      >
-        {lane}
-      </div>
-      <h3 className="font-serif text-[26px] font-bold text-white mb-1">
-        {title}
-      </h3>
-      <div
-        className={`text-[13px] font-medium font-sans mb-4 ${
-          accent === "teal" ? "text-teal" : "text-gold"
-        }`}
-      >
-        {subtitle}
-      </div>
-      <p className="text-sm text-body-text leading-relaxed font-sans mb-5">
-        {description}
-      </p>
-      <span className="text-[13px] text-white font-semibold font-sans inline-flex items-center gap-1.5 tracking-wide">
-        {cta}{" "}
-        <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">
-          →
-        </span>
-      </span>
-    </Link>
-  );
-}
-
 export default function HeroSection() {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
@@ -67,7 +23,7 @@ export default function HeroSection() {
       {/* Gradient orb */}
       <div className="absolute -top-[200px] -right-[100px] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(46,139,139,0.08)_0%,transparent_70%)] rounded-full" />
 
-      <div className="max-w-[1200px] mx-auto relative z-10">
+      <div className="max-w-[900px] mx-auto relative z-10 text-center">
         <div
           className="transition-all duration-1000"
           style={{
@@ -76,58 +32,36 @@ export default function HeroSection() {
           }}
         >
           <div className="text-xs tracking-[4px] text-teal font-sans font-semibold mb-6">
-            POLYMER PROCUREMENT INFRASTRUCTURE
+            POLYMER PROCUREMENT INTELLIGENCE
           </div>
-          <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-[1.05] mb-6 max-w-[700px]">
-            Global Polymer
-            <br />
-            <span className="text-teal-light">Infrastructure.</span>
+          <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-[1.05] mb-6">
+            Your trading company shares prices.{" "}
+            <span className="text-teal-light">We share intelligence.</span>
           </h1>
-          <p className="font-sans text-lg text-body-text leading-relaxed max-w-[600px] mb-12">
-            Connecting the world to China&apos;s industrial core. Aggregated
-            commodity procurement and application-specific advanced materials for
-            distributors and manufacturers across emerging markets.
+          <p className="font-sans text-lg text-body-text leading-relaxed max-w-[640px] mx-auto mb-10">
+            Weekly polymer pricing direction, buy-timing signals, and supply
+            disruption alerts — delivered free to distributors across Southeast
+            Asia. Know what the market is doing before you buy.
           </p>
-        </div>
 
-        {/* Split Cards */}
-        <div
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[900px] transition-all duration-1000 delay-300"
-          style={{
-            opacity: loaded ? 1 : 0,
-            transform: loaded ? "translateY(0)" : "translateY(40px)",
-          }}
-        >
-          <SplitCard
-            lane="LANE 1"
-            title="Commodity Polymers"
-            subtitle="PP, PE, PA6, PVC, ABS — China origin"
-            description="Volume-aggregated procurement. Your 50 MT joins a 300 MT order. Best-execution pricing across 600+ merchants."
-            cta="Learn More"
-            href="/syndicate"
-            accent="teal"
-          />
-          <SplitCard
-            lane="LANE 2"
-            title="Engineering Compounds"
-            subtitle="Free specification matching"
-            description="Send us your current material spec. We evaluate whether our UL-certified compounds can match performance at a competitive price."
-            cta="Request Free Evaluation"
-            href="/materials"
-            accent="gold"
-          />
-        </div>
-
-        <div
-          className="mt-10 transition-opacity duration-1000 delay-[800ms]"
-          style={{ opacity: loaded ? 1 : 0 }}
-        >
-          <Link
-            href="/terminal#subscribe"
-            className="text-teal-light text-sm font-sans inline-flex items-center gap-2 tracking-wide hover:underline"
-          >
-            Get free weekly market intelligence →
-          </Link>
+          {/* Primary CTA cluster */}
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
+            <Link
+              href="/terminal#subscribe"
+              className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-sm tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
+            >
+              Get Free Weekly Pricing
+            </Link>
+            <Link
+              href="/terminal"
+              className="inline-flex items-center justify-center border border-white/[0.15] hover:border-teal/40 text-white font-sans font-medium text-sm px-7 py-4 rounded-lg transition-all duration-200 hover:-translate-y-px"
+            >
+              See a Sample Issue
+            </Link>
+          </div>
+          <p className="text-xs text-muted font-sans">
+            Free for polymer distributors and converters. No credit card required.
+          </p>
         </div>
       </div>
     </section>
