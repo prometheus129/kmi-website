@@ -224,9 +224,6 @@ export default function AboutPage() {
                   {m}
                 </span>
               ))}
-              <span className="font-sans text-sm font-medium text-muted bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/[0.06] px-5 py-2.5 rounded-lg">
-                + Emerging Markets
-              </span>
             </div>
           </RevealDiv>
         </div>
