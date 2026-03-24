@@ -2,9 +2,8 @@ import RevealDiv from "@/components/RevealDiv";
 
 const stats = [
   { value: "600+", label: "MERCHANTS EVALUATED" },
-  { value: "1,600+", label: "CHINESE PRODUCERS" },
-  { value: "2", label: "ACTIVE MARKETS" },
-  { value: "7", label: "POLYMER CATEGORIES" },
+  { value: "20,000+", label: "MT ANNUAL CAPACITY" },
+  { value: "2M+", label: "FINISHED GOODS MFG'D" },
 ];
 
 export default function StatsBar() {
@@ -21,12 +20,12 @@ export default function StatsBar() {
       />
 
       <RevealDiv>
-        <div className="max-w-[1200px] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 relative z-10">
           {stats.map((s, i) => (
             <div
               key={i}
               className={`text-center py-2 ${
-                i < 3 ? "lg:border-r lg:border-white/[0.08]" : ""
+                i < 2 ? "sm:border-r sm:border-white/[0.08]" : ""
               }`}
             >
               <div className="font-mono text-4xl lg:text-5xl font-bold text-teal-light leading-none">
