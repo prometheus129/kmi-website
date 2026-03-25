@@ -1,0 +1,101 @@
+{
+  "lastUpdated": "2026-03-25",
+  "source": "Kantor Materials market assessment",
+  "prices": [
+    {
+      "product": "PP Homo",
+      "subtype": {
+        "en": "Yarn / Raffia",
+        "vi": "Sợi / Raffia",
+        "tr": "İplik / Rafya",
+        "id": "Benang / Rafia"
+      },
+      "grades": "T30S / PPH-T03",
+      "cfrRange": [1220, 1350],
+      "direction": "stable",
+      "weekChange": -15,
+      "notes": {
+        "en": "CTO producers holding; naphtha-route supply tightening",
+        "vi": "Nhà sản xuất CTO giữ giá; nguồn nafta thắt chặt",
+        "tr": "CTO üreticileri fiyat tutuyor; nafta kaynaklı arz daralması",
+        "id": "Produsen CTO mempertahankan harga; pasokan jalur nafta menyempit"
+      }
+    },
+    {
+      "product": "LLDPE Film C4",
+      "subtype": {
+        "en": "Packaging film",
+        "vi": "Màng bao bì",
+        "tr": "Ambalaj filmi",
+        "id": "Film kemasan"
+      },
+      "grades": "7042 / DFDA-7042",
+      "cfrRange": [1200, 1310],
+      "direction": "down",
+      "weekChange": -40,
+      "notes": {
+        "en": "Inland CTO producers cutting offers; coastal naphtha producers holding",
+        "vi": "Nhà sản xuất CTO nội địa giảm giá chào; nhà sản xuất nafta ven biển giữ giá",
+        "tr": "İç bölge CTO üreticileri tekliflerini düşürüyor; kıyı nafta üreticileri tutuyor",
+        "id": "Produsen CTO pedalaman menurunkan penawaran; produsen nafta pesisir bertahan"
+      }
+    },
+    {
+      "product": "HDPE Film",
+      "subtype": {
+        "en": "Blow molding / Film",
+        "vi": "Thổi / Màng",
+        "tr": "Şişirme kalıplama / Film",
+        "id": "Blow molding / Film"
+      },
+      "grades": "DGDB-6097 / 7260",
+      "cfrRange": [1210, 1340],
+      "direction": "stable",
+      "weekChange": -10,
+      "notes": {
+        "en": "Limited export availability from Guangxi Petrochemical; Daqing steady",
+        "vi": "Nguồn xuất khẩu hạn chế từ Guangxi Petrochemical; Daqing ổn định",
+        "tr": "Guangxi Petrochemical'dan sınırlı ihracat arzı; Daqing istikrarlı",
+        "id": "Ketersediaan ekspor terbatas dari Guangxi Petrochemical; Daqing stabil"
+      }
+    },
+    {
+      "product": "PVC SG-5",
+      "subtype": {
+        "en": "Suspension grade",
+        "vi": "Huyền phù",
+        "tr": "Süspansiyon",
+        "id": "Suspensi"
+      },
+      "grades": "SG-5 / SG-8",
+      "cfrRange": [870, 980],
+      "direction": "up",
+      "weekChange": 20,
+      "notes": {
+        "en": "Export rebate deadline April 1 lifting FOB offers; carbide-route costs rising",
+        "vi": "Hạn hoàn thuế xuất khẩu ngày 1/4 đẩy giá FOB; chi phí sản xuất quy trình đất đèn tăng",
+        "tr": "1 Nisan ihracat iadesi son tarihi FOB fiyatlarını yükseltiyor; karbür rotası maliyetleri artıyor",
+        "id": "Batas waktu rebate ekspor 1 April mendorong harga FOB naik; biaya jalur karbida meningkat"
+      }
+    },
+    {
+      "product": "PA6",
+      "subtype": {
+        "en": "Fiber / Textile grade",
+        "vi": "Sợi / Dệt",
+        "tr": "Elyaf / Tekstil",
+        "id": "Serat / Tekstil"
+      },
+      "grades": "Chips / Pellets",
+      "cfrRange": [1650, 1850],
+      "direction": "stable",
+      "weekChange": 0,
+      "notes": {
+        "en": "Caprolactam feedstock steady; limited spot availability",
+        "vi": "Nguyên liệu caprolactam ổn định; hàng giao ngay hạn chế",
+        "tr": "Kaprolaktam hammaddesi istikrarlı; sınırlı spot arzı",
+        "id": "Bahan baku kaprolaktam stabil; ketersediaan spot terbatas"
+      }
+    }
+  ]
+}

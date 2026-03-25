@@ -12,6 +12,8 @@ export const metadata = {
   alternates: {
     languages: {
       vi: "/vi/insights",
+      tr: "/tr/insights",
+      id: "/id/insights",
     },
   },
 };

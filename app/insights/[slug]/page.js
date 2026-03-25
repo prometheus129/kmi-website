@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
 import MorningTerminalCTA from "@/components/insights/MorningTerminalCTA";
 import { mdxComponents } from "@/components/insights/MDXComponents";
-import { getArticle, getAllSlugs, formatDate } from "@/lib/insights";
+import { getArticle, getAllSlugs, formatDate, getLocaleLabel, getInsightsPath } from "@/lib/insights";
 import JsonLd, { buildArticleSchema } from "@/components/JsonLd";
 import Link from "next/link";
 
@@ -24,14 +24,12 @@ export async function generateMetadata({ params }) {
     description: article.frontmatter.description,
   };
 
-  // Add hreflang alternates if translation exists
-  if (article.hasTranslation) {
-    meta.alternates = {
-      languages: {
-        en: `/insights/${slug}`,
-        vi: `/vi/insights/${slug}`,
-      },
-    };
+  if (article.translations.length > 0) {
+    const languages = { en: `/insights/${slug}` };
+    for (const loc of article.translations) {
+      languages[loc] = `${getInsightsPath(loc)}/${slug}`;
+    }
+    meta.alternates = { languages };
   }
 
   return meta;
@@ -43,7 +41,7 @@ export default async function InsightArticlePage({ params }) {
 
   if (!article) notFound();
 
-  const { frontmatter, content, hasTranslation } = article;
+  const { frontmatter, content, translations } = article;
 
   return (
     <div className="bg-navy min-h-screen text-white">
@@ -102,11 +100,11 @@ export default async function InsightArticlePage({ params }) {
               </span>
               <span className="text-white/20">|</span>
               <span>{frontmatter.author}</span>
-              {hasTranslation && (
-                <>
+              {translations.length > 0 && translations.map((loc) => (
+                <span key={loc} className="contents">
                   <span className="text-white/20">|</span>
                   <Link
-                    href={`/vi/insights/${slug}`}
+                    href={`${getInsightsPath(loc)}/${slug}`}
                     className="text-teal hover:text-teal-light transition-colors duration-200 inline-flex items-center gap-1.5"
                   >
                     <svg
@@ -129,10 +127,10 @@ export default async function InsightArticlePage({ params }) {
                         strokeWidth="1.2"
                       />
                     </svg>
-                    Tiếng Việt
+                    {getLocaleLabel(loc)}
                   </Link>
-                </>
-              )}
+                </span>
+              ))}
             </div>
           </RevealDiv>
 
