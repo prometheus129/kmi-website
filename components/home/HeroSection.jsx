@@ -53,7 +53,7 @@ export default function HeroSection() {
               Get Free Daily Pricing
             </Link>
             <Link
-              href="/terminal"
+              href="/terminal/three-corridors-down"
               className="inline-flex items-center justify-center border border-white/[0.15] hover:border-teal/40 text-white font-sans font-medium text-sm px-7 py-4 rounded-lg transition-all duration-200 hover:-translate-y-px"
             >
               See a Sample Issue
