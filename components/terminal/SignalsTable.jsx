@@ -6,9 +6,9 @@
 
 const SIGNALS_DATA = {
   "1": [
-    { grade: "LLDPE C4 Film", signal: "HOLD", dots: 3, filled: 2 },
-    { grade: "PP Yarn (raffia)", signal: "HOLD", dots: 3, filled: 2 },
-    { grade: "PP Thin Wall", signal: "HOLD", dots: 3, filled: 2 },
+    { grade: "LLDPE C4 Film", signal: "HOLD", dots: 5, filled: 3 },
+    { grade: "PP Yarn (raffia)", signal: "HOLD", dots: 5, filled: 3 },
+    { grade: "PP Thin Wall", signal: "HOLD", dots: 5, filled: 3 },
     { grade: "PVC SG-5", signal: "BUY", dots: 5, filled: 4 },
   ],
 };
