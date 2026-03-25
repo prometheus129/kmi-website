@@ -1,7 +1,59 @@
 import Link from "next/link";
 
+const STRINGS = {
+  en: {
+    overline: "MORNING TERMINAL",
+    headline: "Daily Procurement Intelligence",
+    description:
+      "China-origin polymer pricing, buy-timing signals, and supply chain alerts — delivered before your market opens. Free for Southeast Asian importers.",
+    button: "Subscribe Free",
+  },
+  vi: {
+    overline: "BẢN TIN MỖI SÁNG",
+    headline: "Thông tin mua hàng hàng ngày",
+    description:
+      "Giá polymer Trung Quốc, tín hiệu thời điểm mua hàng, và cảnh báo chuỗi cung ứng — gửi đến trước khi thị trường mở cửa. Miễn phí cho nhà nhập khẩu Đông Nam Á.",
+    button: "Đăng ký miễn phí",
+  },
+  tr: {
+    overline: "MORNING TERMINAL",
+    headline: "Günlük Tedarik İstihbaratı",
+    description:
+      "Çin menşeli polimer fiyatlandırması, alım zamanlaması sinyalleri ve tedarik zinciri uyarıları — piyasanız açılmadan önce teslim edilir. İthalatçılar için ücretsiz.",
+    button: "Ücretsiz Abone Ol",
+  },
+  id: {
+    overline: "MORNING TERMINAL",
+    headline: "Intelijen Pengadaan Harian",
+    description:
+      "Harga polimer asal Tiongkok, sinyal waktu beli, dan peringatan rantai pasok — dikirim sebelum pasar Anda buka. Gratis untuk importir Asia Tenggara.",
+    button: "Berlangganan Gratis",
+  },
+  es: {
+    overline: "MORNING TERMINAL",
+    headline: "Inteligencia Diaria de Adquisiciones",
+    description:
+      "Precios de polímeros de origen chino, señales de compra y alertas de cadena de suministro — entregados antes de que abra su mercado. Gratis para importadores.",
+    button: "Suscríbase Gratis",
+  },
+  pt: {
+    overline: "MORNING TERMINAL",
+    headline: "Inteligência Diária de Compras",
+    description:
+      "Precificação de polímeros de origem chinesa, sinais de timing de compra e alertas de cadeia de suprimentos — entregues antes da abertura do seu mercado. Grátis para importadores.",
+    button: "Assine Grátis",
+  },
+  th: {
+    overline: "มอร์นิ่ง เทอร์มินอล",
+    headline: "ข้อมูลจัดซื้อประจำวัน",
+    description:
+      "ราคาโพลิเมอร์จากจีน สัญญาณจังหวะการซื้อ และการแจ้งเตือนซัพพลายเชน — ส่งถึงก่อนตลาดเปิด ฟรีสำหรับผู้นำเข้าในเอเชียตะวันออกเฉียงใต้",
+    button: "สมัครฟรี",
+  },
+};
+
 export default function MorningTerminalCTA({ locale = "en" }) {
-  const isVi = locale === "vi";
+  const t = STRINGS[locale] || STRINGS.en;
 
   return (
     <section className="mt-16 border border-teal/20 rounded-lg bg-gradient-to-br from-teal/[0.06] to-teal/[0.02] p-8 lg:p-10">
@@ -9,21 +61,17 @@ export default function MorningTerminalCTA({ locale = "en" }) {
         <div>
           {/* Overline */}
           <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-3 block">
-            {isVi ? "BẢN TIN MỖI SÁNG" : "MORNING TERMINAL"}
+            {t.overline}
           </span>
 
           {/* Headline */}
           <h3 className="font-serif text-2xl lg:text-3xl font-bold text-white mb-2">
-            {isVi
-              ? "Thông tin mua hàng hàng ngày"
-              : "Daily Procurement Intelligence"}
+            {t.headline}
           </h3>
 
           {/* Description */}
           <p className="text-body-text text-sm leading-relaxed max-w-lg">
-            {isVi
-              ? "Giá polymer Trung Quốc, tín hiệu thời điểm mua hàng, và cảnh báo chuỗi cung ứng — gửi đến trước khi thị trường mở cửa. Miễn phí cho nhà nhập khẩu Đông Nam Á."
-              : "China-origin polymer pricing, buy-timing signals, and supply chain alerts — delivered before your market opens. Free for Southeast Asian importers."}
+            {t.description}
           </p>
         </div>
 
@@ -31,7 +79,7 @@ export default function MorningTerminalCTA({ locale = "en" }) {
           href="/terminal#subscribe"
           className="inline-flex items-center justify-center gap-2 bg-teal hover:bg-teal-light text-white font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:-translate-y-px whitespace-nowrap shrink-0"
         >
-          {isVi ? "Đăng ký miễn phí" : "Subscribe Free"}
+          {t.button}
           <svg
             width="16"
             height="16"
