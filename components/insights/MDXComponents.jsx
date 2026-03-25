@@ -2,8 +2,10 @@
  * Custom styled components for MDX rendering.
  * Maps standard HTML elements to design-system-aligned React components.
  */
+import SignalsTable from "@/components/terminal/SignalsTable";
 
 export const mdxComponents = {
+  SignalsTable,
   h2: (props) => (
     <div className="mt-14 mb-6 first:mt-0">
       <h2
