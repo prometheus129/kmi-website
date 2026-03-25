@@ -21,8 +21,11 @@ const columns = [
   {
     title: "REGIONS",
     links: [
-      { label: "Vietnam", href: "/contact" },
-      { label: "Philippines", href: "/contact" },
+      { label: "Vietnam", href: "/vi/insights" },
+      { label: "Philippines", href: "/insights" },
+      { label: "Türkiye", href: "/tr/insights" },
+      { label: "Indonesia", href: "/id/insights" },
+      { label: "América Latina", href: "/es/insights" },
     ],
   },
 ];
@@ -83,6 +86,30 @@ export default function Footer() {
               className="font-sans text-[11px] tracking-wide text-subtle hover:text-cream transition-colors duration-200"
             >
               VN
+            </Link>
+            <Link
+              href="/tr/insights"
+              className="font-sans text-[11px] tracking-wide text-subtle hover:text-cream transition-colors duration-200"
+            >
+              TR
+            </Link>
+            <Link
+              href="/id/insights"
+              className="font-sans text-[11px] tracking-wide text-subtle hover:text-cream transition-colors duration-200"
+            >
+              ID
+            </Link>
+            <Link
+              href="/es/insights"
+              className="font-sans text-[11px] tracking-wide text-subtle hover:text-cream transition-colors duration-200"
+            >
+              ES
+            </Link>
+            <Link
+              href="/pt/insights"
+              className="font-sans text-[11px] tracking-wide text-subtle hover:text-cream transition-colors duration-200"
+            >
+              PT
             </Link>
           </div>
         </div>
