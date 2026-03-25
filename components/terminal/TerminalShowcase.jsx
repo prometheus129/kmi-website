@@ -1,9 +1,8 @@
 import RevealDiv from "@/components/RevealDiv";
+import { t } from "@/lib/terminal-i18n";
 
-const pillars = [
+const pillarStyles = [
   {
-    title: "Pricing Direction",
-    desc: "Kantor indicative pricing for key grades with directional signals — firming, softening, or stable. Know where the market is heading before you commit.",
     accent: "border-teal",
     iconColor: "text-teal",
     iconBg: "bg-teal/10 border-teal/20",
@@ -15,8 +14,6 @@ const pillars = [
     ),
   },
   {
-    title: "Timing Intelligence",
-    desc: "BUY / HOLD / WAIT signals for the next 7–14 days. Your current supplier never says \"wait.\" Kantor Materials does — because our incentive is your outcome, not the transaction.",
     accent: "border-gold",
     iconColor: "text-gold",
     iconBg: "bg-gold/10 border-gold/20",
@@ -28,8 +25,6 @@ const pillars = [
     ),
   },
   {
-    title: "Supply Context",
-    desc: "Disruption alerts, port congestion updates, producer maintenance schedules, and inventory dynamics. The context that turns a price into a decision.",
     accent: "border-white/20",
     iconColor: "text-body-text",
     iconBg: "bg-white/[0.06] border-white/10",
@@ -42,7 +37,8 @@ const pillars = [
   },
 ];
 
-export default function TerminalShowcase() {
+export default function TerminalShowcase({ locale = "en" }) {
+  const text = t(locale).showcase;
   return (
     <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
       {/* Subtle grid texture */}
@@ -57,25 +53,25 @@ export default function TerminalShowcase() {
       <div className="max-w-[1200px] mx-auto relative z-10">
         <RevealDiv>
           <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
-            WHAT YOU RECEIVE
+            {text.label}
           </div>
           <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-12 lg:mb-16 leading-tight">
-            Three Pillars of Market Intelligence
+            {text.title}
           </h2>
         </RevealDiv>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {pillars.map((p, i) => (
+          {text.pillars.map((pillar, i) => (
             <RevealDiv key={i} delay={i * 150}>
-              <div className={`border-l-[3px] ${p.accent} pl-6`}>
-                <div className={`w-10 h-10 rounded-lg border flex items-center justify-center mb-4 ${p.iconBg} ${p.iconColor}`}>
-                  {p.icon}
+              <div className={`border-l-[3px] ${pillarStyles[i].accent} pl-6`}>
+                <div className={`w-10 h-10 rounded-lg border flex items-center justify-center mb-4 ${pillarStyles[i].iconBg} ${pillarStyles[i].iconColor}`}>
+                  {pillarStyles[i].icon}
                 </div>
                 <h3 className="font-serif text-xl font-bold text-white mb-3">
-                  {p.title}
+                  {pillar.title}
                 </h3>
                 <p className="font-sans text-sm text-body-text leading-relaxed">
-                  {p.desc}
+                  {pillar.desc}
                 </p>
               </div>
             </RevealDiv>

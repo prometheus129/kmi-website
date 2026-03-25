@@ -1,20 +1,18 @@
 import RevealDiv from "@/components/RevealDiv";
+import { t } from "@/lib/terminal-i18n";
 
-export default function WhyItMatters() {
+export default function WhyItMatters({ locale = "en" }) {
+  const text = t(locale).whyItMatters;
   return (
     <section className="bg-navy py-16 lg:py-20 px-6 lg:px-10">
       <div className="max-w-[800px] mx-auto">
         <RevealDiv>
           <div className="border-l-[3px] border-teal pl-6 lg:pl-8">
             <h3 className="font-serif text-xl lg:text-2xl font-bold text-white mb-4">
-              Why This Matters
+              {text.title}
             </h3>
             <p className="font-sans text-[15px] text-body-text leading-relaxed">
-              Your current trading company shares prices. Kantor Materials
-              shares intelligence. The difference: a price tells you what the
-              market was. A signal tells you what it&apos;s becoming. Better
-              timing means better margins — and when you&apos;re ready to buy,
-              Kantor Materials is already your most trusted source.
+              {text.body}
             </p>
           </div>
         </RevealDiv>

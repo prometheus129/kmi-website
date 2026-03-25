@@ -27,8 +27,8 @@ function getLocaleFromPath(pathname) {
   return match ? match[1] : "en";
 }
 
-// Pages that have translated versions
-const translatedPages = ["/insights"];
+// Pages that have translated versions (vi and tr only for /terminal)
+const translatedPages = ["/insights", "/terminal"];
 
 function getLocalizedPath(pathname, targetLocale) {
   const currentLocale = getLocaleFromPath(pathname);

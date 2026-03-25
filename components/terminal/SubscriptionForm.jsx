@@ -3,6 +3,7 @@
 import { useState } from "react";
 import RevealDiv from "@/components/RevealDiv";
 import { FORM_ENDPOINTS, submitForm } from "@/lib/forms";
+import { t } from "@/lib/terminal-i18n";
 
 const polymerGrades = [
   "PP",
@@ -21,7 +22,8 @@ const inputClasses =
 const labelClasses =
   "block font-sans text-[10px] font-bold uppercase tracking-[2px] text-body-text mb-2";
 
-export default function SubscriptionForm() {
+export default function SubscriptionForm({ locale = "en" }) {
+  const text = t(locale).form;
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
@@ -42,6 +44,7 @@ export default function SubscriptionForm() {
 
     const formData = new FormData(e.target);
     formData.set("grades", selectedGrades.join(", "));
+    formData.set("locale", locale);
 
     const result = await submitForm(FORM_ENDPOINTS.subscription, formData);
     setSubmitting(false);
@@ -69,12 +72,10 @@ export default function SubscriptionForm() {
             </svg>
           </div>
           <h2 className="font-serif text-3xl font-bold text-white mb-4">
-            You&apos;re Subscribed
+            {text.successTitle}
           </h2>
           <p className="font-sans text-[15px] text-body-text leading-relaxed">
-            Your first Morning Terminal arrives within 24 hours. We&apos;ll
-            reach out to confirm your grade preferences and preferred
-            messaging channel.
+            {text.successBody}
           </p>
         </div>
       </section>
@@ -87,13 +88,13 @@ export default function SubscriptionForm() {
         <RevealDiv>
           <div className="text-center mb-10">
             <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
-              SUBSCRIBE
+              {text.label}
             </div>
             <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-3">
-              Get the Morning Terminal
+              {text.title}
             </h2>
             <p className="font-sans text-[15px] text-body-text">
-              15 seconds. Free for distributors.
+              {text.subtitle}
             </p>
           </div>
         </RevealDiv>
@@ -103,7 +104,7 @@ export default function SubscriptionForm() {
             {/* Email — primary field */}
             <div>
               <label htmlFor="sub-email" className={labelClasses}>
-                Email *
+                {text.email}
               </label>
               <input
                 id="sub-email"
@@ -112,7 +113,7 @@ export default function SubscriptionForm() {
                 required
                 autoComplete="email"
                 className={inputClasses}
-                placeholder="your@email.com"
+                placeholder={text.emailPlaceholder}
               />
             </div>
 
@@ -120,7 +121,7 @@ export default function SubscriptionForm() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="sub-name" className={labelClasses}>
-                  Full Name *
+                  {text.name}
                 </label>
                 <input
                   id="sub-name"
@@ -128,12 +129,12 @@ export default function SubscriptionForm() {
                   required
                   autoComplete="name"
                   className={inputClasses}
-                  placeholder="Your name"
+                  placeholder={text.namePlaceholder}
                 />
               </div>
               <div>
                 <label htmlFor="sub-company" className={labelClasses}>
-                  Company Name *
+                  {text.company}
                 </label>
                 <input
                   id="sub-company"
@@ -141,7 +142,7 @@ export default function SubscriptionForm() {
                   required
                   autoComplete="organization"
                   className={inputClasses}
-                  placeholder="Your company"
+                  placeholder={text.companyPlaceholder}
                 />
               </div>
             </div>
@@ -149,7 +150,7 @@ export default function SubscriptionForm() {
             {/* Country */}
             <div>
               <label htmlFor="sub-country" className={labelClasses}>
-                Country *
+                {text.country}
               </label>
               <input
                 id="sub-country"
@@ -157,14 +158,14 @@ export default function SubscriptionForm() {
                 required
                 autoComplete="country-name"
                 className={inputClasses}
-                placeholder="e.g. Vietnam, Philippines"
+                placeholder={text.countryPlaceholder}
               />
             </div>
 
             {/* Polymer Grades — optional, reduces friction */}
             <fieldset>
               <legend className={labelClasses}>
-                Polymer Grades of Interest (Optional)
+                {text.grades}
               </legend>
               <div className="flex flex-wrap gap-2" role="group" aria-label="Select polymer grades">
                 {polymerGrades.map((grade) => (
@@ -189,7 +190,7 @@ export default function SubscriptionForm() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="sm:col-span-2">
                 <label htmlFor="sub-phone" className={labelClasses}>
-                  Phone / WhatsApp (Optional)
+                  {text.phone}
                 </label>
                 <input
                   id="sub-phone"
@@ -197,18 +198,18 @@ export default function SubscriptionForm() {
                   type="tel"
                   autoComplete="tel"
                   className={inputClasses}
-                  placeholder="+84 xxx xxx xxxx"
+                  placeholder={text.phonePlaceholder}
                 />
               </div>
               <div>
                 <label htmlFor="sub-app" className={labelClasses}>
-                  Messaging App
+                  {text.messagingApp}
                 </label>
                 <input
                   id="sub-app"
                   name="messagingApp"
                   className={inputClasses}
-                  placeholder="e.g. Zalo"
+                  placeholder={text.messagingAppPlaceholder}
                 />
               </div>
             </div>
@@ -225,11 +226,11 @@ export default function SubscriptionForm() {
               disabled={submitting}
               className="w-full bg-gold text-navy-deep font-semibold text-sm tracking-wider py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              {submitting ? "Submitting..." : "Subscribe — Free"}
+              {submitting ? text.submitting : text.cta}
             </button>
 
             <p className="text-center text-xs text-muted font-sans">
-              No credit card. Unsubscribe anytime.
+              {text.footnote}
             </p>
           </form>
         </RevealDiv>

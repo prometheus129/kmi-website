@@ -1,4 +1,5 @@
 import RevealDiv from "@/components/RevealDiv";
+import { t } from "@/lib/terminal-i18n";
 
 const rows = [
   { grade: "PP T30S (Kunlun)", price: "$1,180", dir: "▼", chg: "$10", signal: "HOLD", dirColor: "text-ticker-red", sigColor: "text-gold", sigBg: "bg-gold/10" },
@@ -9,16 +10,17 @@ const rows = [
   { grade: "ABS 750A (Chimei equiv.)", price: "$1,240", dir: "—", chg: "flat", signal: "HOLD", dirColor: "text-muted", sigColor: "text-gold", sigBg: "bg-gold/10" },
 ];
 
-export default function SampleTerminal() {
+export default function SampleTerminal({ locale = "en" }) {
+  const text = t(locale).sample;
   return (
     <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10">
       <div className="max-w-[700px] mx-auto">
         <RevealDiv>
           <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4 text-center">
-            SAMPLE DELIVERY
+            {text.label}
           </div>
           <h2 className="font-serif text-2xl lg:text-3xl font-bold text-white mb-10 text-center">
-            What a Morning Terminal Looks Like
+            {text.title}
           </h2>
         </RevealDiv>
 
@@ -26,22 +28,20 @@ export default function SampleTerminal() {
           <div className="bg-[#0F1D2F] rounded-xl p-6 lg:p-8 border border-white/[0.06]">
             {/* Header */}
             <div className="flex justify-between items-center mb-4">
-              <span className="font-mono text-[10px] text-muted">WEEKLY · SAMPLE</span>
-              <span className="font-mono text-[10px] text-muted">PREVIEW</span>
+              <span className="font-mono text-[10px] text-muted">{text.weeklyLabel}</span>
+              <span className="font-mono text-[10px] text-muted">{text.preview}</span>
             </div>
-            <div className="text-[11px] tracking-widest text-teal font-sans font-bold mb-1">KANTOR TERMINAL</div>
-            <div className="font-serif text-lg font-bold text-white mb-1">Weekly Market Brief</div>
-            <div className="font-sans text-xs text-muted mb-6">Vietnam · Philippines · Indicative Pricing (USD CFR)</div>
+            <div className="text-[11px] tracking-widest text-teal font-sans font-bold mb-1">{text.terminalLabel}</div>
+            <div className="font-serif text-lg font-bold text-white mb-1">{text.weeklyTitle}</div>
+            <div className="font-sans text-xs text-muted mb-6">{text.marketScope}</div>
 
             {/* Market Context */}
             <div className="font-sans text-[13px] text-body-text leading-relaxed mb-6 pb-6 border-b border-white/[0.06]">
-              PE complex firming on reduced Sinopec output and port congestion in Nansha.
-              PP stable with CTO/MTO margins compressing — watch for producer destocking mid-week.
-              PA6 under pressure from weak downstream demand in textile sector.
+              {text.marketContext}
             </div>
 
             {/* Pricing Table */}
-            <div className="text-[9px] tracking-[1.5px] text-muted font-sans mb-3">KANTOR INDICATIVE PRICING</div>
+            <div className="text-[9px] tracking-[1.5px] text-muted font-sans mb-3">{text.pricingLabel}</div>
             {rows.map((row, i) => (
               <div key={i} className={`flex justify-between items-center py-2.5 ${i < rows.length - 1 ? "border-b border-white/[0.04]" : ""}`}>
                 <div>
@@ -59,26 +59,23 @@ export default function SampleTerminal() {
 
             {/* Timing Note */}
             <div className="mt-6 p-4 rounded-lg bg-teal/[0.08] border border-teal/15">
-              <div className="text-[9px] tracking-[1.5px] text-teal font-bold mb-2 font-sans">TIMING NOTE</div>
+              <div className="text-[9px] tracking-[1.5px] text-teal font-bold mb-2 font-sans">{text.timingLabel}</div>
               <div className="text-[12px] text-body-text leading-relaxed font-sans">
-                HDPE softening expected to reverse mid-week as Sinopec adjusts output.
-                Consider front-loading PE orders before Wednesday. PP window remains stable through Friday —
-                no urgency on polypropylene this week.
+                {text.timingText}
               </div>
             </div>
 
             {/* Supply Alert */}
             <div className="mt-4 p-4 rounded-lg bg-ticker-red/[0.06] border border-ticker-red/15">
-              <div className="text-[9px] tracking-[1.5px] text-ticker-red font-bold mb-2 font-sans">SUPPLY ALERT</div>
+              <div className="text-[9px] tracking-[1.5px] text-ticker-red font-bold mb-2 font-sans">{text.supplyLabel}</div>
               <div className="text-[12px] text-body-text leading-relaxed font-sans">
-                Nansha port congestion adding 2-3 day delays on HDPE/LLDPE shipments ex-South China.
-                Ningbo and Shanghai routes unaffected. Factor into delivery timing if ordering PE this week.
+                {text.supplyText}
               </div>
             </div>
           </div>
 
           <p className="text-center font-sans text-xs text-muted mt-4 italic">
-            Illustrative content. Actual Terminal reflects live market conditions.
+            {text.disclaimer}
           </p>
         </RevealDiv>
       </div>

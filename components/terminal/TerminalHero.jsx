@@ -1,7 +1,9 @@
 import Link from "next/link";
 import RevealDiv from "@/components/RevealDiv";
+import { t } from "@/lib/terminal-i18n";
 
-export default function TerminalHero() {
+export default function TerminalHero({ locale = "en" }) {
+  const text = t(locale).hero;
   return (
     <section className="relative overflow-hidden py-20 lg:py-[100px] px-6 lg:px-10 bg-gradient-to-br from-navy-deep via-navy to-[#1a3355]">
       {/* Grid overlay */}
@@ -17,20 +19,19 @@ export default function TerminalHero() {
       <div className="max-w-[1200px] mx-auto relative z-10">
         <RevealDiv>
           <div className="text-xs tracking-[4px] text-teal font-sans font-semibold mb-6">
-            MARKET INTELLIGENCE PRODUCT
+            {text.label}
           </div>
           <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-[800px]">
-            The Morning Terminal
+            {text.title}
           </h1>
           <p className="font-sans text-lg text-body-text leading-relaxed max-w-[640px] mb-8">
-            Daily polymer pricing, market signals, and timing guidance
-            delivered to your phone. Free for distributors.
+            {text.subtitle}
           </p>
           <Link
             href="#subscribe"
             className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-sm tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
           >
-            Subscribe — Free
+            {text.cta}
           </Link>
         </RevealDiv>
       </div>

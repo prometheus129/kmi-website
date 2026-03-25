@@ -1,10 +1,4 @@
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
-import TerminalHero from "@/components/terminal/TerminalHero";
-import TerminalShowcase from "@/components/terminal/TerminalShowcase";
-import WhyItMatters from "@/components/terminal/WhyItMatters";
-import SampleTerminal from "@/components/terminal/SampleTerminal";
-import SubscriptionForm from "@/components/terminal/SubscriptionForm";
+import TerminalPageContent from "@/components/terminal/TerminalPageContent";
 
 export const metadata = {
   title: "Morning Terminal — Kantor Materials International",
@@ -13,15 +7,5 @@ export const metadata = {
 };
 
 export default function TerminalPage() {
-  return (
-    <div className="min-h-screen bg-navy">
-      <Nav />
-      <TerminalHero />
-      <TerminalShowcase />
-      <WhyItMatters />
-      <SampleTerminal />
-      <SubscriptionForm />
-      <Footer />
-    </div>
-  );
+  return <TerminalPageContent locale="en" />;
 }
