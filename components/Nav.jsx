@@ -27,6 +27,9 @@ function getLocaleFromPath(pathname) {
   return match ? match[1] : "en";
 }
 
+// Pages that have translated versions
+const translatedPages = ["/insights"];
+
 function getLocalizedPath(pathname, targetLocale) {
   const currentLocale = getLocaleFromPath(pathname);
   // Strip current locale prefix
@@ -34,9 +37,15 @@ function getLocalizedPath(pathname, targetLocale) {
   if (currentLocale !== "en") {
     basePath = pathname.replace(new RegExp(`^/${currentLocale}`), "") || "/";
   }
-  // Add target locale prefix
-  if (targetLocale === "en") return basePath;
-  return `/${targetLocale}${basePath === "/" ? "/insights" : basePath}`;
+  if (targetLocale === "en") {
+    // For English, go to the base path (always exists)
+    return basePath || "/";
+  }
+  // For non-English, only link to pages that have translations
+  const hasTranslation = translatedPages.some(
+    (p) => basePath === p || basePath.startsWith(p + "/")
+  );
+  return `/${targetLocale}${hasTranslation ? basePath : "/insights"}`;
 }
 
 export default function Nav() {
