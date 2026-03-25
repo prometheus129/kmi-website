@@ -5,10 +5,13 @@
 
 export const mdxComponents = {
   h2: (props) => (
-    <h2
-      className="font-serif text-2xl lg:text-3xl font-bold text-white mt-12 mb-4 first:mt-0"
-      {...props}
-    />
+    <div className="mt-14 mb-6 first:mt-0">
+      <h2
+        className="font-serif text-2xl lg:text-3xl font-bold text-white mb-2"
+        {...props}
+      />
+      <div className="w-full h-[2px] bg-gradient-to-r from-gold/80 via-gold/40 to-transparent" />
+    </div>
   ),
   h3: (props) => (
     <h3
