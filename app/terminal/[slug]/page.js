@@ -107,7 +107,7 @@ export default async function TerminalIssuePage({ params }) {
               Morning Terminal delivers weekly market intelligence to polymer distributors and converters.
             </p>
             <Link
-              href="/terminal"
+              href="/terminal#subscribe"
               className="inline-block bg-gold text-navy px-6 py-3 rounded font-sans font-semibold text-sm hover:bg-gold/90 transition-colors duration-200"
             >
               Subscribe — Free
