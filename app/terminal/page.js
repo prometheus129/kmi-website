@@ -5,6 +5,7 @@ import TerminalShowcase from "@/components/terminal/TerminalShowcase";
 import WhyItMatters from "@/components/terminal/WhyItMatters";
 import SampleTerminal from "@/components/terminal/SampleTerminal";
 import SubscriptionForm from "@/components/terminal/SubscriptionForm";
+import RecentIssues from "@/components/terminal/RecentIssues";
 
 export const metadata = {
   title: "Morning Terminal — Kantor Materials International",
@@ -21,6 +22,7 @@ export default function TerminalPage() {
       <WhyItMatters />
       <SampleTerminal />
       <SubscriptionForm />
+      <RecentIssues />
       <Footer />
     </div>
   );
