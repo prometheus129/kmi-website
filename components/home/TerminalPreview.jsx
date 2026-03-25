@@ -1,6 +1,48 @@
 import Link from "next/link";
 import RevealDiv from "@/components/RevealDiv";
-import { getAllIssues, formatDate } from "@/lib/terminal";
+
+const pricingRows = [
+  {
+    grade: "PP T30S",
+    price: "$1,180",
+    dir: "▼",
+    chg: "$10",
+    signal: "HOLD",
+    dirColor: "text-ticker-red",
+    sigColor: "text-gold",
+    sigBg: "bg-gold/10",
+  },
+  {
+    grade: "HDPE 5000S",
+    price: "$1,210",
+    dir: "▲",
+    chg: "$8",
+    signal: "BUY",
+    dirColor: "text-ticker-green",
+    sigColor: "text-ticker-green",
+    sigBg: "bg-ticker-green/10",
+  },
+  {
+    grade: "LLDPE 7042",
+    price: "$1,245",
+    dir: "▲",
+    chg: "$5",
+    signal: "HOLD",
+    dirColor: "text-ticker-green",
+    sigColor: "text-gold",
+    sigBg: "bg-gold/10",
+  },
+  {
+    grade: "PA6 Chips",
+    price: "$1,680",
+    dir: "▼",
+    chg: "$15",
+    signal: "WAIT",
+    dirColor: "text-ticker-red",
+    sigColor: "text-ticker-red",
+    sigBg: "bg-ticker-red/10",
+  },
+];
 
 const features = [
   {
@@ -21,9 +63,6 @@ const features = [
 ];
 
 export default function TerminalPreview() {
-  const issues = getAllIssues();
-  const latestIssue = issues[0] || null;
-
   return (
     <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
       {/* Subtle grid texture */}
@@ -77,71 +116,67 @@ export default function TerminalPreview() {
           </Link>
         </RevealDiv>
 
-        {/* Right: Latest Issue Preview Card */}
+        {/* Right: Flat Terminal Card */}
         <RevealDiv delay={200}>
-          {latestIssue ? (
-            <Link
-              href={`/terminal/${latestIssue.slug}`}
-              className="block group"
-            >
-              <div className="bg-[#0F1D2F] rounded-xl p-6 lg:p-8 border border-white/[0.06] shadow-[0_30px_80px_rgba(0,0,0,0.4)] transition-all duration-300 group-hover:border-teal/20 group-hover:shadow-[0_30px_80px_rgba(46,139,139,0.08)]">
-                {/* Header */}
-                <div className="flex justify-between items-center mb-4">
-                  <span className="font-mono text-[10px] tracking-wider text-teal font-bold bg-teal/10 px-2 py-0.5 rounded">
-                    ISSUE #{latestIssue.frontmatter.issueNumber}
-                  </span>
-                  <span className="font-mono text-[10px] text-muted">
-                    {formatDate(latestIssue.frontmatter.date)}
-                  </span>
-                </div>
-
-                <div className="text-[11px] tracking-widest text-teal font-sans font-bold mb-3">
-                  KANTOR MORNING TERMINAL
-                </div>
-
-                <h3 className="font-serif text-xl lg:text-2xl font-bold text-white mb-3 leading-tight group-hover:text-teal-light transition-colors duration-200">
-                  {latestIssue.frontmatter.title}
-                </h3>
-
-                <p className="font-sans text-[13px] text-body-text leading-relaxed mb-5 line-clamp-3">
-                  {latestIssue.frontmatter.description}
-                </p>
-
-                <div className="pt-4 border-t border-white/[0.06] flex justify-between items-center">
-                  <span className="font-sans text-[11px] text-muted">
-                    {latestIssue.frontmatter.author}
-                  </span>
-                  <span className="font-sans text-sm font-semibold text-gold group-hover:translate-x-1 transition-transform duration-200">
-                    Read the full issue →
-                  </span>
-                </div>
-              </div>
-            </Link>
-          ) : (
-            /* Fallback: subscribe CTA if no issues published yet */
-            <div className="bg-[#0F1D2F] rounded-xl p-6 lg:p-8 border border-white/[0.06] shadow-[0_30px_80px_rgba(0,0,0,0.4)]">
-              <div className="text-[11px] tracking-widest text-teal font-sans font-bold mb-3">
-                KANTOR MORNING TERMINAL
-              </div>
-              <h3 className="font-serif text-xl font-bold text-white mb-3">
-                Coming Soon
-              </h3>
-              <p className="font-sans text-[13px] text-body-text leading-relaxed mb-5">
-                Daily polymer market intelligence for distributors. Subscribe to
-                get Issue #1 when it launches.
-              </p>
-              <Link
-                href="/terminal#subscribe"
-                className="inline-block bg-gold text-navy-deep font-semibold text-xs tracking-wider px-5 py-2.5 rounded-lg hover:brightness-110 transition-all duration-200"
-              >
-                Subscribe — Free
-              </Link>
+          <div className="bg-[#0F1D2F] rounded-xl p-6 lg:p-8 border border-white/[0.06] shadow-[0_30px_80px_rgba(0,0,0,0.4)]">
+            {/* Header */}
+            <div className="flex justify-between items-center mb-4">
+              <span className="font-mono text-[10px] text-muted">
+                WEEKLY
+              </span>
+              <span className="font-mono text-[10px] text-muted">SAMPLE</span>
             </div>
-          )}
+            <div className="text-[11px] tracking-widest text-teal font-sans font-bold mb-2">
+              KANTOR TERMINAL
+            </div>
+            <div className="font-serif text-base font-bold text-white mb-1">
+              Weekly Market Brief
+            </div>
+            <div className="text-[9px] tracking-[1.5px] text-muted font-sans mb-4 pb-3 border-b border-white/[0.06]">
+              POLYMER PRICING — VIETNAM
+            </div>
+
+            {/* Pricing Rows */}
+            {pricingRows.map((row, i) => (
+              <div
+                key={i}
+                className={`flex justify-between items-center py-2.5 ${
+                  i < 3 ? "border-b border-white/[0.04]" : ""
+                }`}
+              >
+                <div>
+                  <div className="font-mono text-[11px] text-white font-semibold">
+                    {row.grade}
+                  </div>
+                  <div className="font-mono text-[10px] text-muted">
+                    {row.price}{" "}
+                    <span className={row.dirColor}>
+                      {row.dir}
+                      {row.chg}
+                    </span>
+                  </div>
+                </div>
+                <span
+                  className={`text-[9px] font-bold tracking-wider font-sans px-2 py-0.5 rounded ${row.sigColor} ${row.sigBg}`}
+                >
+                  {row.signal}
+                </span>
+              </div>
+            ))}
+
+            {/* Timing Note */}
+            <div className="mt-4 p-3 rounded-lg bg-teal/[0.08] border border-teal/15">
+              <div className="text-[9px] tracking-[1.5px] text-teal font-bold mb-1.5 font-sans">
+                TIMING NOTE
+              </div>
+              <div className="text-[11px] text-body-text leading-snug font-sans">
+                HDPE softening expected to reverse mid-week as Sinopec adjusts
+                output. Consider front-loading PE orders before Wednesday.
+              </div>
+            </div>
+          </div>
           <p className="text-center font-sans text-xs text-muted mt-4 italic">
-            {latestIssue
-              ? "Published issue. Updated weekly with live market conditions."
-              : "Illustrative content. Actual Terminal reflects live market conditions."}
+            Illustrative content. Actual Terminal reflects live market conditions.
           </p>
         </RevealDiv>
       </div>
