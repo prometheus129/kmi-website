@@ -5,6 +5,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
 import { mdxComponents } from "@/components/insights/MDXComponents";
+import SignalsTable from "@/components/terminal/SignalsTable";
 import { getIssue, getAllSlugs, formatDate } from "@/lib/terminal";
 import JsonLd, { buildArticleSchema } from "@/components/JsonLd";
 import Link from "next/link";
@@ -97,7 +98,7 @@ export default async function TerminalIssuePage({ params }) {
 
           {/* Article body */}
           <div className="prose-kantor">
-            <MDXRemote source={content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
+            <MDXRemote source={content} components={{...mdxComponents, SignalsTable}} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
           </div>
 
           {/* Subscribe CTA */}
