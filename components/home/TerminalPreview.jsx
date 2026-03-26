@@ -73,48 +73,89 @@ export default function TerminalPreview() {
           </Link>
         </RevealDiv>
 
-        {/* Right: Latest Issue Card */}
+        {/* Right: Product Demo Card */}
         <RevealDiv delay={200}>
           <Link href="/terminal/three-corridors-down" className="block group">
             <div className="bg-[#0F1D2F] rounded-xl p-6 lg:p-8 border border-white/[0.06] shadow-[0_30px_80px_rgba(0,0,0,0.4)] transition-all duration-300 group-hover:border-teal/20 group-hover:shadow-[0_30px_80px_rgba(46,139,139,0.08)]">
               {/* Header */}
               <div className="flex justify-between items-center mb-4">
                 <span className="font-mono text-[10px] tracking-wider text-teal font-bold bg-teal/10 px-2 py-0.5 rounded">
-                  ISSUE #1
+                  SAMPLE ISSUE
                 </span>
                 <span className="font-mono text-[10px] text-muted">
-                  March 25, 2026
+                  Updated daily
                 </span>
               </div>
 
-              <div className="text-[11px] tracking-widest text-teal font-sans font-bold mb-3">
+              <div className="text-[11px] tracking-widest text-teal font-sans font-bold mb-2">
                 KANTOR MORNING TERMINAL
               </div>
 
-              <h3 className="font-serif text-xl lg:text-2xl font-bold text-white mb-3 leading-tight group-hover:text-teal-light transition-colors duration-200">
-                Three Corridors Down
+              <h3 className="font-serif text-lg lg:text-xl font-bold text-white mb-5 leading-tight">
+                Should you buy this week — or wait?
               </h3>
 
-              <p className="font-sans text-[13px] text-body-text leading-relaxed mb-5">
-                Three of four polymer supply corridors to SE Asia are now
-                disrupted simultaneously. Chinese FOB prices corrected $50+/MT
-                as the market recognizes China&apos;s structural insulation.
-              </p>
+              {/* Signal Rows */}
+              <div className="bg-white/[0.03] rounded-lg p-4 mb-5">
+                {[
+                  { grade: "PP Raffia", dir: "down", chg: "$15", signal: "WAIT", reason: "correction ongoing" },
+                  { grade: "LLDPE C4 Film", dir: "up", chg: "$8", signal: "HOLD", reason: null },
+                  { grade: "HDPE 5000S", dir: "flat", chg: null, signal: "BUY", reason: "supply tightening" },
+                  { grade: "PVC SG-5", dir: "up", chg: "$20", signal: "BUY", reason: "rebate window closing" },
+                ].map((row, i, arr) => (
+                  <div
+                    key={i}
+                    className={`flex items-center justify-between py-3 ${
+                      i < arr.length - 1 ? "border-b border-white/[0.04]" : ""
+                    }`}
+                  >
+                    <span className="font-mono text-[12px] text-white font-medium">
+                      {row.grade}
+                    </span>
+                    <div className="flex items-center gap-2.5">
+                      <span
+                        className={`font-mono text-[11px] ${
+                          row.dir === "up"
+                            ? "text-ticker-green"
+                            : row.dir === "down"
+                              ? "text-ticker-red"
+                              : "text-muted"
+                        }`}
+                      >
+                        {row.dir === "up" ? "▲" : row.dir === "down" ? "▼" : "—"}{" "}
+                        {row.chg || "flat"}
+                      </span>
+                      <span
+                        className={`text-[10px] font-bold tracking-wider font-sans px-2.5 py-0.5 rounded text-center min-w-[42px] ${
+                          row.signal === "BUY"
+                            ? "text-ticker-green bg-ticker-green/10"
+                            : row.signal === "HOLD"
+                              ? "text-gold bg-gold/10"
+                              : "text-ticker-red bg-ticker-red/10"
+                        }`}
+                      >
+                        {row.signal}
+                      </span>
+                      {row.reason && (
+                        <span className="font-sans text-[10px] text-muted hidden sm:inline">
+                          {row.reason}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
 
-              {/* Signal Preview */}
-              <div className="grid grid-cols-2 gap-3 mb-5">
-                <div className="bg-white/[0.03] rounded-lg p-3">
-                  <div className="font-mono text-[10px] text-muted mb-1">LLDPE C4 Film</div>
-                  <span className="text-[10px] font-bold tracking-wider font-sans px-2 py-0.5 rounded text-gold bg-gold/10">
-                    HOLD
-                  </span>
+              {/* Signal Logic Callout */}
+              <div className="p-3 rounded-lg bg-teal/[0.06] border border-teal/10 mb-5">
+                <div className="text-[8px] tracking-[1.5px] text-teal font-bold font-sans mb-1">
+                  TODAY&apos;S SIGNAL LOGIC
                 </div>
-                <div className="bg-white/[0.03] rounded-lg p-3">
-                  <div className="font-mono text-[10px] text-muted mb-1">PVC SG-5</div>
-                  <span className="text-[10px] font-bold tracking-wider font-sans px-2 py-0.5 rounded text-ticker-green bg-ticker-green/10">
-                    BUY
-                  </span>
-                </div>
+                <p className="text-[11px] text-body-text leading-relaxed font-sans">
+                  PP correction has further to run. CTO producers quoting flat
+                  into weak domestic demand. Wait for further softening before
+                  committing.
+                </p>
               </div>
 
               <div className="pt-4 border-t border-white/[0.06] flex justify-between items-center">
@@ -122,13 +163,13 @@ export default function TerminalPreview() {
                   Kantor Materials Research
                 </span>
                 <span className="font-sans text-sm font-semibold text-gold group-hover:translate-x-1 transition-transform duration-200">
-                  Read the full issue →
+                  See sample issue →
                 </span>
               </div>
             </div>
           </Link>
-          <p className="text-center font-sans text-xs text-muted mt-4 italic">
-            Published issue. Updated weekly with live market conditions.
+          <p className="text-center font-sans text-xs text-muted mt-4">
+            Sample data. Delivered daily via WhatsApp or email.
           </p>
         </RevealDiv>
       </div>
