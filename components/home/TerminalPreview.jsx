@@ -9,7 +9,7 @@ const features = [
   },
   {
     title: "Timing Intelligence",
-    desc: "BUY / HOLD / WAIT signals for the next 7–14 days",
+    desc: "When to buy — and when to wait",
     dot: "bg-gold",
   },
   {

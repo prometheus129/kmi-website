@@ -39,7 +39,7 @@ export default function SampleTerminal({ locale = "en" }) {
                   Daily Pricing &amp; Signals
                 </div>
                 <div className="font-sans text-[11px] text-muted mt-1">
-                  Kantor Indicative Pricing — CFR SE Asia (USD)
+                  Kantor Indicative Pricing — CFR Assessment (USD)
                 </div>
               </div>
 

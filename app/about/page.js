@@ -7,7 +7,7 @@ import JsonLd, { organizationSchema } from "@/components/JsonLd";
 export const metadata = {
   title: "About — Kantor Materials International",
   description:
-    "Kantor Materials is a discretionary polymer procurement platform headquartered in Hong Kong, serving mid-tier distributors across emerging markets with intelligence-driven sourcing from China.",
+    "Discretionary polymer procurement platform. Lane 1: commodity aggregation across 600+ merchants. Lane 2: UL-certified engineering compounds. Hong Kong headquartered, sourcing from China.",
 };
 
 const markets = [
@@ -158,7 +158,7 @@ export default function AboutPage() {
               HOW IT WORKS
             </span>
             <h2 className="font-serif text-3xl lg:text-4xl font-bold text-white mb-10">
-              Best-Execution Procurement
+              Full-Market Sourcing
             </h2>
           </RevealDiv>
 
@@ -245,7 +245,7 @@ export default function AboutPage() {
                 href="/terminal#subscribe"
                 className="inline-flex items-center justify-center bg-gold text-navy-deep font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-px shadow-[0_2px_12px_rgba(212,168,67,0.25)]"
               >
-                Subscribe to Terminal
+                Get Daily Intelligence
               </Link>
               <Link
                 href="/contact"

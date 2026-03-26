@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 const navLinks = [
   { label: "Insights", href: "/insights" },
   { label: "Morning Terminal", href: "/terminal" },
-  { label: "Market Prices", href: "/pricing" },
+  { label: "Daily Pricing", href: "/pricing" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -23,10 +23,13 @@ const languages = [
   { code: "th", label: "ภาษาไทย", display: "TH" },
   { code: "bn", label: "বাংলা", display: "BN" },
   { code: "ru", label: "Русский", display: "RU" },
+  { code: "ar", label: "العربية", display: "AR" },
+  { code: "fr", label: "Français", display: "FR" },
+  { code: "ur", label: "اردو", display: "UR" },
 ];
 
 function getLocaleFromPath(pathname) {
-  const match = pathname.match(/^\/(vi|tr|id|es|pt|th|bn|ru)(\/|$)/);
+  const match = pathname.match(/^\/(vi|tr|id|es|pt|th|bn|ru|ar|fr|ur)(\/|$)/);
   return match ? match[1] : "en";
 }
 
@@ -216,7 +219,7 @@ export default function Nav() {
             href={getTerminalSubscribeHref(currentLocale)}
             className="bg-gold text-navy-deep text-xs font-semibold tracking-wider px-5 py-2.5 rounded-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-px shadow-[0_2px_12px_rgba(212,168,67,0.25)]"
           >
-            FREE DAILY PRICING
+            FREE DAILY INTELLIGENCE
           </Link>
         </div>
 
@@ -290,7 +293,7 @@ export default function Nav() {
               onClick={() => setMobileOpen(false)}
               className="bg-gold text-navy-deep text-xs font-semibold tracking-wider px-5 py-3 rounded-lg text-center mt-2"
             >
-              FREE DAILY PRICING
+              FREE DAILY INTELLIGENCE
             </Link>
           </div>
         </div>

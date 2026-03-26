@@ -4,6 +4,8 @@ import { useState, useMemo } from "react";
 import RevealDiv from "@/components/RevealDiv";
 import ArticleCard from "@/components/insights/ArticleCard";
 import MorningTerminalCTA from "@/components/insights/MorningTerminalCTA";
+import SearchBar from "@/components/insights/SearchBar";
+import LoadMoreButton from "@/components/insights/LoadMoreButton";
 
 // Tags split into two rows: Markets (geography) and Topics (content type)
 // Only shown if 2+ articles use them
@@ -17,6 +19,9 @@ const MARKET_TAGS = [
   "Brazil",
   "Mexico",
   "Indonesia",
+  "Thailand",
+  "Egypt",
+  "Pakistan",
 ];
 
 const TOPIC_TAGS = [
@@ -30,8 +35,16 @@ const TOPIC_TAGS = [
   "CTO",
 ];
 
-export default function InsightsGrid({ articles, locale = "en" }) {
+export default function InsightsGrid({
+  articles,
+  locale = "en",
+  initialCount = 12,
+  showSearch = true,
+  showFilters = true,
+}) {
   const [activeTag, setActiveTag] = useState("All");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [visibleCount, setVisibleCount] = useState(initialCount);
 
   // Collect tags that appear in 2+ articles, split by category
   const { marketTags, topicTags } = useMemo(() => {
@@ -54,28 +67,84 @@ export default function InsightsGrid({ articles, locale = "en" }) {
     };
   }, [articles]);
 
-  // Filter articles by active tag
+  // Filter articles by active tag + search query (composable)
   const filtered = useMemo(() => {
-    if (activeTag === "All") return articles;
-    return articles.filter((a) => {
-      const tags = (a.frontmatter.tags || []).map((t) => t.toLowerCase());
-      return tags.includes(activeTag.toLowerCase());
-    });
-  }, [articles, activeTag]);
+    let result = articles;
 
-  // Split for CTA insertion
-  const firstRow = filtered.slice(0, 3);
-  const restArticles = filtered.slice(3);
+    // Tag filter
+    if (activeTag !== "All") {
+      result = result.filter((a) => {
+        const tags = (a.frontmatter.tags || []).map((t) => t.toLowerCase());
+        return tags.includes(activeTag.toLowerCase());
+      });
+    }
+
+    // Search filter
+    if (searchQuery.trim()) {
+      const q = searchQuery.trim().toLowerCase();
+      result = result.filter((a) => {
+        const searchable = [
+          a.frontmatter.title || "",
+          a.frontmatter.description || "",
+          ...(a.frontmatter.tags || []),
+        ]
+          .join(" ")
+          .toLowerCase();
+        return searchable.includes(q);
+      });
+    }
+
+    return result;
+  }, [articles, activeTag, searchQuery]);
+
+  // Reset pagination when filters change
+  const handleTagChange = (tag) => {
+    setActiveTag(tag);
+    setVisibleCount(initialCount);
+  };
+
+  const handleSearchChange = (query) => {
+    setSearchQuery(query);
+    setVisibleCount(initialCount);
+  };
+
+  // Split for CTA insertion and pagination
+  const visibleArticles = filtered.slice(0, visibleCount);
+  const firstRow = visibleArticles.slice(0, 3);
+  const restArticles = visibleArticles.slice(3);
+
+  const hasFilters = marketTags.length > 0 || topicTags.length > 0;
 
   return (
     <>
+      {/* Search bar */}
+      {showSearch && (
+        <SearchBar
+          value={searchQuery}
+          onChange={handleSearchChange}
+          placeholder={
+            { vi: "T\u00ecm ki\u1ebfm b\u00e0i vi\u1ebft...",
+              tr: "Makale ara...",
+              id: "Cari artikel...",
+              es: "Buscar art\u00edculos...",
+              pt: "Pesquisar artigos...",
+              th: "\u0e04\u0e49\u0e19\u0e2b\u0e32\u0e1a\u0e17\u0e04\u0e27\u0e32\u0e21...",
+              bn: "\u09a8\u09bf\u09ac\u09a8\u09cd\u09a7 \u0985\u09a8\u09c1\u09b8\u09a8\u09cd\u09a7\u09be\u09a8...",
+              ar: "\u0627\u0644\u0628\u062d\u062b \u0641\u064a \u0627\u0644\u0645\u0642\u0627\u0644\u0627\u062a...",
+              fr: "Rechercher des articles...",
+              ur: "\u0645\u0636\u0627\u0645\u06cc\u0646 \u062a\u0644\u0627\u0634 \u06a9\u0631\u06cc\u06ba...",
+            }[locale] || "Search articles..."
+          }
+        />
+      )}
+
       {/* Tag filter bar — two rows: Markets + Topics */}
-      {(marketTags.length > 0 || topicTags.length > 0) && (
+      {showFilters && hasFilters && (
         <div className="mb-10 space-y-3">
           {/* Row 1: All + Markets */}
           <div className="flex flex-wrap items-center gap-2">
             <button
-              onClick={() => setActiveTag("All")}
+              onClick={() => handleTagChange("All")}
               className={`font-mono text-[11px] uppercase tracking-[1.5px] px-3.5 py-1.5 rounded-full border transition-all duration-200 ${
                 activeTag === "All"
                   ? "bg-teal/20 border-teal/40 text-teal"
@@ -90,7 +159,7 @@ export default function InsightsGrid({ articles, locale = "en" }) {
             {marketTags.map((tag) => (
               <button
                 key={tag}
-                onClick={() => setActiveTag(tag)}
+                onClick={() => handleTagChange(tag)}
                 className={`font-mono text-[11px] uppercase tracking-[1.5px] px-3.5 py-1.5 rounded-full border transition-all duration-200 ${
                   activeTag === tag
                     ? "bg-teal/20 border-teal/40 text-teal"
@@ -107,7 +176,7 @@ export default function InsightsGrid({ articles, locale = "en" }) {
               {topicTags.map((tag) => (
                 <button
                   key={tag}
-                  onClick={() => setActiveTag(tag)}
+                  onClick={() => handleTagChange(tag)}
                   className={`font-mono text-[11px] uppercase tracking-[1.5px] px-3.5 py-1.5 rounded-full border transition-all duration-200 ${
                     activeTag === tag
                       ? "bg-teal/20 border-teal/40 text-teal"
@@ -125,7 +194,9 @@ export default function InsightsGrid({ articles, locale = "en" }) {
       {/* Article grid */}
       {filtered.length === 0 ? (
         <p className="text-muted text-center py-20">
-          No articles match this filter.
+          {searchQuery
+            ? "No articles match your search."
+            : "No articles match this filter."}
         </p>
       ) : (
         <>
@@ -153,6 +224,13 @@ export default function InsightsGrid({ articles, locale = "en" }) {
               ))}
             </div>
           )}
+
+          {/* Load more */}
+          <LoadMoreButton
+            visibleCount={Math.min(visibleCount, filtered.length)}
+            totalCount={filtered.length}
+            onLoadMore={() => setVisibleCount((c) => c + initialCount)}
+          />
         </>
       )}
     </>

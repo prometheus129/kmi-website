@@ -1,0 +1,135 @@
+{
+  "hubs": [
+    {
+      "slug": "vietnam",
+      "name": "Vietnam",
+      "description": "Import guides, ACFTA tariff analysis, and pricing intelligence for polymer buyers in Vietnam.",
+      "intro": "Vietnam imports an estimated 5\u20136 million metric tons of polymer resin annually, with China as the leading source for PP and a major supplier of PE. Mid-tier distributors and converters face pricing opacity and limited bargaining power \u2014 the exact gap KMI\u2019s procurement intelligence addresses.",
+      "matchTags": ["vietnam", "acfta", "form-e"],
+      "featuredSlugs": ["acfta-tariffs-form-e-landed-cost-guide"],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "turkey",
+      "name": "Turkey",
+      "description": "Anti-dumping duties, DIR regime analysis, and landed cost calculations for Turkish polymer importers.",
+      "intro": "Turkey is one of the world\u2019s largest polymer importers, with a deficit exceeding $7.8 billion annually. Anti-dumping duties on Chinese-origin PE and PP reshape sourcing economics \u2014 but the Inward Processing Regime (DIR) and origin diversification create actionable alternatives.",
+      "matchTags": ["turkey", "anti-dumping", "dir"],
+      "featuredSlugs": ["turkey-antidumping-duties-chinese-polymers-guide"],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "nigeria",
+      "name": "Nigeria",
+      "description": "Import logistics, SONCAP requirements, and China-origin polymer sourcing for Nigerian buyers.",
+      "intro": "Nigeria imports an estimated $1.5 billion in plastics annually, with China supplying roughly 40% of PE, PP, and PVC volumes. Infrastructure-driven PVC demand and a fragmented mid-tier distributor base make Nigeria a high-potential market for procurement optimization.",
+      "matchTags": ["nigeria"],
+      "featuredSlugs": ["importing-polymers-china-to-nigeria-guide"],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "ghana",
+      "name": "Ghana",
+      "description": "Origin comparison, feedstock analysis, and import guides for polymer buyers in Ghana and West Africa.",
+      "intro": "Ghana\u2019s polymer import market is driven by packaging, mining consumables, and cocoa processing. China\u2019s ~40% supply share and CTO/PDH-based cost advantages create significant procurement opportunities for mid-tier buyers currently sourcing from the Middle East or India.",
+      "matchTags": ["ghana"],
+      "featuredSlugs": ["importing-polymers-china-to-ghana-guide"],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "philippines",
+      "name": "Philippines",
+      "description": "Import guides and market intelligence for polymer buyers in the Philippines.",
+      "intro": "The Philippines imports 1\u20132 million metric tons of polymer resin annually, with the post-JG Summit supply vacuum creating new entry opportunities. HDPE safeguard duty suspension since September 2025 removes a key barrier for China-origin sourcing.",
+      "matchTags": ["philippines"],
+      "featuredSlugs": ["importing-polymers-china-to-philippines-guide"],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "indonesia",
+      "name": "Indonesia",
+      "description": "SNI certification, import requirements, and sourcing intelligence for Indonesian polymer buyers.",
+      "intro": "Indonesia\u2019s polymer demand is driven by packaging, automotive, and consumer goods manufacturing. China is a growing source as Chandra Asri domestic production falls short of demand, creating a supply gap that China-origin imports fill at competitive landed costs.",
+      "matchTags": ["indonesia"],
+      "featuredSlugs": ["importing-polymers-china-to-indonesia-guide"],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "brazil",
+      "name": "Brazil",
+      "description": "Import logistics, Mercosur tariffs, and China-origin polymer sourcing for Brazilian buyers.",
+      "intro": "Brazil is Latin America\u2019s largest polymer market. Despite Braskem\u2019s domestic production, import demand for PE, PP, and PVC continues to grow. China-origin polymers offer 15\u201325% cost advantages over Middle Eastern and US alternatives at current freight rates.",
+      "matchTags": ["brazil"],
+      "featuredSlugs": ["importing-polymers-china-to-brazil-guide"],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "mexico",
+      "name": "Mexico",
+      "description": "USMCA implications, import duties, and China-origin polymer sourcing for Mexican buyers.",
+      "intro": "Mexico\u2019s manufacturing sector drives significant polymer demand across automotive, packaging, and consumer goods. USMCA reshoring trends and Pemex production constraints create import dependencies that China-origin suppliers increasingly fill.",
+      "matchTags": ["mexico"],
+      "featuredSlugs": ["importing-polymers-china-to-mexico-guide"],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "thailand",
+      "name": "Thailand",
+      "description": "Engineering polymer sourcing and automotive-grade specifications for Thai manufacturers.",
+      "intro": "Thailand\u2019s automotive and electronics manufacturing sectors drive demand for high-performance engineering polymers. Chinese producers now offer UL-certified, IATF-compatible grades at 15\u201335% below Western equivalents \u2014 a shift accelerating as global OEMs qualify alternative supply chains.",
+      "matchTags": ["thailand"],
+      "featuredSlugs": ["thailand-automotive-engineering-polymers-pps-ppa-pa66"],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "egypt",
+      "name": "Egypt",
+      "description": "Import duties, Alexandria port logistics, and China-origin polymer sourcing for Egyptian buyers.",
+      "intro": "Egypt imports an estimated $500\u2013700 million in polymer resin annually, with China supplying roughly 30% of PE, PP, and PVC volumes. A fragmented mid-tier distributor base centered on Cairo and Alexandria faces pricing opacity and limited access to institutional-grade market intelligence.",
+      "matchTags": ["egypt"],
+      "featuredSlugs": [],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "pakistan",
+      "name": "Pakistan",
+      "description": "CPFTA tariffs, Karachi port logistics, and China-origin polymer sourcing for Pakistani buyers.",
+      "intro": "Pakistan imports $800 million\u2013$1.2 billion in polymer resin annually, with China as a major and growing source via the CPEC trade corridor. PP for textiles, PE for film, and PVC for construction drive demand across industrial clusters in Karachi, Lahore, Faisalabad, and Sialkot.",
+      "matchTags": ["pakistan"],
+      "featuredSlugs": [],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "kenya",
+      "name": "Kenya",
+      "description": "Import logistics, KBS certification, and Mombasa port guide for polymer buyers in Kenya and East Africa.",
+      "intro": "Kenya imports an estimated 200\u2013300 thousand metric tons of polymer resin annually, serving as the import hub for the broader East African market. China is a growing supply source, with Mombasa port handling the majority of containerized polymer imports for Kenya, Uganda, Tanzania, and Rwanda.",
+      "matchTags": ["kenya"],
+      "featuredSlugs": [],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "morocco",
+      "name": "Morocco",
+      "description": "FTA tariff analysis, Casablanca port logistics, and China-origin polymer sourcing for Moroccan importers.",
+      "intro": "Morocco\u2019s polymer import market is driven by automotive manufacturing, packaging, and construction. Proximity to the EU Customs Union and Morocco\u2019s FTA network create complex but navigable landed cost economics for China-origin polymers competing against European and Saudi alternatives.",
+      "matchTags": ["morocco"],
+      "featuredSlugs": [],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "algeria",
+      "name": "Algeria",
+      "description": "Import regulations, Algiers port logistics, and polymer sourcing intelligence for Algerian buyers.",
+      "intro": "Algeria imports over $500 million in plastics and polymer resin annually, with China as a significant supplier. Construction-driven PVC demand and packaging-driven PE/PP demand create import dependencies that mid-tier Algerian distributors navigate with limited market intelligence infrastructure.",
+      "matchTags": ["algeria"],
+      "featuredSlugs": [],
+      "excludeSlugs": []
+    }
+  ],
+  "featured": [
+    "china-polymer-corridor-how-long-does-it-stay-open",
+    "hormuz-strait-what-polymer-buyers-need-to-know",
+    "cto-pdh-naphtha-feedstock-advantage-resin-prices"
+  ]
+}

@@ -5,9 +5,9 @@ import InsightsGrid from "@/components/insights/InsightsGrid";
 import { getAllArticles } from "@/lib/insights";
 
 export const metadata = {
-  title: "Phân tích thị trường — Kantor Materials International",
+  title: "Analyse de Marché — Kantor Materials International",
   description:
-    "Phân tích thị trường, thông tin chuỗi cung ứng, và chiến lược mua hàng cho nhà nhập khẩu polymer Đông Nam Á.",
+    "Analyse de marché, intelligence de chaîne d'approvisionnement et stratégie d'achat pour les importateurs de polymères en Afrique francophone.",
   alternates: {
     languages: {
       en: "/insights",
@@ -15,46 +15,44 @@ export const metadata = {
   },
 };
 
-export default function ViInsightsPage() {
-  const articles = getAllArticles("vi");
+export default function FrInsightsPage() {
+  const articles = getAllArticles("fr");
 
   return (
     <div className="bg-navy min-h-screen text-white">
       <Nav />
 
-      {/* Hero */}
       <section className="pt-36 pb-16 lg:pt-44 lg:pb-20 px-6 lg:px-10">
         <div className="max-w-[1200px] mx-auto">
           <RevealDiv>
             <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
-              PHÂN TÍCH
+              ANALYSES
             </span>
             <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white mb-5 max-w-3xl">
-              Thông tin &amp; Phân tích thị trường
+              Intelligence &amp; Analyse de Marché
             </h1>
             <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-2xl">
-              Phân tích chuỗi cung ứng, biến động giá cả, và chiến lược mua
-              hàng cho các nhà nhập khẩu polymer đang điều hướng thị trường biến
-              động. Được xuất bản bởi đội ngũ nghiên cứu Kantor Materials.
+              Analyse de chaîne d'approvisionnement, dynamique des prix et
+              stratégie d'achat pour les importateurs de polymères naviguant des
+              marchés volatils. Publié par l'équipe de recherche Kantor
+              Materials.
             </p>
           </RevealDiv>
         </div>
       </section>
 
-      {/* Divider */}
       <div className="max-w-[1200px] mx-auto px-6 lg:px-10">
         <div className="border-t border-white/[0.08]" />
       </div>
 
-      {/* Article grid */}
       <section className="py-16 lg:py-20 px-6 lg:px-10">
         <div className="max-w-[1200px] mx-auto">
           {articles.length === 0 ? (
             <p className="text-muted text-center py-20">
-              Chưa có bài viết nào. Vui lòng quay lại sau.
+              Aucun article publié pour le moment. Revenez bientôt.
             </p>
           ) : (
-            <InsightsGrid articles={articles} locale="vi" />
+            <InsightsGrid articles={articles} locale="fr" />
           )}
         </div>
       </section>

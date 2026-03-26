@@ -15,7 +15,7 @@ const props = [
     ),
   },
   {
-    title: "Best-Execution Procurement",
+    title: "Full-Market Sourcing",
     text: "Kantor Materials evaluates 600+ merchants on every order. You see one price — the best one available for your grade, quantity, and timeline.",
     accent: "border-white/20",
     iconColor: "text-body-text",
@@ -28,7 +28,7 @@ const props = [
     ),
   },
   {
-    title: "Volume Economics",
+    title: "Group Buying Power",
     text: "Syndicate purchasing pods aggregate demand across buyers. Your 50 MT becomes part of a 300 MT order. Everyone benefits.",
     accent: "border-gold",
     iconColor: "text-gold",
@@ -63,7 +63,7 @@ export default function ValueProps() {
             HOW WE CREATE VALUE
           </div>
           <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-12 lg:mb-16 leading-tight">
-            Intelligence. Execution. Economics.
+            Intelligence. Sourcing. Scale.
           </h2>
         </RevealDiv>
 

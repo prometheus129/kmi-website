@@ -35,12 +35,12 @@ export default function HeroSection() {
             POLYMER PROCUREMENT INTELLIGENCE
           </div>
           <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-[1.05] mb-6">
-            Your trading company shares prices.{" "}
+            Your supplier shares prices.{" "}
             <span className="text-teal-light">We share intelligence.</span>
           </h1>
           <p className="font-sans text-lg text-body-text leading-relaxed max-w-[640px] mx-auto mb-10">
             Daily polymer pricing, buy-timing signals, and supply disruption
-            alerts — delivered free to distributors across Southeast Asia.
+            alerts — delivered free to distributors and converters worldwide.
             Know what the market is doing before you buy.
           </p>
 
@@ -50,7 +50,7 @@ export default function HeroSection() {
               href="/terminal#subscribe"
               className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-sm tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
             >
-              Get Free Daily Pricing
+              Get Daily Intelligence
             </Link>
             <Link
               href="/terminal/three-corridors-down"

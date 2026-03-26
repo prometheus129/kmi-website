@@ -64,8 +64,8 @@ export default function Footer() {
             </Link>
             <p className="font-sans text-[13px] text-muted leading-relaxed max-w-[280px]">
               Global polymer procurement infrastructure. Hong Kong
-              headquartered, sourcing across China, serving emerging markets
-              worldwide.
+              headquartered, sourcing across China, serving emerging
+              markets.
             </p>
           </div>
 

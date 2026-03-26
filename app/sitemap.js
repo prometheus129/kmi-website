@@ -1,4 +1,5 @@
 import { getAllArticles, SUPPORTED_LOCALES, getInsightsPath } from "@/lib/insights";
+import { getAllHubs } from "@/lib/hubs";
 
 const BASE_URL = "https://kantormaterials.com";
 
@@ -82,5 +83,16 @@ export default function sitemap() {
     }
   }
 
-  return [...staticEntries, ...articleEntries];
+  // Market hub pages
+  const hubs = getAllHubs();
+  const hubEntries = hubs
+    .filter((h) => h.articleCount > 0)
+    .map((hub) => ({
+      url: `${BASE_URL}/insights/markets/${hub.slug}`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    }));
+
+  return [...staticEntries, ...hubEntries, ...articleEntries];
 }

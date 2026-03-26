@@ -68,7 +68,7 @@ export default function SyndicatePage() {
               href="/terminal#subscribe"
               className="inline-block bg-gold text-navy-deep font-semibold text-sm tracking-wider px-7 py-3.5 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
             >
-              Subscribe to Morning Terminal — Free
+              Get Daily Intelligence — Free
             </Link>
           </RevealDiv>
         </div>
@@ -194,7 +194,7 @@ export default function SyndicatePage() {
                 href="/terminal#subscribe"
                 className="inline-flex items-center justify-center bg-gold text-navy-deep font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-px shadow-[0_2px_12px_rgba(212,168,67,0.25)]"
               >
-                Subscribe to Terminal
+                Get Daily Intelligence
               </Link>
               <Link
                 href="/contact"

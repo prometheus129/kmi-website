@@ -2,23 +2,44 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
 import InsightsGrid from "@/components/insights/InsightsGrid";
+import ArticleCard from "@/components/insights/ArticleCard";
+import MarketHubCard from "@/components/insights/MarketHubCard";
 import { getAllArticles } from "@/lib/insights";
+import { getAllHubs, getFeaturedSlugs } from "@/lib/hubs";
 
 export const metadata = {
   title: "Insights — Kantor Materials International",
   description:
-    "Market analysis, supply chain intelligence, and procurement strategy for polymer buyers in Southeast Asia. Research-grade insights from the Kantor Materials team.",
+    "Market analysis, supply chain intelligence, and procurement strategy for polymer buyers across emerging markets. Research-grade insights from the Kantor Materials team.",
   alternates: {
     languages: {
       vi: "/vi/insights",
       tr: "/tr/insights",
       id: "/id/insights",
+      es: "/es/insights",
+      pt: "/pt/insights",
+      th: "/th/insights",
+      bn: "/bn/insights",
+      ru: "/ru/insights",
     },
   },
 };
 
 export default function InsightsPage() {
   const articles = getAllArticles("en");
+  const hubs = getAllHubs();
+  const featuredSlugs = getFeaturedSlugs();
+
+  // Resolve featured articles from slugs
+  const featuredArticles = featuredSlugs
+    .map((slug) => articles.find((a) => a.slug === slug))
+    .filter(Boolean)
+    .slice(0, 3);
+
+  // Hubs with articles, sorted by article count descending
+  const activeHubs = hubs
+    .filter((h) => h.articleCount > 0)
+    .sort((a, b) => b.articleCount - a.articleCount);
 
   return (
     <div className="bg-navy min-h-screen text-white">
@@ -48,9 +69,62 @@ export default function InsightsPage() {
         <div className="border-t border-white/[0.08]" />
       </div>
 
-      {/* Article grid with tag filtering */}
-      <section className="py-16 lg:py-20 px-6 lg:px-10">
+      {/* Featured Articles */}
+      {featuredArticles.length > 0 && (
+        <section className="py-16 lg:py-20 px-6 lg:px-10">
+          <div className="max-w-[1200px] mx-auto">
+            <RevealDiv>
+              <span className="font-mono text-[10px] uppercase tracking-[2px] text-teal/70 mb-6 block">
+                FEATURED
+              </span>
+            </RevealDiv>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {featuredArticles.map((article) => (
+                <RevealDiv key={article.slug}>
+                  <ArticleCard article={article} locale="en" />
+                </RevealDiv>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Market Hubs */}
+      {activeHubs.length > 0 && (
+        <section className="pb-16 lg:pb-20 px-6 lg:px-10">
+          <div className="max-w-[1200px] mx-auto">
+            <div className="border-t border-white/[0.08] mb-16" />
+            <RevealDiv>
+              <span className="font-mono text-[10px] uppercase tracking-[2px] text-teal/70 mb-2 block">
+                BY MARKET
+              </span>
+              <h2 className="font-serif text-2xl lg:text-3xl font-bold text-white mb-8">
+                Regional Intelligence
+              </h2>
+            </RevealDiv>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {activeHubs.map((hub) => (
+                <RevealDiv key={hub.slug}>
+                  <MarketHubCard hub={hub} />
+                </RevealDiv>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Browse All Articles */}
+      <section className="pb-16 lg:pb-20 px-6 lg:px-10">
         <div className="max-w-[1200px] mx-auto">
+          <div className="border-t border-white/[0.08] mb-16" />
+          <RevealDiv>
+            <span className="font-mono text-[10px] uppercase tracking-[2px] text-teal/70 mb-2 block">
+              ALL ARTICLES
+            </span>
+            <h2 className="font-serif text-2xl lg:text-3xl font-bold text-white mb-8">
+              Browse All
+            </h2>
+          </RevealDiv>
           {articles.length === 0 ? (
             <p className="text-muted text-center py-20">
               No articles published yet. Check back soon.

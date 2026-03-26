@@ -29,14 +29,14 @@ const STRINGS = {
     overline: "MORNING TERMINAL",
     headline: "Daily Procurement Intelligence",
     description:
-      "China-origin polymer pricing, buy-timing signals, and supply chain alerts — delivered before your market opens. Free for Southeast Asian importers.",
+      "China-origin polymer pricing, buy-timing signals, and supply chain alerts — delivered before your market opens. Free for distributors and converters.",
     button: "Subscribe Free",
   },
   vi: {
     overline: "BẢN TIN MỖI SÁNG",
     headline: "Thông tin mua hàng hàng ngày",
     description:
-      "Giá polymer Trung Quốc, tín hiệu thời điểm mua hàng, và cảnh báo chuỗi cung ứng — gửi đến trước khi thị trường mở cửa. Miễn phí cho nhà nhập khẩu Đông Nam Á.",
+      "Giá polymer Trung Quốc, tín hiệu thời điểm mua hàng, và cảnh báo chuỗi cung ứng — gửi đến trước khi thị trường mở cửa. Miễn phí cho nhà phân phối và nhà sản xuất.",
     button: "Đăng ký miễn phí",
   },
   tr: {
@@ -50,7 +50,7 @@ const STRINGS = {
     overline: "MORNING TERMINAL",
     headline: "Intelijen Pengadaan Harian",
     description:
-      "Harga polimer asal Tiongkok, sinyal waktu beli, dan peringatan rantai pasok — dikirim sebelum pasar Anda buka. Gratis untuk importir Asia Tenggara.",
+      "Harga polimer asal Tiongkok, sinyal waktu beli, dan peringatan rantai pasok — dikirim sebelum pasar Anda buka. Gratis untuk distributor dan konverter.",
     button: "Berlangganan Gratis",
   },
   es: {
@@ -71,8 +71,29 @@ const STRINGS = {
     overline: "มอร์นิ่ง เทอร์มินอล",
     headline: "ข้อมูลจัดซื้อประจำวัน",
     description:
-      "ราคาโพลิเมอร์จากจีน สัญญาณจังหวะการซื้อ และการแจ้งเตือนซัพพลายเชน — ส่งถึงก่อนตลาดเปิด ฟรีสำหรับผู้นำเข้าในเอเชียตะวันออกเฉียงใต้",
+      "ราคาโพลิเมอร์จากจีน สัญญาณจังหวะการซื้อ และการแจ้งเตือนซัพพลายเชน — ส่งถึงก่อนตลาดเปิด ฟรีสำหรับผู้จัดจำหน่ายและผู้แปรรูป",
     button: "สมัครฟรี",
+  },
+  ar: {
+    overline: "مورنينج تيرمنال",
+    headline: "معلومات المشتريات اليومية",
+    description:
+      "أسعار البوليمر الصيني، إشارات توقيت الشراء، وتنبيهات سلسلة التوريد — تصل قبل افتتاح السوق. مجاناً للموزعين والمصنعين.",
+    button: "اشترك مجاناً",
+  },
+  fr: {
+    overline: "MORNING TERMINAL",
+    headline: "Intelligence Quotidienne des Achats",
+    description:
+      "Prix des polymères d'origine chinoise, signaux de timing d'achat et alertes de chaîne d'approvisionnement — livrés avant l'ouverture de votre marché. Gratuit pour les distributeurs.",
+    button: "S'abonner Gratuitement",
+  },
+  ur: {
+    overline: "مارننگ ٹرمینل",
+    headline: "روزانہ خریداری کی انٹیلی جنس",
+    description:
+      "چینی پولیمر کی قیمتیں، خریداری کے وقت کے اشارے، اور سپلائی چین الرٹس — آپ کی مارکیٹ کھلنے سے پہلے۔ ڈسٹریبیوٹرز اور مینوفیکچررز کے لیے مفت۔",
+    button: "مفت سبسکرائب کریں",
   },
 };
 

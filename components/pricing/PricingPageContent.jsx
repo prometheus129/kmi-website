@@ -24,7 +24,7 @@ const UI_STRINGS = {
     colChange: "W/W",
     colNotes: "Market Note",
     ctaOverline: "MORNING TERMINAL",
-    ctaTitle: "Get daily prices by email",
+    ctaTitle: "Get daily market intelligence by email",
     ctaDesc:
       "Receive pricing updates, buy-timing signals, and supply chain alerts before your market opens. Free for importers.",
     ctaButton: "Subscribe Free",
@@ -47,7 +47,7 @@ const UI_STRINGS = {
     colChange: "T/T",
     colNotes: "Nhận định thị trường",
     ctaOverline: "MORNING TERMINAL",
-    ctaTitle: "Nhận giá hàng ngày qua email",
+    ctaTitle: "Nhận thông tin thị trường hàng ngày qua email",
     ctaDesc:
       "Nhận bảng giá hạt nhựa, tín hiệu thời điểm mua hàng, và cảnh báo chuỗi cung ứng trước khi thị trường mở cửa. Miễn phí.",
     ctaButton: "Đăng ký miễn phí",
@@ -70,7 +70,7 @@ const UI_STRINGS = {
     colChange: "H/H",
     colNotes: "Piyasa Notu",
     ctaOverline: "MORNING TERMINAL",
-    ctaTitle: "Günlük fiyat e-postası alın",
+    ctaTitle: "Günlük piyasa istihbaratı e-postası alın",
     ctaDesc:
       "Piyasa açılmadan önce fiyat güncellemeleri, alım zamanlaması sinyalleri ve tedarik zinciri uyarıları alın. İthalatçılar için ücretsiz.",
     ctaButton: "Ücretsiz Abone Ol",
@@ -93,7 +93,7 @@ const UI_STRINGS = {
     colChange: "M/M",
     colNotes: "Catatan Pasar",
     ctaOverline: "MORNING TERMINAL",
-    ctaTitle: "Terima harga harian via email",
+    ctaTitle: "Terima intelijen pasar harian via email",
     ctaDesc:
       "Terima pembaruan harga, sinyal waktu beli, dan peringatan rantai pasokan sebelum pasar Anda buka. Gratis untuk importir.",
     ctaButton: "Berlangganan Gratis",
@@ -116,7 +116,7 @@ const UI_STRINGS = {
     colChange: "S/S",
     colNotes: "Nota de Mercado",
     ctaOverline: "MORNING TERMINAL",
-    ctaTitle: "Reciba precios diarios por correo",
+    ctaTitle: "Reciba inteligencia de mercado diaria por correo",
     ctaDesc:
       "Reciba actualizaciones de precios, señales de compra y alertas de cadena de suministro antes de la apertura del mercado. Gratis para importadores.",
     ctaButton: "Suscribirse Gratis",
@@ -139,7 +139,7 @@ const UI_STRINGS = {
     colChange: "S/S",
     colNotes: "Nota de Mercado",
     ctaOverline: "MORNING TERMINAL",
-    ctaTitle: "Receba preços diários por e-mail",
+    ctaTitle: "Receba inteligência de mercado diária por e-mail",
     ctaDesc:
       "Receba atualizações de preços, sinais de compra e alertas de cadeia de suprimentos antes da abertura do mercado. Grátis para importadores.",
     ctaButton: "Assine Grátis",
@@ -162,7 +162,7 @@ const UI_STRINGS = {
     colChange: "สัปดาห์/สัปดาห์",
     colNotes: "บันทึกตลาด",
     ctaOverline: "MORNING TERMINAL",
-    ctaTitle: "รับราคารายวันทางอีเมล",
+    ctaTitle: "รับข้อมูลตลาดรายวันทางอีเมล",
     ctaDesc:
       "รับข้อมูลราคา สัญญาณจังหวะซื้อ และการแจ้งเตือนห่วงโซ่อุปทานก่อนตลาดเปิด ฟรีสำหรับผู้นำเข้า",
     ctaButton: "สมัครฟรี",

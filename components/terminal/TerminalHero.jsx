@@ -80,7 +80,7 @@ export default function TerminalHero({ locale = "en" }) {
                     Three Corridors Down — One Left Standing
                   </div>
                   <div className="font-sans text-[11px] text-muted mt-1">
-                    PP · PE · PVC — CFR SE Asia
+                    PP · PE · PVC — CFR Market Assessment
                   </div>
                 </div>
 
