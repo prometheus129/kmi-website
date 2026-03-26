@@ -96,6 +96,20 @@ export default function SubscriptionForm({ locale = "en" }) {
             <p className="font-sans text-[15px] text-body-text">
               {text.subtitle}
             </p>
+            <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 mt-5 text-[11px] text-muted font-mono">
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-teal inline-block" />
+                Daily intelligence for polymer distributors
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-teal inline-block" />
+                8 markets covered
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-teal inline-block" />
+                No credit card required
+              </span>
+            </div>
           </div>
         </RevealDiv>
 

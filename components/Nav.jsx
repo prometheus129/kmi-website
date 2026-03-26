@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 const navLinks = [
   { label: "Insights", href: "/insights" },
   { label: "Morning Terminal", href: "/terminal" },
+  { label: "Pricing", href: "/pricing" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -28,7 +29,7 @@ function getLocaleFromPath(pathname) {
 }
 
 // Pages that have translated versions (vi and tr only for /terminal)
-const translatedPages = ["/insights", "/terminal"];
+const translatedPages = ["/insights", "/terminal", "/pricing"];
 
 function getLocalizedPath(pathname, targetLocale) {
   const currentLocale = getLocaleFromPath(pathname);

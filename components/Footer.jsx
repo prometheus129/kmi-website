@@ -17,8 +17,11 @@ const columns = [
     title: "COMPANY",
     links: [
       { label: "Insights", href: "/insights" },
+      { label: "Pricing", href: "/pricing" },
       { label: "About", href: "/about" },
       { label: "Contact", href: "/contact" },
+      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Terms of Service", href: "/terms" },
     ],
   },
 ];
