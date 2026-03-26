@@ -5,32 +5,42 @@ import RevealDiv from "@/components/RevealDiv";
 import ArticleCard from "@/components/insights/ArticleCard";
 import MorningTerminalCTA from "@/components/insights/MorningTerminalCTA";
 
-// Tags relevant to polymer buyers — only shown if 2+ articles use them
-const TAG_WHITELIST = [
+// Tags split into two rows: Markets (geography) and Topics (content type)
+// Only shown if 2+ articles use them
+const MARKET_TAGS = [
+  "Nigeria",
+  "Ghana",
   "Turkey",
   "Vietnam",
-  "Philippines",
   "China",
+  "Philippines",
+  "Brazil",
+  "Mexico",
+  "Indonesia",
+];
+
+const TOPIC_TAGS = [
+  "Import-Guide",
   "Engineering Polymers",
   "Recycled",
   "PE",
   "PP",
   "PVC",
   "Anti-Dumping",
-  "ACFTA",
+  "CTO",
 ];
 
 export default function InsightsGrid({ articles, locale = "en" }) {
   const [activeTag, setActiveTag] = useState("All");
 
-  // Collect tags that appear in 2+ articles and are in the whitelist
-  const availableTags = useMemo(() => {
+  // Collect tags that appear in 2+ articles, split by category
+  const { marketTags, topicTags } = useMemo(() => {
     const tagCounts = {};
+    const allWhitelist = [...MARKET_TAGS, ...TOPIC_TAGS];
     for (const article of articles) {
       const tags = article.frontmatter.tags || [];
       for (const tag of tags) {
-        // Case-insensitive match against whitelist
-        const matched = TAG_WHITELIST.find(
+        const matched = allWhitelist.find(
           (w) => w.toLowerCase() === tag.toLowerCase()
         );
         if (matched) {
@@ -38,8 +48,10 @@ export default function InsightsGrid({ articles, locale = "en" }) {
         }
       }
     }
-    // Return whitelist-ordered tags with 2+ articles
-    return TAG_WHITELIST.filter((t) => (tagCounts[t] || 0) >= 2);
+    return {
+      marketTags: MARKET_TAGS.filter((t) => (tagCounts[t] || 0) >= 2),
+      topicTags: TOPIC_TAGS.filter((t) => (tagCounts[t] || 0) >= 2),
+    };
   }, [articles]);
 
   // Filter articles by active tag
@@ -57,32 +69,56 @@ export default function InsightsGrid({ articles, locale = "en" }) {
 
   return (
     <>
-      {/* Tag filter bar */}
-      {availableTags.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-10">
-          <button
-            onClick={() => setActiveTag("All")}
-            className={`font-mono text-[11px] uppercase tracking-[1.5px] px-3.5 py-1.5 rounded-full border transition-all duration-200 ${
-              activeTag === "All"
-                ? "bg-teal/20 border-teal/40 text-teal"
-                : "bg-white/[0.03] border-white/[0.08] text-muted hover:border-white/[0.15] hover:text-white/70"
-            }`}
-          >
-            All
-          </button>
-          {availableTags.map((tag) => (
+      {/* Tag filter bar — two rows: Markets + Topics */}
+      {(marketTags.length > 0 || topicTags.length > 0) && (
+        <div className="mb-10 space-y-3">
+          {/* Row 1: All + Markets */}
+          <div className="flex flex-wrap items-center gap-2">
             <button
-              key={tag}
-              onClick={() => setActiveTag(tag)}
+              onClick={() => setActiveTag("All")}
               className={`font-mono text-[11px] uppercase tracking-[1.5px] px-3.5 py-1.5 rounded-full border transition-all duration-200 ${
-                activeTag === tag
+                activeTag === "All"
                   ? "bg-teal/20 border-teal/40 text-teal"
                   : "bg-white/[0.03] border-white/[0.08] text-muted hover:border-white/[0.15] hover:text-white/70"
               }`}
             >
-              {tag}
+              All
             </button>
-          ))}
+            {marketTags.length > 0 && (
+              <span className="text-white/20 mx-1 text-[10px]">|</span>
+            )}
+            {marketTags.map((tag) => (
+              <button
+                key={tag}
+                onClick={() => setActiveTag(tag)}
+                className={`font-mono text-[11px] uppercase tracking-[1.5px] px-3.5 py-1.5 rounded-full border transition-all duration-200 ${
+                  activeTag === tag
+                    ? "bg-teal/20 border-teal/40 text-teal"
+                    : "bg-white/[0.03] border-white/[0.08] text-muted hover:border-white/[0.15] hover:text-white/70"
+                }`}
+              >
+                {tag}
+              </button>
+            ))}
+          </div>
+          {/* Row 2: Topics */}
+          {topicTags.length > 0 && (
+            <div className="flex flex-wrap items-center gap-2">
+              {topicTags.map((tag) => (
+                <button
+                  key={tag}
+                  onClick={() => setActiveTag(tag)}
+                  className={`font-mono text-[11px] uppercase tracking-[1.5px] px-3.5 py-1.5 rounded-full border transition-all duration-200 ${
+                    activeTag === tag
+                      ? "bg-teal/20 border-teal/40 text-teal"
+                      : "bg-white/[0.03] border-white/[0.08] text-muted hover:border-white/[0.15] hover:text-white/70"
+                  }`}
+                >
+                  {tag}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       )}
 
