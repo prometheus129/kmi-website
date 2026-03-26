@@ -74,8 +74,8 @@ export default function AboutPage() {
                 trading house captures that gap.
               </p>
               <p>
-                Kantor inverts this. We evaluate 600+ producers and merchants across
-                approximately 1,600 producers on every order. Buyers delegate
+                Kantor inverts this. We evaluate 600+ producers and merchants
+                across China on every order. Buyers delegate
                 procurement optimization to us and judge on outcomes: price
                 quality, execution reliability, and market guidance accuracy.
               </p>

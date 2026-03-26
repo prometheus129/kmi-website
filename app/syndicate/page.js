@@ -27,7 +27,7 @@ const howItWorks = [
   {
     num: "02",
     title: "Evaluation",
-    desc: "Tell us the grade, quantity, and timeline. We evaluate 600+ merchants across ~1,600 Chinese producers and present the best-execution option for your specific order.",
+    desc: "Tell us the grade, quantity, and timeline. We evaluate 600+ producers and merchants across China and present the best-execution option for your specific order.",
   },
   {
     num: "03",
