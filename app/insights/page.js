@@ -21,6 +21,9 @@ export const metadata = {
       th: "/th/insights",
       bn: "/bn/insights",
       ru: "/ru/insights",
+      ar: "/ar/insights",
+      fr: "/fr/insights",
+      ur: "/ur/insights",
     },
   },
 };

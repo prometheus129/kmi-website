@@ -22,6 +22,9 @@ const MARKET_TAGS = [
   "Thailand",
   "Egypt",
   "Pakistan",
+  "Kenya",
+  "Morocco",
+  "Algeria",
 ];
 
 const TOPIC_TAGS = [

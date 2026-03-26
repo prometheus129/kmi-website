@@ -36,10 +36,13 @@ const languages = [
   { code: "th", display: "TH", href: "/th/insights" },
   { code: "bn", display: "BN", href: "/bn/insights" },
   { code: "ru", display: "RU", href: "/ru/insights" },
+  { code: "ar", display: "AR", href: "/ar/insights" },
+  { code: "fr", display: "FR", href: "/fr/insights" },
+  { code: "ur", display: "UR", href: "/ur/insights" },
 ];
 
 function getLocaleFromPath(pathname) {
-  const match = pathname.match(/^\/(vi|tr|id|es|pt|th|bn|ru)(\/|$)/);
+  const match = pathname.match(/^\/(vi|tr|id|es|pt|th|bn|ru|ar|fr|ur)(\/|$)/);
   return match ? match[1] : "en";
 }
 
