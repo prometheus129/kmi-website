@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25",
+  "lastUpdated": "2026-03-26",
   "source": "Kantor Materials market assessment",
   "prices": [
     {
@@ -8,17 +8,73 @@
         "en": "Yarn / Raffia",
         "vi": "Sợi / Raffia",
         "tr": "İplik / Rafya",
-        "id": "Benang / Rafia"
+        "id": "Benang / Rafia",
+        "es": "Hilo / Rafia",
+        "pt": "Fio / Ráfia",
+        "th": "เส้นด้าย / ราเฟีย"
       },
-      "grades": "T30S / PPH-T03",
-      "cfrRange": [1220, 1350],
+      "grades": "T30S / PPH-T03 / HP550J",
+      "cfrRange": [1200, 1280],
+      "direction": "stable",
+      "weekChange": -30,
+      "notes": {
+        "en": "CTO producers cutting offers; naphtha-route supply tightening on Korea shutdowns",
+        "vi": "Nhà sản xuất CTO giảm giá chào; nguồn nafta thắt chặt do Hàn Quốc dừng sản xuất",
+        "tr": "CTO üreticileri tekliflerini düşürüyor; Kore kapatmaları nedeniyle nafta arzı daralması",
+        "id": "Produsen CTO menurunkan penawaran; pasokan nafta menyempit karena shutdown Korea",
+        "es": "Productores CTO reducen ofertas; suministro nafta se ajusta por paradas en Corea",
+        "pt": "Produtores CTO reduzem ofertas; oferta nafta diminui com paradas na Coreia",
+        "th": "ผู้ผลิต CTO ลดราคาเสนอ; แหล่งแนฟทาตึงตัวจากการปิดซ่อมในเกาหลี"
+      }
+    },
+    {
+      "product": "PP Homo",
+      "subtype": {
+        "en": "Thin Wall / Injection",
+        "vi": "Thành mỏng / Ép phun",
+        "tr": "İnce Cidar / Enjeksiyon",
+        "id": "Dinding Tipis / Injeksi",
+        "es": "Pared Delgada / Inyección",
+        "pt": "Parede Fina / Injeção",
+        "th": "ผนังบาง / ฉีดขึ้นรูป"
+      },
+      "grades": "MN70 / G70/75 / BZ-70X",
+      "cfrRange": [1270, 1340],
+      "direction": "stable",
+      "weekChange": -10,
+      "notes": {
+        "en": "High-MFR grades holding; food packaging demand steady across SE Asia",
+        "vi": "Các loại MFR cao giữ giá; nhu cầu bao bì thực phẩm ổn định tại Đông Nam Á",
+        "tr": "Yüksek MFR gradlar tutuyor; Güneydoğu Asya'da gıda ambalaj talebi istikrarlı",
+        "id": "Grade MFR tinggi bertahan; permintaan kemasan makanan stabil di Asia Tenggara",
+        "es": "Grados alto MFR estables; demanda de envases alimentarios firme en SE Asia",
+        "pt": "Grades alto MFR estáveis; demanda de embalagens alimentícias firme no Sudeste Asiático",
+        "th": "เกรด MFR สูงทรงตัว; ความต้องการบรรจุภัณฑ์อาหารในอาเซียนคงที่"
+      }
+    },
+    {
+      "product": "PP Homo",
+      "subtype": {
+        "en": "Fiber / Nonwoven",
+        "vi": "Sợi / Không dệt",
+        "tr": "Elyaf / Dokusuz",
+        "id": "Serat / Non-woven",
+        "es": "Fibra / No Tejido",
+        "pt": "Fibra / Não Tecido",
+        "th": "เส้นใย / ผ้าไม่ทอ"
+      },
+      "grades": "Y16/25 / Y40",
+      "cfrRange": [1280, 1350],
       "direction": "stable",
       "weekChange": -15,
       "notes": {
-        "en": "CTO producers holding; naphtha-route supply tightening",
-        "vi": "Nhà sản xuất CTO giữ giá; nguồn nafta thắt chặt",
-        "tr": "CTO üreticileri fiyat tutuyor; nafta kaynaklı arz daralması",
-        "id": "Produsen CTO mempertahankan harga; pasokan jalur nafta menyempit"
+        "en": "Nonwoven demand supported by hygiene sector; limited spot from coastal producers",
+        "vi": "Nhu cầu vải không dệt được hỗ trợ bởi ngành vệ sinh; hàng giao ngay hạn chế từ nhà sản xuất ven biển",
+        "tr": "Dokusuz kumaş talebi hijyen sektörü tarafından destekleniyor; kıyı üreticilerinden sınırlı spot arzı",
+        "id": "Permintaan non-woven didukung sektor kebersihan; spot terbatas dari produsen pesisir",
+        "es": "Demanda no tejidos sostenida por sector higiene; spot limitado de productores costeros",
+        "pt": "Demanda não tecidos sustentada por setor higiene; spot limitado de produtores costeiros",
+        "th": "ความต้องการผ้าไม่ทอจากภาคสุขอนามัย; สปอตจากผู้ผลิตชายฝั่งจำกัด"
       }
     },
     {
@@ -27,17 +83,23 @@
         "en": "Packaging film",
         "vi": "Màng bao bì",
         "tr": "Ambalaj filmi",
-        "id": "Film kemasan"
+        "id": "Film kemasan",
+        "es": "Película de embalaje",
+        "pt": "Filme de embalagem",
+        "th": "ฟิล์มบรรจุภัณฑ์"
       },
       "grades": "7042 / DFDA-7042",
       "cfrRange": [1200, 1310],
-      "direction": "down",
+      "direction": "stable",
       "weekChange": -40,
       "notes": {
-        "en": "Inland CTO producers cutting offers; coastal naphtha producers holding",
-        "vi": "Nhà sản xuất CTO nội địa giảm giá chào; nhà sản xuất nafta ven biển giữ giá",
-        "tr": "İç bölge CTO üreticileri tekliflerini düşürüyor; kıyı nafta üreticileri tutuyor",
-        "id": "Produsen CTO pedalaman menurunkan penawaran; produsen nafta pesisir bertahan"
+        "en": "Prices stabilized after CTO producer cuts; Korea YNCC offline supports China-origin demand",
+        "vi": "Giá ổn định sau khi nhà sản xuất CTO giảm; YNCC Hàn Quốc ngừng hoạt động hỗ trợ nhu cầu hàng Trung Quốc",
+        "tr": "CTO üretici indirimlerinden sonra fiyatlar dengelendi; Kore YNCC kapatması Çin menşeli talebi destekliyor",
+        "id": "Harga stabil setelah pemotongan produsen CTO; YNCC Korea offline mendukung permintaan asal China",
+        "es": "Precios estabilizados tras recortes CTO; parada YNCC Corea impulsa demanda origen China",
+        "pt": "Preços estabilizados após cortes CTO; parada YNCC Coreia impulsiona demanda origem China",
+        "th": "ราคาทรงตัวหลังผู้ผลิต CTO ลดราคา; YNCC เกาหลีหยุดเดินเครื่องหนุนความต้องการจากจีน"
       }
     },
     {
@@ -46,7 +108,10 @@
         "en": "Blow molding / Film",
         "vi": "Thổi / Màng",
         "tr": "Şişirme kalıplama / Film",
-        "id": "Blow molding / Film"
+        "id": "Blow molding / Film",
+        "es": "Soplado / Película",
+        "pt": "Sopro / Filme",
+        "th": "เป่าขึ้นรูป / ฟิล์ม"
       },
       "grades": "DGDB-6097 / 7260",
       "cfrRange": [1210, 1340],
@@ -56,7 +121,10 @@
         "en": "Limited export availability from Guangxi Petrochemical; Daqing steady",
         "vi": "Nguồn xuất khẩu hạn chế từ Guangxi Petrochemical; Daqing ổn định",
         "tr": "Guangxi Petrochemical'dan sınırlı ihracat arzı; Daqing istikrarlı",
-        "id": "Ketersediaan ekspor terbatas dari Guangxi Petrochemical; Daqing stabil"
+        "id": "Ketersediaan ekspor terbatas dari Guangxi Petrochemical; Daqing stabil",
+        "es": "Disponibilidad exportación limitada de Guangxi Petrochemical; Daqing estable",
+        "pt": "Disponibilidade exportação limitada da Guangxi Petrochemical; Daqing estável",
+        "th": "ปริมาณส่งออกจาก Guangxi Petrochemical จำกัด; Daqing คงที่"
       }
     },
     {
@@ -65,7 +133,10 @@
         "en": "Suspension grade",
         "vi": "Huyền phù",
         "tr": "Süspansiyon",
-        "id": "Suspensi"
+        "id": "Suspensi",
+        "es": "Grado suspensión",
+        "pt": "Grau suspensão",
+        "th": "เกรดแขวนลอย"
       },
       "grades": "SG-5 / SG-8",
       "cfrRange": [870, 980],
@@ -75,7 +146,10 @@
         "en": "Export rebate deadline April 1 lifting FOB offers; carbide-route costs rising",
         "vi": "Hạn hoàn thuế xuất khẩu ngày 1/4 đẩy giá FOB; chi phí sản xuất quy trình đất đèn tăng",
         "tr": "1 Nisan ihracat iadesi son tarihi FOB fiyatlarını yükseltiyor; karbür rotası maliyetleri artıyor",
-        "id": "Batas waktu rebate ekspor 1 April mendorong harga FOB naik; biaya jalur karbida meningkat"
+        "id": "Batas waktu rebate ekspor 1 April mendorong harga FOB naik; biaya jalur karbida meningkat",
+        "es": "Fecha límite rebate exportación 1 abril eleva ofertas FOB; costos ruta carburo suben",
+        "pt": "Prazo rebate exportação 1 abril eleva ofertas FOB; custos rota carbeto sobem",
+        "th": "กำหนดส่งคืนภาษีส่งออก 1 เม.ย. ดันราคา FOB; ต้นทุนสายคาร์ไบด์สูงขึ้น"
       }
     },
     {
@@ -84,7 +158,10 @@
         "en": "Fiber / Textile grade",
         "vi": "Sợi / Dệt",
         "tr": "Elyaf / Tekstil",
-        "id": "Serat / Tekstil"
+        "id": "Serat / Tekstil",
+        "es": "Fibra / Textil",
+        "pt": "Fibra / Têxtil",
+        "th": "เส้นใย / สิ่งทอ"
       },
       "grades": "Chips / Pellets",
       "cfrRange": [1650, 1850],
@@ -94,7 +171,10 @@
         "en": "Caprolactam feedstock steady; limited spot availability",
         "vi": "Nguyên liệu caprolactam ổn định; hàng giao ngay hạn chế",
         "tr": "Kaprolaktam hammaddesi istikrarlı; sınırlı spot arzı",
-        "id": "Bahan baku kaprolaktam stabil; ketersediaan spot terbatas"
+        "id": "Bahan baku kaprolaktam stabil; ketersediaan spot terbatas",
+        "es": "Materia prima caprolactama estable; disponibilidad spot limitada",
+        "pt": "Matéria-prima caprolactama estável; disponibilidade spot limitada",
+        "th": "วัตถุดิบคาโปรแลกแทมคงที่; สปอตมีจำกัด"
       }
     }
   ]
