@@ -48,6 +48,16 @@ function getLocalizedPath(pathname, targetLocale) {
   return `/${targetLocale}${hasTranslation ? basePath : "/insights"}`;
 }
 
+// Locales that have a translated /terminal page
+const terminalLocales = ["en", "vi", "tr"];
+
+function getTerminalSubscribeHref(locale) {
+  if (terminalLocales.includes(locale) && locale !== "en") {
+    return `/${locale}/terminal#subscribe`;
+  }
+  return "/terminal#subscribe";
+}
+
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -200,7 +210,7 @@ export default function Nav() {
           </div>
 
           <Link
-            href="/terminal#subscribe"
+            href={getTerminalSubscribeHref(currentLocale)}
             className="bg-gold text-navy-deep text-xs font-semibold tracking-wider px-5 py-2.5 rounded-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-px shadow-[0_2px_12px_rgba(212,168,67,0.25)]"
           >
             FREE DAILY PRICING
@@ -273,7 +283,7 @@ export default function Nav() {
             </div>
 
             <Link
-              href="/terminal#subscribe"
+              href={getTerminalSubscribeHref(currentLocale)}
               onClick={() => setMobileOpen(false)}
               className="bg-gold text-navy-deep text-xs font-semibold tracking-wider px-5 py-3 rounded-lg text-center mt-2"
             >

@@ -52,6 +52,16 @@ const STRINGS = {
   },
 };
 
+// Locales that have a translated /terminal page
+const terminalLocales = ["en", "vi", "tr"];
+
+function getTerminalPath(locale) {
+  if (terminalLocales.includes(locale) && locale !== "en") {
+    return `/${locale}/terminal#subscribe`;
+  }
+  return "/terminal#subscribe";
+}
+
 export default function MorningTerminalCTA({ locale = "en" }) {
   const t = STRINGS[locale] || STRINGS.en;
 
@@ -76,7 +86,7 @@ export default function MorningTerminalCTA({ locale = "en" }) {
         </div>
 
         <Link
-          href="/terminal#subscribe"
+          href={getTerminalPath(locale)}
           className="inline-flex items-center justify-center gap-2 bg-teal hover:bg-teal-light text-white font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:-translate-y-px whitespace-nowrap shrink-0"
         >
           {t.button}
