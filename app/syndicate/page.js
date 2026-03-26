@@ -6,7 +6,7 @@ import Link from "next/link";
 export const metadata = {
   title: "The Kantor Syndicate — Commodity Polymer Procurement",
   description:
-    "Aggregated procurement for mid-tier polymer distributors. PP, PE, LDPE, PA6, PVC, ABS sourced across 600+ merchants with volume-based economics. Lane 1 commodity polymers.",
+    "Aggregated procurement for mid-tier polymer distributors. PP, PE, LDPE, PA6, PVC, ABS sourced across 600+ producers and merchants with volume-based economics. Lane 1 commodity polymers.",
 };
 
 const grades = [

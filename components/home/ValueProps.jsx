@@ -16,7 +16,7 @@ const props = [
   },
   {
     title: "Full-Market Sourcing",
-    text: "Kantor Materials evaluates 600+ merchants on every order. You see one price — the best one available for your grade, quantity, and timeline.",
+    text: "Kantor Materials evaluates 600+ producers and merchants on every order. You see one price — the best one available for your grade, quantity, and timeline.",
     accent: "border-white/20",
     iconColor: "text-body-text",
     iconBg: "bg-white/[0.06] border-white/10",

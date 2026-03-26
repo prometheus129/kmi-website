@@ -35,7 +35,7 @@ export default function LaneCards() {
                 </div>
                 <p className="text-sm text-body-text leading-relaxed font-sans mb-5">
                   Volume-aggregated procurement. Your 50 MT joins a 300 MT order.
-                  Best-execution pricing across 600+ merchants.
+                  Best-execution pricing across 600+ producers and merchants.
                 </p>
                 <span className="text-[13px] text-white font-semibold font-sans inline-flex items-center gap-1.5 tracking-wide group-hover:text-teal transition-colors duration-200">
                   Learn More{" "}

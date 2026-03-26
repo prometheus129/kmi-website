@@ -7,7 +7,7 @@ import JsonLd, { organizationSchema } from "@/components/JsonLd";
 export const metadata = {
   title: "About — Kantor Materials International",
   description:
-    "Discretionary polymer procurement platform. Lane 1: commodity aggregation across 600+ merchants. Lane 2: UL-certified engineering compounds. Hong Kong headquartered, sourcing from China.",
+    "Discretionary polymer procurement platform. Lane 1: commodity aggregation across 600+ producers and merchants. Lane 2: UL-certified engineering compounds. Hong Kong headquartered, sourcing from China.",
 };
 
 const markets = [
@@ -74,7 +74,7 @@ export default function AboutPage() {
                 trading house captures that gap.
               </p>
               <p>
-                Kantor inverts this. We evaluate 600+ merchants across
+                Kantor inverts this. We evaluate 600+ producers and merchants across
                 approximately 1,600 producers on every order. Buyers delegate
                 procurement optimization to us and judge on outcomes: price
                 quality, execution reliability, and market guidance accuracy.
@@ -172,7 +172,7 @@ export default function AboutPage() {
               {
                 num: "02",
                 title: "Evaluation",
-                desc: "On every order, we evaluate 600+ merchants across China's producer network. You see one price — the best available for your grade, quantity, and timeline.",
+                desc: "On every order, we evaluate 600+ producers and merchants across China. You see one price — the best available for your grade, quantity, and timeline.",
               },
               {
                 num: "03",
