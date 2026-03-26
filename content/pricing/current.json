@@ -151,31 +151,6 @@
         "pt": "Prazo rebate exportação 1 abril eleva ofertas FOB; custos rota carbeto sobem",
         "th": "กำหนดส่งคืนภาษีส่งออก 1 เม.ย. ดันราคา FOB; ต้นทุนสายคาร์ไบด์สูงขึ้น"
       }
-    },
-    {
-      "product": "PA6",
-      "subtype": {
-        "en": "Fiber / Textile grade",
-        "vi": "Sợi / Dệt",
-        "tr": "Elyaf / Tekstil",
-        "id": "Serat / Tekstil",
-        "es": "Fibra / Textil",
-        "pt": "Fibra / Têxtil",
-        "th": "เส้นใย / สิ่งทอ"
-      },
-      "grades": "Chips / Pellets",
-      "cfrRange": [1650, 1850],
-      "direction": "stable",
-      "weekChange": 0,
-      "notes": {
-        "en": "Caprolactam feedstock steady; limited spot availability",
-        "vi": "Nguyên liệu caprolactam ổn định; hàng giao ngay hạn chế",
-        "tr": "Kaprolaktam hammaddesi istikrarlı; sınırlı spot arzı",
-        "id": "Bahan baku kaprolaktam stabil; ketersediaan spot terbatas",
-        "es": "Materia prima caprolactama estable; disponibilidad spot limitada",
-        "pt": "Matéria-prima caprolactama estável; disponibilidade spot limitada",
-        "th": "วัตถุดิบคาโปรแลกแทมคงที่; สปอตมีจำกัด"
-      }
     }
   ]
 }

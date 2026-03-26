@@ -6,7 +6,7 @@ const previewRows = [
   { grade: "PP T30S", producer: "Kunlun", price: "$1,180", dir: "▼", chg: "$10", signal: "HOLD", dirColor: "text-ticker-red", sigColor: "text-gold", sigBg: "bg-gold/10" },
   { grade: "HDPE 5000S", producer: "Yangzi", price: "$1,210", dir: "▲", chg: "$8", signal: "BUY", dirColor: "text-ticker-green", sigColor: "text-ticker-green", sigBg: "bg-ticker-green/10" },
   { grade: "LLDPE 7042", producer: "Dushanzi", price: "$1,245", dir: "▲", chg: "$5", signal: "HOLD", dirColor: "text-ticker-green", sigColor: "text-gold", sigBg: "bg-gold/10" },
-  { grade: "PA6 Chips", producer: "Hengyi", price: "$1,680", dir: "▼", chg: "$15", signal: "WAIT", dirColor: "text-ticker-red", sigColor: "text-ticker-red", sigBg: "bg-ticker-red/10" },
+  { grade: "PVC SG-5", producer: "Zhongtai", price: "$940", dir: "▲", chg: "$20", signal: "BUY", dirColor: "text-ticker-green", sigColor: "text-ticker-green", sigBg: "bg-ticker-green/10" },
 ];
 
 export default function TerminalHero({ locale = "en" }) {
@@ -80,7 +80,7 @@ export default function TerminalHero({ locale = "en" }) {
                     Three Corridors Down — One Left Standing
                   </div>
                   <div className="font-sans text-[11px] text-muted mt-1">
-                    PP · PE · PVC · PA6 — CFR SE Asia
+                    PP · PE · PVC — CFR SE Asia
                   </div>
                 </div>
 
