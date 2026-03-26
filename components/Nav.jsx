@@ -21,10 +21,11 @@ const languages = [
   { code: "es", label: "Español", display: "ES" },
   { code: "pt", label: "Português", display: "PT" },
   { code: "th", label: "ภาษาไทย", display: "TH" },
+  { code: "bn", label: "বাংলা", display: "BN" },
 ];
 
 function getLocaleFromPath(pathname) {
-  const match = pathname.match(/^\/(vi|tr|id|es|pt|th)(\/|$)/);
+  const match = pathname.match(/^\/(vi|tr|id|es|pt|th|bn)(\/|$)/);
   return match ? match[1] : "en";
 }
 
@@ -50,7 +51,7 @@ function getLocalizedPath(pathname, targetLocale) {
 }
 
 // Locales that have a translated /terminal page
-const terminalLocales = ["en", "vi", "tr", "id", "es", "pt", "th"];
+const terminalLocales = ["en", "vi", "tr", "id", "es", "pt", "th", "bn"];
 
 function getTerminalSubscribeHref(locale) {
   if (terminalLocales.includes(locale) && locale !== "en") {
