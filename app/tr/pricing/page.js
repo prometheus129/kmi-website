@@ -8,7 +8,12 @@ export const metadata = {
     languages: {
       en: "/pricing",
       vi: "/vi/pricing",
+      tr: "/tr/pricing",
       id: "/id/pricing",
+      es: "/es/pricing",
+      pt: "/pt/pricing",
+      th: "/th/pricing",
+      bn: "/bn/pricing",
     },
   },
 };

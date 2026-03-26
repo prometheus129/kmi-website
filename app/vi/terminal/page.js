@@ -7,7 +7,13 @@ export const metadata = {
   alternates: {
     languages: {
       en: "/terminal",
+      vi: "/vi/terminal",
       tr: "/tr/terminal",
+      id: "/id/terminal",
+      es: "/es/terminal",
+      pt: "/pt/terminal",
+      th: "/th/terminal",
+      bn: "/bn/terminal",
     },
   },
 };

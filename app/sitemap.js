@@ -27,7 +27,7 @@ export default function sitemap() {
   }
 
   // Pricing pages — daily frequency for SEO freshness signal
-  const pricingLocales = { en: "/pricing", vi: "/vi/pricing", tr: "/tr/pricing", id: "/id/pricing" };
+  const pricingLocales = { en: "/pricing", vi: "/vi/pricing", tr: "/tr/pricing", id: "/id/pricing", es: "/es/pricing", pt: "/pt/pricing", th: "/th/pricing", bn: "/bn/pricing" };
   const pricingAlternates = { languages: pricingLocales };
   for (const [, pPath] of Object.entries(pricingLocales)) {
     staticPages.push({
