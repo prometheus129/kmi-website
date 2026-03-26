@@ -1,5 +1,29 @@
 import Link from "next/link";
 
+const CONTACT_STRINGS = {
+  en: {
+    overline: "ENGINEERING POLYMERS",
+    headline: "Need specification matching?",
+    description:
+      "Tell us your current grade, application, and volume. We'll identify certified Chinese equivalents and provide competitive pricing within 48 hours.",
+    button: "Get a Quote",
+  },
+  tr: {
+    overline: "MÜHENDİSLİK POLİMERLERİ",
+    headline: "Spesifikasyon eşleşmesi mi gerekiyor?",
+    description:
+      "Mevcut gradenizi, uygulamanızı ve hacminizi belirtin. 48 saat içinde sertifikalı Çin eşdeğerlerini ve rekabetçi fiyatları sunalım.",
+    button: "Teklif Alın",
+  },
+  th: {
+    overline: "โพลิเมอร์วิศวกรรม",
+    headline: "ต้องการจับคู่สเปค?",
+    description:
+      "แจ้งเกรดปัจจุบัน การใช้งาน และปริมาณ เราจะหาทางเลือกจากจีนที่มีการรับรองและเสนอราคาภายใน 48 ชั่วโมง",
+    button: "ขอใบเสนอราคา",
+  },
+};
+
 const STRINGS = {
   en: {
     overline: "MORNING TERMINAL",
@@ -53,7 +77,7 @@ const STRINGS = {
 };
 
 // Locales that have a translated /terminal page
-const terminalLocales = ["en", "vi", "tr"];
+const terminalLocales = ["en", "vi", "tr", "id", "es", "pt", "th"];
 
 function getTerminalPath(locale) {
   if (terminalLocales.includes(locale) && locale !== "en") {
@@ -62,8 +86,11 @@ function getTerminalPath(locale) {
   return "/terminal#subscribe";
 }
 
-export default function MorningTerminalCTA({ locale = "en" }) {
-  const t = STRINGS[locale] || STRINGS.en;
+export default function MorningTerminalCTA({ locale = "en", variant = "terminal" }) {
+  const isContact = variant === "contact";
+  const t = isContact
+    ? (CONTACT_STRINGS[locale] || CONTACT_STRINGS.en)
+    : (STRINGS[locale] || STRINGS.en);
 
   return (
     <section className="mt-16 border border-teal/20 rounded-lg bg-gradient-to-br from-teal/[0.06] to-teal/[0.02] p-8 lg:p-10">
@@ -86,7 +113,7 @@ export default function MorningTerminalCTA({ locale = "en" }) {
         </div>
 
         <Link
-          href={getTerminalPath(locale)}
+          href={isContact ? "/contact" : getTerminalPath(locale)}
           className="inline-flex items-center justify-center gap-2 bg-teal hover:bg-teal-light text-white font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:-translate-y-px whitespace-nowrap shrink-0"
         >
           {t.button}

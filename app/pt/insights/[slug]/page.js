@@ -43,6 +43,10 @@ export default async function PtInsightArticlePage({ params }) {
 
   const { frontmatter, content, translations } = article;
 
+  // Lane 2 / engineering / recycled articles → contact CTA instead of MT subscribe
+  const contactSlugs = ["engineering-polymer", "ul-reach-fda", "recycled-polymer", "ppwr-recycled", "thailand-automotive", "turkiye-otomotiv"];
+  const ctaVariant = contactSlugs.some((s) => slug.includes(s)) ? "contact" : "terminal";
+
   return (
     <div className="bg-navy min-h-screen text-white">
       <JsonLd
@@ -105,7 +109,7 @@ export default async function PtInsightArticlePage({ params }) {
             <MDXRemote source={content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
           </div>
 
-          <MorningTerminalCTA locale="pt" />
+          <MorningTerminalCTA locale="pt" variant={ctaVariant} />
         </div>
       </article>
 

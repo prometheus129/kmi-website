@@ -24,9 +24,9 @@ export default function TerminalHero({ locale = "en" }) {
       />
 
       <div className="max-w-[1200px] mx-auto relative z-10">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16">
+        <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16">
           {/* Left — Text */}
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 lg:pt-6">
             <RevealDiv>
               <div className="text-xs tracking-[4px] text-teal font-sans font-semibold mb-6">
                 {text.label}
@@ -66,15 +66,6 @@ export default function TerminalHero({ locale = "en" }) {
                   <div className="font-sans text-[11px] text-muted mt-1">
                     PP · PE · PVC · PA6 — CFR SE Asia
                   </div>
-                </div>
-
-                {/* Market Context Snippet */}
-                <div className="px-6 py-4 border-b border-white/[0.06]">
-                  <p className="font-sans text-[12px] text-body-text leading-relaxed">
-                    Three of four polymer supply corridors to SE Asia now
-                    disrupted. China-origin product via South China Sea remains
-                    the only unimpeded route — and the cheapest.
-                  </p>
                 </div>
 
                 {/* Compact Pricing Table */}

@@ -102,6 +102,75 @@ const UI_STRINGS = {
     disclaimer:
       "Harga yang ditampilkan adalah penilaian pasar CFR berdasarkan data perdagangan yang dipublikasikan dan riset Kantor Materials. Ini adalah kisaran indikatif, bukan penawaran pasti.",
   },
+  es: {
+    overline: "PRECIOS DIARIOS",
+    h1: "Precios de Polímeros PP, PE, PVC Hoy",
+    subtitle:
+      "Evaluación de mercado CFR para PP, PE y PVC de origen chino — actualizada en cada sesión de negociación. Publicado por el equipo de investigación de Kantor Materials.",
+    lastUpdated: "Última actualización",
+    source: "Fuente",
+    colProduct: "Producto",
+    colGrade: "Grado",
+    colCFR: "Rango CFR (USD/TM)",
+    colDirection: "Tendencia",
+    colChange: "S/S",
+    colNotes: "Nota de Mercado",
+    ctaOverline: "MORNING TERMINAL",
+    ctaTitle: "Reciba precios diarios por correo",
+    ctaDesc:
+      "Reciba actualizaciones de precios, señales de compra y alertas de cadena de suministro antes de la apertura del mercado. Gratis para importadores.",
+    ctaButton: "Suscribirse Gratis",
+    insightsLink: "Ver todos los análisis de mercado",
+    insightsHref: "/es/insights",
+    disclaimer:
+      "Los precios mostrados son evaluaciones de mercado CFR basadas en datos comerciales publicados e investigación de Kantor Materials. Son rangos indicativos, no ofertas en firme.",
+  },
+  pt: {
+    overline: "PREÇOS DIÁRIOS",
+    h1: "Preços de Polímeros PP, PE, PVC Hoje",
+    subtitle:
+      "Avaliação de mercado CFR para PP, PE e PVC de origem chinesa — atualizada a cada sessão de negociação. Publicado pela equipe de pesquisa da Kantor Materials.",
+    lastUpdated: "Última atualização",
+    source: "Fonte",
+    colProduct: "Produto",
+    colGrade: "Grade",
+    colCFR: "Faixa CFR (USD/TM)",
+    colDirection: "Tendência",
+    colChange: "S/S",
+    colNotes: "Nota de Mercado",
+    ctaOverline: "MORNING TERMINAL",
+    ctaTitle: "Receba preços diários por e-mail",
+    ctaDesc:
+      "Receba atualizações de preços, sinais de compra e alertas de cadeia de suprimentos antes da abertura do mercado. Grátis para importadores.",
+    ctaButton: "Assine Grátis",
+    insightsLink: "Ver todas as análises de mercado",
+    insightsHref: "/pt/insights",
+    disclaimer:
+      "Os preços exibidos são avaliações de mercado CFR baseadas em dados comerciais publicados e pesquisa da Kantor Materials. São faixas indicativas, não ofertas firmes.",
+  },
+  th: {
+    overline: "ราคาวันนี้",
+    h1: "ราคาโพลิเมอร์ PP PE PVC วันนี้",
+    subtitle:
+      "การประเมินราคาตลาด CFR สำหรับ PP, PE และ PVC จากจีน — อัปเดตทุกรอบการซื้อขาย เผยแพร่โดยทีมวิจัย Kantor Materials",
+    lastUpdated: "อัปเดตล่าสุด",
+    source: "แหล่งที่มา",
+    colProduct: "ผลิตภัณฑ์",
+    colGrade: "เกรด",
+    colCFR: "ช่วง CFR (USD/MT)",
+    colDirection: "แนวโน้ม",
+    colChange: "สัปดาห์/สัปดาห์",
+    colNotes: "บันทึกตลาด",
+    ctaOverline: "MORNING TERMINAL",
+    ctaTitle: "รับราคารายวันทางอีเมล",
+    ctaDesc:
+      "รับข้อมูลราคา สัญญาณจังหวะซื้อ และการแจ้งเตือนห่วงโซ่อุปทานก่อนตลาดเปิด ฟรีสำหรับผู้นำเข้า",
+    ctaButton: "สมัครฟรี",
+    insightsLink: "ดูการวิเคราะห์ตลาดทั้งหมด",
+    insightsHref: "/th/insights",
+    disclaimer:
+      "ราคาที่แสดงเป็นการประเมินตลาด CFR อ้างอิงจากข้อมูลการค้าที่เผยแพร่และการวิจัยของ Kantor Materials เป็นช่วงราคาบ่งชี้ ไม่ใช่ข้อเสนอที่แน่นอน",
+  },
 };
 
 function DirectionBadge({ direction, locale }) {
