@@ -2,6 +2,13 @@ import Link from "next/link";
 import RevealDiv from "@/components/RevealDiv";
 import { t } from "@/lib/terminal-i18n";
 
+const previewRows = [
+  { grade: "PP T30S", producer: "Kunlun", price: "$1,180", dir: "▼", chg: "$10", signal: "HOLD", dirColor: "text-ticker-red", sigColor: "text-gold", sigBg: "bg-gold/10" },
+  { grade: "HDPE 5000S", producer: "Yangzi", price: "$1,210", dir: "▲", chg: "$8", signal: "BUY", dirColor: "text-ticker-green", sigColor: "text-ticker-green", sigBg: "bg-ticker-green/10" },
+  { grade: "LLDPE 7042", producer: "Dushanzi", price: "$1,245", dir: "▲", chg: "$5", signal: "HOLD", dirColor: "text-ticker-green", sigColor: "text-gold", sigBg: "bg-gold/10" },
+  { grade: "PA6 Chips", producer: "Hengyi", price: "$1,680", dir: "▼", chg: "$15", signal: "WAIT", dirColor: "text-ticker-red", sigColor: "text-ticker-red", sigBg: "bg-ticker-red/10" },
+];
+
 export default function TerminalHero({ locale = "en" }) {
   const text = t(locale).hero;
   return (
@@ -17,23 +24,123 @@ export default function TerminalHero({ locale = "en" }) {
       />
 
       <div className="max-w-[1200px] mx-auto relative z-10">
-        <RevealDiv>
-          <div className="text-xs tracking-[4px] text-teal font-sans font-semibold mb-6">
-            {text.label}
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16">
+          {/* Left — Text */}
+          <div className="lg:w-1/2">
+            <RevealDiv>
+              <div className="text-xs tracking-[4px] text-teal font-sans font-semibold mb-6">
+                {text.label}
+              </div>
+              <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                {text.title}
+              </h1>
+              <p className="font-sans text-lg text-body-text leading-relaxed max-w-[540px] mb-8">
+                {text.subtitle}
+              </p>
+              <Link
+                href="#subscribe"
+                className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-sm tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
+              >
+                {text.cta}
+              </Link>
+            </RevealDiv>
           </div>
-          <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-[800px]">
-            {text.title}
-          </h1>
-          <p className="font-sans text-lg text-body-text leading-relaxed max-w-[640px] mb-8">
-            {text.subtitle}
-          </p>
-          <Link
-            href="#subscribe"
-            className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-sm tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
-          >
-            {text.cta}
-          </Link>
-        </RevealDiv>
+
+          {/* Right — MT Preview Card */}
+          <div className="lg:w-1/2 mt-12 lg:mt-0">
+            <RevealDiv delay={300}>
+              <div className="bg-[#0F1D2F] rounded-xl border border-white/[0.06] shadow-2xl shadow-black/30 overflow-hidden">
+                {/* Card Header */}
+                <div className="px-6 pt-5 pb-4 border-b border-white/[0.06]">
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="text-[10px] tracking-[3px] text-teal font-sans font-bold">
+                      MORNING TERMINAL
+                    </div>
+                    <div className="text-[10px] font-mono text-muted">
+                      SAMPLE
+                    </div>
+                  </div>
+                  <div className="font-serif text-base font-bold text-white leading-snug">
+                    Three Corridors Down — One Left Standing
+                  </div>
+                  <div className="font-sans text-[11px] text-muted mt-1">
+                    PP · PE · PVC · PA6 — CFR SE Asia
+                  </div>
+                </div>
+
+                {/* Market Context Snippet */}
+                <div className="px-6 py-4 border-b border-white/[0.06]">
+                  <p className="font-sans text-[12px] text-body-text leading-relaxed">
+                    Three of four polymer supply corridors to SE Asia now
+                    disrupted. China-origin product via South China Sea remains
+                    the only unimpeded route — and the cheapest.
+                  </p>
+                </div>
+
+                {/* Compact Pricing Table */}
+                <div className="px-6 py-4">
+                  <div className="text-[9px] tracking-[1.5px] text-muted font-sans mb-3">
+                    KANTOR INDICATIVE PRICING — CFR HCMC
+                  </div>
+                  {previewRows.map((row, i) => (
+                    <div
+                      key={i}
+                      className={`flex justify-between items-center py-2 ${
+                        i < previewRows.length - 1
+                          ? "border-b border-white/[0.04]"
+                          : ""
+                      }`}
+                    >
+                      <div className="flex items-center gap-3">
+                        <div>
+                          <div className="font-mono text-[11px] text-white font-medium">
+                            {row.grade}
+                          </div>
+                          <div className="font-mono text-[9px] text-muted">
+                            {row.producer}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="text-right">
+                          <div className="font-mono text-[11px] text-white">
+                            {row.price}
+                          </div>
+                          <div
+                            className={`font-mono text-[9px] ${row.dirColor}`}
+                          >
+                            {row.dir}
+                            {row.chg}
+                          </div>
+                        </div>
+                        <span
+                          className={`text-[8px] font-bold tracking-wider font-sans px-2 py-0.5 rounded ${row.sigColor} ${row.sigBg} w-[42px] text-center`}
+                        >
+                          {row.signal}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Timing Signal Snippet */}
+                <div className="mx-6 mb-5 p-3 rounded-lg bg-teal/[0.08] border border-teal/15">
+                  <div className="text-[8px] tracking-[1.5px] text-teal font-bold mb-1 font-sans">
+                    TIMING SIGNAL
+                  </div>
+                  <div className="text-[11px] text-body-text leading-relaxed font-sans">
+                    PP correction has further to run. HDPE tightening on
+                    Hormuz-dependent supply. Wait on PP, act on HDPE.
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-center font-sans text-[10px] text-muted mt-3 italic">
+                Sample issue — subscribe for live daily updates
+              </p>
+            </RevealDiv>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -2,6 +2,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
 import ArticleCard from "@/components/insights/ArticleCard";
+import MorningTerminalCTA from "@/components/insights/MorningTerminalCTA";
 import { getAllArticles } from "@/lib/insights";
 
 export const metadata = {
@@ -17,6 +18,8 @@ export const metadata = {
 
 export default function ViInsightsPage() {
   const articles = getAllArticles("vi");
+  const firstRow = articles.slice(0, 3);
+  const restArticles = articles.slice(3);
 
   return (
     <div className="bg-navy min-h-screen text-white">
@@ -54,13 +57,29 @@ export default function ViInsightsPage() {
               Chưa có bài viết nào. Vui lòng quay lại sau.
             </p>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {articles.map((article) => (
-                <RevealDiv key={article.slug}>
-                  <ArticleCard article={article} locale="vi" />
-                </RevealDiv>
-              ))}
-            </div>
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {firstRow.map((article) => (
+                  <RevealDiv key={article.slug}>
+                    <ArticleCard article={article} locale="vi" />
+                  </RevealDiv>
+                ))}
+              </div>
+
+              <div className="my-10 max-w-[780px] mx-auto">
+                <MorningTerminalCTA locale="vi" />
+              </div>
+
+              {restArticles.length > 0 && (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {restArticles.map((article) => (
+                    <RevealDiv key={article.slug}>
+                      <ArticleCard article={article} locale="vi" />
+                    </RevealDiv>
+                  ))}
+                </div>
+              )}
+            </>
           )}
         </div>
       </section>

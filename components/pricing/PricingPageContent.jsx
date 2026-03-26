@@ -290,7 +290,7 @@ export default function PricingPageContent({ locale = "en" }) {
                 </p>
               </div>
               <Link
-                href="/terminal#subscribe"
+                href={locale === "en" ? "/terminal#subscribe" : `/${locale}/terminal#subscribe`}
                 className="inline-flex items-center justify-center gap-2 bg-teal hover:bg-teal-light text-white font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:-translate-y-px whitespace-nowrap shrink-0"
               >
                 {s.ctaButton}

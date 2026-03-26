@@ -2,6 +2,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
 import ArticleCard from "@/components/insights/ArticleCard";
+import MorningTerminalCTA from "@/components/insights/MorningTerminalCTA";
 import { getAllArticles } from "@/lib/insights";
 
 export const metadata = {
@@ -17,6 +18,10 @@ export const metadata = {
 
 export default function PtInsightsPage() {
   const articles = getAllArticles("pt");
+
+  // Split articles into first row and rest for CTA insertion
+  const firstRow = articles.slice(0, 3);
+  const restArticles = articles.slice(3);
 
   return (
     <div className="bg-navy min-h-screen text-white">
@@ -51,13 +56,32 @@ export default function PtInsightsPage() {
               Nenhum artigo publicado ainda. Volte em breve.
             </p>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {articles.map((article) => (
-                <RevealDiv key={article.slug}>
-                  <ArticleCard article={article} locale="pt" />
-                </RevealDiv>
-              ))}
-            </div>
+            <>
+              {/* First row of articles */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {firstRow.map((article) => (
+                  <RevealDiv key={article.slug}>
+                    <ArticleCard article={article} locale="pt" />
+                  </RevealDiv>
+                ))}
+              </div>
+
+              {/* Inline MT CTA between article rows */}
+              <div className="my-10 max-w-[780px] mx-auto">
+                <MorningTerminalCTA locale="pt" />
+              </div>
+
+              {/* Remaining articles */}
+              {restArticles.length > 0 && (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {restArticles.map((article) => (
+                    <RevealDiv key={article.slug}>
+                      <ArticleCard article={article} locale="pt" />
+                    </RevealDiv>
+                  ))}
+                </div>
+              )}
+            </>
           )}
         </div>
       </section>
