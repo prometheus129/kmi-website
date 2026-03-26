@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { formatDate } from "@/lib/insights";
+import { formatDate } from "@/lib/format-date";
 
 export default function ArticleCard({ article, locale = "en" }) {
   const { slug, frontmatter } = article;
-  const href = locale === "en" ? `/insights/${slug}` : `/vi/insights/${slug}`;
+  const href = locale === "en" ? `/insights/${slug}` : `/${locale}/insights/${slug}`;
 
   return (
     <Link href={href} className="group block">

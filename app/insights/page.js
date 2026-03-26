@@ -1,8 +1,7 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
-import ArticleCard from "@/components/insights/ArticleCard";
-import MorningTerminalCTA from "@/components/insights/MorningTerminalCTA";
+import InsightsGrid from "@/components/insights/InsightsGrid";
 import { getAllArticles } from "@/lib/insights";
 
 export const metadata = {
@@ -20,10 +19,6 @@ export const metadata = {
 
 export default function InsightsPage() {
   const articles = getAllArticles("en");
-
-  // Split articles into first row and rest for CTA insertion
-  const firstRow = articles.slice(0, 3);
-  const restArticles = articles.slice(3);
 
   return (
     <div className="bg-navy min-h-screen text-white">
@@ -53,7 +48,7 @@ export default function InsightsPage() {
         <div className="border-t border-white/[0.08]" />
       </div>
 
-      {/* Article grid */}
+      {/* Article grid with tag filtering */}
       <section className="py-16 lg:py-20 px-6 lg:px-10">
         <div className="max-w-[1200px] mx-auto">
           {articles.length === 0 ? (
@@ -61,32 +56,7 @@ export default function InsightsPage() {
               No articles published yet. Check back soon.
             </p>
           ) : (
-            <>
-              {/* First row of articles */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {firstRow.map((article) => (
-                  <RevealDiv key={article.slug}>
-                    <ArticleCard article={article} locale="en" />
-                  </RevealDiv>
-                ))}
-              </div>
-
-              {/* Inline MT CTA between article rows */}
-              <div className="my-10 max-w-[780px] mx-auto">
-                <MorningTerminalCTA locale="en" />
-              </div>
-
-              {/* Remaining articles */}
-              {restArticles.length > 0 && (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {restArticles.map((article) => (
-                    <RevealDiv key={article.slug}>
-                      <ArticleCard article={article} locale="en" />
-                    </RevealDiv>
-                  ))}
-                </div>
-              )}
-            </>
+            <InsightsGrid articles={articles} locale="en" />
           )}
         </div>
       </section>

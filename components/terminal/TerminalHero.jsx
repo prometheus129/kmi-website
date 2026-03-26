@@ -43,6 +43,22 @@ export default function TerminalHero({ locale = "en" }) {
               >
                 {text.cta}
               </Link>
+
+              {/* Social proof indicators */}
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-6 text-xs text-muted font-mono">
+                <span className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-teal inline-block" />
+                  {text.proofMarkets || "8 markets covered"}
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-teal inline-block" />
+                  {text.proofGrades || "600+ suppliers evaluated daily"}
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-teal inline-block" />
+                  {text.proofCost || "Free — no credit card"}
+                </span>
+              </div>
             </RevealDiv>
           </div>
 

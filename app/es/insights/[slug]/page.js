@@ -22,6 +22,19 @@ export async function generateMetadata({ params }) {
   const meta = {
     title: `${article.frontmatter.title} — Kantor Materials`,
     description: article.frontmatter.description,
+    openGraph: {
+      title: article.frontmatter.title,
+      description: article.frontmatter.description,
+      type: "article",
+      publishedTime: article.frontmatter.date,
+      authors: [article.frontmatter.author],
+      siteName: "Kantor Materials",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.frontmatter.title,
+      description: article.frontmatter.description,
+    },
   };
 
   if (article.translations.length > 0) {
