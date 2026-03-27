@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26",
+  "lastUpdated": "2026-03-27",
   "source": "Kantor Materials market assessment",
   "prices": [
     {
@@ -18,13 +18,13 @@
       "direction": "stable",
       "weekChange": -30,
       "notes": {
-        "en": "CTO producers cutting offers; naphtha-route supply tightening on Korea shutdowns",
-        "vi": "Nhà sản xuất CTO giảm giá chào; nguồn nafta thắt chặt do Hàn Quốc dừng sản xuất",
-        "tr": "CTO üreticileri tekliflerini düşürüyor; Kore kapatmaları nedeniyle nafta arzı daralması",
-        "id": "Produsen CTO menurunkan penawaran; pasokan nafta menyempit karena shutdown Korea",
-        "es": "Productores CTO reducen ofertas; suministro nafta se ajusta por paradas en Corea",
-        "pt": "Produtores CTO reduzem ofertas; oferta nafta diminui com paradas na Coreia",
-        "th": "ผู้ผลิต CTO ลดราคาเสนอ; แหล่งแนฟทาตึงตัวจากการปิดซ่อมในเกาหลี"
+        "en": "FOB export flat for fourth consecutive day; domestic market firming with delivery windows extending into April",
+        "vi": "FOB xuất khẩu ổn định ngày thứ tư liên tiếp; thị trường nội địa tăng nhẹ với thời gian giao hàng kéo dài đến tháng 4",
+        "tr": "FOB ihracat art arda dördüncü gün sabit; iç piyasa sıkılaşıyor, teslimat pencereleri Nisan'a uzanıyor",
+        "id": "FOB ekspor datar empat hari berturut-turut; pasar domestik menguat dengan jendela pengiriman meluas ke April",
+        "es": "FOB exportación estable cuarto día consecutivo; mercado doméstico firme con plazos de entrega extendiéndose a abril",
+        "pt": "FOB exportação estável quarto dia consecutivo; mercado doméstico firme com janelas de entrega se estendendo até abril",
+        "th": "FOB ส่งออกทรงตัวสี่วันติดต่อกัน; ตลาดในประเทศแข็งตัว กรอบส่งมอบขยายถึงเมษายน"
       }
     },
     {
@@ -43,13 +43,13 @@
       "direction": "stable",
       "weekChange": -10,
       "notes": {
-        "en": "High-MFR grades holding; food packaging demand steady across SE Asia",
-        "vi": "Các loại MFR cao giữ giá; nhu cầu bao bì thực phẩm ổn định tại Đông Nam Á",
-        "tr": "Yüksek MFR gradlar tutuyor; Güneydoğu Asya'da gıda ambalaj talebi istikrarlı",
-        "id": "Grade MFR tinggi bertahan; permintaan kemasan makanan stabil di Asia Tenggara",
-        "es": "Grados alto MFR estables; demanda de envases alimentarios firme en SE Asia",
-        "pt": "Grades alto MFR estáveis; demanda de embalagens alimentícias firme no Sudeste Asiático",
-        "th": "เกรด MFR สูงทรงตัว; ความต้องการบรรจุภัณฑ์อาหารในอาเซียนคงที่"
+        "en": "All three producers quoting unchanged at $1,230 FOB; high-MFR grades steady",
+        "vi": "Cả ba nhà sản xuất báo giá không đổi ở $1.230 FOB; các loại MFR cao ổn định",
+        "tr": "Üç üretici de $1.230 FOB'da değişmeden kote ediyor; yüksek MFR gradlar sabit",
+        "id": "Ketiga produsen mengutip tidak berubah di $1.230 FOB; grade MFR tinggi stabil",
+        "es": "Los tres productores cotizan sin cambios a $1.230 FOB; grados alto MFR estables",
+        "pt": "Todos os três produtores cotando inalterado a $1.230 FOB; grades alto MFR estáveis",
+        "th": "ผู้ผลิตทั้งสามเสนอราคาคงที่ที่ $1,230 FOB; เกรด MFR สูงทรงตัว"
       }
     },
     {
@@ -68,13 +68,13 @@
       "direction": "stable",
       "weekChange": -15,
       "notes": {
-        "en": "Nonwoven demand supported by hygiene sector; limited spot from coastal producers",
-        "vi": "Nhu cầu vải không dệt được hỗ trợ bởi ngành vệ sinh; hàng giao ngay hạn chế từ nhà sản xuất ven biển",
-        "tr": "Dokusuz kumaş talebi hijyen sektörü tarafından destekleniyor; kıyı üreticilerinden sınırlı spot arzı",
-        "id": "Permintaan non-woven didukung sektor kebersihan; spot terbatas dari produsen pesisir",
-        "es": "Demanda no tejidos sostenida por sector higiene; spot limitado de productores costeros",
-        "pt": "Demanda não tecidos sustentada por setor higiene; spot limitado de produtores costeiros",
-        "th": "ความต้องการผ้าไม่ทอจากภาคสุขอนามัย; สปอตจากผู้ผลิตชายฝั่งจำกัด"
+        "en": "Fiber grades holding at $1,240 FOB; nonwoven demand steady across SE Asia",
+        "vi": "Các loại sợi giữ ở $1.240 FOB; nhu cầu vải không dệt ổn định tại Đông Nam Á",
+        "tr": "Elyaf gradlar $1.240 FOB'da tutuyor; Güneydoğu Asya'da dokusuz kumaş talebi istikrarlı",
+        "id": "Grade serat bertahan di $1.240 FOB; permintaan non-woven stabil di Asia Tenggara",
+        "es": "Grados fibra se mantienen a $1.240 FOB; demanda no tejidos estable en SE Asia",
+        "pt": "Grades fibra mantendo a $1.240 FOB; demanda não tecidos estável no Sudeste Asiático",
+        "th": "เกรดเส้นใยทรงตัวที่ $1,240 FOB; ความต้องการผ้าไม่ทอในอาเซียนคงที่"
       }
     },
     {
@@ -93,13 +93,13 @@
       "direction": "stable",
       "weekChange": -40,
       "notes": {
-        "en": "Prices stabilized after CTO producer cuts; Korea YNCC offline supports China-origin demand",
-        "vi": "Giá ổn định sau khi nhà sản xuất CTO giảm; YNCC Hàn Quốc ngừng hoạt động hỗ trợ nhu cầu hàng Trung Quốc",
-        "tr": "CTO üretici indirimlerinden sonra fiyatlar dengelendi; Kore YNCC kapatması Çin menşeli talebi destekliyor",
-        "id": "Harga stabil setelah pemotongan produsen CTO; YNCC Korea offline mendukung permintaan asal China",
-        "es": "Precios estabilizados tras recortes CTO; parada YNCC Corea impulsa demanda origen China",
-        "pt": "Preços estabilizados após cortes CTO; parada YNCC Coreia impulsiona demanda origem China",
-        "th": "ราคาทรงตัวหลังผู้ผลิต CTO ลดราคา; YNCC เกาหลีหยุดเดินเครื่องหนุนความต้องการจากจีน"
+        "en": "Export FOB flat at $1,160 for fourth day running; domestic PRD prices firming ¥50-100 — spread narrowing",
+        "vi": "FOB xuất khẩu ổn định ở $1.160 ngày thứ tư liên tiếp; giá nội địa PRD tăng 50-100 tệ — chênh lệch thu hẹp",
+        "tr": "İhracat FOB art arda dördüncü gün $1.160'ta sabit; yerel PRD fiyatları ¥50-100 yükseliyor — spread daralıyor",
+        "id": "FOB ekspor datar di $1.160 empat hari berturut-turut; harga domestik PRD naik ¥50-100 — spread menyempit",
+        "es": "FOB exportación estable en $1.160 cuarto día consecutivo; precios domésticos PRD subiendo ¥50-100 — spread estrechándose",
+        "pt": "FOB exportação estável em $1.160 quarto dia consecutivo; preços domésticos PRD subindo ¥50-100 — spread estreitando",
+        "th": "FOB ส่งออกทรงตัวที่ $1,160 สี่วันติดต่อกัน; ราคาในประเทศ PRD ขยับขึ้น ¥50-100 — สเปรดแคบลง"
       }
     },
     {
@@ -118,13 +118,13 @@
       "direction": "stable",
       "weekChange": -10,
       "notes": {
-        "en": "Limited export availability from Guangxi Petrochemical; Daqing steady",
-        "vi": "Nguồn xuất khẩu hạn chế từ Guangxi Petrochemical; Daqing ổn định",
-        "tr": "Guangxi Petrochemical'dan sınırlı ihracat arzı; Daqing istikrarlı",
-        "id": "Ketersediaan ekspor terbatas dari Guangxi Petrochemical; Daqing stabil",
-        "es": "Disponibilidad exportación limitada de Guangxi Petrochemical; Daqing estable",
-        "pt": "Disponibilidade exportação limitada da Guangxi Petrochemical; Daqing estável",
-        "th": "ปริมาณส่งออกจาก Guangxi Petrochemical จำกัด; Daqing คงที่"
+        "en": "Saudi 218WJ holding at $1,430 FOB; domestic re-export HDPE surging with non-China origin premiums widening",
+        "vi": "Saudi 218WJ giữ ở $1.430 FOB; giá HDPE tái xuất nội địa tăng mạnh, phụ phí hàng ngoài Trung Quốc mở rộng",
+        "tr": "Suudi 218WJ $1.430 FOB'da tutuyor; yerel yeniden ihracat HDPE yükseliyor, Çin dışı menşe primleri genişliyor",
+        "id": "Saudi 218WJ bertahan di $1.430 FOB; HDPE re-ekspor domestik melonjak, premi asal non-China melebar",
+        "es": "Saudi 218WJ se mantiene a $1.430 FOB; HDPE re-exportación doméstica al alza, primas origen no-China ampliándose",
+        "pt": "Saudi 218WJ mantendo a $1.430 FOB; HDPE re-exportação doméstica subindo, prêmios origem não-China ampliando",
+        "th": "Saudi 218WJ ทรงตัวที่ $1,430 FOB; HDPE ส่งออกซ้ำในประเทศพุ่งขึ้น พรีเมียมแหล่งที่ไม่ใช่จีนกว้างขึ้น"
       }
     },
     {
@@ -140,16 +140,16 @@
       },
       "grades": "SG-5 / SG-8",
       "cfrRange": [870, 980],
-      "direction": "up",
-      "weekChange": 20,
+      "direction": "stable",
+      "weekChange": 0,
       "notes": {
-        "en": "Export rebate deadline April 1 lifting FOB offers; carbide-route costs rising",
-        "vi": "Hạn hoàn thuế xuất khẩu ngày 1/4 đẩy giá FOB; chi phí sản xuất quy trình đất đèn tăng",
-        "tr": "1 Nisan ihracat iadesi son tarihi FOB fiyatlarını yükseltiyor; karbür rotası maliyetleri artıyor",
-        "id": "Batas waktu rebate ekspor 1 April mendorong harga FOB naik; biaya jalur karbida meningkat",
-        "es": "Fecha límite rebate exportación 1 abril eleva ofertas FOB; costos ruta carburo suben",
-        "pt": "Prazo rebate exportação 1 abril eleva ofertas FOB; custos rota carbeto sobem",
-        "th": "กำหนดส่งคืนภาษีส่งออก 1 เม.ย. ดันราคา FOB; ต้นทุนสายคาร์ไบด์สูงขึ้น"
+        "en": "Both SG-5 and SG-8 flat at $933 FOB; April delivery confirmed",
+        "vi": "Cả SG-5 và SG-8 ổn định ở $933 FOB; xác nhận giao tháng 4",
+        "tr": "SG-5 ve SG-8 $933 FOB'da sabit; Nisan teslimatı onaylandı",
+        "id": "SG-5 dan SG-8 datar di $933 FOB; pengiriman April dikonfirmasi",
+        "es": "SG-5 y SG-8 estables a $933 FOB; entrega abril confirmada",
+        "pt": "SG-5 e SG-8 estáveis a $933 FOB; entrega abril confirmada",
+        "th": "ทั้ง SG-5 และ SG-8 ทรงตัวที่ $933 FOB; ยืนยันส่งมอบเดือนเมษายน"
       }
     }
   ]
