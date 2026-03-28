@@ -55,7 +55,7 @@ function getLocalizedPath(pathname, targetLocale) {
 }
 
 // Locales that have a translated /terminal page
-const terminalLocales = ["en", "vi", "tr", "id", "es", "pt", "th", "bn", "ru"];
+const terminalLocales = ["en", "vi", "tr", "id", "es", "pt", "th", "bn", "ru", "ar", "fr", "ur"];
 
 function getTerminalSubscribeHref(locale) {
   if (terminalLocales.includes(locale) && locale !== "en") {

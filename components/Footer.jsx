@@ -8,8 +8,8 @@ const columns = [
   {
     title: "PLATFORM",
     links: [
-      { label: "Syndicate", href: "/about#lanes" },
-      { label: "Advanced Materials", href: "/about#lanes" },
+      { label: "Syndicate", href: "/syndicate" },
+      { label: "Advanced Materials", href: "/materials" },
       { label: "The Polymer Compass", href: "/terminal" },
     ],
   },
