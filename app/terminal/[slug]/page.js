@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
   if (!issue) return {};
 
   return {
-    title: `${issue.frontmatter.title} — Morning Terminal — Kantor Materials`,
+    title: `${issue.frontmatter.title} — The Polymer Compass — Kantor Materials`,
     description: issue.frontmatter.description,
   };
 }
@@ -56,7 +56,7 @@ export default async function TerminalIssuePage({ params }) {
                 href="/terminal"
                 className="hover:text-teal transition-colors duration-200"
               >
-                Morning Terminal
+                The Polymer Compass
               </Link>
               <span className="text-white/20">/</span>
               <span className="text-body-text truncate">
@@ -104,7 +104,7 @@ export default async function TerminalIssuePage({ params }) {
           {/* Subscribe CTA */}
           <div className="mt-16 pt-10 border-t border-white/[0.08] text-center">
             <p className="text-muted text-sm mb-4">
-              Morning Terminal delivers weekly market intelligence to polymer distributors and converters.
+              The Polymer Compass delivers weekly market intelligence to polymer distributors and converters.
             </p>
             <Link
               href="/terminal#subscribe"

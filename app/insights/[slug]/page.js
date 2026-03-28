@@ -156,7 +156,7 @@ export default async function InsightArticlePage({ params }) {
             <MDXRemote source={content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
           </div>
 
-          {/* Morning Terminal CTA */}
+          {/* The Polymer Compass CTA */}
           <MorningTerminalCTA locale="en" variant={ctaVariant} />
         </div>
       </article>

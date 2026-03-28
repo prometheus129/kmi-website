@@ -156,7 +156,7 @@ export default async function BnInsightArticlePage({ params }) {
             <MDXRemote source={content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
           </div>
 
-          {/* Morning Terminal CTA */}
+          {/* The Polymer Compass CTA */}
           <MorningTerminalCTA locale="bn" variant={ctaVariant} />
         </div>
       </article>

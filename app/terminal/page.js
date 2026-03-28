@@ -1,7 +1,7 @@
 import TerminalPageContent from "@/components/terminal/TerminalPageContent";
 
 export const metadata = {
-  title: "Morning Terminal — Kantor Materials International",
+  title: "The Polymer Compass — Kantor Materials International",
   description:
     "Daily polymer market intelligence for distributors. Pricing direction, timing signals, and supply context. Free.",
   alternates: {

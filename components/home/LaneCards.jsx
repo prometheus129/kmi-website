@@ -14,7 +14,7 @@ export default function LaneCards() {
               When You&apos;re Ready to Buy
             </h2>
             <p className="font-sans text-[15px] text-body-text leading-relaxed max-w-[600px] mx-auto">
-              Morning Terminal subscribers get priority access to Kantor&apos;s
+              The Polymer Compass subscribers get priority access to Kantor&apos;s
               procurement infrastructure. Two product lanes, one sourcing desk.
             </p>
           </div>

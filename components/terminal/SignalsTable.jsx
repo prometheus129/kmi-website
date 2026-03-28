@@ -1,5 +1,5 @@
 /**
- * Kantor Signals table for Morning Terminal issues.
+ * Kantor Signals table for The Polymer Compass issues.
  * Usage in MDX: <SignalsTable issue="1" />
  * Add new issues' signals to the SIGNALS_DATA map below.
  */

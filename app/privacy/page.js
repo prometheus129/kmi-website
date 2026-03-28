@@ -45,7 +45,7 @@ export default function PrivacyPage() {
                 <strong className="text-white">
                   Information you provide directly:
                 </strong>{" "}
-                When you subscribe to the Morning Terminal, submit a contact
+                When you subscribe to The Polymer Compass, submit a contact
                 form, or request pricing, we collect information you voluntarily
                 provide including your name, email address, company name,
                 country, phone number, messaging app preference, and polymer
@@ -69,7 +69,7 @@ export default function PrivacyPage() {
               <p>We use collected information to:</p>
               <ul className="list-disc list-inside space-y-1 mt-2 ml-2">
                 <li>
-                  Deliver the Morning Terminal daily market intelligence service
+                  Deliver The Polymer Compass daily market intelligence service
                 </li>
                 <li>Respond to pricing inquiries and contact form submissions</li>
                 <li>
@@ -118,7 +118,7 @@ export default function PrivacyPage() {
                   forgotten&rdquo;)
                 </li>
                 <li>
-                  Unsubscribe from the Morning Terminal at any time
+                  Unsubscribe from The Polymer Compass at any time
                 </li>
                 <li>Withdraw consent for data processing</li>
               </ul>

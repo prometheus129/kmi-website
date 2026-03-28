@@ -167,7 +167,7 @@ export default function AboutPage() {
               {
                 num: "01",
                 title: "Intelligence",
-                desc: "The Morning Terminal delivers pricing direction, buy-timing signals, and supply disruption alerts before your market opens. Free for all subscribers.",
+                desc: "The Polymer Compass delivers pricing direction, buy-timing signals, and supply disruption alerts before your market opens. Free for all subscribers.",
               },
               {
                 num: "02",
@@ -237,7 +237,7 @@ export default function AboutPage() {
               Ready to optimize your procurement?
             </h2>
             <p className="text-body-text text-base mb-8 max-w-lg mx-auto">
-              Start with the Morning Terminal — free daily market intelligence
+              Start with The Polymer Compass — free daily market intelligence
               delivered to your phone. Or get in touch for pricing on specific grades.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

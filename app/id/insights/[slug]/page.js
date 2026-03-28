@@ -156,7 +156,7 @@ export default async function IdInsightArticlePage({ params }) {
             <MDXRemote source={content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
           </div>
 
-          {/* Morning Terminal CTA */}
+          {/* The Polymer Compass CTA */}
           <MorningTerminalCTA locale="id" variant={ctaVariant} />
         </div>
       </article>

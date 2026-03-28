@@ -10,7 +10,7 @@ const columns = [
     links: [
       { label: "Syndicate", href: "/about#lanes" },
       { label: "Advanced Materials", href: "/about#lanes" },
-      { label: "Morning Terminal", href: "/terminal" },
+      { label: "The Polymer Compass", href: "/terminal" },
     ],
   },
   {

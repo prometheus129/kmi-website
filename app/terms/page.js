@@ -42,7 +42,7 @@ export default function TermsPage() {
               <p>
                 KMI provides polymer market intelligence (the &ldquo;Morning
                 Terminal&rdquo;), pricing assessments, and procurement services
-                for polymer distributors and converters. The Morning Terminal is
+                for polymer distributors and converters. The Polymer Compass is
                 a free daily market intelligence service delivered via email and
                 messaging platforms.
               </p>
@@ -55,7 +55,7 @@ export default function TermsPage() {
               <p>
                 All pricing data, market assessments, directional signals
                 (BUY/HOLD/WAIT), and market analysis published on this Site or
-                through the Morning Terminal are{" "}
+                through The Polymer Compass are{" "}
                 <strong className="text-white">
                   indicative assessments, not firm offers
                 </strong>
@@ -63,7 +63,7 @@ export default function TermsPage() {
                 KMI&apos;s proprietary analysis.
               </p>
               <p className="mt-3">
-                Pricing shown on the Site and in the Morning Terminal represents
+                Pricing shown on the Site and in The Polymer Compass represents
                 CFR market assessments and should not be relied upon as
                 executable pricing. Actual transaction pricing is subject to
                 confirmation at the time of order and may differ from published
@@ -84,7 +84,7 @@ export default function TermsPage() {
               </h2>
               <p>
                 All content on this Site — including articles, market analysis,
-                pricing data, graphics, and the Morning Terminal publication — is
+                pricing data, graphics, and The Polymer Compass publication — is
                 the intellectual property of Kantor Materials International.
                 Content may not be reproduced, distributed, or republished
                 without prior written consent, except for reasonable personal use
@@ -92,7 +92,7 @@ export default function TermsPage() {
               </p>
               <p className="mt-3">
                 You may share links to published articles. You may forward the
-                Morning Terminal to colleagues within your organization.
+                The Polymer Compass to colleagues within your organization.
                 Systematic redistribution, commercial resale, or incorporation
                 into competing products or services is prohibited.
               </p>
@@ -120,13 +120,13 @@ export default function TermsPage() {
                 &ldquo;as is&rdquo; basis. To the maximum extent permitted by
                 law, KMI shall not be liable for any indirect, incidental,
                 special, or consequential damages arising from use of the Site,
-                the Morning Terminal, or reliance on any market information
+                The Polymer Compass, or reliance on any market information
                 provided.
               </p>
               <p className="mt-3">
                 In no event shall KMI&apos;s liability exceed the amount paid by
                 you for services in the twelve months preceding the claim. For
-                free services (including the Morning Terminal), KMI&apos;s
+                free services (including The Polymer Compass), KMI&apos;s
                 liability is limited to zero.
               </p>
             </section>
@@ -149,7 +149,7 @@ export default function TermsPage() {
                 8. Termination
               </h2>
               <p>
-                You may unsubscribe from the Morning Terminal at any time by
+                You may unsubscribe from The Polymer Compass at any time by
                 contacting us. We reserve the right to terminate or suspend
                 access to our services for users who violate these terms.
               </p>

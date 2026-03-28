@@ -144,7 +144,7 @@
 | Page | Status | Key Components |
 |------|--------|----------------|
 | `/` (Home) | Built | TrustTicker, Nav, Hero (Lane 1/2 split cards), ValueProps, StatsBar, TerminalPreview, TrustSection, Footer |
-| `/terminal` (Morning Terminal) | Built | Subscription page for MT intelligence product |
+| `/terminal` (The Polymer Compass) | Built | Subscription page for MT intelligence product |
 | `/syndicate` | Not built | Pod System / demand aggregation explanation |
 | `/materials` | Not built | Product catalog / grade information |
 | `/about` | Not built | Company, team, thesis |

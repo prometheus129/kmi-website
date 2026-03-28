@@ -6,7 +6,7 @@ import ContactForm from "@/components/contact/ContactForm";
 export const metadata = {
   title: "Contact — Kantor Materials International",
   description:
-    "Get in touch with Kantor Materials for polymer pricing, procurement inquiries, or Morning Terminal subscription. Hong Kong headquartered, serving emerging markets worldwide.",
+    "Get in touch with Kantor Materials for polymer pricing, procurement inquiries, or The Polymer Compass subscription. Hong Kong headquartered, serving emerging markets worldwide.",
 };
 
 const offices = [
@@ -49,7 +49,7 @@ export default function ContactPage() {
             </h1>
             <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-xl">
               Whether you need pricing on a specific grade, want to explore
-              demand aggregation, or subscribe to the Morning Terminal — we
+              demand aggregation, or subscribe to The Polymer Compass — we
               respond within one business day.
             </p>
           </RevealDiv>
