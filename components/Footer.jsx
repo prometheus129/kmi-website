@@ -60,9 +60,9 @@ export default function Footer() {
               <Image
                 src="/kantor-logo-transparent.png"
                 alt="Kantor Materials International"
-                width={240}
-                height={36}
-                className="h-10 w-auto"
+                width={280}
+                height={44}
+                className="h-12 w-auto"
               />
             </Link>
             <p className="font-sans text-[13px] text-muted leading-relaxed max-w-[280px]">
