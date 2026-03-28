@@ -18,7 +18,7 @@ export default function HeroSection() {
           src="/images/hero-texture.jpg"
           alt=""
           fill
-          className="object-cover"
+          className="object-cover object-bottom"
           sizes="100vw"
           priority
           quality={60}
