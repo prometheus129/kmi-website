@@ -23,7 +23,7 @@ const UI_STRINGS = {
     colDirection: "Trend",
     colChange: "W/W",
     colNotes: "Market Note",
-    ctaOverline: "MORNING TERMINAL",
+    ctaOverline: "THE POLYMER COMPASS",
     ctaTitle: "Get daily market intelligence by email",
     ctaDesc:
       "Receive pricing updates, buy-timing signals, and supply chain alerts before your market opens. Free for importers.",
@@ -46,7 +46,7 @@ const UI_STRINGS = {
     colDirection: "Xu hướng",
     colChange: "T/T",
     colNotes: "Nhận định thị trường",
-    ctaOverline: "MORNING TERMINAL",
+    ctaOverline: "THE POLYMER COMPASS",
     ctaTitle: "Nhận thông tin thị trường hàng ngày qua email",
     ctaDesc:
       "Nhận bảng giá hạt nhựa, tín hiệu thời điểm mua hàng, và cảnh báo chuỗi cung ứng trước khi thị trường mở cửa. Miễn phí.",
@@ -69,7 +69,7 @@ const UI_STRINGS = {
     colDirection: "Trend",
     colChange: "H/H",
     colNotes: "Piyasa Notu",
-    ctaOverline: "MORNING TERMINAL",
+    ctaOverline: "THE POLYMER COMPASS",
     ctaTitle: "Günlük piyasa istihbaratı e-postası alın",
     ctaDesc:
       "Piyasa açılmadan önce fiyat güncellemeleri, alım zamanlaması sinyalleri ve tedarik zinciri uyarıları alın. İthalatçılar için ücretsiz.",
@@ -92,7 +92,7 @@ const UI_STRINGS = {
     colDirection: "Tren",
     colChange: "M/M",
     colNotes: "Catatan Pasar",
-    ctaOverline: "MORNING TERMINAL",
+    ctaOverline: "THE POLYMER COMPASS",
     ctaTitle: "Terima intelijen pasar harian via email",
     ctaDesc:
       "Terima pembaruan harga, sinyal waktu beli, dan peringatan rantai pasokan sebelum pasar Anda buka. Gratis untuk importir.",
@@ -115,7 +115,7 @@ const UI_STRINGS = {
     colDirection: "Tendencia",
     colChange: "S/S",
     colNotes: "Nota de Mercado",
-    ctaOverline: "MORNING TERMINAL",
+    ctaOverline: "THE POLYMER COMPASS",
     ctaTitle: "Reciba inteligencia de mercado diaria por correo",
     ctaDesc:
       "Reciba actualizaciones de precios, señales de compra y alertas de cadena de suministro antes de la apertura del mercado. Gratis para importadores.",
@@ -138,7 +138,7 @@ const UI_STRINGS = {
     colDirection: "Tendência",
     colChange: "S/S",
     colNotes: "Nota de Mercado",
-    ctaOverline: "MORNING TERMINAL",
+    ctaOverline: "THE POLYMER COMPASS",
     ctaTitle: "Receba inteligência de mercado diária por e-mail",
     ctaDesc:
       "Receba atualizações de preços, sinais de compra e alertas de cadeia de suprimentos antes da abertura do mercado. Grátis para importadores.",
@@ -161,7 +161,7 @@ const UI_STRINGS = {
     colDirection: "แนวโน้ม",
     colChange: "สัปดาห์/สัปดาห์",
     colNotes: "บันทึกตลาด",
-    ctaOverline: "MORNING TERMINAL",
+    ctaOverline: "THE POLYMER COMPASS",
     ctaTitle: "รับข้อมูลตลาดรายวันทางอีเมล",
     ctaDesc:
       "รับข้อมูลราคา สัญญาณจังหวะซื้อ และการแจ้งเตือนห่วงโซ่อุปทานก่อนตลาดเปิด ฟรีสำหรับผู้นำเข้า",

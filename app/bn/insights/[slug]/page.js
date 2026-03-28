@@ -4,7 +4,7 @@ import remarkGfm from "remark-gfm";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
-import MorningTerminalCTA from "@/components/insights/MorningTerminalCTA";
+import PolymerCompassCTA from "@/components/insights/PolymerCompassCTA";
 import { mdxComponents } from "@/components/insights/MDXComponents";
 import { getArticle, getAllSlugs, formatDate, getLocaleLabel, getInsightsPath } from "@/lib/insights";
 import JsonLd, { buildArticleSchema } from "@/components/JsonLd";
@@ -157,7 +157,7 @@ export default async function BnInsightArticlePage({ params }) {
           </div>
 
           {/* The Polymer Compass CTA */}
-          <MorningTerminalCTA locale="bn" variant={ctaVariant} />
+          <PolymerCompassCTA locale="bn" variant={ctaVariant} />
         </div>
       </article>
 

@@ -70,7 +70,7 @@ export default function TerminalHero({ locale = "en" }) {
                 <div className="px-6 pt-5 pb-4 border-b border-white/[0.06]">
                   <div className="flex items-center justify-between mb-2">
                     <div className="text-[10px] tracking-[3px] text-teal font-sans font-bold">
-                      MORNING TERMINAL
+                      THE POLYMER COMPASS
                     </div>
                     <div className="text-[10px] font-mono text-muted">
                       SAMPLE

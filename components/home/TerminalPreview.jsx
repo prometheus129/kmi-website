@@ -35,7 +35,7 @@ export default function TerminalPreview() {
         {/* Left: Text */}
         <RevealDiv>
           <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
-            THE MORNING TERMINAL
+            THE POLYMER COMPASS
           </div>
           <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
             Market Intelligence Your
@@ -88,7 +88,7 @@ export default function TerminalPreview() {
               </div>
 
               <div className="text-[11px] tracking-widest text-teal font-sans font-bold mb-2">
-                KANTOR MORNING TERMINAL
+                THE POLYMER COMPASS
               </div>
 
               <h3 className="font-serif text-lg lg:text-xl font-bold text-white mb-5 leading-tight">

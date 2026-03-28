@@ -94,9 +94,9 @@ export default function Image() {
             marginBottom: "24px",
           }}
         >
-          The Morning
+          The Polymer
           <br />
-          <span style={{ color: "#3AADAD" }}>Terminal.</span>
+          <span style={{ color: "#3AADAD" }}>Compass.</span>
         </div>
 
         {/* Subline */}

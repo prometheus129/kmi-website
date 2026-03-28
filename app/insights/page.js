@@ -39,10 +39,8 @@ export default function InsightsPage() {
     .filter(Boolean)
     .slice(0, 3);
 
-  // Hubs with articles, sorted by article count descending
-  const activeHubs = hubs
-    .filter((h) => h.articleCount > 0)
-    .sort((a, b) => b.articleCount - a.articleCount);
+  // Hubs with articles, ordered by market importance (hubs.json order)
+  const activeHubs = hubs.filter((h) => h.articleCount > 0);
 
   return (
     <div className="bg-navy min-h-screen text-white">

@@ -26,70 +26,70 @@ const CONTACT_STRINGS = {
 
 const STRINGS = {
   en: {
-    overline: "MORNING TERMINAL",
+    overline: "THE POLYMER COMPASS",
     headline: "Daily Procurement Intelligence",
     description:
       "China-origin polymer pricing, buy-timing signals, and supply chain alerts — delivered before your market opens. Free for distributors and converters.",
     button: "Subscribe Free",
   },
   vi: {
-    overline: "BẢN TIN MỖI SÁNG",
+    overline: "THE POLYMER COMPASS",
     headline: "Thông tin mua hàng hàng ngày",
     description:
       "Giá polymer Trung Quốc, tín hiệu thời điểm mua hàng, và cảnh báo chuỗi cung ứng — gửi đến trước khi thị trường mở cửa. Miễn phí cho nhà phân phối và nhà sản xuất.",
     button: "Đăng ký miễn phí",
   },
   tr: {
-    overline: "MORNING TERMINAL",
+    overline: "THE POLYMER COMPASS",
     headline: "Günlük Tedarik İstihbaratı",
     description:
       "Çin menşeli polimer fiyatlandırması, alım zamanlaması sinyalleri ve tedarik zinciri uyarıları — piyasanız açılmadan önce teslim edilir. İthalatçılar için ücretsiz.",
     button: "Ücretsiz Abone Ol",
   },
   id: {
-    overline: "MORNING TERMINAL",
+    overline: "THE POLYMER COMPASS",
     headline: "Intelijen Pengadaan Harian",
     description:
       "Harga polimer asal Tiongkok, sinyal waktu beli, dan peringatan rantai pasok — dikirim sebelum pasar Anda buka. Gratis untuk distributor dan konverter.",
     button: "Berlangganan Gratis",
   },
   es: {
-    overline: "MORNING TERMINAL",
+    overline: "THE POLYMER COMPASS",
     headline: "Inteligencia Diaria de Adquisiciones",
     description:
       "Precios de polímeros de origen chino, señales de compra y alertas de cadena de suministro — entregados antes de que abra su mercado. Gratis para importadores.",
     button: "Suscríbase Gratis",
   },
   pt: {
-    overline: "MORNING TERMINAL",
+    overline: "THE POLYMER COMPASS",
     headline: "Inteligência Diária de Compras",
     description:
       "Precificação de polímeros de origem chinesa, sinais de timing de compra e alertas de cadeia de suprimentos — entregues antes da abertura do seu mercado. Grátis para importadores.",
     button: "Assine Grátis",
   },
   th: {
-    overline: "มอร์นิ่ง เทอร์มินอล",
+    overline: "THE POLYMER COMPASS",
     headline: "ข้อมูลจัดซื้อประจำวัน",
     description:
       "ราคาโพลิเมอร์จากจีน สัญญาณจังหวะการซื้อ และการแจ้งเตือนซัพพลายเชน — ส่งถึงก่อนตลาดเปิด ฟรีสำหรับผู้จัดจำหน่ายและผู้แปรรูป",
     button: "สมัครฟรี",
   },
   ar: {
-    overline: "مورنينج تيرمنال",
+    overline: "THE POLYMER COMPASS",
     headline: "معلومات المشتريات اليومية",
     description:
       "أسعار البوليمر الصيني، إشارات توقيت الشراء، وتنبيهات سلسلة التوريد — تصل قبل افتتاح السوق. مجاناً للموزعين والمصنعين.",
     button: "اشترك مجاناً",
   },
   fr: {
-    overline: "MORNING TERMINAL",
+    overline: "THE POLYMER COMPASS",
     headline: "Intelligence Quotidienne des Achats",
     description:
       "Prix des polymères d'origine chinoise, signaux de timing d'achat et alertes de chaîne d'approvisionnement — livrés avant l'ouverture de votre marché. Gratuit pour les distributeurs.",
     button: "S'abonner Gratuitement",
   },
   ur: {
-    overline: "مارننگ ٹرمینل",
+    overline: "THE POLYMER COMPASS",
     headline: "روزانہ خریداری کی انٹیلی جنس",
     description:
       "چینی پولیمر کی قیمتیں، خریداری کے وقت کے اشارے، اور سپلائی چین الرٹس — آپ کی مارکیٹ کھلنے سے پہلے۔ ڈسٹریبیوٹرز اور مینوفیکچررز کے لیے مفت۔",
@@ -107,7 +107,7 @@ function getTerminalPath(locale) {
   return "/terminal#subscribe";
 }
 
-export default function MorningTerminalCTA({ locale = "en", variant = "terminal" }) {
+export default function PolymerCompassCTA({ locale = "en", variant = "terminal" }) {
   const isContact = variant === "contact";
   const t = isContact
     ? (CONTACT_STRINGS[locale] || CONTACT_STRINGS.en)
