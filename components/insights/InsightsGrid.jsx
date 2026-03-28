@@ -10,21 +10,22 @@ import LoadMoreButton from "@/components/insights/LoadMoreButton";
 // Tags split into two rows: Markets (geography) and Topics (content type)
 // Only shown if 2+ articles use them
 const MARKET_TAGS = [
-  "Nigeria",
-  "Ghana",
-  "Turkey",
   "Vietnam",
-  "China",
-  "Philippines",
-  "Brazil",
-  "Mexico",
+  "Turkey",
   "Indonesia",
   "Thailand",
-  "Egypt",
+  "Philippines",
+  "Bangladesh",
+  "Brazil",
   "Pakistan",
+  "Nigeria",
+  "Egypt",
+  "Mexico",
+  "Ghana",
   "Kenya",
   "Morocco",
   "Algeria",
+  "China",
 ];
 
 const TOPIC_TAGS = [

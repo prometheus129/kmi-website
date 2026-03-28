@@ -46,6 +46,15 @@
       "excludeSlugs": []
     },
     {
+      "slug": "bangladesh",
+      "name": "Bangladesh",
+      "description": "Import guides, LC requirements, and China-origin polymer sourcing for Bangladeshi buyers and garment manufacturers.",
+      "intro": "Bangladesh imports over $1 billion in polymer resin annually, driven by the world\u2019s second-largest garment export industry. China is the dominant source for PP woven sacks, PE packaging film, and PET yarn feedstock. Chittagong port handles the bulk of containerized polymer imports serving industrial clusters in Dhaka, Gazipur, and Narayanganj.",
+      "matchTags": ["bangladesh"],
+      "featuredSlugs": [],
+      "excludeSlugs": []
+    },
+    {
       "slug": "brazil",
       "name": "Brazil",
       "description": "Import logistics, Mercosur tariffs, and China-origin polymer sourcing for Brazilian buyers.",
