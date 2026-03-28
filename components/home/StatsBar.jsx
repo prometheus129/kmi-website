@@ -58,7 +58,10 @@ export default function StatsBar() {
               <div className="flex justify-center mb-3 text-teal/50">
                 {s.icon}
               </div>
-              <div className="font-mono text-4xl lg:text-5xl font-bold text-teal-light leading-none">
+              <div
+                className="font-mono text-4xl lg:text-5xl font-bold text-teal-light leading-none tracking-tight"
+                style={{ textShadow: "0 0 30px rgba(58, 173, 173, 0.15)" }}
+              >
                 {s.value}
               </div>
               <div className="font-sans text-[13px] text-muted tracking-widest mt-2 font-medium">

@@ -7,6 +7,7 @@ const props = [
     accent: "border-teal",
     iconColor: "text-teal",
     iconBg: "bg-teal/10 border-teal/20",
+    cardBg: "bg-gradient-to-br from-teal/[0.04] to-transparent",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
@@ -20,6 +21,7 @@ const props = [
     accent: "border-white/20",
     iconColor: "text-body-text",
     iconBg: "bg-white/[0.06] border-white/10",
+    cardBg: "bg-gradient-to-br from-white/[0.03] to-transparent",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="11" cy="11" r="8" />
@@ -33,6 +35,7 @@ const props = [
     accent: "border-gold",
     iconColor: "text-gold",
     iconBg: "bg-gold/10 border-gold/20",
+    cardBg: "bg-gradient-to-br from-gold/[0.04] to-transparent",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
@@ -71,7 +74,7 @@ export default function ValueProps() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {props.map((p, i) => (
             <RevealDiv key={i} delay={i * 150}>
-              <div className={`border-l-[3px] ${p.accent} pl-6`}>
+              <div className={`border-l-[3px] ${p.accent} pl-6 pr-4 py-5 rounded-r-lg ${p.cardBg}`}>
                 <div className={`w-10 h-10 rounded-lg border flex items-center justify-center mb-4 ${p.iconBg} ${p.iconColor}`}>
                   {p.icon}
                 </div>

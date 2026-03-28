@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import RevealDiv from "@/components/RevealDiv";
 
 const features = [
@@ -22,6 +23,17 @@ const features = [
 export default function TerminalPreview() {
   return (
     <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
+      {/* Atmospheric texture */}
+      <div className="absolute inset-0 opacity-[0.04]">
+        <Image
+          src="/images/terminal-texture.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+          quality={60}
+        />
+      </div>
       {/* Subtle grid texture */}
       <div
         className="absolute inset-0"

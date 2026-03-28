@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HeroSection() {
   const [loaded, setLoaded] = useState(false);
@@ -11,6 +12,19 @@ export default function HeroSection() {
 
   return (
     <section className="relative overflow-hidden py-20 lg:py-[100px] px-6 lg:px-10 bg-gradient-to-br from-navy-deep via-navy to-[#1a3355]">
+      {/* Atmospheric texture */}
+      <div className="absolute inset-0 opacity-[0.05]">
+        <Image
+          src="/images/hero-texture.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+          quality={60}
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/40 via-transparent to-navy-deep/60" />
       {/* Grid overlay */}
       <div
         className="absolute inset-0"
@@ -36,7 +50,7 @@ export default function HeroSection() {
           </div>
           <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-[1.05] mb-6">
             Your supplier shares prices.{" "}
-            <span className="text-teal-light">We share intelligence.</span>
+            <span className="bg-gradient-to-r from-teal-light via-teal to-teal-light bg-clip-text text-transparent">We share intelligence.</span>
           </h1>
           <p className="font-sans text-lg text-body-text leading-relaxed max-w-[640px] mx-auto mb-10">
             Daily polymer pricing, buy-timing signals, and supply disruption
