@@ -5,6 +5,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
 import PolymerCompassCTA from "@/components/insights/PolymerCompassCTA";
+import RelatedMaterials from "@/components/insights/RelatedMaterials";
 import { mdxComponents } from "@/components/insights/MDXComponents";
 import { getArticle, getAllSlugs, formatDate, getLocaleLabel, getInsightsPath } from "@/lib/insights";
 import JsonLd, { buildArticleSchema } from "@/components/JsonLd";
@@ -57,8 +58,14 @@ export default async function InsightArticlePage({ params }) {
   const { frontmatter, content, translations } = article;
 
   // Lane 2 / engineering / recycled articles → contact CTA instead of MT subscribe
-  const contactSlugs = ["engineering-polymer", "ul-reach-fda", "recycled-polymer", "ppwr-recycled", "thailand-automotive"];
+  const contactSlugs = [
+    "engineering-polymer", "ul-reach-fda", "recycled-polymer", "ppwr-recycled",
+    "thailand-automotive", "peek-polymer", "pei-polyetherimide", "pps-polyphenylene",
+    "pc-abs-alloy", "pbt-polybutylene", "pom-acetal", "halogen-free-flame",
+    "glass-fiber-reinforced",
+  ];
   const ctaVariant = contactSlugs.some((s) => slug.includes(s)) ? "contact" : "terminal";
+  const isLane2 = contactSlugs.some((s) => slug.includes(s));
 
   return (
     <div className="bg-navy min-h-screen text-white">
@@ -155,6 +162,15 @@ export default async function InsightArticlePage({ params }) {
           <div className="prose-kantor">
             <MDXRemote source={content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
           </div>
+
+          {/* Related Materials (Lane 2 articles only) */}
+          {isLane2 && (
+            <RelatedMaterials
+              currentSlug={slug}
+              currentTags={frontmatter.tags || []}
+              locale="en"
+            />
+          )}
 
           {/* The Polymer Compass CTA */}
           <PolymerCompassCTA locale="en" variant={ctaVariant} />

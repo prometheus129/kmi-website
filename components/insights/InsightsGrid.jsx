@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import RevealDiv from "@/components/RevealDiv";
 import ArticleCard from "@/components/insights/ArticleCard";
 import PolymerCompassCTA from "@/components/insights/PolymerCompassCTA";
+import Lane2DiscoveryCard from "@/components/insights/Lane2DiscoveryCard";
 import SearchBar from "@/components/insights/SearchBar";
 import LoadMoreButton from "@/components/insights/LoadMoreButton";
 
@@ -117,6 +118,12 @@ export default function InsightsGrid({
   const firstRow = visibleArticles.slice(0, 3);
   const restArticles = visibleArticles.slice(3);
 
+  // Show Lane 2 discovery card only when NOT filtering for engineering polymer topics
+  const lane2FilterTags = ["engineering polymers", "lane 2"];
+  const isFilteringLane2 = lane2FilterTags.includes(activeTag.toLowerCase()) ||
+    searchQuery.toLowerCase().includes("engineering") ||
+    searchQuery.toLowerCase().includes("lane 2");
+
   const hasFilters = marketTags.length > 0 || topicTags.length > 0;
 
   return (
@@ -218,10 +225,28 @@ export default function InsightsGrid({
             <PolymerCompassCTA locale={locale} />
           </div>
 
-          {/* Remaining articles */}
+          {/* Remaining articles (first batch of 3) */}
           {restArticles.length > 0 && (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {restArticles.map((article) => (
+              {restArticles.slice(0, 3).map((article) => (
+                <RevealDiv key={article.slug}>
+                  <ArticleCard article={article} locale={locale} />
+                </RevealDiv>
+              ))}
+            </div>
+          )}
+
+          {/* Lane 2 discovery card — subtle cross-sell */}
+          {!isFilteringLane2 && restArticles.length >= 3 && (
+            <div className="my-8">
+              <Lane2DiscoveryCard />
+            </div>
+          )}
+
+          {/* Remaining articles (rest) */}
+          {restArticles.length > 3 && (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {restArticles.slice(3).map((article) => (
                 <RevealDiv key={article.slug}>
                   <ArticleCard article={article} locale={locale} />
                 </RevealDiv>
