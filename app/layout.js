@@ -42,6 +42,9 @@ export const metadata = {
     description:
       "Global polymer procurement infrastructure. The full market on every order.",
   },
+  verification: {
+    yandex: "c9236dfd176b2903",
+  },
 };
 
 export default function RootLayout({ children }) {
