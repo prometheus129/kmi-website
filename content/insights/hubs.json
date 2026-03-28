@@ -19,57 +19,12 @@
       "excludeSlugs": []
     },
     {
-      "slug": "nigeria",
-      "name": "Nigeria",
-      "description": "Import logistics, SONCAP requirements, and China-origin polymer sourcing for Nigerian buyers.",
-      "intro": "Nigeria imports an estimated $1.5 billion in plastics annually, with China supplying roughly 40% of PE, PP, and PVC volumes. Infrastructure-driven PVC demand and a fragmented mid-tier distributor base make Nigeria a high-potential market for procurement optimization.",
-      "matchTags": ["nigeria"],
-      "featuredSlugs": ["importing-polymers-china-to-nigeria-guide"],
-      "excludeSlugs": []
-    },
-    {
-      "slug": "ghana",
-      "name": "Ghana",
-      "description": "Origin comparison, feedstock analysis, and import guides for polymer buyers in Ghana and West Africa.",
-      "intro": "Ghana\u2019s polymer import market is driven by packaging, mining consumables, and cocoa processing. China\u2019s ~40% supply share and CTO/PDH-based cost advantages create significant procurement opportunities for mid-tier buyers currently sourcing from the Middle East or India.",
-      "matchTags": ["ghana"],
-      "featuredSlugs": ["importing-polymers-china-to-ghana-guide"],
-      "excludeSlugs": []
-    },
-    {
-      "slug": "philippines",
-      "name": "Philippines",
-      "description": "Import guides and market intelligence for polymer buyers in the Philippines.",
-      "intro": "The Philippines imports 1\u20132 million metric tons of polymer resin annually, with the post-JG Summit supply vacuum creating new entry opportunities. HDPE safeguard duty suspension since September 2025 removes a key barrier for China-origin sourcing.",
-      "matchTags": ["philippines"],
-      "featuredSlugs": ["importing-polymers-china-to-philippines-guide"],
-      "excludeSlugs": []
-    },
-    {
       "slug": "indonesia",
       "name": "Indonesia",
       "description": "SNI certification, import requirements, and sourcing intelligence for Indonesian polymer buyers.",
       "intro": "Indonesia\u2019s polymer demand is driven by packaging, automotive, and consumer goods manufacturing. China is a growing source as Chandra Asri domestic production falls short of demand, creating a supply gap that China-origin imports fill at competitive landed costs.",
       "matchTags": ["indonesia"],
       "featuredSlugs": ["importing-polymers-china-to-indonesia-guide"],
-      "excludeSlugs": []
-    },
-    {
-      "slug": "brazil",
-      "name": "Brazil",
-      "description": "Import logistics, Mercosur tariffs, and China-origin polymer sourcing for Brazilian buyers.",
-      "intro": "Brazil is Latin America\u2019s largest polymer market. Despite Braskem\u2019s domestic production, import demand for PE, PP, and PVC continues to grow. China-origin polymers offer 15\u201325% cost advantages over Middle Eastern and US alternatives at current freight rates.",
-      "matchTags": ["brazil"],
-      "featuredSlugs": ["importing-polymers-china-to-brazil-guide"],
-      "excludeSlugs": []
-    },
-    {
-      "slug": "mexico",
-      "name": "Mexico",
-      "description": "USMCA implications, import duties, and China-origin polymer sourcing for Mexican buyers.",
-      "intro": "Mexico\u2019s manufacturing sector drives significant polymer demand across automotive, packaging, and consumer goods. USMCA reshoring trends and Pemex production constraints create import dependencies that China-origin suppliers increasingly fill.",
-      "matchTags": ["mexico"],
-      "featuredSlugs": ["importing-polymers-china-to-mexico-guide"],
       "excludeSlugs": []
     },
     {
@@ -82,12 +37,21 @@
       "excludeSlugs": []
     },
     {
-      "slug": "egypt",
-      "name": "Egypt",
-      "description": "Import duties, Alexandria port logistics, and China-origin polymer sourcing for Egyptian buyers.",
-      "intro": "Egypt imports an estimated $500\u2013700 million in polymer resin annually, with China supplying roughly 30% of PE, PP, and PVC volumes. A fragmented mid-tier distributor base centered on Cairo and Alexandria faces pricing opacity and limited access to institutional-grade market intelligence.",
-      "matchTags": ["egypt"],
-      "featuredSlugs": [],
+      "slug": "philippines",
+      "name": "Philippines",
+      "description": "Import guides and market intelligence for polymer buyers in the Philippines.",
+      "intro": "The Philippines imports 1\u20132 million metric tons of polymer resin annually, with the post-JG Summit supply vacuum creating new entry opportunities. HDPE safeguard duty suspension since September 2025 removes a key barrier for China-origin sourcing.",
+      "matchTags": ["philippines"],
+      "featuredSlugs": ["importing-polymers-china-to-philippines-guide"],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "brazil",
+      "name": "Brazil",
+      "description": "Import logistics, Mercosur tariffs, and China-origin polymer sourcing for Brazilian buyers.",
+      "intro": "Brazil is Latin America\u2019s largest polymer market. Despite Braskem\u2019s domestic production, import demand for PE, PP, and PVC continues to grow. China-origin polymers offer 15\u201325% cost advantages over Middle Eastern and US alternatives at current freight rates.",
+      "matchTags": ["brazil"],
+      "featuredSlugs": ["importing-polymers-china-to-brazil-guide"],
       "excludeSlugs": []
     },
     {
@@ -97,6 +61,42 @@
       "intro": "Pakistan imports $800 million\u2013$1.2 billion in polymer resin annually, with China as a major and growing source via the CPEC trade corridor. PP for textiles, PE for film, and PVC for construction drive demand across industrial clusters in Karachi, Lahore, Faisalabad, and Sialkot.",
       "matchTags": ["pakistan"],
       "featuredSlugs": [],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "nigeria",
+      "name": "Nigeria",
+      "description": "Import logistics, SONCAP requirements, and China-origin polymer sourcing for Nigerian buyers.",
+      "intro": "Nigeria imports an estimated $1.5 billion in plastics annually, with China supplying roughly 40% of PE, PP, and PVC volumes. Infrastructure-driven PVC demand and a fragmented mid-tier distributor base make Nigeria a high-potential market for procurement optimization.",
+      "matchTags": ["nigeria"],
+      "featuredSlugs": ["importing-polymers-china-to-nigeria-guide"],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "egypt",
+      "name": "Egypt",
+      "description": "Import duties, Alexandria port logistics, and China-origin polymer sourcing for Egyptian buyers.",
+      "intro": "Egypt imports an estimated $500\u2013700 million in polymer resin annually, with China supplying roughly 30% of PE, PP, and PVC volumes. A fragmented mid-tier distributor base centered on Cairo and Alexandria faces pricing opacity and limited access to institutional-grade market intelligence.",
+      "matchTags": ["egypt"],
+      "featuredSlugs": [],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "mexico",
+      "name": "Mexico",
+      "description": "USMCA implications, import duties, and China-origin polymer sourcing for Mexican buyers.",
+      "intro": "Mexico\u2019s manufacturing sector drives significant polymer demand across automotive, packaging, and consumer goods. USMCA reshoring trends and Pemex production constraints create import dependencies that China-origin suppliers increasingly fill.",
+      "matchTags": ["mexico"],
+      "featuredSlugs": ["importing-polymers-china-to-mexico-guide"],
+      "excludeSlugs": []
+    },
+    {
+      "slug": "ghana",
+      "name": "Ghana",
+      "description": "Origin comparison, feedstock analysis, and import guides for polymer buyers in Ghana and West Africa.",
+      "intro": "Ghana\u2019s polymer import market is driven by packaging, mining consumables, and cocoa processing. China\u2019s ~40% supply share and CTO/PDH-based cost advantages create significant procurement opportunities for mid-tier buyers currently sourcing from the Middle East or India.",
+      "matchTags": ["ghana"],
+      "featuredSlugs": ["importing-polymers-china-to-ghana-guide"],
       "excludeSlugs": []
     },
     {
