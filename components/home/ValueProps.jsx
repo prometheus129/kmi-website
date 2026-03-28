@@ -1,3 +1,4 @@
+import Image from "next/image";
 import RevealDiv from "@/components/RevealDiv";
 
 const props = [
@@ -50,15 +51,17 @@ const props = [
 export default function ValueProps() {
   return (
     <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
-      {/* Subtle grid texture */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(46,139,139,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(46,139,139,0.03) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
-      />
+      {/* Atmospheric texture */}
+      <div className="absolute inset-0 opacity-[0.04]">
+        <Image
+          src="/images/value-texture.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+          quality={50}
+        />
+      </div>
 
       <div className="max-w-[1200px] mx-auto relative z-10">
         <RevealDiv>

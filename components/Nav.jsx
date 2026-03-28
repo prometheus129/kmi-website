@@ -113,7 +113,7 @@ export default function Nav() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-7 ml-auto">
           {navLinks.map((link) => (
             <Link
               key={link.label}

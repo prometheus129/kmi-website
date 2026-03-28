@@ -1,3 +1,4 @@
+import Image from "next/image";
 import RevealDiv from "@/components/RevealDiv";
 
 const stats = [
@@ -36,15 +37,17 @@ const stats = [
 export default function StatsBar() {
   return (
     <section className="bg-navy py-16 px-6 lg:px-10 relative overflow-hidden">
-      {/* Vertical line pattern */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(90deg, rgba(46,139,139,0.06) 1px, transparent 1px)",
-          backgroundSize: "120px 120px",
-        }}
-      />
+      {/* Atmospheric texture */}
+      <div className="absolute inset-0 opacity-[0.04]">
+        <Image
+          src="/images/stats-texture.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+          quality={50}
+        />
+      </div>
 
       <RevealDiv>
         <div className="max-w-[900px] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 relative z-10">
