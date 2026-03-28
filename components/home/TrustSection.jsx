@@ -50,7 +50,11 @@ const certifications = [
 export default function TrustSection() {
   return (
     <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
-      {/* Clean section — no texture, provides visual breathing room */}
+      {/* Manufacturing facility texture */}
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-[0.07]"
+        style={{ backgroundImage: "url('/images/trust-texture.jpg')" }}
+      />
 
       <div className="max-w-[1200px] mx-auto relative z-10">
         <RevealDiv>
