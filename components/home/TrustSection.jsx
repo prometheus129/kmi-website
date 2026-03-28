@@ -1,4 +1,3 @@
-import Image from "next/image";
 import RevealDiv from "@/components/RevealDiv";
 
 const certifications = [
@@ -51,17 +50,7 @@ const certifications = [
 export default function TrustSection() {
   return (
     <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
-      {/* Manufacturing texture */}
-      <div className="absolute inset-0 opacity-[0.04]">
-        <Image
-          src="/images/trust-texture.jpg"
-          alt=""
-          fill
-          className="object-cover"
-          sizes="100vw"
-          quality={60}
-        />
-      </div>
+      {/* Clean section — no texture, provides visual breathing room */}
 
       <div className="max-w-[1200px] mx-auto relative z-10">
         <RevealDiv>
