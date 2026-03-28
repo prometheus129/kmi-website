@@ -53,16 +53,16 @@ export default function Footer() {
   return (
     <footer className="bg-ticker-bg pt-16 pb-10 px-6 lg:px-10 border-t border-gold/10">
       <div className="max-w-[1280px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12 md:items-start">
           {/* Brand Column */}
           <div>
-            <Link href="/" className="inline-block mb-4">
+            <Link href="/" className="inline-block mb-3">
               <Image
                 src="/kantor-logo-transparent.png"
                 alt="Kantor Materials International"
                 width={280}
                 height={44}
-                className="h-12 w-auto"
+                className="h-12 w-auto -mt-1.5"
               />
             </Link>
             <p className="font-sans text-[13px] text-muted leading-relaxed max-w-[280px]">
