@@ -50,7 +50,11 @@ const props = [
 export default function ValueProps() {
   return (
     <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
-      {/* Clean section — no texture, provides visual breathing room */}
+      {/* Warehouse/logistics texture */}
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-[0.05]"
+        style={{ backgroundImage: "url('/images/value-texture.jpg')" }}
+      />
 
       <div className="max-w-[1200px] mx-auto relative z-10">
         <RevealDiv>
