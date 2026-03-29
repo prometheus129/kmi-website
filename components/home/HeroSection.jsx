@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <section className="relative overflow-hidden py-20 lg:py-[100px] px-6 lg:px-10 bg-gradient-to-br from-navy-deep via-navy to-[#1a3355]">
       {/* Atmospheric texture */}
-      <div className="absolute inset-0 opacity-[0.07]">
+      <div className="absolute inset-0 opacity-[0.085]">
         <Image
           src="/images/hero-texture.jpg"
           alt=""
@@ -41,7 +41,7 @@ export default function HeroSection() {
           <div className="text-xs tracking-[4px] text-teal font-sans font-semibold mb-6">
             POLYMER PROCUREMENT INTELLIGENCE
           </div>
-          <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-[1.05] mb-6">
+          <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-[1.2] mb-6">
             Your supplier shares prices.{" "}
             <span className="bg-gradient-to-r from-teal-light via-teal to-teal-light bg-clip-text text-transparent">We share intelligence.</span>
           </h1>
@@ -55,13 +55,13 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
             <Link
               href="/terminal#subscribe"
-              className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-sm tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
+              className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-base tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
             >
               Get Daily Intelligence
             </Link>
             <Link
               href="/terminal/three-corridors-down"
-              className="inline-flex items-center justify-center border border-white/[0.15] hover:border-teal/40 text-white font-sans font-medium text-sm px-7 py-4 rounded-lg transition-all duration-200 hover:-translate-y-px"
+              className="inline-flex items-center justify-center border border-white/[0.15] hover:border-teal/40 text-white font-sans font-medium text-base px-7 py-4 rounded-lg transition-all duration-200 hover:-translate-y-px"
             >
               See a Sample Issue
             </Link>
