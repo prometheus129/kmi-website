@@ -107,7 +107,7 @@ export default function Nav() {
             alt="Kantor Materials International"
             width={600}
             height={80}
-            className="h-12 w-auto"
+            className="h-20 w-auto"
             priority
           />
         </Link>
