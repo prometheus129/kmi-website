@@ -99,7 +99,7 @@ export default function Nav() {
           : "bg-navy-deep/95 border-b border-white/[0.04]"
       }`}
     >
-      <div className="max-w-[1280px] mx-auto flex items-center justify-between h-28">
+      <div className="max-w-[1280px] mx-auto flex items-center justify-between h-20">
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0">
           <Image
@@ -107,7 +107,7 @@ export default function Nav() {
             alt="Kantor Materials International"
             width={600}
             height={80}
-            className="h-20 w-auto"
+            className="h-12 w-auto"
             priority
           />
         </Link>
