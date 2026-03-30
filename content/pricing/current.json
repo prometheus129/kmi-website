@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-27",
+  "lastUpdated": "2026-03-30",
   "source": "Kantor Materials market assessment",
   "prices": [
     {
@@ -14,17 +14,17 @@
         "th": "เส้นด้าย / ราเฟีย"
       },
       "grades": "T30S / PPH-T03 / HP550J",
-      "cfrRange": [1200, 1280],
-      "direction": "stable",
-      "weekChange": -30,
+      "cfrRange": [1230, 1310],
+      "direction": "up",
+      "weekChange": 30,
       "notes": {
-        "en": "FOB export flat for fourth consecutive day; domestic market firming with delivery windows extending into April",
-        "vi": "FOB xuất khẩu ổn định ngày thứ tư liên tiếp; thị trường nội địa tăng nhẹ với thời gian giao hàng kéo dài đến tháng 4",
-        "tr": "FOB ihracat art arda dördüncü gün sabit; iç piyasa sıkılaşıyor, teslimat pencereleri Nisan'a uzanıyor",
-        "id": "FOB ekspor datar empat hari berturut-turut; pasar domestik menguat dengan jendela pengiriman meluas ke April",
-        "es": "FOB exportación estable cuarto día consecutivo; mercado doméstico firme con plazos de entrega extendiéndose a abril",
-        "pt": "FOB exportação estável quarto dia consecutivo; mercado doméstico firme com janelas de entrega se estendendo até abril",
-        "th": "FOB ส่งออกทรงตัวสี่วันติดต่อกัน; ตลาดในประเทศแข็งตัว กรอบส่งมอบขยายถึงเมษายน"
+        "en": "FOB firmed $30 following DCE settlement strength; May 15 shipment cutoff in effect across North China ports",
+        "vi": "FOB tăng $30 theo đà DCE; hạn chót xuất hàng 15/5 áp dụng tại các cảng Bắc Trung Quốc",
+        "tr": "DCE kapanış gücünü takiben FOB $30 yükseldi; Kuzey Çin limanlarında 15 Mayıs sevkiyat kesme tarihi geçerli",
+        "id": "FOB naik $30 mengikuti penguatan penyelesaian DCE; batas waktu pengiriman 15 Mei berlaku di pelabuhan Tiongkok Utara",
+        "es": "FOB subió $30 tras fortaleza del cierre DCE; fecha límite de envío 15 de mayo en vigor en puertos del norte de China",
+        "pt": "FOB firme $30 após força do fechamento DCE; prazo de embarque 15 de maio em vigor nos portos do norte da China",
+        "th": "FOB แข็งตัว $30 ตามการปิดตลาด DCE; กำหนดตัดรับส่งสินค้าวันที่ 15 พ.ค. มีผลใช้งานที่ท่าเรือจีนตอนเหนือ"
       }
     },
     {
@@ -39,17 +39,17 @@
         "th": "ผนังบาง / ฉีดขึ้นรูป"
       },
       "grades": "MN70 / G70/75 / BZ-70X",
-      "cfrRange": [1270, 1340],
-      "direction": "stable",
-      "weekChange": -10,
+      "cfrRange": [1240, 1370],
+      "direction": "up",
+      "weekChange": 20,
       "notes": {
-        "en": "All three producers quoting unchanged at $1,230 FOB; high-MFR grades steady",
-        "vi": "Cả ba nhà sản xuất báo giá không đổi ở $1.230 FOB; các loại MFR cao ổn định",
-        "tr": "Üç üretici de $1.230 FOB'da değişmeden kote ediyor; yüksek MFR gradlar sabit",
-        "id": "Ketiga produsen mengutip tidak berubah di $1.230 FOB; grade MFR tinggi stabil",
-        "es": "Los tres productores cotizan sin cambios a $1.230 FOB; grados alto MFR estables",
-        "pt": "Todos os três produtores cotando inalterado a $1.230 FOB; grades alto MFR estáveis",
-        "th": "ผู้ผลิตทั้งสามเสนอราคาคงที่ที่ $1,230 FOB; เกรด MFR สูงทรงตัว"
+        "en": "Injection grades $1,190 FOB; high-MFR thin wall grades at $1,260 FOB; spread reflects MFR premium across the range",
+        "vi": "Nhựa ép phun $1.190 FOB; các loại thành mỏng MFR cao ở $1.260 FOB; chênh lệch phản ánh phụ phí MFR",
+        "tr": "Enjeksiyon gradları $1.190 FOB; yüksek MFR ince cidar gradları $1.260 FOB; fark MFR primini yansıtıyor",
+        "id": "Grade injeksi $1.190 FOB; grade dinding tipis MFR tinggi di $1.260 FOB; spread mencerminkan premi MFR",
+        "es": "Grados inyección $1.190 FOB; grados pared delgada alto MFR a $1.260 FOB; diferencial refleja prima de MFR",
+        "pt": "Grades injeção $1.190 FOB; grades parede fina alto MFR a $1.260 FOB; spread reflete prêmio de MFR",
+        "th": "เกรดฉีดขึ้นรูป $1,190 FOB; เกรดผนังบาง MFR สูงที่ $1,260 FOB; สเปรดสะท้อนพรีเมียม MFR"
       }
     },
     {
@@ -64,17 +64,17 @@
         "th": "เส้นใย / ผ้าไม่ทอ"
       },
       "grades": "Y16/25 / Y40",
-      "cfrRange": [1280, 1350],
-      "direction": "stable",
-      "weekChange": -15,
+      "cfrRange": [1290, 1380],
+      "direction": "up",
+      "weekChange": 20,
       "notes": {
-        "en": "Fiber grades holding at $1,240 FOB; nonwoven demand steady across SE Asia",
-        "vi": "Các loại sợi giữ ở $1.240 FOB; nhu cầu vải không dệt ổn định tại Đông Nam Á",
-        "tr": "Elyaf gradlar $1.240 FOB'da tutuyor; Güneydoğu Asya'da dokusuz kumaş talebi istikrarlı",
-        "id": "Grade serat bertahan di $1.240 FOB; permintaan non-woven stabil di Asia Tenggara",
-        "es": "Grados fibra se mantienen a $1.240 FOB; demanda no tejidos estable en SE Asia",
-        "pt": "Grades fibra mantendo a $1.240 FOB; demanda não tecidos estável no Sudeste Asiático",
-        "th": "เกรดเส้นใยทรงตัวที่ $1,240 FOB; ความต้องการผ้าไม่ทอในอาเซียนคงที่"
+        "en": "Fiber grades at $1,260 FOB; nonwoven demand steady across SE Asia; May delivery windows confirmed",
+        "vi": "Các loại sợi ở $1.260 FOB; nhu cầu vải không dệt ổn định tại Đông Nam Á; cửa sổ giao hàng tháng 5 được xác nhận",
+        "tr": "Elyaf gradlar $1.260 FOB'da; Güneydoğu Asya'da dokusuz kumaş talebi istikrarlı; Mayıs teslimat pencereleri onaylandı",
+        "id": "Grade serat di $1.260 FOB; permintaan non-woven stabil di Asia Tenggara; jendela pengiriman Mei dikonfirmasi",
+        "es": "Grados fibra a $1.260 FOB; demanda no tejidos estable en SE Asia; ventanas de entrega mayo confirmadas",
+        "pt": "Grades fibra a $1.260 FOB; demanda não tecidos estável no Sudeste Asiático; janelas de entrega maio confirmadas",
+        "th": "เกรดเส้นใยที่ $1,260 FOB; ความต้องการผ้าไม่ทอในอาเซียนคงที่; กรอบส่งมอบเดือนพฤษภาคมยืนยันแล้ว"
       }
     },
     {
@@ -89,17 +89,17 @@
         "th": "ฟิล์มบรรจุภัณฑ์"
       },
       "grades": "7042 / DFDA-7042",
-      "cfrRange": [1200, 1310],
-      "direction": "stable",
-      "weekChange": -40,
+      "cfrRange": [1230, 1370],
+      "direction": "up",
+      "weekChange": 30,
       "notes": {
-        "en": "Export FOB flat at $1,160 for fourth day running; domestic PRD prices firming ¥50-100 — spread narrowing",
-        "vi": "FOB xuất khẩu ổn định ở $1.160 ngày thứ tư liên tiếp; giá nội địa PRD tăng 50-100 tệ — chênh lệch thu hẹp",
-        "tr": "İhracat FOB art arda dördüncü gün $1.160'ta sabit; yerel PRD fiyatları ¥50-100 yükseliyor — spread daralıyor",
-        "id": "FOB ekspor datar di $1.160 empat hari berturut-turut; harga domestik PRD naik ¥50-100 — spread menyempit",
-        "es": "FOB exportación estable en $1.160 cuarto día consecutivo; precios domésticos PRD subiendo ¥50-100 — spread estrechándose",
-        "pt": "FOB exportação estável em $1.160 quarto dia consecutivo; preços domésticos PRD subindo ¥50-100 — spread estreitando",
-        "th": "FOB ส่งออกทรงตัวที่ $1,160 สี่วันติดต่อกัน; ราคาในประเทศ PRD ขยับขึ้น ¥50-100 — สเปรดแคบลง"
+        "en": "Export FOB moved $30 to $1,190 following DCE L2605 settlement; May 15 shipment cutoff confirmed across main loading ports",
+        "vi": "FOB xuất khẩu tăng $30 lên $1.190 theo hợp đồng DCE L2605; hạn chót xuất hàng 15/5 xác nhận tại các cảng xếp hàng chính",
+        "tr": "İhracat FOB, DCE L2605 kapanışını takiben $30 artışla $1.190'a çıktı; ana yükleme limanlarında 15 Mayıs sevkiyat kesme tarihi onaylandı",
+        "id": "FOB ekspor naik $30 ke $1.190 mengikuti penyelesaian DCE L2605; batas waktu pengiriman 15 Mei dikonfirmasi di pelabuhan muat utama",
+        "es": "FOB exportación subió $30 a $1.190 tras liquidación DCE L2605; fecha límite envío 15 de mayo confirmada en principales puertos de carga",
+        "pt": "FOB exportação subiu $30 para $1.190 após liquidação DCE L2605; prazo de embarque 15 de maio confirmado nos principais portos de carregamento",
+        "th": "FOB ส่งออกขึ้น $30 สู่ $1,190 ตามการชำระ DCE L2605; กำหนดตัดรับส่งสินค้าวันที่ 15 พ.ค. ยืนยันที่ท่าเรือหลัก"
       }
     },
     {
