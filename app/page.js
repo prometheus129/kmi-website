@@ -7,15 +7,19 @@ import TerminalPreview from "@/components/home/TerminalPreview";
 import TrustSection from "@/components/home/TrustSection";
 import LaneCards from "@/components/home/LaneCards";
 import JsonLd, { organizationSchema, websiteSchema } from "@/components/JsonLd";
+import { getAllIssues } from "@/lib/terminal";
 
 export default function HomePage() {
+  const issues = getAllIssues();
+  const latestSlug = issues.length > 0 ? `/terminal/${issues[0].slug}` : "/terminal/archive";
+
   return (
     <div className="min-h-screen bg-navy">
       <JsonLd data={organizationSchema} />
       <JsonLd data={websiteSchema} />
       <Nav />
       <HeroSection />
-      <TerminalPreview />
+      <TerminalPreview latestArticleHref={latestSlug} />
       <StatsBar />
       <ValueProps />
       <TrustSection />

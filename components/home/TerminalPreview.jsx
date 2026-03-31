@@ -20,7 +20,7 @@ const features = [
   },
 ];
 
-export default function TerminalPreview() {
+export default function TerminalPreview({ latestArticleHref = "/terminal/archive" }) {
   return (
     <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
       {/* Atmospheric texture */}
@@ -79,7 +79,7 @@ export default function TerminalPreview() {
 
         {/* Right: Product Demo Card */}
         <RevealDiv delay={200}>
-          <Link href="/terminal" className="block group">
+          <Link href={latestArticleHref} className="block group">
             <div className="bg-[#0F1D2F] rounded-xl p-6 lg:p-8 border border-white/[0.06] shadow-[0_30px_80px_rgba(0,0,0,0.4)] transition-all duration-300 group-hover:border-teal/20 group-hover:shadow-[0_30px_80px_rgba(46,139,139,0.08)]">
               {/* Header */}
               <div className="flex justify-between items-center mb-4">
@@ -167,7 +167,7 @@ export default function TerminalPreview() {
                   Kantor Materials Research
                 </span>
                 <span className="font-sans text-sm font-semibold text-gold group-hover:translate-x-1 transition-transform duration-200">
-                  Browse all issues →
+                  Read latest issue →
                 </span>
               </div>
             </div>
