@@ -60,10 +60,10 @@ export default function HeroSection() {
               Get Daily Intelligence
             </Link>
             <Link
-              href="/terminal/three-corridors-down"
+              href="/terminal"
               className="inline-flex items-center justify-center border border-white/[0.15] hover:border-teal/40 text-white font-sans font-medium text-base px-7 py-4 rounded-lg transition-all duration-200 hover:-translate-y-px"
             >
-              See a Sample Issue
+              Read Our Analysis
             </Link>
           </div>
           <p className="text-xs text-muted font-sans">
