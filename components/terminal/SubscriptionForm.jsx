@@ -131,34 +131,49 @@ export default function SubscriptionForm({ locale = "en" }) {
               />
             </div>
 
-            {/* Name & Company */}
+            {/* First Name & Last Name */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="sub-name" className={labelClasses}>
-                  {text.name}
+                <label htmlFor="sub-firstname" className={labelClasses}>
+                  {text.firstName}
                 </label>
                 <input
-                  id="sub-name"
-                  name="name"
+                  id="sub-firstname"
+                  name="firstName"
                   required
-                  autoComplete="name"
+                  autoComplete="given-name"
                   className={inputClasses}
-                  placeholder={text.namePlaceholder}
+                  placeholder={text.firstNamePlaceholder}
                 />
               </div>
               <div>
-                <label htmlFor="sub-company" className={labelClasses}>
-                  {text.company}
+                <label htmlFor="sub-lastname" className={labelClasses}>
+                  {text.lastName}
                 </label>
                 <input
-                  id="sub-company"
-                  name="company"
+                  id="sub-lastname"
+                  name="lastName"
                   required
-                  autoComplete="organization"
+                  autoComplete="family-name"
                   className={inputClasses}
-                  placeholder={text.companyPlaceholder}
+                  placeholder={text.lastNamePlaceholder}
                 />
               </div>
+            </div>
+
+            {/* Company */}
+            <div>
+              <label htmlFor="sub-company" className={labelClasses}>
+                {text.company}
+              </label>
+              <input
+                id="sub-company"
+                name="company"
+                required
+                autoComplete="organization"
+                className={inputClasses}
+                placeholder={text.companyPlaceholder}
+              />
             </div>
 
             {/* Country */}
