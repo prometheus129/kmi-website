@@ -1,7 +1,7 @@
 import { getAllArticles, SUPPORTED_LOCALES, getInsightsPath } from "@/lib/insights";
 import { getAllHubs } from "@/lib/hubs";
 
-const BASE_URL = "https://kantormaterials.com";
+const BASE_URL = "https://www.kantormaterials.com";
 
 export default function sitemap() {
   const now = new Date().toISOString();
