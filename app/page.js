@@ -11,7 +11,8 @@ import { getAllIssues } from "@/lib/terminal";
 
 export default function HomePage() {
   const issues = getAllIssues();
-  const latestSlug = issues.length > 0 ? `/terminal/${issues[0].slug}` : "/terminal/archive";
+  const latestIssue = issues.length > 0 ? issues[0] : null;
+  const latestSlug = latestIssue ? `/terminal/${latestIssue.slug}` : "/terminal/archive";
 
   return (
     <div className="min-h-screen bg-navy">
@@ -19,7 +20,7 @@ export default function HomePage() {
       <JsonLd data={websiteSchema} />
       <Nav />
       <HeroSection />
-      <TerminalPreview latestArticleHref={latestSlug} />
+      <TerminalPreview latestArticleHref={latestSlug} latestIssue={latestIssue} />
       <StatsBar />
       <ValueProps />
       <TrustSection />
