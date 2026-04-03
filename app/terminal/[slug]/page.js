@@ -22,6 +22,7 @@ export async function generateMetadata({ params }) {
   return {
     title: `${issue.frontmatter.title} — The Polymer Compass — Kantor Materials`,
     description: issue.frontmatter.description,
+    alternates: { canonical: `/terminal/${slug}` },
   };
 }
 

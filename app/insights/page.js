@@ -12,6 +12,7 @@ export const metadata = {
   description:
     "Market analysis, supply chain intelligence, and procurement strategy for polymer buyers across emerging markets. Research-grade insights from the Kantor Materials team.",
   alternates: {
+    canonical: "/insights",
     languages: {
       vi: "/vi/insights",
       tr: "/tr/insights",

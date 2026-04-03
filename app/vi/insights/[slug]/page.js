@@ -37,12 +37,14 @@ export async function generateMetadata({ params }) {
     },
   };
 
+  meta.alternates = { canonical: `/vi/insights/${slug}` };
+
   if (article.translations.length > 0) {
     const languages = { vi: `/vi/insights/${slug}` };
     for (const loc of article.translations) {
       languages[loc] = `${getInsightsPath(loc)}/${slug}`;
     }
-    meta.alternates = { languages };
+    meta.alternates.languages = languages;
   }
 
   return meta;
