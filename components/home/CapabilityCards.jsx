@@ -17,9 +17,9 @@ const capabilities = [
   {
     title: "Current pricing",
     text: "CFR pricing for your destination, evaluated across the broader market. Not one supplier\u2019s list price.",
-    accent: "border-slate/30",
-    iconColor: "text-slate",
-    iconBg: "bg-slate/10 border-slate/20",
+    accent: "border-white/20",
+    iconColor: "text-body-text",
+    iconBg: "bg-white/[0.06] border-white/10",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <line x1="12" y1="1" x2="12" y2="23" />
@@ -58,9 +58,9 @@ const capabilities = [
   {
     title: "Quality notes",
     text: "Where we have prior experience with a grade, we share it. Where we don\u2019t, we tell you.",
-    accent: "border-slate/30",
-    iconColor: "text-slate",
-    iconBg: "bg-slate/10 border-slate/20",
+    accent: "border-white/20",
+    iconColor: "text-body-text",
+    iconBg: "bg-white/[0.06] border-white/10",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
@@ -72,14 +72,14 @@ const capabilities = [
 
 export default function CapabilityCards() {
   return (
-    <section className="bg-light-gray py-20 px-6 lg:px-10">
+    <section className="bg-[#162036] py-20 px-6 lg:px-10">
       <div className="max-w-[1100px] mx-auto">
         <RevealDiv>
           <div className="text-center mb-12 lg:mb-16">
             <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
               WHAT YOU GET
             </div>
-            <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-dark-text leading-tight">
+            <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white leading-tight">
               What one answer includes
             </h2>
           </div>
@@ -89,14 +89,14 @@ export default function CapabilityCards() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
           {capabilities.slice(0, 3).map((cap, i) => (
             <RevealDiv key={i} delay={i * 100}>
-              <div className={`border-l-[3px] ${cap.accent} pl-6 pr-5 py-6 rounded-r-lg bg-white h-full shadow-[0_1px_3px_rgba(0,0,0,0.06)] hover:-translate-y-[3px] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all duration-200`}>
+              <div className={`border-l-[3px] ${cap.accent} pl-6 pr-5 py-6 rounded-r-lg bg-white/[0.04] h-full hover:-translate-y-[3px] hover:bg-white/[0.07] transition-all duration-200`}>
                 <div className={`w-10 h-10 rounded-lg border flex items-center justify-center mb-4 ${cap.iconBg} ${cap.iconColor}`}>
                   {cap.icon}
                 </div>
-                <h3 className="font-sans text-base font-bold text-dark-text mb-2">
+                <h3 className="font-sans text-base font-bold text-white mb-2">
                   {cap.title}
                 </h3>
-                <p className="font-sans text-sm text-slate leading-relaxed">
+                <p className="font-sans text-sm text-body-text leading-relaxed">
                   {cap.text}
                 </p>
               </div>
@@ -108,14 +108,14 @@ export default function CapabilityCards() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[740px] mx-auto">
           {capabilities.slice(3).map((cap, i) => (
             <RevealDiv key={i + 3} delay={(i + 3) * 100}>
-              <div className={`border-l-[3px] ${cap.accent} pl-6 pr-5 py-6 rounded-r-lg bg-white h-full shadow-[0_1px_3px_rgba(0,0,0,0.06)] hover:-translate-y-[3px] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all duration-200`}>
+              <div className={`border-l-[3px] ${cap.accent} pl-6 pr-5 py-6 rounded-r-lg bg-white/[0.04] h-full hover:-translate-y-[3px] hover:bg-white/[0.07] transition-all duration-200`}>
                 <div className={`w-10 h-10 rounded-lg border flex items-center justify-center mb-4 ${cap.iconBg} ${cap.iconColor}`}>
                   {cap.icon}
                 </div>
-                <h3 className="font-sans text-base font-bold text-dark-text mb-2">
+                <h3 className="font-sans text-base font-bold text-white mb-2">
                   {cap.title}
                 </h3>
-                <p className="font-sans text-sm text-slate leading-relaxed">
+                <p className="font-sans text-sm text-body-text leading-relaxed">
                   {cap.text}
                 </p>
               </div>
