@@ -1,8 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
-import Image from "next/image";
 
 export default function HeroSection() {
   const [loaded, setLoaded] = useState(false);
@@ -11,26 +9,12 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden py-20 lg:py-[100px] px-6 lg:px-10 bg-gradient-to-br from-navy-deep via-navy to-[#1a3355]">
-      {/* Atmospheric texture */}
-      <div className="absolute inset-0 opacity-[0.085]">
-        <Image
-          src="/images/hero-texture.jpg"
-          alt=""
-          fill
-          className="object-cover"
-          style={{ objectPosition: "center 75%" }}
-          sizes="100vw"
-          priority
-          quality={60}
-        />
-      </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/40 via-transparent to-navy-deep/60" />
-      {/* Grid overlay removed — was visible against photo texture */}
-      {/* Gradient orb */}
-      <div className="absolute -top-[200px] -right-[100px] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(46,139,139,0.08)_0%,transparent_70%)] rounded-full" />
+    <section className="relative overflow-hidden py-24 lg:py-[130px] px-6 lg:px-10 bg-gradient-to-br from-navy-deep via-navy to-[#1a3355]">
+      {/* Subtle atmospheric gradients */}
+      <div className="absolute -top-[200px] -right-[100px] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(46,139,139,0.06)_0%,transparent_70%)] rounded-full" />
+      <div className="absolute -bottom-[150px] -left-[100px] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(212,168,67,0.04)_0%,transparent_70%)] rounded-full" />
 
-      <div className="max-w-[900px] mx-auto relative z-10 text-center">
+      <div className="max-w-[800px] mx-auto relative z-10 text-center">
         <div
           className="transition-all duration-1000"
           style={{
@@ -38,37 +22,35 @@ export default function HeroSection() {
             transform: loaded ? "translateY(0)" : "translateY(30px)",
           }}
         >
-          <div className="text-xs tracking-[4px] text-teal font-sans font-semibold mb-6">
-            POLYMER PROCUREMENT INTELLIGENCE
-          </div>
-          <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-[1.2] mb-6">
-            Your supplier shares prices.{" "}
-            <span className="bg-gradient-to-r from-teal-light via-teal to-teal-light bg-clip-text text-transparent">We share intelligence.</span>
+          <h1 className="font-serif text-5xl lg:text-7xl font-bold text-white leading-[1.1] mb-7">
+            Your China polymer desk.
           </h1>
-          <p className="font-sans text-lg text-body-text leading-relaxed max-w-[640px] mx-auto mb-10">
-            Daily polymer pricing, buy-timing signals, and supply disruption
-            alerts — delivered free to distributors and converters worldwide.
-            Know what the market is doing before you buy.
+          <p className="font-sans text-lg lg:text-xl text-body-text leading-relaxed max-w-[640px] mx-auto mb-5">
+            Describe what you need. We search tens of thousands of grades and
+            respond with matched specs, pricing, and documentation — in one
+            answer.
+          </p>
+          <p className="font-serif text-base lg:text-lg text-cream/40 italic mb-10">
+            A sourcing depth the polymer industry hasn&apos;t had.
           </p>
 
-          {/* Primary CTA cluster */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
-            <Link
-              href="/terminal#subscribe"
+          <div className="flex flex-col items-center gap-4">
+            <a
+              href="#inquiry"
               className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-base tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
             >
-              Get Daily Intelligence
-            </Link>
-            <Link
-              href="/terminal/archive"
-              className="inline-flex items-center justify-center border border-white/[0.15] hover:border-teal/40 text-white font-sans font-medium text-base px-7 py-4 rounded-lg transition-all duration-200 hover:-translate-y-px"
+              Tell us what you need
+            </a>
+            <a
+              href="https://www.linkedin.com/newsletters/the-polymer-compass-7444056500781694976/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-sans text-sm text-body-text hover:text-teal-light transition-colors duration-200"
             >
-              Read Our Analysis
-            </Link>
+              Or subscribe to The Polymer Compass — free market intelligence,
+              twice weekly.
+            </a>
           </div>
-          <p className="text-xs text-muted font-sans">
-            Free for polymer distributors and converters. No credit card required.
-          </p>
         </div>
       </div>
     </section>
