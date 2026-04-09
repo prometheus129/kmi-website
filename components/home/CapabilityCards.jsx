@@ -77,14 +77,14 @@ const capabilities = [
 
 export default function CapabilityCards() {
   return (
-    <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
+    <section className="bg-ticker-bg py-20 lg:py-[100px] px-6 lg:px-10 relative overflow-hidden">
       {/* Atmospheric texture */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-[0.05]"
         style={{ backgroundImage: "url('/images/value-texture.jpg')" }}
       />
 
-      <div className="max-w-[1200px] mx-auto relative z-10">
+      <div className="max-w-[1100px] mx-auto relative z-10">
         <RevealDiv>
           <div className="text-center mb-12 lg:mb-16">
             <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
@@ -96,17 +96,37 @@ export default function CapabilityCards() {
           </div>
         </RevealDiv>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-5">
-          {capabilities.map((cap, i) => (
+        {/* Row 1: three cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+          {capabilities.slice(0, 3).map((cap, i) => (
             <RevealDiv key={i} delay={i * 100}>
-              <div className={`border-l-[3px] ${cap.accent} pl-5 pr-4 py-5 rounded-r-lg ${cap.cardBg} h-full hover:-translate-y-[3px] transition-all duration-300`}>
+              <div className={`border-l-[3px] ${cap.accent} pl-6 pr-5 py-6 rounded-r-lg ${cap.cardBg} h-full hover:-translate-y-[3px] transition-all duration-300`}>
                 <div className={`w-10 h-10 rounded-lg border flex items-center justify-center mb-4 ${cap.iconBg} ${cap.iconColor}`}>
                   {cap.icon}
                 </div>
-                <h3 className="font-sans text-[15px] font-bold text-white mb-2.5">
+                <h3 className="font-sans text-base font-bold text-white mb-2.5">
                   {cap.title}
                 </h3>
-                <p className="font-sans text-[13px] text-body-text leading-relaxed">
+                <p className="font-sans text-[14px] text-body-text leading-relaxed">
+                  {cap.text}
+                </p>
+              </div>
+            </RevealDiv>
+          ))}
+        </div>
+
+        {/* Row 2: two cards centered */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[740px] mx-auto">
+          {capabilities.slice(3).map((cap, i) => (
+            <RevealDiv key={i + 3} delay={(i + 3) * 100}>
+              <div className={`border-l-[3px] ${cap.accent} pl-6 pr-5 py-6 rounded-r-lg ${cap.cardBg} h-full hover:-translate-y-[3px] transition-all duration-300`}>
+                <div className={`w-10 h-10 rounded-lg border flex items-center justify-center mb-4 ${cap.iconBg} ${cap.iconColor}`}>
+                  {cap.icon}
+                </div>
+                <h3 className="font-sans text-base font-bold text-white mb-2.5">
+                  {cap.title}
+                </h3>
+                <p className="font-sans text-[14px] text-body-text leading-relaxed">
                   {cap.text}
                 </p>
               </div>

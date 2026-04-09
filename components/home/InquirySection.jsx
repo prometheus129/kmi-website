@@ -62,12 +62,10 @@ export default function InquirySection() {
 
     const formData = new FormData(e.target);
 
-    // Append UTM params as hidden fields
     for (const [key, val] of Object.entries(utmParams)) {
       formData.append(key, val);
     }
 
-    // Set Formspree subject line
     const polymerType = formData.get("polymerType") || "General";
     formData.append("_subject", `New Requirement: ${polymerType}`);
 
@@ -88,9 +86,9 @@ export default function InquirySection() {
   return (
     <section
       id="inquiry"
-      className="bg-navy-deep py-20 lg:py-[90px] px-6 lg:px-10 scroll-mt-24"
+      className="bg-navy-deep py-20 lg:py-[100px] px-6 lg:px-10 scroll-mt-24"
     >
-      <div className="max-w-[720px] mx-auto">
+      <div className="max-w-[840px] mx-auto">
         {/* Header copy */}
         <div className="text-center mb-12">
           <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
@@ -99,7 +97,7 @@ export default function InquirySection() {
           <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
             Start with one question
           </h2>
-          <p className="font-sans text-[15px] text-body-text leading-relaxed max-w-[560px] mx-auto">
+          <p className="font-sans text-base lg:text-[17px] text-body-text leading-relaxed max-w-[580px] mx-auto">
             You don&apos;t need to sign a contract, schedule a demo, or sit
             through a pitch deck. Tell us what you need — a polymer type, a
             grade, an application — and we&apos;ll show you what the broader
@@ -124,13 +122,13 @@ export default function InquirySection() {
             <h3 className="font-serif text-2xl font-bold text-white mb-4">
               Requirement received
             </h3>
-            <p className="font-sans text-[15px] text-body-text leading-relaxed mb-6 max-w-[480px] mx-auto">
+            <p className="font-sans text-[15px] text-body-text leading-relaxed mb-6 max-w-[520px] mx-auto">
               We&apos;ve received your requirement. Our sourcing team will
               respond within one to two business days with matched grades,
               current CFR pricing for your destination, and documentation
               details. Check your email.
             </p>
-            <div className="bg-white/[0.02] rounded-lg p-5 max-w-[480px] mx-auto mb-6">
+            <div className="bg-white/[0.02] rounded-lg p-5 max-w-[520px] mx-auto mb-6">
               <p className="font-sans text-[13px] text-muted leading-relaxed">
                 <span className="text-body-text font-semibold">
                   What happens next:
@@ -157,7 +155,6 @@ export default function InquirySection() {
           /* ---- Form ---- */
           <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 sm:p-8 lg:p-10">
             <form onSubmit={handleSubmit} className="space-y-5">
-              {/* Hidden fields */}
               <input type="hidden" name="_formtype" value="requirement" />
 
               {/* Polymer type + Application */}
@@ -254,7 +251,6 @@ export default function InquirySection() {
                 />
               </div>
 
-              {/* Visual divider between requirement and contact info */}
               <div className="border-t border-white/[0.06] pt-5" />
 
               {/* Name + Company */}
@@ -338,11 +334,10 @@ export default function InquirySection() {
                 <p className="text-ticker-red text-sm font-sans">{error}</p>
               )}
 
-              {/* Submit */}
               <button
                 type="submit"
                 disabled={submitting}
-                className="w-full sm:w-auto bg-gold text-navy-deep font-semibold text-base tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full sm:w-auto bg-gold text-navy-deep font-semibold text-base tracking-wider px-10 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {submitting ? "Submitting..." : "Submit requirement"}
               </button>
@@ -350,7 +345,7 @@ export default function InquirySection() {
           </div>
         )}
 
-        {/* Secondary CTA — below form */}
+        {/* Secondary CTA */}
         {!submitted && (
           <div className="mt-12 pt-8 border-t border-white/[0.06] text-center">
             <p className="font-sans text-sm text-body-text mb-1">
@@ -366,16 +361,6 @@ export default function InquirySection() {
             <p className="font-sans text-xs text-muted">
               Free market intelligence for polymer distributors. Twice weekly.
             </p>
-            {/* Catalog CTA — uncomment when catalog launches
-            <p className="font-sans text-sm text-body-text mt-4">
-              <a href="/catalog" className="text-teal hover:text-teal-light font-medium transition-colors duration-200">
-                Browse the grade catalog
-              </a>
-              <span className="text-xs text-muted block mt-0.5">
-                Search Chinese polymer grades by properties, application, or Western equivalent.
-              </span>
-            </p>
-            */}
           </div>
         )}
       </div>

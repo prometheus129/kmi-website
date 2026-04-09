@@ -10,7 +10,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden py-24 lg:py-[140px] px-6 lg:px-10 bg-gradient-to-br from-navy-deep via-navy to-[#1a3355]">
+    <section className="relative overflow-hidden min-h-[85vh] flex items-center px-6 lg:px-10 bg-gradient-to-br from-navy-deep via-navy to-[#1a3355]">
       {/* Atmospheric texture */}
       <div className="absolute inset-0 opacity-[0.085]">
         <Image
@@ -29,7 +29,7 @@ export default function HeroSection() {
       <div className="absolute -top-[200px] -right-[100px] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(46,139,139,0.08)_0%,transparent_70%)] rounded-full" />
       <div className="absolute -bottom-[150px] -left-[100px] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(212,168,67,0.04)_0%,transparent_70%)] rounded-full" />
 
-      <div className="max-w-[1100px] mx-auto relative z-10 text-center">
+      <div className="max-w-[1100px] mx-auto relative z-10 text-center w-full py-24 lg:py-[140px]">
         <div
           className="transition-all duration-1000"
           style={{
@@ -43,12 +43,12 @@ export default function HeroSection() {
           <h1 className="font-serif text-5xl lg:text-[66px] font-bold text-white leading-[1.08] mb-8">
             Your China polymer desk.
           </h1>
-          <p className="font-sans text-lg lg:text-[19px] text-body-text leading-relaxed max-w-[620px] mx-auto mb-5">
+          <p className="font-sans text-xl lg:text-[24px] text-body-text leading-relaxed max-w-[680px] mx-auto mb-5">
             Describe what you need. We search tens of thousands of grades and
             respond with matched specs, pricing, and documentation — in one
             answer.
           </p>
-          <p className="font-serif text-base lg:text-lg text-cream/40 italic mb-12">
+          <p className="font-serif text-lg lg:text-xl text-cream/40 italic mb-12">
             A sourcing depth the polymer industry hasn&apos;t had.
           </p>
 
@@ -69,7 +69,7 @@ export default function HeroSection() {
               Subscribe to The Polymer Compass
             </a>
           </div>
-          <p className="text-xs text-muted font-sans">
+          <p className="text-sm text-muted font-sans">
             Free market intelligence for polymer distributors. No commitment required.
           </p>
         </div>

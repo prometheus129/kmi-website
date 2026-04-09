@@ -41,7 +41,7 @@ const layers = [
 
 export default function ForDistributors() {
   return (
-    <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
+    <section className="bg-ticker-bg py-20 lg:py-[100px] px-6 lg:px-10 relative overflow-hidden">
       {/* Atmospheric texture */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-[0.04]"
@@ -50,28 +50,25 @@ export default function ForDistributors() {
 
       <div className="max-w-[1100px] mx-auto relative z-10">
         <RevealDiv>
-          <div className="text-center mb-5">
+          <div className="text-center mb-6">
             <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
               FOR DISTRIBUTORS
             </div>
-            <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white leading-tight">
+            <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white leading-tight mb-5">
               Built for distributors who source from China
             </h2>
+            <p className="font-sans text-lg lg:text-xl text-body-text max-w-[640px] mx-auto">
+              You have the buyer relationships. We have the China market
+              intelligence. Together, your business is more competitive.
+            </p>
           </div>
-          <p className="font-sans text-lg text-body-text text-center max-w-[640px] mx-auto mb-6">
-            You have the buyer relationships. We have the China market
-            intelligence. Together, your business is more competitive.
-          </p>
-          <div className="max-w-[600px] mx-auto mb-14">
-            <p className="font-sans text-[14px] text-body-text leading-relaxed text-center">
+          <div className="max-w-[620px] mx-auto mb-14">
+            <p className="font-sans text-[15px] text-body-text leading-relaxed text-center">
               You know your market, your buyers, and your regulations. What you
               may not have is a way to systematically search China&apos;s
               polymer supply base and turn that into quotes your buyers can act
-              on.
-            </p>
-            <p className="font-sans text-[14px] text-body-text leading-relaxed text-center mt-3">
-              That&apos;s what we do. You keep the buyer relationship and the
-              margin. We handle the sourcing behind it.
+              on. That&apos;s what we do. You keep the buyer relationship and
+              the margin. We handle the sourcing behind it.
             </p>
           </div>
         </RevealDiv>
@@ -81,12 +78,12 @@ export default function ForDistributors() {
           {layers.map((layer, i) => (
             <RevealDiv key={i} delay={i * 150}>
               <div
-                className={`border border-white/[0.06] ${layer.accent} rounded-lg p-6 h-full ${layer.cardBg} ${layer.hoverBorder} hover:-translate-y-[3px] transition-all duration-300`}
+                className={`border border-white/[0.06] ${layer.accent} rounded-lg p-6 lg:p-7 h-full ${layer.cardBg} ${layer.hoverBorder} hover:-translate-y-[3px] transition-all duration-300`}
               >
                 <div className={`font-mono text-[10px] tracking-[3px] font-bold mb-3 ${layer.stepColor}`}>
                   {layer.step}
                 </div>
-                <h3 className="font-serif text-lg font-bold text-white mb-5">
+                <h3 className="font-serif text-xl font-bold text-white mb-5">
                   {layer.title}
                 </h3>
 
@@ -95,7 +92,7 @@ export default function ForDistributors() {
                     <div className="font-sans text-[10px] font-bold uppercase tracking-[2px] text-muted mb-1.5">
                       What you get
                     </div>
-                    <p className="font-sans text-[13px] text-body-text leading-relaxed">
+                    <p className="font-sans text-[14px] text-body-text leading-relaxed">
                       {layer.whatYouGet}
                     </p>
                   </div>
@@ -103,7 +100,7 @@ export default function ForDistributors() {
                     <div className="font-sans text-[10px] font-bold uppercase tracking-[2px] text-muted mb-1.5">
                       How it works
                     </div>
-                    <p className="font-sans text-[13px] text-body-text leading-relaxed">
+                    <p className="font-sans text-[14px] text-body-text leading-relaxed">
                       {layer.howItWorks}
                     </p>
                   </div>
