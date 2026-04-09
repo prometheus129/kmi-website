@@ -6,19 +6,18 @@ import { usePathname } from "next/navigation";
 
 const columns = [
   {
-    title: "PLATFORM",
+    title: "INTELLIGENCE",
     links: [
-      { label: "Syndicate", href: "/syndicate" },
-      { label: "Advanced Materials", href: "/materials" },
       { label: "The Polymer Compass", href: "/terminal" },
+      { label: "Market Insights", href: "/insights" },
+      { label: "Daily Pricing", href: "/pricing" },
+      { label: "Advanced Materials", href: "/materials" },
     ],
   },
   {
     title: "COMPANY",
     links: [
-      { label: "Insights", href: "/insights" },
-      { label: "Pricing", href: "/pricing" },
-      { label: "About", href: "/about" },
+      { label: "About Our Approach", href: "/approach" },
       { label: "Contact", href: "/contact" },
       { label: "Privacy Policy", href: "/privacy" },
       { label: "Terms of Service", href: "/terms" },
@@ -65,11 +64,26 @@ export default function Footer() {
                 className="h-12 w-auto -mt-1.5"
               />
             </Link>
-            <p className="font-sans text-[13px] text-muted leading-relaxed max-w-[280px]">
-              Global polymer procurement infrastructure. Hong Kong
-              headquartered, sourcing across China, serving emerging
-              markets.
+            <p className="font-sans text-[13px] text-muted leading-relaxed max-w-[280px] mb-4">
+              Your China polymer desk. Hong Kong headquartered, sourcing
+              across China, serving distributors across emerging markets.
             </p>
+            <div className="space-y-1.5">
+              <a
+                href="mailto:inquiry@kantormaterials.com"
+                className="block font-sans text-[13px] text-muted hover:text-cream transition-colors duration-200"
+              >
+                inquiry@kantormaterials.com
+              </a>
+              <a
+                href="https://www.linkedin.com/company/kantor-materials-international/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block font-sans text-[13px] text-muted hover:text-cream transition-colors duration-200"
+              >
+                LinkedIn
+              </a>
+            </div>
           </div>
 
           {/* Link Columns */}
@@ -82,7 +96,7 @@ export default function Footer() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="block font-sans text-[13px] text-muted hover:text-cream transition-colors duration-200 mb-2.5"
+                  className="block font-sans text-sm text-muted hover:text-cream transition-colors duration-150 py-1"
                 >
                   {link.label}
                 </Link>

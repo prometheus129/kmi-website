@@ -58,7 +58,7 @@ export default function HeroSection() {
               Subscribe to The Polymer Compass
             </a>
           </div>
-          <p className="text-sm text-muted font-sans leading-relaxed">
+          <p className="text-sm text-body-text font-sans leading-relaxed">
             Free market intelligence for polymer distributors. No commitment required.
           </p>
         </div>

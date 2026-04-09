@@ -23,14 +23,14 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Kantor Materials International — Global Polymer Procurement Infrastructure",
+  title: "Kantor Materials International — Your China Polymer Desk",
   description:
-    "Aggregated commodity procurement and application-specific advanced materials for distributors and manufacturers across emerging markets. Hong Kong headquartered, sourcing across China.",
+    "Describe what you need. We search tens of thousands of grades and respond with matched specs, pricing, and documentation. Sourcing intelligence for polymer distributors.",
   metadataBase: new URL("https://www.kantormaterials.com"),
   openGraph: {
-    title: "Kantor Materials International",
+    title: "Kantor Materials International — Your China Polymer Desk",
     description:
-      "Global polymer procurement infrastructure. Connecting the world to China's industrial core.",
+      "Describe what you need. We search tens of thousands of grades and respond with matched specs, pricing, and documentation.",
     type: "website",
     locale: "en_US",
     siteName: "Kantor Materials International",
@@ -38,9 +38,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@KantorMaterials",
-    title: "Kantor Materials International",
+    title: "Kantor Materials International — Your China Polymer Desk",
     description:
-      "Global polymer procurement infrastructure. The full market on every order.",
+      "Your China polymer desk. Sourcing intelligence for polymer distributors across emerging markets.",
   },
   verification: {
     yandex: "c9236dfd176b2903",
@@ -53,7 +53,15 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${cormorant.variable} ${dmSans.variable} ${jetbrainsMono.variable}`}
     >
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-teal focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-semibold"
+        >
+          Skip to content
+        </a>
+        {children}
+      </body>
     </html>
   );
 }
