@@ -40,10 +40,8 @@ export default function HeroSection() {
           <div className="text-xs tracking-[4px] text-teal font-sans font-semibold mb-7">
             POLYMER SOURCING INTELLIGENCE
           </div>
-          <h1 className="font-serif text-5xl lg:text-[80px] font-bold text-white leading-[1.08] mb-8">
-            Your China{" "}
-            <br className="hidden lg:block" />
-            polymer desk.
+          <h1 className="font-serif text-5xl lg:text-[66px] font-bold text-white leading-[1.08] mb-8">
+            Your China polymer desk.
           </h1>
           <p className="font-sans text-lg lg:text-[19px] text-body-text leading-relaxed max-w-[620px] mx-auto mb-5">
             Describe what you need. We search tens of thousands of grades and
