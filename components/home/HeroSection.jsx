@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import TradeCorridorMap from "@/components/home/TradeCorridorMap";
 
 export default function HeroSection() {
   const [loaded, setLoaded] = useState(false);
@@ -25,6 +26,8 @@ export default function HeroSection() {
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/40 via-transparent to-navy-deep/60" />
+      {/* Trade corridor visualization */}
+      <TradeCorridorMap />
       {/* Gradient orbs */}
       <div className="absolute -top-[200px] -right-[100px] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(46,139,139,0.08)_0%,transparent_70%)] rounded-full" />
       <div className="absolute -bottom-[150px] -left-[100px] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(212,168,67,0.04)_0%,transparent_70%)] rounded-full" />
