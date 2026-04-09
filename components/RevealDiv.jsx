@@ -36,8 +36,8 @@ export default function RevealDiv({ delay = 0, children, className = "" }) {
           ? {}
           : {
               opacity: visible ? 1 : 0,
-              transform: visible ? "translateY(0)" : "translateY(28px)",
-              transition: `opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) ${delay}ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) ${delay}ms`,
+              transform: visible ? "translateY(0)" : "translateY(24px)",
+              transition: `opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1) ${delay}ms, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) ${delay}ms`,
             }
       }
     >

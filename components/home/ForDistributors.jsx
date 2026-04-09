@@ -41,7 +41,7 @@ const layers = [
 
 export default function ForDistributors() {
   return (
-    <section className="bg-ticker-bg py-20 lg:py-[100px] px-6 lg:px-10 relative overflow-hidden">
+    <section className="bg-ticker-bg py-20 px-6 lg:px-10 relative overflow-hidden">
       {/* Atmospheric texture */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-[0.04]"
@@ -54,16 +54,16 @@ export default function ForDistributors() {
             <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
               FOR DISTRIBUTORS
             </div>
-            <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white leading-tight mb-5">
+            <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white leading-tight mb-6">
               Built for distributors who source from China
             </h2>
-            <p className="font-sans text-lg lg:text-xl text-body-text max-w-[640px] mx-auto">
+            <p className="font-sans text-xl text-body-text max-w-[640px] mx-auto">
               You have the buyer relationships. We have the China market
               intelligence. Together, your business is more competitive.
             </p>
           </div>
-          <div className="max-w-[620px] mx-auto mb-14">
-            <p className="font-sans text-[15px] text-body-text leading-relaxed text-center">
+          <div className="max-w-[620px] mx-auto mb-16">
+            <p className="font-sans text-base text-body-text leading-relaxed text-center">
               You know your market, your buyers, and your regulations. What you
               may not have is a way to systematically search China&apos;s
               polymer supply base and turn that into quotes your buyers can act
@@ -74,38 +74,38 @@ export default function ForDistributors() {
         </RevealDiv>
 
         {/* Three-layer progression */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {layers.map((layer, i) => (
             <RevealDiv key={i} delay={i * 150}>
               <div
-                className={`border border-white/[0.06] ${layer.accent} rounded-lg p-6 lg:p-7 h-full ${layer.cardBg} ${layer.hoverBorder} hover:-translate-y-[3px] transition-all duration-300`}
+                className={`border border-white/[0.06] ${layer.accent} rounded-lg p-6 lg:p-8 h-full ${layer.cardBg} ${layer.hoverBorder} hover:-translate-y-[3px] transition-all duration-200`}
               >
-                <div className={`font-mono text-[10px] tracking-[3px] font-bold mb-3 ${layer.stepColor}`}>
+                <div className={`font-mono text-[11px] tracking-[3px] font-bold mb-4 ${layer.stepColor}`}>
                   {layer.step}
                 </div>
-                <h3 className="font-serif text-xl font-bold text-white mb-5">
+                <h3 className="font-serif text-xl font-bold text-white mb-6">
                   {layer.title}
                 </h3>
 
                 <div className="space-y-4">
                   <div>
-                    <div className="font-sans text-[10px] font-bold uppercase tracking-[2px] text-muted mb-1.5">
+                    <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-muted mb-2">
                       What you get
                     </div>
-                    <p className="font-sans text-[14px] text-body-text leading-relaxed">
+                    <p className="font-sans text-sm text-body-text leading-relaxed">
                       {layer.whatYouGet}
                     </p>
                   </div>
                   <div>
-                    <div className="font-sans text-[10px] font-bold uppercase tracking-[2px] text-muted mb-1.5">
+                    <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-muted mb-2">
                       How it works
                     </div>
-                    <p className="font-sans text-[14px] text-body-text leading-relaxed">
+                    <p className="font-sans text-sm text-body-text leading-relaxed">
                       {layer.howItWorks}
                     </p>
                   </div>
                   <div>
-                    <div className="font-sans text-[10px] font-bold uppercase tracking-[2px] text-muted mb-1.5">
+                    <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-muted mb-2">
                       Your cost
                     </div>
                     <p className={`font-sans text-sm font-semibold ${layer.costColor}`}>

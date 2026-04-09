@@ -32,26 +32,26 @@ export default function HeroSection() {
       <div className="absolute -top-[200px] -right-[100px] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(46,139,139,0.08)_0%,transparent_70%)] rounded-full" />
       <div className="absolute -bottom-[150px] -left-[100px] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(212,168,67,0.04)_0%,transparent_70%)] rounded-full" />
 
-      <div className="max-w-[1100px] mx-auto relative z-10 text-center w-full py-24 lg:py-[140px]">
+      <div className="max-w-[1100px] mx-auto relative z-10 text-center w-full py-24 lg:py-24">
         <div
-          className="transition-all duration-1000"
+          className="transition-all duration-[500ms]"
           style={{
             opacity: loaded ? 1 : 0,
-            transform: loaded ? "translateY(0)" : "translateY(30px)",
+            transform: loaded ? "translateY(0)" : "translateY(24px)",
           }}
         >
-          <div className="text-xs tracking-[4px] text-teal font-sans font-semibold mb-7">
+          <div className="text-xs tracking-[4px] text-teal font-sans font-semibold mb-8">
             POLYMER SOURCING INTELLIGENCE
           </div>
           <h1 className="font-serif text-5xl lg:text-[66px] font-bold text-white leading-[1.08] mb-8">
             Your China polymer desk.
           </h1>
-          <p className="font-sans text-xl lg:text-[24px] text-body-text leading-relaxed max-w-[680px] mx-auto mb-5">
+          <p className="font-sans text-xl lg:text-2xl text-body-text leading-relaxed max-w-[680px] mx-auto mb-6">
             Describe what you need. We search tens of thousands of grades and
             respond with matched specs, pricing, and documentation — in one
             answer.
           </p>
-          <p className="font-serif text-lg lg:text-xl text-cream/40 italic mb-12">
+          <p className="font-serif text-xl text-muted italic mb-12">
             A sourcing depth the polymer industry hasn&apos;t had.
           </p>
 
@@ -59,7 +59,7 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
             <a
               href="#inquiry"
-              className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-base tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
+              className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-base tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-150"
             >
               Tell us what you need
             </a>
@@ -67,7 +67,7 @@ export default function HeroSection() {
               href="https://www.linkedin.com/newsletters/the-polymer-compass-7444056500781694976/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center border border-white/[0.15] hover:border-teal/40 text-white font-sans font-medium text-base px-7 py-4 rounded-lg transition-all duration-200 hover:-translate-y-px"
+              className="inline-flex items-center justify-center border border-white/[0.15] hover:border-teal/40 text-white font-sans font-medium text-base px-8 py-4 rounded-lg transition-all duration-150 hover:-translate-y-px"
             >
               Subscribe to The Polymer Compass
             </a>

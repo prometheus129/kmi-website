@@ -5,7 +5,7 @@ const stats = [
     value: "100+",
     label: "ARTICLES PUBLISHED",
     icon: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
         <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
       </svg>
@@ -15,7 +15,7 @@ const stats = [
     value: "19",
     label: "MARKETS COVERED",
     icon: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" />
         <line x1="2" y1="12" x2="22" y2="12" />
         <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
@@ -26,7 +26,7 @@ const stats = [
     value: "7",
     label: "LANGUAGES",
     icon: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M5 8l6 6" />
         <path d="M4 14l6-6 2-3" />
         <path d="M2 5h12" />
@@ -40,14 +40,14 @@ const stats = [
 
 export default function SocialProof() {
   return (
-    <section className="bg-navy py-12 lg:py-14 px-6 lg:px-10 border-y border-white/[0.04]">
+    <section className="bg-navy py-12 px-6 lg:px-10 border-y border-white/[0.06]">
       <RevealDiv>
-        <div className="max-w-[900px] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div className="max-w-[900px] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
           {stats.map((s, i) => (
             <div
               key={i}
               className={`text-center py-2 ${
-                i < 2 ? "sm:border-r sm:border-white/[0.08]" : ""
+                i < 2 ? "sm:border-r sm:border-white/[0.06]" : ""
               }`}
             >
               <div className="flex justify-center mb-3 text-teal/50">
@@ -55,7 +55,7 @@ export default function SocialProof() {
               </div>
               <div
                 className="font-mono text-4xl lg:text-5xl font-bold text-teal-light leading-none tracking-tight"
-                style={{ textShadow: "0 0 30px rgba(58, 173, 173, 0.15)" }}
+                style={{ textShadow: "0 0 24px rgba(58, 173, 173, 0.15)" }}
               >
                 {s.value}
               </div>

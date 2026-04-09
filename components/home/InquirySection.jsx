@@ -79,14 +79,14 @@ export default function InquirySection() {
   }
 
   const inputClasses =
-    "w-full px-4 py-3 rounded-lg border border-white/[0.1] bg-white/[0.04] font-sans text-sm text-white placeholder:text-muted focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal transition-colors";
+    "w-full px-4 py-3 rounded-lg border border-white/[0.10] bg-white/[0.04] font-sans text-sm text-white placeholder:text-muted focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal transition-colors duration-150";
   const labelClasses =
-    "block font-sans text-[10px] font-bold uppercase tracking-[2px] text-body-text mb-2";
+    "block font-sans text-[11px] font-bold uppercase tracking-[2px] text-body-text mb-2";
 
   return (
     <section
       id="inquiry"
-      className="bg-navy-deep py-20 lg:py-[100px] px-6 lg:px-10 scroll-mt-24"
+      className="bg-navy-deep py-20 lg:py-24 px-6 lg:px-10 scroll-mt-24"
     >
       <div className="max-w-[840px] mx-auto">
         {/* Header copy */}
@@ -94,10 +94,10 @@ export default function InquirySection() {
           <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
             GET STARTED
           </div>
-          <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
+          <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white mb-6 leading-tight">
             Start with one question
           </h2>
-          <p className="font-sans text-base lg:text-[17px] text-body-text leading-relaxed max-w-[580px] mx-auto">
+          <p className="font-sans text-base text-body-text leading-relaxed max-w-[580px] mx-auto">
             You don&apos;t need to sign a contract, schedule a demo, or sit
             through a pitch deck. Tell us what you need — a polymer type, a
             grade, an application — and we&apos;ll show you what the broader
@@ -107,8 +107,8 @@ export default function InquirySection() {
 
         {submitted ? (
           /* ---- Confirmation ---- */
-          <div className="bg-white/[0.03] border border-teal/20 rounded-lg p-8 lg:p-10 text-center">
-            <div className="w-12 h-12 bg-teal/10 border border-teal/30 rounded-lg flex items-center justify-center mx-auto mb-5">
+          <div className="bg-white/[0.03] border border-teal/20 rounded-xl p-8 lg:p-10 text-center">
+            <div className="w-12 h-12 bg-teal/10 border border-teal/30 rounded-lg flex items-center justify-center mx-auto mb-6">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path
                   d="M5 13l4 4L19 7"
@@ -122,14 +122,14 @@ export default function InquirySection() {
             <h3 className="font-serif text-2xl font-bold text-white mb-4">
               Requirement received
             </h3>
-            <p className="font-sans text-[15px] text-body-text leading-relaxed mb-6 max-w-[520px] mx-auto">
+            <p className="font-sans text-base text-body-text leading-relaxed mb-6 max-w-[520px] mx-auto">
               We&apos;ve received your requirement. Our sourcing team will
               respond within one to two business days with matched grades,
               current CFR pricing for your destination, and documentation
               details. Check your email.
             </p>
-            <div className="bg-white/[0.02] rounded-lg p-5 max-w-[520px] mx-auto mb-6">
-              <p className="font-sans text-[13px] text-muted leading-relaxed">
+            <div className="bg-white/[0.02] rounded-lg p-6 max-w-[520px] mx-auto mb-6">
+              <p className="font-sans text-sm text-muted leading-relaxed">
                 <span className="text-body-text font-semibold">
                   What happens next:
                 </span>{" "}
@@ -144,7 +144,7 @@ export default function InquirySection() {
                 href="https://www.linkedin.com/newsletters/the-polymer-compass-7444056500781694976/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-teal hover:text-teal-light transition-colors"
+                className="text-teal hover:text-teal-light transition-colors duration-150"
               >
                 Subscribe to The Polymer Compass
               </a>{" "}
@@ -154,7 +154,7 @@ export default function InquirySection() {
         ) : (
           /* ---- Form ---- */
           <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 sm:p-8 lg:p-10">
-            <form onSubmit={handleSubmit} className="space-y-5">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <input type="hidden" name="_formtype" value="requirement" />
 
               {/* Polymer type + Application */}
@@ -251,7 +251,7 @@ export default function InquirySection() {
                 />
               </div>
 
-              <div className="border-t border-white/[0.06] pt-5" />
+              <div className="border-t border-white/[0.06] pt-6" />
 
               {/* Name + Company */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -337,7 +337,7 @@ export default function InquirySection() {
               <button
                 type="submit"
                 disabled={submitting}
-                className="w-full sm:w-auto bg-gold text-navy-deep font-semibold text-base tracking-wider px-10 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full sm:w-auto bg-gold text-navy-deep font-semibold text-base tracking-wider px-10 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {submitting ? "Submitting..." : "Submit requirement"}
               </button>
@@ -353,7 +353,7 @@ export default function InquirySection() {
                 href="https://www.linkedin.com/newsletters/the-polymer-compass-7444056500781694976/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-teal hover:text-teal-light font-medium transition-colors duration-200"
+                className="text-teal hover:text-teal-light font-medium transition-colors duration-150"
               >
                 Subscribe to The Polymer Compass
               </a>
