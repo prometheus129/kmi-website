@@ -93,6 +93,9 @@ export default function InquirySection() {
       <div className="max-w-[720px] mx-auto">
         {/* Header copy */}
         <div className="text-center mb-12">
+          <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
+            GET STARTED
+          </div>
           <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
             Start with one question
           </h2>
@@ -152,197 +155,199 @@ export default function InquirySection() {
           </div>
         ) : (
           /* ---- Form ---- */
-          <form onSubmit={handleSubmit} className="space-y-5">
-            {/* Hidden fields */}
-            <input type="hidden" name="_formtype" value="requirement" />
+          <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 sm:p-8 lg:p-10">
+            <form onSubmit={handleSubmit} className="space-y-5">
+              {/* Hidden fields */}
+              <input type="hidden" name="_formtype" value="requirement" />
 
-            {/* Polymer type + Application */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* Polymer type + Application */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="inq-polymer" className={labelClasses}>
+                    Polymer type *
+                  </label>
+                  <select
+                    id="inq-polymer"
+                    name="polymerType"
+                    required
+                    className={inputClasses}
+                  >
+                    <option value="">Select polymer type</option>
+                    {polymerTypes.map((t) => (
+                      <option key={t} value={t}>
+                        {t}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="inq-application" className={labelClasses}>
+                    Application
+                  </label>
+                  <input
+                    id="inq-application"
+                    name="application"
+                    className={inputClasses}
+                    placeholder="e.g., food packaging, pipe extrusion, automotive connectors"
+                  />
+                </div>
+              </div>
+
+              {/* Grade details */}
               <div>
-                <label htmlFor="inq-polymer" className={labelClasses}>
-                  Polymer type *
+                <label htmlFor="inq-grade" className={labelClasses}>
+                  Grade or specification details
+                </label>
+                <input
+                  id="inq-grade"
+                  name="gradeDetails"
+                  className={inputClasses}
+                  placeholder="e.g., PP homo MFI 12, HDPE blow molding, PA6-GF30 equivalent to Zytel 70G33L"
+                />
+              </div>
+
+              {/* Quantity + Destination */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="inq-quantity" className={labelClasses}>
+                    Estimated quantity (MT/month) *
+                  </label>
+                  <select
+                    id="inq-quantity"
+                    name="quantity"
+                    required
+                    className={inputClasses}
+                  >
+                    <option value="">Select quantity</option>
+                    {quantities.map((q) => (
+                      <option key={q} value={q}>
+                        {q}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="inq-destination" className={labelClasses}>
+                    Destination country or port *
+                  </label>
+                  <input
+                    id="inq-destination"
+                    name="destination"
+                    required
+                    className={inputClasses}
+                    placeholder="e.g., Ho Chi Minh City, Manila, Istanbul"
+                  />
+                </div>
+              </div>
+
+              {/* Specific requirements */}
+              <div>
+                <label htmlFor="inq-requirements" className={labelClasses}>
+                  Any specific requirements
+                </label>
+                <textarea
+                  id="inq-requirements"
+                  name="requirements"
+                  rows={3}
+                  className={`${inputClasses} resize-none`}
+                  placeholder="e.g., UL listed, FDA food contact, REACH registered, specific MFI range, color requirements"
+                />
+              </div>
+
+              {/* Visual divider between requirement and contact info */}
+              <div className="border-t border-white/[0.06] pt-5" />
+
+              {/* Name + Company */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="inq-name" className={labelClasses}>
+                    Your name *
+                  </label>
+                  <input
+                    id="inq-name"
+                    name="name"
+                    required
+                    autoComplete="name"
+                    className={inputClasses}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="inq-company" className={labelClasses}>
+                    Company name *
+                  </label>
+                  <input
+                    id="inq-company"
+                    name="company"
+                    required
+                    autoComplete="organization"
+                    className={inputClasses}
+                  />
+                </div>
+              </div>
+
+              {/* Email + Phone */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="inq-email" className={labelClasses}>
+                    Email address *
+                  </label>
+                  <input
+                    id="inq-email"
+                    name="email"
+                    type="email"
+                    required
+                    autoComplete="email"
+                    className={inputClasses}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="inq-phone" className={labelClasses}>
+                    Phone / WhatsApp
+                  </label>
+                  <input
+                    id="inq-phone"
+                    name="phone"
+                    type="tel"
+                    autoComplete="tel"
+                    className={inputClasses}
+                    placeholder="Include country code, e.g., +84 936 xxx xxx"
+                  />
+                </div>
+              </div>
+
+              {/* How did you find us */}
+              <div className="max-w-xs">
+                <label htmlFor="inq-source" className={labelClasses}>
+                  How did you find us?
                 </label>
                 <select
-                  id="inq-polymer"
-                  name="polymerType"
-                  required
+                  id="inq-source"
+                  name="source"
                   className={inputClasses}
                 >
-                  <option value="">Select polymer type</option>
-                  {polymerTypes.map((t) => (
-                    <option key={t} value={t}>
-                      {t}
+                  <option value="">Select</option>
+                  {sources.map((s) => (
+                    <option key={s} value={s}>
+                      {s}
                     </option>
                   ))}
                 </select>
               </div>
-              <div>
-                <label htmlFor="inq-application" className={labelClasses}>
-                  Application
-                </label>
-                <input
-                  id="inq-application"
-                  name="application"
-                  className={inputClasses}
-                  placeholder="e.g., food packaging, pipe extrusion, automotive connectors"
-                />
-              </div>
-            </div>
 
-            {/* Grade details */}
-            <div>
-              <label htmlFor="inq-grade" className={labelClasses}>
-                Grade or specification details
-              </label>
-              <input
-                id="inq-grade"
-                name="gradeDetails"
-                className={inputClasses}
-                placeholder="e.g., PP homo MFI 12, HDPE blow molding, PA6-GF30 equivalent to Zytel 70G33L"
-              />
-            </div>
+              {error && (
+                <p className="text-ticker-red text-sm font-sans">{error}</p>
+              )}
 
-            {/* Quantity + Destination */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label htmlFor="inq-quantity" className={labelClasses}>
-                  Estimated quantity (MT/month) *
-                </label>
-                <select
-                  id="inq-quantity"
-                  name="quantity"
-                  required
-                  className={inputClasses}
-                >
-                  <option value="">Select quantity</option>
-                  {quantities.map((q) => (
-                    <option key={q} value={q}>
-                      {q}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div>
-                <label htmlFor="inq-destination" className={labelClasses}>
-                  Destination country or port *
-                </label>
-                <input
-                  id="inq-destination"
-                  name="destination"
-                  required
-                  className={inputClasses}
-                  placeholder="e.g., Ho Chi Minh City, Manila, Istanbul"
-                />
-              </div>
-            </div>
-
-            {/* Specific requirements */}
-            <div>
-              <label htmlFor="inq-requirements" className={labelClasses}>
-                Any specific requirements
-              </label>
-              <textarea
-                id="inq-requirements"
-                name="requirements"
-                rows={3}
-                className={`${inputClasses} resize-none`}
-                placeholder="e.g., UL listed, FDA food contact, REACH registered, specific MFI range, color requirements"
-              />
-            </div>
-
-            {/* Visual divider between requirement and contact info */}
-            <div className="border-t border-white/[0.06] pt-5" />
-
-            {/* Name + Company */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label htmlFor="inq-name" className={labelClasses}>
-                  Your name *
-                </label>
-                <input
-                  id="inq-name"
-                  name="name"
-                  required
-                  autoComplete="name"
-                  className={inputClasses}
-                />
-              </div>
-              <div>
-                <label htmlFor="inq-company" className={labelClasses}>
-                  Company name *
-                </label>
-                <input
-                  id="inq-company"
-                  name="company"
-                  required
-                  autoComplete="organization"
-                  className={inputClasses}
-                />
-              </div>
-            </div>
-
-            {/* Email + Phone */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label htmlFor="inq-email" className={labelClasses}>
-                  Email address *
-                </label>
-                <input
-                  id="inq-email"
-                  name="email"
-                  type="email"
-                  required
-                  autoComplete="email"
-                  className={inputClasses}
-                />
-              </div>
-              <div>
-                <label htmlFor="inq-phone" className={labelClasses}>
-                  Phone / WhatsApp
-                </label>
-                <input
-                  id="inq-phone"
-                  name="phone"
-                  type="tel"
-                  autoComplete="tel"
-                  className={inputClasses}
-                  placeholder="Include country code, e.g., +84 936 xxx xxx"
-                />
-              </div>
-            </div>
-
-            {/* How did you find us */}
-            <div className="max-w-xs">
-              <label htmlFor="inq-source" className={labelClasses}>
-                How did you find us?
-              </label>
-              <select
-                id="inq-source"
-                name="source"
-                className={inputClasses}
+              {/* Submit */}
+              <button
+                type="submit"
+                disabled={submitting}
+                className="w-full sm:w-auto bg-gold text-navy-deep font-semibold text-base tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <option value="">Select</option>
-                {sources.map((s) => (
-                  <option key={s} value={s}>
-                    {s}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            {error && (
-              <p className="text-ticker-red text-sm font-sans">{error}</p>
-            )}
-
-            {/* Submit */}
-            <button
-              type="submit"
-              disabled={submitting}
-              className="w-full sm:w-auto bg-gold text-navy-deep font-semibold text-base tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {submitting ? "Submitting..." : "Submit requirement"}
-            </button>
-          </form>
+                {submitting ? "Submitting..." : "Submit requirement"}
+              </button>
+            </form>
+          </div>
         )}
 
         {/* Secondary CTA — below form */}

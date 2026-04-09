@@ -2,9 +2,18 @@ import RevealDiv from "@/components/RevealDiv";
 
 export default function HonestySection() {
   return (
-    <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-y border-white/[0.04]">
-      <div className="max-w-[720px] mx-auto">
+    <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
+      {/* Subtle texture */}
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-[0.04]"
+        style={{ backgroundImage: "url('/images/trust-texture.jpg')" }}
+      />
+
+      <div className="max-w-[720px] mx-auto relative z-10">
         <RevealDiv>
+          <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
+            OUR APPROACH
+          </div>
           <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-6 leading-tight">
             What we don&apos;t promise
           </h2>
@@ -20,8 +29,8 @@ export default function HonestySection() {
         </RevealDiv>
 
         <RevealDiv delay={100}>
-          <div className="space-y-8">
-            <div>
+          <div className="space-y-7">
+            <div className="border-l-2 border-teal/30 pl-5">
               <h3 className="font-sans text-[15px] font-bold text-white mb-2">
                 We identify the strongest candidates.
               </h3>
@@ -33,7 +42,7 @@ export default function HonestySection() {
               </p>
             </div>
 
-            <div>
+            <div className="border-l-2 border-teal/30 pl-5">
               <h3 className="font-sans text-[15px] font-bold text-white mb-2">
                 We provide complete technical data.
               </h3>
@@ -45,7 +54,7 @@ export default function HonestySection() {
               </p>
             </div>
 
-            <div>
+            <div className="border-l-2 border-teal/30 pl-5">
               <h3 className="font-sans text-[15px] font-bold text-white mb-2">
                 We support you through qualification.
               </h3>
@@ -57,7 +66,7 @@ export default function HonestySection() {
               </p>
             </div>
 
-            <div>
+            <div className="border-l-2 border-teal/30 pl-5">
               <h3 className="font-sans text-[15px] font-bold text-white mb-2">
                 We are honest about what we don&apos;t know.
               </h3>

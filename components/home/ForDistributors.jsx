@@ -4,41 +4,56 @@ const layers = [
   {
     step: "LEARN",
     title: "Market Information",
-    whatYouGet:
-      "Market intelligence, pricing trends, grade catalog",
-    howItWorks:
-      "Subscribe to The Polymer Compass. Browse the catalog.",
+    whatYouGet: "Market intelligence, pricing trends, grade catalog",
+    howItWorks: "Subscribe to The Polymer Compass. Browse the catalog.",
     yourCost: "Free",
-    highlight: false,
+    accent: "border-teal",
+    stepColor: "text-teal",
+    costColor: "text-teal",
+    cardBg: "bg-gradient-to-br from-teal/[0.04] to-transparent",
+    hoverBorder: "hover:border-teal/30",
   },
   {
     step: "SEARCH",
     title: "Grade Search & Pricing",
-    whatYouGet:
-      "Matched grades, CFR pricing, documentation status",
-    howItWorks:
-      "Describe what you need. We respond in one to two business days.",
+    whatYouGet: "Matched grades, CFR pricing, documentation status",
+    howItWorks: "Describe what you need. We respond in one to two business days.",
     yourCost: "Free",
-    highlight: false,
+    accent: "border-white/20",
+    stepColor: "text-teal",
+    costColor: "text-teal",
+    cardBg: "bg-gradient-to-br from-white/[0.03] to-transparent",
+    hoverBorder: "hover:border-teal/30",
   },
   {
     step: "ORDER",
     title: "Order Execution",
-    whatYouGet:
-      "Sourcing, QC, logistics, origin documentation",
-    howItWorks:
-      "Place the order. We handle everything China-side.",
+    whatYouGet: "Sourcing, QC, logistics, origin documentation",
+    howItWorks: "Place the order. We handle everything China-side.",
     yourCost: "Pay only when you order",
-    highlight: true,
+    accent: "border-gold/30",
+    stepColor: "text-gold",
+    costColor: "text-gold",
+    cardBg: "bg-gradient-to-br from-gold/[0.04] to-transparent",
+    hoverBorder: "hover:border-gold/40",
   },
 ];
 
 export default function ForDistributors() {
   return (
-    <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10">
-      <div className="max-w-[1100px] mx-auto">
+    <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
+      {/* Atmospheric texture */}
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-[0.04]"
+        style={{ backgroundImage: "url('/images/terminal-texture.jpg')" }}
+      />
+
+      <div className="max-w-[1100px] mx-auto relative z-10">
         <RevealDiv>
           <div className="text-center mb-5">
+            <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
+              FOR DISTRIBUTORS
+            </div>
             <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white leading-tight">
               Built for distributors who source from China
             </h2>
@@ -66,17 +81,9 @@ export default function ForDistributors() {
           {layers.map((layer, i) => (
             <RevealDiv key={i} delay={i * 150}>
               <div
-                className={`bg-white/[0.03] border rounded-lg p-6 h-full ${
-                  layer.highlight
-                    ? "border-gold/20"
-                    : "border-white/[0.06]"
-                }`}
+                className={`border border-white/[0.06] ${layer.accent} rounded-lg p-6 h-full ${layer.cardBg} ${layer.hoverBorder} hover:-translate-y-[3px] transition-all duration-300`}
               >
-                <div
-                  className={`font-mono text-[10px] tracking-[3px] font-bold mb-3 ${
-                    layer.highlight ? "text-gold" : "text-teal"
-                  }`}
-                >
+                <div className={`font-mono text-[10px] tracking-[3px] font-bold mb-3 ${layer.stepColor}`}>
                   {layer.step}
                 </div>
                 <h3 className="font-serif text-lg font-bold text-white mb-5">
@@ -104,11 +111,7 @@ export default function ForDistributors() {
                     <div className="font-sans text-[10px] font-bold uppercase tracking-[2px] text-muted mb-1.5">
                       Your cost
                     </div>
-                    <p
-                      className={`font-sans text-sm font-semibold ${
-                        layer.highlight ? "text-gold" : "text-teal"
-                      }`}
-                    >
+                    <p className={`font-sans text-sm font-semibold ${layer.costColor}`}>
                       {layer.yourCost}
                     </p>
                   </div>
