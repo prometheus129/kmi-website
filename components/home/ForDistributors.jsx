@@ -43,10 +43,7 @@ export default function ForDistributors() {
   return (
     <section className="bg-ticker-bg py-20 px-6 lg:px-10 relative overflow-hidden">
       {/* Atmospheric texture */}
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-[0.04]"
-        style={{ backgroundImage: "url('/images/terminal-texture.jpg')" }}
-      />
+      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, rgba(46,139,139,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(212,168,67,0.08) 0%, transparent 50%)" }} />
 
       <div className="max-w-[1100px] mx-auto relative z-10">
         <RevealDiv>
@@ -57,7 +54,7 @@ export default function ForDistributors() {
             <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white leading-tight mb-6">
               Built for distributors who source from China
             </h2>
-            <p className="font-sans text-xl text-body-text max-w-[640px] mx-auto">
+            <p className="font-sans text-xl text-body-text leading-normal max-w-[640px] mx-auto">
               You have the buyer relationships. We have the China market
               intelligence. Together, your business is more competitive.
             </p>
@@ -80,7 +77,7 @@ export default function ForDistributors() {
               <div
                 className={`border border-white/[0.06] ${layer.accent} rounded-lg p-6 lg:p-8 h-full ${layer.cardBg} ${layer.hoverBorder} hover:-translate-y-[3px] transition-all duration-200`}
               >
-                <div className={`font-mono text-[11px] tracking-[3px] font-bold mb-4 ${layer.stepColor}`}>
+                <div className={`font-mono text-[11px] tracking-[2px] font-bold mb-4 ${layer.stepColor}`}>
                   {layer.step}
                 </div>
                 <h3 className="font-serif text-xl font-bold text-white mb-6">

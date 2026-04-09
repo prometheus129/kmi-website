@@ -1,15 +1,7 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import TradeCorridorMap from "@/components/home/TradeCorridorMap";
 
 export default function HeroSection() {
-  const [loaded, setLoaded] = useState(false);
-  useEffect(() => {
-    setTimeout(() => setLoaded(true), 200);
-  }, []);
-
   return (
     <section className="relative overflow-hidden min-h-[85vh] flex items-center px-6 lg:px-10 bg-gradient-to-br from-navy-deep via-navy to-[#1a3355]">
       {/* Atmospheric texture */}
@@ -33,13 +25,7 @@ export default function HeroSection() {
       <div className="absolute -bottom-[150px] -left-[100px] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(212,168,67,0.04)_0%,transparent_70%)] rounded-full" />
 
       <div className="max-w-[1100px] mx-auto relative z-10 text-center w-full py-24 lg:py-24">
-        <div
-          className="transition-all duration-[500ms]"
-          style={{
-            opacity: loaded ? 1 : 0,
-            transform: loaded ? "translateY(0)" : "translateY(24px)",
-          }}
-        >
+        <div className="animate-[hero-fade-in_0.5s_ease-out_both]">
           <div className="text-xs tracking-[4px] text-teal font-sans font-semibold mb-8">
             POLYMER SOURCING INTELLIGENCE
           </div>
@@ -51,7 +37,7 @@ export default function HeroSection() {
             respond with matched specs, pricing, and documentation — in one
             answer.
           </p>
-          <p className="font-serif text-xl text-muted italic mb-12">
+          <p className="font-serif text-xl text-muted italic leading-normal mb-12">
             A sourcing depth the polymer industry hasn&apos;t had.
           </p>
 
@@ -72,7 +58,7 @@ export default function HeroSection() {
               Subscribe to The Polymer Compass
             </a>
           </div>
-          <p className="text-sm text-muted font-sans">
+          <p className="text-sm text-muted font-sans leading-relaxed">
             Free market intelligence for polymer distributors. No commitment required.
           </p>
         </div>

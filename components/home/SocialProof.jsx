@@ -59,7 +59,7 @@ export default function SocialProof() {
               >
                 {s.value}
               </div>
-              <div className="font-sans text-[11px] text-muted tracking-widest mt-2 font-medium">
+              <div className="font-sans text-[11px] text-muted tracking-[2px] mt-2 font-semibold">
                 {s.label}
               </div>
             </div>
