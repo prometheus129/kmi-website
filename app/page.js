@@ -23,7 +23,7 @@ export const metadata = {
   twitter: {
     title: "Kantor Materials International — Your China Polymer Desk",
     description:
-      "Your China polymer desk. Sourcing intelligence for polymer distributors across emerging markets.",
+      "Your China Polymer Desk. Sourcing intelligence for polymer distributors across emerging markets.",
   },
   alternates: { canonical: "/" },
 };

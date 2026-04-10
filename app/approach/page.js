@@ -65,7 +65,7 @@ export default function ApproachPage() {
               ABOUT OUR APPROACH
             </span>
             <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white mb-6 max-w-3xl leading-tight">
-              Your China polymer desk.
+              Your China Polymer Desk.
             </h1>
             <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-2xl">
               Kantor Materials is a sourcing intelligence and execution service

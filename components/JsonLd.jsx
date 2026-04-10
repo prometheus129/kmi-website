@@ -24,7 +24,7 @@ export const organizationSchema = {
   url: BASE_URL,
   logo: `${BASE_URL}/kantor-icon.png`,
   description:
-    "Your China polymer desk. Sourcing intelligence and execution for polymer distributors across emerging markets.",
+    "Your China Polymer Desk. Sourcing intelligence and execution for polymer distributors across emerging markets.",
   foundingDate: "2026",
   address: {
     "@type": "PostalAddress",

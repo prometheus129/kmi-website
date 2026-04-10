@@ -65,7 +65,7 @@ export default function Footer() {
               />
             </Link>
             <p className="font-sans text-[13px] text-muted leading-relaxed max-w-[280px] mb-4">
-              Your China polymer desk. Hong Kong headquartered, sourcing
+              Your China Polymer Desk. Hong Kong headquartered, sourcing
               across China, serving distributors across emerging markets.
             </p>
             <div className="space-y-1.5">

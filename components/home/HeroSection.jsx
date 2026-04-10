@@ -36,7 +36,7 @@ export default function HeroSection() {
             POLYMER SOURCING INTELLIGENCE
           </div>
           <h1 className="font-serif text-5xl lg:text-[66px] font-bold text-white leading-[1.08] mb-8">
-            Your China polymer desk.
+            Your China Polymer Desk.
           </h1>
           <p className="font-sans text-xl lg:text-2xl text-body-text leading-relaxed max-w-[680px] mx-auto mb-10">
             Describe what you need. We search tens of thousands of grades and
