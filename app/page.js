@@ -4,7 +4,7 @@ import HeroSection from "@/components/home/HeroSection";
 import CapabilityCards from "@/components/home/CapabilityCards";
 import HonestySection from "@/components/home/HonestySection";
 import ForDistributors from "@/components/home/ForDistributors";
-import SocialProof from "@/components/home/SocialProof";
+import TrustSection from "@/components/home/TrustSection";
 import InquirySection from "@/components/home/InquirySection";
 import JsonLd, { organizationSchema, websiteSchema } from "@/components/JsonLd";
 
@@ -36,7 +36,7 @@ export default function HomePage() {
       <CapabilityCards />
       <HonestySection />
       <ForDistributors />
-      <SocialProof />
+      <TrustSection />
       <InquirySection />
       </main>
       <Footer />

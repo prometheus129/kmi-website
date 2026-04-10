@@ -1,6 +1,12 @@
 import Image from "next/image";
 import TradeCorridorMap from "@/components/home/TradeCorridorMap";
 
+const stats = [
+  { value: "100+", label: "Articles published" },
+  { value: "19", label: "Markets covered" },
+  { value: "7", label: "Languages" },
+];
+
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden min-h-[85vh] flex items-center px-6 lg:px-10 bg-gradient-to-br from-navy-deep via-navy to-[#1a3355]">
@@ -32,17 +38,14 @@ export default function HeroSection() {
           <h1 className="font-serif text-5xl lg:text-[66px] font-bold text-white leading-[1.08] mb-8">
             Your China polymer desk.
           </h1>
-          <p className="font-sans text-xl lg:text-2xl text-body-text leading-relaxed max-w-[680px] mx-auto mb-6">
+          <p className="font-sans text-xl lg:text-2xl text-body-text leading-relaxed max-w-[680px] mx-auto mb-10">
             Describe what you need. We search tens of thousands of grades and
             respond with matched specs, pricing, and documentation — in one
             answer.
           </p>
-          <p className="font-serif text-xl text-muted italic leading-normal mb-12">
-            A sourcing depth the polymer industry hasn&apos;t had.
-          </p>
 
           {/* CTA cluster */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-10">
             <a
               href="#inquiry"
               className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-base tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-150"
@@ -58,9 +61,20 @@ export default function HeroSection() {
               Subscribe to The Polymer Compass
             </a>
           </div>
-          <p className="text-sm text-body-text font-sans leading-relaxed">
-            Free market intelligence for polymer distributors. No commitment required.
-          </p>
+
+          {/* Social proof stats — inline in hero */}
+          <div className="flex justify-center items-center gap-8 sm:gap-12">
+            {stats.map((s, i) => (
+              <div key={i} className="flex items-center gap-2.5">
+                <span className="font-mono text-xl lg:text-2xl font-bold text-teal-light tracking-tight">
+                  {s.value}
+                </span>
+                <span className="font-sans text-xs text-muted">
+                  {s.label}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

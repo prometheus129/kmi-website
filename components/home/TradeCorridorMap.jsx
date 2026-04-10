@@ -8,7 +8,7 @@
 
 export default function TradeCorridorMap() {
   return (
-    <div className="absolute inset-0 z-[1] pointer-events-none overflow-hidden opacity-[0.18]">
+    <div className="absolute inset-0 z-[1] pointer-events-none overflow-hidden opacity-[0.32]">
       <svg
         viewBox="0 0 1200 700"
         fill="none"
