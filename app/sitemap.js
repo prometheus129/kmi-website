@@ -9,12 +9,14 @@ export default function sitemap() {
   // Static pages
   const staticPages = [
     { path: "/", changeFrequency: "weekly", priority: 1.0 },
-    { path: "/terminal", changeFrequency: "monthly", priority: 0.9 },
+    { path: "/inquiry", changeFrequency: "monthly", priority: 0.9 },
+    { path: "/polymer-compass", changeFrequency: "monthly", priority: 0.9 },
     { path: "/insights", changeFrequency: "weekly", priority: 0.8 },
-    { path: "/about", changeFrequency: "monthly", priority: 0.7 },
+    { path: "/approach", changeFrequency: "monthly", priority: 0.7 },
     { path: "/contact", changeFrequency: "monthly", priority: 0.7 },
-    { path: "/syndicate", changeFrequency: "monthly", priority: 0.7 },
     { path: "/materials", changeFrequency: "monthly", priority: 0.7 },
+    { path: "/privacy", changeFrequency: "yearly", priority: 0.3 },
+    { path: "/terms", changeFrequency: "yearly", priority: 0.3 },
   ];
 
   // Add locale insights listing pages

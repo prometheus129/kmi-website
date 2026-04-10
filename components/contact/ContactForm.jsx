@@ -14,10 +14,9 @@ const countries = [
 ];
 
 const inquiryTypes = [
-  "Commodity Polymer Pricing (Lane 1)",
-  "Engineering Polymers / Custom Compounds (Lane 2)",
   "The Polymer Compass Subscription",
   "Partnership / Distribution",
+  "Press Inquiry",
   "General Inquiry",
 ];
 

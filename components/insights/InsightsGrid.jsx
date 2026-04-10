@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import RevealDiv from "@/components/RevealDiv";
 import ArticleCard from "@/components/insights/ArticleCard";
-import PolymerCompassCTA from "@/components/insights/PolymerCompassCTA";
+import ArticleCTA from "@/components/insights/ArticleCTA";
 import Lane2DiscoveryCard from "@/components/insights/Lane2DiscoveryCard";
 import SearchBar from "@/components/insights/SearchBar";
 import LoadMoreButton from "@/components/insights/LoadMoreButton";
@@ -220,9 +220,9 @@ export default function InsightsGrid({
             ))}
           </div>
 
-          {/* Inline MT CTA between article rows */}
+          {/* Inline CTA between article rows */}
           <div className="my-10 max-w-[780px] mx-auto">
-            <PolymerCompassCTA locale={locale} />
+            <ArticleCTA locale={locale} />
           </div>
 
           {/* Remaining articles (first batch of 3) */}

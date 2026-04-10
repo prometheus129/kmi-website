@@ -9,8 +9,20 @@ export const metadata = {
   description:
     "วิเคราะห์ตลาด ข้อมูลซัพพลายเชน และกลยุทธ์การจัดซื้อสำหรับผู้นำเข้าโพลิเมอร์ในประเทศไทย",
   alternates: {
+    canonical: "/th/insights",
     languages: {
       en: "/insights",
+      vi: "/vi/insights",
+      tr: "/tr/insights",
+      id: "/id/insights",
+      es: "/es/insights",
+      pt: "/pt/insights",
+      th: "/th/insights",
+      bn: "/bn/insights",
+      ru: "/ru/insights",
+      ar: "/ar/insights",
+      fr: "/fr/insights",
+      ur: "/ur/insights",
     },
   },
 };

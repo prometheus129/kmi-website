@@ -9,8 +9,20 @@ export const metadata = {
   description:
     "Phân tích thị trường, thông tin chuỗi cung ứng, và chiến lược mua hàng cho nhà nhập khẩu polymer Đông Nam Á.",
   alternates: {
+    canonical: "/vi/insights",
     languages: {
       en: "/insights",
+      vi: "/vi/insights",
+      tr: "/tr/insights",
+      id: "/id/insights",
+      es: "/es/insights",
+      pt: "/pt/insights",
+      th: "/th/insights",
+      bn: "/bn/insights",
+      ru: "/ru/insights",
+      ar: "/ar/insights",
+      fr: "/fr/insights",
+      ur: "/ur/insights",
     },
   },
 };

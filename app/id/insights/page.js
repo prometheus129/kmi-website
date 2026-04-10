@@ -9,8 +9,20 @@ export const metadata = {
   description:
     "Analisis pasar, intelijen rantai pasokan, dan strategi pengadaan untuk importir polimer Indonesia.",
   alternates: {
+    canonical: "/id/insights",
     languages: {
       en: "/insights",
+      vi: "/vi/insights",
+      tr: "/tr/insights",
+      id: "/id/insights",
+      es: "/es/insights",
+      pt: "/pt/insights",
+      th: "/th/insights",
+      bn: "/bn/insights",
+      ru: "/ru/insights",
+      ar: "/ar/insights",
+      fr: "/fr/insights",
+      ur: "/ur/insights",
     },
   },
 };

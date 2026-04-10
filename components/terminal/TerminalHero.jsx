@@ -3,10 +3,10 @@ import RevealDiv from "@/components/RevealDiv";
 import { t } from "@/lib/terminal-i18n";
 
 const previewRows = [
-  { grade: "PP T30S", producer: "Kunlun", price: "$1,180", dir: "▼", chg: "$10", signal: "HOLD", dirColor: "text-ticker-red", sigColor: "text-gold", sigBg: "bg-gold/10" },
-  { grade: "HDPE 5000S", producer: "Yangzi", price: "$1,210", dir: "▲", chg: "$8", signal: "BUY", dirColor: "text-ticker-green", sigColor: "text-ticker-green", sigBg: "bg-ticker-green/10" },
-  { grade: "LLDPE 7042", producer: "Dushanzi", price: "$1,245", dir: "▲", chg: "$5", signal: "HOLD", dirColor: "text-ticker-green", sigColor: "text-gold", sigBg: "bg-gold/10" },
-  { grade: "PVC SG-5", producer: "Zhongtai", price: "$940", dir: "▲", chg: "$20", signal: "BUY", dirColor: "text-ticker-green", sigColor: "text-ticker-green", sigBg: "bg-ticker-green/10" },
+  { grade: "PP T30S", producer: "Kunlun", price: "$1,180", dir: "\u25BC", chg: "$10", dirColor: "text-ticker-red", condition: "Softening", condColor: "text-gold", condBg: "bg-gold/10" },
+  { grade: "HDPE 5000S", producer: "Yangzi", price: "$1,210", dir: "\u25B2", chg: "$8", dirColor: "text-ticker-green", condition: "Tightening", condColor: "text-ticker-green", condBg: "bg-ticker-green/10" },
+  { grade: "LLDPE 7042", producer: "Dushanzi", price: "$1,245", dir: "\u25B2", chg: "$5", dirColor: "text-ticker-green", condition: "Stable", condColor: "text-gold", condBg: "bg-gold/10" },
+  { grade: "PVC SG-5", producer: "Zhongtai", price: "$940", dir: "\u25B2", chg: "$20", dirColor: "text-ticker-green", condition: "Tightening", condColor: "text-ticker-green", condBg: "bg-ticker-green/10" },
 ];
 
 export default function TerminalHero({ locale = "en" }) {
@@ -121,9 +121,9 @@ export default function TerminalHero({ locale = "en" }) {
                           </div>
                         </div>
                         <span
-                          className={`text-[8px] font-bold tracking-wider font-sans px-2 py-0.5 rounded ${row.sigColor} ${row.sigBg} w-[42px] text-center`}
+                          className={`text-[8px] font-bold tracking-wider font-sans px-2 py-0.5 rounded ${row.condColor} ${row.condBg} min-w-[58px] text-center`}
                         >
-                          {row.signal}
+                          {row.condition}
                         </span>
                       </div>
                     </div>

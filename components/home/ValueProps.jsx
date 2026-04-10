@@ -16,8 +16,8 @@ const props = [
     ),
   },
   {
-    title: "Full-Market Sourcing",
-    text: "Kantor Materials evaluates 600+ producers and merchants on every order. You see one price — the best one available for your grade, quantity, and timeline.",
+    title: "Broader Market Sourcing",
+    text: "We search across the broader China polymer market on every order. You see one price \u2014 the best one available for your grade, quantity, and timeline.",
     accent: "border-white/20",
     iconColor: "text-body-text",
     iconBg: "bg-white/[0.06] border-white/10",
@@ -30,8 +30,8 @@ const props = [
     ),
   },
   {
-    title: "Group Buying Power",
-    text: "Syndicate purchasing pods aggregate demand across buyers. Your 50 MT becomes part of a 300 MT order. Everyone benefits.",
+    title: "Collective Buying Power",
+    text: "When multiple distributors order similar grades, their combined volume unlocks pricing tiers that individual mid-tier orders cannot reach.",
     accent: "border-gold",
     iconColor: "text-gold",
     iconBg: "bg-gold/10 border-gold/20",
@@ -51,10 +51,7 @@ export default function ValueProps() {
   return (
     <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
       {/* Warehouse/logistics texture */}
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-[0.05]"
-        style={{ backgroundImage: "url('/images/value-texture.jpg')" }}
-      />
+      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, rgba(46,139,139,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(212,168,67,0.08) 0%, transparent 50%)" }} />
 
       <div className="max-w-[1200px] mx-auto relative z-10">
         <RevealDiv>

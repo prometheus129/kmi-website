@@ -9,8 +9,20 @@ export const metadata = {
   description:
     "Análisis de mercado, inteligencia de cadena de suministro y estrategia de compras para importadores de polímeros en América Latina.",
   alternates: {
+    canonical: "/es/insights",
     languages: {
       en: "/insights",
+      vi: "/vi/insights",
+      tr: "/tr/insights",
+      id: "/id/insights",
+      es: "/es/insights",
+      pt: "/pt/insights",
+      th: "/th/insights",
+      bn: "/bn/insights",
+      ru: "/ru/insights",
+      ar: "/ar/insights",
+      fr: "/fr/insights",
+      ur: "/ur/insights",
     },
   },
 };

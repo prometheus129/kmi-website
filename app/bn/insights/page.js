@@ -9,8 +9,20 @@ export const metadata = {
   description:
     "বাংলাদেশের পলিমার আমদানিকারকদের জন্য বাজার বিশ্লেষণ, সাপ্লাই চেইন তথ্য এবং ক্রয় কৌশল।",
   alternates: {
+    canonical: "/bn/insights",
     languages: {
       en: "/insights",
+      vi: "/vi/insights",
+      tr: "/tr/insights",
+      id: "/id/insights",
+      es: "/es/insights",
+      pt: "/pt/insights",
+      th: "/th/insights",
+      bn: "/bn/insights",
+      ru: "/ru/insights",
+      ar: "/ar/insights",
+      fr: "/fr/insights",
+      ur: "/ur/insights",
     },
   },
 };

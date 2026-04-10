@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Kantor Materials International — Global Polymer Procurement Infrastructure";
+export const alt = "Kantor Materials International — Your China Polymer Desk";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -80,7 +80,7 @@ export default function Image() {
             marginBottom: "16px",
           }}
         >
-          POLYMER PROCUREMENT INFRASTRUCTURE
+          POLYMER SOURCING INTELLIGENCE
         </div>
 
         {/* Headline */}
@@ -94,9 +94,9 @@ export default function Image() {
             marginBottom: "24px",
           }}
         >
-          The Full Market
+          Your China
           <br />
-          <span style={{ color: "#3AADAD" }}>On Every Order.</span>
+          <span style={{ color: "#3AADAD" }}>polymer desk.</span>
         </div>
 
         {/* Subline */}
@@ -108,9 +108,8 @@ export default function Image() {
             maxWidth: "700px",
           }}
         >
-          Aggregated commodity procurement and advanced materials for
-          distributors across emerging markets. Hong Kong HQ, sourcing across
-          China.
+          Matched grades, current pricing, and documentation for polymer
+          distributors across emerging markets.
         </div>
 
         {/* Bottom accent line */}

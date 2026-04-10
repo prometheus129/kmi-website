@@ -9,8 +9,20 @@ export const metadata = {
   description:
     "Piyasa analizi, tedarik zinciri istihbaratı ve Türk polimer ithalatçıları için satın alma stratejisi.",
   alternates: {
+    canonical: "/tr/insights",
     languages: {
       en: "/insights",
+      vi: "/vi/insights",
+      tr: "/tr/insights",
+      id: "/id/insights",
+      es: "/es/insights",
+      pt: "/pt/insights",
+      th: "/th/insights",
+      bn: "/bn/insights",
+      ru: "/ru/insights",
+      ar: "/ar/insights",
+      fr: "/fr/insights",
+      ur: "/ur/insights",
     },
   },
 };

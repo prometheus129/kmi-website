@@ -9,8 +9,20 @@ export const metadata = {
   description:
     "پاکستان کے پولیمر درآمد کنندگان کے لیے مارکیٹ تجزیہ، سپلائی چین معلومات اور خریداری کی حکمت عملی۔",
   alternates: {
+    canonical: "/ur/insights",
     languages: {
       en: "/insights",
+      vi: "/vi/insights",
+      tr: "/tr/insights",
+      id: "/id/insights",
+      es: "/es/insights",
+      pt: "/pt/insights",
+      th: "/th/insights",
+      bn: "/bn/insights",
+      ru: "/ru/insights",
+      ar: "/ar/insights",
+      fr: "/fr/insights",
+      ur: "/ur/insights",
     },
   },
 };

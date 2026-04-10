@@ -8,6 +8,7 @@ export const metadata = {
   title: "About — Kantor Materials International",
   description:
     "Discretionary polymer procurement platform. Lane 1: commodity aggregation across 600+ producers and merchants. Lane 2: UL-certified engineering compounds. Hong Kong headquartered, sourcing from China.",
+  robots: { index: false, follow: false },
 };
 
 const markets = [
@@ -242,7 +243,7 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/terminal#subscribe"
+                href="/polymer-compass#subscribe"
                 className="inline-flex items-center justify-center bg-gold text-navy-deep font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-px shadow-[0_2px_12px_rgba(212,168,67,0.25)]"
               >
                 Get Daily Intelligence

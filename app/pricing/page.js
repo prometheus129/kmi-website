@@ -1,10 +1,16 @@
 import PricingPageContent from "@/components/pricing/PricingPageContent";
 
 export const metadata = {
-  title: "Daily China-Origin Polymer Pricing & Market Intelligence — PP PE PVC — Kantor Materials",
+  title: "Daily China-Origin Polymer Pricing — PP PE PVC | Kantor Materials",
   description:
-    "Daily CFR market assessment for China-origin PP, PE, HDPE, LLDPE, and PVC. Updated each trading session. Free pricing intelligence for polymer importers.",
+    "CFR market assessment for China-origin PP, PE, HDPE, LLDPE, and PVC. Updated each trading session. Free for polymer distributors.",
+  openGraph: {
+    title: "Daily China Polymer Pricing — Kantor Materials",
+    description:
+      "CFR pricing for PP, PE, HDPE, LLDPE, PVC from China. Updated each trading session.",
+  },
   alternates: {
+    canonical: "/pricing",
     languages: {
       en: "/pricing",
       vi: "/vi/pricing",
@@ -14,6 +20,10 @@ export const metadata = {
       pt: "/pt/pricing",
       th: "/th/pricing",
       bn: "/bn/pricing",
+      ru: "/ru/pricing",
+      ar: "/ar/pricing",
+      fr: "/fr/pricing",
+      ur: "/ur/pricing",
     },
   },
 };

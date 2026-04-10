@@ -1,5 +1,3 @@
-"use client";
-
 const items = [
   { label: "PP T30S", value: "$1,015", change: "▼$8", dir: "down" },
   { label: "HDPE 5000S", value: "$940", change: "▲$5", dir: "up" },

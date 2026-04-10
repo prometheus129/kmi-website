@@ -6,7 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { label: "The Polymer Compass", href: "/terminal" },
+  { label: "The Polymer Compass", href: "/polymer-compass" },
   { label: "Insights", href: "/insights" },
   { label: "About", href: "/approach" },
 ];
@@ -31,7 +31,7 @@ function getLocaleFromPath(pathname) {
   return match ? match[1] : "en";
 }
 
-const translatedPages = ["/insights", "/terminal", "/pricing"];
+const translatedPages = ["/insights", "/polymer-compass", "/pricing"];
 
 function getLocalizedPath(pathname, targetLocale) {
   const currentLocale = getLocaleFromPath(pathname);

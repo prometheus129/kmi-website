@@ -15,30 +15,31 @@ export default function LaneCards() {
             </h2>
             <p className="font-sans text-[15px] text-body-text leading-relaxed max-w-[600px] mx-auto">
               The Polymer Compass subscribers get priority access to Kantor&apos;s
-              procurement infrastructure. Two product lanes, one sourcing desk.
+              sourcing desk. Commodity polymers and engineering compounds through
+              one service.
             </p>
           </div>
         </RevealDiv>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <RevealDiv>
-            <Link href="/syndicate" className="group block h-full">
+            <Link href="/inquiry" className="group block h-full">
               <div className="rounded-lg p-8 border border-white/[0.08] bg-gradient-to-br from-white/5 to-white/[0.01] hover:from-white/[0.08] hover:to-white/[0.03] hover:border-teal/40 hover:-translate-y-[3px] transition-all duration-350 h-full">
                 <div className="text-[10px] tracking-[3px] font-bold font-sans mb-3 text-teal">
-                  LANE 1
+                  COMMODITY POLYMERS
                 </div>
                 <h3 className="font-serif text-[26px] font-bold text-white mb-1">
-                  Commodity Polymers
+                  PP, PE, PA6, PVC, ABS
                 </h3>
                 <div className="text-[13px] font-medium font-sans mb-4 text-teal">
-                  PP, PE, PA6, PVC, ABS — China origin
+                  China origin — best-execution pricing
                 </div>
                 <p className="text-sm text-body-text leading-relaxed font-sans mb-5">
-                  Volume-aggregated procurement. Your 50 MT joins a 300 MT order.
-                  Best-execution pricing across 600+ producers and merchants.
+                  We search the broader China market on every order and deliver
+                  the best available pricing for your grade, quantity, and route.
                 </p>
                 <span className="text-[13px] text-white font-semibold font-sans inline-flex items-center gap-1.5 tracking-wide group-hover:text-teal transition-colors duration-200">
-                  Learn More{" "}
+                  Tell us what you need{" "}
                   <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">
                     →
                   </span>
@@ -48,13 +49,13 @@ export default function LaneCards() {
           </RevealDiv>
 
           <RevealDiv>
-            <Link href="/materials" className="group block h-full">
+            <Link href="/inquiry" className="group block h-full">
               <div className="rounded-lg p-8 border border-white/[0.08] bg-gradient-to-br from-white/5 to-white/[0.01] hover:from-white/[0.08] hover:to-white/[0.03] hover:border-gold/40 hover:-translate-y-[3px] transition-all duration-350 h-full">
                 <div className="text-[10px] tracking-[3px] font-bold font-sans mb-3 text-gold">
-                  LANE 2
+                  ENGINEERING COMPOUNDS
                 </div>
                 <h3 className="font-serif text-[26px] font-bold text-white mb-1">
-                  Engineering Compounds
+                  PA66, POM, PC, PEEK, PBT
                 </h3>
                 <div className="text-[13px] font-medium font-sans mb-4 text-gold">
                   Free specification matching
@@ -64,7 +65,7 @@ export default function LaneCards() {
                   UL-certified compounds can match performance at a competitive price.
                 </p>
                 <span className="text-[13px] text-white font-semibold font-sans inline-flex items-center gap-1.5 tracking-wide group-hover:text-gold transition-colors duration-200">
-                  Request Free Evaluation{" "}
+                  Request free evaluation{" "}
                   <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">
                     →
                   </span>

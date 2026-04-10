@@ -23,10 +23,7 @@ export default function HonestySection() {
   return (
     <section className="bg-navy py-20 lg:py-24 px-6 lg:px-10 relative overflow-hidden">
       {/* Subtle texture */}
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-[0.04]"
-        style={{ backgroundImage: "url('/images/trust-texture.jpg')" }}
-      />
+      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, rgba(46,139,139,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(212,168,67,0.08) 0%, transparent 50%)" }} />
 
       <div className="max-w-[1100px] mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">

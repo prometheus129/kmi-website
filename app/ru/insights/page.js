@@ -9,8 +9,20 @@ export const metadata = {
   description:
     "Аналитика рынка полимеров для импортеров Узбекистана: цены, логистика, таможенные пошлины и стратегия закупок из Китая.",
   alternates: {
+    canonical: "/ru/insights",
     languages: {
       en: "/insights",
+      vi: "/vi/insights",
+      tr: "/tr/insights",
+      id: "/id/insights",
+      es: "/es/insights",
+      pt: "/pt/insights",
+      th: "/th/insights",
+      bn: "/bn/insights",
+      ru: "/ru/insights",
+      ar: "/ar/insights",
+      fr: "/fr/insights",
+      ur: "/ur/insights",
     },
   },
 };

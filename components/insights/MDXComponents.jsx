@@ -70,4 +70,13 @@ export const mdxComponents = {
   td: (props) => (
     <td className="px-3 py-2 text-body-text border-b border-white/[0.05]" {...props} />
   ),
+  img: (props) => (
+    <img
+      {...props}
+      loading="lazy"
+      decoding="async"
+      className="rounded-lg my-6"
+      style={{ maxWidth: "100%", height: "auto" }}
+    />
+  ),
 };

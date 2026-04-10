@@ -4,7 +4,7 @@ import remarkGfm from "remark-gfm";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
-import PolymerCompassCTA from "@/components/insights/PolymerCompassCTA";
+import ArticleCTA from "@/components/insights/ArticleCTA";
 import RelatedMaterials from "@/components/insights/RelatedMaterials";
 import { mdxComponents } from "@/components/insights/MDXComponents";
 import { getArticle, getAllSlugs, formatDate, getLocaleLabel, getInsightsPath } from "@/lib/insights";
@@ -59,15 +59,14 @@ export default async function InsightArticlePage({ params }) {
 
   const { frontmatter, content, translations } = article;
 
-  // Lane 2 / engineering / recycled articles → contact CTA instead of MT subscribe
-  const contactSlugs = [
+  // Lane 2 / engineering / recycled articles → show related materials
+  const lane2Slugs = [
     "engineering-polymer", "ul-reach-fda", "recycled-polymer", "ppwr-recycled",
     "thailand-automotive", "peek-polymer", "pei-polyetherimide", "pps-polyphenylene",
     "pc-abs-alloy", "pbt-polybutylene", "pom-acetal", "halogen-free-flame",
     "glass-fiber-reinforced",
   ];
-  const ctaVariant = contactSlugs.some((s) => slug.includes(s)) ? "contact" : "terminal";
-  const isLane2 = contactSlugs.some((s) => slug.includes(s));
+  const isLane2 = lane2Slugs.some((s) => slug.includes(s));
 
   return (
     <div className="bg-navy min-h-screen text-white">
@@ -174,8 +173,8 @@ export default async function InsightArticlePage({ params }) {
             />
           )}
 
-          {/* The Polymer Compass CTA */}
-          <PolymerCompassCTA locale="en" variant={ctaVariant} />
+          {/* Article CTA */}
+          <ArticleCTA locale="en" />
         </div>
       </article>
 

@@ -1,7 +1,12 @@
 export const metadata = {
-  title: "Advanced Materials — Engineering Polymers by Kantor Materials",
+  title: "Engineering Polymers — China-Origin UL-Certified Compounds | Kantor Materials",
   description:
-    "UL-certified, application-specific engineering polymer compounds. PEEK, PEI, PPS, PPA, PC/ABS, PBT, POM — reverse-engineered to match incumbent specifications at competitive pricing.",
+    "PEEK, PA66, POM, PC, PBT, and specialty compounds from China. UL-certified alternatives with specification matching and competitive pricing.",
+  openGraph: {
+    title: "Engineering Polymers — Kantor Materials International",
+    description:
+      "China-origin UL-certified engineering compounds. Specification matching for PEEK, PA66, POM, PC, PBT, and more.",
+  },
 };
 
 export default function MaterialsLayout({ children }) {

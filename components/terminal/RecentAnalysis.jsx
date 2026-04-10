@@ -23,7 +23,7 @@ export default function RecentAnalysis() {
           {issues.map((issue, i) => (
             <RevealDiv key={issue.slug} delay={i * 150}>
               <Link
-                href={`/terminal/${issue.slug}`}
+                href={`/polymer-compass/${issue.slug}`}
                 className="block group bg-[#0F1D2F] rounded-xl border border-white/[0.06] overflow-hidden hover:border-teal/30 transition-colors duration-300"
               >
                 <div className="p-6">

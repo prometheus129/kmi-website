@@ -153,7 +153,7 @@ export default function SampleTerminal({ locale = "en" }) {
               href="#subscribe"
               className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-sm tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
             >
-              Subscribe — Free
+              Subscribe to The Polymer Compass
             </Link>
             <p className="font-sans text-xs text-muted mt-3">
               Delivered via WhatsApp, Viber, or email. Unsubscribe anytime.

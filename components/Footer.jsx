@@ -8,7 +8,7 @@ const columns = [
   {
     title: "INTELLIGENCE",
     links: [
-      { label: "The Polymer Compass", href: "/terminal" },
+      { label: "The Polymer Compass", href: "/polymer-compass" },
       { label: "Market Insights", href: "/insights" },
       { label: "Daily Pricing", href: "/pricing" },
       { label: "Advanced Materials", href: "/materials" },

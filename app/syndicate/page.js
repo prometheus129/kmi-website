@@ -7,6 +7,7 @@ export const metadata = {
   title: "The Kantor Syndicate — Commodity Polymer Procurement",
   description:
     "Aggregated procurement for mid-tier polymer distributors. PP, PE, LDPE, PA6, PVC, ABS sourced across 600+ producers and merchants with volume-based economics. Lane 1 commodity polymers.",
+  robots: { index: false, follow: false },
 };
 
 const grades = [
@@ -65,7 +66,7 @@ export default function SyndicatePage() {
               better pricing. Every order is evaluated across the full market.
             </p>
             <Link
-              href="/terminal#subscribe"
+              href="/polymer-compass#subscribe"
               className="inline-block bg-gold text-navy-deep font-semibold text-sm tracking-wider px-7 py-3.5 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
             >
               Get Daily Intelligence — Free
@@ -191,7 +192,7 @@ export default function SyndicatePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/terminal#subscribe"
+                href="/polymer-compass#subscribe"
                 className="inline-flex items-center justify-center bg-gold text-navy-deep font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-px shadow-[0_2px_12px_rgba(212,168,67,0.25)]"
               >
                 Get Daily Intelligence

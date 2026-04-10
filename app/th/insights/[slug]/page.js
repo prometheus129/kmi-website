@@ -4,7 +4,7 @@ import remarkGfm from "remark-gfm";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
-import PolymerCompassCTA from "@/components/insights/PolymerCompassCTA";
+import ArticleCTA from "@/components/insights/ArticleCTA";
 import { mdxComponents } from "@/components/insights/MDXComponents";
 import { getArticle, getAllSlugs, formatDate, getLocaleLabel, getInsightsPath } from "@/lib/insights";
 import JsonLd, { buildArticleSchema } from "@/components/JsonLd";
@@ -57,10 +57,6 @@ export default async function ThInsightArticlePage({ params }) {
   if (!article) notFound();
 
   const { frontmatter, content, translations } = article;
-
-  // Lane 2 / engineering / recycled articles → contact CTA instead of MT subscribe
-  const contactSlugs = ["engineering-polymer", "ul-reach-fda", "recycled-polymer", "ppwr-recycled", "thailand-automotive", "turkiye-otomotiv"];
-  const ctaVariant = contactSlugs.some((s) => slug.includes(s)) ? "contact" : "terminal";
 
   return (
     <div className="bg-navy min-h-screen text-white">
@@ -158,8 +154,7 @@ export default async function ThInsightArticlePage({ params }) {
             <MDXRemote source={content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
           </div>
 
-          {/* The Polymer Compass CTA */}
-          <PolymerCompassCTA locale="th" variant={ctaVariant} />
+          <ArticleCTA locale="th" />
         </div>
       </article>
 

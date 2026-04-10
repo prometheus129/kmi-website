@@ -10,10 +10,11 @@ import { getAllHubs, getFeaturedSlugs } from "@/lib/hubs";
 export const metadata = {
   title: "Insights — Kantor Materials International",
   description:
-    "Market analysis, supply chain intelligence, and procurement strategy for polymer buyers across emerging markets. Research-grade insights from the Kantor Materials team.",
+    "Market analysis, supply chain intelligence, and procurement strategy for polymer buyers across emerging markets.",
   alternates: {
     canonical: "/insights",
     languages: {
+      en: "/insights",
       vi: "/vi/insights",
       tr: "/tr/insights",
       id: "/id/insights",

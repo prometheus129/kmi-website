@@ -21,7 +21,7 @@ const features = [
   },
 ];
 
-export default function TerminalPreview({ latestArticleHref = "/terminal/archive", latestIssue }) {
+export default function TerminalPreview({ latestArticleHref = "/polymer-compass/archive", latestIssue }) {
   const fm = latestIssue?.frontmatter;
 
   return (
@@ -72,10 +72,10 @@ export default function TerminalPreview({ latestArticleHref = "/terminal/archive
           </div>
 
           <Link
-            href="/terminal#subscribe"
+            href="/polymer-compass#subscribe"
             className="inline-block bg-gold text-navy-deep font-semibold text-sm tracking-wider px-7 py-3.5 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
           >
-            Subscribe Now — Free
+            Subscribe to The Polymer Compass
           </Link>
         </RevealDiv>
 

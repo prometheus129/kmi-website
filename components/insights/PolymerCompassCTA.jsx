@@ -97,14 +97,14 @@ const STRINGS = {
   },
 };
 
-// Locales that have a translated /terminal page
+// Locales that have a translated /polymer-compass page
 const terminalLocales = ["en", "vi", "tr", "id", "es", "pt", "th", "bn", "ru", "ar", "fr", "ur"];
 
 function getTerminalPath(locale) {
   if (terminalLocales.includes(locale) && locale !== "en") {
-    return `/${locale}/terminal#subscribe`;
+    return `/${locale}/polymer-compass#subscribe`;
   }
-  return "/terminal#subscribe";
+  return "/polymer-compass#subscribe";
 }
 
 export default function PolymerCompassCTA({ locale = "en", variant = "terminal" }) {

@@ -171,6 +171,106 @@ const UI_STRINGS = {
     disclaimer:
       "ราคาที่แสดงเป็นการประเมินตลาด CFR อ้างอิงจากข้อมูลการค้าที่เผยแพร่และการวิจัยของ Kantor Materials เป็นช่วงราคาบ่งชี้ ไม่ใช่ข้อเสนอที่แน่นอน",
   },
+  ar: {
+    overline: "الأسعار اليومية",
+    h1: "أسعار البوليمر الصيني اليوم",
+    subtitle: "تقييم سوق CFR لـ PP و PE و PVC من الصين — يتم التحديث مع كل جلسة تداول. منشور من فريق أبحاث Kantor Materials.",
+    lastUpdated: "آخر تحديث",
+    source: "المصدر",
+    colProduct: "المنتج",
+    colGrade: "الدرجة",
+    colCFR: "نطاق CFR (دولار/طن)",
+    colDirection: "الاتجاه",
+    colChange: "أسبوعي",
+    colNotes: "ملاحظة السوق",
+    ctaOverline: "THE POLYMER COMPASS",
+    ctaTitle: "احصل على معلومات السوق اليومية عبر البريد الإلكتروني",
+    ctaDesc: "تحديثات الأسعار وتنبيهات سلسلة التوريد قبل افتتاح السوق. مجاناً للموزعين.",
+    ctaButton: "اشترك مجاناً",
+    insightsLink: "عرض جميع تحليلات السوق",
+    insightsHref: "/ar/insights",
+    disclaimer: "الأسعار المعروضة هي تقييمات سوق CFR استناداً إلى بيانات التجارة المنشورة وأبحاث Kantor Materials. وهي نطاقات إرشادية وليست عروضاً نهائية.",
+  },
+  ur: {
+    overline: "یومیہ قیمتیں",
+    h1: "آج کی چینی پولیمر قیمتیں",
+    subtitle: "PP، PE اور PVC کے لیے CFR مارکیٹ تشخیص — ہر ٹریڈنگ سیشن کے ساتھ اپ ڈیٹ۔ Kantor Materials ریسرچ ٹیم کی جانب سے شائع۔",
+    lastUpdated: "آخری اپ ڈیٹ",
+    source: "ماخذ",
+    colProduct: "پروڈکٹ",
+    colGrade: "گریڈ",
+    colCFR: "CFR رینج (USD/MT)",
+    colDirection: "رجحان",
+    colChange: "ہفتہ وار",
+    colNotes: "مارکیٹ نوٹ",
+    ctaOverline: "THE POLYMER COMPASS",
+    ctaTitle: "ای میل پر یومیہ مارکیٹ انٹیلی جنس حاصل کریں",
+    ctaDesc: "قیمتوں کی اپ ڈیٹس اور سپلائی چین الرٹس مارکیٹ کھلنے سے پہلے۔ ڈسٹریبیوٹرز کے لیے مفت۔",
+    ctaButton: "مفت سبسکرائب کریں",
+    insightsLink: "تمام مارکیٹ تجزیے دیکھیں",
+    insightsHref: "/ur/insights",
+    disclaimer: "دکھائی گئی قیمتیں CFR مارکیٹ تشخیص ہیں جو شائع شدہ تجارتی اعداد و شمار پر مبنی ہیں۔ یہ اشاری حدود ہیں، حتمی پیشکش نہیں۔",
+  },
+  bn: {
+    overline: "দৈনিক মূল্য",
+    h1: "আজকের চীনা পলিমার মূল্য",
+    subtitle: "PP, PE এবং PVC-এর জন্য CFR বাজার মূল্যায়ন — প্রতিটি ট্রেডিং সেশনে আপডেট। Kantor Materials গবেষণা দল কর্তৃক প্রকাশিত।",
+    lastUpdated: "সর্বশেষ আপডেট",
+    source: "উৎস",
+    colProduct: "পণ্য",
+    colGrade: "গ্রেড",
+    colCFR: "CFR পরিসীমা (USD/MT)",
+    colDirection: "প্রবণতা",
+    colChange: "সাপ্তাহিক",
+    colNotes: "বাজার নোট",
+    ctaOverline: "THE POLYMER COMPASS",
+    ctaTitle: "ইমেইলে দৈনিক বাজার তথ্য পান",
+    ctaDesc: "মূল্য আপডেট এবং সরবরাহ শৃঙ্খল সতর্কতা বাজার খোলার আগে। পরিবেশকদের জন্য বিনামূল্যে।",
+    ctaButton: "বিনামূল্যে সাবস্ক্রাইব করুন",
+    insightsLink: "সমস্ত বাজার বিশ্লেষণ দেখুন",
+    insightsHref: "/bn/insights",
+    disclaimer: "প্রদর্শিত মূল্যগুলি প্রকাশিত বাণিজ্য তথ্য এবং Kantor Materials গবেষণার ভিত্তিতে CFR বাজার মূল্যায়ন। এগুলি নির্দেশক পরিসীমা, নির্দিষ্ট প্রস্তাব নয়।",
+  },
+  ru: {
+    overline: "ЕЖЕДНЕВНЫЕ ЦЕНЫ",
+    h1: "Цены на полимеры из Китая сегодня",
+    subtitle: "Оценка рынка CFR для PP, PE и PVC китайского происхождения — обновляется каждую торговую сессию. Публикуется исследовательской командой Kantor Materials.",
+    lastUpdated: "Последнее обновление",
+    source: "Источник",
+    colProduct: "Продукт",
+    colGrade: "Марка",
+    colCFR: "Диапазон CFR (USD/MT)",
+    colDirection: "Тренд",
+    colChange: "Нед/Нед",
+    colNotes: "Рыночная заметка",
+    ctaOverline: "THE POLYMER COMPASS",
+    ctaTitle: "Получайте ежедневную рыночную аналитику по email",
+    ctaDesc: "Обновления цен и оповещения цепочки поставок до открытия рынка. Бесплатно для дистрибьюторов.",
+    ctaButton: "Подписаться бесплатно",
+    insightsLink: "Смотреть все аналитические материалы",
+    insightsHref: "/ru/insights",
+    disclaimer: "Указанные цены являются оценками рынка CFR на основе опубликованных торговых данных и исследований Kantor Materials. Это ориентировочные диапазоны, а не твёрдые предложения.",
+  },
+  fr: {
+    overline: "PRIX QUOTIDIENS",
+    h1: "Prix des polymères chinois aujourd'hui",
+    subtitle: "Évaluation du marché CFR pour PP, PE et PVC d'origine chinoise — mis à jour à chaque session de trading. Publié par l'équipe de recherche Kantor Materials.",
+    lastUpdated: "Dernière mise à jour",
+    source: "Source",
+    colProduct: "Produit",
+    colGrade: "Grade",
+    colCFR: "Fourchette CFR (USD/MT)",
+    colDirection: "Tendance",
+    colChange: "Sem/Sem",
+    colNotes: "Note de marché",
+    ctaOverline: "THE POLYMER COMPASS",
+    ctaTitle: "Recevez l'intelligence marché quotidienne par email",
+    ctaDesc: "Mises à jour des prix et alertes de chaîne d'approvisionnement avant l'ouverture du marché. Gratuit pour les distributeurs.",
+    ctaButton: "S'abonner gratuitement",
+    insightsLink: "Voir toutes les analyses de marché",
+    insightsHref: "/fr/insights",
+    disclaimer: "Les prix affichés sont des évaluations de marché CFR basées sur les données commerciales publiées et les recherches de Kantor Materials. Ce sont des fourchettes indicatives, pas des offres fermes.",
+  },
 };
 
 function DirectionBadge({ direction, locale }) {
@@ -191,12 +291,15 @@ function DirectionBadge({ direction, locale }) {
   );
 }
 
+const RTL_LOCALES = ["ar", "ur"];
+
 export default function PricingPageContent({ locale = "en" }) {
   const s = UI_STRINGS[locale] || UI_STRINGS.en;
   const data = getCurrentPricing();
+  const dir = RTL_LOCALES.includes(locale) ? "rtl" : undefined;
 
   return (
-    <div className="bg-navy min-h-screen text-white">
+    <div className="bg-navy min-h-screen text-white" dir={dir}>
       <Nav />
 
       {/* Hero */}
@@ -359,7 +462,7 @@ export default function PricingPageContent({ locale = "en" }) {
                 </p>
               </div>
               <Link
-                href={locale === "en" ? "/terminal#subscribe" : `/${locale}/terminal#subscribe`}
+                href={locale === "en" ? "/polymer-compass#subscribe" : `/${locale}/polymer-compass#subscribe`}
                 className="inline-flex items-center justify-center gap-2 bg-teal hover:bg-teal-light text-white font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:-translate-y-px whitespace-nowrap shrink-0"
               >
                 {s.ctaButton}
@@ -375,6 +478,30 @@ export default function PricingPageContent({ locale = "en" }) {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Inquiry CTA */}
+      <section className="px-6 lg:px-10 pb-4">
+        <div className="max-w-[1200px] mx-auto text-center">
+          <p className="font-sans text-[15px] text-body-text leading-relaxed mb-4">
+            Need pricing for a specific grade or destination?
+          </p>
+          <Link
+            href="/inquiry"
+            className="inline-flex items-center justify-center gap-2 bg-gold text-navy-deep font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-px shadow-[0_2px_12px_rgba(212,168,67,0.25)]"
+          >
+            Tell us what you need
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M3 8h10m-4-4l4 4-4 4"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </Link>
         </div>
       </section>
 

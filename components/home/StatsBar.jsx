@@ -2,12 +2,13 @@ import RevealDiv from "@/components/RevealDiv";
 
 const stats = [
   {
-    value: "600+",
-    label: "SUPPLIERS CHECKED PER ORDER",
+    value: "19",
+    label: "MARKETS COVERED",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="11" cy="11" r="8" />
-        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        <circle cx="12" cy="12" r="10" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
       </svg>
     ),
   },
@@ -36,8 +37,6 @@ const stats = [
 export default function StatsBar() {
   return (
     <section className="bg-navy py-16 px-6 lg:px-10 relative overflow-hidden">
-      {/* Clean section — no texture, provides visual breathing room */}
-
       <RevealDiv>
         <div className="max-w-[900px] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 relative z-10">
           {stats.map((s, i) => (

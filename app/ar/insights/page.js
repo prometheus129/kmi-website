@@ -9,8 +9,20 @@ export const metadata = {
   description:
     "تحليل السوق، معلومات سلسلة التوريد، واستراتيجية الشراء لمستوردي البوليمر في الشرق الأوسط وشمال أفريقيا.",
   alternates: {
+    canonical: "/ar/insights",
     languages: {
       en: "/insights",
+      vi: "/vi/insights",
+      tr: "/tr/insights",
+      id: "/id/insights",
+      es: "/es/insights",
+      pt: "/pt/insights",
+      th: "/th/insights",
+      bn: "/bn/insights",
+      ru: "/ru/insights",
+      ar: "/ar/insights",
+      fr: "/fr/insights",
+      ur: "/ur/insights",
     },
   },
 };

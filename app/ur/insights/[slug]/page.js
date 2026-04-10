@@ -4,7 +4,7 @@ import remarkGfm from "remark-gfm";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
-import PolymerCompassCTA from "@/components/insights/PolymerCompassCTA";
+import ArticleCTA from "@/components/insights/ArticleCTA";
 import { mdxComponents } from "@/components/insights/MDXComponents";
 import { getArticle, getAllSlugs, formatDate, getLocaleLabel, getInsightsPath } from "@/lib/insights";
 import JsonLd, { buildArticleSchema } from "@/components/JsonLd";
@@ -57,9 +57,6 @@ export default async function UrInsightArticlePage({ params }) {
   if (!article) notFound();
 
   const { frontmatter, content, translations } = article;
-
-  const contactSlugs = ["engineering-polymer", "ul-reach-fda", "recycled-polymer", "ppwr-recycled", "thailand-automotive"];
-  const ctaVariant = contactSlugs.some((s) => slug.includes(s)) ? "contact" : "terminal";
 
   return (
     <div className="bg-navy min-h-screen text-white" dir="rtl">
@@ -136,7 +133,7 @@ export default async function UrInsightArticlePage({ params }) {
             <MDXRemote source={content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
           </div>
 
-          <PolymerCompassCTA locale="ur" variant={ctaVariant} />
+          <ArticleCTA locale="ur" />
         </div>
       </article>
 

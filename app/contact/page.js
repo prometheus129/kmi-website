@@ -2,11 +2,18 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
 import ContactForm from "@/components/contact/ContactForm";
+import Link from "next/link";
 
 export const metadata = {
   title: "Contact — Kantor Materials International",
   description:
-    "Get in touch with Kantor Materials for polymer pricing, procurement inquiries, or The Polymer Compass subscription. Hong Kong headquartered, serving emerging markets worldwide.",
+    "Get in touch with Kantor Materials for partnerships, press inquiries, or general questions. For polymer sourcing, use our requirement form.",
+  openGraph: {
+    title: "Contact — Kantor Materials International",
+    description:
+      "Get in touch with Kantor Materials. Partnerships, press, and general inquiries.",
+  },
+  alternates: { canonical: "/contact" },
 };
 
 const offices = [
@@ -45,12 +52,11 @@ export default function ContactPage() {
               CONTACT
             </span>
             <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white mb-5 max-w-2xl">
-              Let&apos;s Talk Polymers
+              Get in Touch
             </h1>
             <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-xl">
-              Whether you need pricing on a specific grade, want to explore
-              demand aggregation, or subscribe to The Polymer Compass — we
-              respond within one business day.
+              For partnerships, press inquiries, The Polymer Compass, or
+              general questions — we respond within one business day.
             </p>
           </RevealDiv>
         </div>
@@ -60,6 +66,40 @@ export default function ContactPage() {
       <div className="max-w-[1200px] mx-auto px-6 lg:px-10">
         <div className="border-t border-white/[0.08]" />
       </div>
+
+      {/* Sourcing Redirect */}
+      <section className="px-6 lg:px-10 pt-12">
+        <div className="max-w-[1200px] mx-auto">
+          <RevealDiv>
+            <div className="border border-teal/20 rounded-lg bg-gradient-to-br from-teal/[0.06] to-teal/[0.02] p-6 lg:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              <div>
+                <h3 className="font-sans text-[15px] font-bold text-white mb-1">
+                  Looking for polymer sourcing or pricing?
+                </h3>
+                <p className="font-sans text-sm text-body-text">
+                  Our requirement form is the fastest way to get matched grades
+                  and CFR pricing for your destination.
+                </p>
+              </div>
+              <Link
+                href="/inquiry"
+                className="inline-flex items-center justify-center gap-2 bg-gold text-navy-deep font-sans font-semibold text-sm px-6 py-3 rounded-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-px shadow-[0_2px_12px_rgba(212,168,67,0.25)] whitespace-nowrap shrink-0"
+              >
+                Tell us what you need
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8h10m-4-4l4 4-4 4"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </Link>
+            </div>
+          </RevealDiv>
+        </div>
+      </section>
 
       {/* Form + Sidebar */}
       <section className="py-16 lg:py-20 px-6 lg:px-10">

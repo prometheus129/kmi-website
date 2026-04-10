@@ -11,6 +11,8 @@ export default function JsonLd({ data }) {
   );
 }
 
+const BASE_URL = "https://www.kantormaterials.com";
+
 /**
  * Organization schema for KMI — use on homepage and about page.
  */
@@ -19,10 +21,10 @@ export const organizationSchema = {
   "@type": "Organization",
   name: "Kantor Materials International",
   alternateName: "KMI",
-  url: "https://kantormaterials.com",
-  logo: "https://kantormaterials.com/kantor-icon.png",
+  url: BASE_URL,
+  logo: `${BASE_URL}/kantor-icon.png`,
   description:
-    "Discretionary polymer procurement platform aggregating cross-buyer demand for China-origin industrial polymers. Serving mid-tier distributors across emerging markets.",
+    "Your China polymer desk. Sourcing intelligence and execution for polymer distributors across emerging markets.",
   foundingDate: "2026",
   address: {
     "@type": "PostalAddress",
@@ -53,7 +55,7 @@ export const organizationSchema = {
     "ABS",
     "Engineering Polymers",
     "Polymer Procurement",
-    "Demand Aggregation",
+    "China Polymer Sourcing",
   ],
 };
 
@@ -64,18 +66,19 @@ export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Kantor Materials International",
-  url: "https://kantormaterials.com",
-  inLanguage: ["en", "vi"],
+  url: BASE_URL,
+  inLanguage: ["en", "vi", "tr", "id", "es", "pt", "th", "bn", "ru", "ar", "fr", "ur"],
 };
 
 /**
  * Build an Article schema for an insight post.
  */
 export function buildArticleSchema({ title, description, date, slug, author, locale = "en" }) {
-  const url =
+  const path =
     locale === "en"
-      ? `https://kantormaterials.com/insights/${slug}`
-      : `https://kantormaterials.com/vi/insights/${slug}`;
+      ? `/insights/${slug}`
+      : `/${locale}/insights/${slug}`;
+  const url = `${BASE_URL}${path}`;
 
   // Ensure date is full ISO 8601 with timezone
   const isoDate = date && date.length === 10 ? `${date}T00:00:00+08:00` : date;
@@ -86,24 +89,24 @@ export function buildArticleSchema({ title, description, date, slug, author, loc
     headline: title,
     description,
     url,
-    image: "https://kantormaterials.com/kantor-icon.png",
+    image: `${BASE_URL}/kantor-icon.png`,
     datePublished: isoDate,
     dateModified: isoDate,
     author: {
       "@type": "Organization",
       name: author || "Kantor Materials Research",
-      url: "https://kantormaterials.com",
+      url: BASE_URL,
     },
     publisher: {
       "@type": "Organization",
       name: "Kantor Materials International",
-      url: "https://kantormaterials.com",
+      url: BASE_URL,
       logo: {
         "@type": "ImageObject",
-        url: "https://kantormaterials.com/kantor-icon.png",
+        url: `${BASE_URL}/kantor-icon.png`,
       },
     },
-    inLanguage: locale === "vi" ? "vi" : "en",
+    inLanguage: locale,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
   };
 }

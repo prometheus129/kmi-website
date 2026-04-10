@@ -9,8 +9,20 @@ export const metadata = {
   description:
     "Analyse de marché, intelligence de chaîne d'approvisionnement et stratégie d'achat pour les importateurs de polymères en Afrique francophone.",
   alternates: {
+    canonical: "/fr/insights",
     languages: {
       en: "/insights",
+      vi: "/vi/insights",
+      tr: "/tr/insights",
+      id: "/id/insights",
+      es: "/es/insights",
+      pt: "/pt/insights",
+      th: "/th/insights",
+      bn: "/bn/insights",
+      ru: "/ru/insights",
+      ar: "/ar/insights",
+      fr: "/fr/insights",
+      ur: "/ur/insights",
     },
   },
 };

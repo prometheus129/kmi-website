@@ -4,9 +4,9 @@ export default function robots() {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/"],
+        disallow: ["/api/", "/syndicate"],
       },
     ],
-    sitemap: "https://kantormaterials.com/sitemap.xml",
+    sitemap: "https://www.kantormaterials.com/sitemap.xml",
   };
 }
