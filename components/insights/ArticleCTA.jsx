@@ -146,7 +146,7 @@ export default function ArticleCTA({ locale = "en" }) {
         <p className="font-sans text-sm text-body-text mb-1">
           {t.subscribe}{" "}
           <a
-            href="https://polymer-compass.beehiiv.com"
+            href="https://www.linkedin.com/newsletters/the-polymer-compass-7444056500781694976/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-teal hover:text-teal-light font-medium transition-colors duration-200"

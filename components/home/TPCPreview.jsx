@@ -29,8 +29,7 @@ export default function TPCPreview({ latestIssue }) {
             </h2>
             <p className="font-sans text-base text-body-text leading-relaxed mb-4">
               Pricing context, supply corridor updates, and grade-level analysis
-              for polymer distributors. Published to 120+ subscribers across 19
-              markets.
+              for polymer distributors across 19 markets.
             </p>
             <p className="font-sans text-sm text-muted leading-relaxed mb-8">
               See what the China polymer market is doing before you make
