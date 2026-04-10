@@ -32,6 +32,11 @@
   100% { transform: translateX(-50%); }
 }
 
+/* Trade corridor flowing dash animation */
+@keyframes flow {
+  to { stroke-dashoffset: -20; }
+}
+
 /* Hero fade-in — CSS-only, no JS dependency for LCP */
 @keyframes hero-fade-in {
   from { opacity: 0; transform: translateY(24px); }
