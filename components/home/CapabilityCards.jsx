@@ -72,7 +72,7 @@ const capabilities = [
 
 export default function CapabilityCards() {
   return (
-    <section className="bg-[#162036] py-20 px-6 lg:px-10">
+    <section className="bg-cards-bg py-20 px-6 lg:px-10">
       <div className="max-w-[1100px] mx-auto">
         <RevealDiv>
           <div className="text-center mb-12 lg:mb-16">
