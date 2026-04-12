@@ -30,9 +30,13 @@ export default function sitemap() {
   }
 
   // Pricing pages — daily frequency for SEO freshness signal
-  const pricingLocales = { en: "/pricing", vi: "/vi/pricing", tr: "/tr/pricing", id: "/id/pricing", es: "/es/pricing", pt: "/pt/pricing", th: "/th/pricing", bn: "/bn/pricing", ru: "/ru/pricing", ar: "/ar/pricing", fr: "/fr/pricing", ur: "/ur/pricing" };
-  const pricingAlternates = { languages: pricingLocales };
-  for (const [, pPath] of Object.entries(pricingLocales)) {
+  // Paths are relative (for url construction); alternates must be absolute (Google requires it)
+  const pricingPaths = { en: "/pricing", vi: "/vi/pricing", tr: "/tr/pricing", id: "/id/pricing", es: "/es/pricing", pt: "/pt/pricing", th: "/th/pricing", bn: "/bn/pricing", ru: "/ru/pricing", ar: "/ar/pricing", fr: "/fr/pricing", ur: "/ur/pricing" };
+  const pricingAlternates = { languages: {} };
+  for (const [loc, p] of Object.entries(pricingPaths)) {
+    pricingAlternates.languages[loc] = `${BASE_URL}${p}`;
+  }
+  for (const [, pPath] of Object.entries(pricingPaths)) {
     staticPages.push({
       path: pPath,
       changeFrequency: "daily",
