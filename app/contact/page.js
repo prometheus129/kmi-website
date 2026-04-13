@@ -82,7 +82,7 @@ export default function ContactPage() {
                 </p>
               </div>
               <Link
-                href="/inquiry"
+                href="/inquiry#inquiry"
                 className="inline-flex items-center justify-center gap-2 bg-gold text-navy-deep font-sans font-semibold text-sm px-6 py-3 rounded-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-px shadow-[0_2px_12px_rgba(212,168,67,0.25)] whitespace-nowrap shrink-0"
               >
                 Tell us what you need

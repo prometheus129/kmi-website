@@ -96,8 +96,8 @@ export default function Nav() {
           ))}
 
           <Link
-            href="/inquiry"
-            onClick={() => trackCTA("cta_click", "Nav CTA", "/inquiry")}
+            href="/inquiry#inquiry"
+            onClick={() => trackCTA("cta_click", "Nav CTA", "/inquiry#inquiry")}
             className="bg-gold hover:brightness-110 text-navy-deep text-sm font-semibold tracking-wider px-5 py-3 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] transition-all duration-150 hover:-translate-y-px"
           >
             Tell Us What You Need
@@ -170,8 +170,8 @@ export default function Nav() {
             </div>
 
             <Link
-              href="/inquiry"
-              onClick={() => { setMobileOpen(false); trackCTA("cta_click", "Nav CTA Mobile", "/inquiry"); }}
+              href="/inquiry#inquiry"
+              onClick={() => { setMobileOpen(false); trackCTA("cta_click", "Nav CTA Mobile", "/inquiry#inquiry"); }}
               className="bg-gold hover:brightness-110 text-navy-deep text-xs font-semibold tracking-wider px-5 py-3 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] text-center mt-2"
             >
               Tell Us What You Need

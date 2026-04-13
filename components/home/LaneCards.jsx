@@ -23,7 +23,7 @@ export default function LaneCards() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <RevealDiv>
-            <Link href="/inquiry" className="group block h-full">
+            <Link href="/inquiry#inquiry" className="group block h-full">
               <div className="rounded-lg p-8 border border-white/[0.08] bg-gradient-to-br from-white/5 to-white/[0.01] hover:from-white/[0.08] hover:to-white/[0.03] hover:border-teal/40 hover:-translate-y-[3px] transition-all duration-350 h-full">
                 <div className="text-[10px] tracking-[3px] font-bold font-sans mb-3 text-teal">
                   COMMODITY POLYMERS
@@ -49,7 +49,7 @@ export default function LaneCards() {
           </RevealDiv>
 
           <RevealDiv>
-            <Link href="/inquiry" className="group block h-full">
+            <Link href="/inquiry#inquiry" className="group block h-full">
               <div className="rounded-lg p-8 border border-white/[0.08] bg-gradient-to-br from-white/5 to-white/[0.01] hover:from-white/[0.08] hover:to-white/[0.03] hover:border-gold/40 hover:-translate-y-[3px] transition-all duration-350 h-full">
                 <div className="text-[10px] tracking-[3px] font-bold font-sans mb-3 text-gold">
                   ENGINEERING COMPOUNDS
