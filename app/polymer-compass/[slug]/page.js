@@ -119,6 +119,7 @@ export default async function TerminalIssuePage({ params }) {
                 alt={frontmatter.title}
                 fill
                 className="object-cover"
+                style={frontmatter.coverPosition ? { objectPosition: frontmatter.coverPosition } : undefined}
                 priority
                 sizes="(max-width: 780px) 100vw, 780px"
               />
