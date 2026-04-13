@@ -6,9 +6,9 @@ import TradeCorridorMap from "@/components/home/TradeCorridorMap";
 import { trackCTA } from "@/lib/tracking";
 
 const stats = [
-  { value: "100+", label: "Articles published" },
-  { value: "19", label: "Markets covered" },
-  { value: "7", label: "Languages" },
+  { value: "400+", label: "Suppliers per order" },
+  { value: "60,000 MT", label: "Compounding capacity" },
+  { value: "19", label: "Markets" },
 ];
 
 export default function HeroSection() {
@@ -67,7 +67,7 @@ export default function HeroSection() {
           </div>
 
           {/* Social proof stats — inline in hero */}
-          <div className="flex justify-center items-center gap-8 sm:gap-12">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-12">
             {stats.map((s, i) => (
               <div key={i} className="flex items-center gap-2.5">
                 <span className="font-mono text-xl lg:text-2xl font-bold text-teal-light tracking-tight">
