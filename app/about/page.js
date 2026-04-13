@@ -108,16 +108,15 @@ export default function AboutPage() {
             <RevealDiv>
               <div className="bg-gradient-to-br from-white/[0.04] to-white/[0.01] border border-white/[0.08] rounded-lg p-8 h-full">
                 <div className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-3">
-                  LANE 1 — THE KANTOR SYNDICATE
+                  LANE 1 — COMMODITY SOURCING
                 </div>
                 <h3 className="font-serif text-2xl font-bold text-white mb-3">
                   Commodity Polymers
                 </h3>
                 <p className="text-body-text text-sm leading-relaxed mb-5">
                   Aggregated procurement of PP, PE, LDPE, PA6, PVC, and ABS.
-                  Volume-based economics through purchasing pods that combine
-                  demand across multiple buyers. Your 50 MT becomes part of a
-                  300 MT order.
+                  We evaluate suppliers across the market on every order so
+                  buyers get the best available pricing and quality.
                 </p>
                 <div className="font-mono text-xs text-muted">
                   PP &middot; HDPE &middot; LDPE &middot; LLDPE &middot; PA6
@@ -130,14 +129,14 @@ export default function AboutPage() {
             <RevealDiv>
               <div className="bg-gradient-to-br from-white/[0.04] to-white/[0.01] border border-white/[0.08] rounded-lg p-8 h-full">
                 <div className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-gold mb-3">
-                  LANE 2 — ADVANCED MATERIALS
+                  LANE 2 — ENGINEERING COMPOUNDS
                 </div>
                 <h3 className="font-serif text-2xl font-bold text-white mb-3">
                   Engineering Polymers
                 </h3>
                 <p className="text-body-text text-sm leading-relaxed mb-5">
-                  UL-certified, application-specific compounds through our
-                  manufacturing partner Remay. Reverse-engineered to match
+                  UL-certified, application-specific compounds from our own
+                  compounding operations. Reverse-engineered to match
                   incumbent specifications — same performance, competitive
                   pricing, full certification chain.
                 </p>

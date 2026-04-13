@@ -223,15 +223,15 @@ export default function MaterialsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <RevealDiv>
               <div className="text-[11px] tracking-[4px] text-gold font-sans font-semibold mb-4">
-                MANUFACTURING PARTNER
+                OUR OPERATIONS
               </div>
               <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
                 Validated by Production.
               </h2>
               <p className="font-sans text-[15px] text-body-text leading-relaxed mb-5">
-                Our engineering compounds are manufactured by our integrated
-                production partner with over 20,000 tons annual capacity. Every
-                compound is validated in our own production lines before it
+                Our engineering compounds are manufactured in our own
+                compounding facility with 60,000 MT annual capacity. Every
+                compound is validated in our production lines before it
                 reaches yours — over 2 million finished goods manufactured
                 annually with these materials.
               </p>

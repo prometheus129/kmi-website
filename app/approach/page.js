@@ -131,16 +131,16 @@ export default function ApproachPage() {
               </h2>
               <p className="text-body-text text-[15px] leading-relaxed mb-4">
                 Kantor Materials International is headquartered in Hong Kong with
-                sourcing operations in Shenzhen. We serve polymer distributors
-                and converters across Asia, the Middle East, Latin America, and
-                Africa.
+                sourcing and compounding operations in China. We serve polymer
+                distributors and converters across Asia, the Middle East, Latin
+                America, and Africa.
               </p>
               <p className="text-body-text text-[15px] leading-relaxed mb-4">
-                Our sourcing desk evaluates merchants across the Chinese polymer
-                supply base on every order — selecting by specs, pricing,
-                compliance status, and track record. Commodity polymers (PP, PE,
-                PVC) and engineering polymers (PA6, POM, PC, PEEK) through a
-                single service.
+                For commodity polymers (PP, PE, PVC), our sourcing desk evaluates
+                suppliers across the Chinese market on every order — selecting by
+                specs, pricing, compliance status, and track record. For
+                engineering polymers (PA6, PA66, PC, ABS, POM, PEEK), we
+                compound in our own facility with 60,000 MT annual capacity.
               </p>
               <p className="text-body-text text-[15px] leading-relaxed">
                 Founded by{" "}
