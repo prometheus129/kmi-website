@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
+import Image from "next/image";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
@@ -20,11 +21,23 @@ export async function generateMetadata({ params }) {
   const issue = getIssue(slug);
   if (!issue) return {};
 
-  return {
+  const meta = {
     title: `${issue.frontmatter.title} — The Polymer Compass — Kantor Materials`,
     description: issue.frontmatter.description,
     alternates: { canonical: `/polymer-compass/${slug}` },
   };
+
+  if (issue.frontmatter.coverImage) {
+    meta.openGraph = {
+      images: [{ url: issue.frontmatter.coverImage, width: 1600, height: 900 }],
+    };
+    meta.twitter = {
+      card: "summary_large_image",
+      images: [issue.frontmatter.coverImage],
+    };
+  }
+
+  return meta;
 }
 
 export default async function TerminalIssuePage({ params }) {
@@ -97,6 +110,20 @@ export default async function TerminalIssuePage({ params }) {
               <span>{frontmatter.author}</span>
             </div>
           </RevealDiv>
+
+          {/* Cover image */}
+          {frontmatter.coverImage && (
+            <div className="rounded-lg overflow-hidden mb-10" style={{ position: "relative", width: "100%", aspectRatio: "16 / 9" }}>
+              <Image
+                src={frontmatter.coverImage}
+                alt={frontmatter.title}
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 780px) 100vw, 780px"
+              />
+            </div>
+          )}
 
           {/* Article body */}
           <div className="prose-kantor">
