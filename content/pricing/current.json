@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-30",
+  "lastUpdated": "2026-04-13",
   "source": "Kantor Materials market assessment",
   "prices": [
     {
@@ -14,17 +14,14 @@
         "th": "เส้นด้าย / ราเฟีย"
       },
       "grades": "T30S / PPH-T03 / HP550J",
-      "cfrRange": [1230, 1310],
-      "direction": "up",
-      "weekChange": 30,
+      "cfrRange": [1210, 1310],
+      "direction": "down",
+      "weekChange": -20,
       "notes": {
-        "en": "FOB firmed $30 following DCE settlement strength; May 15 shipment cutoff in effect across North China ports",
-        "vi": "FOB tăng $30 theo đà DCE; hạn chót xuất hàng 15/5 áp dụng tại các cảng Bắc Trung Quốc",
-        "tr": "DCE kapanış gücünü takiben FOB $30 yükseldi; Kuzey Çin limanlarında 15 Mayıs sevkiyat kesme tarihi geçerli",
-        "id": "FOB naik $30 mengikuti penguatan penyelesaian DCE; batas waktu pengiriman 15 Mei berlaku di pelabuhan Tiongkok Utara",
-        "es": "FOB subió $30 tras fortaleza del cierre DCE; fecha límite de envío 15 de mayo en vigor en puertos del norte de China",
-        "pt": "FOB firme $30 após força do fechamento DCE; prazo de embarque 15 de maio em vigor nos portos do norte da China",
-        "th": "FOB แข็งตัว $30 ตามการปิดตลาด DCE; กำหนดตัดรับส่งสินค้าวันที่ 15 พ.ค. มีผลใช้งานที่ท่าเรือจีนตอนเหนือ"
+        "en": "FOB rebounded $10 to $1,190 vs. Thursday but still $20 below last Monday; May 24 shipment cutoff across North China ports",
+        "vi": "FOB phục hồi $10 lên $1.190 so với thứ Năm nhưng vẫn giảm $20 so với thứ Hai tuần trước; hạn xuất hàng 24/5 tại các cảng Bắc Trung Quốc",
+        "tr": "FOB Perşembe'ye kıyasla $10 toparlandı $1.190'a ancak geçen Pazartesi'nin $20 altında; Kuzey Çin limanlarında 24 Mayıs sevkiyat kesme tarihi",
+        "id": "FOB rebound $10 ke $1.190 vs Kamis tapi masih $20 di bawah Senin lalu; batas waktu pengiriman 24 Mei di pelabuhan Tiongkok Utara"
       }
     },
     {
@@ -39,17 +36,14 @@
         "th": "ผนังบาง / ฉีดขึ้นรูป"
       },
       "grades": "MN70 / G70/75 / BZ-70X",
-      "cfrRange": [1240, 1370],
-      "direction": "up",
-      "weekChange": 20,
+      "cfrRange": [1210, 1370],
+      "direction": "down",
+      "weekChange": -15,
       "notes": {
-        "en": "Injection grades $1,190 FOB; high-MFR thin wall grades at $1,260 FOB; spread reflects MFR premium across the range",
-        "vi": "Nhựa ép phun $1.190 FOB; các loại thành mỏng MFR cao ở $1.260 FOB; chênh lệch phản ánh phụ phí MFR",
-        "tr": "Enjeksiyon gradları $1.190 FOB; yüksek MFR ince cidar gradları $1.260 FOB; fark MFR primini yansıtıyor",
-        "id": "Grade injeksi $1.190 FOB; grade dinding tipis MFR tinggi di $1.260 FOB; spread mencerminkan premi MFR",
-        "es": "Grados inyección $1.190 FOB; grados pared delgada alto MFR a $1.260 FOB; diferencial refleja prima de MFR",
-        "pt": "Grades injeção $1.190 FOB; grades parede fina alto MFR a $1.260 FOB; spread reflete prêmio de MFR",
-        "th": "เกรดฉีดขึ้นรูป $1,190 FOB; เกรดผนังบาง MFR สูงที่ $1,260 FOB; สเปรดสะท้อนพรีเมียม MFR"
+        "en": "Injection $1,190 FOB flat; high-MFR thin wall $1,260 FOB flat vs. Thursday; both softer week-over-week",
+        "vi": "Ép phun $1.190 FOB ổn định; thành mỏng MFR cao $1.260 FOB ổn định so với thứ Năm; cả hai giảm so với tuần trước",
+        "tr": "Enjeksiyon $1.190 FOB sabit; yüksek MFR ince cidar $1.260 FOB Perşembe'ye kıyasla sabit; her ikisi haftalık bazda zayıf",
+        "id": "Injeksi $1.190 FOB datar; dinding tipis MFR tinggi $1.260 FOB datar vs Kamis; keduanya melemah mingguan"
       }
     },
     {
@@ -65,16 +59,13 @@
       },
       "grades": "Y16/25 / Y40",
       "cfrRange": [1290, 1380],
-      "direction": "up",
-      "weekChange": 20,
+      "direction": "down",
+      "weekChange": -10,
       "notes": {
-        "en": "Fiber grades at $1,260 FOB; nonwoven demand steady across SE Asia; May delivery windows confirmed",
-        "vi": "Các loại sợi ở $1.260 FOB; nhu cầu vải không dệt ổn định tại Đông Nam Á; cửa sổ giao hàng tháng 5 được xác nhận",
-        "tr": "Elyaf gradlar $1.260 FOB'da; Güneydoğu Asya'da dokusuz kumaş talebi istikrarlı; Mayıs teslimat pencereleri onaylandı",
-        "id": "Grade serat di $1.260 FOB; permintaan non-woven stabil di Asia Tenggara; jendela pengiriman Mei dikonfirmasi",
-        "es": "Grados fibra a $1.260 FOB; demanda no tejidos estable en SE Asia; ventanas de entrega mayo confirmadas",
-        "pt": "Grades fibra a $1.260 FOB; demanda não tecidos estável no Sudeste Asiático; janelas de entrega maio confirmadas",
-        "th": "เกรดเส้นใยที่ $1,260 FOB; ความต้องการผ้าไม่ทอในอาเซียนคงที่; กรอบส่งมอบเดือนพฤษภาคมยืนยันแล้ว"
+        "en": "Fiber grades flat at $1,260 FOB vs. Thursday; $10 below last week; May delivery windows available",
+        "vi": "Các loại sợi ổn định ở $1.260 FOB so với thứ Năm; giảm $10 so với tuần trước; cửa sổ giao hàng tháng 5 sẵn có",
+        "tr": "Elyaf gradlar $1.260 FOB'da Perşembe'ye kıyasla sabit; geçen haftanın $10 altında; Mayıs teslimat pencereleri mevcut",
+        "id": "Grade serat datar di $1.260 FOB vs Kamis; $10 di bawah minggu lalu; jendela pengiriman Mei tersedia"
       }
     },
     {
@@ -89,17 +80,14 @@
         "th": "ฟิล์มบรรจุภัณฑ์"
       },
       "grades": "7042 / DFDA-7042",
-      "cfrRange": [1230, 1370],
-      "direction": "up",
-      "weekChange": 30,
+      "cfrRange": [1210, 1310],
+      "direction": "down",
+      "weekChange": -20,
       "notes": {
-        "en": "Export FOB moved $30 to $1,190 following DCE L2605 settlement; May 15 shipment cutoff confirmed across main loading ports",
-        "vi": "FOB xuất khẩu tăng $30 lên $1.190 theo hợp đồng DCE L2605; hạn chót xuất hàng 15/5 xác nhận tại các cảng xếp hàng chính",
-        "tr": "İhracat FOB, DCE L2605 kapanışını takiben $30 artışla $1.190'a çıktı; ana yükleme limanlarında 15 Mayıs sevkiyat kesme tarihi onaylandı",
-        "id": "FOB ekspor naik $30 ke $1.190 mengikuti penyelesaian DCE L2605; batas waktu pengiriman 15 Mei dikonfirmasi di pelabuhan muat utama",
-        "es": "FOB exportación subió $30 a $1.190 tras liquidación DCE L2605; fecha límite envío 15 de mayo confirmada en principales puertos de carga",
-        "pt": "FOB exportação subiu $30 para $1.190 após liquidação DCE L2605; prazo de embarque 15 de maio confirmado nos principais portos de carregamento",
-        "th": "FOB ส่งออกขึ้น $30 สู่ $1,190 ตามการชำระ DCE L2605; กำหนดตัดรับส่งสินค้าวันที่ 15 พ.ค. ยืนยันที่ท่าเรือหลัก"
+        "en": "FOB flat at $1,180 vs. Thursday; $20 below last Monday's post-holiday spike; May 24 shipment cutoff confirmed",
+        "vi": "FOB ổn định ở $1.180 so với thứ Năm; giảm $20 so với mức tăng sau nghỉ lễ thứ Hai tuần trước; hạn xuất hàng 24/5 xác nhận",
+        "tr": "FOB Perşembe'ye kıyasla $1.180'da sabit; geçen Pazartesi'nin tatil sonrası sıçramasının $20 altında; 24 Mayıs sevkiyat kesme tarihi onaylandı",
+        "id": "FOB datar di $1.180 vs Kamis; $20 di bawah lonjakan pasca-liburan Senin lalu; batas waktu pengiriman 24 Mei dikonfirmasi"
       }
     },
     {
@@ -114,17 +102,14 @@
         "th": "เป่าขึ้นรูป / ฟิล์ม"
       },
       "grades": "DGDB-6097 / 7260",
-      "cfrRange": [1210, 1340],
+      "cfrRange": [1140, 1280],
       "direction": "stable",
-      "weekChange": -10,
+      "weekChange": 0,
       "notes": {
-        "en": "Saudi 218WJ holding at $1,430 FOB; domestic re-export HDPE surging with non-China origin premiums widening",
-        "vi": "Saudi 218WJ giữ ở $1.430 FOB; giá HDPE tái xuất nội địa tăng mạnh, phụ phí hàng ngoài Trung Quốc mở rộng",
-        "tr": "Suudi 218WJ $1.430 FOB'da tutuyor; yerel yeniden ihracat HDPE yükseliyor, Çin dışı menşe primleri genişliyor",
-        "id": "Saudi 218WJ bertahan di $1.430 FOB; HDPE re-ekspor domestik melonjak, premi asal non-China melebar",
-        "es": "Saudi 218WJ se mantiene a $1.430 FOB; HDPE re-exportación doméstica al alza, primas origen no-China ampliándose",
-        "pt": "Saudi 218WJ mantendo a $1.430 FOB; HDPE re-exportação doméstica subindo, prêmios origem não-China ampliando",
-        "th": "Saudi 218WJ ทรงตัวที่ $1,430 FOB; HDPE ส่งออกซ้ำในประเทศพุ่งขึ้น พรีเมียมแหล่งที่ไม่ใช่จีนกว้างขึ้น"
+        "en": "China-origin HDPE not on today's export sheet; domestic availability limited; Saudi 218WJ re-export at ¥10,480 in PRD spot",
+        "vi": "HDPE gốc Trung Quốc không có trên bảng xuất khẩu hôm nay; nguồn nội địa hạn chế; Saudi 218WJ tái xuất ¥10.480 trên thị trường giao ngay PRD",
+        "tr": "Çin menşeli HDPE bugünkü ihracat listesinde yok; yerel bulunabilirlik sınırlı; Suudi 218WJ yeniden ihracat PRD spot ¥10.480",
+        "id": "HDPE asal China tidak ada di lembar ekspor hari ini; ketersediaan domestik terbatas; Saudi 218WJ re-ekspor ¥10.480 di spot PRD"
       }
     },
     {
@@ -143,13 +128,10 @@
       "direction": "stable",
       "weekChange": 0,
       "notes": {
-        "en": "Both SG-5 and SG-8 flat at $933 FOB; April delivery confirmed",
-        "vi": "Cả SG-5 và SG-8 ổn định ở $933 FOB; xác nhận giao tháng 4",
-        "tr": "SG-5 ve SG-8 $933 FOB'da sabit; Nisan teslimatı onaylandı",
-        "id": "SG-5 dan SG-8 datar di $933 FOB; pengiriman April dikonfirmasi",
-        "es": "SG-5 y SG-8 estables a $933 FOB; entrega abril confirmada",
-        "pt": "SG-5 e SG-8 estáveis a $933 FOB; entrega abril confirmada",
-        "th": "ทั้ง SG-5 และ SG-8 ทรงตัวที่ $933 FOB; ยืนยันส่งมอบเดือนเมษายน"
+        "en": "No PVC on today's QQT sheet; last quoted SG-5 at $933 FOB",
+        "vi": "Không có PVC trên bảng giá QQT hôm nay; SG-5 báo giá lần cuối ở $933 FOB",
+        "tr": "Bugünkü QQT listesinde PVC yok; son SG-5 teklifi $933 FOB",
+        "id": "Tidak ada PVC di lembar QQT hari ini; SG-5 terakhir dikutip di $933 FOB"
       }
     }
   ]
