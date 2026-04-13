@@ -5,19 +5,6 @@ import Link from "next/link";
 import { FORM_ENDPOINTS, submitForm } from "@/lib/forms";
 import { trackFormSubmit } from "@/lib/tracking";
 
-const polymerTypes = [
-  "PP (Polypropylene)",
-  "PE (Polyethylene \u2014 HDPE, LDPE, LLDPE)",
-  "PVC",
-  "PET",
-  "PA (Nylon / Polyamide)",
-  "POM",
-  "PC",
-  "PBT",
-  "ABS",
-  "Other",
-];
-
 export default function InquirySection() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -136,19 +123,13 @@ export default function InquirySection() {
                 <label htmlFor="inq-polymer" className={labelClasses}>
                   Polymer type *
                 </label>
-                <select
+                <input
                   id="inq-polymer"
                   name="polymerType"
                   required
                   className={inputClasses}
-                >
-                  <option value="">Select polymer type</option>
-                  {polymerTypes.map((t) => (
-                    <option key={t} value={t}>
-                      {t}
-                    </option>
-                  ))}
-                </select>
+                  placeholder="e.g., PP, HDPE, PVC, PA6, ABS, PET"
+                />
               </div>
 
               {/* Tell us what you need — freeform */}
