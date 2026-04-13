@@ -113,6 +113,9 @@ const CTA_STRINGS = {
 
 export default function ArticleCTA({ locale = "en" }) {
   const t = CTA_STRINGS[locale] || CTA_STRINGS.en;
+  const subscribePath = locale === "en"
+    ? "/polymer-compass#subscribe"
+    : `/${locale}/polymer-compass#subscribe`;
 
   return (
     <section className="mt-16 border border-teal/20 rounded-lg bg-gradient-to-br from-teal/[0.06] to-teal/[0.02] p-8 lg:p-10">
@@ -145,14 +148,12 @@ export default function ArticleCTA({ locale = "en" }) {
       <div className="border-t border-white/[0.08] pt-6">
         <p className="font-sans text-sm text-body-text mb-1">
           {t.subscribe}{" "}
-          <a
-            href="https://www.linkedin.com/newsletters/the-polymer-compass-7444056500781694976/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href={subscribePath}
             className="text-teal hover:text-teal-light font-medium transition-colors duration-200"
           >
             {t.subscribeLink}
-          </a>
+          </Link>
         </p>
         <p className="font-sans text-xs text-muted">{t.subscribeSub}</p>
       </div>

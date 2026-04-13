@@ -4,6 +4,7 @@ import { useState } from "react";
 import RevealDiv from "@/components/RevealDiv";
 import { FORM_ENDPOINTS, submitForm } from "@/lib/forms";
 import { t } from "@/lib/terminal-i18n";
+import { trackFormSubmit } from "@/lib/tracking";
 
 const polymerGrades = [
   "PP",
@@ -51,6 +52,7 @@ export default function SubscriptionForm({ locale = "en" }) {
 
     if (result.ok) {
       setSubmitted(true);
+      trackFormSubmit("tpc_subscription");
     } else {
       setError(result.error);
     }
@@ -131,52 +133,37 @@ export default function SubscriptionForm({ locale = "en" }) {
               />
             </div>
 
-            {/* First Name & Last Name */}
+            {/* Name (single field) + Company */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="sub-firstname" className={labelClasses}>
-                  {text.firstName}
+                <label htmlFor="sub-name" className={labelClasses}>
+                  {text.name}
                 </label>
                 <input
-                  id="sub-firstname"
-                  name="firstName"
+                  id="sub-name"
+                  name="name"
                   required
-                  autoComplete="given-name"
+                  autoComplete="name"
                   className={inputClasses}
-                  placeholder={text.firstNamePlaceholder}
+                  placeholder={text.namePlaceholder}
                 />
               </div>
               <div>
-                <label htmlFor="sub-lastname" className={labelClasses}>
-                  {text.lastName}
+                <label htmlFor="sub-company" className={labelClasses}>
+                  {text.company}
                 </label>
                 <input
-                  id="sub-lastname"
-                  name="lastName"
+                  id="sub-company"
+                  name="company"
                   required
-                  autoComplete="family-name"
+                  autoComplete="organization"
                   className={inputClasses}
-                  placeholder={text.lastNamePlaceholder}
+                  placeholder={text.companyPlaceholder}
                 />
               </div>
             </div>
 
-            {/* Company */}
-            <div>
-              <label htmlFor="sub-company" className={labelClasses}>
-                {text.company}
-              </label>
-              <input
-                id="sub-company"
-                name="company"
-                required
-                autoComplete="organization"
-                className={inputClasses}
-                placeholder={text.companyPlaceholder}
-              />
-            </div>
-
-            {/* Country */}
+            {/* Country — optional */}
             <div>
               <label htmlFor="sub-country" className={labelClasses}>
                 {text.country}
@@ -184,7 +171,6 @@ export default function SubscriptionForm({ locale = "en" }) {
               <input
                 id="sub-country"
                 name="country"
-                required
                 autoComplete="country-name"
                 className={inputClasses}
                 placeholder={text.countryPlaceholder}
@@ -214,34 +200,6 @@ export default function SubscriptionForm({ locale = "en" }) {
                 ))}
               </div>
             </fieldset>
-
-            {/* Phone — optional, captured later in relationship */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div className="sm:col-span-2">
-                <label htmlFor="sub-phone" className={labelClasses}>
-                  {text.phone}
-                </label>
-                <input
-                  id="sub-phone"
-                  name="phone"
-                  type="tel"
-                  autoComplete="tel"
-                  className={inputClasses}
-                  placeholder={text.phonePlaceholder}
-                />
-              </div>
-              <div>
-                <label htmlFor="sub-app" className={labelClasses}>
-                  {text.messagingApp}
-                </label>
-                <input
-                  id="sub-app"
-                  name="messagingApp"
-                  className={inputClasses}
-                  placeholder={text.messagingAppPlaceholder}
-                />
-              </div>
-            </div>
 
             {/* Submit */}
             {error && (

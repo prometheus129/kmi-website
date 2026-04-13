@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { trackCTA } from "@/lib/tracking";
 
 const navLinks = [
   { label: "The Polymer Compass", href: "/polymer-compass" },
@@ -96,7 +97,8 @@ export default function Nav() {
 
           <Link
             href="/inquiry"
-            className="bg-teal hover:bg-teal-light text-white text-sm font-semibold tracking-wider px-5 py-3 rounded-lg transition-all duration-150 hover:-translate-y-px"
+            onClick={() => trackCTA("cta_click", "Nav CTA", "/inquiry")}
+            className="bg-gold hover:brightness-110 text-navy-deep text-sm font-semibold tracking-wider px-5 py-3 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] transition-all duration-150 hover:-translate-y-px"
           >
             Tell Us What You Need
           </Link>
@@ -169,8 +171,8 @@ export default function Nav() {
 
             <Link
               href="/inquiry"
-              onClick={() => setMobileOpen(false)}
-              className="bg-teal hover:bg-teal-light text-white text-xs font-semibold tracking-wider px-5 py-3 rounded-lg text-center mt-2"
+              onClick={() => { setMobileOpen(false); trackCTA("cta_click", "Nav CTA Mobile", "/inquiry"); }}
+              className="bg-gold hover:brightness-110 text-navy-deep text-xs font-semibold tracking-wider px-5 py-3 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] text-center mt-2"
             >
               Tell Us What You Need
             </Link>

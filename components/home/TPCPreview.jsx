@@ -1,6 +1,18 @@
+"use client";
+
 import Link from "next/link";
 import RevealDiv from "@/components/RevealDiv";
-import { formatDate } from "@/lib/terminal";
+import { trackCTA } from "@/lib/tracking";
+
+function formatDate(dateStr) {
+  if (!dateStr) return "";
+  const date = new Date(dateStr);
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
 
 /**
  * TPC Preview section — shows latest issue + subscribe CTA.
@@ -36,14 +48,13 @@ export default function TPCPreview({ latestIssue }) {
               purchasing decisions.
             </p>
 
-            <a
-              href="https://www.linkedin.com/newsletters/the-polymer-compass-7444056500781694976/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/polymer-compass#subscribe"
+              onClick={() => trackCTA("cta_click", "Subscribe to TPC", "/polymer-compass#subscribe")}
               className="inline-flex items-center justify-center bg-teal hover:bg-teal-light text-white font-semibold text-sm tracking-wider px-6 py-3.5 rounded-lg transition-all duration-150 hover:-translate-y-px"
             >
               Subscribe — Free
-            </a>
+            </Link>
           </RevealDiv>
 
           {/* Right: Latest issue card */}
@@ -106,14 +117,13 @@ export default function TPCPreview({ latestIssue }) {
                   Pricing direction, supply disruption alerts, and grade-level
                   analysis — delivered free to distributors across emerging markets.
                 </p>
-                <a
-                  href="https://www.linkedin.com/newsletters/the-polymer-compass-7444056500781694976/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/polymer-compass#subscribe"
+                  onClick={() => trackCTA("cta_click", "Subscribe to TPC", "/polymer-compass#subscribe")}
                   className="font-sans text-sm font-semibold text-teal hover:text-teal-light transition-colors duration-150"
                 >
                   Subscribe →
-                </a>
+                </Link>
               </div>
             )}
           </RevealDiv>

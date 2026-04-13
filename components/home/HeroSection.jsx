@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 import TradeCorridorMap from "@/components/home/TradeCorridorMap";
+import { trackCTA } from "@/lib/tracking";
 
 const stats = [
   { value: "100+", label: "Articles published" },
@@ -48,18 +52,18 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-10">
             <a
               href="#inquiry"
+              onClick={() => trackCTA("cta_click", "Tell Us What You Need", "#inquiry")}
               className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-base tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-150"
             >
               Tell us what you need
             </a>
-            <a
-              href="https://www.linkedin.com/newsletters/the-polymer-compass-7444056500781694976/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/polymer-compass#subscribe"
+              onClick={() => trackCTA("cta_click", "Subscribe to TPC", "/polymer-compass#subscribe")}
               className="inline-flex items-center justify-center border border-white/[0.15] hover:border-teal/40 text-white font-sans font-medium text-base px-8 py-4 rounded-lg transition-all duration-150 hover:-translate-y-px"
             >
               Subscribe to The Polymer Compass
-            </a>
+            </Link>
           </div>
 
           {/* Social proof stats — inline in hero */}

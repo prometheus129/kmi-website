@@ -225,14 +225,12 @@ export default function ApproachPage() {
               >
                 Tell us what you need
               </Link>
-              <a
-                href="https://www.linkedin.com/newsletters/the-polymer-compass-7444056500781694976/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/polymer-compass#subscribe"
                 className="inline-flex items-center justify-center border border-white/[0.15] hover:border-teal/40 text-white font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:-translate-y-px"
               >
                 Subscribe to The Polymer Compass
-              </a>
+              </Link>
             </div>
           </RevealDiv>
         </div>

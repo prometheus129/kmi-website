@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { FORM_ENDPOINTS, submitForm } from "@/lib/forms";
+import { trackFormSubmit } from "@/lib/tracking";
 
 const polymerTypes = [
   "PP (Polypropylene)",
@@ -13,23 +15,6 @@ const polymerTypes = [
   "PC",
   "PBT",
   "ABS",
-  "Other",
-];
-
-const quantities = [
-  "1\u201310 MT (trial)",
-  "10\u201330 MT",
-  "30\u2013100 MT",
-  "100\u2013500 MT",
-  "500+ MT",
-];
-
-const sources = [
-  "Google search",
-  "LinkedIn",
-  "Referral from a colleague",
-  "The Polymer Compass newsletter",
-  "Industry event",
   "Other",
 ];
 
@@ -68,10 +53,12 @@ export default function InquirySection() {
 
     const polymerType = formData.get("polymerType") || "General";
     formData.append("_subject", `New Requirement: ${polymerType}`);
+    formData.append("_replyto", formData.get("email"));
 
     const result = await submitForm(FORM_ENDPOINTS.inquiry, formData);
     if (result.ok) {
       setSubmitted(true);
+      trackFormSubmit("inquiry");
     } else {
       setError(result.error || "Something went wrong. Please try again.");
     }
@@ -123,31 +110,18 @@ export default function InquirySection() {
               Requirement received
             </h3>
             <p className="font-sans text-base text-body-text leading-relaxed mb-6 max-w-[520px] mx-auto">
-              We&apos;ve received your requirement. Our sourcing team will
-              respond within one to two business days with matched grades,
-              current CFR pricing for your destination, and documentation
-              details. Check your email.
+              Our sourcing team will respond within one to two business days with
+              matched grades, current CFR pricing for your destination, and
+              documentation details. Check your email.
             </p>
-            <div className="bg-white/[0.02] rounded-lg p-6 max-w-[520px] mx-auto mb-6">
-              <p className="font-sans text-sm text-muted leading-relaxed">
-                <span className="text-body-text font-semibold">
-                  What happens next:
-                </span>{" "}
-                Our team reviews your requirement and responds with matched
-                options, pricing, and documentation for your destination —
-                typically within one to two business days.
-              </p>
-            </div>
             <p className="font-sans text-xs text-muted">
               Want market intelligence while you wait?{" "}
-              <a
-                href="https://www.linkedin.com/newsletters/the-polymer-compass-7444056500781694976/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/polymer-compass#subscribe"
                 className="text-teal hover:text-teal-light transition-colors duration-150"
               >
                 Subscribe to The Polymer Compass
-              </a>{" "}
+              </Link>{" "}
               — free, twice weekly.
             </p>
           </div>
@@ -157,72 +131,42 @@ export default function InquirySection() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <input type="hidden" name="_formtype" value="requirement" />
 
-              {/* Polymer type + Application */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="inq-polymer" className={labelClasses}>
-                    Polymer type *
-                  </label>
-                  <select
-                    id="inq-polymer"
-                    name="polymerType"
-                    required
-                    className={inputClasses}
-                  >
-                    <option value="">Select polymer type</option>
-                    {polymerTypes.map((t) => (
-                      <option key={t} value={t}>
-                        {t}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-                <div>
-                  <label htmlFor="inq-application" className={labelClasses}>
-                    Application
-                  </label>
-                  <input
-                    id="inq-application"
-                    name="application"
-                    className={inputClasses}
-                    placeholder="e.g., food packaging, pipe extrusion, automotive connectors"
-                  />
-                </div>
+              {/* Polymer type */}
+              <div>
+                <label htmlFor="inq-polymer" className={labelClasses}>
+                  Polymer type *
+                </label>
+                <select
+                  id="inq-polymer"
+                  name="polymerType"
+                  required
+                  className={inputClasses}
+                >
+                  <option value="">Select polymer type</option>
+                  {polymerTypes.map((t) => (
+                    <option key={t} value={t}>
+                      {t}
+                    </option>
+                  ))}
+                </select>
               </div>
 
-              {/* Grade details */}
+              {/* Tell us what you need — freeform */}
               <div>
-                <label htmlFor="inq-grade" className={labelClasses}>
-                  Grade or specification details
+                <label htmlFor="inq-details" className={labelClasses}>
+                  Tell us what you need
                 </label>
-                <input
-                  id="inq-grade"
-                  name="gradeDetails"
-                  className={inputClasses}
-                  placeholder="e.g., PP homo MFI 12, HDPE blow molding, PA6-GF30 equivalent to Zytel 70G33L"
+                <textarea
+                  id="inq-details"
+                  name="details"
+                  rows={3}
+                  className={`${inputClasses} resize-none`}
+                  placeholder="e.g., HDPE blow molding MFI 0.35 for water tanks, 50 MT/month, FDA food contact approved, equivalent to Marlex HHM 5202BN"
                 />
               </div>
 
-              {/* Quantity + Destination */}
+              {/* Destination + Company */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="inq-quantity" className={labelClasses}>
-                    Estimated quantity (MT/month) *
-                  </label>
-                  <select
-                    id="inq-quantity"
-                    name="quantity"
-                    required
-                    className={inputClasses}
-                  >
-                    <option value="">Select quantity</option>
-                    {quantities.map((q) => (
-                      <option key={q} value={q}>
-                        {q}
-                      </option>
-                    ))}
-                  </select>
-                </div>
                 <div>
                   <label htmlFor="inq-destination" className={labelClasses}>
                     Destination country or port *
@@ -235,41 +179,9 @@ export default function InquirySection() {
                     placeholder="e.g., Ho Chi Minh City, Manila, Istanbul"
                   />
                 </div>
-              </div>
-
-              {/* Specific requirements */}
-              <div>
-                <label htmlFor="inq-requirements" className={labelClasses}>
-                  Any specific requirements
-                </label>
-                <textarea
-                  id="inq-requirements"
-                  name="requirements"
-                  rows={3}
-                  className={`${inputClasses} resize-none`}
-                  placeholder="e.g., UL listed, FDA food contact, REACH registered, specific MFI range, color requirements"
-                />
-              </div>
-
-              <div className="border-t border-white/[0.06] pt-6" />
-
-              {/* Name + Company */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="inq-name" className={labelClasses}>
-                    Your name *
-                  </label>
-                  <input
-                    id="inq-name"
-                    name="name"
-                    required
-                    autoComplete="name"
-                    className={inputClasses}
-                  />
-                </div>
                 <div>
                   <label htmlFor="inq-company" className={labelClasses}>
-                    Company name *
+                    Company *
                   </label>
                   <input
                     id="inq-company"
@@ -277,57 +189,25 @@ export default function InquirySection() {
                     required
                     autoComplete="organization"
                     className={inputClasses}
+                    placeholder="Your company name"
                   />
                 </div>
               </div>
 
-              {/* Email + Phone */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="inq-email" className={labelClasses}>
-                    Email address *
-                  </label>
-                  <input
-                    id="inq-email"
-                    name="email"
-                    type="email"
-                    required
-                    autoComplete="email"
-                    className={inputClasses}
-                  />
-                </div>
-                <div>
-                  <label htmlFor="inq-phone" className={labelClasses}>
-                    Phone / WhatsApp
-                  </label>
-                  <input
-                    id="inq-phone"
-                    name="phone"
-                    type="tel"
-                    autoComplete="tel"
-                    className={inputClasses}
-                    placeholder="Include country code, e.g., +84 936 xxx xxx"
-                  />
-                </div>
-              </div>
-
-              {/* How did you find us */}
-              <div className="max-w-xs">
-                <label htmlFor="inq-source" className={labelClasses}>
-                  How did you find us?
+              {/* Email */}
+              <div>
+                <label htmlFor="inq-email" className={labelClasses}>
+                  Email address *
                 </label>
-                <select
-                  id="inq-source"
-                  name="source"
+                <input
+                  id="inq-email"
+                  name="email"
+                  type="email"
+                  required
+                  autoComplete="email"
                   className={inputClasses}
-                >
-                  <option value="">Select</option>
-                  {sources.map((s) => (
-                    <option key={s} value={s}>
-                      {s}
-                    </option>
-                  ))}
-                </select>
+                  placeholder="you@company.com"
+                />
               </div>
 
               {error && (
@@ -349,14 +229,12 @@ export default function InquirySection() {
         {!submitted && (
           <div className="mt-12 pt-8 border-t border-white/[0.06] text-center">
             <p className="font-sans text-sm text-body-text mb-1">
-              <a
-                href="https://www.linkedin.com/newsletters/the-polymer-compass-7444056500781694976/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/polymer-compass#subscribe"
                 className="text-teal hover:text-teal-light font-medium transition-colors duration-150"
               >
                 Subscribe to The Polymer Compass
-              </a>
+              </Link>
             </p>
             <p className="font-sans text-xs text-muted">
               Free market intelligence for polymer distributors. Twice weekly.
