@@ -2,35 +2,37 @@
 
 import { useState } from "react";
 import RevealDiv from "@/components/RevealDiv";
+import { FORM_ENDPOINTS, submitForm } from "@/lib/forms";
 import { trackCTA } from "@/lib/tracking";
 
 export default function AssistantTeaser() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!email || submitting) return;
     setSubmitting(true);
+    setError(false);
     trackCTA("waitlist_signup", "Assistant Beta", email);
 
-    try {
-      const res = await fetch("https://formspree.io/f/xwpegvjy", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email,
-          source: "assistant-teaser",
-          timestamp: new Date().toISOString(),
-        }),
-      });
-      if (res.ok) setSubmitted(true);
-    } catch {
+    const formData = new FormData();
+    formData.append("email", email);
+    formData.append("_formtype", "assistant-waitlist");
+    formData.append("_subject", "Assistant Waitlist Signup");
+    formData.append("_replyto", email);
+    formData.append("source", "assistant-teaser");
+    formData.append("timestamp", new Date().toISOString());
+
+    const result = await submitForm(FORM_ENDPOINTS.waitlist, formData);
+    if (result.ok) {
       setSubmitted(true);
-    } finally {
-      setSubmitting(false);
+    } else {
+      setError(true);
     }
+    setSubmitting(false);
   };
 
   return (
@@ -57,26 +59,36 @@ export default function AssistantTeaser() {
               live.
             </p>
           ) : (
-            <form
-              onSubmit={handleSubmit}
-              className="flex flex-col sm:flex-row gap-3 max-w-[440px] mx-auto"
-            >
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your email"
-                required
-                className="flex-1 bg-white/[0.06] border border-white/[0.1] rounded-lg px-4 py-3 font-sans text-sm text-white placeholder:text-muted focus:outline-none focus:border-teal/40 transition-colors"
-              />
-              <button
-                type="submit"
-                disabled={submitting}
-                className="bg-teal text-navy-deep font-sans font-semibold text-sm px-6 py-3 rounded-lg hover:brightness-110 transition-all duration-150 disabled:opacity-50"
+            <>
+              <form
+                onSubmit={handleSubmit}
+                className="flex flex-col sm:flex-row gap-3 max-w-[440px] mx-auto"
               >
-                {submitting ? "..." : "Join early access"}
-              </button>
-            </form>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Your email"
+                  required
+                  className="flex-1 bg-white/[0.06] border border-white/[0.1] rounded-lg px-4 py-3 font-sans text-sm text-white placeholder:text-muted focus:outline-none focus:border-teal/40 transition-colors"
+                />
+                <button
+                  type="submit"
+                  disabled={submitting}
+                  className="bg-teal text-navy-deep font-sans font-semibold text-sm px-6 py-3 rounded-lg hover:brightness-110 transition-all duration-150 disabled:opacity-50"
+                >
+                  {submitting ? "..." : "Join early access"}
+                </button>
+              </form>
+              {error && (
+                <p className="font-sans text-xs text-ticker-red mt-2">
+                  Something went wrong. Try again or email{" "}
+                  <a href="mailto:david@kantor-m.com" className="underline">
+                    david@kantor-m.com
+                  </a>
+                </p>
+              )}
+            </>
           )}
         </div>
       </RevealDiv>
