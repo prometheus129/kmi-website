@@ -6,9 +6,9 @@ import TradeCorridorMap from "@/components/home/TradeCorridorMap";
 import { trackCTA } from "@/lib/tracking";
 
 const stats = [
-  { value: "400+", label: "Suppliers per order" },
-  { value: "60,000 MT", label: "Compounding capacity" },
-  { value: "19", label: "Markets" },
+  { value: "168", label: "Professionals receiving daily intelligence" },
+  { value: "20", label: "Documents managed per shipment" },
+  { value: "Daily", label: "Pricing from the China market" },
 ];
 
 export default function HeroSection() {
@@ -37,15 +37,16 @@ export default function HeroSection() {
       <div className="max-w-[1100px] mx-auto relative z-10 text-center w-full py-24 lg:py-24">
         <div className="animate-[hero-fade-in_0.5s_ease-out_both]">
           <div className="text-xs tracking-[4px] text-teal font-sans font-semibold mb-8">
-            POLYMER SOURCING INTELLIGENCE
+            POLYMER PROCUREMENT
           </div>
           <h1 className="font-serif text-5xl lg:text-[66px] font-bold text-white leading-[1.08] mb-8">
-            Your China Polymer Desk.
+            Matched grades. Current pricing. Documentation. In one answer.
           </h1>
           <p className="font-sans text-xl lg:text-2xl text-body-text leading-relaxed max-w-[680px] mx-auto mb-10">
-            Describe what you need. We search tens of thousands of grades and
-            respond with matched specs, pricing, and documentation — in one
-            answer.
+            Describe what you need — grade, specs, destination. We respond with
+            matched candidates, current CFR pricing, freight to your port, and
+            the documentation your customs broker requires. One inquiry. One
+            complete answer.
           </p>
 
           {/* CTA cluster */}
@@ -58,11 +59,11 @@ export default function HeroSection() {
               Tell us what you need
             </a>
             <Link
-              href="/polymer-compass#subscribe"
-              onClick={() => trackCTA("cta_click", "Subscribe to TPC", "/polymer-compass#subscribe")}
+              href="#inquiry"
+              onClick={() => trackCTA("cta_click", "Try One Container", "#inquiry")}
               className="inline-flex items-center justify-center border border-white/[0.15] hover:border-teal/40 text-white font-sans font-medium text-base px-8 py-4 rounded-lg transition-all duration-150 hover:-translate-y-px"
             >
-              Subscribe to The Polymer Compass
+              Try one container alongside your current supply
             </Link>
           </div>
 

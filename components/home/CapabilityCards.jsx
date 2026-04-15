@@ -57,7 +57,7 @@ const capabilities = [
   },
   {
     title: "Quality notes",
-    text: "Where we have prior experience with a grade, we share it. Where we don\u2019t, we tell you.",
+    text: "Where others have shipped a grade, we share what they observed. Where no one has yet, we say so. Every shipment adds to what we know.",
     accent: "border-white/20",
     iconColor: "text-body-text",
     iconBg: "bg-white/[0.06] border-white/10",

@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/home/HeroSection";
+import AssistantTeaser from "@/components/home/AssistantTeaser";
 import CapabilityCards from "@/components/home/CapabilityCards";
 import ResponseExample from "@/components/home/ResponseExample";
 import TPCPreview from "@/components/home/TPCPreview";
@@ -12,18 +13,18 @@ import JsonLd, { organizationSchema, websiteSchema } from "@/components/JsonLd";
 import { getAllIssues } from "@/lib/terminal";
 
 export const metadata = {
-  title: "Kantor Materials International — Your China Polymer Desk",
+  title: "Kantor Materials International — Polymer Procurement Intelligence",
   description:
-    "Describe what you need. We respond with matched grades, CFR pricing, and documentation for your destination. Sourcing intelligence for polymer distributors.",
+    "Matched grades, current pricing, and documentation — in one answer. Free procurement intelligence for polymer distributors and converters.",
   openGraph: {
-    title: "Kantor Materials International — Your China Polymer Desk",
+    title: "Kantor Materials International — Polymer Procurement Intelligence",
     description:
-      "Matched grades, current pricing, and documentation — in one answer. For polymer distributors across emerging markets.",
+      "Matched grades, current pricing, and documentation — in one answer. Free procurement intelligence for polymer distributors across emerging markets.",
   },
   twitter: {
-    title: "Kantor Materials International — Your China Polymer Desk",
+    title: "Kantor Materials International — Polymer Procurement Intelligence",
     description:
-      "Your China Polymer Desk. Sourcing intelligence for polymer distributors across emerging markets.",
+      "Matched grades, current pricing, documentation. In one answer. Free for polymer distributors and converters.",
   },
   alternates: { canonical: "/" },
 };
@@ -39,6 +40,7 @@ export default function HomePage() {
       <Nav />
       <main id="main">
         <HeroSection />
+        <AssistantTeaser />
         <CapabilityCards />
         <ResponseExample />
         <TPCPreview latestIssue={latestIssue} />

@@ -67,6 +67,11 @@ export default function ForDistributors() {
               on. That&apos;s what we do. You keep the buyer relationship and
               the margin. We handle the sourcing behind it.
             </p>
+            <p className="font-sans text-sm text-muted leading-relaxed text-center mt-4">
+              Use alongside your current suppliers. Compare what we find with
+              what you already have. No commitment, no exclusivity, no minimum
+              volume.
+            </p>
           </div>
         </RevealDiv>
 
