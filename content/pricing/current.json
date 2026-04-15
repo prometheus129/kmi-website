@@ -18,10 +18,10 @@
       "direction": "down",
       "weekChange": -20,
       "notes": {
-        "en": "FOB $1,180; ▼ $10 vs. Thursday, back to pre-Apr 13 level. Ship-by extended to May 30.",
-        "vi": "FOB $1.180; ▼ $10 so với thứ Năm, trở lại mức trước 13/4. Hạn xuất hàng gia hạn đến 30/5.",
-        "tr": "FOB $1.180; ▼ Perşembe'ye kıyasla $10 düşüş. Sevkiyat tarihi 30 Mayıs'a uzatıldı.",
-        "id": "FOB $1.180; ▼ $10 vs Kamis, kembali ke level pra-13 Apr. Batas pengiriman diperpanjang ke 30 Mei."
+        "en": "FOB $1,180; ▼ $10 vs. Thursday, back to pre-Apr 13 level.",
+        "vi": "FOB $1.180; ▼ $10 so với thứ Năm, trở lại mức trước 13/4.",
+        "tr": "FOB $1.180; ▼ Perşembe'ye kıyasla $10 düşüş.",
+        "id": "FOB $1.180; ▼ $10 vs Kamis, kembali ke level pra-13 Apr."
       }
     },
     {
@@ -84,10 +84,10 @@
       "direction": "stable",
       "weekChange": -10,
       "notes": {
-        "en": "Fiber grades flat at $1,260 FOB vs. Thursday; ▼ $10 below last week. May delivery windows available.",
-        "vi": "Sợi ổn định ở FOB $1.260 so với thứ Năm; ▼ $10 so với tuần trước. Cửa sổ giao hàng tháng 5 sẵn có.",
-        "tr": "Elyaf gradlar $1.260 FOB Perşembe'ye kıyasla sabit; ▼ $10 geçen haftanın altında. Mayıs teslimat pencereleri mevcut.",
-        "id": "Grade serat datar di FOB $1.260 vs Kamis; ▼ $10 vs minggu lalu. Jendela pengiriman Mei tersedia."
+        "en": "FOB $1,260 flat vs. Thursday. ▼ $10 vs. last week.",
+        "vi": "FOB $1.260 ổn định so với thứ Năm. ▼ $10 so với tuần trước.",
+        "tr": "FOB $1.260 Perşembe'ye kıyasla sabit. ▼ $10 haftalık.",
+        "id": "FOB $1.260 datar vs Kamis. ▼ $10 vs minggu lalu."
       }
     },
     {
@@ -106,54 +106,10 @@
       "direction": "stable",
       "weekChange": -20,
       "notes": {
-        "en": "FOB flat at $1,180 vs. Thursday; ▼ $20 below last Monday's post-holiday spike. May 24 shipment cutoff.",
-        "vi": "FOB ổn định ở $1.180 so với thứ Năm; ▼ $20 so với mức tăng sau nghỉ lễ thứ Hai tuần trước.",
-        "tr": "FOB $1.180 Perşembe'ye kıyasla sabit; ▼ geçen Pazartesi'nin tatil sonrası sıçramasının $20 altında.",
-        "id": "FOB datar di $1.180 vs Kamis; ▼ $20 di bawah lonjakan pasca-liburan Senin lalu."
-      }
-    },
-    {
-      "product": "HDPE Film",
-      "subtype": {
-        "en": "Blow molding / Film",
-        "vi": "Thổi / Màng",
-        "tr": "Şişirme kalıplama / Film",
-        "id": "Blow molding / Film",
-        "es": "Soplado / Película",
-        "pt": "Sopro / Filme",
-        "th": "เป่าขึ้นรูป / ฟิล์ม"
-      },
-      "grades": "DGDB-6097 / 7260",
-      "cfrRange": [1117, 1117],
-      "direction": "stable",
-      "weekChange": 0,
-      "notes": {
-        "en": "China-origin HDPE not on today's export sheet; domestic availability limited. Saudi 218WJ re-export at ¥10,480 in PRD spot.",
-        "vi": "HDPE gốc Trung Quốc không có trên bảng xuất khẩu hôm nay; nguồn nội địa hạn chế.",
-        "tr": "Çin menşeli HDPE bugünkü ihracat listesinde yok; yerel bulunabilirlik sınırlı.",
-        "id": "HDPE asal China tidak ada di lembar ekspor hari ini; ketersediaan domestik terbatas."
-      }
-    },
-    {
-      "product": "PVC SG-5",
-      "subtype": {
-        "en": "Suspension grade",
-        "vi": "Huyền phù",
-        "tr": "Süspansiyon",
-        "id": "Suspensi",
-        "es": "Grado suspensión",
-        "pt": "Grau suspensão",
-        "th": "เกรดแขวนลอย"
-      },
-      "grades": "SG-5 / SG-8",
-      "cfrRange": [933, 933],
-      "direction": "stable",
-      "weekChange": 0,
-      "notes": {
-        "en": "No PVC on today's QQT sheet; last quoted SG-5 at $933 FOB.",
-        "vi": "Không có PVC trên bảng giá QQT hôm nay; SG-5 báo giá lần cuối ở $933 FOB.",
-        "tr": "Bugünkü QQT listesinde PVC yok; son SG-5 teklifi $933 FOB.",
-        "id": "Tidak ada PVC di lembar QQT hari ini; SG-5 terakhir dikutip di $933 FOB."
+        "en": "FOB $1,180 flat vs. Thursday. ▼ $20 vs. last week.",
+        "vi": "FOB $1.180 ổn định so với thứ Năm. ▼ $20 so với tuần trước.",
+        "tr": "FOB $1.180 Perşembe'ye kıyasla sabit. ▼ $20 haftalık.",
+        "id": "FOB $1.180 datar vs Kamis. ▼ $20 vs minggu lalu."
       }
     },
     {
@@ -173,10 +129,10 @@
       "weekChange": 0,
       "indicative": true,
       "notes": {
-        "en": "Indicative — domestic ¥10,150 converted to est. FOB. First appearance in daily pricing.",
-        "vi": "Tham khảo — nội địa ¥10.150 chuyển đổi sang FOB ước tính. Lần đầu xuất hiện trong bảng giá hàng ngày.",
-        "tr": "Gösterge — yurt içi ¥10.150 tahmini FOB'a çevrilmiş. Günlük fiyatlandırmada ilk görünüm.",
-        "id": "Indikatif — domestik ¥10.150 dikonversi ke est. FOB. Pertama kali muncul di harga harian."
+        "en": "Indicative pricing. Subject to confirmation.",
+        "vi": "Giá tham khảo. Cần xác nhận.",
+        "tr": "Gösterge fiyat. Onaya tabidir.",
+        "id": "Harga indikatif. Tunduk pada konfirmasi."
       }
     },
     {
@@ -196,10 +152,10 @@
       "weekChange": 0,
       "indicative": true,
       "notes": {
-        "en": "Indicative — domestic ¥9,980 converted to est. FOB. First appearance in daily pricing.",
-        "vi": "Tham khảo — nội địa ¥9.980 chuyển đổi sang FOB ước tính. Lần đầu xuất hiện trong bảng giá hàng ngày.",
-        "tr": "Gösterge — yurt içi ¥9.980 tahmini FOB'a çevrilmiş. Günlük fiyatlandırmada ilk görünüm.",
-        "id": "Indikatif — domestik ¥9.980 dikonversi ke est. FOB. Pertama kali muncul di harga harian."
+        "en": "Indicative pricing. Subject to confirmation.",
+        "vi": "Giá tham khảo. Cần xác nhận.",
+        "tr": "Gösterge fiyat. Onaya tabidir.",
+        "id": "Harga indikatif. Tunduk pada konfirmasi."
       }
     },
     {
@@ -219,10 +175,10 @@
       "weekChange": 0,
       "indicative": true,
       "notes": {
-        "en": "Indicative — domestic ¥12,500 converted to est. FOB. First appearance in daily pricing.",
-        "vi": "Tham khảo — nội địa ¥12.500 chuyển đổi sang FOB ước tính. Lần đầu xuất hiện trong bảng giá hàng ngày.",
-        "tr": "Gösterge — yurt içi ¥12.500 tahmini FOB'a çevrilmiş. Günlük fiyatlandırmada ilk görünüm.",
-        "id": "Indikatif — domestik ¥12.500 dikonversi ke est. FOB. Pertama kali muncul di harga harian."
+        "en": "Indicative pricing. Subject to confirmation.",
+        "vi": "Giá tham khảo. Cần xác nhận.",
+        "tr": "Gösterge fiyat. Onaya tabidir.",
+        "id": "Harga indikatif. Tunduk pada konfirmasi."
       }
     }
   ]
