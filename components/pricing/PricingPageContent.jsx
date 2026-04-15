@@ -19,7 +19,7 @@ const UI_STRINGS = {
     source: "Source",
     colProduct: "Product",
     colGrade: "Grade",
-    colCFR: "CFR Range (USD/MT)",
+    colCFR: "KIP FOB (USD/MT)",
     colDirection: "Trend",
     colChange: "W/W",
     colNotes: "Market Note",
@@ -31,7 +31,7 @@ const UI_STRINGS = {
     insightsLink: "View all market analysis",
     insightsHref: "/insights",
     disclaimer:
-      "Prices shown are CFR market assessments based on published trade data and Kantor Materials research. They are indicative ranges, not firm offers. Contact us for current executable pricing.",
+      "All prices FOB China in USD/MT. Indicative grades subject to confirmation. Add destination freight for landed cost. Prices are Kantor Indicative Prices, not firm offers. Contact us for executable pricing.",
   },
   vi: {
     overline: "GIÁ HẠT NHỰA",
@@ -379,8 +379,14 @@ export default function PricingPageContent({ locale = "en" }) {
                       {row.grades}
                     </td>
                     <td className="py-4 pr-4 text-right font-mono text-white font-semibold">
-                      ${row.cfrRange[0].toLocaleString()}–$
-                      {row.cfrRange[1].toLocaleString()}
+                      {row.cfrRange[0] === row.cfrRange[1]
+                        ? `$${row.cfrRange[0].toLocaleString()}`
+                        : `$${row.cfrRange[0].toLocaleString()}–$${row.cfrRange[1].toLocaleString()}`}
+                      {row.indicative && (
+                        <span className="ml-2 text-[10px] font-sans font-medium text-gold/70 bg-gold/[0.08] px-1.5 py-0.5 rounded">
+                          Indicative
+                        </span>
+                      )}
                     </td>
                     <td className="py-4 pr-4 text-center">
                       <DirectionBadge
@@ -424,9 +430,15 @@ export default function PricingPageContent({ locale = "en" }) {
                   />
                 </div>
                 <div className="font-mono text-xl text-white font-semibold mb-1">
-                  ${row.cfrRange[0].toLocaleString()}–$
-                  {row.cfrRange[1].toLocaleString()}
+                  {row.cfrRange[0] === row.cfrRange[1]
+                    ? `$${row.cfrRange[0].toLocaleString()}`
+                    : `$${row.cfrRange[0].toLocaleString()}–$${row.cfrRange[1].toLocaleString()}`}
                   <span className="text-xs text-muted ml-2">USD/MT</span>
+                  {row.indicative && (
+                    <span className="ml-2 text-[10px] font-sans font-medium text-gold/70 bg-gold/[0.08] px-1.5 py-0.5 rounded align-middle">
+                      Indicative
+                    </span>
+                  )}
                 </div>
                 <div className="flex items-center gap-3 text-xs mb-3">
                   <span className="text-muted font-mono">{row.grades}</span>

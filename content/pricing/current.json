@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-13",
-  "source": "Kantor Materials market assessment",
+  "lastUpdated": "2026-04-14",
+  "source": "Kantor Materials daily pricing",
   "prices": [
     {
       "product": "PP Homo",
@@ -14,14 +14,14 @@
         "th": "เส้นด้าย / ราเฟีย"
       },
       "grades": "T30S / PPH-T03 / HP550J",
-      "cfrRange": [1210, 1310],
+      "cfrRange": [1204, 1204],
       "direction": "down",
       "weekChange": -20,
       "notes": {
-        "en": "FOB rebounded $10 to $1,190 vs. Thursday but still $20 below last Monday; May 24 shipment cutoff across North China ports",
-        "vi": "FOB phục hồi $10 lên $1.190 so với thứ Năm nhưng vẫn giảm $20 so với thứ Hai tuần trước; hạn xuất hàng 24/5 tại các cảng Bắc Trung Quốc",
-        "tr": "FOB Perşembe'ye kıyasla $10 toparlandı $1.190'a ancak geçen Pazartesi'nin $20 altında; Kuzey Çin limanlarında 24 Mayıs sevkiyat kesme tarihi",
-        "id": "FOB rebound $10 ke $1.190 vs Kamis tapi masih $20 di bawah Senin lalu; batas waktu pengiriman 24 Mei di pelabuhan Tiongkok Utara"
+        "en": "FOB $1,180; ▼ $10 vs. Thursday, back to pre-Apr 13 level. Ship-by extended to May 30.",
+        "vi": "FOB $1.180; ▼ $10 so với thứ Năm, trở lại mức trước 13/4. Hạn xuất hàng gia hạn đến 30/5.",
+        "tr": "FOB $1.180; ▼ Perşembe'ye kıyasla $10 düşüş. Sevkiyat tarihi 30 Mayıs'a uzatıldı.",
+        "id": "FOB $1.180; ▼ $10 vs Kamis, kembali ke level pra-13 Apr. Batas pengiriman diperpanjang ke 30 Mei."
       }
     },
     {
@@ -35,15 +35,15 @@
         "pt": "Parede Fina / Injeção",
         "th": "ผนังบาง / ฉีดขึ้นรูป"
       },
-      "grades": "MN70 / G70/75 / BZ-70X",
-      "cfrRange": [1210, 1370],
-      "direction": "down",
-      "weekChange": -15,
+      "grades": "G70/75 / HP550N / BZ-70X",
+      "cfrRange": [1214, 1285],
+      "direction": "stable",
+      "weekChange": -20,
       "notes": {
-        "en": "Injection $1,190 FOB flat; high-MFR thin wall $1,260 FOB flat vs. Thursday; both softer week-over-week",
-        "vi": "Ép phun $1.190 FOB ổn định; thành mỏng MFR cao $1.260 FOB ổn định so với thứ Năm; cả hai giảm so với tuần trước",
-        "tr": "Enjeksiyon $1.190 FOB sabit; yüksek MFR ince cidar $1.260 FOB Perşembe'ye kıyasla sabit; her ikisi haftalık bazda zayıf",
-        "id": "Injeksi $1.190 FOB datar; dinding tipis MFR tinggi $1.260 FOB datar vs Kamis; keduanya melemah mingguan"
+        "en": "Injection $1,190 FOB flat; high-MFR thin wall $1,260 FOB flat vs. Thursday. Both ▼ $20 vs. last week.",
+        "vi": "Ép phun FOB $1.190 ổn định; thành mỏng MFR cao FOB $1.260 ổn định so với thứ Năm. Cả hai ▼ $20 so với tuần trước.",
+        "tr": "Enjeksiyon $1.190 FOB sabit; yüksek MFR ince cidar $1.260 FOB Perşembe'ye kıyasla sabit. Her ikisi ▼ $20 haftalık.",
+        "id": "Injeksi FOB $1.190 datar; dinding tipis MFR tinggi FOB $1.260 datar vs Kamis. Keduanya ▼ $20 vs minggu lalu."
       }
     },
     {
@@ -58,14 +58,14 @@
         "th": "เส้นใย / ผ้าไม่ทอ"
       },
       "grades": "Y16/25 / Y40",
-      "cfrRange": [1290, 1380],
-      "direction": "down",
+      "cfrRange": [1285, 1285],
+      "direction": "stable",
       "weekChange": -10,
       "notes": {
-        "en": "Fiber grades flat at $1,260 FOB vs. Thursday; $10 below last week; May delivery windows available",
-        "vi": "Các loại sợi ổn định ở $1.260 FOB so với thứ Năm; giảm $10 so với tuần trước; cửa sổ giao hàng tháng 5 sẵn có",
-        "tr": "Elyaf gradlar $1.260 FOB'da Perşembe'ye kıyasla sabit; geçen haftanın $10 altında; Mayıs teslimat pencereleri mevcut",
-        "id": "Grade serat datar di $1.260 FOB vs Kamis; $10 di bawah minggu lalu; jendela pengiriman Mei tersedia"
+        "en": "Fiber grades flat at $1,260 FOB vs. Thursday; ▼ $10 below last week. May delivery windows available.",
+        "vi": "Sợi ổn định ở FOB $1.260 so với thứ Năm; ▼ $10 so với tuần trước. Cửa sổ giao hàng tháng 5 sẵn có.",
+        "tr": "Elyaf gradlar $1.260 FOB Perşembe'ye kıyasla sabit; ▼ $10 geçen haftanın altında. Mayıs teslimat pencereleri mevcut.",
+        "id": "Grade serat datar di FOB $1.260 vs Kamis; ▼ $10 vs minggu lalu. Jendela pengiriman Mei tersedia."
       }
     },
     {
@@ -80,14 +80,14 @@
         "th": "ฟิล์มบรรจุภัณฑ์"
       },
       "grades": "7042 / DFDA-7042",
-      "cfrRange": [1210, 1310],
-      "direction": "down",
+      "cfrRange": [1204, 1204],
+      "direction": "stable",
       "weekChange": -20,
       "notes": {
-        "en": "FOB flat at $1,180 vs. Thursday; $20 below last Monday's post-holiday spike; May 24 shipment cutoff confirmed",
-        "vi": "FOB ổn định ở $1.180 so với thứ Năm; giảm $20 so với mức tăng sau nghỉ lễ thứ Hai tuần trước; hạn xuất hàng 24/5 xác nhận",
-        "tr": "FOB Perşembe'ye kıyasla $1.180'da sabit; geçen Pazartesi'nin tatil sonrası sıçramasının $20 altında; 24 Mayıs sevkiyat kesme tarihi onaylandı",
-        "id": "FOB datar di $1.180 vs Kamis; $20 di bawah lonjakan pasca-liburan Senin lalu; batas waktu pengiriman 24 Mei dikonfirmasi"
+        "en": "FOB flat at $1,180 vs. Thursday; ▼ $20 below last Monday's post-holiday spike. May 24 shipment cutoff.",
+        "vi": "FOB ổn định ở $1.180 so với thứ Năm; ▼ $20 so với mức tăng sau nghỉ lễ thứ Hai tuần trước.",
+        "tr": "FOB $1.180 Perşembe'ye kıyasla sabit; ▼ geçen Pazartesi'nin tatil sonrası sıçramasının $20 altında.",
+        "id": "FOB datar di $1.180 vs Kamis; ▼ $20 di bawah lonjakan pasca-liburan Senin lalu."
       }
     },
     {
@@ -102,14 +102,14 @@
         "th": "เป่าขึ้นรูป / ฟิล์ม"
       },
       "grades": "DGDB-6097 / 7260",
-      "cfrRange": [1140, 1280],
+      "cfrRange": [1117, 1117],
       "direction": "stable",
       "weekChange": 0,
       "notes": {
-        "en": "China-origin HDPE not on today's export sheet; domestic availability limited; Saudi 218WJ re-export at ¥10,480 in PRD spot",
-        "vi": "HDPE gốc Trung Quốc không có trên bảng xuất khẩu hôm nay; nguồn nội địa hạn chế; Saudi 218WJ tái xuất ¥10.480 trên thị trường giao ngay PRD",
-        "tr": "Çin menşeli HDPE bugünkü ihracat listesinde yok; yerel bulunabilirlik sınırlı; Suudi 218WJ yeniden ihracat PRD spot ¥10.480",
-        "id": "HDPE asal China tidak ada di lembar ekspor hari ini; ketersediaan domestik terbatas; Saudi 218WJ re-ekspor ¥10.480 di spot PRD"
+        "en": "China-origin HDPE not on today's export sheet; domestic availability limited. Saudi 218WJ re-export at ¥10,480 in PRD spot.",
+        "vi": "HDPE gốc Trung Quốc không có trên bảng xuất khẩu hôm nay; nguồn nội địa hạn chế.",
+        "tr": "Çin menşeli HDPE bugünkü ihracat listesinde yok; yerel bulunabilirlik sınırlı.",
+        "id": "HDPE asal China tidak ada di lembar ekspor hari ini; ketersediaan domestik terbatas."
       }
     },
     {
@@ -124,14 +124,83 @@
         "th": "เกรดแขวนลอย"
       },
       "grades": "SG-5 / SG-8",
-      "cfrRange": [870, 980],
+      "cfrRange": [933, 933],
       "direction": "stable",
       "weekChange": 0,
       "notes": {
-        "en": "No PVC on today's QQT sheet; last quoted SG-5 at $933 FOB",
-        "vi": "Không có PVC trên bảng giá QQT hôm nay; SG-5 báo giá lần cuối ở $933 FOB",
-        "tr": "Bugünkü QQT listesinde PVC yok; son SG-5 teklifi $933 FOB",
-        "id": "Tidak ada PVC di lembar QQT hari ini; SG-5 terakhir dikutip di $933 FOB"
+        "en": "No PVC on today's QQT sheet; last quoted SG-5 at $933 FOB.",
+        "vi": "Không có PVC trên bảng giá QQT hôm nay; SG-5 báo giá lần cuối ở $933 FOB.",
+        "tr": "Bugünkü QQT listesinde PVC yok; son SG-5 teklifi $933 FOB.",
+        "id": "Tidak ada PVC di lembar QQT hari ini; SG-5 terakhir dikutip di $933 FOB."
+      }
+    },
+    {
+      "product": "PP Copolymer",
+      "subtype": {
+        "en": "Transparent",
+        "vi": "Trong suốt",
+        "tr": "Şeffaf",
+        "id": "Transparan",
+        "es": "Transparente",
+        "pt": "Transparente",
+        "th": "โปร่งใส"
+      },
+      "grades": "7250N (中化)",
+      "cfrRange": [1412, 1412],
+      "direction": "stable",
+      "weekChange": 0,
+      "indicative": true,
+      "notes": {
+        "en": "Indicative — domestic ¥10,150 converted to est. FOB. First appearance in daily pricing.",
+        "vi": "Tham khảo — nội địa ¥10.150 chuyển đổi sang FOB ước tính. Lần đầu xuất hiện trong bảng giá hàng ngày.",
+        "tr": "Gösterge — yurt içi ¥10.150 tahmini FOB'a çevrilmiş. Günlük fiyatlandırmada ilk görünüm.",
+        "id": "Indikatif — domestik ¥10.150 dikonversi ke est. FOB. Pertama kali muncul di harga harian."
+      }
+    },
+    {
+      "product": "PP Copolymer",
+      "subtype": {
+        "en": "Impact copolymer",
+        "vi": "Đồng trùng hợp chịu va đập",
+        "tr": "Darbe kopolimer",
+        "id": "Impact copolymer",
+        "es": "Copolímero de impacto",
+        "pt": "Copolímero de impacto",
+        "th": "โคโพลิเมอร์ทนแรงกระแทก"
+      },
+      "grades": "K8003 (广东石化)",
+      "cfrRange": [1388, 1388],
+      "direction": "stable",
+      "weekChange": 0,
+      "indicative": true,
+      "notes": {
+        "en": "Indicative — domestic ¥9,980 converted to est. FOB. First appearance in daily pricing.",
+        "vi": "Tham khảo — nội địa ¥9.980 chuyển đổi sang FOB ước tính. Lần đầu xuất hiện trong bảng giá hàng ngày.",
+        "tr": "Gösterge — yurt içi ¥9.980 tahmini FOB'a çevrilmiş. Günlük fiyatlandırmada ilk görünüm.",
+        "id": "Indikatif — domestik ¥9.980 dikonversi ke est. FOB. Pertama kali muncul di harga harian."
+      }
+    },
+    {
+      "product": "ABS",
+      "subtype": {
+        "en": "General purpose",
+        "vi": "Đa dụng",
+        "tr": "Genel amaçlı",
+        "id": "Serba guna",
+        "es": "Uso general",
+        "pt": "Uso geral",
+        "th": "เอนกประสงค์"
+      },
+      "grades": "275 (上海高桥)",
+      "cfrRange": [1738, 1738],
+      "direction": "stable",
+      "weekChange": 0,
+      "indicative": true,
+      "notes": {
+        "en": "Indicative — domestic ¥12,500 converted to est. FOB. First appearance in daily pricing.",
+        "vi": "Tham khảo — nội địa ¥12.500 chuyển đổi sang FOB ước tính. Lần đầu xuất hiện trong bảng giá hàng ngày.",
+        "tr": "Gösterge — yurt içi ¥12.500 tahmini FOB'a çevrilmiş. Günlük fiyatlandırmada ilk görünüm.",
+        "id": "Indikatif — domestik ¥12.500 dikonversi ke est. FOB. Pertama kali muncul di harga harian."
       }
     }
   ]
