@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-14",
+  "lastUpdated": "2026-04-15",
   "source": "Kantor Materials daily pricing",
   "prices": [
     {
@@ -27,23 +27,45 @@
     {
       "product": "PP Homo",
       "subtype": {
-        "en": "Thin Wall / Injection",
-        "vi": "Thành mỏng / Ép phun",
-        "tr": "İnce Cidar / Enjeksiyon",
-        "id": "Dinding Tipis / Injeksi",
-        "es": "Pared Delgada / Inyección",
-        "pt": "Parede Fina / Injeção",
-        "th": "ผนังบาง / ฉีดขึ้นรูป"
+        "en": "Injection",
+        "vi": "Ép phun",
+        "tr": "Enjeksiyon",
+        "id": "Injeksi",
+        "es": "Inyección",
+        "pt": "Injeção",
+        "th": "ฉีดขึ้นรูป"
       },
-      "grades": "G70/75 / HP550N / BZ-70X",
-      "cfrRange": [1214, 1285],
+      "grades": "HP550N / HP500P / M12",
+      "cfrRange": [1214, 1214],
       "direction": "stable",
       "weekChange": -20,
       "notes": {
-        "en": "Injection $1,190 FOB flat; high-MFR thin wall $1,260 FOB flat vs. Thursday. Both ▼ $20 vs. last week.",
-        "vi": "Ép phun FOB $1.190 ổn định; thành mỏng MFR cao FOB $1.260 ổn định so với thứ Năm. Cả hai ▼ $20 so với tuần trước.",
-        "tr": "Enjeksiyon $1.190 FOB sabit; yüksek MFR ince cidar $1.260 FOB Perşembe'ye kıyasla sabit. Her ikisi ▼ $20 haftalık.",
-        "id": "Injeksi FOB $1.190 datar; dinding tipis MFR tinggi FOB $1.260 datar vs Kamis. Keduanya ▼ $20 vs minggu lalu."
+        "en": "FOB $1,190 flat vs. Thursday. ▼ $20 vs. last week.",
+        "vi": "FOB $1.190 ổn định so với thứ Năm. ▼ $20 so với tuần trước.",
+        "tr": "FOB $1.190 Perşembe'ye kıyasla sabit. ▼ $20 haftalık.",
+        "id": "FOB $1.190 datar vs Kamis. ▼ $20 vs minggu lalu."
+      }
+    },
+    {
+      "product": "PP Homo",
+      "subtype": {
+        "en": "Thin Wall",
+        "vi": "Thành mỏng",
+        "tr": "İnce Cidar",
+        "id": "Dinding Tipis",
+        "es": "Pared Delgada",
+        "pt": "Parede Fina",
+        "th": "ผนังบาง"
+      },
+      "grades": "G70/75 / BZ-70X",
+      "cfrRange": [1285, 1285],
+      "direction": "stable",
+      "weekChange": -10,
+      "notes": {
+        "en": "FOB $1,260 flat vs. Thursday. ▼ $10 vs. last week.",
+        "vi": "FOB $1.260 ổn định so với thứ Năm. ▼ $10 so với tuần trước.",
+        "tr": "FOB $1.260 Perşembe'ye kıyasla sabit. ▼ $10 haftalık.",
+        "id": "FOB $1.260 datar vs Kamis. ▼ $10 vs minggu lalu."
       }
     },
     {
