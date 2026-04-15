@@ -8,11 +8,11 @@ tags: ["coa", "tds", "kiem-tra", "hat-nhua", "mfi", "quality-control", "trung-qu
 
 > **Tóm tắt:** CoA (Certificate of Analysis) là dữ liệu thực tế của lô hàng. TDS (Technical Data Sheet) là thông số danh nghĩa của grade. Nếu MFI trên CoA chênh hơn 15% so với TDS, bạn đang nhận hàng ngoài spec. Đây là cách kiểm tra — và biết khi nào cần từ chối trước khi container lên tàu.
 
-## Lô Hàng Trông Đúng Grade Nhưng Chạy Sai
+## Tại Sao Lô Hàng Trông Đúng Grade Nhưng Chạy Sai?
 
 Container PP T30S về đến kho Bình Dương. Nhãn bao đúng. Tên nhà sản xuất đúng. Nhưng khi chạy trên dây chuyền kéo sợi, tape liên tục đứt. Bạn kiểm tra CoA: MFI 2.1 g/10min. TDS của T30S nói MFI danh nghĩa 3.0. Chênh lệch 30%.
 
-Vấn đề không phải hàng giả. Vấn đề là lô hàng này nằm ngoài cửa sổ spec cho ứng dụng của bạn — và không ai kiểm tra CoA trước khi hàng xuất.
+Vấn đề không phải hàng giả. Vấn đề là lô hàng này nằm ngoài phạm vi spec cho ứng dụng của bạn — và không ai kiểm tra CoA trước khi hàng xuất.
 
 Đây là lỗi phổ biến nhất trong nhập khẩu polymer: **nhận CoA nhưng không so sánh với TDS.** Hoặc tệ hơn: **không nhận CoA cho đến khi hàng đã về kho.**
 
@@ -28,7 +28,7 @@ Vấn đề không phải hàng giả. Vấn đề là lô hàng này nằm ngo�
 
 **Một cách đơn giản:** TDS là menu — nó cho bạn biết món ăn nên trông như thế nào. CoA là hóa đơn kiểm tra chất lượng — nó cho bạn biết món ăn thực sự có gì hôm nay.
 
-## 5 Thông Số Cần Kiểm Tra Trên Mỗi CoA
+## 5 Thông Số Nào Quan Trọng Nhất Trên CoA?
 
 Không phải mọi thông số trên CoA đều quan trọng như nhau. Đây là 5 thông số ưu tiên kiểm tra — theo thứ tự ảnh hưởng đến gia công:
 
@@ -39,7 +39,7 @@ Không phải mọi thông số trên CoA đều quan trọng như nhau. Đây l
 **Cách kiểm tra:**
 - Tìm giá trị MFI trên CoA (thường ghi là "MFR" hoặc "MI" hoặc "Melt Index")
 - So sánh với giá trị danh nghĩa trên TDS
-- **Dung sai chấp nhận được:** +/-10% cho Sinopec/PetroChina naphtha-origin, +/-15% cho CTO-origin. Ngoài phạm vi này = cần đánh giá lại
+- **Dung sai chấp nhận được:** +/-10-15% giữa các nhà máy Trung Quốc (theo dữ liệu từ cơ sở dữ liệu grade-equivalency KMI). Hàng Hàn Quốc/Nhật Bản: +/-5%. Ngoài +/-15% = cần đánh giá lại hoặc từ chối
 
 | Ví dụ | TDS | CoA | Chênh lệch | Đánh giá |
 |---|---|---|---|---|
@@ -72,7 +72,7 @@ Không phải mọi thông số trên CoA đều quan trọng như nhau. Đây l
 
 **Cách kiểm tra:** So sánh với TDS spec. Nếu hàm lượng tro cao hơn rõ rệt so với lô trước từ cùng nhà sản xuất, hỏi trader về nguồn gốc lô hàng.
 
-## Khi Nào Yêu Cầu CoA — Và Khi Nào Từ Chối Lô Hàng
+## Khi Nào Nên Yêu Cầu CoA — Và Khi Nào Nên Từ Chối Lô Hàng?
 
 ### Quy trình đúng (trước khi hàng lên tàu):
 
@@ -86,11 +86,11 @@ Không phải mọi thông số trên CoA đều quan trọng như nhau. Đây l
 
 1. Đặt hàng → hàng xuất → CoA đi kèm bộ chứng từ → hàng về kho → kiểm tra CoA → phát hiện ngoài spec → **quá muộn để từ chối**
 
-**Sự khác biệt:** 5 phút kiểm tra CoA TRƯỚC khi hàng lên tàu có thể tiết kiệm $5.000-15.000 (chi phí lô off-spec + phí vận chuyển + thời gian xử lý claim).
+**Sự khác biệt:** 5 phút kiểm tra CoA TRƯỚC khi hàng lên tàu có thể tránh được chi phí xử lý lô off-spec — bao gồm phí vận chuyển trả lại, thời gian negotiate claim với trader, và phế phẩm nếu chạy thử không đạt.
 
 *Muốn kiểm tra CoA tự động? Chúng tôi đang xây dựng công cụ so sánh CoA-TDS — [đăng ký để được thử nghiệm sớm →](/vi/inquiry)*
 
-## Bảng Kiểm Tra Nhanh: CoA vs. TDS
+## Bảng Kiểm Tra CoA So Với TDS — Dùng Cho Mỗi Lô Hàng
 
 Dùng bảng này mỗi khi nhận CoA từ trader:
 
