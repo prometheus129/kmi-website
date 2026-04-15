@@ -6,9 +6,9 @@ import TradeCorridorMap from "@/components/home/TradeCorridorMap";
 import { trackCTA } from "@/lib/tracking";
 
 const stats = [
-  { value: "168", label: "Professionals receiving daily intelligence" },
-  { value: "20", label: "Documents managed per shipment" },
-  { value: "Daily", label: "Pricing from the China market" },
+  { value: "134,000+", label: "Product specifications indexed" },
+  { value: "20", label: "Documents in every polymer shipment" },
+  { value: "Daily", label: "FOB pricing from China's export market" },
 ];
 
 export default function HeroSection() {
