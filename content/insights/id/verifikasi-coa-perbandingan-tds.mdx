@@ -1,0 +1,139 @@
+---
+title: "Verifikasi CoA Resin Plastik: Cara Membandingkan dengan TDS dan Mendeteksi Lot Off-Spec"
+date: "2026-04-16"
+description: "CoA adalah data aktual lot barang, TDS adalah spesifikasi nominal. MFI berbeda lebih dari 15% = di luar spec. Cara memeriksa sebelum kontainer naik kapal."
+author: "Kantor Materials Research"
+tags: ["coa", "tds", "verifikasi", "resin", "mfi", "quality-control", "tiongkok", "impor", "indonesia"]
+---
+
+> **Ringkasan:** CoA (Certificate of Analysis) adalah data aktual lot barang. TDS (Technical Data Sheet) adalah spesifikasi nominal grade. Jika MFI pada CoA berbeda lebih dari 15% dari TDS, Anda menerima barang di luar spec. Begini cara memeriksa — dan tahu kapan harus menolak sebelum kontainer naik kapal.
+
+## Mengapa Lot Barang Terlihat Benar Tapi Jalan Salah?
+
+Kontainer PP T30S tiba di gudang Cikarang. Label di karung benar. Nama produsen benar. Tapi ketika dijalankan di line tenun, tape terus putus. Anda periksa CoA: MFI 2,1 g/10min. TDS T30S menyebut MFI nominal 3,0. Selisih 30%.
+
+Masalahnya bukan barang palsu. Masalahnya lot ini di luar rentang spec untuk aplikasi Anda — dan tidak ada yang memeriksa CoA sebelum barang dikirim.
+
+Ini kesalahan paling umum dalam impor polimer: **menerima CoA tapi tidak membandingkan dengan TDS.** Atau lebih buruk: **tidak menerima CoA sampai barang sudah di gudang.**
+
+## TDS dan CoA Bedanya Apa?
+
+| | TDS (Technical Data Sheet) | CoA (Certificate of Analysis) |
+|---|---|---|
+| **Siapa yang terbitkan** | Produsen (Sinopec, PetroChina, Hengli...) | Bagian QC produsen atau laboratorium independen |
+| **Isi** | Nilai nominal / tipikal dari grade | Nilai pengukuran aktual lot barang spesifik |
+| **Frekuensi update** | Jarang (setiap beberapa tahun) | Setiap lot produksi (batch) |
+| **MFI pada TDS** | "Nilai tipikal: 3,0 g/10min" | "Batch #20260412-A: MFI 2,8 g/10min" |
+| **Tujuan** | Menentukan apakah grade cocok untuk aplikasi | Mengkonfirmasi lot spesifik berada dalam spec |
+
+**Analoginya:** TDS adalah menu — memberitahu Anda seperti apa makanan seharusnya. CoA adalah hasil inspeksi kualitas — memberitahu Anda apa isi makanan hari ini sesungguhnya.
+
+## 5 Parameter Mana yang Paling Penting pada CoA?
+
+Tidak semua parameter pada CoA sama pentingnya. Ini 5 parameter prioritas — diurutkan berdasarkan dampak pada pemrosesan:
+
+### 1. MFI (Melt Flow Index) — Paling Penting
+
+**Mengapa:** MFI mengendalikan langsung perilaku aliran polimer di line produksi. MFI salah = kecepatan salah, tekanan salah, kualitas produk salah.
+
+**Cara periksa:**
+- Cari nilai MFI pada CoA (biasanya tertulis "MFR" atau "MI" atau "Melt Index")
+- Bandingkan dengan nilai nominal pada TDS
+- **Toleransi yang dapat diterima:** +/-10-15% antar pabrik Tiongkok (berdasarkan data dari database grade-equivalency KMI). Korea/Jepang: +/-5%. Di luar +/-15% = perlu evaluasi ulang atau tolak
+
+| Contoh | TDS | CoA | Selisih | Penilaian |
+|---|---|---|---|---|
+| PP T30S lot 1 | 3,0 | 2,8 | -7% | Dapat diterima |
+| PP T30S lot 2 | 3,0 | 2,1 | -30% | Di luar spec — tolak atau minta diskon |
+| LLDPE 7042 | 2,0 | 2,3 | +15% | Batas — trial dulu sebelum komit |
+| HDPE 5000S | 0,28 | 0,35 | +25% | Di luar spec — mempengaruhi parison |
+
+### 2. Densitas (Density)
+
+**Mengapa:** Mengkonfirmasi Anda menerima polimer yang benar. HDPE (0,94-0,96) vs. LLDPE (0,91-0,93) — jika density salah, Anda menerima grade yang salah.
+
+**Cara periksa:** Bandingkan CoA vs. TDS. Toleransi: +/-0,003 g/cm3. Di luar rentang = salah grade.
+
+### 3. Indeks Isotactic (untuk PP saja)
+
+**Mengapa:** Isotactic index mempengaruhi kristalisasi dan kekuatan produk. Sangat penting untuk PP tenun karung T30S.
+
+**Cara periksa:** CoA harus menunjukkan 96% ke atas untuk aplikasi tenun karung biasa, 97% ke atas untuk FIBC. Lebih rendah = serat lemah.
+
+### 4. ESCR (untuk HDPE blow molding)
+
+**Mengapa:** ESCR mengkonfirmasi botol/jerigen tahan retak tegangan. 5502GA (ESCR 20h) vs. 5502AA (ESCR lebih dari 500h) — salah grade = botol retak.
+
+**Cara periksa:** CoA harus menunjukkan ESCR lebih dari 500h untuk aplikasi blow molding bahan kimia. Di bawah 100h = Anda menerima grade injection molding.
+
+### 5. Kadar Abu / Kelembaban
+
+**Mengapa:** Abu tinggi (lebih dari 0,05%) mengindikasikan sumber CTO atau kontaminasi. Kelembaban tinggi (lebih dari 0,2%) menyebabkan gelembung udara di produk.
+
+**Cara periksa:** Bandingkan dengan spec TDS. Jika kadar abu jauh lebih tinggi dari lot sebelumnya dari produsen yang sama, tanyakan trader tentang asal lot.
+
+## Kapan Harus Minta CoA — Dan Kapan Harus Tolak Lot?
+
+### Prosedur yang benar (sebelum barang naik kapal):
+
+1. **Konfirmasi PO** → trader konfirmasi grade, produsen, pabrik spesifik
+2. **Minta CoA sebelum pengiriman** → trader kirim scan CoA
+3. **Bandingkan 5 parameter prioritas vs. TDS** → jika semua dalam toleransi: konfirmasi pengiriman
+4. **Jika di luar spec:** minta lot lain, atau negosiasi diskon untuk lot off-spec
+5. **Barang dikirim** → terima CoA asli bersama dokumen (B/L, Form E, invoice)
+
+### Prosedur yang salah (umum terjadi):
+
+1. Pesan → barang dikirim → CoA ikut dokumen → barang tiba di gudang → periksa CoA → temukan di luar spec → **terlambat menolak**
+
+**Perbedaannya:** 5 menit memeriksa CoA SEBELUM barang naik kapal dapat menghindari biaya penanganan lot off-spec — termasuk biaya kirim kembali, waktu negosiasi claim dengan trader, dan waste dari trial produksi yang gagal.
+
+*Ingin verifikasi CoA otomatis? Kami sedang membangun alat perbandingan CoA-TDS — [daftar untuk akses awal →](/id/inquiry)*
+
+## Tabel Pemeriksaan CoA vs. TDS — Gunakan untuk Setiap Lot
+
+Gunakan tabel ini setiap kali menerima CoA dari trader:
+
+| Parameter | Nilai pada TDS | Nilai pada CoA | Selisih | Dalam toleransi? |
+|---|---|---|---|---|
+| MFI (g/10min) | ___ | ___ | ___% | Lulus / Gagal |
+| Density (g/cm3) | ___ | ___ | ___ | Lulus / Gagal |
+| Isotactic Index (%) | ___ | ___ | ___ | Lulus / Gagal |
+| ESCR (jam) | ___ | ___ | ___ | Lulus / Gagal |
+| Ash Content (%) | ___ | ___ | ___ | Lulus / Gagal |
+| **Nama pabrik pada CoA** | | ___ | Cocok PO? | Lulus / Gagal |
+| **Tanggal produksi** | | ___ | Di bawah 6 bulan? | Lulus / Gagal |
+
+**Jika ada kolom yang Gagal:** Hubungi trader SEBELUM konfirmasi pengiriman. Minta lot pengganti atau negosiasi kondisi.
+
+## Pertanyaan yang Sering Diajukan
+
+### CoA bisa dipalsukan?
+Bisa — ini risiko nyata, terutama saat membeli melalui trader kecil. Cara mengurangi risiko: (1) minta CoA dengan logo dan cap produsen, bukan hanya logo trader; (2) bandingkan format CoA dengan contoh CoA produsen yang sudah dikenal; (3) periksa lot pertama dari sumber baru di laboratorium independen.
+
+### CoA dan TDS menggunakan metode uji yang sama?
+Seharusnya — keduanya harus mereferensikan standar yang sama (ASTM D1238 untuk MFI, ASTM D1505 untuk density). Jika CoA mencantumkan metode uji berbeda (misalnya ISO bukan ASTM), hasil bisa sedikit berbeda karena kondisi uji berbeda. Periksa metode uji sebelum membandingkan angka.
+
+### Trader tidak mau kasih CoA sebelum kirim barang — harus bagaimana?
+Ini tanda peringatan. Trader profesional selalu punya CoA sebelum muat kontainer karena CoA diterbitkan saat lot keluar dari pabrik produsen. Jika trader bilang "CoA baru ada setelah barang sampai," mereka mungkin membeli dari stok lama yang tidak jelas asal-usulnya. Meminta CoA adalah prasyarat — jika trader menolak, cari trader lain.
+
+### Variasi MFI antar lot Tiongkok normalnya berapa?
+Produsen naphtha (Sinopec, PetroChina): +/-5-8% dalam pabrik yang sama, +/-10-15% antar pabrik. Produsen CTO: bisa lebih lebar. Produsen Korea/Jepang: +/-5%. Jika CoA menunjukkan MFI berbeda lebih dari 15% dari TDS, itu bukan variasi normal — itu lot off-spec.
+
+### Harus simpan CoA berapa lama?
+Minimal 12 bulan — atau lebih lama jika produk akhir ada garansi. CoA adalah bukti kualitas bahan baku jika ada klaim dari pelanggan. Simpan bersama: nomor PO, nama trader, tanggal terima barang, hasil trial produksi.
+
+---
+
+### Artikel Terkait
+
+- [Panduan Impor HDPE dan LLDPE dari Tiongkok ke Indonesia](/id/insights/panduan-impor-hdpe-lldpe-dari-china-indonesia)
+- [Tarif ACFTA, Form E dan Biaya Landed](/id/insights/acfta-tariffs-form-e-landed-cost-guide)
+- [Panduan Produsen Polimer Tiongkok](/id/insights/china-polymer-producers-guide)
+- [LLDPE Tiongkok: Pilih Grade untuk Film](/id/insights/lldpe-tiongkok-7042-metallocene-pilih-grade)
+
+---
+
+*Analisis ini mencerminkan praktik QC dalam impor polimer Tiongkok per Q2 2026. Untuk bantuan verifikasi CoA atau mencari sumber resin dengan CoA lengkap, [beri tahu kami kebutuhan Anda](/id/inquiry).*
+
+*[Daftar update harga harian →](/id/polymer-compass)*

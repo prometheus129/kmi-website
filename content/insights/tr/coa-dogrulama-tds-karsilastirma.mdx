@@ -1,0 +1,139 @@
+---
+title: "CoA Dogrulama: TDS ile Karsilastirma ve Spec Disi Lot Tespiti"
+date: "2026-04-16"
+description: "CoA lot bazinda gercek verilerdir, TDS nominal degerlerdir. MFI farki %15'ten fazlaysa = spec disi. Konteyner gemiye binmeden once nasil kontrol edilir."
+author: "Kantor Materials Research"
+tags: ["coa", "tds", "dogrulama", "hammadde", "mfi", "kalite-kontrol", "cin", "ithalat", "turkiye"]
+---
+
+> **Ozet:** CoA (Certificate of Analysis) lot bazinda gercek verilerdir. TDS (Technical Data Sheet) grade'in nominal degerleridir. CoA uzerindeki MFI, TDS'den %15'ten fazla farkliysa, spec disi mal aliyorsunuz demektir. Kontrol yontemi ve konteyner gemiye binmeden once ne zaman reddetmeniz gerektigi asagidadir.
+
+## Neden Lot Dogru Grade Gorunuyor Ama Yanlis Calisiyor?
+
+PP T30S konteyneri Istanbul'daki deponuza ulasti. Cuval etiketi dogru. Uretici adi dogru. Ama dokuma hattinda calistirildiginda, tape surekli kopuyor. CoA'yi kontrol ediyorsunuz: MFI 2,1 g/10min. T30S'in TDS'i nominal MFI 3,0 diyor. Fark %30.
+
+Sorun sahte mal degil. Sorun bu lotun uygulamaniz icin spec araliginin disinda olmasi — ve kimsenin mal cikmadan once CoA'yi kontrol etmemesi.
+
+Bu, polimer ithalatindaki en yaygin hatadir: **CoA almak ama TDS ile karsilastirmamak.** Veya daha kotusu: **mal depoya gelene kadar CoA almamak.**
+
+## TDS ile CoA Arasindaki Fark Nedir?
+
+| | TDS (Technical Data Sheet) | CoA (Certificate of Analysis) |
+|---|---|---|
+| **Kim verir** | Uretici (Sinopec, PetroChina, Hengli...) | Ureticinin QC bolumu veya bagimsiz laboratuvar |
+| **Icerigi** | Grade'in nominal / tipik degerleri | Belirli lotun gercek olcum degerleri |
+| **Guncelleme sikligi** | Nadiren (birkac yilda bir) | Her uretim lotu (batch) |
+| **TDS'deki MFI** | "Tipik deger: 3,0 g/10min" | "Batch #20260412-A: MFI 2,8 g/10min" |
+| **Amaci** | Grade'in uygulamaya uygun olup olmadigini belirlemek | Belirli lotun spec icinde olup olmadigini dogrulamak |
+
+**Basitce:** TDS menu'dur — yemegin nasil gorunmesi gerektigini soyler. CoA kalite denetim raporudur — yemegin bugun gercekte ne icerdigini soyler.
+
+## CoA'da En Onemli 5 Parametre Hangisi?
+
+CoA'daki her parametre esit onemlde degildir. Islem uzerindeki etkisine gore siralanan oncelikli 5 parametre:
+
+### 1. MFI (Melt Flow Index) — En Onemli
+
+**Neden:** MFI, polimerin uretim hattindaki akis davranisini dogrudan kontrol eder. Yanlis MFI = yanlis hiz, yanlis basinc, yanlis urun kalitesi.
+
+**Kontrol yontemi:**
+- CoA'da MFI degerini bulun (genellikle "MFR" veya "MI" veya "Melt Index" olarak yazilir)
+- TDS'deki nominal degerle karsilastirin
+- **Kabul edilebilir tolerans:** Cin fabrikalari arasinda +/-%10-15 (KMI grade-equivalency veritabanindan). Kore/Japonya: +/-%5. +/-%15'i asmasi = yeniden degerlendirme veya reddetme gerektirir
+
+| Ornek | TDS | CoA | Fark | Degerlendirme |
+|---|---|---|---|---|
+| PP T30S lot 1 | 3,0 | 2,8 | -%7 | Kabul edilebilir |
+| PP T30S lot 2 | 3,0 | 2,1 | -%30 | Spec disi — reddedin veya indirim talep edin |
+| LLDPE 7042 | 2,0 | 2,3 | +%15 | Sinirda — taahhut etmeden once deneme yapin |
+| HDPE 5000S | 0,28 | 0,35 | +%25 | Spec disi — parison'u etkiler |
+
+### 2. Yogunluk (Density)
+
+**Neden:** Dogru polimer turunu aldiginizi dogrular. HDPE (0,94-0,96) vs. LLDPE (0,91-0,93) — density yanlissa, yanlis grade almissiniz.
+
+**Kontrol yontemi:** CoA vs. TDS karsilastirin. Tolerans: +/-0,003 g/cm3. Aralik disinda = yanlis grade.
+
+### 3. Isotaktik Indeks (yalnizca PP icin)
+
+**Neden:** Isotaktik indeks kristallenme ve urun mukavemetini etkiler. PP dokuma cuval T30S icin ozellikle onemlidir.
+
+**Kontrol yontemi:** CoA, standart dokuma cuval uygulamalari icin %96 ve uzeri, FIBC icin %97 ve uzeri gostermelidir. Daha dusuk = zayif lif.
+
+### 4. ESCR (HDPE sisme kaliplama icin)
+
+**Neden:** ESCR, sise/bidondaki gerilme catlamasina direnci dogrular. 5502GA (ESCR 20h) vs. 5502AA (ESCR 500 saatten fazla) — yanlis grade = sise catlar.
+
+**Kontrol yontemi:** CoA, kimyasal sisme kaliplama uygulamalari icin ESCR 500 saatten fazla gostermelidir. 100 saatin altinda = enjeksiyon kaliplama grade'i almissiniz.
+
+### 5. Kul Icerigi / Nem
+
+**Neden:** Yuksek kul (%0,05'ten fazla) CTO kaynagini veya kontaminasyonu isaret eder. Yuksek nem (%0,2'den fazla) urunde hava kabarciklarına neden olur.
+
+**Kontrol yontemi:** TDS spec ile karsilastirin. Ayni ureticiden onceki lotla karsilastirildiginda kul icerigi belirgin sekilde yuksekse, trader'a lotun kaynagini sorun.
+
+## Ne Zaman CoA Istenmeli — Ve Ne Zaman Lot Reddedilmeli?
+
+### Dogru prosedur (mal gemiye binmeden once):
+
+1. **PO dogrulama** → trader grade, uretici, belirli fabrikayi dogrular
+2. **Gonderimden once CoA isteyin** → trader CoA scan gonderir
+3. **5 oncelikli parametreyi TDS ile karsilastirin** → hepsi tolerans icindeyse: gonderimi onaylayin
+4. **Spec disiysa:** baska lot isteyin veya off-spec lot icin indirim gorusun
+5. **Mal cikar** → belge setiyle birlikte orijinal CoA'yi alin (B/L, Form E, fatura)
+
+### Yanlis prosedur (yaygin):
+
+1. Siparis → mal cikar → CoA belgelerle birlikte gelir → mal depoya ulasir → CoA kontrol → spec disi → **reddetmek icin cok gec**
+
+**Fark:** Mal gemiye binmeden ONCE 5 dakikalik CoA kontrolu, off-spec lot yonetim maliyetlerinden kacınmanizi saglar — geri gonderim ucreti, trader ile claim muzakeresi suresi ve basarisiz uretim denemesi israfı dahil.
+
+*Otomatik CoA dogrulama mi istiyorsunuz? CoA-TDS karsilastirma araci olusturuyoruz — [erken erisim icin kaydolun →](/tr/inquiry)*
+
+## CoA vs. TDS Kontrol Tablosu — Her Lot Icin Kullanin
+
+Trader'dan CoA aldiginizda bu tabloyu kullanin:
+
+| Parametre | TDS'deki deger | CoA'daki deger | Fark | Tolerans icinde mi? |
+|---|---|---|---|---|
+| MFI (g/10min) | ___ | ___ | ___%  | Gecti / Kaldi |
+| Density (g/cm3) | ___ | ___ | ___ | Gecti / Kaldi |
+| Isotaktik Indeks (%) | ___ | ___ | ___ | Gecti / Kaldi |
+| ESCR (saat) | ___ | ___ | ___ | Gecti / Kaldi |
+| Kul Icerigi (%) | ___ | ___ | ___ | Gecti / Kaldi |
+| **CoA'daki fabrika adi** | | ___ | PO ile uyumlu mu? | Gecti / Kaldi |
+| **Uretim tarihi** | | ___ | 6 aydan az mi? | Gecti / Kaldi |
+
+**Herhangi bir hucre Kaldi ise:** Gonderimi onaylamadan ONCE trader ile iletisime gecin. Yedek lot isteyin veya kosullari muzakere edin.
+
+## Sikca Sorulan Sorular
+
+### CoA sahte olabilir mi?
+Evet — bu ozellikle kucuk tuccalardan satin alirken gercek bir risktir. Riski azaltma yollari: (1) sadece trader logosu degil, uretici logosu ve muhru olan CoA isteyin; (2) CoA formatini bilinen uretici ornekleriyle karsilastirin; (3) yeni kaynaktan ilk lotu bagimsiz laboratuvarda test ettirin.
+
+### CoA ve TDS ayni test yontemini mi kullanir?
+Kullanmalidir — ikisi de ayni standartlara referans vermeli (MFI icin ASTM D1238, density icin ASTM D1505). CoA farkli test yontemi belirtiyorsa (ornegin ASTM yerine ISO), farkli test kosullari nedeniyle sonuclar biraz farkli olabilir. Sayilari karsilastirmadan once test yontemini kontrol edin.
+
+### Trader gonderimden once CoA vermiyorsa ne yapilmali?
+Bu bir uyari isaretidir. Profesyonel traderlar konteyneri yuklemeden once her zaman CoA'ya sahiptir cunku CoA lot uretim tesisinden ciktiginda verilir. Trader "CoA ancak mal ulastiktan sonra verilir" diyorsa, kaynagi belirsiz eski stoktan aliyor olabilir. CoA istemek on kosuldur — trader reddederse, baska trader bulun.
+
+### Cin lotlari arasinda normal MFI varyasyonu ne kadar?
+Nafta ureticileri (Sinopec, PetroChina): ayni fabrika icinde +/-%5-8, fabrikalar arasi +/-%10-15. CTO ureticileri: daha genis olabilir. Kore/Japonya ureticileri: +/-%5. CoA, TDS'den %15'ten fazla farkli MFI gosteriyorsa, bu normal varyasyon degildir — bu off-spec lottur.
+
+### CoA'yi ne kadar sure saklamali?
+En az 12 ay — veya son urunun garantisi varsa daha uzun. CoA, musteriden sikayet gelmesi durumunda hammadde kalite kanıtıdır. Birlikte saklayin: PO numarasi, trader adi, mal teslim tarihi, uretim deneme sonuclari.
+
+---
+
+### Ilgili Yazilar
+
+- [Anti-Damping Vergisi: Plastik Hammadde Rehberi](/tr/insights/antidamping-vergisi-plastik-hammadde)
+- [Cin Polimer Ureticileri Rehberi](/tr/insights/china-polymer-producers-guide)
+- [Turkiye Ithalat Polimer Maliyet Hesaplayici](/tr/insights/turkey-chinese-polymer-landed-cost-calculator)
+- [Cin-Turkiye Polimer Grade Eslestirme Rehberi](/tr/insights/cin-petkim-polimer-grade-eslestirme-rehberi)
+
+---
+
+*Bu analiz, Q2 2026 itibarıyla Cin polimer ithalatinda QC uygulamalarini yansitmaktadir. CoA dogrulamasi veya eksiksiz CoA'li hammadde temini icin [ihtiyacinizi bize bildirin](/tr/inquiry).*
+
+*[Gunluk fiyat guncellemelerine abone olun →](/tr/polymer-compass)*
