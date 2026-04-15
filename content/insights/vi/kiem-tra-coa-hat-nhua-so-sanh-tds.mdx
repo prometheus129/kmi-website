@@ -1,0 +1,139 @@
+---
+title: "Kiem Tra COA Hat Nhua: Cach So Sanh Voi TDS Va Phat Hien Lo Hang Sai Spec"
+date: "2026-04-16"
+description: "CoA la du lieu thuc te cua lo hang, TDS la thong so danh nghia. MFI chenh hon 15% = ngoai spec. Cach kiem tra truoc khi container len tau."
+author: "Kantor Materials Research"
+tags: ["coa", "tds", "kiem-tra", "hat-nhua", "mfi", "quality-control", "trung-quoc", "nhap-khau"]
+---
+
+> **Tóm tắt:** CoA (Certificate of Analysis) là dữ liệu thực tế của lô hàng. TDS (Technical Data Sheet) là thông số danh nghĩa của grade. Nếu MFI trên CoA chênh hơn 15% so với TDS, bạn đang nhận hàng ngoài spec. Đây là cách kiểm tra — và biết khi nào cần từ chối trước khi container lên tàu.
+
+## Lô Hàng Trông Đúng Grade Nhưng Chạy Sai
+
+Container PP T30S về đến kho Bình Dương. Nhãn bao đúng. Tên nhà sản xuất đúng. Nhưng khi chạy trên dây chuyền kéo sợi, tape liên tục đứt. Bạn kiểm tra CoA: MFI 2.1 g/10min. TDS của T30S nói MFI danh nghĩa 3.0. Chênh lệch 30%.
+
+Vấn đề không phải hàng giả. Vấn đề là lô hàng này nằm ngoài cửa sổ spec cho ứng dụng của bạn — và không ai kiểm tra CoA trước khi hàng xuất.
+
+Đây là lỗi phổ biến nhất trong nhập khẩu polymer: **nhận CoA nhưng không so sánh với TDS.** Hoặc tệ hơn: **không nhận CoA cho đến khi hàng đã về kho.**
+
+## TDS và CoA Khác Nhau Như Thế Nào?
+
+| | TDS (Technical Data Sheet) | CoA (Certificate of Analysis) |
+|---|---|---|
+| **Ai phát hành** | Nhà sản xuất (Sinopec, PetroChina, Hengli...) | Phòng QC nhà sản xuất hoặc phòng thí nghiệm độc lập |
+| **Nội dung** | Giá trị danh nghĩa / điển hình của grade | Giá trị đo thực tế của lô hàng cụ thể |
+| **Tần suất cập nhật** | Hiếm khi (mỗi vài năm) | Mỗi lô sản xuất (batch) |
+| **MFI trên TDS** | "Giá trị điển hình: 3.0 g/10min" | "Batch #20260412-A: MFI 2.8 g/10min" |
+| **Mục đích** | Xác định grade có phù hợp cho ứng dụng không | Xác nhận lô hàng cụ thể có nằm trong spec không |
+
+**Một cách đơn giản:** TDS là menu — nó cho bạn biết món ăn nên trông như thế nào. CoA là hóa đơn kiểm tra chất lượng — nó cho bạn biết món ăn thực sự có gì hôm nay.
+
+## 5 Thông Số Cần Kiểm Tra Trên Mỗi CoA
+
+Không phải mọi thông số trên CoA đều quan trọng như nhau. Đây là 5 thông số ưu tiên kiểm tra — theo thứ tự ảnh hưởng đến gia công:
+
+### 1. MFI (Melt Flow Index) — Quan trọng nhất
+
+**Tại sao:** MFI kiểm soát trực tiếp hành vi chảy của polymer trên dây chuyền. Sai MFI = sai tốc độ, sai áp suất, sai chất lượng sản phẩm.
+
+**Cách kiểm tra:**
+- Tìm giá trị MFI trên CoA (thường ghi là "MFR" hoặc "MI" hoặc "Melt Index")
+- So sánh với giá trị danh nghĩa trên TDS
+- **Dung sai chấp nhận được:** +/-10% cho Sinopec/PetroChina naphtha-origin, +/-15% cho CTO-origin. Ngoài phạm vi này = cần đánh giá lại
+
+| Ví dụ | TDS | CoA | Chênh lệch | Đánh giá |
+|---|---|---|---|---|
+| PP T30S lô 1 | 3.0 | 2.8 | -7% | ✓ Chấp nhận được |
+| PP T30S lô 2 | 3.0 | 2.1 | -30% | ✗ Ngoài spec — từ chối hoặc yêu cầu giảm giá |
+| LLDPE 7042 | 2.0 | 2.3 | +15% | ⚠ Biên giới — chạy thử trước khi cam kết |
+| HDPE 5000S | 0.28 | 0.35 | +25% | ✗ Ngoài spec — ảnh hưởng parison |
+
+### 2. Khối Lượng Riêng (Density)
+
+**Tại sao:** Xác nhận bạn nhận đúng loại polymer. HDPE (0.94-0.96) vs. LLDPE (0.91-0.93) — nếu density sai, bạn nhận nhầm grade.
+
+**Cách kiểm tra:** So sánh CoA vs. TDS. Dung sai: +/-0.003 g/cm3. Ngoài phạm vi = nhầm grade.
+
+### 3. Chỉ Số Isotactic (cho PP chỉ)
+
+**Tại sao:** Isotactic index ảnh hưởng đến kết tinh và cường độ sản phẩm. Đặc biệt quan trọng cho [PP dệt bao T30S](/vi/insights/so-sanh-pp-t30s-sinopec-hengli-cnpc-det-bao-bi).
+
+**Cách kiểm tra:** CoA nên ghi >=96% cho ứng dụng dệt bao thông thường, >=97% cho FIBC. Thấp hơn = sợi yếu.
+
+### 4. ESCR (cho HDPE thổi khuôn)
+
+**Tại sao:** ESCR xác nhận chai/can chống nứt ứng suất. [5502GA (ESCR 20h) vs. 5502AA (ESCR >500h)](/vi/insights/so-sanh-hdpe-5000s-5502-7260-thoi-khuon-chon-grade) — nhầm grade = chai nứt.
+
+**Cách kiểm tra:** CoA phải ghi ESCR >500h cho ứng dụng thổi khuôn hóa chất. Dưới 100h = bạn nhận nhầm grade ép phun.
+
+### 5. Hàm Lượng Tro / Độ Ẩm
+
+**Tại sao:** Tro cao (>0.05%) gợi ý nguồn CTO hoặc nhiễm bẩn. Độ ẩm cao (>0.2%) gây bọt khí trong sản phẩm.
+
+**Cách kiểm tra:** So sánh với TDS spec. Nếu hàm lượng tro cao hơn rõ rệt so với lô trước từ cùng nhà sản xuất, hỏi trader về nguồn gốc lô hàng.
+
+## Khi Nào Yêu Cầu CoA — Và Khi Nào Từ Chối Lô Hàng
+
+### Quy trình đúng (trước khi hàng lên tàu):
+
+1. **Xác nhận PO** → trader xác nhận grade, nhà sản xuất, nhà máy cụ thể
+2. **Yêu cầu CoA trước khi xuất hàng** → trader gửi CoA scan
+3. **So sánh 5 thông số ưu tiên vs. TDS** → nếu tất cả trong dung sai: xác nhận xuất hàng
+4. **Nếu ngoài spec:** yêu cầu lô khác, hoặc đàm phán giảm giá cho lô off-spec
+5. **Hàng xuất** → nhận CoA bản gốc kèm bộ chứng từ (B/L, Form E, invoice)
+
+### Quy trình sai (phổ biến):
+
+1. Đặt hàng → hàng xuất → CoA đi kèm bộ chứng từ → hàng về kho → kiểm tra CoA → phát hiện ngoài spec → **quá muộn để từ chối**
+
+**Sự khác biệt:** 5 phút kiểm tra CoA TRƯỚC khi hàng lên tàu có thể tiết kiệm $5.000-15.000 (chi phí lô off-spec + phí vận chuyển + thời gian xử lý claim).
+
+*Muốn kiểm tra CoA tự động? Chúng tôi đang xây dựng công cụ so sánh CoA-TDS — [đăng ký để được thử nghiệm sớm →](/vi/inquiry)*
+
+## Bảng Kiểm Tra Nhanh: CoA vs. TDS
+
+Dùng bảng này mỗi khi nhận CoA từ trader:
+
+| Thông số | Giá trị trên TDS | Giá trị trên CoA | Chênh lệch | Trong dung sai? |
+|---|---|---|---|---|
+| MFI (g/10min) | ___ | ___ | ___% | ✓ / ✗ |
+| Density (g/cm3) | ___ | ___ | ___ | ✓ / ✗ |
+| Isotactic Index (%) | ___ | ___ | ___ | ✓ / ✗ |
+| ESCR (giờ) | ___ | ___ | ___ | ✓ / ✗ |
+| Ash Content (%) | ___ | ___ | ___ | ✓ / ✗ |
+| **Tên nhà máy trên CoA** | | ___ | Khớp PO? | ✓ / ✗ |
+| **Ngày sản xuất** | | ___ | Dưới 6 tháng? | ✓ / ✗ |
+
+**Nếu bất kỳ ô nào là ✗:** Liên hệ trader TRƯỚC khi xác nhận xuất hàng. Yêu cầu lô thay thế hoặc đàm phán điều kiện.
+
+## Câu Hỏi Thường Gặp
+
+### CoA có thể bị làm giả không?
+Có — đây là rủi ro thực tế, đặc biệt khi mua qua thương nhân nhỏ. Cách giảm thiểu: (1) yêu cầu CoA có logo và con dấu nhà sản xuất, không chỉ logo thương nhân; (2) so sánh format CoA với mẫu CoA của nhà sản xuất đã biết; (3) kiểm tra lô hàng đầu tiên từ nguồn mới tại phòng thí nghiệm độc lập.
+
+### CoA và TDS dùng cùng phương pháp thử nghiệm không?
+Nên — cả hai nên tham chiếu cùng tiêu chuẩn (ASTM D1238 cho MFI, ASTM D1505 cho density). Nếu CoA ghi phương pháp thử khác (ví dụ ISO thay vì ASTM), kết quả có thể hơi khác do điều kiện thử khác nhau. Kiểm tra phương pháp thử trước khi so sánh số.
+
+### Trader không cung cấp CoA trước khi xuất hàng — phải làm sao?
+Đây là dấu hiệu cảnh báo. Trader chuyên nghiệp luôn có CoA trước khi xếp hàng vì CoA được phát hành khi lô hàng rời nhà máy sản xuất. Nếu trader nói "CoA chỉ có sau khi hàng đến," họ có thể đang mua từ kho hàng tồn không rõ nguồn gốc. Yêu cầu CoA là điều kiện tiên quyết — nếu trader từ chối, tìm trader khác.
+
+### Biến động MFI bao nhiêu là bình thường giữa các lô Trung Quốc?
+Nhà sản xuất naphtha (Sinopec, PetroChina): +/-5-8% trong cùng nhà máy, +/-10-15% giữa các nhà máy. Nhà sản xuất CTO: có thể rộng hơn. Nhà sản xuất Hàn Quốc/Nhật Bản: +/-5%. Nếu CoA cho thấy MFI chênh hơn 15% so với TDS, đó không phải biến động bình thường — đó là lô off-spec.
+
+### Tôi nên lưu CoA bao lâu?
+Ít nhất 12 tháng — hoặc lâu hơn nếu sản phẩm cuối có bảo hành. CoA là bằng chứng chất lượng đầu vào nếu có khiếu nại từ khách hàng. Lưu kèm: số PO, tên trader, ngày nhận hàng, kết quả chạy thử sản xuất.
+
+---
+
+### Bài Viết Liên Quan
+
+- [So Sánh PP T30S: Sinopec vs. PetroChina vs. CTO](/vi/insights/so-sanh-pp-t30s-sinopec-hengli-cnpc-det-bao-bi)
+- [So Sánh HDPE 5000S vs. 5502 vs. 7260: Chọn Grade Nào?](/vi/insights/so-sanh-hdpe-5000s-5502-7260-thoi-khuon-chon-grade)
+- [Điều Kiện Thanh Toán: Từ 100% TT Đến 30/70](/vi/insights/dieu-kien-thanh-toan-nha-cung-cap-hat-nhua-trung-quoc)
+- [Thuế ACFTA, Form E & Chi Phí Đến Kho](/vi/insights/acfta-tariffs-form-e-landed-cost-guide)
+
+---
+
+*Phân tích này phản ánh thông lệ QC trong nhập khẩu polymer Trung Quốc tính đến Q2 2026. Để được hỗ trợ kiểm tra CoA hoặc tìm nguồn hạt nhựa có CoA đầy đủ, [cho chúng tôi biết bạn cần gì](/vi/inquiry).*
+
+*[Đăng ký cập nhật giá hàng ngày →](/vi/polymer-compass)*
