@@ -9,6 +9,8 @@ import { trackCTA } from "@/lib/tracking";
 const navLinks = [
   { label: "The Polymer Compass", href: "/polymer-compass" },
   { label: "Insights", href: "/insights" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Materials", href: "/materials" },
   { label: "About", href: "/approach" },
 ];
 
