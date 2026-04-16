@@ -7,7 +7,7 @@ import { trackCTA } from "@/lib/tracking";
 
 const stats = [
   { value: "135,000+", label: "grades characterized" },
-  { value: "20", label: "Documents in every polymer shipment" },
+  { value: "20", label: "Documents verified per shipment" },
   { value: "Daily", label: "FOB pricing. Landed costs on request." },
 ];
 
