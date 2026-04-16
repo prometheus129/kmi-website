@@ -1,3 +1,4 @@
+import Image from "next/image";
 import RevealDiv from "@/components/RevealDiv";
 
 const layers = [
@@ -42,8 +43,19 @@ const layers = [
 export default function ForDistributors() {
   return (
     <section className="bg-ticker-bg py-20 px-6 lg:px-10 relative overflow-hidden">
-      {/* Atmospheric texture */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, rgba(46,139,139,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(212,168,67,0.08) 0%, transparent 50%)" }} />
+      {/* Atmospheric warehouse texture */}
+      <div className="absolute inset-0 opacity-[0.04]">
+        <Image
+          src="/images/value-texture.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          style={{ objectPosition: "center 40%" }}
+          sizes="100vw"
+          quality={60}
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-ticker-bg/50 via-transparent to-ticker-bg/60" />
 
       <div className="max-w-[1100px] mx-auto relative z-10">
         <RevealDiv>

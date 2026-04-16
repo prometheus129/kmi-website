@@ -1,10 +1,25 @@
 import Link from "next/link";
+import Image from "next/image";
 import RevealDiv from "@/components/RevealDiv";
 
 export default function LaneCards() {
   return (
-    <section className="bg-navy-deep py-24 px-6 lg:px-10">
-      <div className="max-w-[1100px] mx-auto">
+    <section className="bg-navy-deep py-24 px-6 lg:px-10 relative overflow-hidden">
+      {/* Atmospheric industrial texture */}
+      <div className="absolute inset-0 opacity-[0.04]">
+        <Image
+          src="/images/hero-texture.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          style={{ objectPosition: "center 80%" }}
+          sizes="100vw"
+          quality={60}
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/50 via-transparent to-navy-deep/60" />
+
+      <div className="max-w-[1100px] mx-auto relative z-10">
         <RevealDiv>
           <div className="text-center mb-12">
             <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
