@@ -51,14 +51,14 @@ export default function ThreeTiers() {
         <RevealDiv>
           <div className="text-center mb-12">
             <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
-              WHAT YOU CAN DO
+              WHAT WE CAN DO
             </div>
             <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white leading-tight max-w-[800px] mx-auto">
-              Grade specs in minutes.
+              Grade Specs in Minutes.
               <br className="hidden sm:block" />
-              {" "}Document verification within the day.
+              {" "}Document Verification Within the Day.
               <br className="hidden sm:block" />
-              {" "}Full execution when you&apos;re ready.
+              {" "}Full Execution When You&apos;re Ready.
             </h2>
           </div>
         </RevealDiv>
