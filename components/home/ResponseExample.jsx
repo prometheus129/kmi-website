@@ -16,7 +16,7 @@ const domains = [
   },
   {
     label: "CURRENT PRICING",
-    content: "CFR Ho Chi Minh City: $1,020–1,065/MT (April 2026). Your current Korean source quotes $1,140/MT — a $75–120/MT spread on identical performance specs.",
+    content: "CFR Ho Chi Minh City: $1,020–1,065/MT (April 2026). Typical Korean-origin CFR: ~$1,140/MT — a $75–120/MT spread on identical performance specs.",
     accent: "border-teal",
   },
   {
