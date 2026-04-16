@@ -40,8 +40,9 @@ export default function HeroSection() {
             CHINA POLYMER PROCUREMENT
           </div>
           <h1 className="font-serif text-5xl lg:text-[66px] font-bold text-white leading-[1.08] mb-8">
-            Ask anything about China polymers.{" "}
-            <span className="block lg:inline">Get answers, not a callback.</span>
+            Ask about China-Origin Polymers.
+            <br />
+            Get Answers, Not a Call Back.
           </h1>
           <p className="font-sans text-lg lg:text-xl text-body-text leading-relaxed max-w-[640px] mx-auto mb-10">
             135,000 grades. Real-time pricing. Document verification against
