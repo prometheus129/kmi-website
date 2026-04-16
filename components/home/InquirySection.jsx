@@ -147,7 +147,7 @@ export default function InquirySection() {
               </div>
 
               {/* Destination + Company */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:items-end">
                 <div>
                   <label htmlFor="inq-destination" className={labelClasses}>
                     Destination country or port *
