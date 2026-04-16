@@ -2,19 +2,15 @@ import RevealDiv from "@/components/RevealDiv";
 
 const promises = [
   {
-    title: "We identify the strongest candidates.",
-    text: "When you submit a requirement, we search across tens of thousands of Chinese polymer grades and return the options that best match your specifications. Not one supplier\u2019s recommendation \u2014 the broader market, filtered by technical fit.",
+    title: "We match grades. We don\u2019t guarantee production outcomes.",
+    text: "A spec match is not a production guarantee. Processing behavior, batch consistency, and downstream quality depend on your equipment and conditions. We provide the data. You make the decision.",
   },
   {
-    title: "We provide complete technical data.",
-    text: "Every candidate grade comes with published specifications, and where available, Certificate of Analysis history and compliance documentation. You make the decision with full information, not partial data.",
+    title: "We verify documents. We don\u2019t eliminate customs risk.",
+    text: "We check for HS code mismatches, Form E errors, and cross-document inconsistencies before shipping. But customs authorities make final decisions, and regulations change without notice.",
   },
   {
-    title: "We support you through qualification.",
-    text: "Grade changes require testing \u2014 desktop screening, lab analysis, process trials. We help structure the evaluation, provide reference data from prior shipments, and source trial quantities when you\u2019re ready to test.",
-  },
-  {
-    title: "We are honest about what we don\u2019t know.",
+    title: "We tell you when we don\u2019t know.",
     text: "If we haven\u2019t shipped a grade before, we say so. If a spec match looks marginal, we flag it. If the pricing doesn\u2019t justify the switching cost, we\u2019ll tell you that too.",
   },
 ];
@@ -37,14 +33,9 @@ export default function HonestySection() {
                 <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white mb-6 leading-tight">
                   What we don&apos;t promise
                 </h2>
-                <p className="font-sans text-base text-body-text leading-relaxed mb-4">
-                  That&apos;s what we search. Here&apos;s what we can&apos;t
-                  guarantee: a datasheet match is not a production guarantee.
-                </p>
                 <p className="font-sans text-base text-body-text leading-relaxed">
-                  Processing behavior, batch consistency, and downstream quality
-                  depend on variables no database can fully predict — ours
-                  included.
+                  We do three things: match grades, verify documents, and manage
+                  execution. Here is what each one cannot guarantee.
                 </p>
               </div>
             </RevealDiv>
@@ -52,12 +43,6 @@ export default function HonestySection() {
 
           {/* Right column — the four promise blocks */}
           <div className="lg:col-span-8">
-            <RevealDiv delay={100}>
-              <p className="font-sans text-base text-body-text leading-relaxed mb-8 lg:mb-10">
-                Here is what we do:
-              </p>
-            </RevealDiv>
-
             <div className="space-y-8">
               {promises.map((p, i) => (
                 <RevealDiv key={i} delay={150 + i * 80}>

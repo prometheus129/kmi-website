@@ -38,21 +38,23 @@ const domains = [
 
 export default function ResponseExample() {
   return (
-    <section className="bg-ticker-bg py-20 px-6 lg:px-10 relative overflow-hidden">
+    <section id="response-example" className="bg-ticker-bg py-20 px-6 lg:px-10 relative overflow-hidden scroll-mt-24">
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle at 30% 70%, rgba(46,139,139,0.15) 0%, transparent 50%)" }} />
 
       <div className="max-w-[1100px] mx-auto relative z-10">
         <RevealDiv>
           <div className="text-center mb-12">
             <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
-              WHAT IT LOOKS LIKE
+              SEE IT IN ACTION
             </div>
             <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white leading-tight mb-6">
               One question. One answer.
             </h2>
             <p className="font-sans text-base text-body-text leading-relaxed max-w-[600px] mx-auto">
-              A distributor in Vietnam asked for HDPE pipe grade alternatives
-              to their current Korean supplier. Here is what we sent back.
+              A distributor in Vietnam asked about HDPE pipe grade alternatives.
+              Three matched grades, current CFR pricing, freight and landed cost,
+              documentation status, and quality notes &mdash; returned in one
+              response.
             </p>
           </div>
         </RevealDiv>
@@ -96,14 +98,33 @@ export default function ResponseExample() {
           </div>
         </RevealDiv>
 
+        {/* Document verification mini-example */}
+        <RevealDiv delay={150}>
+          <div className="bg-white/[0.02] border border-white/[0.06] rounded-lg p-6 max-w-[900px] mx-auto mt-6">
+            <p className="font-sans text-sm text-body-text leading-relaxed">
+              <span className="font-bold text-white">Document check:</span>{" "}
+              The same buyer forwarded a Form E for review. We flagged:
+              &ldquo;HS code shows 3901.10 (LDPE) but CoA density of 0.954
+              classifies as 3901.20 (HDPE). This will be rejected at Vietnam
+              customs. Request correction from CCPIT &mdash; takes 2&ndash;3
+              business days. Your vessel loads Thursday.&rdquo;
+            </p>
+            <p className="font-sans text-xs text-muted italic mt-3">
+              Illustrative example based on typical distributor interactions.
+              Specific grades, prices, and routes reflect representative market
+              conditions.
+            </p>
+          </div>
+        </RevealDiv>
+
         {/* CTA below example */}
-        <RevealDiv delay={200}>
+        <RevealDiv delay={250}>
           <div className="text-center mt-10">
             <a
               href="#inquiry"
               className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-base tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-150"
             >
-              Tell us what you need
+              Send us a question
             </a>
           </div>
         </RevealDiv>

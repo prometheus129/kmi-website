@@ -1,30 +1,30 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/home/HeroSection";
-import AssistantTeaser from "@/components/home/AssistantTeaser";
-import CapabilityCards from "@/components/home/CapabilityCards";
+import ThreeTiers from "@/components/home/ThreeTiers";
 import ResponseExample from "@/components/home/ResponseExample";
+import KnowledgeSection from "@/components/home/KnowledgeSection";
+import ExperienceDelta from "@/components/home/ExperienceDelta";
 import TPCPreview from "@/components/home/TPCPreview";
 import HonestySection from "@/components/home/HonestySection";
-import ForDistributors from "@/components/home/ForDistributors";
 import TrustSection from "@/components/home/TrustSection";
-import InquirySection from "@/components/home/InquirySection";
+import ConversationSection from "@/components/home/ConversationSection";
 import JsonLd, { organizationSchema, websiteSchema } from "@/components/JsonLd";
 import { getAllIssues } from "@/lib/terminal";
 
 export const metadata = {
-  title: "Kantor Materials International — Polymer Procurement Intelligence",
+  title: "Kantor Materials International — China Polymer Procurement",
   description:
-    "Matched grades, current pricing, and documentation — in one answer. Free procurement intelligence for polymer distributors and converters.",
+    "135,000 grades. Real-time pricing. Document verification against actual customs requirements. Free to ask. On WhatsApp.",
   openGraph: {
-    title: "Kantor Materials International — Polymer Procurement Intelligence",
+    title: "Kantor Materials International — China Polymer Procurement",
     description:
-      "Matched grades, current pricing, and documentation — in one answer. Free procurement intelligence for polymer distributors across emerging markets.",
+      "Ask anything about China polymers. Get answers, not a callback. Free procurement intelligence for polymer distributors and converters.",
   },
   twitter: {
-    title: "Kantor Materials International — Polymer Procurement Intelligence",
+    title: "Kantor Materials International — China Polymer Procurement",
     description:
-      "Matched grades, current pricing, documentation. In one answer. Free for polymer distributors and converters.",
+      "Ask anything about China polymers. Get answers, not a callback. 135,000 grades characterized. Free to ask.",
   },
   alternates: { canonical: "/" },
 };
@@ -40,14 +40,14 @@ export default function HomePage() {
       <Nav />
       <main id="main">
         <HeroSection />
-        <AssistantTeaser />
-        <CapabilityCards />
+        <ThreeTiers />
         <ResponseExample />
+        <KnowledgeSection />
+        <ExperienceDelta />
         <TPCPreview latestIssue={latestIssue} />
         <HonestySection />
-        <ForDistributors />
         <TrustSection />
-        <InquirySection />
+        <ConversationSection />
       </main>
       <Footer />
     </div>

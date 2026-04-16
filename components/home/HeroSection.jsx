@@ -6,7 +6,7 @@ import TradeCorridorMap from "@/components/home/TradeCorridorMap";
 import { trackCTA } from "@/lib/tracking";
 
 const stats = [
-  { value: "134,000+", label: "Product specifications indexed" },
+  { value: "135,000+", label: "grades characterized" },
   { value: "20", label: "Documents in every polymer shipment" },
   { value: "Daily", label: "FOB pricing from China's export market" },
 ];
@@ -37,34 +37,33 @@ export default function HeroSection() {
       <div className="max-w-[1100px] mx-auto relative z-10 text-center w-full py-24 lg:py-24">
         <div className="animate-[hero-fade-in_0.5s_ease-out_both]">
           <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-8">
-            POLYMER PROCUREMENT
+            CHINA POLYMER PROCUREMENT
           </div>
           <h1 className="font-serif text-5xl lg:text-[66px] font-bold text-white leading-[1.08] mb-8">
-            Matched Grades. Landed Costs. Documentation. In One Answer.
+            Ask anything about China polymers.{" "}
+            <span className="block lg:inline">Get answers, not a callback.</span>
           </h1>
           <p className="font-sans text-lg lg:text-xl text-body-text leading-relaxed max-w-[640px] mx-auto mb-10">
-            Describe what you need — grade, specs, destination. We respond with
-            matched candidates, current CFR pricing, freight to your port, and
-            the documentation your customs broker requires. One inquiry. One
-            complete answer.
+            135,000 grades. Real-time pricing. Document verification against
+            actual customs requirements. Free to ask. On WhatsApp.
           </p>
 
           {/* CTA cluster */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-10">
             <a
               href="#inquiry"
-              onClick={() => trackCTA("cta_click", "Tell Us What You Need", "#inquiry")}
+              onClick={() => trackCTA("cta_click", "Send Us A Question", "#inquiry")}
               className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-base tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-150"
             >
-              Tell us what you need
+              Send us a question
             </a>
-            <Link
-              href="#inquiry"
-              onClick={() => trackCTA("cta_click", "Try One Container", "#inquiry")}
+            <a
+              href="#response-example"
+              onClick={() => trackCTA("cta_click", "See What An Answer Looks Like", "#response-example")}
               className="inline-flex items-center justify-center border border-white/[0.15] hover:border-teal/40 text-white font-sans font-medium text-base px-8 py-4 rounded-lg transition-all duration-150 hover:-translate-y-px"
             >
-              Try one container alongside your current supply
-            </Link>
+              See what an answer looks like
+            </a>
           </div>
 
           {/* Social proof stats — inline in hero */}

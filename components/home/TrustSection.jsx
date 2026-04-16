@@ -81,7 +81,13 @@ export default function TrustSection() {
           </div>
         </RevealDiv>
 
-        <RevealDiv delay={150}>
+        <RevealDiv delay={100}>
+          <p className="font-sans text-base text-white font-medium text-center mb-10">
+            Every response reviewed. Every order managed personally.
+          </p>
+        </RevealDiv>
+
+        <RevealDiv delay={200}>
           <div className="flex justify-center items-center gap-3 flex-wrap mb-12">
             {certifications.map((cert) => (
               <div
@@ -113,6 +119,12 @@ export default function TrustSection() {
               Tier 1 OEM clients supplied by our compounding operations
             </p>
           </div>
+        </RevealDiv>
+
+        <RevealDiv delay={450}>
+          <p className="font-sans text-sm text-muted text-center mt-6">
+            David Wu, founder &mdash; China-SE Asia polymer procurement.
+          </p>
         </RevealDiv>
       </div>
     </section>
