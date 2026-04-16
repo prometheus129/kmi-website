@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import RevealDiv from "@/components/RevealDiv";
 import { trackCTA } from "@/lib/tracking";
 
@@ -24,6 +25,19 @@ export default function TPCPreview({ latestIssue }) {
 
   return (
     <section className="bg-navy py-20 px-6 lg:px-10 relative overflow-hidden">
+      {/* Atmospheric texture */}
+      <div className="absolute inset-0 opacity-[0.06]">
+        <Image
+          src="/images/terminal-texture.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          style={{ objectPosition: "center 60%" }}
+          sizes="100vw"
+          quality={60}
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-navy/40 via-transparent to-navy/50" />
       {/* Subtle gradient accents */}
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle at 80% 30%, rgba(46,139,139,0.2) 0%, transparent 50%)" }} />
 
