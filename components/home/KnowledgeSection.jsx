@@ -8,6 +8,11 @@ export default function KnowledgeSection() {
           <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
             WHY IT MATTERS
           </div>
+          <p className="font-sans text-base text-body-text leading-relaxed mb-10 max-w-[600px] mx-auto">
+            Every inquiry your team makes, every document verified, every grade
+            note and quality outcome — it stays. Your knowledge base builds with
+            every interaction.
+          </p>
           <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white leading-tight mb-10">
             What happens when your best person leaves?
           </h2>
