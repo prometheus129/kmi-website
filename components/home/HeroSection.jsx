@@ -8,7 +8,7 @@ import { trackCTA } from "@/lib/tracking";
 const stats = [
   { value: "135,000+", label: "grades characterized" },
   { value: "20", label: "Documents in every polymer shipment" },
-  { value: "Daily", label: "FOB pricing from China's export market" },
+  { value: "Daily", label: "FOB pricing. Landed costs on request." },
 ];
 
 export default function HeroSection() {
@@ -45,8 +45,8 @@ export default function HeroSection() {
             Get Answers, Not a Call Back.
           </h1>
           <p className="font-sans text-lg lg:text-xl text-body-text leading-relaxed max-w-[640px] mx-auto mb-10">
-            135,000 grades. Real-time pricing. Document verification against
-            actual customs requirements. Free to ask. On WhatsApp.
+            135,000 grades. Real-time pricing. Pre-shipment document checks.
+            Free to ask. On WhatsApp.
           </p>
 
           {/* CTA cluster */}

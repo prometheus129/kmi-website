@@ -16,9 +16,9 @@ const tiers = [
   },
   {
     title: "Verified Responses",
-    accent: "border-gold",
-    accentBg: "bg-gold/10",
-    accentText: "text-gold",
+    accent: "border-white/30",
+    accentBg: "bg-white/10",
+    accentText: "text-white/60",
     description:
       "Document verification against published specs and regulatory rules. Forward a CoA \u2014 we check every property against the TDS. Forward a Form E \u2014 we verify the HS code, FOB value, origin criterion. Landed cost builds with freight, duty, and compliance for your route.",
     examples: [
@@ -29,9 +29,9 @@ const tiers = [
   },
   {
     title: "Managed Execution",
-    accent: "border-gold/60",
-    accentBg: "bg-gold/[0.06]",
-    accentText: "text-gold/80",
+    accent: "border-gold",
+    accentBg: "bg-gold/10",
+    accentText: "text-gold",
     description:
       "When you\u2019re ready to source through us: merchant selection, QC coordination, documentation generated correctly at source, logistics, tracking, and issue resolution. Pay only when you order. No contract. No exclusivity.",
     examples: [],
