@@ -26,7 +26,7 @@ export default function TPCPreview({ latestIssue }) {
   return (
     <section className="bg-navy py-20 px-6 lg:px-10 relative overflow-hidden">
       {/* Atmospheric texture */}
-      <div className="absolute inset-0 opacity-[0.06]">
+      <div className="absolute inset-0 opacity-[0.05]">
         <Image
           src="/images/terminal-texture.jpg"
           alt=""
