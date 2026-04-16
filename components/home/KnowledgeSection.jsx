@@ -5,7 +5,7 @@ export default function KnowledgeSection() {
   return (
     <section className="bg-navy py-20 lg:py-24 px-6 lg:px-10 relative overflow-hidden">
       {/* Atmospheric texture */}
-      <div className="absolute inset-0 opacity-[0.05]">
+      <div className="absolute inset-0 opacity-[0.035]">
         <Image
           src="/images/value-texture.jpg"
           alt=""
