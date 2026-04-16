@@ -27,7 +27,7 @@ export default function TerminalPreview({ latestArticleHref = "/polymer-compass/
   return (
     <section className="bg-ticker-bg py-24 px-6 lg:px-10 relative overflow-hidden">
       {/* Atmospheric texture */}
-      <div className="absolute inset-0 opacity-[0.04]">
+      <div className="absolute inset-0 opacity-[0.08]">
         <Image
           src="/images/terminal-texture.jpg"
           alt=""
