@@ -36,6 +36,10 @@ export default function ExperienceDelta() {
             <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
               HOW IT WORKS
             </div>
+            <p className="font-sans text-base text-body-text leading-relaxed mb-6 max-w-[640px] mx-auto">
+              Everything your team asks, every document verified, every grade
+              note — it stays. No knowledge walks out the door.
+            </p>
             <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white leading-tight">
               Free for everyone.
             </h2>
