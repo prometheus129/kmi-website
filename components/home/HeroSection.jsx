@@ -36,13 +36,13 @@ export default function HeroSection() {
 
       <div className="max-w-[1100px] mx-auto relative z-10 text-center w-full py-24 lg:py-24">
         <div className="animate-[hero-fade-in_0.5s_ease-out_both]">
-          <div className="text-xs tracking-[4px] text-teal font-sans font-semibold mb-8">
+          <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-8">
             POLYMER PROCUREMENT
           </div>
           <h1 className="font-serif text-5xl lg:text-[66px] font-bold text-white leading-[1.08] mb-8">
             Matched Grades. Landed Costs. Documentation. In One Answer.
           </h1>
-          <p className="font-sans text-xl lg:text-2xl text-body-text leading-relaxed max-w-[680px] mx-auto mb-10">
+          <p className="font-sans text-lg lg:text-xl text-body-text leading-relaxed max-w-[640px] mx-auto mb-10">
             Describe what you need — grade, specs, destination. We respond with
             matched candidates, current CFR pricing, freight to your port, and
             the documentation your customs broker requires. One inquiry. One

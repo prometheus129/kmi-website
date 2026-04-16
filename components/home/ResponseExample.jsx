@@ -44,7 +44,7 @@ export default function ResponseExample() {
       <div className="max-w-[1100px] mx-auto relative z-10">
         <RevealDiv>
           <div className="text-center mb-12">
-            <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
+            <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
               WHAT IT LOOKS LIKE
             </div>
             <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white leading-tight mb-6">
@@ -59,12 +59,12 @@ export default function ResponseExample() {
 
         {/* The response card */}
         <RevealDiv delay={100}>
-          <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl overflow-hidden max-w-[900px] mx-auto">
+          <div className="bg-white/[0.02] border border-white/[0.08] rounded-xl overflow-hidden max-w-[900px] mx-auto">
             {/* Header bar */}
-            <div className="bg-white/[0.03] px-6 lg:px-8 py-4 border-b border-white/[0.06] flex items-center justify-between">
+            <div className="bg-white/[0.03] px-6 lg:px-8 py-4 border-b border-white/[0.08] flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-teal animate-pulse" />
-                <span className="font-mono text-[11px] tracking-[2px] text-teal font-semibold">
+                <span className="font-mono text-[11px] tracking-[3px] text-teal font-semibold">
                   FIVE-DOMAIN RESPONSE
                 </span>
               </div>
@@ -77,7 +77,7 @@ export default function ResponseExample() {
             <div className="divide-y divide-white/[0.04]">
               {domains.map((d, i) => (
                 <div key={i} className={`px-6 lg:px-8 py-5 border-l-[3px] ${d.accent}`}>
-                  <div className="font-mono text-[11px] tracking-[2px] text-muted font-semibold mb-2">
+                  <div className="font-mono text-[11px] tracking-[3px] text-muted font-semibold mb-2">
                     {d.label}
                   </div>
                   <p className="font-sans text-sm text-body-text leading-relaxed">
@@ -88,7 +88,7 @@ export default function ResponseExample() {
             </div>
 
             {/* Footer */}
-            <div className="bg-white/[0.03] px-6 lg:px-8 py-4 border-t border-white/[0.06]">
+            <div className="bg-white/[0.03] px-6 lg:px-8 py-4 border-t border-white/[0.08]">
               <p className="font-sans text-xs text-muted italic">
                 Illustrative example based on typical distributor inquiries. Specific grades, prices, and routes reflect representative market conditions.
               </p>

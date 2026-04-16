@@ -53,25 +53,25 @@ export default function InquirySection() {
   }
 
   const inputClasses =
-    "w-full px-4 py-3 rounded-lg border border-white/[0.10] bg-white/[0.04] font-sans text-sm text-white placeholder:text-muted focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal transition-colors duration-150";
+    "w-full px-4 py-3 rounded-lg border border-white/[0.08] bg-white/[0.04] font-sans text-sm text-white placeholder:text-muted focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal transition-colors duration-150";
   const labelClasses =
-    "block font-sans text-[11px] font-bold uppercase tracking-[2px] text-body-text mb-2";
+    "block font-sans text-[11px] font-bold uppercase tracking-[3px] text-body-text mb-2";
 
   return (
     <section
       id="inquiry"
-      className="bg-navy-deep py-20 lg:py-24 px-6 lg:px-10 scroll-mt-24"
+      className="bg-navy-deep py-24 px-6 lg:px-10 scroll-mt-24"
     >
-      <div className="max-w-[840px] mx-auto">
+      <div className="max-w-[640px] mx-auto">
         {/* Header copy */}
         <div className="text-center mb-12">
-          <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
+          <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
             GET STARTED
           </div>
           <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white mb-6 leading-tight">
             Start with one question
           </h2>
-          <p className="font-sans text-base text-body-text leading-relaxed max-w-[580px] mx-auto">
+          <p className="font-sans text-base text-body-text leading-relaxed max-w-[640px] mx-auto">
             You don&apos;t need to sign a contract, schedule a demo, or sit
             through a pitch deck. Tell us what you need — a polymer type, a
             grade, an application — and we&apos;ll show you what the broader
@@ -114,7 +114,7 @@ export default function InquirySection() {
           </div>
         ) : (
           /* ---- Form ---- */
-          <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 sm:p-8 lg:p-10">
+          <div className="bg-white/[0.02] border border-white/[0.08] rounded-xl p-6 sm:p-8 lg:p-10">
             <form onSubmit={handleSubmit} className="space-y-6">
               <input type="hidden" name="_formtype" value="requirement" />
 
@@ -208,7 +208,7 @@ export default function InquirySection() {
 
         {/* Secondary CTA */}
         {!submitted && (
-          <div className="mt-12 pt-8 border-t border-white/[0.06] text-center">
+          <div className="mt-12 pt-8 border-t border-white/[0.08] text-center">
             <p className="font-sans text-sm text-body-text mb-1">
               <Link
                 href="/polymer-compass#subscribe"

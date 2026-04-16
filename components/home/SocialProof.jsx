@@ -40,14 +40,14 @@ const stats = [
 
 export default function SocialProof() {
   return (
-    <section className="bg-navy py-12 px-6 lg:px-10 border-y border-white/[0.06]">
+    <section className="bg-navy py-12 px-6 lg:px-10 border-y border-white/[0.08]">
       <RevealDiv>
         <div className="max-w-[900px] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
           {stats.map((s, i) => (
             <div
               key={i}
               className={`text-center py-2 ${
-                i < 2 ? "sm:border-r sm:border-white/[0.06]" : ""
+                i < 2 ? "sm:border-r sm:border-white/[0.08]" : ""
               }`}
             >
               <div className="flex justify-center mb-3 text-teal/50">
@@ -59,7 +59,7 @@ export default function SocialProof() {
               >
                 {s.value}
               </div>
-              <div className="font-sans text-[11px] text-muted tracking-[2px] mt-2 font-semibold">
+              <div className="font-sans text-[11px] text-muted tracking-[3px] mt-2 font-semibold">
                 {s.label}
               </div>
             </div>

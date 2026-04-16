@@ -76,7 +76,7 @@ export default function CapabilityCards() {
       <div className="max-w-[1100px] mx-auto">
         <RevealDiv>
           <div className="text-center mb-12 lg:mb-16">
-            <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
+            <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
               WHAT YOU GET
             </div>
             <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white leading-tight">
@@ -89,7 +89,7 @@ export default function CapabilityCards() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
           {capabilities.slice(0, 3).map((cap, i) => (
             <RevealDiv key={i} delay={i * 100}>
-              <div className={`border-l-[3px] ${cap.accent} pl-6 pr-5 py-6 rounded-r-lg bg-white/[0.04] h-full hover:-translate-y-[3px] hover:bg-white/[0.07] transition-all duration-200`}>
+              <div className={`border-l-[3px] ${cap.accent} p-6 lg:p-8 rounded-r-lg bg-white/[0.04] h-full hover:-translate-y-[3px] hover:bg-white/[0.07] transition-all duration-200`}>
                 <div className={`w-10 h-10 rounded-lg border flex items-center justify-center mb-4 ${cap.iconBg} ${cap.iconColor}`}>
                   {cap.icon}
                 </div>
@@ -108,7 +108,7 @@ export default function CapabilityCards() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[740px] mx-auto">
           {capabilities.slice(3).map((cap, i) => (
             <RevealDiv key={i + 3} delay={(i + 3) * 100}>
-              <div className={`border-l-[3px] ${cap.accent} pl-6 pr-5 py-6 rounded-r-lg bg-white/[0.04] h-full hover:-translate-y-[3px] hover:bg-white/[0.07] transition-all duration-200`}>
+              <div className={`border-l-[3px] ${cap.accent} p-6 lg:p-8 rounded-r-lg bg-white/[0.04] h-full hover:-translate-y-[3px] hover:bg-white/[0.07] transition-all duration-200`}>
                 <div className={`w-10 h-10 rounded-lg border flex items-center justify-center mb-4 ${cap.iconBg} ${cap.iconColor}`}>
                   {cap.icon}
                 </div>

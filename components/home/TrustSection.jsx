@@ -49,20 +49,20 @@ const certifications = [
 
 export default function TrustSection() {
   return (
-    <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
+    <section className="bg-navy py-24 px-6 lg:px-10 relative overflow-hidden">
       {/* Subtle texture */}
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, rgba(46,139,139,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(212,168,67,0.08) 0%, transparent 50%)" }} />
 
       <div className="max-w-[1200px] mx-auto relative z-10">
         <RevealDiv>
           <div className="text-center mb-10">
-            <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
+            <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
               OUR OPERATIONS
             </div>
-            <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-3">
+            <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white mb-3">
               Validated by Production.
             </h2>
-            <p className="font-sans text-[15px] text-body-text max-w-[600px] mx-auto">
+            <p className="font-sans text-base text-body-text max-w-[640px] mx-auto">
               Our compounds are validated in our own production lines — over 2
               million finished goods manufactured annually using our materials.
             </p>
@@ -77,7 +77,7 @@ export default function TrustSection() {
                 className="flex items-center gap-2 px-3.5 py-2 border border-white/10 rounded-md bg-white/[0.03]"
               >
                 <span className="text-teal/60">{cert.icon}</span>
-                <span className="font-mono text-[10px] tracking-[1.5px] text-body-text">
+                <span className="font-mono text-[11px] tracking-[3px] text-body-text">
                   {cert.name}
                 </span>
               </div>

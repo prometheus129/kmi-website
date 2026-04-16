@@ -21,7 +21,7 @@ const promises = [
 
 export default function HonestySection() {
   return (
-    <section className="bg-navy py-20 lg:py-24 px-6 lg:px-10 relative overflow-hidden">
+    <section className="bg-navy py-24 px-6 lg:px-10 relative overflow-hidden">
       {/* Subtle texture */}
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, rgba(46,139,139,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(212,168,67,0.08) 0%, transparent 50%)" }} />
 
@@ -31,7 +31,7 @@ export default function HonestySection() {
           <div className="lg:col-span-4">
             <RevealDiv>
               <div className="lg:sticky lg:top-28">
-                <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
+                <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
                   OUR APPROACH
                 </div>
                 <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white mb-6 leading-tight">
@@ -61,7 +61,7 @@ export default function HonestySection() {
             <div className="space-y-8">
               {promises.map((p, i) => (
                 <RevealDiv key={i} delay={150 + i * 80}>
-                  <div className="border-l-2 border-teal/30 pl-6">
+                  <div className="border-l-[3px] border-teal/30 pl-6">
                     <h3 className="font-sans text-base font-bold text-white mb-2">
                       {p.title}
                     </h3>
@@ -74,7 +74,7 @@ export default function HonestySection() {
             </div>
 
             <RevealDiv delay={500}>
-              <p className="font-sans text-base text-body-text leading-relaxed mt-10 pt-8 border-t border-white/[0.06]">
+              <p className="font-sans text-base text-body-text leading-relaxed mt-10 pt-8 border-t border-white/[0.08]">
                 The gap between a datasheet and a production floor is real. Our
                 job is to close it with better information and the honesty to
                 tell you when we can&apos;t.

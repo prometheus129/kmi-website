@@ -41,10 +41,10 @@ export default function AssistantTeaser() {
 
       <RevealDiv>
         <div className="max-w-[640px] mx-auto text-center relative z-10">
-          <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
+          <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
             COMING MAY 2026
           </div>
-          <h3 className="font-serif text-2xl lg:text-3xl font-bold text-white leading-tight mb-4">
+          <h3 className="font-serif text-xl lg:text-2xl font-bold text-white leading-tight mb-4">
             Free procurement assistant for China-origin polymers
           </h3>
           <p className="font-sans text-base text-body-text leading-relaxed mb-6">
@@ -70,7 +70,7 @@ export default function AssistantTeaser() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Your email"
                   required
-                  className="flex-1 bg-white/[0.06] border border-white/[0.1] rounded-lg px-4 py-3 font-sans text-sm text-white placeholder:text-muted focus:outline-none focus:border-teal/40 transition-colors"
+                  className="flex-1 bg-white/[0.04] border border-white/[0.08] rounded-lg px-4 py-3 font-sans text-sm text-white placeholder:text-muted focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal transition-colors duration-150"
                 />
                 <button
                   type="submit"

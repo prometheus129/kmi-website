@@ -48,18 +48,18 @@ export default function ForDistributors() {
       <div className="max-w-[1100px] mx-auto relative z-10">
         <RevealDiv>
           <div className="text-center mb-6">
-            <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
+            <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
               FOR DISTRIBUTORS
             </div>
             <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white leading-tight mb-6">
               Built for distributors who source from China
             </h2>
-            <p className="font-sans text-xl text-body-text leading-normal max-w-[640px] mx-auto">
+            <p className="font-sans text-lg lg:text-xl text-body-text leading-normal max-w-[640px] mx-auto">
               You have the buyer relationships. We have the China market
               intelligence. Together, your business is more competitive.
             </p>
           </div>
-          <div className="max-w-[620px] mx-auto mb-16">
+          <div className="max-w-[640px] mx-auto mb-16">
             <p className="font-sans text-base text-body-text leading-relaxed text-center">
               You know your market, your buyers, and your regulations. What you
               may not have is a way to systematically search China&apos;s
@@ -80,9 +80,9 @@ export default function ForDistributors() {
           {layers.map((layer, i) => (
             <RevealDiv key={i} delay={i * 150}>
               <div
-                className={`border border-white/[0.06] ${layer.accent} rounded-lg p-6 lg:p-8 h-full ${layer.cardBg} ${layer.hoverBorder} hover:-translate-y-[3px] transition-all duration-200`}
+                className={`border border-white/[0.08] ${layer.accent} rounded-lg p-6 lg:p-8 h-full ${layer.cardBg} ${layer.hoverBorder} hover:-translate-y-[3px] transition-all duration-200`}
               >
-                <div className={`font-mono text-[11px] tracking-[2px] font-bold mb-4 ${layer.stepColor}`}>
+                <div className={`font-mono text-[11px] tracking-[3px] font-bold mb-4 ${layer.stepColor}`}>
                   {layer.step}
                 </div>
                 <h3 className="font-serif text-xl font-bold text-white mb-6">
@@ -91,7 +91,7 @@ export default function ForDistributors() {
 
                 <div className="space-y-4">
                   <div>
-                    <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-muted mb-2">
+                    <div className="font-sans text-[11px] font-bold uppercase tracking-[3px] text-muted mb-2">
                       What you get
                     </div>
                     <p className="font-sans text-sm text-body-text leading-relaxed">
@@ -99,7 +99,7 @@ export default function ForDistributors() {
                     </p>
                   </div>
                   <div>
-                    <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-muted mb-2">
+                    <div className="font-sans text-[11px] font-bold uppercase tracking-[3px] text-muted mb-2">
                       How it works
                     </div>
                     <p className="font-sans text-sm text-body-text leading-relaxed">
@@ -107,7 +107,7 @@ export default function ForDistributors() {
                     </p>
                   </div>
                   <div>
-                    <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-muted mb-2">
+                    <div className="font-sans text-[11px] font-bold uppercase tracking-[3px] text-muted mb-2">
                       Your cost
                     </div>
                     <p className={`font-sans text-sm font-semibold ${layer.costColor}`}>

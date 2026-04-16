@@ -39,7 +39,7 @@ const stats = [
 
 export default function StatsBar() {
   return (
-    <section className="bg-navy py-16 px-6 lg:px-10 relative overflow-hidden">
+    <section className="bg-navy py-12 px-6 lg:px-10 relative overflow-hidden">
       <RevealDiv>
         <div className="max-w-[900px] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 relative z-10">
           {stats.map((s, i) => (
@@ -58,7 +58,7 @@ export default function StatsBar() {
               >
                 {s.value}
               </div>
-              <div className="font-sans text-[13px] text-muted tracking-widest mt-2 font-medium">
+              <div className="font-sans text-xs text-muted tracking-wider mt-2 font-medium">
                 {s.label}
               </div>
             </div>
