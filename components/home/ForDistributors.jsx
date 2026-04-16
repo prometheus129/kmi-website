@@ -44,7 +44,7 @@ export default function ForDistributors() {
   return (
     <section className="bg-ticker-bg py-20 px-6 lg:px-10 relative overflow-hidden">
       {/* Atmospheric warehouse texture */}
-      <div className="absolute inset-0 opacity-[0.04]">
+      <div className="absolute inset-0 opacity-[0.08]">
         <Image
           src="/images/value-texture.jpg"
           alt=""

@@ -6,7 +6,7 @@ export default function LaneCards() {
   return (
     <section className="bg-navy-deep py-24 px-6 lg:px-10 relative overflow-hidden">
       {/* Atmospheric industrial texture */}
-      <div className="absolute inset-0 opacity-[0.04]">
+      <div className="absolute inset-0 opacity-[0.08]">
         <Image
           src="/images/hero-texture.jpg"
           alt=""

@@ -52,7 +52,7 @@ export default function TrustSection() {
   return (
     <section className="bg-navy py-24 px-6 lg:px-10 relative overflow-hidden">
       {/* Atmospheric manufacturing texture */}
-      <div className="absolute inset-0 opacity-[0.05]">
+      <div className="absolute inset-0 opacity-[0.09]">
         <Image
           src="/images/trust-texture.jpg"
           alt=""
