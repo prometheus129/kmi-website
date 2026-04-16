@@ -1,9 +1,24 @@
+import Image from "next/image";
 import RevealDiv from "@/components/RevealDiv";
 
 export default function KnowledgeSection() {
   return (
-    <section className="bg-navy py-20 lg:py-24 px-6 lg:px-10">
-      <div className="max-w-[700px] mx-auto text-center">
+    <section className="bg-navy py-20 lg:py-24 px-6 lg:px-10 relative overflow-hidden">
+      {/* Atmospheric texture */}
+      <div className="absolute inset-0 opacity-[0.05]">
+        <Image
+          src="/images/value-texture.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          style={{ objectPosition: "center 40%" }}
+          sizes="100vw"
+          quality={60}
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-navy/50 via-transparent to-navy/50" />
+
+      <div className="max-w-[700px] mx-auto text-center relative z-10">
         <RevealDiv>
           <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
             WHY IT MATTERS

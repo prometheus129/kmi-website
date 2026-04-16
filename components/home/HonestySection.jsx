@@ -1,3 +1,4 @@
+import Image from "next/image";
 import RevealDiv from "@/components/RevealDiv";
 
 const promises = [
@@ -18,7 +19,20 @@ const promises = [
 export default function HonestySection() {
   return (
     <section className="bg-navy-deep py-24 px-6 lg:px-10 relative overflow-hidden">
-      {/* Subtle texture */}
+      {/* Atmospheric texture */}
+      <div className="absolute inset-0 opacity-[0.05]">
+        <Image
+          src="/images/hero-texture.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          style={{ objectPosition: "center 30%" }}
+          sizes="100vw"
+          quality={60}
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/50 via-transparent to-navy-deep/60" />
+      {/* Subtle radial accents */}
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, rgba(46,139,139,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(212,168,67,0.08) 0%, transparent 50%)" }} />
 
       <div className="max-w-[1100px] mx-auto relative z-10">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import RevealDiv from "@/components/RevealDiv";
 
 const tiers = [
@@ -45,8 +46,21 @@ const tiers = [
 
 export default function ThreeTiers() {
   return (
-    <section className="bg-cards-bg py-20 px-6 lg:px-10">
-      <div className="max-w-[1100px] mx-auto">
+    <section className="bg-cards-bg py-20 px-6 lg:px-10 relative overflow-hidden">
+      {/* Atmospheric texture */}
+      <div className="absolute inset-0 opacity-[0.06]">
+        <Image
+          src="/images/terminal-texture.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+          quality={60}
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-cards-bg/40 via-transparent to-cards-bg/60" />
+
+      <div className="max-w-[1100px] mx-auto relative z-10">
         {/* Header */}
         <RevealDiv>
           <div className="text-center mb-12">
