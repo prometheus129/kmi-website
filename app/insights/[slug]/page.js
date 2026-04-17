@@ -5,10 +5,11 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
 import ArticleCTA from "@/components/insights/ArticleCTA";
+import AuthorBio from "@/components/insights/AuthorBio";
 import RelatedMaterials from "@/components/insights/RelatedMaterials";
 import { mdxComponents } from "@/components/insights/MDXComponents";
-import { getArticle, getAllSlugs, formatDate, getLocaleLabel, getInsightsPath } from "@/lib/insights";
-import JsonLd, { buildArticleSchema } from "@/components/JsonLd";
+import { getArticle, getAllSlugs, formatDate, getLocaleLabel, getLastUpdatedLabel, getInsightsPath } from "@/lib/insights";
+import JsonLd, { buildArticleSchema, buildFAQSchema, buildBreadcrumbSchema } from "@/components/JsonLd";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -59,6 +60,13 @@ export default async function InsightArticlePage({ params }) {
 
   const { frontmatter, content, translations } = article;
 
+  const faqSchema = buildFAQSchema(frontmatter.faq);
+  const breadcrumbSchema = buildBreadcrumbSchema({
+    title: frontmatter.title,
+    slug,
+    locale: "en",
+  });
+
   // Lane 2 / engineering / recycled articles → show related materials
   const lane2Slugs = [
     "engineering-polymer", "ul-reach-fda", "recycled-polymer", "ppwr-recycled",
@@ -75,11 +83,14 @@ export default async function InsightArticlePage({ params }) {
           title: frontmatter.title,
           description: frontmatter.description,
           date: frontmatter.date,
+          dateModified: frontmatter.dateModified,
           slug,
           author: frontmatter.author,
           locale: "en",
         })}
       />
+      <JsonLd data={breadcrumbSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
       <Nav />
 
       <article className="pt-36 pb-8 lg:pt-44 lg:pb-12 px-6 lg:px-10">
@@ -123,6 +134,9 @@ export default async function InsightArticlePage({ params }) {
               <span className="font-mono text-xs">
                 {formatDate(frontmatter.date, "en")}
               </span>
+              {frontmatter.dateModified && frontmatter.dateModified !== frontmatter.date && (
+                <span className="font-mono text-xs text-teal/70">· {getLastUpdatedLabel("en")} {formatDate(frontmatter.dateModified, "en")}</span>
+              )}
               <span className="text-white/20">|</span>
               <span>{frontmatter.author}</span>
               {translations.length > 0 && translations.map((loc) => (
@@ -174,6 +188,7 @@ export default async function InsightArticlePage({ params }) {
           )}
 
           {/* Article CTA */}
+          <AuthorBio locale="en" />
           <ArticleCTA locale="en" />
         </div>
       </article>

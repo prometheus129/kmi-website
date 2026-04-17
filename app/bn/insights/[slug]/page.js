@@ -5,9 +5,10 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
 import ArticleCTA from "@/components/insights/ArticleCTA";
+import AuthorBio from "@/components/insights/AuthorBio";
 import { mdxComponents } from "@/components/insights/MDXComponents";
-import { getArticle, getAllSlugs, formatDate, getLocaleLabel, getInsightsPath } from "@/lib/insights";
-import JsonLd, { buildArticleSchema } from "@/components/JsonLd";
+import { getArticle, getAllSlugs, formatDate, getLocaleLabel, getLastUpdatedLabel, getInsightsPath } from "@/lib/insights";
+import JsonLd, { buildArticleSchema, buildFAQSchema, buildBreadcrumbSchema } from "@/components/JsonLd";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -58,6 +59,13 @@ export default async function BnInsightArticlePage({ params }) {
 
   const { frontmatter, content, translations } = article;
 
+  const faqSchema = buildFAQSchema(frontmatter.faq);
+  const breadcrumbSchema = buildBreadcrumbSchema({
+    title: frontmatter.title,
+    slug,
+    locale: "bn",
+  });
+
   return (
     <div className="bg-navy min-h-screen text-white">
       <JsonLd
@@ -65,11 +73,14 @@ export default async function BnInsightArticlePage({ params }) {
           title: frontmatter.title,
           description: frontmatter.description,
           date: frontmatter.date,
+          dateModified: frontmatter.dateModified,
           slug,
           author: frontmatter.author,
           locale: "bn",
         })}
       />
+      <JsonLd data={breadcrumbSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
       <Nav />
 
       <article className="pt-36 pb-8 lg:pt-44 lg:pb-12 px-6 lg:px-10">
@@ -113,6 +124,9 @@ export default async function BnInsightArticlePage({ params }) {
               <span className="font-mono text-xs">
                 {formatDate(frontmatter.date, "bn")}
               </span>
+              {frontmatter.dateModified && frontmatter.dateModified !== frontmatter.date && (
+                <span className="font-mono text-xs text-teal/70">· {getLastUpdatedLabel("bn")} {formatDate(frontmatter.dateModified, "bn")}</span>
+              )}
               <span className="text-white/20">|</span>
               <span>{frontmatter.author}</span>
               {translations.length > 0 && translations.map((loc) => (
@@ -153,6 +167,8 @@ export default async function BnInsightArticlePage({ params }) {
           <div className="prose-kantor">
             <MDXRemote source={content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
           </div>
+
+          <AuthorBio locale="bn" />
 
           <ArticleCTA locale="bn" />
         </div>

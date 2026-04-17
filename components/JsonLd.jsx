@@ -142,13 +142,50 @@ export function buildFAQSchema(faq) {
 }
 
 /**
- * Build a BreadcrumbList schema for an insight article.
- * Path: Home > Insights (locale-aware label) > Article title
+ * Translated "Insights" breadcrumb label by locale.
+ * Matches the visual breadcrumb text in each locale's page route.
  */
-export function buildBreadcrumbSchema({ title, slug, locale = "en", insightsLabel = "Insights" }) {
+const INSIGHTS_LABELS = {
+  en: "Insights",
+  vi: "Phân tích",
+  tr: "Analiz",
+  id: "Analisis",
+  es: "Análisis",
+  pt: "Análise",
+  th: "วิเคราะห์",
+  bn: "বিশ্লেষণ",
+  ru: "Аналитика",
+  ar: "تحليلات",
+  fr: "Analyses",
+  ur: "تجزیات",
+};
+
+const HOME_LABELS = {
+  en: "Home",
+  vi: "Trang chủ",
+  tr: "Ana Sayfa",
+  id: "Beranda",
+  es: "Inicio",
+  pt: "Início",
+  th: "หน้าแรก",
+  bn: "হোম",
+  ru: "Главная",
+  ar: "الرئيسية",
+  fr: "Accueil",
+  ur: "مرکزی صفحہ",
+};
+
+/**
+ * Build a BreadcrumbList schema for an insight article.
+ * Path: Home > Insights (locale-aware label) > Article title.
+ * If insightsLabel is not provided, falls back to the locale default.
+ */
+export function buildBreadcrumbSchema({ title, slug, locale = "en", insightsLabel, homeLabel }) {
   const insightsPath =
     locale === "en" ? "/insights" : `/${locale}/insights`;
   const articlePath = `${insightsPath}/${slug}`;
+  const resolvedInsightsLabel = insightsLabel || INSIGHTS_LABELS[locale] || "Insights";
+  const resolvedHomeLabel = homeLabel || HOME_LABELS[locale] || "Home";
 
   return {
     "@context": "https://schema.org",
@@ -157,13 +194,13 @@ export function buildBreadcrumbSchema({ title, slug, locale = "en", insightsLabe
       {
         "@type": "ListItem",
         position: 1,
-        name: "Home",
+        name: resolvedHomeLabel,
         item: BASE_URL,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: insightsLabel,
+        name: resolvedInsightsLabel,
         item: `${BASE_URL}${insightsPath}`,
       },
       {

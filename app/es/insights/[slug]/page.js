@@ -5,8 +5,9 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
 import ArticleCTA from "@/components/insights/ArticleCTA";
+import AuthorBio from "@/components/insights/AuthorBio";
 import { mdxComponents } from "@/components/insights/MDXComponents";
-import { getArticle, getAllSlugs, formatDate, getLocaleLabel, getInsightsPath } from "@/lib/insights";
+import { getArticle, getAllSlugs, formatDate, getLocaleLabel, getLastUpdatedLabel, getInsightsPath } from "@/lib/insights";
 import JsonLd, { buildArticleSchema, buildFAQSchema, buildBreadcrumbSchema } from "@/components/JsonLd";
 import Link from "next/link";
 
@@ -110,6 +111,9 @@ export default async function EsInsightArticlePage({ params }) {
 
             <div className="flex flex-wrap items-center gap-4 text-sm text-muted mb-10 pb-10 border-b border-white/[0.08]">
               <span className="font-mono text-xs">{formatDate(frontmatter.date, "es")}</span>
+              {frontmatter.dateModified && frontmatter.dateModified !== frontmatter.date && (
+                <span className="font-mono text-xs text-teal/70">· {getLastUpdatedLabel("es")} {formatDate(frontmatter.dateModified, "es")}</span>
+              )}
               <span className="text-white/20">|</span>
               <span>{frontmatter.author}</span>
               {translations.length > 0 && translations.map((loc) => (
@@ -130,6 +134,8 @@ export default async function EsInsightArticlePage({ params }) {
           <div className="prose-kantor">
             <MDXRemote source={content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
           </div>
+
+          <AuthorBio locale="es" />
 
           <ArticleCTA locale="es" />
         </div>
