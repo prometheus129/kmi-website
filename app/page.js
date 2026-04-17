@@ -15,16 +15,16 @@ import { getAllIssues } from "@/lib/terminal";
 export const metadata = {
   title: "Kantor Materials International — China Polymer Procurement",
   description:
-    "135,000 grades. Real-time pricing. Document verification against actual customs requirements. Free to ask. On WhatsApp.",
+    "135,000 grades. Real-time pricing. Pre-shipment document checks. Free to ask.",
   openGraph: {
     title: "Kantor Materials International — China Polymer Procurement",
     description:
-      "Ask anything about China polymers. Get answers, not a callback. Free procurement intelligence for polymer distributors and converters.",
+      "Ask about China-origin polymers. Get answers, not a call back. Free procurement intelligence for polymer distributors and converters.",
   },
   twitter: {
     title: "Kantor Materials International — China Polymer Procurement",
     description:
-      "Ask anything about China polymers. Get answers, not a callback. 135,000 grades characterized. Free to ask.",
+      "Ask about China-origin polymers. Get answers, not a call back. 135,000 grades characterized. Free to ask.",
   },
   alternates: { canonical: "/" },
 };

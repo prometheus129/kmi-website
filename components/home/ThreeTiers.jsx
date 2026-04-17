@@ -127,12 +127,6 @@ export default function ThreeTiers() {
           ))}
         </div>
 
-        {/* Human backstop footer */}
-        <RevealDiv delay={400}>
-          <p className="font-sans text-sm text-body-text italic text-center mt-10">
-            Every response is reviewed personally before it reaches you.
-          </p>
-        </RevealDiv>
       </div>
     </section>
   );

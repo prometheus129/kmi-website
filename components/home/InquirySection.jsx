@@ -97,9 +97,9 @@ export default function InquirySection() {
               Requirement received
             </h3>
             <p className="font-sans text-base text-body-text leading-relaxed mb-6 max-w-[520px] mx-auto">
-              Our sourcing team will respond within one to two business days with
-              matched grades, current CFR pricing for your destination, and
-              documentation details. Check your email.
+              You&apos;ll receive a response within one to two business days
+              with matched grades, current CFR pricing for your destination,
+              and documentation details. Check your email.
             </p>
             <p className="font-sans text-xs text-muted">
               Want market intelligence while you wait?{" "}
