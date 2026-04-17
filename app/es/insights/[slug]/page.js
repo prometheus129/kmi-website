@@ -7,7 +7,7 @@ import RevealDiv from "@/components/RevealDiv";
 import ArticleCTA from "@/components/insights/ArticleCTA";
 import { mdxComponents } from "@/components/insights/MDXComponents";
 import { getArticle, getAllSlugs, formatDate, getLocaleLabel, getInsightsPath } from "@/lib/insights";
-import JsonLd, { buildArticleSchema } from "@/components/JsonLd";
+import JsonLd, { buildArticleSchema, buildFAQSchema, buildBreadcrumbSchema } from "@/components/JsonLd";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -58,6 +58,14 @@ export default async function EsInsightArticlePage({ params }) {
 
   const { frontmatter, content, translations } = article;
 
+  const faqSchema = buildFAQSchema(frontmatter.faq);
+  const breadcrumbSchema = buildBreadcrumbSchema({
+    title: frontmatter.title,
+    slug,
+    locale: "es",
+    insightsLabel: "Análisis",
+  });
+
   return (
     <div className="bg-navy min-h-screen text-white">
       <JsonLd
@@ -65,11 +73,14 @@ export default async function EsInsightArticlePage({ params }) {
           title: frontmatter.title,
           description: frontmatter.description,
           date: frontmatter.date,
+          dateModified: frontmatter.dateModified,
           slug,
           author: frontmatter.author,
           locale: "es",
         })}
       />
+      <JsonLd data={breadcrumbSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
       <Nav />
 
       <article className="pt-36 pb-8 lg:pt-44 lg:pb-12 px-6 lg:px-10">

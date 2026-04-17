@@ -73,15 +73,17 @@ export const websiteSchema = {
 /**
  * Build an Article schema for an insight post.
  */
-export function buildArticleSchema({ title, description, date, slug, author, locale = "en" }) {
+export function buildArticleSchema({ title, description, date, dateModified, slug, author, locale = "en" }) {
   const path =
     locale === "en"
       ? `/insights/${slug}`
       : `/${locale}/insights/${slug}`;
   const url = `${BASE_URL}${path}`;
 
-  // Ensure date is full ISO 8601 with timezone
-  const isoDate = date && date.length === 10 ? `${date}T00:00:00+08:00` : date;
+  // Ensure dates are full ISO 8601 with timezone
+  const toIso = (d) => (d && d.length === 10 ? `${d}T00:00:00+08:00` : d);
+  const isoPublished = toIso(date);
+  const isoModified = toIso(dateModified || date);
 
   return {
     "@context": "https://schema.org",
@@ -90,8 +92,8 @@ export function buildArticleSchema({ title, description, date, slug, author, loc
     description,
     url,
     image: `${BASE_URL}/kantor-icon.png`,
-    datePublished: isoDate,
-    dateModified: isoDate,
+    datePublished: isoPublished,
+    dateModified: isoModified,
     author: {
       "@type": "Organization",
       name: author || "Kantor Materials Research",
@@ -108,5 +110,68 @@ export function buildArticleSchema({ title, description, date, slug, author, loc
     },
     inLanguage: locale,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
+  };
+}
+
+/**
+ * Build a FAQPage schema from an array of { question, answer } pairs.
+ * Returns null if faq is empty/missing, so callers can spread { ...(schema || {}) }
+ * or guard rendering with `{schema && <JsonLd data={schema} />}`.
+ */
+export function buildFAQSchema(faq) {
+  if (!Array.isArray(faq) || faq.length === 0) return null;
+
+  const mainEntity = faq
+    .filter((item) => item && item.question && item.answer)
+    .map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    }));
+
+  if (mainEntity.length === 0) return null;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity,
+  };
+}
+
+/**
+ * Build a BreadcrumbList schema for an insight article.
+ * Path: Home > Insights (locale-aware label) > Article title
+ */
+export function buildBreadcrumbSchema({ title, slug, locale = "en", insightsLabel = "Insights" }) {
+  const insightsPath =
+    locale === "en" ? "/insights" : `/${locale}/insights`;
+  const articlePath = `${insightsPath}/${slug}`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: BASE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: insightsLabel,
+        item: `${BASE_URL}${insightsPath}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: title,
+        item: `${BASE_URL}${articlePath}`,
+      },
+    ],
   };
 }
