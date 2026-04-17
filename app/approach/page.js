@@ -142,20 +142,6 @@ export default function ApproachPage() {
                 engineering polymers (PA6, PA66, PC, ABS, POM, PEEK), we
                 compound in our own facility with 60,000 MT annual capacity.
               </p>
-              <p className="text-body-text text-[15px] leading-relaxed">
-                Founded by{" "}
-                <a
-                  href="https://www.linkedin.com/in/wudavid/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-teal hover:text-teal-light transition-colors duration-200"
-                >
-                  David Wu
-                </a>
-                , a Canadian-Chinese materials industry operator with experience
-                across commodity procurement, market intelligence, and
-                cross-border trade infrastructure.
-              </p>
             </RevealDiv>
 
             <RevealDiv delay={100}>
@@ -203,6 +189,62 @@ export default function ApproachPage() {
               </div>
             </RevealDiv>
           </div>
+        </div>
+      </section>
+
+      {/* Founder */}
+      <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+          <RevealDiv>
+            <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
+              FOUNDER
+            </span>
+            <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
+              <a
+                href="https://www.linkedin.com/in/wudavid/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-teal-light transition-colors duration-200"
+              >
+                David Wu
+              </a>
+            </h2>
+            <p className="text-body-text text-[15px] leading-relaxed">
+              Six years sourcing China-origin industrial materials from
+              Shenzhen for North American manufacturers. Hong Kong based.
+            </p>
+          </RevealDiv>
+          <RevealDiv delay={100}>
+            <div className="space-y-5 text-body-text text-[15px] leading-[1.75]">
+              <p>
+                That prior operation served end-users who needed reliability
+                in their supply chain more than they needed the lowest quote.
+                Working that problem for six years produced two convictions
+                that shape Kantor.
+              </p>
+              <p>
+                <strong className="text-white">
+                  Depth in upstream beats breadth in suppliers.
+                </strong>{" "}
+                Procurement quality doesn&apos;t come from running more RFQs
+                — it comes from understanding upstream cost structure,
+                material flows between tiers, and the specific inefficiencies
+                suppliers are either unaware of or profiting from. A buyer
+                with that depth can take outcomes above what any individual
+                supplier would deliver.
+              </p>
+              <p>
+                <strong className="text-white">
+                  Single-supplier dependency is carried risk.
+                </strong>{" "}
+                Not because suppliers are unreliable — because they have
+                their own capacity constraints, priorities, and business
+                cycles. Kantor&apos;s architecture is supplier-agnostic:
+                every order is evaluated across the producer and merchant
+                network, not routed to a preferred counterpart.
+              </p>
+            </div>
+          </RevealDiv>
         </div>
       </section>
 
