@@ -201,7 +201,7 @@ export default function ApproachPage() {
             </span>
             <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
               <a
-                href="https://www.linkedin.com/in/wudavid/"
+                href="https://www.linkedin.com/in/davidxiaowu/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-teal-light transition-colors duration-200"
