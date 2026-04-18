@@ -34,15 +34,15 @@ const UI_STRINGS = {
       "All prices FOB China in USD/MT. Indicative grades subject to confirmation. Add destination freight for landed cost. Prices are Kantor Indicative Prices, not firm offers. Contact us for executable pricing.",
   },
   vi: {
-    overline: "GIÁ HẠT NHỰA",
-    h1: "Giá Hạt Nhựa PP, PE, PVC Hôm Nay",
+    overline: "GIÁ HẠT NHỰA HÔM NAY",
+    h1: "Giá hạt nhựa PP, PE, PVC, ABS hôm nay",
     subtitle:
-      "Đánh giá thị trường CFR cho hạt nhựa PP, PE và PVC xuất xứ Trung Quốc — cập nhật theo phiên giao dịch. Xuất bản bởi đội ngũ nghiên cứu Kantor Materials.",
+      "Đánh giá thị trường FOB Trung Quốc cho hạt nhựa PP, PE, HDPE, LLDPE, PVC và ABS — cập nhật mỗi phiên giao dịch. Xuất bản bởi đội ngũ nghiên cứu Kantor Materials.",
     lastUpdated: "Cập nhật lần cuối",
     source: "Nguồn",
     colProduct: "Sản phẩm",
     colGrade: "Mã hàng",
-    colCFR: "CFR (USD/MT)",
+    colCFR: "KIP FOB (USD/MT)",
     colDirection: "Xu hướng",
     colChange: "T/T",
     colNotes: "Nhận định thị trường",
@@ -54,7 +54,7 @@ const UI_STRINGS = {
     insightsLink: "Xem tất cả phân tích thị trường",
     insightsHref: "/vi/insights",
     disclaimer:
-      "Giá hiển thị là đánh giá thị trường CFR dựa trên dữ liệu giao dịch công khai và nghiên cứu của Kantor Materials. Đây là phạm vi giá tham khảo, không phải báo giá chính thức.",
+      "Giá FOB Trung Quốc (USD/MT). Tính thêm cước tàu về Việt Nam để ra landed cost. Giá tham khảo dựa trên dữ liệu giao dịch công khai và nghiên cứu của Kantor Materials; có thể thay đổi khi đặt hàng thực tế.",
   },
   tr: {
     overline: "GÜNCEL FİYATLAR",

@@ -1,5 +1,7 @@
 import PricingPageContent from "@/components/pricing/PricingPageContent";
 
+export const revalidate = 3600;
+
 export const metadata = {
   title: "Daily China-Origin Polymer Pricing — PP PE PVC | Kantor Materials",
   description:
