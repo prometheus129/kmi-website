@@ -7,7 +7,7 @@ import RevealDiv from "@/components/RevealDiv";
 import ArticleCTA from "@/components/insights/ArticleCTA";
 import AuthorBio from "@/components/insights/AuthorBio";
 import { mdxComponents } from "@/components/insights/MDXComponents";
-import { getArticle, getAllSlugs, formatDate, getAvailableTranslations, getLocaleLabel, getInsightsPath } from "@/lib/insights";
+import { getArticle, getAllSlugs, formatDate, getAvailableTranslations, getLocaleLabel, getLastUpdatedLabel, getInsightsPath } from "@/lib/insights";
 import JsonLd, { buildArticleSchema, buildFAQSchema, buildBreadcrumbSchema } from "@/components/JsonLd";
 import Link from "next/link";
 
