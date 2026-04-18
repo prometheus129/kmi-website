@@ -209,18 +209,23 @@ export default function ApproachPage() {
                 David Wu
               </a>
             </h2>
+            <p className="text-body-text text-[15px] leading-relaxed mb-4">
+              Over a decade across China-related industrial commerce.
+              Started at PetroChina Canada in 2013.
+            </p>
             <p className="text-body-text text-[15px] leading-relaxed">
-              Six years sourcing China-origin industrial materials from
-              Shenzhen for North American manufacturers. Hong Kong based.
+              Then six years operating a Shenzhen-based industrial
+              consumables business, sourcing and selling China-origin
+              material to North American manufacturers. Hong Kong based.
             </p>
           </RevealDiv>
           <RevealDiv delay={100}>
             <div className="space-y-5 text-body-text text-[15px] leading-[1.75]">
               <p>
-                That prior operation served end-users who needed reliability
-                in their supply chain more than they needed the lowest quote.
-                Working that problem for six years produced two convictions
-                that shape Kantor.
+                The Shenzhen operation served end-users who needed
+                reliability in their supply chain more than they needed
+                the lowest quote. Six years working that problem produced
+                two convictions that shape Kantor.
               </p>
               <p>
                 <strong className="text-white">
