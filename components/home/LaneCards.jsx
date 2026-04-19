@@ -1,60 +1,47 @@
 import Link from "next/link";
-import Image from "next/image";
 import RevealDiv from "@/components/RevealDiv";
 
 export default function LaneCards() {
   return (
-    <section className="bg-navy-deep py-24 px-6 lg:px-10 relative overflow-hidden">
-      {/* Atmospheric industrial texture */}
-      <div className="absolute inset-0 opacity-[0.08]">
-        <Image
-          src="/images/hero-texture.jpg"
-          alt=""
-          fill
-          className="object-cover"
-          style={{ objectPosition: "center 80%" }}
-          sizes="100vw"
-          quality={60}
-        />
-      </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/50 via-transparent to-navy-deep/60" />
-
-      <div className="max-w-[1100px] mx-auto relative z-10">
+    <section className="bg-[#fbfcfd] py-24 lg:py-[100px] px-6 lg:px-10 relative">
+      <div className="max-w-[1100px] mx-auto">
         <RevealDiv>
-          <div className="text-center mb-12">
-            <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
-              BEYOND INTELLIGENCE
+          <div className="text-center mb-14 max-w-[720px] mx-auto">
+            <div className="text-[11px] tracking-[3px] text-[#2E8B8B] font-sans font-semibold mb-4">
+              WHAT WE SOURCE
             </div>
-            <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white mb-4 leading-tight">
-              When You&apos;re Ready to Buy
+            <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-[#1B2A4A] mb-5 leading-tight">
+              Same answer. Every polymer category.
             </h2>
-            <p className="font-sans text-base text-body-text leading-relaxed max-w-[640px] mx-auto">
-              The Polymer Compass subscribers get priority access to Kantor&apos;s
-              sourcing desk. Commodity polymers and engineering compounds through
-              one service.
+            <p className="font-sans text-base lg:text-lg text-[#4b5563] leading-relaxed">
+              Matched grades, current pricing, and documentation — whether
+              you&apos;re sourcing commodity or engineering.
             </p>
           </div>
         </RevealDiv>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <RevealDiv>
-            <Link href="/inquiry#inquiry" className="group block h-full">
-              <div className="rounded-lg p-8 border border-white/[0.08] bg-gradient-to-br from-white/5 to-white/[0.01] hover:from-white/[0.08] hover:to-white/[0.03] hover:border-teal/40 hover:-translate-y-[3px] transition-all duration-200 h-full">
-                <div className="text-[11px] tracking-[3px] font-bold font-sans mb-3 text-teal">
-                  COMMODITY POLYMERS
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
+          {/* Lane 1 — Commodity */}
+          <RevealDiv delay={0}>
+            <Link
+              href="/inquiry?lane=1&context=grade-query#inquiry"
+              className="group block h-full"
+            >
+              <div className="relative h-full bg-white rounded-xl border border-[#e5e7eb] p-7 hover:border-[#2E8B8B]/50 hover:shadow-[0_8px_24px_rgba(27,42,74,0.08)] hover:-translate-y-[3px] transition-all duration-200 overflow-hidden">
+                <div className="absolute top-0 left-0 w-1 h-full bg-[#2E8B8B]" />
+                <div className="text-[11px] tracking-[2px] font-bold font-mono mb-3 text-[#2E8B8B]">
+                  PP · PE · PVC · PA6
                 </div>
-                <h3 className="font-serif text-2xl font-bold text-white mb-1">
-                  PP, PE, PA6, PVC, ABS
+                <h3 className="font-serif text-2xl font-bold text-[#1B2A4A] mb-4 leading-tight">
+                  Commodity Polymers
                 </h3>
-                <div className="text-sm font-medium font-sans mb-4 text-teal">
-                  China origin — best-execution pricing
-                </div>
-                <p className="text-sm text-body-text leading-relaxed font-sans mb-5">
-                  We search the broader China market on every order and deliver
-                  the best available pricing for your grade, quantity, and route.
+                <p className="text-[15px] text-[#4b5563] leading-relaxed font-sans mb-6">
+                  Best-execution pricing across the Chinese producer and
+                  merchant network. Daily FOB updates. Whichever grade you
+                  need, we find the best-priced source that day.
                 </p>
-                <span className="text-sm text-white font-semibold font-sans inline-flex items-center gap-1.5 tracking-wide group-hover:text-teal transition-colors duration-200">
-                  Tell us what you need{" "}
+                <span className="text-sm text-[#1B2A4A] font-semibold font-sans inline-flex items-center gap-1.5 group-hover:text-[#2E8B8B] transition-colors duration-200">
+                  Get a grade-specific quote
                   <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">
                     →
                   </span>
@@ -63,24 +50,24 @@ export default function LaneCards() {
             </Link>
           </RevealDiv>
 
-          <RevealDiv>
-            <Link href="/inquiry#inquiry" className="group block h-full">
-              <div className="rounded-lg p-8 border border-white/[0.08] bg-gradient-to-br from-white/5 to-white/[0.01] hover:from-white/[0.08] hover:to-white/[0.03] hover:border-gold/40 hover:-translate-y-[3px] transition-all duration-200 h-full">
-                <div className="text-[11px] tracking-[3px] font-bold font-sans mb-3 text-gold">
-                  ENGINEERING COMPOUNDS
+          {/* Lane 2 — Engineering */}
+          <RevealDiv delay={80}>
+            <Link href="/materials" className="group block h-full">
+              <div className="relative h-full bg-white rounded-xl border border-[#e5e7eb] p-7 hover:border-[#D4A843]/50 hover:shadow-[0_8px_24px_rgba(27,42,74,0.08)] hover:-translate-y-[3px] transition-all duration-200 overflow-hidden">
+                <div className="absolute top-0 left-0 w-1 h-full bg-[#D4A843]" />
+                <div className="text-[11px] tracking-[2px] font-bold font-mono mb-3 text-[#D4A843]">
+                  PA66 · POM · PC · PEEK · PBT
                 </div>
-                <h3 className="font-serif text-2xl font-bold text-white mb-1">
-                  PA66, POM, PC, PEEK, PBT
+                <h3 className="font-serif text-2xl font-bold text-[#1B2A4A] mb-4 leading-tight">
+                  Engineering Polymers
                 </h3>
-                <div className="text-sm font-medium font-sans mb-4 text-gold">
-                  Free specification matching
-                </div>
-                <p className="text-sm text-body-text leading-relaxed font-sans mb-5">
-                  Send us your current material spec. We evaluate whether our
-                  UL-certified compounds can match performance at a competitive price.
+                <p className="text-[15px] text-[#4b5563] leading-relaxed font-sans mb-6">
+                  Chinese equivalents to DuPont Zytel, BASF Ultramid, SABIC
+                  LNP — compounded in our own facility. Match Western-premium
+                  grades at Chinese cost.
                 </p>
-                <span className="text-sm text-white font-semibold font-sans inline-flex items-center gap-1.5 tracking-wide group-hover:text-gold transition-colors duration-200">
-                  Request free evaluation{" "}
+                <span className="text-sm text-[#1B2A4A] font-semibold font-sans inline-flex items-center gap-1.5 group-hover:text-[#D4A843] transition-colors duration-200">
+                  Request engineering-grade equivalency
                   <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">
                     →
                   </span>

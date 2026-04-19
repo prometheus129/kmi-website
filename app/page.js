@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/home/HeroSection";
 import ThreeTiers from "@/components/home/ThreeTiers";
 import ResponseExample from "@/components/home/ResponseExample";
+import LaneCards from "@/components/home/LaneCards";
 import KnowledgeSection from "@/components/home/KnowledgeSection";
 import ExperienceDelta from "@/components/home/ExperienceDelta";
 import TPCPreview from "@/components/home/TPCPreview";
@@ -42,6 +43,7 @@ export default function HomePage() {
         <HeroSection />
         <ThreeTiers />
         <ResponseExample />
+        <LaneCards />
         <KnowledgeSection />
         <ExperienceDelta />
         <TPCPreview latestIssue={latestIssue} />

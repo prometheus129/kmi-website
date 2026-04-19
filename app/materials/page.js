@@ -135,18 +135,18 @@ export default function MaterialsPage() {
             <div className="text-xs tracking-[4px] text-gold font-sans font-semibold mb-6">
               ENGINEERING POLYMERS
             </div>
-            <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-[800px]">
-              Advanced Materials
+            <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-[900px]">
+              Chinese equivalents to Western-premium engineering polymers.
             </h1>
-            <p className="font-sans text-lg text-body-text leading-relaxed max-w-[640px] mb-10">
-              UL-certified, application-specific compounds. Reverse-engineered
-              to match your incumbent specification — same performance,
-              competitive pricing. Validated in production lines manufacturing
-              over 2 million finished goods annually.
+            <p className="font-sans text-lg text-body-text leading-relaxed max-w-[680px] mb-10">
+              DuPont Zytel, BASF Ultramid, SABIC LNP, Celanese acetals,
+              Victrex PEEK — matched in our own compounding facility at
+              Chinese cost. Validated in production lines manufacturing over
+              2 million finished goods annually.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/inquiry#inquiry"
+                href="/inquiry?lane=2&context=engineering-substitution#inquiry"
                 className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-sm tracking-wider px-7 py-3.5 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
               >
                 Request a Quote

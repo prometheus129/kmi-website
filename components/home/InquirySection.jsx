@@ -5,11 +5,31 @@ import Link from "next/link";
 import { FORM_ENDPOINTS, submitForm } from "@/lib/forms";
 import { trackFormSubmit } from "@/lib/tracking";
 
+const LANE_PREFILLS = {
+  "1:grade-query": {
+    polymerType: "",
+    details:
+      "Commodity polymer pricing request.\n\nGrade: \nDestination: \nVolume (MT): \nRequired delivery window: ",
+  },
+  "2:engineering-substitution": {
+    polymerType: "",
+    details:
+      "Chinese equivalent request for Western-premium engineering grade.\n\nWestern grade currently used (e.g., DuPont Zytel 70G33L): \nApplication: \nKey performance specs to match: \nDestination: \nAnnual volume (MT): ",
+  },
+  "3:brand-approval": {
+    polymerType: "rPP or rPET",
+    details:
+      "Recycled polymer supply for brand-approval pathway.\n\nEnd product: \nBrand customer / audit requirement: \nCertification needed (GRS / ISCC PLUS / EUCERTPLAST / other): \nAnnual volume (MT): \nTarget brand-approval timeline: ",
+  },
+};
+
 export default function InquirySection() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
   const [utmParams, setUtmParams] = useState({});
+  const [polymerTypeValue, setPolymerTypeValue] = useState("");
+  const [detailsValue, setDetailsValue] = useState("");
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -25,6 +45,15 @@ export default function InquirySection() {
       if (val) utm[key] = val;
     }
     setUtmParams(utm);
+
+    const lane = params.get("lane");
+    const context = params.get("context");
+    const prefillKey = lane && context ? `${lane}:${context}` : null;
+    const prefill = prefillKey ? LANE_PREFILLS[prefillKey] : null;
+    if (prefill) {
+      if (prefill.polymerType) setPolymerTypeValue(prefill.polymerType);
+      if (prefill.details) setDetailsValue(prefill.details);
+    }
   }, []);
 
   async function handleSubmit(e) {
@@ -129,6 +158,8 @@ export default function InquirySection() {
                   required
                   className={inputClasses}
                   placeholder="e.g., PP, HDPE, PVC, PA6, ABS, PET"
+                  value={polymerTypeValue}
+                  onChange={(e) => setPolymerTypeValue(e.target.value)}
                 />
               </div>
 
@@ -140,9 +171,11 @@ export default function InquirySection() {
                 <textarea
                   id="inq-details"
                   name="details"
-                  rows={3}
+                  rows={5}
                   className={`${inputClasses} resize-none`}
                   placeholder="e.g., HDPE blow molding MFI 0.35 for water tanks, 50 MT/month, FDA food contact approved, equivalent to Marlex HHM 5202BN"
+                  value={detailsValue}
+                  onChange={(e) => setDetailsValue(e.target.value)}
                 />
               </div>
 
