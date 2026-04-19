@@ -12,7 +12,7 @@ export const metadata = {
   openGraph: {
     title: "About Our Approach — Kantor Materials",
     description:
-      "What we don't promise — and what we do. Sourcing intelligence for polymer distributors.",
+      "A polymer trading company serving distributors and converters across emerging markets — commodity, engineering, and recycled lanes, sourced from China.",
   },
   alternates: { canonical: "/approach" },
 };
@@ -68,10 +68,11 @@ export default function ApproachPage() {
               Your China Polymer Desk.
             </h1>
             <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-2xl">
-              Kantor Materials is a sourcing intelligence and execution service
-              for polymer distributors. You describe what your buyers need. We
-              search the broader China market and respond with matched grades,
-              pricing, and documentation — in one answer.
+              Kantor Materials sources polymers from China for distributors
+              and converters across emerging markets — commodity grades,
+              engineering compounds, and recycled supply. You describe what
+              you need. We respond with matched grades, pricing, and
+              documentation — in one answer.
             </p>
           </RevealDiv>
         </div>
@@ -141,6 +142,8 @@ export default function ApproachPage() {
                 specs, pricing, compliance status, and track record. For
                 engineering polymers (PA6, PA66, PC, ABS, POM, PEEK), we
                 compound in our own facility with 60,000 MT annual capacity.
+                For recycled polymers (rPP, rPET), we source from our recycling
+                operations for EU PPWR-compliant supply chains.
               </p>
             </RevealDiv>
 
@@ -253,8 +256,87 @@ export default function ApproachPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Category and architecture */}
       <section className="bg-navy-deep py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">
+        <div className="max-w-[1200px] mx-auto">
+          <RevealDiv>
+            <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-gold mb-4 block">
+              CATEGORY AND ARCHITECTURE
+            </span>
+            <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-6 max-w-3xl leading-tight">
+              A full-stack AI polymer trading company, progressing toward
+              fully AI-native operations.
+            </h2>
+            <div className="max-w-3xl space-y-5 text-body-text text-[15px] leading-relaxed">
+              <p>
+                We operate as commercial principal on every transaction we
+                source — not a marketplace, not a directory, not a tool for
+                someone else&apos;s trade. The architecture is built around
+                three product lanes and a technology stack that is AI-heavy
+                at launch (grade matching, pricing assembly, document
+                generation, compliance verification) and progressing toward
+                fully AI-native operations in account management, sourcing,
+                and credit over the next four years.
+              </p>
+              <p>
+                The &ldquo;progressing toward&rdquo; framing matters. We
+                operate AI-heavy today — not fully AI-native. Overclaiming
+                autonomy produces predictable disappointment when human
+                judgment still owns the last mile. Understating it
+                underrepresents what the infrastructure does. The trajectory
+                is the honest frame.
+              </p>
+            </div>
+          </RevealDiv>
+
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl">
+            <RevealDiv delay={0}>
+              <div className="border border-white/[0.08] rounded-lg p-6 bg-white/[0.02] h-full">
+                <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-teal mb-3">
+                  LANE 1 — COMMODITY
+                </div>
+                <p className="font-sans text-[14px] text-body-text leading-relaxed">
+                  PP, PE, PVC, PA6 commodity. Best-execution pricing across
+                  the Chinese producer and merchant network.
+                </p>
+              </div>
+            </RevealDiv>
+            <RevealDiv delay={100}>
+              <div className="border border-white/[0.08] rounded-lg p-6 bg-white/[0.02] h-full">
+                <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-gold mb-3">
+                  LANE 2 — ENGINEERING
+                </div>
+                <p className="font-sans text-[14px] text-body-text leading-relaxed">
+                  PA6, PA66, PC, ABS, POM. Chinese equivalents to DuPont
+                  Zytel, BASF Ultramid, SABIC LNP — compounded in our own
+                  60,000 MT/yr facility.{" "}
+                  <Link
+                    href="/materials"
+                    className="text-gold hover:text-gold-light underline underline-offset-2"
+                  >
+                    See catalog →
+                  </Link>
+                </p>
+              </div>
+            </RevealDiv>
+            <RevealDiv delay={200}>
+              <div className="border border-white/[0.08] rounded-lg p-6 bg-white/[0.02] h-full">
+                <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-teal mb-3">
+                  LANE 3 — RECYCLED
+                </div>
+                <p className="font-sans text-[14px] text-body-text leading-relaxed">
+                  rPP, rPET. EU PPWR-compliant supply through our recycling
+                  operations. Certification chain ready for brand-approval
+                  pathways.
+                </p>
+              </div>
+            </RevealDiv>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">
         <div className="max-w-[720px] mx-auto text-center">
           <RevealDiv>
             <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
