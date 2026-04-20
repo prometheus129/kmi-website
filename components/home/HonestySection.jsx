@@ -15,9 +15,13 @@ const promises = [
   },
 ];
 
-export default function HonestySection({ bg = "bg-navy" }) {
+export default function HonestySection({ bg = "bg-navy", textureOpacity = 0.035, texture = "/images/hero-texture.jpg" }) {
   return (
     <section className={`${bg} py-24 px-6 lg:px-10 relative overflow-hidden`}>
+      {/* Atmospheric texture */}
+      <div className="absolute inset-0" style={{ opacity: textureOpacity }}>
+        <img src={texture} alt="" className="w-full h-full object-cover" />
+      </div>
       {/* Subtle radial accents */}
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, rgba(46,139,139,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(212,168,67,0.08) 0%, transparent 50%)" }} />
 
