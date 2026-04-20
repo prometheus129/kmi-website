@@ -7,11 +7,11 @@ import JsonLd, { organizationSchema } from "@/components/JsonLd";
 export const metadata = {
   title: "Trader Partnership — Kantor Materials International",
   description:
-    "Keep your book. Quote engineering grades you currently walk away from — Chinese equivalents to Zytel, Ultramid, LNP, compounded in our own facility. Source commodity through us when we beat your suppliers.",
+    "Keep your book. Quote what you can't today — Chinese equivalents to Zytel, Ultramid, LNP, compounded in our own facility. Source through us when we beat your suppliers.",
   openGraph: {
     title: "Trader Partnership — Kantor Materials",
     description:
-      "Keep your book. Quote engineering grades you currently walk away from. Source commodity through us when we beat your suppliers.",
+      "Keep your book. Quote what you can't today. Source through us when we beat your suppliers.",
   },
   alternates: { canonical: "/partners" },
 };
@@ -23,21 +23,20 @@ export default function PartnersPage() {
       <Nav />
 
       {/* Hero */}
-      <section className="pt-36 pb-16 lg:pt-44 lg:pb-20 px-6 lg:px-10">
+      <section className="pt-28 pb-16 lg:pt-32 lg:pb-20 px-6 lg:px-10">
         <div className="max-w-[1200px] mx-auto">
           <RevealDiv>
             <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
               TRADER PARTNERSHIP
             </span>
             <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white mb-6 max-w-[960px] leading-tight">
-              Keep your book. Quote engineering grades you currently walk
-              away from. Source commodity through us when we beat your
-              suppliers.
+              Keep your book. Quote what you can&apos;t today. Source
+              through us when we win.
             </h1>
             <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-2xl">
               Chinese equivalents to Zytel, Ultramid, LNP — compounded in
-              our own facility. Free sourcing infrastructure across
-              commodity grades. Non-exclusive, no lock-in.
+              our own facility. We earn only when we beat your suppliers.
+              Non-exclusive, no lock-in.
             </p>
           </RevealDiv>
         </div>
