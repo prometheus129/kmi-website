@@ -8,11 +8,11 @@ export default function LaneCards() {
       {/* Atmospheric texture */}
       <div className="absolute inset-0 opacity-[0.035]">
         <Image
-          src="/images/value-texture.jpg"
+          src="/images/lane-texture.jpg"
           alt=""
           fill
           className="object-cover"
-          style={{ objectPosition: "center 40%" }}
+          style={{ objectPosition: "center center" }}
           sizes="100vw"
           quality={60}
         />
