@@ -243,36 +243,6 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      {/* Honest framing */}
-      <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04] relative overflow-hidden">
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,168,67,0.05)_0%,transparent_65%)] pointer-events-none"
-        />
-        <div className="max-w-[1200px] mx-auto relative">
-          <RevealDiv>
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-gold mb-4 block">
-              HONEST FRAMING
-            </span>
-            <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-6 max-w-3xl leading-tight">
-              Early cohort. You shape the terms.
-            </h2>
-            <div className="max-w-3xl space-y-4 text-body-text text-[15px] leading-relaxed">
-              <p>
-                This architecture is new. We are building it with early
-                trader partners; your feedback shapes the structure.
-              </p>
-              <p>
-                If you&apos;d rather wait until the architecture is
-                validated at scale, we understand. The opportunity for
-                first-cohort partners is structural, not rhetorical: early
-                partners shape the terms.
-              </p>
-            </div>
-          </RevealDiv>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04] relative overflow-hidden">
         <div
