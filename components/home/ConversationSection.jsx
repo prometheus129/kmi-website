@@ -67,7 +67,7 @@ export default function ConversationSection() {
   return (
     <section
       id="inquiry"
-      className="bg-navy-deep py-24 px-6 lg:px-10 scroll-mt-24"
+      className="bg-navy py-24 px-6 lg:px-10 scroll-mt-24"
     >
       <div className="max-w-[640px] mx-auto">
         {/* Header */}
