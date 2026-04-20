@@ -244,7 +244,7 @@ export default function PartnersPage() {
       </section>
 
       {/* Honest framing */}
-      <section className="bg-navy-deep py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
+      <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04] relative overflow-hidden">
         <div
           aria-hidden="true"
           className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,168,67,0.05)_0%,transparent_65%)] pointer-events-none"
