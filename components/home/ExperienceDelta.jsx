@@ -19,7 +19,7 @@ export default function ExperienceDelta() {
     <section className="bg-ticker-bg py-20 px-6 lg:px-10 relative overflow-hidden">
       {/* Subtle background texture */}
       <div
-        className="absolute inset-0 opacity-[0.015]"
+        className="absolute inset-0 opacity-[0.025]"
         style={{
           backgroundImage:
             "url('/images/value-texture.jpg')",
