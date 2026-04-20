@@ -7,11 +7,11 @@ import JsonLd, { organizationSchema } from "@/components/JsonLd";
 export const metadata = {
   title: "Trader Partnership — Kantor Materials International",
   description:
-    "Keep your book. Use our infrastructure free in Year 1. Source through us when we beat your existing suppliers. How the Kantor Independent Trader Platform (ITP) works.",
+    "Keep your book. Free infrastructure, non-exclusive. We earn only when we source a deal and beat your existing supplier. How the Kantor Independent Trader Platform (ITP) works.",
   openGraph: {
     title: "Trader Partnership — Kantor Materials",
     description:
-      "Keep your book. Use our infrastructure free. Source through us when we beat your existing suppliers.",
+      "Keep your book. Free infrastructure, non-exclusive. We earn only when we source a deal and beat your existing supplier.",
   },
   alternates: { canonical: "/partners" },
 };
@@ -34,10 +34,8 @@ export default function PartnersPage() {
               we beat your suppliers.
             </h1>
             <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-2xl mb-6">
-              Use our infrastructure free in Year 1. Source through us when
-              we beat your existing suppliers. Access credit when
-              you&apos;re ready. We earn only when we supply material or
-              finance your deal. Your book stays your book.
+              Free infrastructure, non-exclusive, no lock-in. We earn only
+              when we source a deal and beat your existing supplier.
             </p>
             <p className="text-body-text/70 text-sm leading-relaxed max-w-2xl">
               For independent polymer traders evaluating Kantor&apos;s
@@ -108,8 +106,8 @@ export default function PartnersPage() {
               WHAT YOU GAIN
             </span>
             <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-4 max-w-3xl leading-tight">
-              Infrastructure free in Year 1. Lane 2 access your suppliers
-              can&apos;t build.
+              Engineering polymer access your suppliers can&apos;t build.
+              Infrastructure free on top.
             </h2>
             <p className="text-body-text text-[15px] leading-relaxed max-w-2xl mb-10">
               Two things a trader cannot buy off the shelf: a documented
@@ -125,14 +123,14 @@ export default function PartnersPage() {
                   INFRASTRUCTURE
                 </span>
                 <h3 className="font-serif text-2xl font-bold text-white mb-4 leading-tight">
-                  Year 1: free.
+                  Free.
                 </h3>
                 <p className="text-body-text text-[15px] leading-relaxed mb-3">
                   Grade matching across our 134,000-grade database.
                   Document automation (Form E, CoA, TDS, HS codes).
                   Compliance verification across target destinations. CRM
                   integrated with the sourcing desk. Daily market
-                  intelligence across commodity and engineering lanes.
+                  intelligence across commodity and engineering grades.
                 </p>
               </div>
             </RevealDiv>
@@ -140,7 +138,7 @@ export default function PartnersPage() {
             <RevealDiv delay={100}>
               <div className="bg-gradient-to-br from-white/[0.04] to-white/[0.01] border border-white/[0.08] rounded-lg p-7 h-full">
                 <span className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-gold mb-3 block">
-                  LANE 2 CATEGORY EXPANSION
+                  ENGINEERING POLYMERS
                 </span>
                 <h3 className="font-serif text-2xl font-bold text-white mb-4 leading-tight">
                   Chinese equivalents to Zytel, Ultramid, LNP.
@@ -152,11 +150,12 @@ export default function PartnersPage() {
                   Tier 1 OEM supply to BYD, CATL, CALB.
                 </p>
                 <p className="text-body-text text-[15px] leading-relaxed">
-                  Western-premium engineering polymers run 20–40% above
-                  Chinese alternatives at equivalent quality. Your customers
-                  pay the premium because you lack a compounding partner.
-                  This is where most capture happens — because the
-                  alternative doesn&apos;t exist at your scale.{" "}
+                  Your customers already ask for Zytel / Ultramid / LNP
+                  equivalents. Without a compounding partner, you quote
+                  Chinese suppliers you can&apos;t fully vet and hope the TDS
+                  holds under OEM qualification — or you walk away from the
+                  inquiry. We are that partner. The business you currently
+                  lose becomes business you capture.{" "}
                   <Link
                     href="/materials"
                     className="text-gold hover:text-gold-light transition-colors underline underline-offset-2"
@@ -227,8 +226,8 @@ export default function PartnersPage() {
                   </strong>
                 </p>
                 <p className="text-body-text/80 text-[14px] leading-relaxed">
-                  This is the majority of your book in Year 1. No lock-in;
-                  no minimum volume. Walk at zero cost.
+                  This is the majority of your book. No lock-in, no minimum
+                  volume. Walk at zero cost.
                 </p>
               </div>
             </div>
@@ -243,7 +242,7 @@ export default function PartnersPage() {
               <div className="bg-white/[0.02] border border-white/[0.08] rounded-lg divide-y divide-white/[0.06]">
                 <div className="flex items-center justify-between px-5 py-3.5">
                   <span className="font-sans text-[14px] text-white">
-                    Lane 1 — Commodity (PP, PE, PVC, PA6 commodity)
+                    Commodity (PP, PE, PVC, PA6 commodity)
                   </span>
                   <span className="font-mono text-[13px] text-teal tracking-wide">
                     20–40%
@@ -251,7 +250,7 @@ export default function PartnersPage() {
                 </div>
                 <div className="flex items-center justify-between px-5 py-3.5">
                   <span className="font-sans text-[14px] text-white">
-                    Lane 2 — Engineering (PA6, PA66, PC, ABS, POM)
+                    Engineering (PA6, PA66, PC, ABS, POM)
                   </span>
                   <span className="font-mono text-[13px] text-gold tracking-wide">
                     70–90%
@@ -259,7 +258,7 @@ export default function PartnersPage() {
                 </div>
                 <div className="flex items-center justify-between px-5 py-3.5">
                   <span className="font-sans text-[14px] text-white">
-                    Lane 3 — Recycled (rPP, rPET)
+                    Recycled (rPP, rPET)
                   </span>
                   <span className="font-mono text-[13px] text-teal tracking-wide">
                     60–80%
@@ -272,16 +271,16 @@ export default function PartnersPage() {
           <RevealDiv delay={300}>
             <div className="mt-10 max-w-3xl">
               <h3 className="font-serif text-xl font-bold text-white mb-3">
-                Credit: Year 2+.
+                Credit: the next layer.
               </h3>
               <p className="text-body-text text-[15px] leading-relaxed">
-                Trade finance becomes available in Year 2 via Hong Kong bank
-                facilities and export credit insurance. At launch: applied
-                to Class 1 (Kantor-sourced) deals. Later: extended to Class
-                2 where working-capital needs exceed your own balance sheet.
-                Kantor earns credit spread only on the deals we finance. If
-                credit timing doesn&apos;t match your situation, that does
-                not affect the Year-1 partnership.
+                Trade finance is in buildout via Hong Kong bank facilities
+                and export credit insurance. At launch: applied to Class 1
+                (Kantor-sourced) deals. Later: extended to Class 2 where
+                working-capital needs exceed your own balance sheet. Kantor
+                earns credit spread only on the deals we finance. If credit
+                timing doesn&apos;t match your situation, that does not
+                affect the infrastructure partnership.
               </p>
             </div>
           </RevealDiv>
@@ -330,9 +329,9 @@ export default function PartnersPage() {
                   3. CREDIT FACILITY
                 </div>
                 <p className="text-body-text text-[14px] leading-relaxed">
-                  Year 2+. Activated when you want access to Kantor-financed
-                  deals under HK bank facilities and export credit
-                  insurance.
+                  Activated when trade finance goes live and you want access
+                  to Kantor-financed deals under HK bank facilities and
+                  export credit insurance.
                 </p>
               </div>
             </RevealDiv>
@@ -363,7 +362,7 @@ export default function PartnersPage() {
               HONEST FRAMING
             </span>
             <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-6 max-w-3xl leading-tight">
-              Hypothesis v1. Early-cohort terms shape the architecture.
+              Early cohort. You shape the terms.
             </h2>
             <div className="max-w-3xl space-y-4 text-body-text text-[15px] leading-relaxed">
               <p>
@@ -376,13 +375,13 @@ export default function PartnersPage() {
                 <strong className="text-white">
                   At launch we have zero trader partners.
                 </strong>{" "}
-                Year 1 partners are ITP cohort 1 — what they experience
-                defines what future trader partners experience.
+                First-cohort partners define what every future partner
+                experiences.
               </p>
               <p>
                 If you&apos;d rather wait until the architecture is
-                validated at scale, we understand. The opportunity for Year
-                1 cohort is structural, not rhetorical: first trader
+                validated at scale, we understand. The opportunity for
+                first-cohort partners is structural, not rhetorical: early
                 partners shape the terms.
               </p>
             </div>
@@ -398,14 +397,14 @@ export default function PartnersPage() {
               TALK TO US
             </span>
             <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
-              Start the conversation at CHINAPLAS.
+              Start the conversation.
             </h2>
             <p className="text-body-text text-[15px] leading-relaxed mb-8 max-w-[560px] mx-auto">
-              CHINAPLAS Shanghai, April 21–24, 2026. David Wu (founder) is
-              at the event throughout. If you&apos;re attending, email with
-              your best time — 45 minutes for a substantive conversation,
-              not a trade-show pitch. If you&apos;re remote, we can start by
-              email.
+              David Wu (founder) replies to every partnership inquiry
+              personally. 45 minutes for a substantive conversation, not a
+              platform pitch. If you&apos;re at CHINAPLAS Shanghai
+              (April 21–24, 2026), include your best time — we can meet in
+              person; otherwise we start by email.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -418,7 +417,7 @@ export default function PartnersPage() {
                 href="/materials"
                 className="inline-flex items-center justify-center border border-white/[0.15] hover:border-teal/40 text-white font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:-translate-y-px"
               >
-                See Lane 2 catalog
+                See engineering polymer catalog
               </Link>
             </div>
           </RevealDiv>

@@ -10,7 +10,7 @@ const navLinks = [
   { label: "The Polymer Compass", href: "/polymer-compass" },
   { label: "Insights", href: "/insights" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Materials", href: "/materials" },
+  { label: "Engineering", href: "/materials" },
   { label: "Partners", href: "/partners" },
   { label: "About", href: "/approach" },
 ];
