@@ -181,7 +181,7 @@ export default function ApproachPage() {
       </section>
 
       {/* Founder */}
-      <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">
+      <section className="bg-navy-deep py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">
         <div className="max-w-3xl mx-auto">
           <RevealDiv>
             <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
@@ -299,7 +299,7 @@ export default function ApproachPage() {
       <HonestySection />
 
       {/* CTA */}
-      <section className="bg-navy-deep py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">
+      <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">
         <div className="max-w-[720px] mx-auto text-center">
           <RevealDiv>
             <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
