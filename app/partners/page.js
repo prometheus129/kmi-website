@@ -7,11 +7,11 @@ import JsonLd, { organizationSchema } from "@/components/JsonLd";
 export const metadata = {
   title: "Trader Partnership — Kantor Materials International",
   description:
-    "Keep your book. Free infrastructure, non-exclusive. We earn only when we source a deal and beat your existing supplier. How Kantor's trader partnership works.",
+    "Keep your book. Quote engineering grades you currently walk away from — Chinese equivalents to Zytel, Ultramid, LNP, compounded in our own facility. Source commodity through us when we beat your suppliers.",
   openGraph: {
     title: "Trader Partnership — Kantor Materials",
     description:
-      "Keep your book. Free infrastructure, non-exclusive. We earn only when we source a deal and beat your existing supplier.",
+      "Keep your book. Quote engineering grades you currently walk away from. Source commodity through us when we beat your suppliers.",
   },
   alternates: { canonical: "/partners" },
 };
@@ -30,12 +30,14 @@ export default function PartnersPage() {
               TRADER PARTNERSHIP
             </span>
             <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white mb-6 max-w-[960px] leading-tight">
-              Keep your book. Use our infrastructure. Source through us when
-              we beat your suppliers.
+              Keep your book. Quote engineering grades you currently walk
+              away from. Source commodity through us when we beat your
+              suppliers.
             </h1>
             <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-2xl">
-              Free infrastructure, non-exclusive, no lock-in. We earn only
-              when we source a deal and beat your existing supplier.
+              Chinese equivalents to Zytel, Ultramid, LNP — compounded in
+              our own facility. Free sourcing infrastructure across
+              commodity grades. Non-exclusive, no lock-in.
             </p>
           </RevealDiv>
         </div>
