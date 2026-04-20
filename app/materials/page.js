@@ -12,7 +12,7 @@ export const metadata = {
   openGraph: {
     title: "Engineering Polymers — Kantor Materials",
     description:
-      "Chinese equivalents to Western-premium engineering polymers — compounded in our own facility at 60,000 MT/yr, validated at OEM scale (BYD, CATL, CALB).",
+      "China-origin equivalents to Western premium engineering polymers — compounded in our own facility at 60,000 MT/yr, validated at OEM scale (BYD, CATL, CALB).",
   },
   alternates: { canonical: "/materials" },
 };
