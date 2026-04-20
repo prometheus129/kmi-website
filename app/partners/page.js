@@ -90,8 +90,8 @@ export default function PartnersPage() {
               WHAT YOU GAIN
             </span>
             <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-4 max-w-3xl leading-tight">
-              Engineering polymer access your suppliers can&apos;t build.
-              Infrastructure free on top.
+              Engineering polymer compounding. Grade matching, docs, and
+              compliance on every deal.
             </h2>
             <p className="text-body-text text-[15px] leading-relaxed max-w-2xl mb-10">
               Two things a trader cannot buy off the shelf: a documented
@@ -220,9 +220,12 @@ export default function PartnersPage() {
                   WHEN YOU SOURCE
                 </div>
                 <p className="text-body-text text-[15px] leading-relaxed mb-3">
-                  You source the deal yourself via your own supplier
-                  relationships. Kantor infrastructure supports the deal
-                  (documentation, compliance, CRM, intelligence).
+                  You source the deal via your own supplier relationships.
+                  Grade matching still runs on whoever you picked. Document
+                  packet — Form E, CoA, TDS, HS codes — assembles
+                  automatically. Compliance gets verified for the
+                  destination. Landed cost is calculated. The deal tracks
+                  in the same pipeline as everything else.
                 </p>
                 <p className="text-body-text text-[15px] leading-relaxed mb-3">
                   <strong className="text-white">
@@ -237,37 +240,6 @@ export default function PartnersPage() {
             </div>
           </RevealDiv>
 
-        </div>
-      </section>
-
-      {/* What gets signed */}
-      <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">
-        <div className="max-w-[1200px] mx-auto">
-          <RevealDiv>
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
-              WHAT GETS SIGNED
-            </span>
-            <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-4 max-w-3xl leading-tight">
-              Three agreements. Non-exclusive. 12-month term.
-            </h2>
-          </RevealDiv>
-
-          <RevealDiv delay={100}>
-            <div className="mt-8 max-w-3xl space-y-4 text-body-text text-[15px] leading-relaxed">
-              <p>
-                A services agreement for infrastructure access and data
-                treatment (anonymized, aggregated, never individually
-                identified). A commercial supply agreement activated only
-                when we source a deal for you — TT 30/70 default. A credit
-                facility activated when trade finance goes live.
-              </p>
-              <p>
-                No minimum volume. No revenue share on deals Kantor
-                didn&apos;t source or finance. Your customers never hear
-                our name.
-              </p>
-            </div>
-          </RevealDiv>
         </div>
       </section>
 
