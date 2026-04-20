@@ -11,13 +11,14 @@ const columns = [
       { label: "The Polymer Compass", href: "/polymer-compass" },
       { label: "Market Insights", href: "/insights" },
       { label: "Daily Pricing", href: "/pricing" },
-      { label: "Advanced Materials", href: "/materials" },
+      { label: "Engineering Polymers", href: "/materials" },
     ],
   },
   {
     title: "COMPANY",
     links: [
       { label: "About Our Approach", href: "/approach" },
+      { label: "Trader Partnership", href: "/partners" },
       { label: "Contact", href: "/contact" },
       { label: "Privacy Policy", href: "/privacy" },
       { label: "Terms of Service", href: "/terms" },
@@ -66,7 +67,8 @@ export default function Footer() {
             </Link>
             <p className="font-sans text-[13px] text-muted leading-relaxed max-w-[280px] mb-4">
               Your China Polymer Desk. Hong Kong headquartered, sourcing
-              across China, serving distributors across emerging markets.
+              commodity, engineering, and recycled grades across emerging
+              markets.
             </p>
             <div className="space-y-1.5">
               <a
