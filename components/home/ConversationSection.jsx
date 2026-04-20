@@ -180,33 +180,33 @@ export default function ConversationSection() {
                 />
               </div>
 
-              {/* Destination + Company */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:items-end">
-                <div>
-                  <label htmlFor="conv-destination" className={labelClasses}>
-                    Destination country or port *
-                  </label>
-                  <input
-                    id="conv-destination"
-                    name="destination"
-                    required
-                    className={inputClasses}
-                    placeholder="e.g., Ho Chi Minh City, Manila, Istanbul"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="conv-company" className={labelClasses}>
-                    Company *
-                  </label>
-                  <input
-                    id="conv-company"
-                    name="company"
-                    required
-                    autoComplete="organization"
-                    className={inputClasses}
-                    placeholder="Your company name"
-                  />
-                </div>
+              {/* Destination */}
+              <div>
+                <label htmlFor="conv-destination" className={labelClasses}>
+                  Destination country or port *
+                </label>
+                <input
+                  id="conv-destination"
+                  name="destination"
+                  required
+                  className={inputClasses}
+                  placeholder="e.g., Ho Chi Minh City, Manila, Istanbul"
+                />
+              </div>
+
+              {/* Company */}
+              <div>
+                <label htmlFor="conv-company" className={labelClasses}>
+                  Company *
+                </label>
+                <input
+                  id="conv-company"
+                  name="company"
+                  required
+                  autoComplete="organization"
+                  className={inputClasses}
+                  placeholder="Your company name"
+                />
               </div>
 
               {/* Email */}

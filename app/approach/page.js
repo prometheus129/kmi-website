@@ -296,8 +296,8 @@ export default function ApproachPage() {
                   LANE 1 — COMMODITY
                 </div>
                 <p className="font-sans text-[14px] text-body-text leading-relaxed">
-                  PP, PE, PVC, PA6 commodity. Best-execution pricing across
-                  the Chinese producer and merchant network.
+                  PP, PE, PVC. Best-execution pricing across the Chinese
+                  producer and merchant network.
                 </p>
               </div>
             </RevealDiv>

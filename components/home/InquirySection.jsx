@@ -179,33 +179,33 @@ export default function InquirySection() {
                 />
               </div>
 
-              {/* Destination + Company */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:items-end">
-                <div>
-                  <label htmlFor="inq-destination" className={labelClasses}>
-                    Destination country or port *
-                  </label>
-                  <input
-                    id="inq-destination"
-                    name="destination"
-                    required
-                    className={inputClasses}
-                    placeholder="e.g., Ho Chi Minh City, Manila, Istanbul"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="inq-company" className={labelClasses}>
-                    Company *
-                  </label>
-                  <input
-                    id="inq-company"
-                    name="company"
-                    required
-                    autoComplete="organization"
-                    className={inputClasses}
-                    placeholder="Your company name"
-                  />
-                </div>
+              {/* Destination */}
+              <div>
+                <label htmlFor="inq-destination" className={labelClasses}>
+                  Destination country or port *
+                </label>
+                <input
+                  id="inq-destination"
+                  name="destination"
+                  required
+                  className={inputClasses}
+                  placeholder="e.g., Ho Chi Minh City, Manila, Istanbul"
+                />
+              </div>
+
+              {/* Company */}
+              <div>
+                <label htmlFor="inq-company" className={labelClasses}>
+                  Company *
+                </label>
+                <input
+                  id="inq-company"
+                  name="company"
+                  required
+                  autoComplete="organization"
+                  className={inputClasses}
+                  placeholder="Your company name"
+                />
               </div>
 
               {/* Email */}

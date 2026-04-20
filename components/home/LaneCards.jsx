@@ -30,7 +30,7 @@ export default function LaneCards() {
               <div className="relative h-full bg-white rounded-xl border border-[#e5e7eb] p-7 hover:border-[#2E8B8B]/50 hover:shadow-[0_8px_24px_rgba(27,42,74,0.08)] hover:-translate-y-[3px] transition-all duration-200 overflow-hidden">
                 <div className="absolute top-0 left-0 w-1 h-full bg-[#2E8B8B]" />
                 <div className="text-[11px] tracking-[2px] font-bold font-mono mb-3 text-[#2E8B8B]">
-                  PP · PE · PVC · PA6
+                  PP · PE · PVC
                 </div>
                 <h3 className="font-serif text-2xl font-bold text-[#1B2A4A] mb-4 leading-tight">
                   Commodity Polymers
@@ -56,7 +56,7 @@ export default function LaneCards() {
               <div className="relative h-full bg-white rounded-xl border border-[#e5e7eb] p-7 hover:border-[#D4A843]/50 hover:shadow-[0_8px_24px_rgba(27,42,74,0.08)] hover:-translate-y-[3px] transition-all duration-200 overflow-hidden">
                 <div className="absolute top-0 left-0 w-1 h-full bg-[#D4A843]" />
                 <div className="text-[11px] tracking-[2px] font-bold font-mono mb-3 text-[#D4A843]">
-                  PA66 · POM · PC · PEEK · PBT
+                  PA6 · PA66 · POM · PC · PEEK · PBT
                 </div>
                 <h3 className="font-serif text-2xl font-bold text-[#1B2A4A] mb-4 leading-tight">
                   Engineering Polymers
