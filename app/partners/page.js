@@ -117,16 +117,36 @@ export default function PartnersPage() {
                 <span className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-teal mb-3 block">
                   INFRASTRUCTURE
                 </span>
-                <h3 className="font-serif text-2xl font-bold text-white mb-4 leading-tight">
+                <h3 className="font-serif text-2xl font-bold text-white mb-5 leading-tight">
                   Free.
                 </h3>
-                <p className="text-body-text text-[15px] leading-relaxed mb-3">
-                  Grade matching across our 134,000-grade database.
-                  Document automation (Form E, CoA, TDS, HS codes).
-                  Compliance verification across target destinations. Daily
-                  market intelligence across commodity and engineering
-                  grades.
-                </p>
+                <ul className="space-y-3 text-body-text text-[15px] leading-relaxed">
+                  <li className="flex gap-3">
+                    <span className="text-teal mt-[0.35em] flex-shrink-0 leading-none">•</span>
+                    <span>
+                      Grade matching across our 134,000-grade database
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-teal mt-[0.35em] flex-shrink-0 leading-none">•</span>
+                    <span>
+                      Document automation (Form E, CoA, TDS, HS codes)
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-teal mt-[0.35em] flex-shrink-0 leading-none">•</span>
+                    <span>
+                      Compliance verification across target destinations
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-teal mt-[0.35em] flex-shrink-0 leading-none">•</span>
+                    <span>
+                      Daily market intelligence across commodity and
+                      engineering grades
+                    </span>
+                  </li>
+                </ul>
               </div>
             </RevealDiv>
 
