@@ -326,12 +326,15 @@ export default function PartnersPage() {
             <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
               Start the conversation.
             </h2>
-            <p className="text-body-text text-[15px] leading-relaxed mb-8 max-w-[560px] mx-auto">
+            <p className="text-body-text text-[15px] leading-relaxed mb-6 max-w-[560px] mx-auto">
               David Wu (founder) replies to every partnership inquiry
               personally. 45 minutes for a substantive conversation, not a
               sales pitch. If you&apos;re at CHINAPLAS Shanghai
               (April 21–24, 2026), include your best time — we can meet in
               person; otherwise we start by email.
+            </p>
+            <p className="font-mono text-[14px] text-gold/80 mb-8 select-all">
+              david@kantor-m.com
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
