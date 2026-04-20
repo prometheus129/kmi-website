@@ -73,7 +73,7 @@ export default function PartnersPage() {
                   brand, your pricing authority — stay yours.
                 </p>
                 <p>
-                  Your customers never hear our name unless you want them to.
+                  Your customers never hear our name.
                 </p>
               </div>
               <div className="space-y-4 text-body-text text-[15px] leading-relaxed">
@@ -304,8 +304,8 @@ export default function PartnersPage() {
               </p>
               <p>
                 No minimum volume. No revenue share on deals Kantor
-                didn&apos;t source or finance. Your customers never hear our
-                name unless you want them to.
+                didn&apos;t source or finance. Your customers never hear
+                our name.
               </p>
             </div>
           </RevealDiv>
