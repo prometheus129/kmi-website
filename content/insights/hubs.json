@@ -140,7 +140,7 @@
       "name": "Engineering Polymers",
       "description": "Material-specific sourcing guides for Chinese engineering polymer alternatives. PEEK, PEI, PPS, PC/ABS, PBT, POM, and more.",
       "intro": "Chinese engineering polymer compounders now hold UL Yellow Cards, OEM qualifications from Tier 1 EV manufacturers, and certification parity with Western incumbents. These guides cover material selection, supplier qualification, and cost structure for each polymer family.",
-      "matchTags": ["Lane 2", "engineering polymers", "PEEK", "PEI", "PPS", "PPA", "PC/ABS", "PBT", "POM", "flame retardant", "glass fiber reinforced", "UL certification"],
+      "matchTags": ["engineering polymers", "PEEK", "PEI", "PPS", "PPA", "PC/ABS", "PBT", "POM", "flame retardant", "glass fiber reinforced", "UL certification"],
       "featuredSlugs": ["engineering-polymer-equivalents-china-ul-certified", "peek-polymer-china-alternatives-victrex-solvay", "halogen-free-flame-retardant-polymers-china-certified"],
       "excludeSlugs": []
     }

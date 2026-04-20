@@ -118,11 +118,10 @@ export default function InsightsGrid({
   const firstRow = visibleArticles.slice(0, 3);
   const restArticles = visibleArticles.slice(3);
 
-  // Show Lane 2 discovery card only when NOT filtering for engineering polymer topics
-  const lane2FilterTags = ["engineering polymers", "lane 2"];
+  // Show engineering-polymer discovery card only when NOT filtering for engineering polymer topics
+  const lane2FilterTags = ["engineering polymers"];
   const isFilteringLane2 = lane2FilterTags.includes(activeTag.toLowerCase()) ||
-    searchQuery.toLowerCase().includes("engineering") ||
-    searchQuery.toLowerCase().includes("lane 2");
+    searchQuery.toLowerCase().includes("engineering");
 
   const hasFilters = marketTags.length > 0 || topicTags.length > 0;
 

@@ -2,7 +2,6 @@ import Link from "next/link";
 import { getAllArticles } from "@/lib/insights";
 
 const LANE2_TAGS = new Set([
-  "lane 2",
   "engineering polymers",
   "peek",
   "pei",
