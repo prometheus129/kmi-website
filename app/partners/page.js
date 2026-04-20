@@ -125,7 +125,7 @@ export default function PartnersPage() {
                   INFRASTRUCTURE
                 </span>
                 <h3 className="font-serif text-2xl font-bold text-white mb-4 leading-tight">
-                  Year 1: free. Year 2+: 0.3–0.5% service fee.
+                  Year 1: free.
                 </h3>
                 <p className="text-body-text text-[15px] leading-relaxed mb-3">
                   Grade matching across our 134,000-grade database.
@@ -133,10 +133,6 @@ export default function PartnersPage() {
                   Compliance verification across target destinations. CRM
                   integrated with the sourcing desk. Daily market
                   intelligence across commodity and engineering lanes.
-                </p>
-                <p className="text-body-text text-[15px] leading-relaxed">
-                  The Year 2+ service fee is invoiced separately — not
-                  extracted from your supply chain.
                 </p>
               </div>
             </RevealDiv>
@@ -227,9 +223,8 @@ export default function PartnersPage() {
                 </p>
                 <p className="text-body-text text-[15px] leading-relaxed mb-3">
                   <strong className="text-white">
-                    Year 1: Kantor earns nothing.
-                  </strong>{" "}
-                  Year 2+: 0.3–0.5% service fee on infrastructure use.
+                    Kantor earns nothing on Class 2 deals.
+                  </strong>
                 </p>
                 <p className="text-body-text/80 text-[14px] leading-relaxed">
                   This is the majority of your book in Year 1. No lock-in;
@@ -312,9 +307,8 @@ export default function PartnersPage() {
                   1. MASTER SERVICES
                 </div>
                 <p className="text-body-text text-[14px] leading-relaxed">
-                  Infrastructure access terms. Year 2+ service fee
-                  framework. Data treatment (anonymized, aggregated, never
-                  individually identified).
+                  Infrastructure access terms. Data treatment (anonymized,
+                  aggregated, never individually identified).
                 </p>
               </div>
             </RevealDiv>
