@@ -434,8 +434,8 @@ export default function ApproachPage() {
               </div>
             </RevealDiv>
 
-            <RevealDiv delay={320}>
-              <div className="border border-white/[0.08] rounded-lg p-6 bg-white/[0.02] h-full md:col-span-2">
+            <RevealDiv delay={320} className="md:col-span-2">
+              <div className="border border-white/[0.08] rounded-lg p-6 bg-white/[0.02] h-full">
                 <div className="flex items-baseline gap-3 mb-3">
                   <span className="font-mono text-[11px] text-gold/60 tracking-wide">
                     05
