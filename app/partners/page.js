@@ -254,9 +254,12 @@ export default function PartnersPage() {
             <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
               TALK TO US
             </span>
-            <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-6 leading-tight">
+            <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
               Start the conversation.
             </h2>
+            <p className="text-body-text text-[15px] leading-relaxed mb-6 max-w-[480px] mx-auto">
+              Every partnership inquiry reaches David Wu (founder) directly.
+            </p>
             <p className="font-mono text-[14px] text-gold/80 mb-8 select-all">
               david@kantor-m.com
             </p>
