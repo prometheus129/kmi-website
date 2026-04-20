@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
 import HonestySection from "@/components/home/HonestySection";
 import Link from "next/link";
+import Image from "next/image";
 import JsonLd, { organizationSchema } from "@/components/JsonLd";
 
 export const metadata = {
@@ -58,7 +59,7 @@ export default function ApproachPage() {
       <Nav />
 
       {/* Hero */}
-      <section className="pt-36 pb-16 lg:pt-44 lg:pb-20 px-6 lg:px-10">
+      <section className="bg-navy-deep pt-36 pb-16 lg:pt-44 lg:pb-20 px-6 lg:px-10">
         <div className="max-w-[1200px] mx-auto">
           <RevealDiv>
             <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
@@ -181,8 +182,21 @@ export default function ApproachPage() {
       </section>
 
       {/* Founder */}
-      <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">
-        <div className="max-w-3xl mx-auto">
+      <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04] relative overflow-hidden">
+        {/* Atmospheric texture */}
+        <div className="absolute inset-0 opacity-[0.035]">
+          <Image
+            src="/images/approach-founder-texture.jpg"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+            quality={60}
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-ticker-bg/50 via-transparent to-ticker-bg/50" />
+
+        <div className="max-w-3xl mx-auto relative z-10">
           <RevealDiv>
             <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
               FOUNDER
@@ -238,8 +252,21 @@ export default function ApproachPage() {
       </section>
 
       {/* Three lanes we operate */}
-      <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">
-        <div className="max-w-[1200px] mx-auto">
+      <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04] relative overflow-hidden">
+        {/* Atmospheric texture */}
+        <div className="absolute inset-0 opacity-[0.035]">
+          <Image
+            src="/images/approach-lanes-texture.jpg"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+            quality={60}
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/50 via-transparent to-navy/50" />
+
+        <div className="max-w-[1200px] mx-auto relative z-10">
           <RevealDiv>
             <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-gold mb-4 block">
               WHAT WE SOURCE
@@ -299,7 +326,7 @@ export default function ApproachPage() {
       <HonestySection bg="bg-ticker-bg" />
 
       {/* CTA */}
-      <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">
+      <section className="bg-navy-deep py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">
         <div className="max-w-[720px] mx-auto text-center">
           <RevealDiv>
             <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
