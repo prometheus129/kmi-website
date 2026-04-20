@@ -47,7 +47,7 @@ export default function HomePage() {
         <KnowledgeSection />
         <ExperienceDelta />
         <TPCPreview latestIssue={latestIssue} />
-        <HonestySection />
+        <HonestySection textureOpacity={0} />
         <TrustSection />
         <ConversationSection />
       </main>
