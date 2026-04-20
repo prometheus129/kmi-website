@@ -2,7 +2,7 @@ import RevealDiv from "@/components/RevealDiv";
 
 export default function KnowledgeSection() {
   return (
-    <section className="bg-navy-deep py-20 lg:py-24 px-6 lg:px-10 relative">
+    <section className="bg-navy py-20 lg:py-24 px-6 lg:px-10 relative">
       <div className="max-w-[700px] mx-auto text-center relative z-10">
         <RevealDiv>
           <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
