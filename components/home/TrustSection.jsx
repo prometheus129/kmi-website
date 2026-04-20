@@ -69,14 +69,16 @@ export default function TrustSection() {
         <RevealDiv>
           <div className="text-center mb-10">
             <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
-              OUR OPERATIONS
+              OUR COMPOUNDING OPERATIONS
             </div>
-            <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white mb-3">
-              Validated by Production.
+            <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white mb-4 max-w-[800px] mx-auto leading-tight">
+              Our engineering compounds go where failure isn&apos;t an option.
             </h2>
-            <p className="font-sans text-base text-body-text max-w-[640px] mx-auto">
-              Our compounds are validated in our own production lines — over 2
-              million finished goods manufactured annually using our materials.
+            <p className="font-sans text-base text-body-text max-w-[680px] mx-auto leading-relaxed">
+              Validated in our own production lines — over 2 million finished
+              goods manufactured annually using our materials. When we match
+              a grade for your application, we&apos;re matching against what
+              we already know works.
             </p>
           </div>
         </RevealDiv>
