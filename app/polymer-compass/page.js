@@ -3,11 +3,11 @@ import TerminalPageContent from "@/components/terminal/TerminalPageContent";
 export const metadata = {
   title: "The Polymer Compass — Kantor Materials International",
   description:
-    "Free market intelligence for polymer distributors. Pricing direction, supply context, and timing guidance. Twice weekly.",
+    "Free market intelligence for polymer procurement — pricing direction, supply context, and timing guidance across commodity and engineering grades. Twice weekly.",
   openGraph: {
     title: "The Polymer Compass — Free Polymer Market Intelligence",
     description:
-      "Pricing direction, supply context, and timing guidance for polymer distributors. Twice weekly, free.",
+      "Pricing direction, supply context, and timing guidance for polymer buyers across commodity and engineering grades. Twice weekly, free.",
   },
   alternates: {
     canonical: "/polymer-compass",

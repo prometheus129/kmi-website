@@ -4,6 +4,19 @@ import RevealDiv from "@/components/RevealDiv";
 import Link from "next/link";
 import MaterialsFilter from "@/components/materials/MaterialsFilter";
 
+export const metadata = {
+  title:
+    "Engineering Polymers — Chinese Alternatives to Zytel, Ultramid, LNP — Kantor Materials",
+  description:
+    "Chinese engineering polymer compounds — PA66, POM, PC, PEEK, PBT equivalent to DuPont Zytel, BASF Ultramid, SABIC LNP. Own compounding facility, OEM-validated.",
+  openGraph: {
+    title: "Engineering Polymers — Kantor Materials",
+    description:
+      "Chinese equivalents to Western-premium engineering polymers — compounded in our own facility at 60,000 MT/yr, validated at OEM scale (BYD, CATL, CALB).",
+  },
+  alternates: { canonical: "/materials" },
+};
+
 const materials = [
   {
     name: "PEEK",
