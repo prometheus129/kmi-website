@@ -278,17 +278,8 @@ export default function PartnersPage() {
             </h2>
             <div className="max-w-3xl space-y-4 text-body-text text-[15px] leading-relaxed">
               <p>
-                This architecture is new. Capture-rate targets and margin
-                projections are research-informed, not yet empirically
-                validated. We are building this with early trader partners;
-                your feedback shapes the structure.
-              </p>
-              <p>
-                <strong className="text-white">
-                  At launch we have zero trader partners.
-                </strong>{" "}
-                First-cohort partners define what every future partner
-                experiences.
+                This architecture is new. We are building it with early
+                trader partners; your feedback shapes the structure.
               </p>
               <p>
                 If you&apos;d rather wait until the architecture is
