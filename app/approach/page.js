@@ -79,7 +79,7 @@ export default function ApproachPage() {
       </section>
 
       {/* How We Work — Five Domains */}
-      <section className="bg-navy-deep py-20 lg:py-[90px] px-6 lg:px-10">
+      <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10">
         <div className="max-w-[1200px] mx-auto">
           <RevealDiv>
             <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
@@ -181,7 +181,7 @@ export default function ApproachPage() {
       </section>
 
       {/* Founder */}
-      <section className="bg-navy-deep py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">
+      <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">
         <div className="max-w-3xl mx-auto">
           <RevealDiv>
             <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
@@ -296,7 +296,7 @@ export default function ApproachPage() {
       </section>
 
       {/* What we don't promise */}
-      <HonestySection />
+      <HonestySection bg="bg-ticker-bg" />
 
       {/* CTA */}
       <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">

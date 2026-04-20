@@ -131,7 +131,7 @@ export default function PartnersPage() {
             </RevealDiv>
 
             <RevealDiv delay={100}>
-              <div className="bg-gradient-to-br from-white/[0.04] to-white/[0.01] border border-white/[0.08] rounded-lg p-7 h-full">
+              <div className="bg-gradient-to-br from-gold/[0.06] to-gold/[0.01] border border-gold/[0.15] rounded-lg p-7 h-full">
                 <span className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-gold mb-3 block">
                   ENGINEERING POLYMERS
                 </span>
@@ -263,8 +263,12 @@ export default function PartnersPage() {
       </section>
 
       {/* Honest framing */}
-      <section className="bg-navy-deep py-20 lg:py-[90px] px-6 lg:px-10">
-        <div className="max-w-[1200px] mx-auto">
+      <section className="bg-navy-deep py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,168,67,0.05)_0%,transparent_65%)] pointer-events-none"
+        />
+        <div className="max-w-[1200px] mx-auto relative">
           <RevealDiv>
             <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-gold mb-4 block">
               HONEST FRAMING
@@ -298,8 +302,12 @@ export default function PartnersPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">
-        <div className="max-w-[720px] mx-auto text-center">
+      <section className="bg-navy py-24 lg:py-[110px] px-6 lg:px-10 border-t border-white/[0.04] relative overflow-hidden">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,168,67,0.07)_0%,transparent_60%)] pointer-events-none"
+        />
+        <div className="max-w-[720px] mx-auto text-center relative">
           <RevealDiv>
             <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
               TALK TO US
