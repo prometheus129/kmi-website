@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { FORM_ENDPOINTS, submitForm } from "@/lib/forms";
 import { trackCTA, trackFormSubmit } from "@/lib/tracking";
@@ -67,9 +68,23 @@ export default function ConversationSection() {
   return (
     <section
       id="inquiry"
-      className="bg-navy py-24 px-6 lg:px-10 scroll-mt-24"
+      className="bg-navy py-24 px-6 lg:px-10 scroll-mt-24 relative overflow-hidden"
     >
-      <div className="max-w-[640px] mx-auto">
+      {/* Atmospheric texture */}
+      <div className="absolute inset-0 opacity-[0.025]">
+        <Image
+          src="/images/value-texture.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          style={{ objectPosition: "center 70%" }}
+          sizes="100vw"
+          quality={60}
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-navy/50 via-transparent to-navy/50" />
+
+      <div className="max-w-[640px] mx-auto relative z-10">
         {/* Header */}
         <RevealDiv>
           <div className="text-center mb-10">
