@@ -335,8 +335,162 @@ export default function ApproachPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* What makes this uncontested */}
       <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">
+        <div className="max-w-[1200px] mx-auto">
+          <RevealDiv>
+            <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-gold mb-4 block">
+              WHAT MAKES THIS UNCONTESTED
+            </span>
+            <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-6 max-w-3xl leading-tight">
+              Five dimensions. No adjacent category occupies more than three.
+            </h2>
+            <div className="max-w-3xl space-y-5 text-body-text text-[15px] leading-relaxed mb-12">
+              <p>
+                The intersection of polymer-vertical depth, cross-border
+                China-origin sourcing, AI-native architecture, operator-level
+                trading, and integrated trade finance has no single competitor
+                today. Horizontal procurement platforms expand breadth, not
+                depth. Commodity trading intelligence serves traders without
+                becoming one. Chemical AI serves suppliers and R&amp;D, not
+                buyers. The natural expansion vectors of adjacent categories
+                don&apos;t meet at our position.
+              </p>
+            </div>
+          </RevealDiv>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-5xl mb-14">
+            <RevealDiv delay={0}>
+              <div className="border border-white/[0.08] rounded-lg p-6 bg-white/[0.02] h-full">
+                <div className="flex items-baseline gap-3 mb-3">
+                  <span className="font-mono text-[11px] text-teal/60 tracking-wide">
+                    01
+                  </span>
+                  <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-teal">
+                    POLYMER-SPECIFIC DEPTH
+                  </div>
+                </div>
+                <p className="font-sans text-[14px] text-body-text leading-relaxed">
+                  134,000-grade database. Corridor-specific regulatory
+                  competence (Form E, BIS, anti-dumping, KKDF). Feedstock
+                  economics, grade-substitution logic, engineering-polymer
+                  compounding capability.
+                </p>
+              </div>
+            </RevealDiv>
+
+            <RevealDiv delay={80}>
+              <div className="border border-white/[0.08] rounded-lg p-6 bg-white/[0.02] h-full">
+                <div className="flex items-baseline gap-3 mb-3">
+                  <span className="font-mono text-[11px] text-teal/60 tracking-wide">
+                    02
+                  </span>
+                  <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-teal">
+                    CHINA → GLOBAL SOUTH CORRIDORS
+                  </div>
+                </div>
+                <p className="font-sans text-[14px] text-body-text leading-relaxed">
+                  Vietnam, Philippines, Thailand, India, Turkey, Indonesia,
+                  Peru, Bangladesh — plus expansion corridors (Pakistan,
+                  Kenya, Morocco, Algeria, Colombia). Not domestic China. Not
+                  intra-OECD.
+                </p>
+              </div>
+            </RevealDiv>
+
+            <RevealDiv delay={160}>
+              <div className="border border-white/[0.08] rounded-lg p-6 bg-white/[0.02] h-full">
+                <div className="flex items-baseline gap-3 mb-3">
+                  <span className="font-mono text-[11px] text-teal/60 tracking-wide">
+                    03
+                  </span>
+                  <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-teal">
+                    AI-NATIVE FROM DAY 1
+                  </div>
+                </div>
+                <p className="font-sans text-[14px] text-body-text leading-relaxed">
+                  Built around AI technical sales engineering and account
+                  management infrastructure that scales without linear human
+                  cost. Not retrofitted AI to a human-built trading business.
+                </p>
+              </div>
+            </RevealDiv>
+
+            <RevealDiv delay={240}>
+              <div className="border border-white/[0.08] rounded-lg p-6 bg-white/[0.02] h-full">
+                <div className="flex items-baseline gap-3 mb-3">
+                  <span className="font-mono text-[11px] text-teal/60 tracking-wide">
+                    04
+                  </span>
+                  <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-teal">
+                    OPERATOR-LEVEL TRADING
+                  </div>
+                </div>
+                <p className="font-sans text-[14px] text-body-text leading-relaxed">
+                  Commercial principal on sourced transactions. Revenue is
+                  GMV, not seat license or search fees. Not a platform, not
+                  a marketplace, not a tool for someone else&apos;s trade.
+                </p>
+              </div>
+            </RevealDiv>
+
+            <RevealDiv delay={320}>
+              <div className="border border-white/[0.08] rounded-lg p-6 bg-white/[0.02] h-full md:col-span-2">
+                <div className="flex items-baseline gap-3 mb-3">
+                  <span className="font-mono text-[11px] text-gold/60 tracking-wide">
+                    05
+                  </span>
+                  <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-gold">
+                    INTEGRATED TRADE FINANCE (YEAR 2+)
+                  </div>
+                </div>
+                <p className="font-sans text-[14px] text-body-text leading-relaxed">
+                  Hong Kong export credit insurance, bank facilities, and
+                  downstream partnership coverage. Year 2+ capability
+                  bounded to Kantor-sourced and Kantor-financed transactions
+                  only. Credit converges with vertical depth and corridor
+                  focus to produce unit economics horizontal platforms
+                  cannot structurally match.
+                </p>
+              </div>
+            </RevealDiv>
+          </div>
+
+          <RevealDiv delay={400}>
+            <div className="max-w-3xl">
+              <h3 className="font-serif text-2xl font-bold text-white mb-4 leading-tight">
+                Why the combination holds.
+              </h3>
+              <div className="space-y-4 text-body-text text-[15px] leading-relaxed">
+                <p>
+                  The intersection doesn&apos;t match any adjacent
+                  category&apos;s natural expansion vector. Horizontal
+                  platforms expand breadth; commodity intelligence tools
+                  serve traders without becoming one; chemical AI serves
+                  suppliers and R&amp;D, not buyers.
+                </p>
+                <p>
+                  Lane 2 compounding and Lane 3 recycled supply require
+                  physical operations a horizontal platform cannot replicate
+                  in 18–24 months. The durable moat is not AI capability —
+                  which commoditizes with foundation models — but
+                  proprietary compounding and recycled-supply infrastructure.
+                </p>
+                <p>
+                  The data flywheel compounds across three distinct asset
+                  types (commodity pricing dispersion, engineering spec-fit,
+                  recycled certification-pass-through). A vertical specialist
+                  in one of the three doesn&apos;t gain advantage on the
+                  others.
+                </p>
+              </div>
+            </div>
+          </RevealDiv>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-navy-deep py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04]">
         <div className="max-w-[720px] mx-auto text-center">
           <RevealDiv>
             <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
