@@ -6,7 +6,7 @@ import Link from "next/link";
 export const metadata = {
   title: "The Kantor Syndicate — Commodity Polymer Procurement",
   description:
-    "Aggregated procurement for mid-tier polymer distributors. PP, PE, LDPE, PA6, PVC, ABS sourced across 600+ producers and merchants with volume-based economics. Lane 1 commodity polymers.",
+    "Aggregated procurement for mid-tier polymer distributors. PP, PE, LDPE, PA6, PVC, ABS sourced across 600+ producers and merchants with volume-based economics. Commodity polymers.",
   robots: { index: false, follow: false },
 };
 
@@ -55,7 +55,7 @@ export default function SyndicatePage() {
         <div className="max-w-[1200px] mx-auto relative z-10">
           <RevealDiv>
             <div className="text-xs tracking-[4px] text-teal font-sans font-semibold mb-6">
-              LANE 1 — COMMODITY POLYMERS
+              COMMODITY POLYMERS
             </div>
             <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-[800px]">
               The Kantor Syndicate
