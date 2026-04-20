@@ -228,56 +228,6 @@ export default function PartnersPage() {
             </div>
           </RevealDiv>
 
-          <RevealDiv delay={200}>
-            <div className="mt-10 max-w-3xl mx-auto">
-              <p className="text-body-text text-[15px] leading-relaxed mb-4">
-                What we expect to source for you over time:
-              </p>
-              <div className="bg-white/[0.02] border border-white/[0.08] rounded-lg divide-y divide-white/[0.06]">
-                <div className="flex items-center justify-between px-5 py-3.5">
-                  <span className="font-sans text-[14px] text-white">
-                    Commodity (PP, PE, PVC, PA6 commodity)
-                  </span>
-                  <span className="font-mono text-[13px] text-teal tracking-wide">
-                    20–40%
-                  </span>
-                </div>
-                <div className="flex items-center justify-between px-5 py-3.5">
-                  <span className="font-sans text-[14px] text-white">
-                    Engineering (PA6, PA66, PC, ABS, POM)
-                  </span>
-                  <span className="font-mono text-[13px] text-gold tracking-wide">
-                    70–90%
-                  </span>
-                </div>
-                <div className="flex items-center justify-between px-5 py-3.5">
-                  <span className="font-sans text-[14px] text-white">
-                    Recycled (rPP, rPET)
-                  </span>
-                  <span className="font-mono text-[13px] text-teal tracking-wide">
-                    60–80%
-                  </span>
-                </div>
-              </div>
-            </div>
-          </RevealDiv>
-
-          <RevealDiv delay={300}>
-            <div className="mt-10 max-w-3xl">
-              <h3 className="font-serif text-xl font-bold text-white mb-3">
-                Credit: the next layer.
-              </h3>
-              <p className="text-body-text text-[15px] leading-relaxed">
-                Trade finance is in buildout via Hong Kong bank facilities
-                and export credit insurance. At launch: applied to deals we
-                source. Later: extended to deals you source where
-                working-capital needs exceed your own balance sheet. Kantor
-                earns credit spread only on the deals we finance. If credit
-                timing doesn&apos;t match your situation, that does not
-                affect the infrastructure partnership.
-              </p>
-            </div>
-          </RevealDiv>
         </div>
       </section>
 
