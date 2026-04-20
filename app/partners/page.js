@@ -33,20 +33,9 @@ export default function PartnersPage() {
               Keep your book. Use our infrastructure. Source through us when
               we beat your suppliers.
             </h1>
-            <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-2xl mb-6">
+            <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-2xl">
               Free infrastructure, non-exclusive, no lock-in. We earn only
               when we source a deal and beat your existing supplier.
-            </p>
-            <p className="text-body-text/70 text-sm leading-relaxed max-w-2xl">
-              For independent polymer traders. If you&apos;re a distributor
-              or end-buyer, see{" "}
-              <Link
-                href="/approach"
-                className="text-teal hover:text-teal-light transition-colors"
-              >
-                /approach
-              </Link>
-              .
             </p>
           </RevealDiv>
         </div>
@@ -67,10 +56,10 @@ export default function PartnersPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
               <div className="space-y-4 text-body-text text-[15px] leading-relaxed">
                 <p>
-                  We are not a channel. We never contact your customers. We
-                  never require exclusivity. We never take revenue share on
-                  your baseline business. Your customer relationships, your
-                  brand, your pricing authority — stay yours.
+                  We never contact your customers. We never require
+                  exclusivity. We never take revenue share on your baseline
+                  business. Your customer relationships, your brand, your
+                  pricing authority — stay yours.
                 </p>
                 <p>
                   Your customers never hear our name.
