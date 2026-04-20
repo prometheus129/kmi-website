@@ -7,7 +7,7 @@ import JsonLd, { organizationSchema } from "@/components/JsonLd";
 export const metadata = {
   title: "Trader Partnership — Kantor Materials International",
   description:
-    "Keep your book. Free infrastructure, non-exclusive. We earn only when we source a deal and beat your existing supplier. How the Kantor Independent Trader Platform (ITP) works.",
+    "Keep your book. Free infrastructure, non-exclusive. We earn only when we source a deal and beat your existing supplier. How Kantor's trader partnership works.",
   openGraph: {
     title: "Trader Partnership — Kantor Materials",
     description:
@@ -38,8 +38,7 @@ export default function PartnersPage() {
               when we source a deal and beat your existing supplier.
             </p>
             <p className="text-body-text/70 text-sm leading-relaxed max-w-2xl">
-              For independent polymer traders evaluating Kantor&apos;s
-              Independent Trader Platform (ITP). If you&apos;re a distributor
+              For independent polymer traders. If you&apos;re a distributor
               or end-buyer, see{" "}
               <Link
                 href="/approach"
@@ -74,11 +73,7 @@ export default function PartnersPage() {
                   brand, your pricing authority — stay yours.
                 </p>
                 <p>
-                  Pattern B (co-branded) is the default: &ldquo;Your Company ×
-                  Powered by Kantor Materials&rdquo; or equivalent framing
-                  that preserves your brand equity. Pattern A
-                  (platform-branded) is available if you don&apos;t have a
-                  personal brand to preserve.
+                  Your customers never hear our name unless you want them to.
                 </p>
               </div>
               <div className="space-y-4 text-body-text text-[15px] leading-relaxed">
@@ -128,9 +123,9 @@ export default function PartnersPage() {
                 <p className="text-body-text text-[15px] leading-relaxed mb-3">
                   Grade matching across our 134,000-grade database.
                   Document automation (Form E, CoA, TDS, HS codes).
-                  Compliance verification across target destinations. CRM
-                  integrated with the sourcing desk. Daily market
-                  intelligence across commodity and engineering grades.
+                  Compliance verification across target destinations. Daily
+                  market intelligence across commodity and engineering
+                  grades.
                 </p>
               </div>
             </RevealDiv>
@@ -177,7 +172,7 @@ export default function PartnersPage() {
               HOW WE EARN
             </span>
             <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-4 max-w-3xl leading-tight">
-              Two transaction classes. We earn only when we win on merit.
+              Two kinds of deals. We earn only when we win on merit.
             </h2>
             <p className="text-body-text text-[15px] leading-relaxed max-w-2xl mb-10">
               Capture rate — what share of your book flows through our
@@ -191,7 +186,7 @@ export default function PartnersPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-gradient-to-br from-white/[0.04] to-white/[0.01] border border-white/[0.08] rounded-lg p-7">
                 <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-gold mb-3">
-                  CLASS 1 — KANTOR SOURCES
+                  WHEN WE SOURCE
                 </div>
                 <p className="text-body-text text-[15px] leading-relaxed mb-3">
                   You route a specific deal&apos;s sourcing through us.
@@ -213,7 +208,7 @@ export default function PartnersPage() {
 
               <div className="bg-gradient-to-br from-white/[0.04] to-white/[0.01] border border-white/[0.08] rounded-lg p-7">
                 <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-teal mb-3">
-                  CLASS 2 — YOU SOURCE
+                  WHEN YOU SOURCE
                 </div>
                 <p className="text-body-text text-[15px] leading-relaxed mb-3">
                   You source the deal yourself via your own supplier
@@ -222,7 +217,7 @@ export default function PartnersPage() {
                 </p>
                 <p className="text-body-text text-[15px] leading-relaxed mb-3">
                   <strong className="text-white">
-                    Kantor earns nothing on Class 2 deals.
+                    Kantor earns nothing on these deals.
                   </strong>
                 </p>
                 <p className="text-body-text/80 text-[14px] leading-relaxed">
@@ -236,8 +231,7 @@ export default function PartnersPage() {
           <RevealDiv delay={200}>
             <div className="mt-10 max-w-3xl mx-auto">
               <p className="text-body-text text-[15px] leading-relaxed mb-4">
-                Capture-rate expectations (research-informed projections,
-                not committed numbers):
+                What we expect to source for you over time:
               </p>
               <div className="bg-white/[0.02] border border-white/[0.08] rounded-lg divide-y divide-white/[0.06]">
                 <div className="flex items-center justify-between px-5 py-3.5">
@@ -275,8 +269,8 @@ export default function PartnersPage() {
               </h3>
               <p className="text-body-text text-[15px] leading-relaxed">
                 Trade finance is in buildout via Hong Kong bank facilities
-                and export credit insurance. At launch: applied to Class 1
-                (Kantor-sourced) deals. Later: extended to Class 2 where
+                and export credit insurance. At launch: applied to deals we
+                source. Later: extended to deals you source where
                 working-capital needs exceed your own balance sheet. Kantor
                 earns credit spread only on the deals we finance. If credit
                 timing doesn&apos;t match your situation, that does not
@@ -299,55 +293,19 @@ export default function PartnersPage() {
             </h2>
           </RevealDiv>
 
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
-            <RevealDiv delay={0}>
-              <div className="border border-white/[0.08] rounded-lg p-6 h-full bg-white/[0.02]">
-                <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-gold mb-3">
-                  1. MASTER SERVICES
-                </div>
-                <p className="text-body-text text-[14px] leading-relaxed">
-                  Infrastructure access terms. Data treatment (anonymized,
-                  aggregated, never individually identified).
-                </p>
-              </div>
-            </RevealDiv>
-            <RevealDiv delay={100}>
-              <div className="border border-white/[0.08] rounded-lg p-6 h-full bg-white/[0.02]">
-                <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-gold mb-3">
-                  2. COMMERCIAL SUPPLY
-                </div>
-                <p className="text-body-text text-[14px] leading-relaxed">
-                  Terms for Class 1 transactions — activated only when you
-                  route sourcing through us. TT 30/70 default. Standard
-                  markup structure.
-                </p>
-              </div>
-            </RevealDiv>
-            <RevealDiv delay={200}>
-              <div className="border border-white/[0.08] rounded-lg p-6 h-full bg-white/[0.02]">
-                <div className="font-sans text-[11px] font-bold uppercase tracking-[2px] text-gold mb-3">
-                  3. CREDIT FACILITY
-                </div>
-                <p className="text-body-text text-[14px] leading-relaxed">
-                  Activated when trade finance goes live and you want access
-                  to Kantor-financed deals under HK bank facilities and
-                  export credit insurance.
-                </p>
-              </div>
-            </RevealDiv>
-          </div>
-
-          <RevealDiv delay={300}>
-            <div className="mt-10 max-w-3xl space-y-3 text-body-text text-[15px] leading-relaxed">
+          <RevealDiv delay={100}>
+            <div className="mt-8 max-w-3xl space-y-4 text-body-text text-[15px] leading-relaxed">
               <p>
-                No contractual exclusivity on your book. No revenue share on
-                transactions Kantor didn&apos;t source or finance. No
-                minimum volume on any class.
+                A services agreement for infrastructure access and data
+                treatment (anonymized, aggregated, never individually
+                identified). A commercial supply agreement activated only
+                when we source a deal for you — TT 30/70 default. A credit
+                facility activated when trade finance goes live.
               </p>
               <p>
-                Co-branded (Pattern B) is the default. Platform-branded
-                (Pattern A) is available if you don&apos;t have personal
-                brand equity to preserve.
+                No minimum volume. No revenue share on deals Kantor
+                didn&apos;t source or finance. Your customers never hear our
+                name unless you want them to.
               </p>
             </div>
           </RevealDiv>
@@ -402,13 +360,13 @@ export default function PartnersPage() {
             <p className="text-body-text text-[15px] leading-relaxed mb-8 max-w-[560px] mx-auto">
               David Wu (founder) replies to every partnership inquiry
               personally. 45 minutes for a substantive conversation, not a
-              platform pitch. If you&apos;re at CHINAPLAS Shanghai
+              sales pitch. If you&apos;re at CHINAPLAS Shanghai
               (April 21–24, 2026), include your best time — we can meet in
               person; otherwise we start by email.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:david@kantor-m.com?subject=Trader%20Partnership%20-%20Kantor%20ITP&body=Hi%20David%2C%0A%0AI%27d%20like%20to%20discuss%20the%20Kantor%20trader%20partnership.%0A%0AQuick%20context%3A%0A-%20Company%3A%20%0A-%20Corridor%3A%20%0A-%20Typical%20annual%20book%3A%20%0A%0A"
+                href="mailto:david@kantor-m.com?subject=Trader%20Partnership%20-%20Kantor%20Materials&body=Hi%20David%2C%0A%0AI%27d%20like%20to%20discuss%20the%20Kantor%20trader%20partnership.%0A%0AQuick%20context%3A%0A-%20Company%3A%20%0A-%20Corridor%3A%20%0A-%20Typical%20annual%20book%3A%20%0A%0A"
                 className="inline-flex items-center justify-center bg-gold text-navy-deep font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-px shadow-[0_2px_12px_rgba(212,168,67,0.25)]"
               >
                 Email David →
