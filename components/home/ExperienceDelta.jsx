@@ -1,3 +1,4 @@
+import Image from "next/image";
 import RevealDiv from "@/components/RevealDiv";
 
 const freeItems = [
@@ -17,16 +18,18 @@ const kmiItems = [
 export default function ExperienceDelta() {
   return (
     <section className="bg-ticker-bg py-20 px-6 lg:px-10 relative overflow-hidden">
-      {/* Subtle background texture */}
-      <div
-        className="absolute inset-0 opacity-[0.025]"
-        style={{
-          backgroundImage:
-            "url('/images/value-texture.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      />
+      {/* Atmospheric texture */}
+      <div className="absolute inset-0 opacity-[0.025]">
+        <Image
+          src="/images/experience-texture.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          style={{ objectPosition: "center center" }}
+          sizes="100vw"
+          quality={60}
+        />
+      </div>
       <div className="absolute inset-0 bg-gradient-to-b from-ticker-bg via-transparent to-ticker-bg" />
 
       <div className="max-w-[1100px] mx-auto relative z-10">
