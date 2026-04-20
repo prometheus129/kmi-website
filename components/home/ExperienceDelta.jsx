@@ -87,7 +87,7 @@ export default function ExperienceDelta() {
                 ))}
               </ul>
               <p className="font-sans text-sm font-semibold text-gold mt-6">
-                Pay only when you order. No contract. No exclusivity.
+                Pay only when we source a deal for you. No contract. No exclusivity.
               </p>
             </div>
           </RevealDiv>

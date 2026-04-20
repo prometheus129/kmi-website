@@ -33,7 +33,7 @@ const tiers = [
     accentBg: "bg-gold/10",
     accentText: "text-gold",
     description:
-      "When you\u2019re ready to source through us: merchant selection, QC coordination, documentation generated correctly at source, logistics, tracking, and issue resolution. Pay only when you order. No contract. No exclusivity.",
+      "When you\u2019re ready to source through us: merchant selection, QC coordination, documentation generated correctly at source, logistics, tracking, and issue resolution. Pay only when we source a deal for you. No contract. No exclusivity.",
     examples: [],
     whatChanges: [
       "Documents are generated right instead of verified after.",
