@@ -148,8 +148,10 @@ export default function MaterialsPage() {
             <div className="text-xs tracking-[4px] text-gold font-sans font-semibold mb-6">
               ENGINEERING POLYMERS
             </div>
-            <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-[1000px]">
-              Chinese equivalents to Western‑premium engineering polymers.
+            <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-[1100px]">
+              China‑origin equivalents to
+              <br className="hidden lg:block" />
+              {" "}Western premium engineering polymers.
             </h1>
             <p className="font-sans text-lg text-body-text leading-relaxed max-w-[680px] mb-10">
               DuPont Zytel, BASF Ultramid, SABIC LNP, Celanese acetals,
