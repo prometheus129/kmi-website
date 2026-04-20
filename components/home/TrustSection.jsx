@@ -50,7 +50,7 @@ const certifications = [
 
 export default function TrustSection() {
   return (
-    <section className="bg-navy py-24 px-6 lg:px-10 relative overflow-hidden">
+    <section className="bg-navy-deep py-24 px-6 lg:px-10 relative overflow-hidden">
       {/* Atmospheric manufacturing texture */}
       <div className="absolute inset-0 opacity-[0.035]">
         <Image
@@ -63,7 +63,7 @@ export default function TrustSection() {
           quality={60}
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-navy/50 via-transparent to-navy/60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/50 via-transparent to-navy-deep/60" />
 
       <div className="max-w-[1200px] mx-auto relative z-10">
         <RevealDiv>

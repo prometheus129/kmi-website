@@ -45,7 +45,7 @@ const tiers = [
 
 export default function ThreeTiers() {
   return (
-    <section className="bg-cards-bg py-20 px-6 lg:px-10">
+    <section className="bg-navy-deep py-20 px-6 lg:px-10">
       <div className="max-w-[1100px] mx-auto">
         {/* Header */}
         <RevealDiv>
