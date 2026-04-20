@@ -149,7 +149,7 @@ export default function MaterialsPage() {
               ENGINEERING POLYMERS
             </div>
             <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-[1100px]">
-              China‑origin equivalents to
+              China‑Origin equivalents to
               <br className="hidden lg:block" />
               {" "}Western premium engineering polymers.
             </h1>
