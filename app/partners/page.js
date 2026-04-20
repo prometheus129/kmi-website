@@ -274,7 +274,7 @@ export default function PartnersPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-navy py-24 lg:py-[110px] px-6 lg:px-10 border-t border-white/[0.04] relative overflow-hidden">
+      <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 border-t border-white/[0.04] relative overflow-hidden">
         <div
           aria-hidden="true"
           className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,168,67,0.07)_0%,transparent_60%)] pointer-events-none"
