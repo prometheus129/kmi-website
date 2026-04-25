@@ -50,7 +50,13 @@ export default function ResponseExample() {
             <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white leading-tight mb-6">
               One question. One answer.
             </h2>
-            <p className="font-sans text-base text-body-text leading-relaxed max-w-[600px] mx-auto">
+            <p className="font-sans text-base text-body-text leading-relaxed max-w-[680px] mx-auto mb-4">
+              A polymer purchase decides on five questions: grade match,
+              total landed cost, regulatory requirements, supplier
+              reliability, quality history. Each usually requires a
+              different tool or specialist. We integrate all five.
+            </p>
+            <p className="font-sans text-sm text-muted leading-relaxed max-w-[600px] mx-auto">
               A distributor in Vietnam asked about HDPE pipe grade alternatives.
               Three matched grades, current CFR pricing, freight and landed cost,
               documentation status, and quality notes &mdash; returned in one

@@ -8,7 +8,7 @@ import { trackCTA } from "@/lib/tracking";
 const stats = [
   { value: "135,000+", label: "SKUs in our database" },
   { value: "60,000", label: "MT/yr engineering compound capacity" },
-  { value: "Daily", label: "FOB pricing. Landed costs on request." },
+  { value: "Daily", label: "FOB pricing, refreshed each trading session." },
 ];
 
 export default function HeroSection() {
