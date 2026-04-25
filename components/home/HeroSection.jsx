@@ -6,8 +6,8 @@ import TradeCorridorMap from "@/components/home/TradeCorridorMap";
 import { trackCTA } from "@/lib/tracking";
 
 const stats = [
-  { value: "135,000+", label: "grades characterized" },
-  { value: "20", label: "Documents verified per shipment" },
+  { value: "135,000+", label: "SKUs in our database" },
+  { value: "60,000", label: "MT/yr engineering compound capacity" },
   { value: "Daily", label: "FOB pricing. Landed costs on request." },
 ];
 
@@ -45,8 +45,8 @@ export default function HeroSection() {
             Get Answers, Not a Call Back.
           </h1>
           <p className="font-sans text-lg lg:text-xl text-body-text leading-relaxed max-w-[640px] mx-auto mb-10">
-            135,000 grades. Real-time pricing. Pre-shipment document checks.
-            Free to ask. On WhatsApp.
+            135,000 SKUs in our database. Daily pricing. Pre-shipment
+            document review. Free to ask. On WhatsApp.
           </p>
 
           {/* CTA cluster */}

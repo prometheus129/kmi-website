@@ -117,6 +117,19 @@ export default function ResponseExample() {
           </div>
         </RevealDiv>
 
+        {/* Extended beta time-anchor */}
+        <RevealDiv delay={200}>
+          <div className="text-center mt-10 max-w-[640px] mx-auto">
+            <p className="font-mono text-[11px] tracking-[3px] text-teal/80 font-semibold mb-2">
+              EXTENDED BETA
+            </p>
+            <p className="font-sans text-sm text-body-text/80 leading-relaxed">
+              Sub-minute response times available to select partners in our
+              extended beta. General availability June 2026.
+            </p>
+          </div>
+        </RevealDiv>
+
         {/* CTA below example */}
         <RevealDiv delay={250}>
           <div className="text-center mt-10">

@@ -2,7 +2,7 @@ import RevealDiv from "@/components/RevealDiv";
 
 const tiers = [
   {
-    title: "Instant Answers",
+    title: "Same-Day Answers",
     accent: "border-teal",
     accentBg: "bg-teal/10",
     accentText: "text-teal",
@@ -54,9 +54,9 @@ export default function ThreeTiers() {
               WHAT WE CAN DO
             </div>
             <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white leading-tight max-w-[800px] mx-auto">
-              Grade Specs in Minutes.
+              Same-Day Grade Specs.
               <br className="hidden sm:block" />
-              {" "}Document Verification Within the Day.
+              {" "}Document Verification on Request.
               <br className="hidden sm:block" />
               {" "}Full Execution When You&apos;re Ready.
             </h2>
