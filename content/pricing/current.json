@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-15",
+  "lastUpdated": "2026-04-27",
   "source": "Kantor Materials daily pricing",
   "prices": [
     {
@@ -14,14 +14,17 @@
         "th": "เส้นด้าย / ราเฟีย"
       },
       "grades": "T30S / PPH-T03 / HP550J",
-      "cfrRange": [1204, 1204],
-      "direction": "down",
-      "weekChange": -20,
+      "cfrRange": [
+        1218,
+        1278
+      ],
+      "direction": "stable",
+      "weekChange": 0,
       "notes": {
-        "en": "FOB $1,180; ▼ $10 vs. Thursday, back to pre-Apr 13 level.",
-        "vi": "FOB $1.180; ▼ $10 so với thứ Năm, trở lại mức trước 13/4.",
-        "tr": "FOB $1.180; ▼ Perşembe'ye kıyasla $10 düşüş.",
-        "id": "FOB $1.180; ▼ $10 vs Kamis, kembali ke level pra-13 Apr."
+        "en": "FOB $1248 indicative. Subject to confirmation.",
+        "vi": "FOB $1248 tham khảo. Cần xác nhận.",
+        "tr": "FOB $1248 gösterge. Onaya tabidir.",
+        "id": "FOB $1248 indikatif. Tunduk pada konfirmasi."
       }
     },
     {
@@ -36,7 +39,10 @@
         "th": "ฉีดขึ้นรูป"
       },
       "grades": "HP550N / HP500P / M12",
-      "cfrRange": [1214, 1214],
+      "cfrRange": [
+        1214,
+        1214
+      ],
       "direction": "stable",
       "weekChange": -20,
       "notes": {
@@ -58,7 +64,10 @@
         "th": "ผนังบาง"
       },
       "grades": "G70/75 / BZ-70X",
-      "cfrRange": [1285, 1285],
+      "cfrRange": [
+        1285,
+        1285
+      ],
       "direction": "stable",
       "weekChange": -10,
       "notes": {
@@ -80,7 +89,10 @@
         "th": "เส้นใย / ผ้าไม่ทอ"
       },
       "grades": "Y16/25 / Y40",
-      "cfrRange": [1285, 1285],
+      "cfrRange": [
+        1285,
+        1285
+      ],
       "direction": "stable",
       "weekChange": -10,
       "notes": {
@@ -102,7 +114,10 @@
         "th": "ฟิล์มบรรจุภัณฑ์"
       },
       "grades": "7042 / DFDA-7042",
-      "cfrRange": [1204, 1204],
+      "cfrRange": [
+        1204,
+        1204
+      ],
       "direction": "stable",
       "weekChange": -20,
       "notes": {
@@ -124,7 +139,10 @@
         "th": "โปร่งใส"
       },
       "grades": "7250N (中化)",
-      "cfrRange": [1412, 1412],
+      "cfrRange": [
+        1412,
+        1412
+      ],
       "direction": "stable",
       "weekChange": 0,
       "indicative": true,
@@ -147,7 +165,10 @@
         "th": "โคโพลิเมอร์ทนแรงกระแทก"
       },
       "grades": "K8003 (广东石化)",
-      "cfrRange": [1388, 1388],
+      "cfrRange": [
+        1388,
+        1388
+      ],
       "direction": "stable",
       "weekChange": 0,
       "indicative": true,
@@ -170,15 +191,18 @@
         "th": "เอนกประสงค์"
       },
       "grades": "275 (上海高桥)",
-      "cfrRange": [1738, 1738],
+      "cfrRange": [
+        1460,
+        1560
+      ],
       "direction": "stable",
       "weekChange": 0,
       "indicative": true,
       "notes": {
-        "en": "Indicative pricing. Subject to confirmation.",
-        "vi": "Giá tham khảo. Cần xác nhận.",
-        "tr": "Gösterge fiyat. Onaya tabidir.",
-        "id": "Harga indikatif. Tunduk pada konfirmasi."
+        "en": "FOB $1510 indicative. Subject to confirmation.",
+        "vi": "FOB $1510 tham khảo. Cần xác nhận.",
+        "tr": "FOB $1510 gösterge. Onaya tabidir.",
+        "id": "FOB $1510 indikatif. Tunduk pada konfirmasi."
       }
     }
   ]
