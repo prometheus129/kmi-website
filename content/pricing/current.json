@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-27",
+  "lastUpdated": "2026-04-28",
   "source": "Kantor Materials daily pricing",
   "prices": [
     {
@@ -13,18 +13,18 @@
         "pt": "Fio / Ráfia",
         "th": "เส้นด้าย / ราเฟีย"
       },
-      "grades": "T30S / PPH-T03 / HP550J",
+      "grades": "L5E89 / T30S / 2232E1",
       "cfrRange": [
-        1218,
-        1278
+        1215,
+        1300
       ],
       "direction": "stable",
       "weekChange": 0,
       "notes": {
-        "en": "FOB $1248 indicative. Subject to confirmation.",
-        "vi": "FOB $1248 tham khảo. Cần xác nhận.",
-        "tr": "FOB $1248 gösterge. Onaya tabidir.",
-        "id": "FOB $1248 indikatif. Tunduk pada konfirmasi."
+        "en": "FOB $1245 indicative. Subject to confirmation.",
+        "vi": "FOB $1245 indicative. Subject to confirmation.",
+        "tr": "FOB $1245 indicative. Subject to confirmation.",
+        "id": "FOB $1245 indicative. Subject to confirmation."
       }
     },
     {
@@ -38,18 +38,18 @@
         "pt": "Injeção",
         "th": "ฉีดขึ้นรูป"
       },
-      "grades": "HP550N / HP500P / M12",
+      "grades": "V30G / 1100N / HP500N / Z30S / MN70",
       "cfrRange": [
-        1214,
-        1214
+        1280,
+        1325
       ],
       "direction": "stable",
-      "weekChange": -20,
+      "weekChange": 0,
       "notes": {
-        "en": "FOB $1,190 flat vs. Thursday. ▼ $20 vs. last week.",
-        "vi": "FOB $1.190 ổn định so với thứ Năm. ▼ $20 so với tuần trước.",
-        "tr": "FOB $1.190 Perşembe'ye kıyasla sabit. ▼ $20 haftalık.",
-        "id": "FOB $1.190 datar vs Kamis. ▼ $20 vs minggu lalu."
+        "en": "FOB $1285 indicative. Subject to confirmation.",
+        "vi": "FOB $1285 indicative. Subject to confirmation.",
+        "tr": "FOB $1285 indicative. Subject to confirmation.",
+        "id": "FOB $1285 indicative. Subject to confirmation."
       }
     },
     {
@@ -63,18 +63,18 @@
         "pt": "Parede Fina",
         "th": "ผนังบาง"
       },
-      "grades": "G70/75 / BZ-70X",
+      "grades": "4870-B / G70/75 / BZ-70X",
       "cfrRange": [
-        1285,
-        1285
+        1280,
+        1340
       ],
       "direction": "stable",
-      "weekChange": -10,
+      "weekChange": 0,
       "notes": {
-        "en": "FOB $1,260 flat vs. Thursday. ▼ $10 vs. last week.",
-        "vi": "FOB $1.260 ổn định so với thứ Năm. ▼ $10 so với tuần trước.",
-        "tr": "FOB $1.260 Perşembe'ye kıyasla sabit. ▼ $10 haftalık.",
-        "id": "FOB $1.260 datar vs Kamis. ▼ $10 vs minggu lalu."
+        "en": "FOB $1310 indicative. Subject to confirmation.",
+        "vi": "FOB $1310 indicative. Subject to confirmation.",
+        "tr": "FOB $1310 indicative. Subject to confirmation.",
+        "id": "FOB $1310 indicative. Subject to confirmation."
       }
     },
     {
@@ -88,18 +88,18 @@
         "pt": "Fibra / Não Tecido",
         "th": "เส้นใย / ผ้าไม่ทอ"
       },
-      "grades": "Y16/25 / Y40",
+      "grades": "M251H / Y26 / Z30S",
       "cfrRange": [
-        1285,
-        1285
+        1270,
+        1310
       ],
       "direction": "stable",
-      "weekChange": -10,
+      "weekChange": 0,
       "notes": {
-        "en": "FOB $1,260 flat vs. Thursday. ▼ $10 vs. last week.",
-        "vi": "FOB $1.260 ổn định so với thứ Năm. ▼ $10 so với tuần trước.",
-        "tr": "FOB $1.260 Perşembe'ye kıyasla sabit. ▼ $10 haftalık.",
-        "id": "FOB $1.260 datar vs Kamis. ▼ $10 vs minggu lalu."
+        "en": "FOB $1275 indicative. Subject to confirmation.",
+        "vi": "FOB $1275 indicative. Subject to confirmation.",
+        "tr": "FOB $1275 indicative. Subject to confirmation.",
+        "id": "FOB $1275 indicative. Subject to confirmation."
       }
     },
     {
@@ -121,10 +121,10 @@
       "direction": "stable",
       "weekChange": -20,
       "notes": {
-        "en": "FOB $1,180 flat vs. Thursday. ▼ $20 vs. last week.",
-        "vi": "FOB $1.180 ổn định so với thứ Năm. ▼ $20 so với tuần trước.",
-        "tr": "FOB $1.180 Perşembe'ye kıyasla sabit. ▼ $20 haftalık.",
-        "id": "FOB $1.180 datar vs Kamis. ▼ $20 vs minggu lalu."
+        "en": "FOB $1,165 indicative (Wang ref Apr 26). Subject to confirmation.",
+        "vi": "FOB $1,165 indicative (Wang ref Apr 26). Subject to confirmation.",
+        "tr": "FOB $1,165 indicative (Wang ref Apr 26). Subject to confirmation.",
+        "id": "FOB $1,165 indicative (Wang ref Apr 26). Subject to confirmation."
       }
     },
     {
@@ -138,19 +138,19 @@
         "pt": "Transparente",
         "th": "โปร่งใส"
       },
-      "grades": "7250N (中化)",
+      "grades": "YM12 / YM25 / 7250N (中化)",
       "cfrRange": [
-        1412,
-        1412
+        1330,
+        1380
       ],
       "direction": "stable",
       "weekChange": 0,
       "indicative": true,
       "notes": {
-        "en": "Indicative pricing. Subject to confirmation.",
-        "vi": "Giá tham khảo. Cần xác nhận.",
-        "tr": "Gösterge fiyat. Onaya tabidir.",
-        "id": "Harga indikatif. Tunduk pada konfirmasi."
+        "en": "FOB $1340 indicative. Subject to confirmation.",
+        "vi": "FOB $1340 indicative. Subject to confirmation.",
+        "tr": "FOB $1340 indicative. Subject to confirmation.",
+        "id": "FOB $1340 indicative. Subject to confirmation."
       }
     },
     {
@@ -164,19 +164,19 @@
         "pt": "Copolímero de impacto",
         "th": "โคโพลิเมอร์ทนแรงกระแทก"
       },
-      "grades": "K8003 (广东石化)",
+      "grades": "K8009 (广东石化) / 2500HY / EP548R",
       "cfrRange": [
-        1388,
-        1388
+        1330,
+        1380
       ],
       "direction": "stable",
       "weekChange": 0,
       "indicative": true,
       "notes": {
-        "en": "Indicative pricing. Subject to confirmation.",
-        "vi": "Giá tham khảo. Cần xác nhận.",
-        "tr": "Gösterge fiyat. Onaya tabidir.",
-        "id": "Harga indikatif. Tunduk pada konfirmasi."
+        "en": "FOB $1340 indicative. Subject to confirmation.",
+        "vi": "FOB $1340 indicative. Subject to confirmation.",
+        "tr": "FOB $1340 indicative. Subject to confirmation.",
+        "id": "FOB $1340 indicative. Subject to confirmation."
       }
     },
     {
@@ -192,17 +192,17 @@
       },
       "grades": "275 (上海高桥)",
       "cfrRange": [
-        1460,
-        1560
+        1480,
+        1540
       ],
       "direction": "stable",
       "weekChange": 0,
       "indicative": true,
       "notes": {
         "en": "FOB $1510 indicative. Subject to confirmation.",
-        "vi": "FOB $1510 tham khảo. Cần xác nhận.",
-        "tr": "FOB $1510 gösterge. Onaya tabidir.",
-        "id": "FOB $1510 indikatif. Tunduk pada konfirmasi."
+        "vi": "FOB $1510 indicative. Subject to confirmation.",
+        "tr": "FOB $1510 indicative. Subject to confirmation.",
+        "id": "FOB $1510 indicative. Subject to confirmation."
       }
     }
   ]
