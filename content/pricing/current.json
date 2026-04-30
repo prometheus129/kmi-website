@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-29",
+  "lastUpdated": "2026-04-30",
   "source": "Kantor Materials daily pricing",
   "prices": [
     {
@@ -15,16 +15,16 @@
       },
       "grades": "L5E89 / T30S / 2232E1",
       "cfrRange": [
-        1215,
-        1300
+        1205,
+        1265
       ],
       "direction": "stable",
       "weekChange": 0,
       "notes": {
-        "en": "FOB $1245 indicative. Subject to confirmation.",
-        "vi": "FOB $1245 indicative. Subject to confirmation.",
-        "tr": "FOB $1245 indicative. Subject to confirmation.",
-        "id": "FOB $1245 indicative. Subject to confirmation."
+        "en": "FOB $1235 indicative (yesterday's anchor — yarn section absent today).",
+        "vi": "FOB $1235 indicative (yesterday's anchor — yarn section absent today).",
+        "tr": "FOB $1235 indicative (yesterday's anchor — yarn section absent today).",
+        "id": "FOB $1235 indicative (yesterday's anchor — yarn section absent today)."
       }
     },
     {
@@ -38,18 +38,18 @@
         "pt": "Injeção",
         "th": "ฉีดขึ้นรูป"
       },
-      "grades": "V30G / 1100N / HP500N / Z30S / MN70",
+      "grades": "500P (大庆) / 500N / 1100N",
       "cfrRange": [
-        1280,
-        1325
+        1278,
+        1338
       ],
-      "direction": "stable",
-      "weekChange": 0,
+      "direction": "up",
+      "weekChange": 25,
       "notes": {
-        "en": "FOB $1285 indicative. Subject to confirmation.",
-        "vi": "FOB $1285 indicative. Subject to confirmation.",
-        "tr": "FOB $1285 indicative. Subject to confirmation.",
-        "id": "FOB $1285 indicative. Subject to confirmation."
+        "en": "FOB $1308 indicative. Subject to confirmation.",
+        "vi": "FOB $1308 indicative. Subject to confirmation.",
+        "tr": "FOB $1308 indicative. Subject to confirmation.",
+        "id": "FOB $1308 indicative. Subject to confirmation."
       }
     },
     {
@@ -63,18 +63,18 @@
         "pt": "Parede Fina",
         "th": "ผนังบาง"
       },
-      "grades": "4870-B / G70/75 / BZ-70X",
+      "grades": "1870-B / 4870-B / G70/75",
       "cfrRange": [
-        1280,
-        1340
+        1238,
+        1298
       ],
       "direction": "stable",
       "weekChange": 0,
       "notes": {
-        "en": "FOB $1310 indicative. Subject to confirmation.",
-        "vi": "FOB $1310 indicative. Subject to confirmation.",
-        "tr": "FOB $1310 indicative. Subject to confirmation.",
-        "id": "FOB $1310 indicative. Subject to confirmation."
+        "en": "FOB $1268 indicative (recent anchor — thin-wall absent today).",
+        "vi": "FOB $1268 indicative (recent anchor — thin-wall absent today).",
+        "tr": "FOB $1268 indicative (recent anchor — thin-wall absent today).",
+        "id": "FOB $1268 indicative (recent anchor — thin-wall absent today)."
       }
     },
     {
@@ -88,10 +88,10 @@
         "pt": "Fibra / Não Tecido",
         "th": "เส้นใย / ผ้าไม่ทอ"
       },
-      "grades": "M251H / Y26 / Z30S",
+      "grades": "251H (东华) / Y26 / Z30S",
       "cfrRange": [
-        1270,
-        1310
+        1245,
+        1305
       ],
       "direction": "stable",
       "weekChange": 0,
@@ -115,16 +115,16 @@
       },
       "grades": "7042 / DFDA-7042",
       "cfrRange": [
-        1204,
-        1204
+        1135,
+        1195
       ],
       "direction": "stable",
-      "weekChange": -20,
+      "weekChange": 0,
       "notes": {
-        "en": "FOB $1,165 indicative (Wang ref Apr 26). Subject to confirmation.",
-        "vi": "FOB $1,165 indicative (Wang ref Apr 26). Subject to confirmation.",
-        "tr": "FOB $1,165 indicative (Wang ref Apr 26). Subject to confirmation.",
-        "id": "FOB $1,165 indicative (Wang ref Apr 26). Subject to confirmation."
+        "en": "FOB $1165 indicative (Wang ref Apr 26). Subject to confirmation.",
+        "vi": "FOB $1165 indicative (Wang ref Apr 26). Subject to confirmation.",
+        "tr": "FOB $1165 indicative (Wang ref Apr 26). Subject to confirmation.",
+        "id": "FOB $1165 indicative (Wang ref Apr 26). Subject to confirmation."
       }
     },
     {
@@ -138,19 +138,19 @@
         "pt": "Transparente",
         "th": "โปร่งใส"
       },
-      "grades": "YM12 / YM25 / 7250N (中化)",
+      "grades": "7250N (中化) / YM12 / YM25",
       "cfrRange": [
-        1330,
-        1380
+        1284,
+        1344
       ],
-      "direction": "stable",
-      "weekChange": 0,
+      "direction": "down",
+      "weekChange": -25,
       "indicative": true,
       "notes": {
-        "en": "FOB $1340 indicative. Subject to confirmation.",
-        "vi": "FOB $1340 indicative. Subject to confirmation.",
-        "tr": "FOB $1340 indicative. Subject to confirmation.",
-        "id": "FOB $1340 indicative. Subject to confirmation."
+        "en": "FOB $1314 indicative. Subject to confirmation.",
+        "vi": "FOB $1314 indicative. Subject to confirmation.",
+        "tr": "FOB $1314 indicative. Subject to confirmation.",
+        "id": "FOB $1314 indicative. Subject to confirmation."
       }
     },
     {
@@ -164,19 +164,19 @@
         "pt": "Copolímero de impacto",
         "th": "โคโพลิเมอร์ทนแรงกระแทก"
       },
-      "grades": "K8009 (广东石化) / 2500HY / EP548R",
+      "grades": "K8009 (浙石化) / 2500HY / EP548R",
       "cfrRange": [
-        1330,
-        1380
+        1344,
+        1404
       ],
-      "direction": "stable",
-      "weekChange": 0,
+      "direction": "up",
+      "weekChange": 35,
       "indicative": true,
       "notes": {
-        "en": "FOB $1340 indicative. Subject to confirmation.",
-        "vi": "FOB $1340 indicative. Subject to confirmation.",
-        "tr": "FOB $1340 indicative. Subject to confirmation.",
-        "id": "FOB $1340 indicative. Subject to confirmation."
+        "en": "FOB $1374 indicative. Subject to confirmation.",
+        "vi": "FOB $1374 indicative. Subject to confirmation.",
+        "tr": "FOB $1374 indicative. Subject to confirmation.",
+        "id": "FOB $1374 indicative. Subject to confirmation."
       }
     },
     {
@@ -192,17 +192,17 @@
       },
       "grades": "275 (上海高桥)",
       "cfrRange": [
-        1480,
-        1540
+        1465,
+        1525
       ],
       "direction": "stable",
       "weekChange": 0,
       "indicative": true,
       "notes": {
-        "en": "FOB $1510 indicative. Subject to confirmation.",
-        "vi": "FOB $1510 indicative. Subject to confirmation.",
-        "tr": "FOB $1510 indicative. Subject to confirmation.",
-        "id": "FOB $1510 indicative. Subject to confirmation."
+        "en": "FOB $1495 indicative. Subject to confirmation.",
+        "vi": "FOB $1495 indicative. Subject to confirmation.",
+        "tr": "FOB $1495 indicative. Subject to confirmation.",
+        "id": "FOB $1495 indicative. Subject to confirmation."
       }
     }
   ]
