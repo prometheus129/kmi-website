@@ -52,6 +52,20 @@ async function submitBatch(urlList) {
 
 async function main() {
   const argv = process.argv.slice(2);
+
+  // Production-only gate when invoked as a postbuild hook (no CLI args).
+  // VERCEL_ENV is set by Vercel: 'production' | 'preview' | 'development'.
+  // Local builds (no VERCEL_ENV) and preview deploys exit silently to avoid
+  // pinging IndexNow with non-production state. Manual CLI invocations
+  // (with explicit URLs) bypass the gate.
+  if (argv.length === 0 && process.env.VERCEL_ENV !== "production") {
+    const reason = process.env.VERCEL_ENV
+      ? `VERCEL_ENV=${process.env.VERCEL_ENV}`
+      : "non-Vercel environment";
+    console.log(`IndexNow: skipping postbuild ping (${reason}).`);
+    process.exit(0);
+  }
+
   let urls;
 
   if (argv.length > 0) {
