@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-07",
+  "lastUpdated": "2026-05-08",
   "source": "Kantor Materials daily pricing",
   "prices": [
     {
@@ -140,17 +140,17 @@
       },
       "grades": "7250N (中化) / YM12 / YM25",
       "cfrRange": [
-        1291,
-        1351
+        1284,
+        1344
       ],
-      "direction": "up",
-      "weekChange": 5,
+      "direction": "stable",
+      "weekChange": 0,
       "indicative": true,
       "notes": {
-        "en": "FOB $1321 indicative (YM25, 延长 — 7250N not quoted today). Subject to confirmation.",
-        "vi": "FOB $1321 indicative (YM25, 延长 — 7250N not quoted today). Subject to confirmation.",
-        "tr": "FOB $1321 indicative (YM25, 延长 — 7250N not quoted today). Subject to confirmation.",
-        "id": "FOB $1321 indicative (YM25, 延长 — 7250N not quoted today). Subject to confirmation."
+        "en": "FOB $1314 indicative (YM12, 延长 — 7250N still not quoted). Subject to confirmation.",
+        "vi": "FOB $1314 indicative (YM12, 延长 — 7250N still not quoted). Subject to confirmation.",
+        "tr": "FOB $1314 indicative (YM12, 延长 — 7250N still not quoted). Subject to confirmation.",
+        "id": "FOB $1314 indicative (YM12, 延长 — 7250N still not quoted). Subject to confirmation."
       }
     },
     {
@@ -166,17 +166,17 @@
       },
       "grades": "K8009 (浙石化) / 2500HY / EP548R",
       "cfrRange": [
-        1370,
-        1430
+        1396,
+        1456
       ],
       "direction": "up",
-      "weekChange": 25,
+      "weekChange": 50,
       "indicative": true,
       "notes": {
-        "en": "FOB $1400 indicative (K8009, 浙石化). Subject to confirmation.",
-        "vi": "FOB $1400 indicative (K8009, 浙石化). Subject to confirmation.",
-        "tr": "FOB $1400 indicative (K8009, 浙石化). Subject to confirmation.",
-        "id": "FOB $1400 indicative (K8009, 浙石化). Subject to confirmation."
+        "en": "FOB $1426 indicative (K8009, 浙石化). Subject to confirmation.",
+        "vi": "FOB $1426 indicative (K8009, 浙石化). Subject to confirmation.",
+        "tr": "FOB $1426 indicative (K8009, 浙石化). Subject to confirmation.",
+        "id": "FOB $1426 indicative (K8009, 浙石化). Subject to confirmation."
       }
     },
     {
@@ -192,17 +192,17 @@
       },
       "grades": "275 (上海高桥) / 0215A (吉化)",
       "cfrRange": [
-        1504,
-        1564
+        1465,
+        1525
       ],
-      "direction": "up",
-      "weekChange": 40,
+      "direction": "stable",
+      "weekChange": 0,
       "indicative": true,
       "notes": {
-        "en": "FOB $1534 indicative (0215A, 吉化 — 275 not quoted today). Subject to confirmation.",
-        "vi": "FOB $1534 indicative (0215A, 吉化 — 275 not quoted today). Subject to confirmation.",
-        "tr": "FOB $1534 indicative (0215A, 吉化 — 275 not quoted today). Subject to confirmation.",
-        "id": "FOB $1534 indicative (0215A, 吉化 — 275 not quoted today). Subject to confirmation."
+        "en": "FOB $1495 indicative (0215A, 吉化 — 275 still absent). Subject to confirmation.",
+        "vi": "FOB $1495 indicative (0215A, 吉化 — 275 still absent). Subject to confirmation.",
+        "tr": "FOB $1495 indicative (0215A, 吉化 — 275 still absent). Subject to confirmation.",
+        "id": "FOB $1495 indicative (0215A, 吉化 — 275 still absent). Subject to confirmation."
       }
     }
   ]
