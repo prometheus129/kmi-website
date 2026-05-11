@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-08",
+  "lastUpdated": "2026-05-11",
   "source": "Kantor Materials daily pricing",
   "prices": [
     {
@@ -40,16 +40,16 @@
       },
       "grades": "500P (大庆) / 500N / 1100N",
       "cfrRange": [
-        1292,
-        1352
+        1284,
+        1344
       ],
       "direction": "up",
-      "weekChange": 15,
+      "weekChange": 5,
       "notes": {
-        "en": "FOB $1322 indicative (500P, 大庆). Subject to confirmation.",
-        "vi": "FOB $1322 indicative (500P, 大庆). Subject to confirmation.",
-        "tr": "FOB $1322 indicative (500P, 大庆). Subject to confirmation.",
-        "id": "FOB $1322 indicative (500P, 大庆). Subject to confirmation."
+        "en": "FOB $1314 indicative (500P, 大庆). Subject to confirmation.",
+        "vi": "FOB $1314 indicative (500P, 大庆). Subject to confirmation.",
+        "tr": "FOB $1314 indicative (500P, 大庆). Subject to confirmation.",
+        "id": "FOB $1314 indicative (500P, 大庆). Subject to confirmation."
       }
     },
     {
@@ -192,17 +192,17 @@
       },
       "grades": "275 (上海高桥) / 0215A (吉化)",
       "cfrRange": [
-        1465,
-        1525
+        1425,
+        1485
       ],
-      "direction": "stable",
-      "weekChange": 0,
+      "direction": "down",
+      "weekChange": -40,
       "indicative": true,
       "notes": {
-        "en": "FOB $1495 indicative (0215A, 吉化 — 275 still absent). Subject to confirmation.",
-        "vi": "FOB $1495 indicative (0215A, 吉化 — 275 still absent). Subject to confirmation.",
-        "tr": "FOB $1495 indicative (0215A, 吉化 — 275 still absent). Subject to confirmation.",
-        "id": "FOB $1495 indicative (0215A, 吉化 — 275 still absent). Subject to confirmation."
+        "en": "FOB $1455 indicative (0215A, 吉化 — 275 absent fourth day). Subject to confirmation.",
+        "vi": "FOB $1455 indicative (0215A, 吉化 — 275 absent fourth day). Subject to confirmation.",
+        "tr": "FOB $1455 indicative (0215A, 吉化 — 275 absent fourth day). Subject to confirmation.",
+        "id": "FOB $1455 indicative (0215A, 吉化 — 275 absent fourth day). Subject to confirmation."
       }
     }
   ]
