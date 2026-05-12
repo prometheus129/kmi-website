@@ -1,32 +1,7 @@
 {
-  "lastUpdated": "2026-05-11",
+  "lastUpdated": "2026-05-12",
   "source": "Kantor Materials daily pricing",
   "prices": [
-    {
-      "product": "PP Homo",
-      "subtype": {
-        "en": "Yarn / Raffia",
-        "vi": "Sợi / Raffia",
-        "tr": "İplik / Rafya",
-        "id": "Benang / Rafia",
-        "es": "Hilo / Rafia",
-        "pt": "Fio / Ráfia",
-        "th": "เส้นด้าย / ราเฟีย"
-      },
-      "grades": "L5E89 / T30S / 2232E1",
-      "cfrRange": [
-        1205,
-        1265
-      ],
-      "direction": "stable",
-      "weekChange": 0,
-      "notes": {
-        "en": "FOB $1235 indicative (yarn section absent on today's QQT).",
-        "vi": "FOB $1235 indicative (yarn section absent on today's QQT).",
-        "tr": "FOB $1235 indicative (yarn section absent on today's QQT).",
-        "id": "FOB $1235 indicative (yarn section absent on today's QQT)."
-      }
-    },
     {
       "product": "PP Homo",
       "subtype": {
@@ -40,41 +15,16 @@
       },
       "grades": "500P (大庆) / 500N / 1100N",
       "cfrRange": [
-        1284,
-        1344
+        1291,
+        1351
       ],
       "direction": "up",
-      "weekChange": 5,
+      "weekChange": 15,
       "notes": {
-        "en": "FOB $1314 indicative (500P, 大庆). Subject to confirmation.",
-        "vi": "FOB $1314 indicative (500P, 大庆). Subject to confirmation.",
-        "tr": "FOB $1314 indicative (500P, 大庆). Subject to confirmation.",
-        "id": "FOB $1314 indicative (500P, 大庆). Subject to confirmation."
-      }
-    },
-    {
-      "product": "PP Homo",
-      "subtype": {
-        "en": "Thin Wall",
-        "vi": "Thành mỏng",
-        "tr": "İnce Cidar",
-        "id": "Dinding Tipis",
-        "es": "Pared Delgada",
-        "pt": "Parede Fina",
-        "th": "ผนังบาง"
-      },
-      "grades": "1870-B / 4870-B / G70/75",
-      "cfrRange": [
-        1238,
-        1298
-      ],
-      "direction": "stable",
-      "weekChange": 0,
-      "notes": {
-        "en": "FOB $1268 indicative (thin-wall absent on today's QQT).",
-        "vi": "FOB $1268 indicative (thin-wall absent on today's QQT).",
-        "tr": "FOB $1268 indicative (thin-wall absent on today's QQT).",
-        "id": "FOB $1268 indicative (thin-wall absent on today's QQT)."
+        "en": "FOB $1321 indicative (500P, 大庆). Subject to confirmation.",
+        "vi": "FOB $1321 indicative (500P, 大庆). Subject to confirmation.",
+        "tr": "FOB $1321 indicative (500P, 大庆). Subject to confirmation.",
+        "id": "FOB $1321 indicative (500P, 大庆). Subject to confirmation."
       }
     },
     {
@@ -90,16 +40,16 @@
       },
       "grades": "300R (大庆) / 251H / Z30S",
       "cfrRange": [
-        1262,
-        1322
+        1264,
+        1324
       ],
       "direction": "up",
-      "weekChange": 15,
+      "weekChange": 20,
       "notes": {
-        "en": "FOB $1292 indicative (300R, 大庆). Subject to confirmation.",
-        "vi": "FOB $1292 indicative (300R, 大庆). Subject to confirmation.",
-        "tr": "FOB $1292 indicative (300R, 大庆). Subject to confirmation.",
-        "id": "FOB $1292 indicative (300R, 大庆). Subject to confirmation."
+        "en": "FOB $1294 indicative (300R, 大庆). Subject to confirmation.",
+        "vi": "FOB $1294 indicative (300R, 大庆). Subject to confirmation.",
+        "tr": "FOB $1294 indicative (300R, 大庆). Subject to confirmation.",
+        "id": "FOB $1294 indicative (300R, 大庆). Subject to confirmation."
       }
     },
     {
@@ -140,17 +90,17 @@
       },
       "grades": "7250N (中化) / YM12 / YM25",
       "cfrRange": [
-        1284,
-        1344
+        1311,
+        1371
       ],
-      "direction": "stable",
-      "weekChange": 0,
+      "direction": "up",
+      "weekChange": 25,
       "indicative": true,
       "notes": {
-        "en": "FOB $1314 indicative (YM12, 延长 — 7250N still not quoted). Subject to confirmation.",
-        "vi": "FOB $1314 indicative (YM12, 延长 — 7250N still not quoted). Subject to confirmation.",
-        "tr": "FOB $1314 indicative (YM12, 延长 — 7250N still not quoted). Subject to confirmation.",
-        "id": "FOB $1314 indicative (YM12, 延长 — 7250N still not quoted). Subject to confirmation."
+        "en": "FOB $1341 indicative (7250N, 中化 — returned after 4-day absence). Subject to confirmation.",
+        "vi": "FOB $1341 indicative (7250N, 中化 — returned after 4-day absence). Subject to confirmation.",
+        "tr": "FOB $1341 indicative (7250N, 中化 — returned after 4-day absence). Subject to confirmation.",
+        "id": "FOB $1341 indicative (7250N, 中化 — returned after 4-day absence). Subject to confirmation."
       }
     },
     {
@@ -192,17 +142,17 @@
       },
       "grades": "275 (上海高桥) / 0215A (吉化)",
       "cfrRange": [
-        1425,
-        1485
+        1412,
+        1472
       ],
       "direction": "down",
-      "weekChange": -40,
+      "weekChange": -55,
       "indicative": true,
       "notes": {
-        "en": "FOB $1455 indicative (0215A, 吉化 — 275 absent fourth day). Subject to confirmation.",
-        "vi": "FOB $1455 indicative (0215A, 吉化 — 275 absent fourth day). Subject to confirmation.",
-        "tr": "FOB $1455 indicative (0215A, 吉化 — 275 absent fourth day). Subject to confirmation.",
-        "id": "FOB $1455 indicative (0215A, 吉化 — 275 absent fourth day). Subject to confirmation."
+        "en": "FOB $1442 indicative (0215A, 吉化 — 275 absent fifth day; section thinned to 3 grades). Subject to confirmation.",
+        "vi": "FOB $1442 indicative (0215A, 吉化 — 275 absent fifth day; section thinned to 3 grades). Subject to confirmation.",
+        "tr": "FOB $1442 indicative (0215A, 吉化 — 275 absent fifth day; section thinned to 3 grades). Subject to confirmation.",
+        "id": "FOB $1442 indicative (0215A, 吉化 — 275 absent fifth day; section thinned to 3 grades). Subject to confirmation."
       }
     }
   ]
