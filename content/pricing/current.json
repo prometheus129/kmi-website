@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13",
+  "lastUpdated": "2026-05-25",
   "source": "Kantor Materials daily pricing",
   "prices": [
     {
@@ -21,10 +21,10 @@
       "direction": "up",
       "weekChange": 10,
       "notes": {
-        "en": "FOB $1318 indicative (500P, 大庆). Subject to confirmation.",
-        "vi": "FOB $1318 indicative (500P, 大庆). Subject to confirmation.",
-        "tr": "FOB $1318 indicative (500P, 大庆). Subject to confirmation.",
-        "id": "FOB $1318 indicative (500P, 大庆). Subject to confirmation."
+        "en": "FOB $1318 indicative (1100N, 宁煤 — 500P absent multiple days). Subject to confirmation.",
+        "vi": "FOB $1318 indicative (1100N, 宁煤 — 500P absent multiple days). Subject to confirmation.",
+        "tr": "FOB $1318 indicative (1100N, 宁煤 — 500P absent multiple days). Subject to confirmation.",
+        "id": "FOB $1318 indicative (1100N, 宁煤 — 500P absent multiple days). Subject to confirmation."
       }
     },
     {
@@ -40,16 +40,16 @@
       },
       "grades": "300R (大庆) / 251H / Z30S",
       "cfrRange": [
-        1271,
-        1331
+        1297,
+        1357
       ],
       "direction": "up",
-      "weekChange": 25,
+      "weekChange": 50,
       "notes": {
-        "en": "FOB $1301 indicative (300R, 大庆). Subject to confirmation.",
-        "vi": "FOB $1301 indicative (300R, 大庆). Subject to confirmation.",
-        "tr": "FOB $1301 indicative (300R, 大庆). Subject to confirmation.",
-        "id": "FOB $1301 indicative (300R, 大庆). Subject to confirmation."
+        "en": "FOB $1327 indicative (251H, 东华 — 300R absent today). Subject to confirmation.",
+        "vi": "FOB $1327 indicative (251H, 东华 — 300R absent today). Subject to confirmation.",
+        "tr": "FOB $1327 indicative (251H, 东华 — 300R absent today). Subject to confirmation.",
+        "id": "FOB $1327 indicative (251H, 东华 — 300R absent today). Subject to confirmation."
       }
     },
     {
@@ -90,17 +90,17 @@
       },
       "grades": "7250N (中化) / YM12 / YM25",
       "cfrRange": [
-        1311,
-        1371
+        1297,
+        1357
       ],
       "direction": "up",
-      "weekChange": 25,
+      "weekChange": 15,
       "indicative": true,
       "notes": {
-        "en": "FOB $1341 indicative (7250N, 中化). Subject to confirmation.",
-        "vi": "FOB $1341 indicative (7250N, 中化). Subject to confirmation.",
-        "tr": "FOB $1341 indicative (7250N, 中化). Subject to confirmation.",
-        "id": "FOB $1341 indicative (7250N, 中化). Subject to confirmation."
+        "en": "FOB $1327 indicative (YM12, 延长 — 7250N absent). Subject to confirmation.",
+        "vi": "FOB $1327 indicative (YM12, 延长 — 7250N absent). Subject to confirmation.",
+        "tr": "FOB $1327 indicative (YM12, 延长 — 7250N absent). Subject to confirmation.",
+        "id": "FOB $1327 indicative (YM12, 延长 — 7250N absent). Subject to confirmation."
       }
     },
     {
@@ -116,17 +116,17 @@
       },
       "grades": "K8009 (浙石化) / 2500HY / EP548R",
       "cfrRange": [
-        1396,
-        1456
+        1370,
+        1430
       ],
       "direction": "up",
-      "weekChange": 50,
+      "weekChange": 25,
       "indicative": true,
       "notes": {
-        "en": "FOB $1426 indicative (K8009, 浙石化). Subject to confirmation.",
-        "vi": "FOB $1426 indicative (K8009, 浙石化). Subject to confirmation.",
-        "tr": "FOB $1426 indicative (K8009, 浙石化). Subject to confirmation.",
-        "id": "FOB $1426 indicative (K8009, 浙石化). Subject to confirmation."
+        "en": "FOB $1400 indicative (K8009, 广东 — Sinopec K8009 absent). Subject to confirmation.",
+        "vi": "FOB $1400 indicative (K8009, 广东 — Sinopec K8009 absent). Subject to confirmation.",
+        "tr": "FOB $1400 indicative (K8009, 广东 — Sinopec K8009 absent). Subject to confirmation.",
+        "id": "FOB $1400 indicative (K8009, 广东 — Sinopec K8009 absent). Subject to confirmation."
       }
     },
     {
@@ -142,17 +142,17 @@
       },
       "grades": "275 (上海高桥) / 0215A (吉化)",
       "cfrRange": [
-        1425,
-        1485
+        1346,
+        1406
       ],
       "direction": "down",
-      "weekChange": -40,
+      "weekChange": -120,
       "indicative": true,
       "notes": {
-        "en": "FOB $1455 indicative (0215A, 吉化 — 275 absent sixth day). Subject to confirmation.",
-        "vi": "FOB $1455 indicative (0215A, 吉化 — 275 absent sixth day). Subject to confirmation.",
-        "tr": "FOB $1455 indicative (0215A, 吉化 — 275 absent sixth day). Subject to confirmation.",
-        "id": "FOB $1455 indicative (0215A, 吉化 — 275 absent sixth day). Subject to confirmation."
+        "en": "FOB $1376 indicative (0215A, 吉化 — 275 absent 10+ trading days; continued unwind). Subject to confirmation.",
+        "vi": "FOB $1376 indicative (0215A, 吉化 — 275 absent 10+ trading days; continued unwind). Subject to confirmation.",
+        "tr": "FOB $1376 indicative (0215A, 吉化 — 275 absent 10+ trading days; continued unwind). Subject to confirmation.",
+        "id": "FOB $1376 indicative (0215A, 吉化 — 275 absent 10+ trading days; continued unwind). Subject to confirmation."
       }
     }
   ]
