@@ -173,7 +173,7 @@ export default function CoDevelopmentPage() {
                 title="Cable jackets that don't fail in 18 months"
                 pain="Robot arms and humanoids flex cables millions of times. Field data shows standard cables failing at the 18-month mark."
                 upside="5× typical service life on cables that fail at the 18-month mark today. Reliability becomes a warranty claim, not a field risk."
-                precedent="Sporting goods first developed this chemistry for athletic shoe midsoles. Cleanly transferred to wearables, now humanoid cabling."
+                precedent="igus and other industrial cable engineers have validated TPU jacket formulations to 15M+ flex cycles in accelerated testing — 50% beyond the typical 10M-cycle industry spec."
               />
             </RevealDiv>
 
@@ -184,7 +184,7 @@ export default function CoDevelopmentPage() {
                 tag="Consumer Electronics · AI Compute"
                 title="Heat-conducting plastics"
                 pain="AI chips in compact devices run hot. Metal heatsinks add weight, occupy space, and dictate where everything else has to go."
-                upside="Drop the metal heatsink from your design. The housing becomes the heatsink — at half the weight, with the industrial-design freedom your engineers get back."
+                upside="Engineered within a few degrees of aluminum's thermal performance at half the weight. Opens up integrating thermal management into the housing instead of bolting it on — design freedom your engineers get back."
                 precedent="Sabic and Covestro both ship commercial reference grades — used in EV battery enclosures, LED housings, and premium electronics."
               />
             </RevealDiv>
@@ -196,8 +196,8 @@ export default function CoDevelopmentPage() {
                 tag="Robotics · Mechanical"
                 title="Gears that last without the metal weight"
                 pain="Industrial joints and humanoid actuators wear out their gears. Metal solves durability but adds weight; standard plastic degrades fast."
-                upside="Twice the gear cycle life at the same weight. Lower maintenance cost over the robot's service life, higher customer satisfaction at scale."
-                precedent="Tesla Optimus uses PEEK gear substitutes — 10kg lighter, 30% faster. Aerospace and racing have used these for decades."
+                upside="Longer gear cycle life at substantially lower weight. Formulation tuning between PEEK, CF-PEEK, and engineered POM grades depending on the cycle and temperature envelope."
+                precedent="Tesla Optimus uses PEEK in the harmonic reducer rigid wheel — published 38% mass reduction and 69% lower stress on the flex spline. Aerospace has used CF-PEEK in high-cycle drives for decades."
               />
             </RevealDiv>
 
@@ -232,7 +232,7 @@ export default function CoDevelopmentPage() {
                 tag="Consumer Electronics · Manufacturing Economics"
                 title="More parts per shot in nylon connectors"
                 pain="USB-C and similar miniaturized connectors push against how thin nylon can flow. Wall thickness and parts-per-shot both capped."
-                upside="Double the parts per machine cycle. Tooling amortization halves — direct margin gain on every high-volume connector."
+                upside="15-25% more parts per machine cycle from cycle compression on thin walls. Tooling amortization compounds — direct margin gain on every high-volume connector."
                 precedent="DuPont, BASF, and Solvay all sell high-flow nylon grades for exactly this use. The differentiator is specialized polymer chemistry."
               />
             </RevealDiv>
@@ -245,14 +245,14 @@ export default function CoDevelopmentPage() {
                 title="Metal replacement at half the weight"
                 pain="Humanoid and mobile robots need to be light to move fast, but structural parts traditionally need metal for strength."
                 upside="A lighter robot moves faster and runs longer on the same battery. Speed and uptime become product features, not engineering compromises."
-                precedent="Tesla Optimus uses this for its skeletal frame. HP Elite Dragonfly went 82% lighter using these materials."
+                precedent="Tesla Optimus uses these materials for its skeletal frame — published 10 kg lighter and 30% faster walking speed. Aerospace has used CF-PA and LGF-PA for decades in high-cycle, weight-constrained applications."
               />
             </RevealDiv>
           </div>
 
           <p className="font-sans text-sm text-body-text/80 leading-relaxed mt-10 text-center max-w-2xl mx-auto">
             <span className="text-teal font-semibold tracking-wider">ALSO ENGAGING ON:</span>{" "}
-            fire-safe plastics for ultra-thin walls (EU-compliant) · EMI shielding built into molded parts ·
+            fire-safe plastics for ultra-thin walls (EU-compliant) · EMI-shielding grade selection &amp; integration ·
             soft-touch rubberized surfaces · precision gear compounds · static-dissipating housings.
             Ask about your specific part.
           </p>
@@ -365,7 +365,7 @@ export default function CoDevelopmentPage() {
             <EngagementItem
               num="01"
               title="Direct line to engineering"
-              detail="Your single point of contact is an engineer who can actually formulate solutions — not a sales rep relaying questions back to engineering."
+              detail="Your single point of contact has direct access to the formulators — not a sales rep relaying questions back through layers."
             />
             <EngagementItem
               num="02"
@@ -374,8 +374,8 @@ export default function CoDevelopmentPage() {
             />
             <EngagementItem
               num="03"
-              title="Weekly iteration during compounding"
-              detail="Test results, formulation tweaks, and next-trial scope reviewed together every week through the iteration phase."
+              title="Weekly check-ins through compounding"
+              detail="Test results, formulation tweaks, and next-trial scope reviewed together every week — with new iterations launched as test data justifies them."
             />
             <EngagementItem
               num="04"
