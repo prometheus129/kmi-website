@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-26",
+  "lastUpdated": "2026-05-27",
   "source": "Kantor Materials daily pricing",
   "prices": [
     {
@@ -15,16 +15,16 @@
       },
       "grades": "500P (大庆) / 500N / 1100N",
       "cfrRange": [
-        1284,
-        1344
+        1282,
+        1342
       ],
-      "direction": "up",
-      "weekChange": 5,
+      "direction": "stable",
+      "weekChange": 0,
       "notes": {
-        "en": "FOB $1314 indicative (1100N, 宁煤 — 500P still absent). Subject to confirmation.",
-        "vi": "FOB $1314 indicative (1100N, 宁煤 — 500P still absent). Subject to confirmation.",
-        "tr": "FOB $1314 indicative (1100N, 宁煤 — 500P still absent). Subject to confirmation.",
-        "id": "FOB $1314 indicative (1100N, 宁煤 — 500P still absent). Subject to confirmation."
+        "en": "FOB $1312 indicative (1100N, 宁煤 — 500P still absent). Subject to confirmation.",
+        "vi": "FOB $1312 indicative (1100N, 宁煤 — 500P still absent). Subject to confirmation.",
+        "tr": "FOB $1312 indicative (1100N, 宁煤 — 500P still absent). Subject to confirmation.",
+        "id": "FOB $1312 indicative (1100N, 宁煤 — 500P still absent). Subject to confirmation."
       }
     },
     {
@@ -40,16 +40,16 @@
       },
       "grades": "300R (大庆) / 251H / Z30S",
       "cfrRange": [
-        1297,
-        1357
+        1291,
+        1351
       ],
       "direction": "up",
-      "weekChange": 50,
+      "weekChange": 45,
       "notes": {
-        "en": "FOB $1327 indicative (251H, 东华 — 300R absent today). Subject to confirmation.",
-        "vi": "FOB $1327 indicative (251H, 东华 — 300R absent today). Subject to confirmation.",
-        "tr": "FOB $1327 indicative (251H, 东华 — 300R absent today). Subject to confirmation.",
-        "id": "FOB $1327 indicative (251H, 东华 — 300R absent today). Subject to confirmation."
+        "en": "FOB $1321 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation.",
+        "vi": "FOB $1321 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation.",
+        "tr": "FOB $1321 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation.",
+        "id": "FOB $1321 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation."
       }
     },
     {
@@ -116,17 +116,17 @@
       },
       "grades": "K8009 (浙石化) / 2500HY / EP548R",
       "cfrRange": [
-        1357,
-        1417
+        1344,
+        1404
       ],
-      "direction": "up",
-      "weekChange": 15,
+      "direction": "stable",
+      "weekChange": 0,
       "indicative": true,
       "notes": {
-        "en": "FOB $1387 indicative (K8009, 广东). Continued softening from May 8 peak. Subject to confirmation.",
-        "vi": "FOB $1387 indicative (K8009, 广东). Continued softening from May 8 peak. Subject to confirmation.",
-        "tr": "FOB $1387 indicative (K8009, 广东). Continued softening from May 8 peak. Subject to confirmation.",
-        "id": "FOB $1387 indicative (K8009, 广东). Continued softening from May 8 peak. Subject to confirmation."
+        "en": "FOB $1374 indicative (K8009, 广东). Full unwind from May 8 peak — back to Apr 30 baseline. Subject to confirmation.",
+        "vi": "FOB $1374 indicative (K8009, 广东). Full unwind from May 8 peak — back to Apr 30 baseline. Subject to confirmation.",
+        "tr": "FOB $1374 indicative (K8009, 广东). Full unwind from May 8 peak — back to Apr 30 baseline. Subject to confirmation.",
+        "id": "FOB $1374 indicative (K8009, 广东). Full unwind from May 8 peak — back to Apr 30 baseline. Subject to confirmation."
       }
     },
     {
@@ -149,10 +149,10 @@
       "weekChange": -120,
       "indicative": true,
       "notes": {
-        "en": "FOB $1376 indicative (0215A, 吉化 — Gaoqiao 275 returned today at $1,456 after 10+ trading days absent). Subject to confirmation.",
-        "vi": "FOB $1376 indicative (0215A, 吉化 — Gaoqiao 275 returned today at $1,456 after 10+ trading days absent). Subject to confirmation.",
-        "tr": "FOB $1376 indicative (0215A, 吉化 — Gaoqiao 275 returned today at $1,456 after 10+ trading days absent). Subject to confirmation.",
-        "id": "FOB $1376 indicative (0215A, 吉化 — Gaoqiao 275 returned today at $1,456 after 10+ trading days absent). Subject to confirmation."
+        "en": "FOB $1376 indicative (0215A, 吉化 — Gaoqiao 275 holding day 2 at $1,456 since Tuesday's return). Subject to confirmation.",
+        "vi": "FOB $1376 indicative (0215A, 吉化 — Gaoqiao 275 holding day 2 at $1,456 since Tuesday's return). Subject to confirmation.",
+        "tr": "FOB $1376 indicative (0215A, 吉化 — Gaoqiao 275 holding day 2 at $1,456 since Tuesday's return). Subject to confirmation.",
+        "id": "FOB $1376 indicative (0215A, 吉化 — Gaoqiao 275 holding day 2 at $1,456 since Tuesday's return). Subject to confirmation."
       }
     }
   ]
