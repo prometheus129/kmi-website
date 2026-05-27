@@ -59,7 +59,7 @@ export default function CoDevelopmentPage() {
               <span className="text-white font-medium">48 hours</span> to three
               material recommendations.{" "}
               <span className="text-white font-medium">4-6 weeks</span> to
-              your custom material. Built for OEMs the majors aren&apos;t.
+              your custom material. Built for hardware brands the majors aren&apos;t.
             </p>
           </RevealDiv>
 
@@ -116,12 +116,13 @@ export default function CoDevelopmentPage() {
               HOW WE&apos;RE BUILT DIFFERENTLY
             </span>
             <h2 className="font-serif text-3xl lg:text-[42px] font-bold text-white mb-6 leading-tight">
-              Most plastics suppliers want a volume commitment before they&apos;ll engage.
+              Most plastics suppliers won&apos;t engage on a single part.
             </h2>
             <p className="text-body-text text-base lg:text-lg leading-relaxed mb-4">
-              We pick partners based on the problem — send us the spec on the
-              one part where material choice actually moves your product, and
-              we come back with three honest recommendations in 48 hours.
+              We pick partners based on the problem, not the order size. The
+              part where material choice meaningfully moves your product is
+              the conversation we want to have — and you get three honest
+              recommendations within 48 hours.
             </p>
             <p className="text-white text-base lg:text-lg font-medium leading-relaxed">
               By the time a major&apos;s sales rep schedules a first call, you
@@ -159,7 +160,7 @@ export default function CoDevelopmentPage() {
                 tag="Consumer Electronics · Sustainability"
                 title="Pushing the recycled-content ceiling"
                 pain="Most brands stop at 30% recycled content. Past that, color drift and surface defects show up — the product starts looking recycled."
-                upside="Hit 50%+ recycled content while keeping the color match and impact resistance your design demands."
+                upside="Push past 30% recycled while keeping the surface and impact spec your design demands — a sustainability story competitors can't match yet."
                 precedent="Dell + Covestro held engineering properties from 30% up to 72% recycled across three reuse cycles. Fairphone 5 ships 100%."
               />
             </RevealDiv>
@@ -171,7 +172,7 @@ export default function CoDevelopmentPage() {
                 tag="Robotics · Field Life"
                 title="Cable jackets that don't fail in 18 months"
                 pain="Robot arms and humanoids flex cables millions of times. Field data shows standard cables failing at the 18-month mark."
-                upside="Custom rubber-like jackets tested to 15M+ flex cycles — roughly 5x typical service life."
+                upside="5× typical service life on cables that fail at the 18-month mark today. Reliability becomes a warranty claim, not a field risk."
                 precedent="Sporting goods first developed this chemistry for athletic shoe midsoles. Cleanly transferred to wearables, now humanoid cabling."
               />
             </RevealDiv>
@@ -183,7 +184,7 @@ export default function CoDevelopmentPage() {
                 tag="Consumer Electronics · AI Compute"
                 title="Heat-conducting plastics"
                 pain="AI chips in compact devices run hot. Metal heatsinks add weight, occupy space, and dictate where everything else has to go."
-                upside="Custom plastic that moves heat almost as well as aluminum at half the weight. The housing becomes the heatsink."
+                upside="Drop the metal heatsink from your design. The housing becomes the heatsink — at half the weight, with the industrial-design freedom your engineers get back."
                 precedent="Sabic and Covestro both ship commercial reference grades — used in EV battery enclosures, LED housings, and premium electronics."
               />
             </RevealDiv>
@@ -195,7 +196,7 @@ export default function CoDevelopmentPage() {
                 tag="Robotics · Mechanical"
                 title="Gears that last without the metal weight"
                 pain="Industrial joints and humanoid actuators wear out their gears. Metal solves durability but adds weight; standard plastic degrades fast."
-                upside="Engineered acetal or PEEK formulations halve gear wear while keeping the weight savings."
+                upside="Twice the gear cycle life at the same weight. Lower maintenance cost over the robot's service life, higher customer satisfaction at scale."
                 precedent="Tesla Optimus uses PEEK gear substitutes — 10kg lighter, 30% faster. Aerospace and racing have used these for decades."
               />
             </RevealDiv>
@@ -207,7 +208,7 @@ export default function CoDevelopmentPage() {
                 tag="Consumer Electronics · Cost + Environmental"
                 title="Eliminating the paint step"
                 pain="Painting plastic parts is 15-30% of total part cost. Plus rising environmental rules on paint chemicals, plus paint chipping in the field."
-                upside="Mix the color into the plastic before molding. Same look, same finish, no paint step, no secondary factory line."
+                upside="Cut 15-30% of finished part cost by eliminating the paint step. Same look, no VOC compliance headache, no field chipping."
                 precedent="Acer + Teijin shipped unpainted recycled-content notebooks at scale. Case studies report up to 40% paint-step cost cut."
               />
             </RevealDiv>
@@ -219,7 +220,7 @@ export default function CoDevelopmentPage() {
                 tag="Robotics · Optical Precision"
                 title="LiDAR housings that hold tolerance"
                 pain="LiDAR and stereo camera housings need micron-level precision. Standard plastic warps with temperature — enough to throw off calibration."
-                upside="Custom plastics with near-zero warpage. Sensors stay calibrated through environmental cycles, drop tests, and field life."
+                upside="Sensors hold calibration through temperature, humidity, and drops. Tighter reliability story, fewer returns from miscalibration."
                 precedent="Automotive ADAS pioneered this for radar and camera housings. The playbook ports cleanly to robotics LiDAR."
               />
             </RevealDiv>
@@ -231,7 +232,7 @@ export default function CoDevelopmentPage() {
                 tag="Consumer Electronics · Manufacturing Economics"
                 title="More parts per shot in nylon connectors"
                 pain="USB-C and similar miniaturized connectors push against how thin nylon can flow. Wall thickness and parts-per-shot both capped."
-                upside="Specialized nylon flows further before setting. 16 → 32 parts per shot from the same mold — halves tooling cost per part."
+                upside="Double the parts per machine cycle. Tooling amortization halves — direct margin gain on every high-volume connector."
                 precedent="DuPont, BASF, and Solvay all sell high-flow nylon grades for exactly this use. The differentiator is specialized polymer chemistry."
               />
             </RevealDiv>
@@ -243,7 +244,7 @@ export default function CoDevelopmentPage() {
                 tag="Robotics · Weight + Performance"
                 title="Metal replacement at half the weight"
                 pain="Humanoid and mobile robots need to be light to move fast, but structural parts traditionally need metal for strength."
-                upside="Fiber-reinforced plastics replace metal at roughly half the weight. Same strength, dramatically lighter robot."
+                upside="A lighter robot moves faster and runs longer on the same battery. Speed and uptime become product features, not engineering compromises."
                 precedent="Tesla Optimus uses this for its skeletal frame. HP Elite Dragonfly went 82% lighter using these materials."
               />
             </RevealDiv>
@@ -255,6 +256,18 @@ export default function CoDevelopmentPage() {
             soft-touch rubberized surfaces · precision gear compounds · static-dissipating housings.
             Ask about your specific part.
           </p>
+
+          <div className="text-center mt-12 lg:mt-14">
+            <a
+              href="#apply"
+              className="inline-flex items-center gap-2 text-gold hover:text-gold-light font-sans font-semibold text-base tracking-wider transition-colors duration-150 border-b border-gold/40 hover:border-gold-light pb-1"
+            >
+              Apply for the pilot
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -268,7 +281,7 @@ export default function CoDevelopmentPage() {
               WHY SPEED MATTERS
             </span>
             <h2 className="font-serif text-3xl lg:text-[42px] font-bold text-white mb-6 leading-tight">
-              The materials decision sits upstream of manufacturing.
+              The materials decision happens in the design room, not the factory.
             </h2>
             <div className="space-y-4 text-body-text text-base lg:text-lg leading-relaxed">
               <p>
@@ -400,7 +413,7 @@ export default function CoDevelopmentPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-2">
             <PilotCriterion
               label="Brand fit"
-              detail="Hardware brand — CE, robotics, or scaling startup with a real product"
+              detail="Hardware brand — Consumer Electronics, robotics, or scaling startup with a real product"
             />
             <PilotCriterion
               label="Material fit"
@@ -431,8 +444,8 @@ export default function CoDevelopmentPage() {
                 Tell us about your problem part.
               </h2>
               <p className="font-sans text-base text-body-text leading-relaxed max-w-[560px] mx-auto">
-                Every application reaches David Wu (founder) directly. We
-                respond within{" "}
+                Every application reaches the founder directly. You&apos;ll
+                hear back within{" "}
                 <span className="text-white font-medium">48 hours</span> with an
                 initial read on your spec and pilot fit.
               </p>
