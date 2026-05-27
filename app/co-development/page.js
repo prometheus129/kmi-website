@@ -28,19 +28,19 @@ export default function CoDevelopmentPage() {
           ═══════════════════════════════════════════════════════ */}
       <section className="relative overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-20 px-6 lg:px-10 bg-gradient-to-br from-navy-deep via-navy to-[#1a3355]">
         {/* Texture */}
-        <div className="absolute inset-0 opacity-[0.085]">
+        <div className="absolute inset-0 opacity-[0.18]">
           <Image
-            src="/images/hero-texture.jpg"
+            src="/images/codev-hero.jpg"
             alt=""
             fill
             className="object-cover"
-            style={{ objectPosition: "center 60%" }}
+            style={{ objectPosition: "center center" }}
             sizes="100vw"
             priority
-            quality={60}
+            quality={70}
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/30 via-transparent to-navy-deep/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/50 via-navy/60 to-navy-deep/80" />
         {/* Gradient orbs */}
         <div className="absolute -top-[200px] -right-[100px] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(46,139,139,0.08)_0%,transparent_70%)] rounded-full" />
         <div className="absolute -bottom-[150px] -left-[100px] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(212,168,67,0.05)_0%,transparent_70%)] rounded-full" />
@@ -63,9 +63,9 @@ export default function CoDevelopmentPage() {
             </p>
           </RevealDiv>
 
-          {/* Stat row — two metrics, integrated into the hero */}
+          {/* Stat row — three metrics, integrated into the hero */}
           <RevealDiv delay={150}>
-            <div className="mt-12 lg:mt-14 bg-gradient-to-br from-gold/[0.08] to-gold/[0.01] border border-gold/[0.25] rounded-xl p-8 lg:p-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 backdrop-blur-sm">
+            <div className="mt-12 lg:mt-14 bg-gradient-to-br from-gold/[0.08] to-gold/[0.01] border border-gold/[0.25] rounded-xl p-8 lg:p-10 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 backdrop-blur-sm">
               <div className="text-center md:text-left">
                 <div className="font-serif text-[56px] lg:text-[68px] font-bold text-gold leading-none">
                   48
@@ -73,18 +73,29 @@ export default function CoDevelopmentPage() {
                 <div className="font-sans text-[11px] font-bold uppercase tracking-[3px] text-body-text mt-2">
                   HOURS
                 </div>
-                <p className="font-sans text-sm text-body-text leading-relaxed mt-3 max-w-[320px] mx-auto md:mx-0">
-                  to three material recommendations from your spec
+                <p className="font-sans text-sm text-body-text leading-relaxed mt-3 max-w-[280px] mx-auto md:mx-0">
+                  from your spec to three honest recommendations
                 </p>
               </div>
-              <div className="text-center md:text-left md:border-l md:border-gold/[0.25] md:pl-8">
+              <div className="text-center md:text-left md:border-l md:border-gold/[0.25] md:pl-6">
+                <div className="font-serif text-[56px] lg:text-[68px] font-bold text-gold leading-none">
+                  5×
+                </div>
+                <div className="font-sans text-[11px] font-bold uppercase tracking-[3px] text-body-text mt-2">
+                  FASTER
+                </div>
+                <p className="font-sans text-sm text-body-text leading-relaxed mt-3 max-w-[280px] mx-auto md:mx-0">
+                  than the majors&apos; typical timeline
+                </p>
+              </div>
+              <div className="text-center md:text-left md:border-l md:border-gold/[0.25] md:pl-6">
                 <div className="font-serif text-[56px] lg:text-[68px] font-bold text-gold leading-none">
                   4-6
                 </div>
                 <div className="font-sans text-[11px] font-bold uppercase tracking-[3px] text-body-text mt-2">
                   WEEKS
                 </div>
-                <p className="font-sans text-sm text-body-text leading-relaxed mt-3 max-w-[320px] mx-auto md:mx-0">
+                <p className="font-sans text-sm text-body-text leading-relaxed mt-3 max-w-[280px] mx-auto md:mx-0">
                   from intake to your custom material in trial
                 </p>
               </div>
