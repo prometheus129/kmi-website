@@ -79,17 +79,6 @@ export default function CoDevelopmentPage() {
               </div>
               <div className="text-center md:text-left md:border-l md:border-gold/[0.25] md:pl-6">
                 <div className="font-serif text-[56px] lg:text-[68px] font-bold text-gold leading-none">
-                  5×
-                </div>
-                <div className="font-sans text-[11px] font-bold uppercase tracking-[3px] text-body-text mt-2">
-                  FASTER
-                </div>
-                <p className="font-sans text-sm text-body-text leading-relaxed mt-3 max-w-[280px] mx-auto md:mx-0">
-                  than the majors&apos; typical timeline
-                </p>
-              </div>
-              <div className="text-center md:text-left md:border-l md:border-gold/[0.25] md:pl-6">
-                <div className="font-serif text-[56px] lg:text-[68px] font-bold text-gold leading-none">
                   4-6
                 </div>
                 <div className="font-sans text-[11px] font-bold uppercase tracking-[3px] text-body-text mt-2">
@@ -97,6 +86,17 @@ export default function CoDevelopmentPage() {
                 </div>
                 <p className="font-sans text-sm text-body-text leading-relaxed mt-3 max-w-[280px] mx-auto md:mx-0">
                   from intake to your custom material in trial
+                </p>
+              </div>
+              <div className="text-center md:text-left md:border-l md:border-gold/[0.25] md:pl-6">
+                <div className="font-serif text-[56px] lg:text-[68px] font-bold text-gold leading-none">
+                  5×
+                </div>
+                <div className="font-sans text-[11px] font-bold uppercase tracking-[3px] text-body-text mt-2">
+                  FASTER
+                </div>
+                <p className="font-sans text-sm text-body-text leading-relaxed mt-3 max-w-[280px] mx-auto md:mx-0">
+                  than the majors&apos; typical timeline
                 </p>
               </div>
             </div>
@@ -314,7 +314,7 @@ export default function CoDevelopmentPage() {
               HOW IT WORKS
             </span>
             <h2 className="font-serif text-3xl lg:text-[42px] font-bold text-white mb-12 max-w-3xl leading-tight">
-              From your spec to production material — in four phases.
+              From your spec to material in trial. Four phases.
             </h2>
           </RevealDiv>
 
@@ -365,12 +365,12 @@ export default function CoDevelopmentPage() {
             <EngagementItem
               num="01"
               title="Direct line to engineering"
-              detail="Materials questions get answered by an engineer who can actually formulate the solution. Same day, no filtering."
+              detail="Your single point of contact is an engineer who can actually formulate solutions — not a sales rep relaying questions back to engineering."
             />
             <EngagementItem
               num="02"
-              title="Same-day response during formulation"
-              detail="Question on a spec, a color, a regulatory constraint — answered the day you raise it, not the week after."
+              title="Same-day turnaround on questions"
+              detail="Spec questions, color targets, regulatory hurdles — answered the same day you raise them, through the entire iteration phase."
             />
             <EngagementItem
               num="03"
