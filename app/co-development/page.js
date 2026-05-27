@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
@@ -23,10 +24,28 @@ export default function CoDevelopmentPage() {
       <Nav />
 
       {/* ═══════════════════════════════════════════════════════
-          HERO
+          HERO (with atmospheric texture)
           ═══════════════════════════════════════════════════════ */}
-      <section className="pt-28 pb-12 lg:pt-32 lg:pb-16 px-6 lg:px-10">
-        <div className="max-w-[1100px] mx-auto">
+      <section className="relative overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-20 px-6 lg:px-10 bg-gradient-to-br from-navy-deep via-navy to-[#1a3355]">
+        {/* Texture */}
+        <div className="absolute inset-0 opacity-[0.085]">
+          <Image
+            src="/images/hero-texture.jpg"
+            alt=""
+            fill
+            className="object-cover"
+            style={{ objectPosition: "center 60%" }}
+            sizes="100vw"
+            priority
+            quality={60}
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/30 via-transparent to-navy-deep/70" />
+        {/* Gradient orbs */}
+        <div className="absolute -top-[200px] -right-[100px] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(46,139,139,0.08)_0%,transparent_70%)] rounded-full" />
+        <div className="absolute -bottom-[150px] -left-[100px] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(212,168,67,0.05)_0%,transparent_70%)] rounded-full" />
+
+        <div className="max-w-[1100px] mx-auto relative z-10">
           <RevealDiv>
             <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
               FOR HARDWARE BRANDS
@@ -43,46 +62,29 @@ export default function CoDevelopmentPage() {
               your custom material. Built for OEMs the majors aren&apos;t.
             </p>
           </RevealDiv>
-        </div>
-      </section>
 
-      {/* ═══════════════════════════════════════════════════════
-          STAT ROW
-          ═══════════════════════════════════════════════════════ */}
-      <section className="px-6 lg:px-10 pb-16 lg:pb-20">
-        <div className="max-w-[1100px] mx-auto">
-          <RevealDiv delay={100}>
-            <div className="bg-gradient-to-br from-gold/[0.06] to-gold/[0.01] border border-gold/[0.22] rounded-xl p-8 lg:p-10 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6">
+          {/* Stat row — two metrics, integrated into the hero */}
+          <RevealDiv delay={150}>
+            <div className="mt-12 lg:mt-14 bg-gradient-to-br from-gold/[0.08] to-gold/[0.01] border border-gold/[0.25] rounded-xl p-8 lg:p-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 backdrop-blur-sm">
               <div className="text-center md:text-left">
-                <div className="font-serif text-[56px] lg:text-[64px] font-bold text-gold leading-none">
+                <div className="font-serif text-[56px] lg:text-[68px] font-bold text-gold leading-none">
                   48
                 </div>
                 <div className="font-sans text-[11px] font-bold uppercase tracking-[3px] text-body-text mt-2">
                   HOURS
                 </div>
-                <p className="font-sans text-sm text-body-text leading-relaxed mt-3 max-w-[260px] mx-auto md:mx-0">
+                <p className="font-sans text-sm text-body-text leading-relaxed mt-3 max-w-[320px] mx-auto md:mx-0">
                   to three material recommendations from your spec
                 </p>
               </div>
-              <div className="text-center md:text-left md:border-l md:border-gold/[0.20] md:pl-6">
-                <div className="font-serif text-[56px] lg:text-[64px] font-bold text-gold leading-none">
-                  1
-                </div>
-                <div className="font-sans text-[11px] font-bold uppercase tracking-[3px] text-body-text mt-2">
-                  PART
-                </div>
-                <p className="font-sans text-sm text-body-text leading-relaxed mt-3 max-w-[260px] mx-auto md:mx-0">
-                  engage on the problem, not the order — pick where it matters most
-                </p>
-              </div>
-              <div className="text-center md:text-left md:border-l md:border-gold/[0.20] md:pl-6">
-                <div className="font-serif text-[56px] lg:text-[64px] font-bold text-gold leading-none">
+              <div className="text-center md:text-left md:border-l md:border-gold/[0.25] md:pl-8">
+                <div className="font-serif text-[56px] lg:text-[68px] font-bold text-gold leading-none">
                   4-6
                 </div>
                 <div className="font-sans text-[11px] font-bold uppercase tracking-[3px] text-body-text mt-2">
                   WEEKS
                 </div>
-                <p className="font-sans text-sm text-body-text leading-relaxed mt-3 max-w-[260px] mx-auto md:mx-0">
+                <p className="font-sans text-sm text-body-text leading-relaxed mt-3 max-w-[320px] mx-auto md:mx-0">
                   from intake to your custom material in trial
                 </p>
               </div>
@@ -143,7 +145,7 @@ export default function CoDevelopmentPage() {
             <RevealDiv delay={0}>
               <UseCaseCard
                 tagColor="ce"
-                tag="CE · Sustainability"
+                tag="Consumer Electronics · Sustainability"
                 title="Pushing the recycled-content ceiling"
                 pain="Most brands stop at 30% recycled content. Past that, color drift and surface defects show up — the product starts looking recycled."
                 upside="Hit 50%+ recycled content while keeping the color match and impact resistance your design demands."
@@ -167,7 +169,7 @@ export default function CoDevelopmentPage() {
             <RevealDiv delay={100}>
               <UseCaseCard
                 tagColor="ce"
-                tag="CE · AI Compute"
+                tag="Consumer Electronics · AI Compute"
                 title="Heat-conducting plastics"
                 pain="AI chips in compact devices run hot. Metal heatsinks add weight, occupy space, and dictate where everything else has to go."
                 upside="Custom plastic that moves heat almost as well as aluminum at half the weight. The housing becomes the heatsink."
@@ -191,7 +193,7 @@ export default function CoDevelopmentPage() {
             <RevealDiv delay={200}>
               <UseCaseCard
                 tagColor="ce"
-                tag="CE · Cost + Environmental"
+                tag="Consumer Electronics · Cost + Environmental"
                 title="Eliminating the paint step"
                 pain="Painting plastic parts is 15-30% of total part cost. Plus rising environmental rules on paint chemicals, plus paint chipping in the field."
                 upside="Mix the color into the plastic before molding. Same look, same finish, no paint step, no secondary factory line."
@@ -215,7 +217,7 @@ export default function CoDevelopmentPage() {
             <RevealDiv delay={300}>
               <UseCaseCard
                 tagColor="ce"
-                tag="CE · Manufacturing Economics"
+                tag="Consumer Electronics · Manufacturing Economics"
                 title="More parts per shot in nylon connectors"
                 pain="USB-C and similar miniaturized connectors push against how thin nylon can flow. Wall thickness and parts-per-shot both capped."
                 upside="Specialized nylon flows further before setting. 16 → 32 parts per shot from the same mold — halves tooling cost per part."
@@ -308,7 +310,7 @@ export default function CoDevelopmentPage() {
             <WorkflowStep
               num="03"
               title="Iteration"
-              detail="Custom-make, test, refine at Remay"
+              detail="Custom-make, test, refine the formulation"
               time="Day 10-28"
             />
             <WorkflowStep
@@ -331,15 +333,15 @@ export default function CoDevelopmentPage() {
               WHAT WORKING WITH US LOOKS LIKE
             </span>
             <h2 className="font-serif text-3xl lg:text-[42px] font-bold text-white mb-12 max-w-3xl leading-tight">
-              One point of contact. Real iteration. Production through Remay.
+              Direct technical access. Weekly iteration. Production-ready supply.
             </h2>
           </RevealDiv>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <EngagementItem
               num="01"
-              title="One point of contact"
-              detail="David or a materials scientist — no sales-rep handoff, no waiting on a regional desk."
+              title="Direct line to engineering"
+              detail="Materials questions get answered by an engineer who can actually formulate the solution. Same day, no filtering."
             />
             <EngagementItem
               num="02"
@@ -353,8 +355,8 @@ export default function CoDevelopmentPage() {
             />
             <EngagementItem
               num="04"
-              title="Production sign-off through Remay"
-              detail="Once you sign off the spec, Remay handles ongoing supply — ship to your OEM, warehouse, or wherever your supply chain requires."
+              title="Production sign-off and ongoing supply"
+              detail="Once you sign off the spec, we handle ongoing supply — shipped to your OEM, warehouse, or wherever your supply chain requires."
             />
           </div>
         </div>
@@ -370,16 +372,17 @@ export default function CoDevelopmentPage() {
               THE PILOT PROGRAM
             </span>
             <h2 className="font-serif text-3xl lg:text-[42px] font-bold text-white mb-6 leading-tight">
-              3-5 brands. One part each. No commitment.
+              One part at a time. No commitment.
             </h2>
             <p className="text-body-text text-base lg:text-lg leading-relaxed mb-10">
-              Send us your hardest spec — color target, mechanical requirements,
-              regulatory constraints. We come back in 48 hours with{" "}
+              Show us the part giving you the most material trouble — what it
+              is, your current spec, what&apos;s broken about it. We come back
+              in 48 hours with{" "}
               <span className="text-white font-medium">
                 three material recommendations and an honest tradeoff assessment.
               </span>{" "}
-              If they hold up, Remay (our compounding facility) iterates with
-              you. If they don&apos;t, you&apos;ve spent nothing.
+              If they hold up, we iterate with you on the actual formulation.
+              If they don&apos;t, you&apos;ve spent nothing.
             </p>
           </RevealDiv>
 
@@ -414,7 +417,7 @@ export default function CoDevelopmentPage() {
                 APPLY FOR THE PILOT
               </span>
               <h2 className="font-serif text-3xl lg:text-[42px] font-bold text-white mb-5 leading-tight">
-                Send us your hardest spec.
+                Tell us about your problem part.
               </h2>
               <p className="font-sans text-base text-body-text leading-relaxed max-w-[560px] mx-auto">
                 Every application reaches David Wu (founder) directly. We
