@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-27",
+  "lastUpdated": "2026-05-29",
   "source": "Kantor Materials daily pricing",
   "prices": [
     {
@@ -15,16 +15,16 @@
       },
       "grades": "500P (大庆) / 500N / 1100N",
       "cfrRange": [
-        1282,
-        1342
+        1278,
+        1338
       ],
       "direction": "stable",
       "weekChange": 0,
       "notes": {
-        "en": "FOB $1312 indicative (1100N, 宁煤 — 500P still absent). Subject to confirmation.",
-        "vi": "FOB $1312 indicative (1100N, 宁煤 — 500P still absent). Subject to confirmation.",
-        "tr": "FOB $1312 indicative (1100N, 宁煤 — 500P still absent). Subject to confirmation.",
-        "id": "FOB $1312 indicative (1100N, 宁煤 — 500P still absent). Subject to confirmation."
+        "en": "FOB $1308 indicative (1100N, 宁煤 — 500P still absent). Subject to confirmation.",
+        "vi": "FOB $1308 indicative (1100N, 宁煤 — 500P still absent). Subject to confirmation.",
+        "tr": "FOB $1308 indicative (1100N, 宁煤 — 500P still absent). Subject to confirmation.",
+        "id": "FOB $1308 indicative (1100N, 宁煤 — 500P still absent). Subject to confirmation."
       }
     },
     {
@@ -40,16 +40,16 @@
       },
       "grades": "300R (大庆) / 251H / Z30S",
       "cfrRange": [
-        1291,
-        1351
+        1284,
+        1344
       ],
       "direction": "up",
-      "weekChange": 45,
+      "weekChange": 40,
       "notes": {
-        "en": "FOB $1321 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation.",
-        "vi": "FOB $1321 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation.",
-        "tr": "FOB $1321 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation.",
-        "id": "FOB $1321 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation."
+        "en": "FOB $1314 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation.",
+        "vi": "FOB $1314 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation.",
+        "tr": "FOB $1314 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation.",
+        "id": "FOB $1314 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation."
       }
     },
     {
@@ -90,17 +90,17 @@
       },
       "grades": "7250N (中化) / YM12 / YM25",
       "cfrRange": [
-        1301,
-        1361
+        1295,
+        1355
       ],
       "direction": "up",
-      "weekChange": 15,
+      "weekChange": 10,
       "indicative": true,
       "notes": {
-        "en": "FOB $1331 indicative (YM12, 延长 — 7250N still absent). Subject to confirmation.",
-        "vi": "FOB $1331 indicative (YM12, 延长 — 7250N still absent). Subject to confirmation.",
-        "tr": "FOB $1331 indicative (YM12, 延长 — 7250N still absent). Subject to confirmation.",
-        "id": "FOB $1331 indicative (YM12, 延长 — 7250N still absent). Subject to confirmation."
+        "en": "FOB $1325 indicative (YM12, 延长 — 7250N still absent). Subject to confirmation.",
+        "vi": "FOB $1325 indicative (YM12, 延长 — 7250N still absent). Subject to confirmation.",
+        "tr": "FOB $1325 indicative (YM12, 延长 — 7250N still absent). Subject to confirmation.",
+        "id": "FOB $1325 indicative (YM12, 延长 — 7250N still absent). Subject to confirmation."
       }
     },
     {
@@ -116,17 +116,17 @@
       },
       "grades": "K8009 (浙石化) / 2500HY / EP548R",
       "cfrRange": [
-        1344,
-        1404
+        1311,
+        1371
       ],
-      "direction": "stable",
-      "weekChange": 0,
+      "direction": "down",
+      "weekChange": -35,
       "indicative": true,
       "notes": {
-        "en": "FOB $1374 indicative (K8009, 广东). Full unwind from May 8 peak — back to Apr 30 baseline. Subject to confirmation.",
-        "vi": "FOB $1374 indicative (K8009, 广东). Full unwind from May 8 peak — back to Apr 30 baseline. Subject to confirmation.",
-        "tr": "FOB $1374 indicative (K8009, 广东). Full unwind from May 8 peak — back to Apr 30 baseline. Subject to confirmation.",
-        "id": "FOB $1374 indicative (K8009, 广东). Full unwind from May 8 peak — back to Apr 30 baseline. Subject to confirmation."
+        "en": "FOB $1341 indicative (K8009, 广东). Now below Apr 30 baseline — May 8 rally fully reversed into downtrend. Subject to confirmation.",
+        "vi": "FOB $1341 indicative (K8009, 广东). Now below Apr 30 baseline — May 8 rally fully reversed into downtrend. Subject to confirmation.",
+        "tr": "FOB $1341 indicative (K8009, 广东). Now below Apr 30 baseline — May 8 rally fully reversed into downtrend. Subject to confirmation.",
+        "id": "FOB $1341 indicative (K8009, 广东). Now below Apr 30 baseline — May 8 rally fully reversed into downtrend. Subject to confirmation."
       }
     },
     {
@@ -142,17 +142,17 @@
       },
       "grades": "275 (上海高桥) / 0215A (吉化)",
       "cfrRange": [
-        1346,
-        1406
+        1293,
+        1353
       ],
       "direction": "down",
-      "weekChange": -120,
+      "weekChange": -170,
       "indicative": true,
       "notes": {
-        "en": "FOB $1376 indicative (0215A, 吉化 — Gaoqiao 275 holding day 2 at $1,456 since Tuesday's return). Subject to confirmation.",
-        "vi": "FOB $1376 indicative (0215A, 吉化 — Gaoqiao 275 holding day 2 at $1,456 since Tuesday's return). Subject to confirmation.",
-        "tr": "FOB $1376 indicative (0215A, 吉化 — Gaoqiao 275 holding day 2 at $1,456 since Tuesday's return). Subject to confirmation.",
-        "id": "FOB $1376 indicative (0215A, 吉化 — Gaoqiao 275 holding day 2 at $1,456 since Tuesday's return). Subject to confirmation."
+        "en": "FOB $1323 indicative (0215A, 吉化). ABS unwind accelerated — Gaoqiao 275 -$67 since Tuesday's return, now at $1,389. Subject to confirmation.",
+        "vi": "FOB $1323 indicative (0215A, 吉化). ABS unwind accelerated — Gaoqiao 275 -$67 since Tuesday's return, now at $1,389. Subject to confirmation.",
+        "tr": "FOB $1323 indicative (0215A, 吉化). ABS unwind accelerated — Gaoqiao 275 -$67 since Tuesday's return, now at $1,389. Subject to confirmation.",
+        "id": "FOB $1323 indicative (0215A, 吉化). ABS unwind accelerated — Gaoqiao 275 -$67 since Tuesday's return, now at $1,389. Subject to confirmation."
       }
     }
   ]
