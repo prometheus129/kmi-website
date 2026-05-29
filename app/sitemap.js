@@ -11,6 +11,7 @@ export default function sitemap() {
     { path: "/", changeFrequency: "weekly", priority: 1.0 },
     { path: "/inquiry", changeFrequency: "monthly", priority: 0.9 },
     { path: "/polymer-compass", changeFrequency: "monthly", priority: 0.9 },
+    { path: "/co-development", changeFrequency: "monthly", priority: 0.9 },
     { path: "/insights", changeFrequency: "weekly", priority: 0.8 },
     { path: "/approach", changeFrequency: "monthly", priority: 0.7 },
     { path: "/contact", changeFrequency: "monthly", priority: 0.7 },
