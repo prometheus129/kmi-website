@@ -4,24 +4,6 @@ import { useState } from "react";
 import { FORM_ENDPOINTS, submitForm } from "@/lib/forms";
 import { trackFormSubmit, getAttribution } from "@/lib/tracking";
 
-const countries = [
-  "Vietnam",
-  "Indonesia",
-  "Turkey",
-  "Philippines",
-  "Thailand",
-  "Bangladesh",
-  "Mexico",
-  "Algeria",
-  "Egypt",
-  "Kenya",
-  "Tanzania",
-  "Ghana",
-  "Nigeria",
-  "Peru",
-  "Other",
-];
-
 const inquiryTypes = [
   "The Polymer Compass Subscription",
   "Partnership / Distribution",
@@ -155,19 +137,14 @@ export default function ContactForm() {
           <label htmlFor="contact-country" className={labelClasses}>
             Country *
           </label>
-          <select
+          <input
             id="contact-country"
             name="country"
+            type="text"
             required
             className={inputClasses}
-          >
-            <option value="">Select country</option>
-            {countries.map((c) => (
-              <option key={c} value={c}>
-                {c}
-              </option>
-            ))}
-          </select>
+            placeholder="Your country"
+          />
         </div>
         <div>
           <label htmlFor="contact-type" className={labelClasses}>
