@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { FORM_ENDPOINTS, submitForm } from "@/lib/forms";
-import { trackFormSubmit } from "@/lib/tracking";
+import { trackFormSubmit, getAttribution } from "@/lib/tracking";
 
 export default function CodevApplicationForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -45,6 +45,11 @@ export default function CodevApplicationForm() {
 
     for (const [key, val] of Object.entries(utmParams)) {
       formData.append(key, val);
+    }
+
+    const attribution = getAttribution();
+    for (const [key, val] of Object.entries(attribution)) {
+      if (val) formData.append(key, val);
     }
 
     const company = formData.get("company") || "Unknown";

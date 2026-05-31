@@ -1,6 +1,7 @@
 import { Cormorant_Garamond, DM_Sans, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import AttributionTracker from "@/components/AttributionTracker";
 
 const GA_MEASUREMENT_ID = "G-TQZ2DKCKPS";
 
@@ -69,6 +70,7 @@ export default function RootLayout({ children }) {
             gtag('config', '${GA_MEASUREMENT_ID}');
           `}
         </Script>
+        <AttributionTracker />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-teal focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-semibold"

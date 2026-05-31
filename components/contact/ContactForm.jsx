@@ -2,14 +2,23 @@
 
 import { useState } from "react";
 import { FORM_ENDPOINTS, submitForm } from "@/lib/forms";
+import { trackFormSubmit, getAttribution } from "@/lib/tracking";
 
 const countries = [
   "Vietnam",
-  "Philippines",
-  "Bangladesh",
-  "Peru",
+  "Indonesia",
   "Turkey",
+  "Philippines",
   "Thailand",
+  "Bangladesh",
+  "Mexico",
+  "Algeria",
+  "Egypt",
+  "Kenya",
+  "Tanzania",
+  "Ghana",
+  "Nigeria",
+  "Peru",
   "Other",
 ];
 
@@ -32,9 +41,15 @@ export default function ContactForm() {
 
     const formData = new FormData(e.target);
 
+    const attribution = getAttribution();
+    for (const [key, val] of Object.entries(attribution)) {
+      if (val) formData.append(key, val);
+    }
+
     const result = await submitForm(FORM_ENDPOINTS.contact, formData);
     if (result.ok) {
       setSubmitted(true);
+      trackFormSubmit("contact");
     } else {
       setError(result.error || "Something went wrong. Please try again.");
     }

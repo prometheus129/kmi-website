@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FORM_ENDPOINTS, submitForm } from "@/lib/forms";
-import { trackFormSubmit } from "@/lib/tracking";
+import { trackFormSubmit, getAttribution } from "@/lib/tracking";
 
 const LANE_PREFILLS = {
   "1:grade-query": {
@@ -65,6 +65,11 @@ export default function InquirySection() {
 
     for (const [key, val] of Object.entries(utmParams)) {
       formData.append(key, val);
+    }
+
+    const attribution = getAttribution();
+    for (const [key, val] of Object.entries(attribution)) {
+      if (val) formData.append(key, val);
     }
 
     const polymerType = formData.get("polymerType") || "General";
