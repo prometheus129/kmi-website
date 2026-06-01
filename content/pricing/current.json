@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-29",
+  "lastUpdated": "2026-06-01",
   "source": "Kantor Materials daily pricing",
   "prices": [
     {
@@ -40,16 +40,16 @@
       },
       "grades": "300R (大庆) / 251H / Z30S",
       "cfrRange": [
-        1284,
-        1344
+        1287,
+        1347
       ],
       "direction": "up",
       "weekChange": 40,
       "notes": {
-        "en": "FOB $1314 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation.",
-        "vi": "FOB $1314 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation.",
-        "tr": "FOB $1314 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation.",
-        "id": "FOB $1314 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation."
+        "en": "FOB $1317 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation.",
+        "vi": "FOB $1317 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation.",
+        "tr": "FOB $1317 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation.",
+        "id": "FOB $1317 indicative (Z30S, 中景 — 300R and 251H both absent). Subject to confirmation."
       }
     },
     {
@@ -116,17 +116,17 @@
       },
       "grades": "K8009 (浙石化) / 2500HY / EP548R",
       "cfrRange": [
-        1311,
-        1371
+        1304,
+        1364
       ],
       "direction": "down",
-      "weekChange": -35,
+      "weekChange": -40,
       "indicative": true,
       "notes": {
-        "en": "FOB $1341 indicative (K8009, 广东). Now below Apr 30 baseline — May 8 rally fully reversed into downtrend. Subject to confirmation.",
-        "vi": "FOB $1341 indicative (K8009, 广东). Now below Apr 30 baseline — May 8 rally fully reversed into downtrend. Subject to confirmation.",
-        "tr": "FOB $1341 indicative (K8009, 广东). Now below Apr 30 baseline — May 8 rally fully reversed into downtrend. Subject to confirmation.",
-        "id": "FOB $1341 indicative (K8009, 广东). Now below Apr 30 baseline — May 8 rally fully reversed into downtrend. Subject to confirmation."
+        "en": "FOB $1334 indicative (K8009, 广东). Continued softening — now -$92 from May 8 peak. Subject to confirmation.",
+        "vi": "FOB $1334 indicative (K8009, 广东). Continued softening — now -$92 from May 8 peak. Subject to confirmation.",
+        "tr": "FOB $1334 indicative (K8009, 广东). Continued softening — now -$92 from May 8 peak. Subject to confirmation.",
+        "id": "FOB $1334 indicative (K8009, 广东). Continued softening — now -$92 from May 8 peak. Subject to confirmation."
       }
     },
     {
