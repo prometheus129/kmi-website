@@ -132,8 +132,8 @@ export default function InquirySection() {
             </h3>
             <p className="font-sans text-base text-body-text leading-relaxed mb-6 max-w-[520px] mx-auto">
               You&apos;ll receive a response within one to two business days
-              with matched grades, current CFR pricing for your destination,
-              and documentation details. Check your email.
+              with matched grades, current pricing for your destination, and
+              documentation details. Check your email.
             </p>
             <p className="font-sans text-xs text-muted">
               Want market intelligence while you wait?{" "}
@@ -168,6 +168,32 @@ export default function InquirySection() {
                 />
               </div>
 
+              {/* Application & Grade/MFI — optional, structured */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="inq-application" className={labelClasses}>
+                    Application / end use
+                  </label>
+                  <input
+                    id="inq-application"
+                    name="application"
+                    className={inputClasses}
+                    placeholder="e.g., woven sacks, blown film, injection"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="inq-grade" className={labelClasses}>
+                    Grade or MFI — if known
+                  </label>
+                  <input
+                    id="inq-grade"
+                    name="gradeOrMfi"
+                    className={inputClasses}
+                    placeholder="e.g., MFI 3, T30S, or a grade you buy now"
+                  />
+                </div>
+              </div>
+
               {/* Tell us what you need — freeform */}
               <div>
                 <label htmlFor="inq-details" className={labelClasses}>
@@ -176,9 +202,9 @@ export default function InquirySection() {
                 <textarea
                   id="inq-details"
                   name="details"
-                  rows={5}
+                  rows={4}
                   className={`${inputClasses} resize-none`}
-                  placeholder="e.g., HDPE blow molding MFI 0.35 for water tanks, 50 MT/month, FDA food contact approved, equivalent to Marlex HHM 5202BN"
+                  placeholder="Volume and how often (e.g., 50 MT/month, recurring), timeline, and any target price or current supplier."
                   value={detailsValue}
                   onChange={(e) => setDetailsValue(e.target.value)}
                 />
@@ -196,6 +222,34 @@ export default function InquirySection() {
                   className={inputClasses}
                   placeholder="e.g., Ho Chi Minh City, Manila, Istanbul"
                 />
+              </div>
+
+              {/* Preferred pricing basis — optional */}
+              <div>
+                <label htmlFor="inq-pricing-basis" className={labelClasses}>
+                  Preferred pricing basis
+                </label>
+                <select
+                  id="inq-pricing-basis"
+                  name="pricingBasis"
+                  defaultValue="Not sure — recommend the best"
+                  className={inputClasses}
+                >
+                  <option value="Not sure — recommend the best">
+                    Not sure — recommend the best
+                  </option>
+                  <option value="FOB China">FOB China</option>
+                  <option value="CFR (destination port)">
+                    CFR — delivered to my port
+                  </option>
+                  <option value="CIF (destination port)">
+                    CIF — to my port (includes insurance)
+                  </option>
+                </select>
+                <p className="font-sans text-[11px] text-muted mt-2 leading-relaxed normal-case tracking-normal">
+                  FOB = China port · CFR / CIF = delivered to your destination
+                  port (CIF adds marine insurance).
+                </p>
               </div>
 
               {/* Company */}
