@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { FORM_ENDPOINTS, submitForm } from "@/lib/forms";
-import { trackCTA, trackFormSubmit } from "@/lib/tracking";
+import { trackCTA, trackFormSubmit, getAttribution } from "@/lib/tracking";
 import RevealDiv from "@/components/RevealDiv";
 
 const samplePrompts = [
@@ -16,23 +16,6 @@ export default function ConversationSection() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
-  const [utmParams, setUtmParams] = useState({});
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const utm = {};
-    for (const key of [
-      "utm_source",
-      "utm_medium",
-      "utm_campaign",
-      "utm_content",
-      "utm_term",
-    ]) {
-      const val = params.get(key);
-      if (val) utm[key] = val;
-    }
-    setUtmParams(utm);
-  }, []);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -41,8 +24,9 @@ export default function ConversationSection() {
 
     const formData = new FormData(e.target);
 
-    for (const [key, val] of Object.entries(utmParams)) {
-      formData.append(key, val);
+    const attribution = getAttribution();
+    for (const [key, val] of Object.entries(attribution)) {
+      if (val) formData.append(key, val);
     }
 
     const polymerType = formData.get("polymerType") || "General";
@@ -52,7 +36,7 @@ export default function ConversationSection() {
     const result = await submitForm(FORM_ENDPOINTS.inquiry, formData);
     if (result.ok) {
       setSubmitted(true);
-      trackFormSubmit("inquiry");
+      trackFormSubmit("inquiry", attribution);
     } else {
       setError(result.error || "Something went wrong. Please try again.");
     }

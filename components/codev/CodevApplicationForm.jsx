@@ -8,25 +8,10 @@ export default function CodevApplicationForm() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
-  const [utmParams, setUtmParams] = useState({});
   const [verticalPrefill, setVerticalPrefill] = useState("");
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-
-    // Capture UTM parameters for attribution
-    const utm = {};
-    for (const key of [
-      "utm_source",
-      "utm_medium",
-      "utm_campaign",
-      "utm_content",
-      "utm_term",
-    ]) {
-      const val = params.get(key);
-      if (val) utm[key] = val;
-    }
-    setUtmParams(utm);
 
     // Allow ?vertical=ce or ?vertical=robotics to prefill the dropdown
     // (e.g., for QR codes baked into each one-pager PDF)
@@ -42,10 +27,6 @@ export default function CodevApplicationForm() {
     setError(null);
 
     const formData = new FormData(e.target);
-
-    for (const [key, val] of Object.entries(utmParams)) {
-      formData.append(key, val);
-    }
 
     const attribution = getAttribution();
     for (const [key, val] of Object.entries(attribution)) {
@@ -63,7 +44,7 @@ export default function CodevApplicationForm() {
     const result = await submitForm(FORM_ENDPOINTS.codev, formData);
     if (result.ok) {
       setSubmitted(true);
-      trackFormSubmit("codev-pilot");
+      trackFormSubmit("codev-pilot", attribution);
     } else {
       setError(result.error || "Something went wrong. Please try again.");
     }

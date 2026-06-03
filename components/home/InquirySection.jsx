@@ -27,25 +27,11 @@ export default function InquirySection() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
-  const [utmParams, setUtmParams] = useState({});
   const [polymerTypeValue, setPolymerTypeValue] = useState("");
   const [detailsValue, setDetailsValue] = useState("");
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const utm = {};
-    for (const key of [
-      "utm_source",
-      "utm_medium",
-      "utm_campaign",
-      "utm_content",
-      "utm_term",
-    ]) {
-      const val = params.get(key);
-      if (val) utm[key] = val;
-    }
-    setUtmParams(utm);
-
     const lane = params.get("lane");
     const context = params.get("context");
     const prefillKey = lane && context ? `${lane}:${context}` : null;
@@ -63,10 +49,6 @@ export default function InquirySection() {
 
     const formData = new FormData(e.target);
 
-    for (const [key, val] of Object.entries(utmParams)) {
-      formData.append(key, val);
-    }
-
     const attribution = getAttribution();
     for (const [key, val] of Object.entries(attribution)) {
       if (val) formData.append(key, val);
@@ -79,7 +61,7 @@ export default function InquirySection() {
     const result = await submitForm(FORM_ENDPOINTS.inquiry, formData);
     if (result.ok) {
       setSubmitted(true);
-      trackFormSubmit("inquiry");
+      trackFormSubmit("inquiry", attribution);
     } else {
       setError(result.error || "Something went wrong. Please try again.");
     }

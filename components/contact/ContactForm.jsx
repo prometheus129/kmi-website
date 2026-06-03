@@ -31,7 +31,7 @@ export default function ContactForm() {
     const result = await submitForm(FORM_ENDPOINTS.contact, formData);
     if (result.ok) {
       setSubmitted(true);
-      trackFormSubmit("contact");
+      trackFormSubmit("contact", attribution);
     } else {
       setError(result.error || "Something went wrong. Please try again.");
     }
