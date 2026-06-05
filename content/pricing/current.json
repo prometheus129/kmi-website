@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-04",
+  "lastUpdated": "2026-06-05",
   "source": "Kantor Materials daily pricing",
   "prices": [
     {
@@ -21,10 +21,10 @@
       "direction": "up",
       "weekChange": 15,
       "notes": {
-        "en": "FOB $1321 indicative (1100N, 宁煤 — 500P in supply tightness per QQT desk). Subject to confirmation.",
-        "vi": "FOB $1321 indicative (1100N, 宁煤 — 500P in supply tightness per QQT desk). Subject to confirmation.",
-        "tr": "FOB $1321 indicative (1100N, 宁煤 — 500P in supply tightness per QQT desk). Subject to confirmation.",
-        "id": "FOB $1321 indicative (1100N, 宁煤 — 500P in supply tightness per QQT desk). Subject to confirmation."
+        "en": "FOB $1321 indicative (1100N, 宁煤). Subject to confirmation.",
+        "vi": "FOB $1321 indicative (1100N, 宁煤). Subject to confirmation.",
+        "tr": "FOB $1321 indicative (1100N, 宁煤). Subject to confirmation.",
+        "id": "FOB $1321 indicative (1100N, 宁煤). Subject to confirmation."
       }
     },
     {
@@ -40,16 +40,16 @@
       },
       "grades": "300R (大庆) / 251H / Z30S",
       "cfrRange": [
-        1291,
-        1351
+        1284,
+        1344
       ],
       "direction": "up",
-      "weekChange": 45,
+      "weekChange": 40,
       "notes": {
-        "en": "FOB $1321 indicative (Z30S, 中景 — 300R and 251H in supply tightness per QQT desk). Subject to confirmation.",
-        "vi": "FOB $1321 indicative (Z30S, 中景 — 300R and 251H in supply tightness per QQT desk). Subject to confirmation.",
-        "tr": "FOB $1321 indicative (Z30S, 中景 — 300R and 251H in supply tightness per QQT desk). Subject to confirmation.",
-        "id": "FOB $1321 indicative (Z30S, 中景 — 300R and 251H in supply tightness per QQT desk). Subject to confirmation."
+        "en": "FOB $1314 indicative (Y25, 巨正源). Subject to confirmation.",
+        "vi": "FOB $1314 indicative (Y25, 巨正源). Subject to confirmation.",
+        "tr": "FOB $1314 indicative (Y25, 巨正源). Subject to confirmation.",
+        "id": "FOB $1314 indicative (Y25, 巨正源). Subject to confirmation."
       }
     },
     {
@@ -97,10 +97,10 @@
       "weekChange": 10,
       "indicative": true,
       "notes": {
-        "en": "FOB $1325 indicative (YM12, 延长 — 7250N still absent). Subject to confirmation.",
-        "vi": "FOB $1325 indicative (YM12, 延长 — 7250N still absent). Subject to confirmation.",
-        "tr": "FOB $1325 indicative (YM12, 延长 — 7250N still absent). Subject to confirmation.",
-        "id": "FOB $1325 indicative (YM12, 延长 — 7250N still absent). Subject to confirmation."
+        "en": "FOB $1325 indicative (YM12, 延长). Subject to confirmation.",
+        "vi": "FOB $1325 indicative (YM12, 延长). Subject to confirmation.",
+        "tr": "FOB $1325 indicative (YM12, 延长). Subject to confirmation.",
+        "id": "FOB $1325 indicative (YM12, 延长). Subject to confirmation."
       }
     },
     {
@@ -116,17 +116,17 @@
       },
       "grades": "K8009 (浙石化) / 2500HY / EP548R",
       "cfrRange": [
-        1284,
-        1344
+        1278,
+        1338
       ],
       "direction": "down",
-      "weekChange": -60,
+      "weekChange": -65,
       "indicative": true,
       "notes": {
-        "en": "FOB $1314 indicative (K8009, 广东). New cycle low — now -$112 from May 8 peak; -$60 vs Apr 30 baseline. Subject to confirmation.",
-        "vi": "FOB $1314 indicative (K8009, 广东). New cycle low — now -$112 from May 8 peak; -$60 vs Apr 30 baseline. Subject to confirmation.",
-        "tr": "FOB $1314 indicative (K8009, 广东). New cycle low — now -$112 from May 8 peak; -$60 vs Apr 30 baseline. Subject to confirmation.",
-        "id": "FOB $1314 indicative (K8009, 广东). New cycle low — now -$112 from May 8 peak; -$60 vs Apr 30 baseline. Subject to confirmation."
+        "en": "FOB $1308 indicative (K8009, 广东). New cycle low — −$118 from May 8 peak; −$66 vs Apr 30 baseline. Subject to confirmation.",
+        "vi": "FOB $1308 indicative (K8009, 广东). New cycle low — −$118 from May 8 peak; −$66 vs Apr 30 baseline. Subject to confirmation.",
+        "tr": "FOB $1308 indicative (K8009, 广东). New cycle low — −$118 from May 8 peak; −$66 vs Apr 30 baseline. Subject to confirmation.",
+        "id": "FOB $1308 indicative (K8009, 广东). New cycle low — −$118 from May 8 peak; −$66 vs Apr 30 baseline. Subject to confirmation."
       }
     },
     {
@@ -142,17 +142,17 @@
       },
       "grades": "275 (上海高桥) / 0215A (吉化)",
       "cfrRange": [
-        1254,
-        1314
+        1241,
+        1301
       ],
       "direction": "down",
-      "weekChange": -210,
+      "weekChange": -225,
       "indicative": true,
       "notes": {
-        "en": "FOB $1284 indicative (0215A, 吉化). ABS continues unwinding; within-tier divergence emerging — Sinopec-affiliated grades softening fastest, non-Sinopec tier (Yulong) holding. Subject to confirmation.",
-        "vi": "FOB $1284 indicative (0215A, 吉化). ABS continues unwinding; within-tier divergence emerging — Sinopec-affiliated grades softening fastest, non-Sinopec tier (Yulong) holding. Subject to confirmation.",
-        "tr": "FOB $1284 indicative (0215A, 吉化). ABS continues unwinding; within-tier divergence emerging — Sinopec-affiliated grades softening fastest, non-Sinopec tier (Yulong) holding. Subject to confirmation.",
-        "id": "FOB $1284 indicative (0215A, 吉化). ABS continues unwinding; within-tier divergence emerging — Sinopec-affiliated grades softening fastest, non-Sinopec tier (Yulong) holding. Subject to confirmation."
+        "en": "FOB $1271 indicative (0215A, 吉化). ABS GP-impact tier continued unwinding across the window. Subject to confirmation.",
+        "vi": "FOB $1271 indicative (0215A, 吉化). ABS GP-impact tier continued unwinding across the window. Subject to confirmation.",
+        "tr": "FOB $1271 indicative (0215A, 吉化). ABS GP-impact tier continued unwinding across the window. Subject to confirmation.",
+        "id": "FOB $1271 indicative (0215A, 吉化). ABS GP-impact tier continued unwinding across the window. Subject to confirmation."
       }
     }
   ]
