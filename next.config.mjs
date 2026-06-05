@@ -39,6 +39,16 @@ const nextConfig = {
         destination: "/:locale/polymer-compass/:path*",
         permanent: true,
       },
+      // Localized inquiry routes don't exist yet — many localized articles
+      // (incl. the ID GCC cornerstone) link to /<locale>/inquiry, which 404'd.
+      // Temporary redirect to the working /inquiry form until per-locale inquiry
+      // pages are built (then replace these with real pages). permanent:false so
+      // the future localized routes aren't cached away.
+      {
+        source: "/:locale(vi|tr|es|id|pt|th|bn|ru|ar|fr|ur)/inquiry",
+        destination: "/inquiry",
+        permanent: false,
+      },
     ];
   },
 };
