@@ -25,7 +25,7 @@ export const organizationSchema = {
   logo: `${BASE_URL}/kantor-icon.png`,
   description:
     "Your China Polymer Desk. Sourcing intelligence and execution for polymer distributors across emerging markets.",
-  foundingDate: "2026",
+  foundingDate: "2025",
   founder: {
     "@type": "Person",
     name: "David Wu",
