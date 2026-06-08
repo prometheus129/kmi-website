@@ -26,6 +26,11 @@ export const organizationSchema = {
   description:
     "Your China Polymer Desk. Sourcing intelligence and execution for polymer distributors across emerging markets.",
   foundingDate: "2026",
+  founder: {
+    "@type": "Person",
+    name: "David Wu",
+    jobTitle: "Founder & CEO",
+  },
   address: {
     "@type": "PostalAddress",
     addressLocality: "Hong Kong",
@@ -37,12 +42,30 @@ export const organizationSchema = {
     contactType: "sales",
     availableLanguage: ["English", "Chinese", "Vietnamese"],
   },
+  // sameAs = independent entity profiles. LinkedIn is the only one that exists today.
+  // Crunchbase + Wikidata are GEO P0 (off-site authority) deliverables — add their URLs
+  // here the moment those profiles are live. Do NOT add placeholder/empty profiles.
   sameAs: ["https://www.linkedin.com/company/kantor-materials"],
+  // areaServed mirrors KMI's published market-coverage footprint (the markets with
+  // dedicated content hubs). Trim to Phase-1 corridors if a tighter "active service area"
+  // claim is preferred over coverage breadth.
   areaServed: [
     { "@type": "Country", name: "Vietnam" },
+    { "@type": "Country", name: "Indonesia" },
     { "@type": "Country", name: "Philippines" },
+    { "@type": "Country", name: "Thailand" },
+    { "@type": "Country", name: "Turkey" },
+    { "@type": "Country", name: "India" },
     { "@type": "Country", name: "Bangladesh" },
+    { "@type": "Country", name: "Pakistan" },
+    { "@type": "Country", name: "Egypt" },
+    { "@type": "Country", name: "Brazil" },
+    { "@type": "Country", name: "Mexico" },
+    { "@type": "Country", name: "Kenya" },
     { "@type": "Country", name: "Nigeria" },
+    { "@type": "Country", name: "Ghana" },
+    { "@type": "Country", name: "Morocco" },
+    { "@type": "Country", name: "Algeria" },
   ],
   knowsAbout: [
     "Polypropylene",
@@ -51,11 +74,20 @@ export const organizationSchema = {
     "LDPE",
     "LLDPE",
     "PA6",
+    "PA66",
     "PVC",
     "ABS",
+    "PC",
+    "POM",
     "Engineering Polymers",
+    "Engineering Polymer Compounding",
+    "Recycled Polymers",
+    "Calcium Carbonate Filler Masterbatch",
     "Polymer Procurement",
     "China Polymer Sourcing",
+    "ACFTA Form E Certificate of Origin",
+    "Polymer Import Compliance",
+    "Landed Cost Analysis",
   ],
 };
 

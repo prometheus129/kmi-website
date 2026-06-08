@@ -66,11 +66,13 @@ export default function sitemap() {
 
     for (const article of articles) {
       const basePath = getInsightsPath(locale);
+      // Freshness triad: sitemap lastmod must agree with the article's dateModified
+      // (which the page meta + Article JSON-LD use). Prefer dateModified; fall back to
+      // publish date, then crawl time. Keeps the freshness signal consistent across surfaces.
+      const lastMod = article.frontmatter.dateModified || article.frontmatter.date;
       const entry = {
         url: `${BASE_URL}${basePath}/${article.slug}`,
-        lastModified: article.frontmatter.date
-          ? new Date(article.frontmatter.date).toISOString()
-          : now,
+        lastModified: lastMod ? new Date(lastMod).toISOString() : now,
         changeFrequency: "monthly",
         priority: isDefault ? 0.8 : 0.7,
       };
