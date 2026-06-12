@@ -1,0 +1,108 @@
+---
+title: "The CPSC Product Registry: How Pre-Registration Works (and Why You Probably Want It)"
+date: "2026-06-11"
+description: "How the CPSC Product Registry works: register products and certificates once, get three reference IDs, and cut per-entry filing errors before July 8, 2026."
+author: "CertDesk by Kantor Materials"
+tags: ["cpsc-efiling", "product-registry", "customs-brokers", "amazon-sellers"]
+cta:
+  title: "Registering is step two. Knowing what to register is step one."
+  body: "The Registry holds certificate data — but which certificates do your products actually need? The Deadline Checker maps the rules that hit your catalog, with the documents each one expects. Free, about 60 seconds."
+  buttonLabel: "Run the free Deadline Checker"
+faq:
+  - question: "What is the CPSC Product Registry?"
+    answer: "It is CPSC's online portal where certifiers create an account, register products and certificate data, and obtain three reference identifiers — Certifier ID, Product ID, and Certificate Version ID. Those identifiers are what your broker transmits at entry under the Reference Message Set."
+  - question: "Is the Product Registry mandatory?"
+    answer: "For most importers it is optional — it enables the Reference Message Set instead of filing all data elements at every entry. For international mail it is mandatory: ACE cannot process mail, so certificate data must be entered in the Registry before the shipment arrives."
+  - question: "What are the three reference identifiers?"
+    answer: "The Certifier ID identifies you as the finished product certifier, the Product ID identifies the registered product, and the Certificate Version ID ties the entry to a specific version of the registered certificate data. Together they replace the full data set at each entry."
+  - question: "What information do I need before registering a product?"
+    answer: "The data elements from 16 CFR 1110.11: product identification, every applicable rule or standard, certifier and manufacturer contacts, testing lab details, dates and places of manufacture and testing, a records-custodian contact, and an attestation of compliance. Records must be kept for 5 years."
+  - question: "Does pre-registration change who is liable for the certificate data?"
+    answer: "No. The finished product certifier — normally the importer — owns the validity, accuracy, completeness, and availability of the data no matter which filing mode is used or who transmits it. The Registry changes the workflow, not the responsibility."
+---
+
+When the Consumer Product Safety Commission (CPSC) eFiling mandate takes effect on July 8, 2026, every entry of a covered product must carry certificate of compliance data, filed electronically with U.S. Customs and Border Protection (CBP) through the ACE system. The CPSC Product Registry is the piece of that machinery most worth understanding before the deadline — because it determines whether you transmit a full data set with every single entry, or three short identifiers.
+
+## The problem the Registry solves
+
+The eFiling rule offers two filing modes. Under the **Full Partner Government Agency (PGA) Message Set**, all required data elements travel with every entry — every product, every shipment, every time. Under the **Reference Message Set**, you pre-register your products in the CPSC Product Registry once, and each subsequent entry transmits only three identifiers: a Certifier ID, a Product ID, and a Certificate Version ID.
+
+Same legal obligation, very different operational load. The full comparison lives in [Full versus Reference Message Set](/compliance/cpsc-efiling-full-vs-reference-message-set); this article covers the Registry path itself.
+
+## How registration actually works
+
+The mechanics below come from CPSC's own Product Registry User Guide and FAQ — the portal, both documents, and support contacts live on the agency's eFiling pages at cpsc.gov/eFiling.
+
+1. **An importer employee creates the Business Account.** The Registry runs on a CPSC-specific email-and-password account — not Login.gov. Self-registration starts from the Registry page: you submit a work email, your company name, and your Importer of Record (IOR) number, then build the profile from the invitation email. The person who registers becomes the Business Account Administrator, a role CPSC restricts to importer employees. One known snag from CPSC's guide: if your IOR number fails validation, retry it with a two-digit division suffix (00) appended.
+2. **You set a permanent Certifier ID.** The final setup step. Choose it carefully — it never changes, and it travels on every filing you ever make.
+3. **Certificates go into Product Collections.** Enter them one at a time in the web interface, bulk-upload with CPSC's CSV and Excel templates, or connect by API (the dashboard manages API tokens). Bulk rows with errors are rejected on a review screen; valid rows import, and the administrator can certify an uploaded batch in a single pass. Two template gotchas CPSC flags: remove all commas from your data, and re-save the Excel template as a true CSV before upload.
+4. **Each registered product yields the three identifiers.** The Product ID is one of seven types you choose — GTIN, SKU, UPC, model number, serial number, registered number, or an alternate ID. The Version ID is yours to set or system-generated, unique per product. With your permanent Certifier ID, those are the three fields your broker files per entry.
+5. **Brokers join as Trade Partners, not owners.** You invite your broker — or manufacturer, or testing lab — into the account with viewer or editor roles; the administrator role stays with you, and legal responsibility for the certificate stays with the importer no matter who you delegate to. Who does what in that handoff is covered in [the broker division-of-labor guide](/compliance/customs-broker-cpsc-efiling-who-does-what).
+
+One scoping rule worth knowing before you start: it is one product per certificate, and any material change — new design, new process, new component source — means a separate certificate. Same-material apparel in multiple sizes or colors counts as one product only if it was manufactured and tested together.
+
+## The 48-hour rule (and what annual retests mean)
+
+After you certify a product, CPSC currently allows a 48-hour grace window to fix mistakes under the same Version ID — each edit forces re-certification and restarts the clock. Past that window, or as soon as the certificate has been used in a live filing, any change requires a new version with a new Version ID; the prior version is archived automatically, and nothing is ever deleted.
+
+The practical consequence: every annual retest and every material change produces a new Version ID, and your broker must file the new one. A stale Version ID sitting in your broker's system is the Reference route's one new error class — build the ID handoff into your retest routine, not just your first setup.
+
+## What you need on hand before registering
+
+Registration is only as fast as your data is ready. The required elements come from 16 CFR 1110.11:
+
+- Product identification and description sufficient to match the product to its certificate
+- Each applicable CPSC rule, standard, or ban the certificate covers
+- Finished product certifier name and contact information
+- Manufacturer name, address, and contact
+- Testing lab name, address, and contact
+- Date and place of manufacture
+- Date and place of testing
+- A records-custodian contact
+- An attestation of compliance
+
+Records supporting all of this must be kept for 5 years. If any element is missing — most often the testing details — close that gap before you register, because the certificate itself depends on it. For children's products, that means testing by a CPSC-accepted third-party lab; for general-use products, a test of each product or a reasonable testing program.
+
+## Who benefits most
+
+**Repeat-SKU importers.** If you ship the same products entry after entry — the standard pattern for Amazon and FBA sellers restocking inventory — registering once and transmitting three identifiers thereafter is the obvious fit. The [eFiling checklist for Amazon sellers](/compliance/cpsc-efiling-checklist-amazon-fba-sellers) builds the Registry into its preparation sequence.
+
+**Mail importers — for whom this is not optional.** ACE cannot process mail, so for international mail shipments, certificate data must be entered into the CPSC Product Registry before the shipment arrives. If you ship by post, the Registry is your compliance path, full stop.
+
+**Anyone who files through a broker.** The fewer fields your broker re-keys per entry, the fewer chances for transcription mistakes. Three identifiers are a shorter, cleaner handoff than the full element set — especially now that [former de minimis parcels flow through standard entries](/compliance/cpsc-efiling-de-minimis-exemption) and brokers report roughly ten times their previous filing volume.
+
+## Why it reduces per-entry errors
+
+Under the Full Message Set, every data element is retransmitted with every entry, so every entry is a fresh opportunity for a typo, a stale lab address, or a mismatched date. Under the Reference Message Set, the substantive data is entered once, in one place, where you can check it before anything ships — and each entry afterward carries only the three identifiers pointing back to it. The error surface shrinks from the whole data set per entry to three fields per entry.
+
+One thing the Registry does not change: responsibility. The finished product certifier — normally the importer — owns the validity, accuracy, completeness, and availability of the data, whichever mode is used and whoever transmits it. A broker filing under 19 U.S.C. 1484(a)(2)(B) does not take that liability with them.
+
+## Timing
+
+The mandate lands July 8, 2026 for all covered imports; CPSC's voluntary stage is open now — with self-registration capped at 2,000 participants — and the agency explicitly encourages registering before the deadline. The voluntary window is the natural shakeout for your Registry setup against real entries. Foreign Trade Zone entries (type 06) follow on January 8, 2027. Mail importers should treat the Registry as a before-first-shipment task, since the data must be in place before arrival.
+
+Two practical notes from CPSC's own documentation: account-level corrections (business information, Certifier ID, trade-party fixes) currently go through CPSC's eFiling support email rather than self-service — so get them right the first time — and the portal logs you out after 15 minutes of inactivity, so have your certificate data assembled before you sit down.
+
+To see which of these dates touches your catalog, run your products through the free [2026 Compliance Deadline Checker](/compliance/deadline-checker).
+
+## Frequently asked questions
+
+### What is the CPSC Product Registry?
+
+It is CPSC's online portal where certifiers create an account, register products and certificate data, and obtain three reference identifiers — Certifier ID, Product ID, and Certificate Version ID. Those identifiers are what your broker transmits at entry under the Reference Message Set.
+
+### Is the Product Registry mandatory?
+
+For most importers it is optional — it enables the Reference Message Set instead of filing all data elements at every entry. For international mail it is mandatory: ACE cannot process mail, so certificate data must be entered in the Registry before the shipment arrives.
+
+### What are the three reference identifiers?
+
+The Certifier ID identifies you as the finished product certifier, the Product ID identifies the registered product, and the Certificate Version ID ties the entry to a specific version of the registered certificate data. Together they replace the full data set at each entry.
+
+### What information do I need before registering a product?
+
+The data elements from 16 CFR 1110.11: product identification, every applicable rule or standard, certifier and manufacturer contacts, testing lab details, dates and places of manufacture and testing, a records-custodian contact, and an attestation of compliance. Records must be kept for 5 years.
+
+### Does pre-registration change who is liable for the certificate data?
+
+No. The finished product certifier — normally the importer — owns the validity, accuracy, completeness, and availability of the data no matter which filing mode is used or who transmits it. The Registry changes the workflow, not the responsibility.

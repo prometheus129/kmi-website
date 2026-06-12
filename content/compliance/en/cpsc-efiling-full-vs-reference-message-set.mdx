@@ -1,0 +1,95 @@
+---
+title: "Full Message Set vs. Reference Message Set: Which CPSC eFiling Route Should You Use?"
+date: "2026-06-11"
+description: "Full PGA Message Set or Reference Message Set? How each CPSC eFiling route works, a side-by-side comparison, and how to pick based on your shipping pattern."
+author: "CertDesk by Kantor Materials"
+tags: ["cpsc-efiling", "import-compliance", "customs-brokers"]
+cta:
+  title: "Not sure the mode question even applies to you?"
+  body: "The mode choice only matters for covered products. Tell the Deadline Checker your product type and where you sell — it maps which rules and certificates apply, and whether eFiling hits your catalog at all. Free, about 60 seconds."
+  buttonLabel: "Check my products first"
+faq:
+  - question: "What is the Full PGA Message Set?"
+    answer: "It is the eFiling mode in which all certificate data elements required by 16 CFR 1110.11 are transmitted to CBP at every entry. Brokers operationalize this as roughly seven PGA data elements filed each time a covered product crosses the border."
+  - question: "What is the Reference Message Set?"
+    answer: "It is the eFiling mode in which you pre-register products in the CPSC Product Registry, then transmit only three identifiers per entry: Certifier ID, Product ID, and Certificate Version ID. It means less data handling per shipment and fewer chances for entry-line errors."
+  - question: "What three identifiers does a Reference filing transmit?"
+    answer: "Certifier ID, Product ID, and Certificate Version ID. All three come from pre-registering the product and its certificate in the CPSC Product Registry before the entry is filed."
+  - question: "Which filing mode should a small importer choose?"
+    answer: "It depends on your shipping pattern. If you import a few SKUs rarely, the Full Message Set avoids Registry setup work. If you ship the same SKUs repeatedly, the Reference Message Set usually repays the setup quickly because each entry carries only three identifiers instead of the full data set."
+  - question: "Do international mail shipments use the Message Set?"
+    answer: "No. ACE cannot process mail, so for mail shipments the certificate data must be entered into the CPSC Product Registry before the shipment arrives. That makes Registry registration mandatory for mail regardless of which mode you use elsewhere."
+---
+
+From July 8, 2026, every covered consumer product entry must carry CPSC certificate data, filed electronically with customs. The rule gives you two ways to get that data into the system. The right choice depends almost entirely on your shipping pattern, and getting it right means less typing, fewer errors, and calmer clearances.
+
+## One obligation, two routes
+
+The Consumer Product Safety Commission (CPSC) eFiling rule (90 FR 1800, amending 16 CFR part 1110) requires the importer of record to file certificate of compliance data with U.S. Customs and Border Protection (CBP) at the time of entry, through the Automated Commercial Environment (ACE), using CPSC's Partner Government Agency (PGA) Message Set. The background, deadlines, and responsibility questions are covered in [the importer's guide to the July 8 deadline](/compliance/cpsc-efiling-deadline-july-8-2026-importers-guide).
+
+Both filing modes satisfy the same obligation. They differ in how much data moves with each entry and how much setup you do in advance.
+
+## Route 1: the Full PGA Message Set
+
+In Full mode, all of the certificate data elements required by 16 CFR 1110.11 are transmitted at every entry: product identification and description sufficient to match the product to its certificate, each applicable rule, standard, or ban, the finished product certifier's name and contact details, the manufacturer's name, address, and contact details, the testing lab's name, address, and contact details, the date and place of manufacture, the date and place of testing, the records-custodian contact, and an attestation of compliance. Brokers operationalize this as roughly seven PGA data elements.
+
+There is no Registry setup. The trade-off is that the full data set is handled, and re-keyed, on every single entry.
+
+## Route 2: the Reference Message Set
+
+In Reference mode, you pre-register each product and its certificate in the CPSC Product Registry once. After that, each entry transmits only three identifiers: **Certifier ID, Product ID, and Certificate Version ID**.
+
+The payoff is less data handling per shipment and fewer chances for entry-line errors. The setup work is the registration itself — one-by-one in the web interface, in bulk via CPSC's CSV templates, or by API for larger catalogs. Our walkthrough is at [how to register in the CPSC Product Registry](/compliance/cpsc-product-registry-how-to-register).
+
+## Side by side
+
+| | Full PGA Message Set | Reference Message Set |
+|---|---|---|
+| Transmitted per entry | All 16 CFR 1110.11 data elements (roughly seven PGA elements) | Certifier ID, Product ID, Certificate Version ID |
+| Advance setup | None beyond having valid certificates | Pre-register each product in the CPSC Product Registry |
+| Per-shipment data handling | Full data set every time | Three identifiers |
+| Error surface | Larger; every element re-keyed each entry | Smaller; fewer chances for entry-line errors |
+| Natural fit | Few SKUs, rare shipments | Repeat SKUs, regular shipments |
+
+## When the Full Message Set wins
+
+If you import a handful of SKUs a few times a year, or you are bringing in a one-off product line, Registry setup may be work you never recoup. Full mode lets you hand your broker the complete data set per entry and skip the pre-registration step. The certificates themselves still have to exist and be complete; Full mode changes the transport, not the obligation.
+
+## When the Reference Message Set wins
+
+If the same SKUs cross the border again and again, registration is one-time work that simplifies every future entry to three identifiers. The arithmetic is short: registration is one-time work per product, every subsequent entry of that SKU skips the full data handoff, and by the second or third entry of the same product the setup has usually paid for itself. Less data handled per shipment means fewer opportunities for a mistyped element — a stale lab address, a transposed testing date — to snag an entry line. For catalogs of repeat products, this is usually the calmer route. It is also a smaller per-shipment handoff to your broker, which matters when shipments are frequent.
+
+## The case with no choice: international mail
+
+ACE cannot process mail. For shipments arriving by international mail, certificate data must be entered into the CPSC Product Registry before the shipment arrives. If any part of your flow moves by mail, you will be in the Registry regardless of which mode you prefer for your other entries.
+
+## What your broker needs from you, by mode
+
+- **Full mode:** every data element, for every product, before arrival, accurate and in the format you have agreed with your broker. Your broker transmits what you deliver; they do not create certificates or attest compliance.
+- **Reference mode:** the three Registry identifiers per product. The certificate data behind them must already be registered and current.
+
+Either way, you remain the finished product certifier: the validity, accuracy, completeness, and availability of the data stays yours, and a broker filing does not transfer liability. The full division of labor is in [what your broker will and won't do](/compliance/customs-broker-cpsc-efiling-who-does-what). Sellers importing for Amazon should also work through [the FBA seller's checklist](/compliance/cpsc-efiling-checklist-amazon-fba-sellers).
+
+Not sure which deadlines and filing questions apply to your catalog? Check your products against the free [2026 Compliance Deadline Checker](/compliance/deadline-checker).
+
+## Frequently asked questions
+
+### What is the Full PGA Message Set?
+
+It is the eFiling mode in which all certificate data elements required by 16 CFR 1110.11 are transmitted to CBP at every entry. Brokers operationalize this as roughly seven PGA data elements filed each time a covered product crosses the border.
+
+### What is the Reference Message Set?
+
+It is the eFiling mode in which you pre-register products in the CPSC Product Registry, then transmit only three identifiers per entry: Certifier ID, Product ID, and Certificate Version ID. It means less data handling per shipment and fewer chances for entry-line errors.
+
+### What three identifiers does a Reference filing transmit?
+
+Certifier ID, Product ID, and Certificate Version ID. All three come from pre-registering the product and its certificate in the CPSC Product Registry before the entry is filed.
+
+### Which filing mode should a small importer choose?
+
+It depends on your shipping pattern. If you import a few SKUs rarely, the Full Message Set avoids Registry setup work. If you ship the same SKUs repeatedly, the Reference Message Set usually repays the setup quickly because each entry carries only three identifiers instead of the full data set.
+
+### Do international mail shipments use the Message Set?
+
+No. ACE cannot process mail, so for mail shipments the certificate data must be entered into the CPSC Product Registry before the shipment arrives. That makes Registry registration mandatory for mail regardless of which mode you use elsewhere.

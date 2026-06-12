@@ -1,5 +1,6 @@
 import { getAllArticles, SUPPORTED_LOCALES, getInsightsPath } from "@/lib/insights";
 import { getAllHubs } from "@/lib/hubs";
+import { getAllComplianceArticles } from "@/lib/compliance";
 
 const BASE_URL = "https://www.kantormaterials.com";
 
@@ -13,6 +14,8 @@ export default function sitemap() {
     { path: "/polymer-compass", changeFrequency: "monthly", priority: 0.9 },
     { path: "/co-development", changeFrequency: "monthly", priority: 0.9 },
     { path: "/insights", changeFrequency: "weekly", priority: 0.8 },
+    { path: "/compliance", changeFrequency: "weekly", priority: 0.8 },
+    { path: "/compliance/deadline-checker", changeFrequency: "weekly", priority: 0.9 },
     { path: "/approach", changeFrequency: "monthly", priority: 0.7 },
     { path: "/contact", changeFrequency: "monthly", priority: 0.7 },
     { path: "/materials", changeFrequency: "monthly", priority: 0.7 },
@@ -90,6 +93,17 @@ export default function sitemap() {
 
       articleEntries.push(entry);
     }
+  }
+
+  // CertDesk compliance articles (EN-only)
+  for (const article of getAllComplianceArticles()) {
+    const lastMod = article.frontmatter.dateModified || article.frontmatter.date;
+    articleEntries.push({
+      url: `${BASE_URL}/compliance/${article.slug}`,
+      lastModified: lastMod ? new Date(lastMod).toISOString() : now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    });
   }
 
   // Market hub pages
