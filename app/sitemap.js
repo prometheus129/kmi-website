@@ -16,6 +16,8 @@ export default function sitemap() {
     { path: "/insights", changeFrequency: "weekly", priority: 0.8 },
     { path: "/compliance", changeFrequency: "weekly", priority: 0.8 },
     { path: "/compliance/deadline-checker", changeFrequency: "weekly", priority: 0.9 },
+    { path: "/compliance/services", changeFrequency: "weekly", priority: 0.9 },
+    { path: "/compliance/verify-request", changeFrequency: "monthly", priority: 0.8 },
     { path: "/approach", changeFrequency: "monthly", priority: 0.7 },
     { path: "/contact", changeFrequency: "monthly", priority: 0.7 },
     { path: "/materials", changeFrequency: "monthly", priority: 0.7 },

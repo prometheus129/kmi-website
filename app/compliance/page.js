@@ -91,21 +91,28 @@ export default function CompliancePage() {
 
           <section className="mt-16 p-6 lg:p-8 rounded-lg bg-teal/[0.07] border border-teal/20 max-w-[760px]">
             <h2 className="font-serif text-xl lg:text-2xl font-bold text-white mb-3">
-              Beyond the guides: triage and verification
+              Beyond the guides: review and verification, flat-fee
             </h2>
             <p className="text-sm text-body-text leading-relaxed mb-4">
-              CertDesk reviews your existing certificates and test reports
-              against what the rules actually require, and verifies what your
-              supplier sent you — including whether the material in your
-              product matches its paperwork. Flat-fee, no retainer. Start with
-              the checker and we follow up with specifics.
+              A $250 July 8 Readiness Review of the documents you have, $199
+              verification of a supplier's test report, or $399 to test the
+              material itself against its TDS through our affiliated polymer
+              materials lab. Scope confirmed before anything is billed.
             </p>
-            <Link
-              href="/compliance/deadline-checker"
-              className="inline-block bg-teal text-navy-deep font-sans font-semibold text-sm px-6 py-3 rounded hover:bg-teal-light transition-colors duration-200"
-            >
-              Start with the checker
-            </Link>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/compliance/services"
+                className="inline-block bg-teal text-navy-deep font-sans font-semibold text-sm px-6 py-3 rounded hover:bg-teal-light transition-colors duration-200"
+              >
+                See services and pricing
+              </Link>
+              <Link
+                href="/compliance/deadline-checker"
+                className="inline-block border border-white/20 text-white font-sans font-semibold text-sm px-6 py-3 rounded hover:border-teal/60 transition-colors duration-200"
+              >
+                Start with the free checker
+              </Link>
+            </div>
           </section>
 
           <ComplianceDisclosure />

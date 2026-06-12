@@ -17,6 +17,7 @@ export default function DeadlineChecker() {
   const [category, setCategory] = useState("");
   const [states, setStates] = useState([]);
   const [imports, setImports] = useState(true);
+  const [unverifiedReports, setUnverifiedReports] = useState(false);
   const [error, setError] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [results, setResults] = useState(null);
@@ -61,6 +62,7 @@ export default function DeadlineChecker() {
     formData.append("product_category", category);
     formData.append("states", states.join(", "));
     formData.append("imports", imports ? "yes" : "no");
+    formData.append("unverified_reports", unverifiedReports ? "yes" : "no");
     formData.append("rules_in_force", String(inForce.length));
     formData.append("rules_upcoming", String(upcoming.length));
     formData.append(
@@ -74,7 +76,7 @@ export default function DeadlineChecker() {
     await submitForm(FORM_ENDPOINTS.inquiry, formData);
     trackFormSubmit("compliance_checker", attribution);
 
-    setResults({ inForce, upcoming });
+    setResults({ inForce, upcoming, unverifiedReports });
     setSubmitting(false);
   }
 
@@ -132,21 +134,48 @@ export default function DeadlineChecker() {
           </p>
         )}
 
+        {results.unverifiedReports && (
+          <div className="p-5 rounded-lg bg-gold/[0.08] border border-gold/25">
+            <p className="text-sm text-body-text leading-relaxed">
+              <span className="font-semibold text-white">
+                You flagged unverified supplier reports.
+              </span>{" "}
+              After July 8, the data in those reports travels with your customs
+              entries — and a report that fails verification fails at the worst
+              possible moment.{" "}
+              <Link
+                href="/compliance/how-to-verify-supplier-test-report"
+                className="text-teal hover:text-teal-light"
+              >
+                Verify them yourself
+              </Link>{" "}
+              or{" "}
+              <Link
+                href="/compliance/verify-request"
+                className="text-teal hover:text-teal-light"
+              >
+                have CertDesk do it
+              </Link>
+              .
+            </p>
+          </div>
+        )}
+
         <div className="p-6 rounded-lg bg-teal/[0.07] border border-teal/20">
           <h3 className="font-serif text-xl font-bold text-white mb-2">
             Want a human read on your actual documents?
           </h3>
           <p className="text-sm text-body-text leading-relaxed mb-4">
-            CertDesk runs a flat-fee compliance triage: we review the
+            CertDesk runs a flat-fee July 8 Readiness Review: we review the
             certificates and test reports you have, map them against the
             requirements above, and hand you a prioritized gap list.
           </p>
           <Link
-            href="/inquiry"
-            onClick={() => trackCTA("cta_click", "checker_triage", "/inquiry")}
+            href="/compliance/services"
+            onClick={() => trackCTA("cta_click", "checker_services", "/compliance/services")}
             className="inline-block bg-teal text-navy-deep font-sans font-semibold text-sm px-6 py-3 rounded hover:bg-teal-light transition-colors duration-200"
           >
-            Ask about compliance triage
+            See services and pricing
           </Link>
         </div>
       </div>
@@ -207,6 +236,16 @@ export default function DeadlineChecker() {
           className="accent-teal"
         />
         I import these products (from China or anywhere else)
+      </label>
+
+      <label className="flex items-center gap-3 text-sm text-body-text cursor-pointer">
+        <input
+          type="checkbox"
+          checked={unverifiedReports}
+          onChange={() => setUnverifiedReports(!unverifiedReports)}
+          className="accent-teal"
+        />
+        I have supplier test reports or certificates I have not independently verified
       </label>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
