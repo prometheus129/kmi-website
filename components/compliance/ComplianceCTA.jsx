@@ -11,6 +11,7 @@ export default function ComplianceCTA({
   title = "Which 2026 deadlines hit your products?",
   body = "Enter your product type and where you sell. The Deadline Checker maps the rules that apply to you — what is already in force, what is coming, and which documents you need for each.",
   buttonLabel = "Run the free Deadline Checker",
+  href = "/compliance/deadline-checker",
 }) {
   return (
     <div className="mt-12 p-6 lg:p-8 rounded-lg bg-teal/[0.07] border border-teal/20">
@@ -22,7 +23,7 @@ export default function ComplianceCTA({
       </h3>
       <p className="text-sm text-body-text leading-relaxed mb-5">{body}</p>
       <Link
-        href="/compliance/deadline-checker"
+        href={href}
         className="inline-block bg-teal text-navy-deep font-sans font-semibold text-sm px-6 py-3 rounded hover:bg-teal-light transition-colors duration-200"
       >
         {buttonLabel}
