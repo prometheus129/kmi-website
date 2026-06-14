@@ -163,40 +163,10 @@ export default function LabStatusChecker() {
           </p>
         </div>
 
-        {/* Escalation. */}
-        <div className="p-6 rounded-lg bg-teal/[0.07] border border-teal/20">
-          <h3 className="font-serif text-xl font-bold text-white mb-2">
-            A free screen confirms the lab — not that the report describes your
-            material
-          </h3>
-          <p className="text-sm text-body-text leading-relaxed mb-4">
-            Confirming a lab&apos;s status and a report number tells you the paper
-            is real. It cannot tell you the material in your container is what the
-            certificate claims — that is where regrind, resin swaps, and
-            genuine-report-wrong-product slip through. CertDesk closes both layers:
-            a <span className="text-white font-semibold">$199 report verification</span>{" "}
-            (anatomy, accreditation, CPSC acceptance for your rule, confirmed with
-            the issuing lab) and a{" "}
-            <span className="text-white font-semibold">$499 material verification</span>{" "}
-            (the resin tested against its TDS at origin, before the container moves).
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <Link
-              href="/compliance/verify-request"
-              onClick={() => trackCTA("cta_click", "labcheck_verify_request", "/compliance/verify-request")}
-              className="inline-block bg-teal text-navy-deep font-sans font-semibold text-sm px-6 py-3 rounded hover:bg-teal-light transition-colors duration-200"
-            >
-              Ask CertDesk to verify it
-            </Link>
-            <Link
-              href="/compliance/services"
-              onClick={() => trackCTA("cta_click", "labcheck_services", "/compliance/services")}
-              className="inline-block border border-white/20 text-white font-sans font-semibold text-sm px-6 py-3 rounded hover:border-teal/60 transition-colors duration-200"
-            >
-              See services and pricing
-            </Link>
-          </div>
-        </div>
+        {/* Escalation — verdict-aware. Withdrawn = recovery path (the sharpest
+            paid trigger in the funnel: void certs + the July 8 clock). Clean =
+            the report/material escalation. */}
+        {results.match ? <WithdrawnEscalation /> : <CleanEscalation />}
 
         {results.monitorOptin && (
           <p className="text-xs text-muted leading-relaxed">
@@ -408,6 +378,80 @@ function CleanVerdict({ result }) {
         </Link>
         .
       </p>
+    </div>
+  );
+}
+
+function WithdrawnEscalation() {
+  return (
+    <div className="p-6 rounded-lg bg-gold/[0.08] border border-gold/30">
+      <h3 className="font-serif text-xl font-bold text-white mb-2">
+        Your certificates need new testing — here is the fast path
+      </h3>
+      <p className="text-sm text-body-text leading-relaxed mb-4">
+        Certificates resting on a withdrawn lab are no longer accepted, and from
+        July 8, 2026 the testing lab&apos;s name travels inside your customs entry
+        — so this stops being a file-drawer problem and becomes data sitting in the
+        entry itself. CertDesk maps what is now exposed across your catalog (the{" "}
+        <span className="text-white font-semibold">$250 Readiness Review</span> also
+        covers entry-rejection recovery) and routes new testing to a CPSC-accepted
+        accredited lab, expedited given the deadline. We coordinate the accredited
+        test; we do not issue the certificate ourselves.
+      </p>
+      <div className="flex flex-wrap gap-3">
+        <Link
+          href="/compliance/verify-request"
+          onClick={() => trackCTA("cta_click", "labcheck_recovery", "/compliance/verify-request")}
+          className="inline-block bg-teal text-navy-deep font-sans font-semibold text-sm px-6 py-3 rounded hover:bg-teal-light transition-colors duration-200"
+        >
+          Start the recovery
+        </Link>
+        <Link
+          href="/compliance/services"
+          onClick={() => trackCTA("cta_click", "labcheck_recovery_services", "/compliance/services")}
+          className="inline-block border border-white/20 text-white font-sans font-semibold text-sm px-6 py-3 rounded hover:border-teal/60 transition-colors duration-200"
+        >
+          See services and pricing
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+function CleanEscalation() {
+  return (
+    <div className="p-6 rounded-lg bg-teal/[0.07] border border-teal/20">
+      <h3 className="font-serif text-xl font-bold text-white mb-2">
+        A free screen confirms the lab — not that the report describes your
+        material
+      </h3>
+      <p className="text-sm text-body-text leading-relaxed mb-4">
+        Confirming a lab&apos;s status and a report number tells you the paper is
+        real. It cannot tell you the material in your container is what the
+        certificate claims — that is where regrind, resin swaps, and
+        genuine-report-wrong-product slip through. CertDesk closes both layers: a{" "}
+        <span className="text-white font-semibold">$199 report verification</span>{" "}
+        (anatomy, accreditation, CPSC acceptance for your rule, confirmed with the
+        issuing lab) and a{" "}
+        <span className="text-white font-semibold">$499 material verification</span>{" "}
+        (the resin tested against its TDS at origin, before the container moves).
+      </p>
+      <div className="flex flex-wrap gap-3">
+        <Link
+          href="/compliance/verify-request"
+          onClick={() => trackCTA("cta_click", "labcheck_verify_request", "/compliance/verify-request")}
+          className="inline-block bg-teal text-navy-deep font-sans font-semibold text-sm px-6 py-3 rounded hover:bg-teal-light transition-colors duration-200"
+        >
+          Ask CertDesk to verify it
+        </Link>
+        <Link
+          href="/compliance/services"
+          onClick={() => trackCTA("cta_click", "labcheck_services", "/compliance/services")}
+          className="inline-block border border-white/20 text-white font-sans font-semibold text-sm px-6 py-3 rounded hover:border-teal/60 transition-colors duration-200"
+        >
+          See services and pricing
+        </Link>
+      </div>
     </div>
   );
 }
