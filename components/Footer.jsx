@@ -12,6 +12,7 @@ const columns = [
       { label: "Market Insights", href: "/insights" },
       { label: "Daily Pricing", href: "/pricing" },
       { label: "Engineering Polymers", href: "/materials" },
+      { label: "Calcium Carbonate (GCC)", href: "/calcium-carbonate" },
     ],
   },
   {

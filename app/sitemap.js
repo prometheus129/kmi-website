@@ -21,6 +21,7 @@ export default function sitemap() {
     { path: "/approach", changeFrequency: "monthly", priority: 0.7 },
     { path: "/contact", changeFrequency: "monthly", priority: 0.7 },
     { path: "/materials", changeFrequency: "monthly", priority: 0.7 },
+    { path: "/calcium-carbonate", changeFrequency: "monthly", priority: 0.7 },
     { path: "/privacy", changeFrequency: "yearly", priority: 0.3 },
     { path: "/terms", changeFrequency: "yearly", priority: 0.3 },
   ];

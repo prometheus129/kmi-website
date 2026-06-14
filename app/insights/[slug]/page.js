@@ -76,6 +76,20 @@ export default async function InsightArticlePage({ params }) {
   ];
   const isLane2 = lane2Slugs.some((s) => slug.includes(s));
 
+  // GCC / calcium carbonate cluster → link up to the product hub.
+  // Explicit allowlist (not substring) so the general India polymer-docs
+  // article is not swept in.
+  const gccSlugs = [
+    "coated-vs-uncoated-calcium-carbonate-when-to-use-which",
+    "calcium-carbonate-filler-loading-rate-cost-savings",
+    "calcium-carbonate-filler-brittleness-how-to-avoid",
+    "filler-masterbatch-calpet-calcium-carbonate-plastics-indonesia",
+    "india-vietnam-calcium-carbonate-filler-masterbatch-add-raw-powder-2026",
+    "india-switch-masterbatch-to-gcc-powder-compounding",
+    "india-masterbatch-anti-dumping-duty-rates-landed-cost-2026",
+  ];
+  const isGCC = gccSlugs.includes(slug);
+
   return (
     <div className="bg-navy min-h-screen text-white">
       <JsonLd
@@ -185,6 +199,26 @@ export default async function InsightArticlePage({ params }) {
               currentTags={frontmatter.tags || []}
               locale="en"
             />
+          )}
+
+          {/* GCC cluster → product hub */}
+          {isGCC && (
+            <Link
+              href="/calcium-carbonate"
+              className="block mt-12 bg-gradient-to-br from-gold/[0.06] to-white/[0.01] border border-gold/20 rounded-lg p-6 hover:border-gold/40 transition-all duration-200 group"
+            >
+              <div className="font-mono text-[10px] uppercase tracking-[2px] text-gold/70 mb-2">
+                Kantor Materials · Mineral Fillers
+              </div>
+              <div className="font-serif text-xl font-bold text-white mb-1.5 group-hover:text-gold-light transition-colors duration-200">
+                Premium Vietnamese Calcium Carbonate (GCC)
+              </div>
+              <p className="font-sans text-sm text-body-text leading-relaxed">
+                High-whiteness coated and uncoated GCC powder — spec,
+                documentation, and how we pair it with China-origin resin under
+                one desk. <span className="text-gold">View the line →</span>
+              </p>
+            </Link>
           )}
 
           {/* Article CTA */}
