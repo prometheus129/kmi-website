@@ -95,7 +95,7 @@ export default function CompliancePage() {
             </h2>
             <p className="text-sm text-body-text leading-relaxed mb-4">
               A $250 July 8 Readiness Review of the documents you have, $199
-              verification of a supplier's test report, or $399 to test the
+              verification of a supplier's test report, or $499 to test the
               material itself against its TDS through our affiliated polymer
               materials lab. Scope confirmed before anything is billed.
             </p>

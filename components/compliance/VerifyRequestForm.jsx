@@ -1,14 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import { FORM_ENDPOINTS, submitForm } from "@/lib/forms";
-import { getAttribution, trackFormSubmit } from "@/lib/tracking";
+import { getAttribution, trackFormSubmit, trackFormStart } from "@/lib/tracking";
 
 const REQUEST_TYPES = [
   { id: "readiness-review", label: "July 8 Readiness Review — review my compliance documents ($250)" },
   { id: "report-verification", label: "Verify a supplier test report or certificate ($199)" },
-  { id: "material-verification", label: "Test the material against its TDS ($399, includes report check)" },
+  { id: "material-verification", label: "Test the material against its TDS ($499, includes report check)" },
   { id: "not-sure", label: "Not sure — describe my situation" },
 ];
 
@@ -21,6 +21,14 @@ export default function VerifyRequestForm() {
   const [error, setError] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [done, setDone] = useState(false);
+  const startedRef = useRef(false);
+
+  const markStarted = () => {
+    if (!startedRef.current) {
+      startedRef.current = true;
+      trackFormStart("verification_request");
+    }
+  };
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -45,9 +53,13 @@ export default function VerifyRequestForm() {
     }
 
     const result = await submitForm(FORM_ENDPOINTS.inquiry, formData);
-    trackFormSubmit("verification_request", attribution);
     setSubmitting(false);
     if (result.ok) {
+      // Fire the lead event only on success; carry the chosen service tier so
+      // SKU-level intent ($250/$199/$499/not-sure) is queryable in GA4.
+      trackFormSubmit("verification_request", attribution, {
+        request_type: requestType,
+      });
       setDone(true);
     } else {
       setError(result.error || "Submission failed — please try again.");
@@ -97,7 +109,10 @@ export default function VerifyRequestForm() {
                 type="radio"
                 name="requestType"
                 checked={requestType === t.id}
-                onChange={() => setRequestType(t.id)}
+                onChange={() => {
+                  markStarted();
+                  setRequestType(t.id);
+                }}
                 className="accent-teal"
               />
               {t.label}

@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { trackCTA } from "@/lib/tracking";
 
 /**
  * Standard CertDesk article CTA → the free Deadline Checker.
@@ -24,6 +27,7 @@ export default function ComplianceCTA({
       <p className="text-sm text-body-text leading-relaxed mb-5">{body}</p>
       <Link
         href={href}
+        onClick={() => trackCTA("cta_click", "article_cta", href)}
         className="inline-block bg-teal text-navy-deep font-sans font-semibold text-sm px-6 py-3 rounded hover:bg-teal-light transition-colors duration-200"
       >
         {buttonLabel}

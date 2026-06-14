@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import { FORM_ENDPOINTS, submitForm } from "@/lib/forms";
-import { getAttribution, trackFormSubmit, trackCTA } from "@/lib/tracking";
+import { getAttribution, trackFormSubmit, trackFormStart, trackEvent, trackCTA } from "@/lib/tracking";
 import { PRODUCT_CATEGORIES, STATES, matchRules } from "./complianceRules";
 
 function daysUntil(dateStr) {
@@ -21,8 +21,17 @@ export default function DeadlineChecker() {
   const [error, setError] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [results, setResults] = useState(null);
+  const startedRef = useRef(false);
+
+  const markStarted = () => {
+    if (!startedRef.current) {
+      startedRef.current = true;
+      trackFormStart("compliance_checker");
+    }
+  };
 
   const toggleState = (id) => {
+    markStarted();
     setStates((prev) =>
       prev.includes(id) ? prev.filter((s) => s !== id) : [...prev, id]
     );
@@ -73,8 +82,18 @@ export default function DeadlineChecker() {
       if (value) formData.append(key, value);
     }
 
-    await submitForm(FORM_ENDPOINTS.inquiry, formData);
-    trackFormSubmit("compliance_checker", attribution);
+    const result = await submitForm(FORM_ENDPOINTS.inquiry, formData);
+    if (result && result.ok) {
+      trackFormSubmit("compliance_checker", attribution);
+    } else {
+      // Formspree POST failed — the lead did not land. Don't count it as a
+      // captured lead (no generate_lead); surface form_error so the loss is
+      // visible in GA4. Results still render so the user isn't penalized.
+      trackEvent("form_error", {
+        event_category: "Form",
+        event_label: "compliance_checker",
+      });
+    }
 
     setResults({ inForce, upcoming, unverifiedReports });
     setSubmitting(false);
@@ -190,7 +209,10 @@ export default function DeadlineChecker() {
         </label>
         <select
           value={category}
-          onChange={(e) => setCategory(e.target.value)}
+          onChange={(e) => {
+            markStarted();
+            setCategory(e.target.value);
+          }}
           className="w-full bg-navy-deep border border-white/15 rounded px-4 py-3 text-sm text-white focus:border-teal focus:outline-none"
         >
           <option value="">Select a category…</option>

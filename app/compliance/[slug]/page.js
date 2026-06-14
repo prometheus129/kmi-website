@@ -47,6 +47,7 @@ export async function generateMetadata({ params }) {
 function buildComplianceArticleSchema(frontmatter, slug) {
   const url = `${BASE_URL}/compliance/${slug}`;
   const toIso = (d) => (d && d.length === 10 ? `${d}T00:00:00+08:00` : d);
+  const reviewer = frontmatter.reviewer;
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -58,9 +59,22 @@ function buildComplianceArticleSchema(frontmatter, slug) {
     dateModified: toIso(frontmatter.dateModified || frontmatter.date),
     author: {
       "@type": "Organization",
-      name: "CertDesk by Kantor Materials",
+      name: frontmatter.author || "CertDesk by Kantor Materials",
       url: `${BASE_URL}/compliance`,
     },
+    // Named human reviewer (Person) — the YMYL E-E-A-T citation signal. Emitted only
+    // when the article declares a `reviewer:` block; bio + sameAs anchor the entity.
+    ...(reviewer && reviewer.name
+      ? {
+          reviewedBy: {
+            "@type": "Person",
+            name: reviewer.name,
+            ...(reviewer.title ? { jobTitle: reviewer.title } : {}),
+            url: `${BASE_URL}/compliance/how-we-verify`,
+            ...(reviewer.url ? { sameAs: [reviewer.url] } : {}),
+          },
+        }
+      : {}),
     publisher: {
       "@type": "Organization",
       name: "Kantor Materials International",
@@ -158,6 +172,20 @@ export default async function ComplianceArticlePage({ params }) {
                 )}
               <span className="text-white/20">|</span>
               <span>{frontmatter.author}</span>
+              {frontmatter.reviewer?.name && (
+                <>
+                  <span className="text-white/20">|</span>
+                  <span>
+                    Reviewed by{" "}
+                    <Link
+                      href="/compliance/how-we-verify"
+                      className="text-teal/80 hover:text-teal transition-colors duration-200"
+                    >
+                      {frontmatter.reviewer.name}
+                    </Link>
+                  </span>
+                </>
+              )}
             </div>
           </RevealDiv>
 
