@@ -48,6 +48,12 @@ export default function CompliancePage() {
                 Run the free 2026 Deadline Checker
               </Link>
               <Link
+                href="/compliance/lab-status-checker"
+                className="border border-white/20 text-white font-sans font-semibold text-sm px-7 py-3.5 rounded hover:border-teal/60 transition-colors duration-200"
+              >
+                Check your testing lab's CPSC status
+              </Link>
+              <Link
                 href="/compliance/cpsc-efiling-deadline-july-8-2026-importers-guide"
                 className="border border-white/20 text-white font-sans font-semibold text-sm px-7 py-3.5 rounded hover:border-teal/60 transition-colors duration-200"
               >
