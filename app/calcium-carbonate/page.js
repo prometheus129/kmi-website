@@ -8,7 +8,7 @@ export const metadata = {
   title:
     "Premium Calcium Carbonate (GCC) Filler from Vietnam — Kantor Materials",
   description:
-    "Premium Vietnamese ground calcium carbonate (GCC) for plastics — high whiteness, ~1250 mesh, coated and uncoated, with TDS, per-lot COA, and Form D / Form AI origin. Paired with China-origin resin under one sourcing desk.",
+    "Premium Vietnamese ground calcium carbonate (GCC) for plastics — the four-grade KC Series (ultrafine film grade to general filler), high whiteness, coated and uncoated, with TDS, per-lot COA, and Form D / Form AI origin. Paired with China-origin resin under one sourcing desk.",
   openGraph: {
     title: "Premium Calcium Carbonate (GCC) Filler — Kantor Materials",
     description:
@@ -25,16 +25,17 @@ const productSchema = {
   name: "Premium Vietnamese Ground Calcium Carbonate (GCC)",
   category: "Plastics Mineral Filler",
   description:
-    "High-whiteness ground calcium carbonate (GCC) powder for plastics modification — coated (stearic-acid) and uncoated grades, ~1250 mesh fineness, supplied with TDS, per-lot COA, and Form D / Form AI certificate of origin.",
+    "High-whiteness ground calcium carbonate (GCC) powder for plastics modification — the Kantor KC Series: four fineness grades (D97 3.8–17 µm), coated (stearic-acid) or uncoated, supplied with TDS, per-lot COA, and Form D / Form AI certificate of origin.",
   brand: {
     "@type": "Brand",
     name: "Kantor Materials International",
   },
   material: "Calcium Carbonate",
   additionalProperty: [
-    { "@type": "PropertyValue", name: "Whiteness", value: "98 (whiteness basis)" },
-    { "@type": "PropertyValue", name: "CaCO₃ purity", value: "≥ 98.5%" },
-    { "@type": "PropertyValue", name: "Fineness", value: "~1250 mesh (fine grade)" },
+    { "@type": "PropertyValue", name: "Grades", value: "KC-4 / KC-6 / KC-10 / KC-17" },
+    { "@type": "PropertyValue", name: "Whiteness", value: "R457 ≥98 (KC-4, KC-6) · ≥97 (KC-10, KC-17)" },
+    { "@type": "PropertyValue", name: "CaCO₃ purity", value: "≥ 99%" },
+    { "@type": "PropertyValue", name: "Fineness", value: "D97 3.8 / 6 / 10 / 17 µm by grade" },
     { "@type": "PropertyValue", name: "Surface treatment", value: "Coated (stearic acid) or uncoated" },
     { "@type": "PropertyValue", name: "Origin", value: "Northern Vietnam" },
   ],
@@ -55,9 +56,10 @@ const breadcrumbSchema = {
 };
 
 const spec = [
-  { k: "Whiteness", v: "98 (whiteness basis) — above typical mid-grade filler powder; confirmed per lot" },
-  { k: "CaCO₃ purity", v: "≥ 98.5%" },
-  { k: "Fineness", v: "~1250 mesh (fine grade) · D50 / D97 confirmed per lot on TDS" },
+  { k: "Grades", v: "KC-4 · KC-6 · KC-10 · KC-17 — a fineness ladder from ultrafine film grade to general filler" },
+  { k: "Whiteness", v: "R457 ≥98 (KC-4, KC-6) · ≥97 (KC-10, KC-17) — above typical mid-grade filler powder; confirmed per lot" },
+  { k: "CaCO₃ purity", v: "≥ 99% · Fe₂O₃ ≤ 0.02% · SiO₂ ≤ 0.2%" },
+  { k: "Fineness", v: "Top cut D97 3.8 / 6 / 10 / 17 µm by grade (D50 1.5–3.6 µm) · confirmed per lot on TDS" },
   { k: "Surface treatment", v: "Coated (stearic acid) or uncoated" },
   { k: "Forms", v: "Raw powder (lead product) · filler masterbatch on demand" },
   { k: "Origin", v: "Northern Vietnam (premium calcite belt) — vertically integrated, quarry to powder" },
@@ -100,7 +102,7 @@ const guides = [
   },
   {
     title: "India: Masterbatch ADD → Raw Powder",
-    desc: "Why India's anti-dumping duty on Vietnamese filler masterbatch is pushing compounders to raw GCC powder.",
+    desc: "Why India's anti-dumping duty — and the countervailing duty recommended on top in June 2026 — is pushing compounders to raw GCC powder.",
     href: "/insights/india-vietnam-calcium-carbonate-filler-masterbatch-add-raw-powder-2026",
   },
 ];
@@ -133,11 +135,11 @@ export default function CalciumCarbonatePage() {
               {" "}under one desk.
             </h1>
             <p className="font-sans text-lg text-body-text leading-relaxed max-w-[700px] mb-10">
-              High-whiteness ground calcium carbonate (GCC) — coated and
-              uncoated, ~1250 mesh — for masterbatch, film, and PVC. Kantor
-              Materials produces it through a vertically integrated Vietnamese
-              operation and supplies it alongside China-origin resin as a single
-              sourcing relationship.
+              High-whiteness ground calcium carbonate (GCC) — the four-grade KC
+              Series, coated and uncoated — for masterbatch, film, and PVC.
+              Kantor Materials produces it through a vertically integrated
+              Vietnamese operation and supplies it alongside China-origin resin
+              as a single sourcing relationship.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -170,16 +172,17 @@ export default function CalciumCarbonatePage() {
         <div className="max-w-[1000px] mx-auto relative z-10">
           <RevealDiv>
             <div className="text-[11px] tracking-[4px] text-gold font-sans font-semibold mb-4">
-              THE GRADE
+              THE KC SERIES
             </div>
             <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
               Premium plastics-modification GCC.
             </h2>
             <p className="font-sans text-[15px] text-body-text leading-relaxed max-w-[680px] mb-10">
-              A premium grade where it counts — high whiteness and fine,
+              Four engineered grades — KC-4, KC-6, KC-10, KC-17 — running from
+              ultrafine film grade to general filler: high whiteness and fine,
               consistent particle size for applications where domestic mid-grade
-              powder underperforms or pushes up TiO₂ cost. Final spec is
-              confirmed per lot against your application.
+              powder underperforms or pushes up TiO₂ cost. The grade is matched
+              to your application, and the spec is confirmed per lot.
             </p>
           </RevealDiv>
 

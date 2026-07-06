@@ -11,6 +11,7 @@ const navLinks = [
   { label: "Insights", href: "/insights" },
   { label: "Pricing", href: "/pricing" },
   { label: "Engineering", href: "/materials" },
+  { label: "Minerals", href: "/calcium-carbonate" },
   { label: "Compliance", href: "/compliance" },
   { label: "Partners", href: "/partners" },
   { label: "About", href: "/approach" },
@@ -88,12 +89,12 @@ export default function Nav() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-7 ml-auto">
+        <div className="hidden xl:flex items-center gap-4 2xl:gap-7 ml-auto">
           {navLinks.map((link) => (
             <Link
               key={link.label}
               href={link.href}
-              className="text-sm font-sans font-medium tracking-wide text-cream/70 transition-colors duration-200 hover:text-gold-light py-2"
+              className="text-[13px] 2xl:text-sm font-sans font-medium tracking-wide text-cream/70 transition-colors duration-200 hover:text-gold-light py-2 whitespace-nowrap"
             >
               {link.label}
             </Link>
@@ -102,7 +103,7 @@ export default function Nav() {
           <Link
             href="/inquiry#inquiry"
             onClick={() => trackCTA("cta_click", "Nav CTA", "/inquiry#inquiry")}
-            className="bg-gold hover:brightness-110 text-navy-deep text-sm font-semibold tracking-wider px-5 py-3 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] transition-all duration-150 hover:-translate-y-px"
+            className="bg-gold hover:brightness-110 text-navy-deep text-[13px] 2xl:text-sm font-semibold tracking-wider px-4 2xl:px-5 py-3 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] transition-all duration-150 hover:-translate-y-px whitespace-nowrap"
           >
             Tell Us What You Need
           </Link>
@@ -110,7 +111,7 @@ export default function Nav() {
 
         {/* Mobile Hamburger */}
         <button
-          className="lg:hidden flex flex-col gap-1.5 p-2"
+          className="xl:hidden flex flex-col gap-1.5 p-2"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -134,7 +135,7 @@ export default function Nav() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="lg:hidden pb-6 border-t border-white/5 mt-2">
+        <div className="xl:hidden pb-6 border-t border-white/5 mt-2">
           <div className="flex flex-col gap-4 pt-4">
             {navLinks.map((link) => (
               <Link
