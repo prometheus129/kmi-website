@@ -2,7 +2,6 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
 import Link from "next/link";
-import Image from "next/image";
 import MaterialsFilter from "@/components/materials/MaterialsFilter";
 
 export const metadata = {
@@ -281,45 +280,6 @@ export default function MaterialsPage() {
                 </div>
               </div>
             </RevealDiv>
-          </div>
-
-          {/* Production photos */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 mt-14">
-            {[
-              {
-                src: "/images/ops-compounding-line.jpg",
-                alt: "Compounding and blending line — stainless steel mixers on the production floor",
-                caption: "Compounding and blending line",
-              },
-              {
-                src: "/images/ops-lab.jpg",
-                alt: "Materials testing and QC laboratory",
-                caption: "Materials testing laboratory",
-              },
-              {
-                src: "/images/ops-bms-module.jpg",
-                alt: "Polymer-housed battery management module",
-                caption: "Battery module housing — engineering-compound end use",
-              },
-            ].map((photo, i) => (
-              <RevealDiv key={photo.src} delay={i * 100}>
-                <figure className="group">
-                  <div className="relative aspect-[4/3] rounded-lg overflow-hidden border border-white/[0.08]">
-                    <Image
-                      src={photo.src}
-                      alt={photo.alt}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                      quality={75}
-                    />
-                  </div>
-                  <figcaption className="font-sans text-xs text-muted mt-3">
-                    {photo.caption}
-                  </figcaption>
-                </figure>
-              </RevealDiv>
-            ))}
           </div>
         </div>
       </section>

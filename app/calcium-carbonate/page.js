@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
 import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
-import Image from "next/image";
 
 export const metadata = {
   title:
@@ -213,57 +212,6 @@ export default function CalciumCarbonatePage() {
               right call.
             </p>
           </RevealDiv>
-        </div>
-      </section>
-
-      {/* The operation — production photos */}
-      <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10">
-        <div className="max-w-[1100px] mx-auto">
-          <RevealDiv>
-            <div className="text-[11px] tracking-[4px] text-gold font-sans font-semibold mb-4 text-center">
-              THE OPERATION
-            </div>
-            <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-12 leading-tight text-center">
-              From quarry to shipped lot.
-            </h2>
-          </RevealDiv>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">
-            {[
-              {
-                src: "/images/ops-quarry.jpg",
-                alt: "Limestone quarry operation, Northern Vietnam",
-                caption: "Quarry operation — Northern Vietnam",
-              },
-              {
-                src: "/images/ops-lab-mastersizer.jpg",
-                alt: "Laser-diffraction particle size analysis in the quality lab",
-                caption: "Particle-size analysis, every production lot",
-              },
-              {
-                src: "/images/ops-warehouse.jpg",
-                alt: "Finished goods warehouse with palletized bags",
-                caption: "Finished-goods warehouse, export-ready",
-              },
-            ].map((photo, i) => (
-              <RevealDiv key={photo.src} delay={i * 100}>
-                <figure className="group">
-                  <div className="relative aspect-[4/3] rounded-lg overflow-hidden border border-white/[0.08]">
-                    <Image
-                      src={photo.src}
-                      alt={photo.alt}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                      quality={75}
-                    />
-                  </div>
-                  <figcaption className="font-sans text-xs text-muted mt-3">
-                    {photo.caption}
-                  </figcaption>
-                </figure>
-              </RevealDiv>
-            ))}
-          </div>
         </div>
       </section>
 

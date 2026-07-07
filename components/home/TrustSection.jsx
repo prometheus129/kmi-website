@@ -51,16 +51,16 @@ const certifications = [
 export default function TrustSection() {
   return (
     <section className="bg-ticker-bg py-24 px-6 lg:px-10 relative overflow-hidden">
-      {/* Backdrop — our compounding line */}
-      <div className="absolute inset-0 opacity-[0.07]">
+      {/* Atmospheric manufacturing texture */}
+      <div className="absolute inset-0 opacity-[0.035]">
         <Image
-          src="/images/ops-compounding-line.jpg"
+          src="/images/trust-texture.jpg"
           alt=""
           fill
           className="object-cover"
           style={{ objectPosition: "center 60%" }}
           sizes="100vw"
-          quality={70}
+          quality={60}
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-ticker-bg/50 via-transparent to-ticker-bg/60" />
