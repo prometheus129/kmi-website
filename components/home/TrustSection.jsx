@@ -51,16 +51,16 @@ const certifications = [
 export default function TrustSection() {
   return (
     <section className="bg-navy-deep py-24 px-6 lg:px-10 relative overflow-hidden">
-      {/* Atmospheric manufacturing texture */}
-      <div className="absolute inset-0 opacity-[0.035]">
+      {/* Backdrop — our compounding line */}
+      <div className="absolute inset-0 opacity-[0.07]">
         <Image
-          src="/images/trust-texture.jpg"
+          src="/images/ops-compounding-line.jpg"
           alt=""
           fill
           className="object-cover"
           style={{ objectPosition: "center 60%" }}
           sizes="100vw"
-          quality={60}
+          quality={70}
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/50 via-transparent to-navy-deep/60" />

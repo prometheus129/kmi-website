@@ -113,7 +113,7 @@ export default function InquirySection() {
               Requirement received
             </h3>
             <p className="font-sans text-base text-body-text leading-relaxed mb-6 max-w-[520px] mx-auto">
-              You&apos;ll receive a response within one to two business days
+              You&apos;ll receive a response within 24 hours
               with matched grades, current pricing for your destination, and
               documentation details. Check your email.
             </p>

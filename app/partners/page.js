@@ -7,7 +7,7 @@ import JsonLd, { organizationSchema } from "@/components/JsonLd";
 export const metadata = {
   title: "Trader Partnership — Kantor Materials International",
   description:
-    "Keep your book. Quote what you can't today — Chinese equivalents to Zytel, Ultramid, LNP, compounded in our own facility. Source through us when we beat your suppliers.",
+    "Keep your book. Quote what you can't today — Chinese equivalents to Zytel, Ultramid, LNP, compounded in our compounding operations. Source through us when we beat your suppliers.",
   openGraph: {
     title: "Trader Partnership — Kantor Materials",
     description:
@@ -35,7 +35,7 @@ export default function PartnersPage() {
             </h1>
             <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-2xl">
               Chinese equivalents to Zytel, Ultramid, LNP — compounded in
-              our own facility. We earn only when we beat your suppliers.
+              our compounding operations. We earn only when we beat your suppliers.
               Non-exclusive, no lock-in.
             </p>
           </RevealDiv>
@@ -149,7 +149,7 @@ export default function PartnersPage() {
                   Chinese equivalents to Zytel, Ultramid, LNP.
                 </h3>
                 <p className="text-body-text text-[15px] leading-relaxed mb-3">
-                  PA6, PA66, PC, ABS, POM compounded in our own facility
+                  PA6, PA66, PC, ABS, POM compounded in our compounding operations
                   (60,000 MT/yr capacity). Validated in production lines
                   manufacturing over 2 million finished goods annually —
                   Tier 1 OEM supply to BYD, CATL, CALB.

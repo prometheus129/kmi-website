@@ -218,8 +218,8 @@ export default function ContactPage() {
                   <span className="text-teal font-semibold">
                     For urgent market guidance:
                   </span>{" "}
-                  Message us directly on WhatsApp or WeChat for same-day
-                  market signals on any grade. Include your target grade,
+                  Message us directly on WhatsApp or WeChat — responses
+                  within 24 hours on any grade. Include your target grade,
                   volume, and destination port.
                 </p>
               </div>

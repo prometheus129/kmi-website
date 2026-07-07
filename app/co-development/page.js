@@ -369,8 +369,8 @@ export default function CoDevelopmentPage() {
             />
             <EngagementItem
               num="02"
-              title="Same-day turnaround on questions"
-              detail="Spec questions, color targets, regulatory hurdles — answered the same day you raise them, through the entire iteration phase."
+              title="24-hour turnaround on questions"
+              detail="Spec questions, color targets, regulatory hurdles — answered within 24 hours, through the entire iteration phase."
             />
             <EngagementItem
               num="03"

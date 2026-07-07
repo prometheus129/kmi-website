@@ -2,17 +2,18 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
 import Link from "next/link";
+import Image from "next/image";
 import MaterialsFilter from "@/components/materials/MaterialsFilter";
 
 export const metadata = {
   title:
     "Engineering Polymers — Chinese Alternatives to Zytel, Ultramid, LNP — Kantor Materials",
   description:
-    "Chinese engineering polymer compounds — PA66, POM, PC, PEEK, PBT equivalent to DuPont Zytel, BASF Ultramid, SABIC LNP. Own compounding facility, OEM-validated.",
+    "Chinese engineering polymer compounds — PA66, POM, PC, PEEK, PBT equivalent to DuPont Zytel, BASF Ultramid, SABIC LNP. 60,000 MT/yr compounding operations, OEM-validated.",
   openGraph: {
     title: "Engineering Polymers — Kantor Materials",
     description:
-      "China-origin equivalents to Western premium engineering polymers — compounded in our own facility at 60,000 MT/yr, validated at OEM scale (BYD, CATL, CALB).",
+      "China-origin equivalents to Western premium engineering polymers — compounded in our compounding operations at 60,000 MT/yr, validated at OEM scale (BYD, CATL, CALB).",
   },
   alternates: { canonical: "/materials" },
 };
@@ -155,7 +156,7 @@ export default function MaterialsPage() {
             </h1>
             <p className="font-sans text-lg text-body-text leading-relaxed max-w-[680px] mb-10">
               DuPont Zytel, BASF Ultramid, SABIC LNP, Celanese acetals,
-              Victrex PEEK — matched in our own compounding facility at
+              Victrex PEEK — matched in our compounding operations at
               Chinese cost. Validated in production lines manufacturing over
               2 million finished goods annually.
             </p>
@@ -244,11 +245,11 @@ export default function MaterialsPage() {
                 Validated by Production.
               </h2>
               <p className="font-sans text-[15px] text-body-text leading-relaxed mb-5">
-                Our engineering compounds are manufactured in our own
-                compounding facility with 60,000 MT annual capacity. Every
-                compound is validated in our production lines before it
-                reaches yours — over 2 million finished goods manufactured
-                annually with these materials.
+                Our engineering compounds are manufactured in our compounding
+                operations with 60,000 MT annual capacity. Every compound is
+                validated in our production lines before it reaches yours —
+                over 2 million finished goods manufactured annually with
+                these materials.
               </p>
               <p className="font-sans text-[15px] text-body-text leading-relaxed">
                 Tier 1 OEM clients — BYD, CATL, CALB — run these compounds in
@@ -280,6 +281,45 @@ export default function MaterialsPage() {
                 </div>
               </div>
             </RevealDiv>
+          </div>
+
+          {/* Production photos */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 mt-14">
+            {[
+              {
+                src: "/images/ops-compounding-line.jpg",
+                alt: "Compounding and blending line — stainless steel mixers on the production floor",
+                caption: "Compounding and blending line",
+              },
+              {
+                src: "/images/ops-lab.jpg",
+                alt: "Materials testing and QC laboratory",
+                caption: "Materials testing laboratory",
+              },
+              {
+                src: "/images/ops-bms-module.jpg",
+                alt: "Polymer-housed battery management module",
+                caption: "Battery module housing — engineering-compound end use",
+              },
+            ].map((photo, i) => (
+              <RevealDiv key={photo.src} delay={i * 100}>
+                <figure className="group">
+                  <div className="relative aspect-[4/3] rounded-lg overflow-hidden border border-white/[0.08]">
+                    <Image
+                      src={photo.src}
+                      alt={photo.alt}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      quality={75}
+                    />
+                  </div>
+                  <figcaption className="font-sans text-xs text-muted mt-3">
+                    {photo.caption}
+                  </figcaption>
+                </figure>
+              </RevealDiv>
+            ))}
           </div>
         </div>
       </section>
