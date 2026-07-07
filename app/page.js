@@ -2,9 +2,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/home/HeroSection";
 import ThreeTiers from "@/components/home/ThreeTiers";
-import ResponseExample from "@/components/home/ResponseExample";
 import LaneCards from "@/components/home/LaneCards";
-import ExperienceDelta from "@/components/home/ExperienceDelta";
 import TPCPreview from "@/components/home/TPCPreview";
 import HonestySection from "@/components/home/HonestySection";
 import TrustSection from "@/components/home/TrustSection";
@@ -45,8 +43,6 @@ export default function HomePage() {
         <LaneCards />
         <TrustSection />
         <ThreeTiers />
-        <ResponseExample />
-        <ExperienceDelta />
         <TPCPreview latestIssue={latestIssue} />
         <HonestySection textureOpacity={0} />
         <ConversationSection />

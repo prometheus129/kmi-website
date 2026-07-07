@@ -45,7 +45,7 @@ const tiers = [
 
 export default function ThreeTiers() {
   return (
-    <section className="bg-navy-deep py-20 px-6 lg:px-10">
+    <section className="bg-navy py-20 px-6 lg:px-10">
       <div className="max-w-[1100px] mx-auto">
         {/* Header */}
         <RevealDiv>
@@ -60,6 +60,10 @@ export default function ThreeTiers() {
               <br className="hidden sm:block" />
               {" "}Execution Handled End to End.
             </h2>
+            <p className="font-sans text-base lg:text-lg text-body-text leading-relaxed max-w-[640px] mx-auto mt-6">
+              Technical guidance and market context are free — margin comes
+              from the material we ship.
+            </p>
           </div>
         </RevealDiv>
 

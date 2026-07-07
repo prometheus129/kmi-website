@@ -50,7 +50,7 @@ const certifications = [
 
 export default function TrustSection() {
   return (
-    <section className="bg-navy-deep py-24 px-6 lg:px-10 relative overflow-hidden">
+    <section className="bg-ticker-bg py-24 px-6 lg:px-10 relative overflow-hidden">
       {/* Backdrop — our compounding line */}
       <div className="absolute inset-0 opacity-[0.07]">
         <Image
@@ -63,7 +63,7 @@ export default function TrustSection() {
           quality={70}
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/50 via-transparent to-navy-deep/60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-ticker-bg/50 via-transparent to-ticker-bg/60" />
 
       <div className="max-w-[1200px] mx-auto relative z-10">
         <RevealDiv>

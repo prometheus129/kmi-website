@@ -24,7 +24,7 @@ export default function TPCPreview({ latestIssue }) {
   const fm = latestIssue?.frontmatter;
 
   return (
-    <section className="bg-navy-deep py-20 px-6 lg:px-10 relative overflow-hidden">
+    <section className="bg-ticker-bg py-20 px-6 lg:px-10 relative overflow-hidden">
       {/* Atmospheric texture */}
       <div className="absolute inset-0 opacity-[0.035]">
         <Image
@@ -37,7 +37,7 @@ export default function TPCPreview({ latestIssue }) {
           quality={60}
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/40 via-transparent to-navy-deep/50" />
+      <div className="absolute inset-0 bg-gradient-to-b from-ticker-bg/40 via-transparent to-ticker-bg/50" />
       {/* Subtle gradient accents */}
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle at 80% 30%, rgba(46,139,139,0.2) 0%, transparent 50%)" }} />
 
