@@ -13,6 +13,7 @@ const columns = [
       { label: "The Polymer Compass", href: "/polymer-compass" },
       { label: "Market Insights", href: "/insights" },
       { label: "Pricing", href: "/pricing" },
+      { label: "Compliance & Verification", href: "/compliance" },
     ],
   },
   {
