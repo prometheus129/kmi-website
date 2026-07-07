@@ -46,7 +46,7 @@ export default function sitemap() {
   for (const [, pPath] of Object.entries(pricingPaths)) {
     staticPages.push({
       path: pPath,
-      changeFrequency: "daily",
+      changeFrequency: "weekly",
       priority: 0.9,
       alternates: pricingAlternates,
     });

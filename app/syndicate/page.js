@@ -23,7 +23,7 @@ const howItWorks = [
   {
     num: "01",
     title: "Intelligence",
-    desc: "Receive daily pricing direction, timing signals, and supply context via The Polymer Compass. Know where the market is heading before you commit.",
+    desc: "Receive pricing context, trade-policy events, and supply updates via The Polymer Compass. Know what the market is doing before you commit.",
   },
   {
     num: "02",
@@ -69,7 +69,7 @@ export default function SyndicatePage() {
               href="/polymer-compass#subscribe"
               className="inline-block bg-gold text-navy-deep font-semibold text-sm tracking-wider px-7 py-3.5 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
             >
-              Get Daily Intelligence — Free
+              Get Market Intelligence — Free
             </Link>
           </RevealDiv>
         </div>
@@ -187,7 +187,7 @@ export default function SyndicatePage() {
               Ready to Optimize Your Procurement?
             </h2>
             <p className="font-sans text-[15px] text-body-text mb-8">
-              Start with The Polymer Compass — free daily market intelligence
+              Start with The Polymer Compass — free market intelligence
               for distributors.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -195,7 +195,7 @@ export default function SyndicatePage() {
                 href="/polymer-compass#subscribe"
                 className="inline-flex items-center justify-center bg-gold text-navy-deep font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-px shadow-[0_2px_12px_rgba(212,168,67,0.25)]"
               >
-                Get Daily Intelligence
+                Get Market Intelligence
               </Link>
               <Link
                 href="/contact"

@@ -6,9 +6,9 @@ import TradeCorridorMap from "@/components/home/TradeCorridorMap";
 import { trackCTA } from "@/lib/tracking";
 
 const stats = [
-  { value: "135,000+", label: "SKUs in our database" },
-  { value: "60,000", label: "MT/yr engineering compound capacity" },
-  { value: "Daily", label: "FOB pricing, refreshed each trading session." },
+  { value: "98", label: "whiteness — KC Series GCC from our own production" },
+  { value: "4", label: "KC Series grades, coated and uncoated" },
+  { value: "10", label: "engineering polymer families, PA6 to PEEK" },
 ];
 
 export default function HeroSection() {
@@ -37,33 +37,38 @@ export default function HeroSection() {
       <div className="max-w-[1100px] mx-auto relative z-10 text-center w-full py-24 lg:py-24">
         <div className="animate-[hero-fade-in_0.5s_ease-out_both]">
           <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-8">
-            CHINA POLYMER PROCUREMENT
+            MINERALS &amp; POLYMERS
           </div>
           <h1 className="font-serif text-5xl lg:text-[66px] font-bold text-white leading-[1.08] mb-8">
-            Ask about China-Origin Polymers.
+            Premium calcium carbonate
             <br />
-            Get Answers, Not a Call Back.
+            from our own production.
+            <br />
+            Polymers from the same desk.
           </h1>
           <p className="font-sans text-lg lg:text-xl text-body-text leading-relaxed max-w-[640px] mx-auto mb-10">
-            135,000 SKUs in our database. Daily pricing. Pre-shipment
-            document review. Free to ask. On WhatsApp.
+            Kantor Materials produces the KC Series — high-whiteness ground
+            calcium carbonate, coated and uncoated — through our vertically
+            integrated Vietnamese operation. Engineering and commodity
+            polymers come from the same China desk. One relationship, both
+            sides of your formulation.
           </p>
 
           {/* CTA cluster */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-10">
-            <a
-              href="#inquiry"
-              onClick={() => trackCTA("cta_click", "Send Us A Question", "#inquiry")}
+            <Link
+              href="/calcium-carbonate"
+              onClick={() => trackCTA("cta_click", "Explore The KC Series", "/calcium-carbonate")}
               className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-base tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-150"
             >
-              Send us a question
-            </a>
+              Explore the KC Series
+            </Link>
             <a
-              href="#response-example"
-              onClick={() => trackCTA("cta_click", "See What An Answer Looks Like", "#response-example")}
+              href="#inquiry"
+              onClick={() => trackCTA("cta_click", "Tell Us What You Need", "#inquiry")}
               className="inline-flex items-center justify-center border border-white/[0.15] hover:border-teal/40 text-white font-sans font-medium text-base px-8 py-4 rounded-lg transition-all duration-150 hover:-translate-y-px"
             >
-              See what an answer looks like
+              Tell us what you need
             </a>
           </div>
 

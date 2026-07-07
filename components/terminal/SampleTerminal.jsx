@@ -19,7 +19,7 @@ export default function SampleTerminal({ locale = "en" }) {
             Two Products, One Subscription
           </h2>
           <p className="font-sans text-sm text-body-text text-center max-w-[520px] mx-auto mb-12">
-            Daily pricing keeps you current. Weekly analysis tells you why it matters and what to do next.
+            Pricing context keeps you current. Analysis tells you why it matters and what to do next.
           </p>
         </RevealDiv>
 
@@ -36,7 +36,7 @@ export default function SampleTerminal({ locale = "en" }) {
                   <span className="font-mono text-[10px] text-muted">SAMPLE</span>
                 </div>
                 <div className="font-serif text-lg font-bold text-white">
-                  Daily Pricing &amp; Signals
+                  Pricing Context
                 </div>
                 <div className="font-sans text-[11px] text-muted mt-1">
                   Kantor Indicative Pricing — CFR Assessment (USD)

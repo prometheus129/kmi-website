@@ -132,7 +132,7 @@ export default function PartnersPage() {
                   <li className="flex gap-3">
                     <span className="text-teal mt-[0.35em] flex-shrink-0 leading-none">•</span>
                     <span>
-                      Daily market intelligence across commodity and
+                      Market intelligence across commodity and
                       engineering grades
                     </span>
                   </li>

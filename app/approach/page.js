@@ -65,14 +65,15 @@ export default function ApproachPage() {
               ABOUT OUR APPROACH
             </span>
             <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white mb-6 max-w-3xl leading-tight">
-              Your China Polymer Desk.
+              A materials producer and sourcing house.
             </h1>
             <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-2xl">
-              Kantor Materials sources polymers from China for distributors
-              and converters across emerging markets — commodity grades,
-              engineering compounds, and recycled supply. You describe what
-              you need. We respond with matched grades, pricing, and
-              documentation — in one answer.
+              Kantor Materials produces premium calcium carbonate in Vietnam —
+              the KC Series, from our vertically integrated operation — and
+              sources engineering and commodity polymers from China for
+              distributors and converters across Asia and the Global South.
+              You describe what you need. We respond with matched grades,
+              pricing, and documentation — in one answer.
             </p>
           </RevealDiv>
         </div>

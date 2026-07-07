@@ -4,7 +4,6 @@ import HeroSection from "@/components/home/HeroSection";
 import ThreeTiers from "@/components/home/ThreeTiers";
 import ResponseExample from "@/components/home/ResponseExample";
 import LaneCards from "@/components/home/LaneCards";
-import KnowledgeSection from "@/components/home/KnowledgeSection";
 import ExperienceDelta from "@/components/home/ExperienceDelta";
 import TPCPreview from "@/components/home/TPCPreview";
 import HonestySection from "@/components/home/HonestySection";
@@ -14,18 +13,20 @@ import JsonLd, { organizationSchema, websiteSchema } from "@/components/JsonLd";
 import { getAllIssues } from "@/lib/terminal";
 
 export const metadata = {
-  title: "Kantor Materials International — China Polymer Procurement",
+  title: "Premium Calcium Carbonate & China Polymers | Kantor Materials",
   description:
-    "Commodity, engineering, and recycled polymers from China — matched grades, current pricing, and documentation in one answer. Free to ask.",
+    "Producer of premium Vietnamese calcium carbonate (KC Series) and supplier of China-origin engineering and commodity polymers. One desk, both sides of your formulation.",
   openGraph: {
-    title: "Kantor Materials International — China Polymer Procurement",
+    title:
+      "Kantor Materials International — Premium Calcium Carbonate & China-Origin Polymers",
     description:
-      "Ask about China-origin polymers. Commodity, engineering, and recycled — one sourcing desk. Matched grades, pricing, and documentation in one answer.",
+      "Premium calcium carbonate from our own production. Engineering and commodity polymers from the same desk. Matched grades, pricing, and documentation.",
   },
   twitter: {
-    title: "Kantor Materials International — China Polymer Procurement",
+    title:
+      "Kantor Materials International — Premium Calcium Carbonate & China-Origin Polymers",
     description:
-      "China-origin polymers across commodity, engineering, and recycled grades. Matched specs, current pricing, documentation. Free to ask.",
+      "Premium Vietnamese calcium carbonate from our own production, plus China-origin engineering and commodity polymers. One desk, both sides of your formulation.",
   },
   alternates: { canonical: "/" },
 };
@@ -41,14 +42,13 @@ export default function HomePage() {
       <Nav />
       <main id="main">
         <HeroSection />
+        <LaneCards />
+        <TrustSection />
         <ThreeTiers />
         <ResponseExample />
-        <LaneCards />
-        <KnowledgeSection />
         <ExperienceDelta />
         <TPCPreview latestIssue={latestIssue} />
         <HonestySection textureOpacity={0} />
-        <TrustSection />
         <ConversationSection />
       </main>
       <Footer />

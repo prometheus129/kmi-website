@@ -52,7 +52,7 @@ export default function TerminalHero({ locale = "en" }) {
                 </span>
                 <span className="flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-teal inline-block" />
-                  {text.proofGrades || "600+ suppliers evaluated daily"}
+                  {text.proofGrades || "600+ suppliers evaluated"}
                 </span>
                 <span className="flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-teal inline-block" />
@@ -143,7 +143,7 @@ export default function TerminalHero({ locale = "en" }) {
               </div>
 
               <p className="text-center font-sans text-[10px] text-muted mt-3 italic">
-                Sample issue — subscribe for live daily updates
+                Sample issue — subscribe for the latest briefs
               </p>
             </RevealDiv>
           </div>

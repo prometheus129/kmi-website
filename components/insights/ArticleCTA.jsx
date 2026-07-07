@@ -8,7 +8,7 @@ const CTA_STRINGS = {
     button: "Tell us what you need",
     subscribe: "Want market intelligence first?",
     subscribeLink: "Subscribe to The Polymer Compass",
-    subscribeSub: "Free pricing analysis and supply corridor updates for polymer distributors. Twice weekly.",
+    subscribeSub: "Free pricing analysis and supply corridor updates for polymer distributors.",
   },
   vi: {
     heading: "B\u1EA1n \u0111ang t\u00ECm ki\u1EBFm nh\u1EF1a c\u00F3 ngu\u1ED3n g\u1ED1c Trung Qu\u1ED1c cho th\u1ECB tr\u01B0\u1EDDng c\u1EE7a b\u1EA1n?",
@@ -17,7 +17,7 @@ const CTA_STRINGS = {
     button: "Cho ch\u00FAng t\u00F4i bi\u1EBFt b\u1EA1n c\u1EA7n g\u00EC",
     subscribe: "Mu\u1ED1n c\u1EADp nh\u1EADt th\u00F4ng tin th\u1ECB tr\u01B0\u1EDDng tr\u01B0\u1EDBc?",
     subscribeLink: "\u0110\u0103ng k\u00FD The Polymer Compass",
-    subscribeSub: "Th\u00F4ng tin th\u1ECB tr\u01B0\u1EDDng mi\u1EC5n ph\u00ED cho nh\u00E0 ph\u00E2n ph\u1ED1i. Hai l\u1EA7n m\u1ED7i tu\u1EA7n.",
+    subscribeSub: "Th\u00F4ng tin th\u1ECB tr\u01B0\u1EDDng mi\u1EC5n ph\u00ED cho nh\u00E0 ph\u00E2n ph\u1ED1i.",
   },
   tr: {
     heading: "\u00C7in men\u015Feli polimer gradlar\u0131 m\u0131 ar\u0131yorsunuz?",
@@ -26,7 +26,7 @@ const CTA_STRINGS = {
     button: "Neye ihtiyac\u0131n\u0131z oldu\u011Funu s\u00F6yleyin",
     subscribe: "\u00D6nce piyasa istihbarat\u0131 m\u0131 istiyorsunuz?",
     subscribeLink: "The Polymer Compass\u2019a abone olun",
-    subscribeSub: "Polimer ithalat\u00E7\u0131lar\u0131 i\u00E7in \u00FCcretsiz. Haftada iki kez.",
+    subscribeSub: "Polimer ithalat\u00E7\u0131lar\u0131 i\u00E7in \u00FCcretsiz.",
   },
   es: {
     heading: "\u00BFBusca grados de pol\u00EDmero de origen chino para su mercado?",
@@ -35,7 +35,7 @@ const CTA_STRINGS = {
     button: "Ind\u00EDquenos lo que necesita",
     subscribe: "\u00BFPrefiere informaci\u00F3n de mercado primero?",
     subscribeLink: "Suscr\u00EDbase a The Polymer Compass",
-    subscribeSub: "Inteligencia de mercado gratuita para importadores. Dos veces por semana.",
+    subscribeSub: "Inteligencia de mercado gratuita para importadores.",
   },
   id: {
     heading: "Mencari grade polimer asal Tiongkok untuk pasar Anda?",
@@ -44,7 +44,7 @@ const CTA_STRINGS = {
     button: "Beritahu kami apa yang Anda butuhkan",
     subscribe: "Ingin intelijen pasar terlebih dahulu?",
     subscribeLink: "Berlangganan The Polymer Compass",
-    subscribeSub: "Gratis untuk distributor dan konverter. Dua kali seminggu.",
+    subscribeSub: "Gratis untuk distributor dan konverter.",
   },
   ar: {
     heading: "هل تبحث عن درجات بوليمر صينية المنشأ لسوقك؟",
@@ -53,7 +53,7 @@ const CTA_STRINGS = {
     button: "أخبرنا بما تحتاجه",
     subscribe: "هل تريد معلومات السوق أولاً؟",
     subscribeLink: "اشترك في The Polymer Compass",
-    subscribeSub: "معلومات سوق مجانية للموزعين. مرتين أسبوعياً.",
+    subscribeSub: "معلومات سوق مجانية للموزعين.",
   },
   pt: {
     heading: "Procurando grades de polímero de origem chinesa para o seu mercado?",
@@ -62,7 +62,7 @@ const CTA_STRINGS = {
     button: "Diga-nos o que você precisa",
     subscribe: "Quer inteligência de mercado primeiro?",
     subscribeLink: "Assine o The Polymer Compass",
-    subscribeSub: "Inteligência de mercado gratuita para distribuidores. Duas vezes por semana.",
+    subscribeSub: "Inteligência de mercado gratuita para distribuidores.",
   },
   th: {
     heading: "กำลังมองหาเกรดโพลิเมอร์จากจีนสำหรับตลาดของคุณ?",
@@ -71,7 +71,7 @@ const CTA_STRINGS = {
     button: "บอกเราว่าคุณต้องการอะไร",
     subscribe: "ต้องการข้อมูลตลาดก่อน?",
     subscribeLink: "สมัครรับ The Polymer Compass",
-    subscribeSub: "ข้อมูลตลาดฟรีสำหรับผู้จัดจำหน่าย สัปดาห์ละสองครั้ง",
+    subscribeSub: "ข้อมูลตลาดฟรีสำหรับผู้จัดจำหน่าย",
   },
   bn: {
     heading: "আপনার বাজারের জন্য চীন-উৎস পলিমার গ্রেড খুঁজছেন?",
@@ -80,7 +80,7 @@ const CTA_STRINGS = {
     button: "আমাদের জানান আপনার কী প্রয়োজন",
     subscribe: "আগে বাজার তথ্য চান?",
     subscribeLink: "The Polymer Compass-এ সাবস্ক্রাইব করুন",
-    subscribeSub: "পরিবেশকদের জন্য বিনামূল্যে বাজার তথ্য। সপ্তাহে দুবার।",
+    subscribeSub: "পরিবেশকদের জন্য বিনামূল্যে বাজার তথ্য।",
   },
   fr: {
     heading: "Vous recherchez des grades de polymère d'origine chinoise pour votre marché ?",
@@ -89,7 +89,7 @@ const CTA_STRINGS = {
     button: "Dites-nous ce dont vous avez besoin",
     subscribe: "Vous préférez d'abord de l'intelligence marché ?",
     subscribeLink: "Abonnez-vous au Polymer Compass",
-    subscribeSub: "Intelligence marché gratuite pour les distributeurs. Deux fois par semaine.",
+    subscribeSub: "Intelligence marché gratuite pour les distributeurs.",
   },
   ru: {
     heading: "Ищете полимерные марки китайского происхождения для вашего рынка?",
@@ -98,7 +98,7 @@ const CTA_STRINGS = {
     button: "Сообщите нам, что вам нужно",
     subscribe: "Сначала хотите рыночную аналитику?",
     subscribeLink: "Подпишитесь на The Polymer Compass",
-    subscribeSub: "Бесплатная рыночная аналитика для дистрибьюторов. Дважды в неделю.",
+    subscribeSub: "Бесплатная рыночная аналитика для дистрибьюторов.",
   },
   ur: {
     heading: "اپنی مارکیٹ کے لیے چینی پولیمر گریڈز تلاش کر رہے ہیں؟",
@@ -107,7 +107,7 @@ const CTA_STRINGS = {
     button: "ہمیں بتائیں آپ کو کیا چاہیے",
     subscribe: "پہلے مارکیٹ کی معلومات چاہیے؟",
     subscribeLink: "The Polymer Compass سبسکرائب کریں",
-    subscribeSub: "ڈسٹریبیوٹرز کے لیے مفت مارکیٹ انٹیلی جنس۔ ہفتے میں دو بار۔",
+    subscribeSub: "ڈسٹریبیوٹرز کے لیے مفت مارکیٹ انٹیلی جنس۔",
   },
 };
 

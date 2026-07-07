@@ -43,7 +43,7 @@ export default function TermsPage() {
                 KMI provides polymer market intelligence (the &ldquo;Polymer
                 Compass&rdquo;), pricing assessments, and procurement services
                 for polymer distributors and converters. The Polymer Compass is
-                a free daily market intelligence service delivered via email and
+                a free market intelligence service delivered via email and
                 messaging platforms.
               </p>
             </section>

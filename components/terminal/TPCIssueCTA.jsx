@@ -8,7 +8,7 @@ export default function TPCIssueCTA() {
           THE POLYMER COMPASS
         </span>
         <p className="font-sans text-[15px] text-body-text leading-relaxed max-w-md mx-auto mb-6">
-          Free market intelligence for polymer distributors. Twice weekly.
+          Free market intelligence for polymer distributors.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link

@@ -7,11 +7,11 @@ import { usePathname } from "next/navigation";
 import { trackCTA } from "@/lib/tracking";
 
 const navLinks = [
+  { label: "Minerals", href: "/calcium-carbonate" },
+  { label: "Engineering", href: "/materials" },
+  { label: "Pricing", href: "/pricing" },
   { label: "The Polymer Compass", href: "/polymer-compass" },
   { label: "Insights", href: "/insights" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Engineering", href: "/materials" },
-  { label: "Minerals", href: "/calcium-carbonate" },
   { label: "Compliance", href: "/compliance" },
   { label: "Partners", href: "/partners" },
   { label: "About", href: "/approach" },

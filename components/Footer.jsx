@@ -6,13 +6,13 @@ import { usePathname } from "next/navigation";
 
 const columns = [
   {
-    title: "INTELLIGENCE",
+    title: "PRODUCTS & INTELLIGENCE",
     links: [
+      { label: "Calcium Carbonate (GCC)", href: "/calcium-carbonate" },
+      { label: "Engineering Polymers", href: "/materials" },
       { label: "The Polymer Compass", href: "/polymer-compass" },
       { label: "Market Insights", href: "/insights" },
-      { label: "Daily Pricing", href: "/pricing" },
-      { label: "Engineering Polymers", href: "/materials" },
-      { label: "Calcium Carbonate (GCC)", href: "/calcium-carbonate" },
+      { label: "Pricing", href: "/pricing" },
     ],
   },
   {
@@ -67,9 +67,9 @@ export default function Footer() {
               />
             </Link>
             <p className="font-sans text-[13px] text-muted leading-relaxed max-w-[280px] mb-4">
-              Your China Polymer Desk. Hong Kong headquartered, sourcing
-              commodity, engineering, and recycled grades across emerging
-              markets.
+              Producer of premium Vietnamese calcium carbonate and supplier
+              of China-origin engineering and commodity polymers. Hong Kong
+              headquartered.
             </p>
             <div className="space-y-1.5">
               <a

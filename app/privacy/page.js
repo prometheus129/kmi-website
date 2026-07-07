@@ -69,7 +69,7 @@ export default function PrivacyPage() {
               <p>We use collected information to:</p>
               <ul className="list-disc list-inside space-y-1 mt-2 ml-2">
                 <li>
-                  Deliver The Polymer Compass daily market intelligence service
+                  Deliver The Polymer Compass market intelligence service
                 </li>
                 <li>Respond to pricing inquiries and contact form submissions</li>
                 <li>

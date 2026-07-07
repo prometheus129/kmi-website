@@ -27,14 +27,15 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Kantor Materials International — Your China Polymer Desk",
+  title: "Premium Calcium Carbonate & China Polymers | Kantor Materials",
   description:
-    "Describe what you need. We search tens of thousands of grades and respond with matched specs, pricing, and documentation. Sourcing intelligence for polymer distributors.",
+    "Producer of premium Vietnamese calcium carbonate (KC Series) and supplier of China-origin engineering and commodity polymers for industrial buyers across Asia and the Global South.",
   metadataBase: new URL("https://www.kantormaterials.com"),
   openGraph: {
-    title: "Kantor Materials International — Your China Polymer Desk",
+    title:
+      "Kantor Materials International — Premium Calcium Carbonate & China-Origin Polymers",
     description:
-      "Describe what you need. We search tens of thousands of grades and respond with matched specs, pricing, and documentation.",
+      "Premium calcium carbonate from our own production. Engineering and commodity polymers from the same desk.",
     type: "website",
     locale: "en_US",
     siteName: "Kantor Materials International",
@@ -42,9 +43,10 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@KantorMaterials",
-    title: "Kantor Materials International — Your China Polymer Desk",
+    title:
+      "Kantor Materials International — Premium Calcium Carbonate & China-Origin Polymers",
     description:
-      "Your China Polymer Desk. Sourcing intelligence for polymer distributors across emerging markets.",
+      "Producer of premium Vietnamese calcium carbonate and supplier of China-origin engineering and commodity polymers across Asia and the Global South.",
   },
   verification: {
     yandex: "c9236dfd176b2903",

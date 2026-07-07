@@ -125,7 +125,7 @@ export default function InquirySection() {
               >
                 Subscribe to The Polymer Compass
               </Link>{" "}
-              — free, twice weekly.
+              — free.
             </p>
           </div>
         ) : (
@@ -292,7 +292,7 @@ export default function InquirySection() {
               </Link>
             </p>
             <p className="font-sans text-xs text-muted">
-              Free market intelligence for polymer distributors. Twice weekly.
+              Free market intelligence for polymer distributors.
             </p>
           </div>
         )}

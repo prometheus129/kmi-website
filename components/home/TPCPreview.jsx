@@ -49,18 +49,18 @@ export default function TPCPreview({ latestIssue }) {
               THE POLYMER COMPASS
             </div>
             <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white mb-6 leading-tight">
-              Free market intelligence,{" "}
+              Free intelligence{" "}
               <br className="hidden lg:block" />
-              twice weekly.
+              for polymer buyers.
             </h2>
             <p className="font-sans text-base text-body-text leading-relaxed mb-4">
-              Pricing context, supply corridor updates, and grade-level analysis
-              across 19 markets. The same market intelligence behind our pricing
-              benchmarks and grade recommendations.
+              Grade substitution analysis, price spreads, and trade-policy
+              events across the markets we serve. The same intelligence
+              behind our sourcing desk.
             </p>
             <p className="font-sans text-sm text-muted leading-relaxed mb-8">
-              See what the China polymer market is doing before you make
-              purchasing decisions.
+              Know when a duty, a discontinuation, or a price spread changes
+              your buying position.
             </p>
 
             <Link

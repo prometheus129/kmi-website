@@ -137,9 +137,9 @@ export default function CalciumCarbonatePage() {
             <p className="font-sans text-lg text-body-text leading-relaxed max-w-[700px] mb-10">
               High-whiteness ground calcium carbonate (GCC) — the four-grade KC
               Series, coated and uncoated — for masterbatch, film, and PVC.
-              Kantor Materials produces it through a vertically integrated
-              Vietnamese operation and supplies it alongside China-origin resin
-              as a single sourcing relationship.
+              Our flagship line: Kantor Materials produces it through a
+              vertically integrated Vietnamese operation, with China-origin
+              resin available through the same desk.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link

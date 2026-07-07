@@ -7,8 +7,8 @@ import { trackCTA, trackFormSubmit, getAttribution } from "@/lib/tracking";
 import RevealDiv from "@/components/RevealDiv";
 
 const samplePrompts = [
+  "I need coated GCC for PP filler masterbatch, 1250 mesh, high whiteness. Shipping to Manila.",
   "I need HDPE blow molding grade, MFI 0.35, for water tanks. Shipping to Ho Chi Minh City.",
-  "Can you verify this Form E before I submit to customs?",
   "What\u2019s the Chinese equivalent of LG Chem ME9180?",
 ];
 
@@ -61,11 +61,11 @@ export default function ConversationSection() {
               TRY IT
             </div>
             <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white mb-4 leading-tight">
-              Ask anything about China polymers.
+              Ask anything about our materials.
             </h2>
             <p className="font-sans text-base text-body-text leading-relaxed">
-              Grade specs. Pricing. Document verification. Alternatives to your
-              current supplier.
+              Filler specs. Grade equivalents. Pricing. Document verification.
+              Alternatives to your current supplier.
             </p>
           </div>
         </RevealDiv>
@@ -127,7 +127,7 @@ export default function ConversationSection() {
               >
                 Subscribe to The Polymer Compass
               </Link>{" "}
-              &mdash; free, twice weekly.
+              &mdash; free.
             </p>
           </div>
         ) : (
@@ -139,14 +139,14 @@ export default function ConversationSection() {
               {/* Polymer type */}
               <div>
                 <label htmlFor="conv-polymer" className={labelClasses}>
-                  Polymer type *
+                  Material *
                 </label>
                 <input
                   id="conv-polymer"
                   name="polymerType"
                   required
                   className={inputClasses}
-                  placeholder="e.g., PP, HDPE, PVC, PA6, ABS, PET"
+                  placeholder="e.g., GCC filler, PP, HDPE, PVC, PA6, ABS"
                 />
               </div>
 
@@ -236,7 +236,7 @@ export default function ConversationSection() {
               </Link>
             </p>
             <p className="font-sans text-xs text-muted">
-              Free market intelligence for polymer distributors. Twice weekly.
+              Free market intelligence for polymer distributors.
             </p>
           </div>
         )}

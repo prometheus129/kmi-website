@@ -101,7 +101,7 @@ export default function SubscriptionForm({ locale = "en" }) {
             <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 mt-5 text-[11px] text-muted font-mono">
               <span className="flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-teal inline-block" />
-                Daily intelligence for polymer distributors
+                Intelligence for polymer distributors
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-teal inline-block" />
