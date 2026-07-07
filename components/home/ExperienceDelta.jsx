@@ -2,8 +2,8 @@ import Image from "next/image";
 import RevealDiv from "@/components/RevealDiv";
 
 const freeItems = [
-  "Search grades by spec or application",
-  "Compare quotes against live market pricing",
+  "Ask for grades by spec or application",
+  "Benchmark quotes against current market pricing",
   "Verify documents after you receive them",
   "Get compliance data for any destination",
   "Tell us how a grade performed \u2014 we remember for next time",
@@ -37,14 +37,14 @@ export default function ExperienceDelta() {
         <RevealDiv>
           <div className="text-center mb-12">
             <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
-              HOW IT WORKS
+              WHY IT&apos;S FREE
             </div>
             <p className="font-sans text-lg lg:text-xl text-body-text leading-relaxed mb-6 max-w-[640px] mx-auto">
-              Everything your team asks, every document verified, every grade
-              note — it stays. No knowledge walks out the door.
+              Technical guidance and market context cost nothing. Margin
+              comes from the material we ship.
             </p>
             <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white leading-tight">
-              Free for everyone.
+              The desk is free to use.
             </h2>
           </div>
         </RevealDiv>

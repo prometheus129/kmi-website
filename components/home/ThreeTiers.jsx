@@ -7,11 +7,11 @@ const tiers = [
     accentBg: "bg-teal/10",
     accentText: "text-teal",
     description:
-      "Grade specifications, equivalencies, HS codes, duty rates, certifications, pricing benchmarks. Ask about any product in the database \u2014 get the technical data that takes your team hours to assemble.",
+      "Grade specifications, filler loading guidance, equivalencies, HS codes, duty rates, certifications, pricing benchmarks \u2014 for our minerals and for any polymer grade you're sourcing. The technical data that takes your team hours to assemble.",
     examples: [
+      "\u201CCoated or uncoated GCC for BOPP film \u2014 and at what loading?\u201D",
       "\u201CChinese alternative to LG Chem ME9180 for blown film?\u201D",
       "\u201CWhat\u2019s the HS code for PP copolymer, density 0.905, into Vietnam?\u201D",
-      "\u201CCompare T30S Maoming vs. T30S Zhongke \u2014 what\u2019s different?\u201D",
     ],
   },
   {
@@ -51,14 +51,14 @@ export default function ThreeTiers() {
         <RevealDiv>
           <div className="text-center mb-12">
             <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
-              WHAT WE CAN DO
+              HOW THE DESK WORKS
             </div>
             <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white leading-tight max-w-[800px] mx-auto">
-              Same-Day Grade Specs.
+              Technical Answers Same Day.
               <br className="hidden sm:block" />
-              {" "}Document Verification on Request.
+              {" "}Documents Verified Before Shipment.
               <br className="hidden sm:block" />
-              {" "}Full Execution When You&apos;re Ready.
+              {" "}Execution Handled End to End.
             </h2>
           </div>
         </RevealDiv>

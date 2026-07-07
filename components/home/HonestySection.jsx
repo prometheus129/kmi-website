@@ -38,8 +38,9 @@ export default function HonestySection({ bg = "bg-navy", textureOpacity = 0.035,
                   What we don&apos;t promise
                 </h2>
                 <p className="font-sans text-base text-body-text leading-relaxed">
-                  We do three things: match grades, verify documents, and manage
-                  execution. Here is what each one cannot guarantee.
+                  We produce minerals, source polymers, and manage execution.
+                  On the desk we match grades and verify documents. Here is
+                  what each one cannot guarantee.
                 </p>
               </div>
             </RevealDiv>

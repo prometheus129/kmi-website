@@ -48,13 +48,13 @@ export default function ResponseExample() {
               SEE IT IN ACTION
             </div>
             <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white leading-tight mb-6">
-              One question. One answer.
+              One inquiry. A complete answer.
             </h2>
             <p className="font-sans text-base text-body-text leading-relaxed max-w-[680px] mx-auto mb-4">
-              A polymer purchase decides on five questions: grade match,
+              A materials purchase decides on five questions: grade match,
               total landed cost, regulatory requirements, supplier
-              reliability, quality history. Each usually requires a
-              different tool or specialist. We integrate all five.
+              reliability, quality history. Our desk answers all five in
+              one response — for our minerals and for polymers alike.
             </p>
             <p className="font-sans text-sm text-muted leading-relaxed max-w-[600px] mx-auto">
               A distributor in Vietnam asked about HDPE pipe grade alternatives.
@@ -123,27 +123,14 @@ export default function ResponseExample() {
           </div>
         </RevealDiv>
 
-        {/* Extended beta time-anchor */}
-        <RevealDiv delay={200}>
-          <div className="text-center mt-10 max-w-[640px] mx-auto">
-            <p className="font-mono text-[11px] tracking-[3px] text-teal/80 font-semibold mb-2">
-              EXTENDED BETA
-            </p>
-            <p className="font-sans text-sm text-body-text/80 leading-relaxed">
-              Sub-minute response times available to select partners in our
-              extended beta. General availability June 2026.
-            </p>
-          </div>
-        </RevealDiv>
-
         {/* CTA below example */}
-        <RevealDiv delay={250}>
+        <RevealDiv delay={200}>
           <div className="text-center mt-10">
             <a
               href="#inquiry"
               className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-base tracking-wider px-8 py-4 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-150"
             >
-              Send us a question
+              Tell us what you need
             </a>
           </div>
         </RevealDiv>

@@ -75,9 +75,10 @@ export default function TrustSection() {
               Our engineering compounds go where failure isn&apos;t an option.
             </h2>
             <p className="font-sans text-base text-body-text max-w-[680px] mx-auto leading-relaxed">
-              Validated in our own production lines — over 2 million finished
-              goods manufactured annually using our materials. When we match
-              a grade for your application, we&apos;re matching against what
+              Validated in our own production lines — 60,000 MT/yr of
+              compounding capacity and over 2 million finished goods
+              manufactured annually using our materials. When we match a
+              grade for your application, we&apos;re matching against what
               we already know works.
             </p>
           </div>

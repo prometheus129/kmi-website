@@ -8,23 +8,23 @@ import { trackCTA } from "@/lib/tracking";
 const stats = [
   { value: "98", label: "whiteness — KC Series GCC from our own production" },
   { value: "4", label: "KC Series grades, coated and uncoated" },
-  { value: "10", label: "engineering polymer families, PA6 to PEEK" },
+  { value: "60,000", label: "MT/yr engineering compound capacity" },
 ];
 
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden min-h-[85vh] flex items-center px-6 lg:px-10 bg-gradient-to-br from-navy-deep via-navy to-[#1a3355]">
-      {/* Atmospheric texture */}
-      <div className="absolute inset-0 opacity-[0.085]">
+      {/* Atmospheric texture — our Vietnam quarry operation */}
+      <div className="absolute inset-0 opacity-[0.13]">
         <Image
-          src="/images/hero-texture.jpg"
+          src="/images/ops-quarry-wide.jpg"
           alt=""
           fill
           className="object-cover"
-          style={{ objectPosition: "center 75%" }}
+          style={{ objectPosition: "center 60%" }}
           sizes="100vw"
           priority
-          quality={60}
+          quality={70}
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/40 via-transparent to-navy-deep/60" />
