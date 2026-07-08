@@ -80,6 +80,14 @@ export default function Footer() {
                 inquiry@kantormaterials.com
               </a>
               <a
+                href="https://wa.me/8618822815720"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block font-sans text-[13px] text-muted hover:text-cream transition-colors duration-200"
+              >
+                WhatsApp +86 188 2281 5720
+              </a>
+              <a
                 href="https://www.linkedin.com/company/kantor-materials-international/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -88,6 +96,10 @@ export default function Footer() {
                 LinkedIn
               </a>
             </div>
+            <p className="font-sans text-[11px] text-subtle leading-relaxed max-w-[280px] mt-4">
+              Kantor Materials International Limited · Flat 6, 10/F, LT Tower,
+              No. 31 Chong Yip Street, Kwun Tong, Hong Kong
+            </p>
           </div>
 
           {/* Link Columns */}

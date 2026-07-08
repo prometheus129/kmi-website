@@ -33,19 +33,22 @@ export const organizationSchema = {
   },
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Hong Kong",
+    streetAddress: "Flat 6, 10/F, LT Tower, No. 31 Chong Yip Street",
+    addressLocality: "Kwun Tong",
+    addressRegion: "Kowloon",
     addressCountry: "HK",
   },
   contactPoint: {
     "@type": "ContactPoint",
     email: "david@kantor-m.com",
+    telephone: "+8618822815720",
     contactType: "sales",
     availableLanguage: ["English", "Chinese", "Vietnamese"],
   },
   // sameAs = independent entity profiles. LinkedIn is the only one that exists today.
   // Crunchbase + Wikidata are GEO P0 (off-site authority) deliverables — add their URLs
   // here the moment those profiles are live. Do NOT add placeholder/empty profiles.
-  sameAs: ["https://www.linkedin.com/company/kantor-materials"],
+  sameAs: ["https://www.linkedin.com/company/kantor-materials-international"],
   // areaServed mirrors KMI's published market-coverage footprint (the markets with
   // dedicated content hubs). Trim to Phase-1 corridors if a tighter "active service area"
   // claim is preferred over coverage breadth.

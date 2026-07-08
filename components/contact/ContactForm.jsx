@@ -56,8 +56,17 @@ export default function ContactForm() {
           Message Received
         </h3>
         <p className="text-body-text text-sm leading-relaxed max-w-md mx-auto">
-          A member of our team will respond within one business day. For urgent
-          pricing requests, message us directly on WhatsApp.
+          A member of our team will respond within 24 hours. For urgent
+          requests, message us on WhatsApp at{" "}
+          <a
+            href="https://wa.me/8618822815720"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-teal hover:text-teal-light font-semibold"
+          >
+            +86 188 2281 5720
+          </a>
+          .
         </p>
       </div>
     );

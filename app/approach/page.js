@@ -155,7 +155,8 @@ export default function ApproachPage() {
                       HEADQUARTERS
                     </div>
                     <p className="font-sans text-[14px] text-cream/80">
-                      Hong Kong
+                      Kantor Materials International Limited — Hong Kong
+                      (incorporated 2025)
                     </p>
                   </div>
                   <div>
@@ -168,10 +169,19 @@ export default function ApproachPage() {
                   </div>
                   <div>
                     <div className="font-sans text-[11px] font-bold text-gold/70 tracking-widest mb-1">
+                      GCC PRODUCTION
+                    </div>
+                    <p className="font-sans text-[14px] text-cream/80">
+                      Vertically integrated calcium carbonate operation,
+                      Northern Vietnam (JV)
+                    </p>
+                  </div>
+                  <div>
+                    <div className="font-sans text-[11px] font-bold text-gold/70 tracking-widest mb-1">
                       MARKET INTELLIGENCE
                     </div>
                     <p className="font-sans text-[14px] text-cream/80">
-                      Published across 19 markets in 7 languages
+                      Published across 16 markets in 12 languages
                     </p>
                   </div>
                 </div>
