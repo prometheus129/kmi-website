@@ -33,18 +33,18 @@ export const metadata = {
   metadataBase: new URL("https://www.kantormaterials.com"),
   openGraph: {
     title:
-      "Kantor Materials International — Premium Calcium Carbonate & China-Origin Polymers",
+      "Kantor Materials — Premium Calcium Carbonate & China-Origin Polymers",
     description:
       "Premium calcium carbonate from our own production. Engineering and commodity polymers from the same desk.",
     type: "website",
     locale: "en_US",
-    siteName: "Kantor Materials International",
+    siteName: "Kantor Materials",
   },
   twitter: {
     card: "summary_large_image",
     site: "@KantorMaterials",
     title:
-      "Kantor Materials International — Premium Calcium Carbonate & China-Origin Polymers",
+      "Kantor Materials — Premium Calcium Carbonate & China-Origin Polymers",
     description:
       "Producer of premium Vietnamese calcium carbonate and supplier of China-origin engineering and commodity polymers across Asia and the Global South.",
   },

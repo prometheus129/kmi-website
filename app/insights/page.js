@@ -8,7 +8,7 @@ import { getAllArticles } from "@/lib/insights";
 import { getAllHubs, getFeaturedSlugs } from "@/lib/hubs";
 
 export const metadata = {
-  title: "Insights — Kantor Materials International",
+  title: "Insights — Kantor Materials",
   description:
     "Market analysis, supply chain intelligence, and procurement strategy for polymer buyers across emerging markets.",
   alternates: {

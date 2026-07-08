@@ -52,7 +52,7 @@ export default async function MarketHubPage({ params }) {
     url: `https://kantormaterials.com/insights/markets/${hub.slug}`,
     publisher: {
       "@type": "Organization",
-      name: "Kantor Materials International",
+      name: "Kantor Materials",
       url: "https://kantormaterials.com",
     },
     numberOfItems: articles.length,

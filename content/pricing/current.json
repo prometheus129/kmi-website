@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-05",
+  "lastUpdated": "2026-06-12",
   "source": "Kantor Materials daily pricing",
   "prices": [
     {
@@ -15,16 +15,16 @@
       },
       "grades": "500P (大庆) / 500N / 1100N",
       "cfrRange": [
-        1291,
-        1351
+        1304,
+        1364
       ],
-      "direction": "up",
-      "weekChange": 15,
+      "direction": "stable",
+      "weekChange": 0,
       "notes": {
-        "en": "FOB $1321 indicative (1100N, 宁煤). Subject to confirmation.",
-        "vi": "FOB $1321 indicative (1100N, 宁煤). Subject to confirmation.",
-        "tr": "FOB $1321 indicative (1100N, 宁煤). Subject to confirmation.",
-        "id": "FOB $1321 indicative (1100N, 宁煤). Subject to confirmation."
+        "en": "FOB $1334 indicative (M17, 海南乙烯; 1100N quoted $1308 month-end). Subject to confirmation.",
+        "vi": "FOB $1334 indicative (M17, 海南乙烯; 1100N quoted $1308 month-end). Subject to confirmation.",
+        "tr": "FOB $1334 indicative (M17, 海南乙烯; 1100N quoted $1308 month-end). Subject to confirmation.",
+        "id": "FOB $1334 indicative (M17, 海南乙烯; 1100N quoted $1308 month-end). Subject to confirmation."
       }
     },
     {
@@ -40,16 +40,16 @@
       },
       "grades": "300R (大庆) / 251H / Z30S",
       "cfrRange": [
-        1284,
-        1344
+        1271,
+        1331
       ],
-      "direction": "up",
-      "weekChange": 40,
+      "direction": "down",
+      "weekChange": -20,
       "notes": {
-        "en": "FOB $1314 indicative (Y25, 巨正源). Subject to confirmation.",
-        "vi": "FOB $1314 indicative (Y25, 巨正源). Subject to confirmation.",
-        "tr": "FOB $1314 indicative (Y25, 巨正源). Subject to confirmation.",
-        "id": "FOB $1314 indicative (Y25, 巨正源). Subject to confirmation."
+        "en": "FOB $1301 indicative (Y40/G38, 巨正源). Subject to confirmation.",
+        "vi": "FOB $1301 indicative (Y40/G38, 巨正源). Subject to confirmation.",
+        "tr": "FOB $1301 indicative (Y40/G38, 巨正源). Subject to confirmation.",
+        "id": "FOB $1301 indicative (Y40/G38, 巨正源). Subject to confirmation."
       }
     },
     {
@@ -71,10 +71,10 @@
       "direction": "stable",
       "weekChange": 0,
       "notes": {
-        "en": "FOB $1165 indicative (LLDPE absent on today's QQT — anchor from Apr 26 ref). Subject to confirmation.",
-        "vi": "FOB $1165 indicative (LLDPE absent on today's QQT — anchor from Apr 26 ref). Subject to confirmation.",
-        "tr": "FOB $1165 indicative (LLDPE absent on today's QQT — anchor from Apr 26 ref). Subject to confirmation.",
-        "id": "FOB $1165 indicative (LLDPE absent on today's QQT — anchor from Apr 26 ref). Subject to confirmation."
+        "en": "FOB $1165 indicative (LLDPE 7042 reference; not quoted on today's sheet). Subject to confirmation.",
+        "vi": "FOB $1165 indicative (LLDPE 7042 reference; not quoted on today's sheet). Subject to confirmation.",
+        "tr": "FOB $1165 indicative (LLDPE 7042 reference; not quoted on today's sheet). Subject to confirmation.",
+        "id": "FOB $1165 indicative (LLDPE 7042 reference; not quoted on today's sheet). Subject to confirmation."
       }
     },
     {
@@ -93,8 +93,8 @@
         1295,
         1355
       ],
-      "direction": "up",
-      "weekChange": 10,
+      "direction": "stable",
+      "weekChange": 0,
       "indicative": true,
       "notes": {
         "en": "FOB $1325 indicative (YM12, 延长). Subject to confirmation.",
@@ -116,17 +116,17 @@
       },
       "grades": "K8009 (浙石化) / 2500HY / EP548R",
       "cfrRange": [
-        1278,
-        1338
+        1251,
+        1311
       ],
       "direction": "down",
       "weekChange": -65,
       "indicative": true,
       "notes": {
-        "en": "FOB $1308 indicative (K8009, 广东). New cycle low — −$118 from May 8 peak; −$66 vs Apr 30 baseline. Subject to confirmation.",
-        "vi": "FOB $1308 indicative (K8009, 广东). New cycle low — −$118 from May 8 peak; −$66 vs Apr 30 baseline. Subject to confirmation.",
-        "tr": "FOB $1308 indicative (K8009, 广东). New cycle low — −$118 from May 8 peak; −$66 vs Apr 30 baseline. Subject to confirmation.",
-        "id": "FOB $1308 indicative (K8009, 广东). New cycle low — −$118 from May 8 peak; −$66 vs Apr 30 baseline. Subject to confirmation."
+        "en": "FOB $1281 indicative (K8009, 广东). Extended to a new cycle low; 548RQ — the last copolymer grade holding — broke this session. Subject to confirmation.",
+        "vi": "FOB $1281 indicative (K8009, 广东). Extended to a new cycle low; 548RQ — the last copolymer grade holding — broke this session. Subject to confirmation.",
+        "tr": "FOB $1281 indicative (K8009, 广东). Extended to a new cycle low; 548RQ — the last copolymer grade holding — broke this session. Subject to confirmation.",
+        "id": "FOB $1281 indicative (K8009, 广东). Extended to a new cycle low; 548RQ — the last copolymer grade holding — broke this session. Subject to confirmation."
       }
     },
     {
@@ -145,14 +145,14 @@
         1241,
         1301
       ],
-      "direction": "down",
-      "weekChange": -225,
+      "direction": "stable",
+      "weekChange": -20,
       "indicative": true,
       "notes": {
-        "en": "FOB $1271 indicative (0215A, 吉化). ABS GP-impact tier continued unwinding across the window. Subject to confirmation.",
-        "vi": "FOB $1271 indicative (0215A, 吉化). ABS GP-impact tier continued unwinding across the window. Subject to confirmation.",
-        "tr": "FOB $1271 indicative (0215A, 吉化). ABS GP-impact tier continued unwinding across the window. Subject to confirmation.",
-        "id": "FOB $1271 indicative (0215A, 吉化). ABS GP-impact tier continued unwinding across the window. Subject to confirmation."
+        "en": "GP 0215A off-quote today (thin ABS sheet); $1271 last print (Jun 11). Subject to confirmation.",
+        "vi": "GP 0215A off-quote today (thin ABS sheet); $1271 last print (Jun 11). Subject to confirmation.",
+        "tr": "GP 0215A off-quote today (thin ABS sheet); $1271 last print (Jun 11). Subject to confirmation.",
+        "id": "GP 0215A off-quote today (thin ABS sheet); $1271 last print (Jun 11). Subject to confirmation."
       }
     }
   ]

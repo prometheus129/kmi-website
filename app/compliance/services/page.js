@@ -53,7 +53,7 @@ const SERVICES = [
     badge: "The material itself",
     name: "Material Verification",
     price: "$499 per material",
-    turnaround: "~2–3 weeks including sample logistics",
+    turnaround: "2–5 business days once we have your sample",
     blurb:
       "Everything in report verification, plus the layer paperwork cannot reach: we test the material itself against its TDS through our affiliated polymer materials lab — polymer identity, grade consistency, blend and regrind signals, filler loading — and read the results against your purchase specification.",
     includes: [
@@ -79,6 +79,12 @@ export default function ComplianceServicesPage() {
               Flat fees. Confirmed scope. No retainer.
             </h1>
             <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-[680px] mb-4">
+              The importer of record carries the liability — up to $120,000 per
+              violation — for what actually ships, not the factory that made it.
+              These services confirm your compliance documents, and the material
+              behind them, before a customs hold or a regulator does.
+            </p>
+            <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-[680px] mb-4">
               Three services, priced up front. Every engagement starts with a
               short intake — we confirm scope, turnaround, and fee before
               anything is billed, and we never supply the products we review.
@@ -89,6 +95,11 @@ export default function ComplianceServicesPage() {
               know the resin itself is what it claims — the one layer an
               inspector or a registry check cannot reach.
             </p>
+            <div className="flex flex-wrap gap-x-6 gap-y-2 mb-8 text-xs text-muted font-sans max-w-[680px]">
+              <span>Operated by Kantor Materials — a polymer company with its own materials lab</span>
+              <span>Every determination cites a primary source</span>
+              <span>We never supply the products we review</span>
+            </div>
             <div className="mb-10">
               <DeadlineCountdown
                 date="2026-07-08"
@@ -155,7 +166,34 @@ export default function ComplianceServicesPage() {
             })}
           </div>
 
-          <div className="mt-10 p-6 rounded-lg bg-teal/[0.07] border border-teal/20 max-w-[760px]">
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-[760px]">
+            <div className="p-6 rounded-lg border border-white/10 bg-white/[0.02]">
+              <p className="font-mono text-[10px] uppercase tracking-[2px] text-teal/80 mb-2">
+                On time, or it&apos;s on us
+              </p>
+              <p className="text-sm text-body-text leading-relaxed">
+                If a Readiness Review or Report Verification misses the turnaround
+                we quote you at intake, the fee is credited in full. The clock
+                starts once we have the documents we need; for report
+                verification, time spent waiting on the issuing lab is excluded —
+                we&apos;ll flag it when it applies.
+              </p>
+            </div>
+            <div className="p-6 rounded-lg border border-white/10 bg-white/[0.02]">
+              <p className="font-mono text-[10px] uppercase tracking-[2px] text-teal/80 mb-2">
+                Material screen, backed by re-test
+              </p>
+              <p className="text-sm text-body-text leading-relaxed">
+                If an accredited laboratory later contradicts our material screen
+                on the same property and the same sample, we re-run the screen or
+                refund its fee. The screen is diligence-grade — it tells you
+                whether an accredited test is worth paying for; it does not
+                replace one where the law requires it.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-5 p-6 rounded-lg bg-teal/[0.07] border border-teal/20 max-w-[760px]">
             <p className="text-sm text-body-text leading-relaxed">
               Not sure which one you need? Run the free{" "}
               <Link

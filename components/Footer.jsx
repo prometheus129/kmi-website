@@ -61,7 +61,7 @@ export default function Footer() {
             <Link href="/" className="inline-block mb-3">
               <Image
                 src="/kantor-logo-transparent.png"
-                alt="Kantor Materials International"
+                alt="Kantor Materials"
                 width={280}
                 height={44}
                 className="h-12 w-auto -mt-1.5"

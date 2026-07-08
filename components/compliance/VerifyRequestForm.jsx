@@ -186,7 +186,13 @@ export default function VerifyRequestForm() {
 
       <p className="text-xs text-muted leading-relaxed">
         No payment now — we confirm scope and turnaround first, then invoice.
-        Flat fees as listed; nothing starts until you approve.
+        Flat fees as listed; nothing starts until you approve. Fixed-fee reviews
+        are on-time-or-credited, and material screens are backed by re-test —
+        full terms on the{" "}
+        <Link href="/compliance/services" className="text-teal hover:text-teal-light">
+          services page
+        </Link>
+        .
       </p>
     </form>
   );

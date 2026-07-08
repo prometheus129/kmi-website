@@ -5,7 +5,7 @@ import InsightsGrid from "@/components/insights/InsightsGrid";
 import { getAllArticles } from "@/lib/insights";
 
 export const metadata = {
-  title: "বাজার বিশ্লেষণ — Kantor Materials International",
+  title: "বাজার বিশ্লেষণ — Kantor Materials",
   description:
     "বাংলাদেশের পলিমার আমদানিকারকদের জন্য বাজার বিশ্লেষণ, সাপ্লাই চেইন তথ্য এবং ক্রয় কৌশল।",
   alternates: {

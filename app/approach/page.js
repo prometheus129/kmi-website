@@ -6,7 +6,7 @@ import Link from "next/link";
 import JsonLd, { organizationSchema } from "@/components/JsonLd";
 
 export const metadata = {
-  title: "About Our Approach — Kantor Materials International",
+  title: "About Our Approach — Kantor Materials",
   description:
     "What we don't promise — and what we do. How KMI sources polymers from China for distributors across emerging markets.",
   openGraph: {
@@ -126,7 +126,7 @@ export default function ApproachPage() {
                 Hong Kong headquartered. China sourcing. Global South markets.
               </h2>
               <p className="text-body-text text-[15px] leading-relaxed">
-                Kantor Materials International is headquartered in Hong Kong with
+                Kantor Materials is headquartered in Hong Kong with
                 sourcing and compounding operations in China. We serve polymer
                 distributors and converters across Asia, the Middle East, Latin
                 America, and Africa.

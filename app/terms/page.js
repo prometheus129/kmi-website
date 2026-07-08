@@ -2,7 +2,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Terms of Service — Kantor Materials International",
+  title: "Terms of Service — Kantor Materials",
   description:
     "Terms governing use of kantormaterials.com and Kantor Materials services.",
 };
@@ -28,7 +28,7 @@ export default function TermsPage() {
               </h2>
               <p>
                 By accessing kantormaterials.com (&ldquo;the Site&rdquo;) or
-                subscribing to any Kantor Materials International
+                subscribing to any Kantor Materials
                 (&ldquo;KMI&rdquo;) service, you agree to these Terms of
                 Service. If you do not agree, do not use the Site or our
                 services.
@@ -85,7 +85,7 @@ export default function TermsPage() {
               <p>
                 All content on this Site — including articles, market analysis,
                 pricing data, graphics, and The Polymer Compass publication — is
-                the intellectual property of Kantor Materials International.
+                the intellectual property of Kantor Materials.
                 Content may not be reproduced, distributed, or republished
                 without prior written consent, except for reasonable personal use
                 and internal business reference.

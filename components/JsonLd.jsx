@@ -19,7 +19,7 @@ const BASE_URL = "https://www.kantormaterials.com";
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Kantor Materials International",
+  name: "Kantor Materials",
   legalName: "Kantor Materials Limited",
   alternateName: "KMI",
   identifier: {
@@ -109,7 +109,7 @@ export const organizationSchema = {
 export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Kantor Materials International",
+  name: "Kantor Materials",
   url: BASE_URL,
   inLanguage: ["en", "vi", "tr", "id", "es", "pt", "th", "bn", "ru", "ar", "fr", "ur"],
 };
@@ -145,7 +145,7 @@ export function buildArticleSchema({ title, description, date, dateModified, slu
     },
     publisher: {
       "@type": "Organization",
-      name: "Kantor Materials International",
+      name: "Kantor Materials",
       url: BASE_URL,
       logo: {
         "@type": "ImageObject",

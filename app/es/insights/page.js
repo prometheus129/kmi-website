@@ -5,7 +5,7 @@ import InsightsGrid from "@/components/insights/InsightsGrid";
 import { getAllArticles } from "@/lib/insights";
 
 export const metadata = {
-  title: "Análisis de Mercado — Kantor Materials International",
+  title: "Análisis de Mercado — Kantor Materials",
   description:
     "Análisis de mercado, inteligencia de cadena de suministro y estrategia de compras para importadores de polímeros en América Latina.",
   alternates: {

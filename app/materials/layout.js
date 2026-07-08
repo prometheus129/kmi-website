@@ -3,7 +3,7 @@ export const metadata = {
   description:
     "PEEK, PA66, POM, PC, PBT, and specialty compounds from China. UL-certified alternatives with specification matching and competitive pricing.",
   openGraph: {
-    title: "Engineering Polymers — Kantor Materials International",
+    title: "Engineering Polymers — Kantor Materials",
     description:
       "China-origin UL-certified engineering compounds. Specification matching for PEEK, PA66, POM, PC, PBT, and more.",
   },

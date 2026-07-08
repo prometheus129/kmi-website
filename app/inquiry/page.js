@@ -5,7 +5,7 @@ import CapabilityCards from "@/components/home/CapabilityCards";
 import InquirySection from "@/components/home/InquirySection";
 
 export const metadata = {
-  title: "Tell Us What You Need — Kantor Materials International",
+  title: "Tell Us What You Need — Kantor Materials",
   description:
     "Tell us the material and application — calcium carbonate, engineering or commodity polymers. We respond with matched grades, pricing, and documentation within 24 hours. No commitment required.",
   openGraph: {

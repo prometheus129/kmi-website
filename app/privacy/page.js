@@ -2,7 +2,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Privacy Policy — Kantor Materials International",
+  title: "Privacy Policy — Kantor Materials",
   description:
     "How Kantor Materials collects, uses, and protects your personal information.",
 };
@@ -27,7 +27,7 @@ export default function PrivacyPage() {
                 1. Who We Are
               </h2>
               <p>
-                Kantor Materials International (&ldquo;KMI,&rdquo;
+                Kantor Materials (&ldquo;KMI,&rdquo;
                 &ldquo;we,&rdquo; &ldquo;us&rdquo;) operates
                 kantormaterials.com. We are a polymer procurement intelligence
                 and sourcing platform serving distributors and converters across

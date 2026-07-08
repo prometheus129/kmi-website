@@ -75,7 +75,7 @@ export default function Nav() {
         <Link href="/" className="flex items-center shrink-0">
           <Image
             src="/kantor-logo-transparent.png"
-            alt="Kantor Materials International"
+            alt="Kantor Materials"
             width={600}
             height={80}
             className="h-20 w-auto"

@@ -6,7 +6,7 @@ export default function ComplianceDisclosure() {
     <div className="mt-12 pt-8 border-t border-white/[0.08] text-xs text-muted leading-relaxed font-sans space-y-2">
       <p>
         <span className="text-white/60 font-medium">About CertDesk.</span>{" "}
-        CertDesk is operated by Kantor Materials International. We help
+        CertDesk is operated by Kantor Materials. We help
         importers verify materials, coordinate accredited testing, and prepare
         compliance documentation. We never supply the products we review.
       </p>

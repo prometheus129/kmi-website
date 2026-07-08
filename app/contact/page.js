@@ -5,11 +5,11 @@ import ContactForm from "@/components/contact/ContactForm";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Contact — Kantor Materials International",
+  title: "Contact — Kantor Materials",
   description:
     "Get in touch with Kantor Materials for partnerships, press inquiries, or general questions. For polymer sourcing, use our requirement form.",
   openGraph: {
-    title: "Contact — Kantor Materials International",
+    title: "Contact — Kantor Materials",
     description:
       "Get in touch with Kantor Materials. Partnerships, press, and general inquiries.",
   },

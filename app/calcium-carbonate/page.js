@@ -28,7 +28,7 @@ const productSchema = {
     "High-whiteness ground calcium carbonate (GCC) powder for plastics modification — the Kantor KC Series: four fineness grades (D97 5.5–17 µm), coated (stearic-acid) or uncoated, supplied with TDS, per-lot COA, and Form D / Form AI certificate of origin.",
   brand: {
     "@type": "Brand",
-    name: "Kantor Materials International",
+    name: "Kantor Materials",
   },
   material: "Calcium Carbonate",
   additionalProperty: [

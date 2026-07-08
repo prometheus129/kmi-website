@@ -5,7 +5,7 @@ import Link from "next/link";
 import JsonLd, { organizationSchema } from "@/components/JsonLd";
 
 export const metadata = {
-  title: "Trader Partnership — Kantor Materials International",
+  title: "Trader Partnership — Kantor Materials",
   description:
     "Keep your book. Quote what you can't today — Chinese equivalents to Zytel, Ultramid, LNP, compounded in our compounding operations. Source through us when we beat your suppliers.",
   openGraph: {

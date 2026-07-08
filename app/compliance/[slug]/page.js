@@ -77,7 +77,7 @@ function buildComplianceArticleSchema(frontmatter, slug) {
       : {}),
     publisher: {
       "@type": "Organization",
-      name: "Kantor Materials International",
+      name: "Kantor Materials",
       url: BASE_URL,
       logo: { "@type": "ImageObject", url: `${BASE_URL}/kantor-icon.png` },
     },
