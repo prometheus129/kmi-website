@@ -3,7 +3,7 @@ import RevealDiv from "@/components/RevealDiv";
 const capabilities = [
   {
     title: "Matched grades",
-    text: "Candidates filtered from tens of thousands of Chinese polymer grades by the properties and application you specify.",
+    text: "Candidates filtered from our KC-Series calcium carbonate and the broader China polymer market by the properties and application you specify.",
     accent: "border-teal",
     iconColor: "text-teal",
     iconBg: "bg-teal/10 border-teal/20",
@@ -43,7 +43,7 @@ const capabilities = [
   },
   {
     title: "Documentation",
-    text: "Form E, Certificate of Analysis, TDS, HS code, and duty rate information for your destination market. Assembled, not chased.",
+    text: "Form E or Form D / Form AI certificate of origin, Certificate of Analysis, TDS, HS code, and duty rate information for your destination market. Assembled, not chased.",
     accent: "border-gold",
     iconColor: "text-gold",
     iconBg: "bg-gold/10 border-gold/20",

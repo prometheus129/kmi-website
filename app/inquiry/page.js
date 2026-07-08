@@ -7,11 +7,11 @@ import InquirySection from "@/components/home/InquirySection";
 export const metadata = {
   title: "Tell Us What You Need — Kantor Materials International",
   description:
-    "Describe your polymer requirement. We respond with matched grades, CFR pricing, and documentation — in one answer. No commitment required.",
+    "Tell us the material and application — calcium carbonate, engineering or commodity polymers. We respond with matched grades, pricing, and documentation within 24 hours. No commitment required.",
   openGraph: {
     title: "Tell Us What You Need — Kantor Materials",
     description:
-      "Describe your polymer requirement. Matched grades, CFR pricing, and documentation — in one answer.",
+      "Calcium carbonate or polymers — matched grades, pricing, and documentation in one answer, within 24 hours.",
   },
   alternates: { canonical: "/inquiry" },
 };
@@ -26,14 +26,15 @@ export default function InquiryPage() {
         <div className="max-w-[1200px] mx-auto text-center">
           <RevealDiv>
             <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
-              YOUR CHINA POLYMER DESK
+              MINERALS &amp; POLYMERS DESK
             </span>
             <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white mb-6 max-w-3xl mx-auto leading-tight">
               Describe what you need.
             </h1>
             <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
-              We search tens of thousands of grades and respond with matched
-              specs, pricing, and documentation — in one answer.
+              Calcium carbonate or polymers — tell us the material and
+              application. We respond with matched grades, pricing, and
+              documentation in one answer, within 24 hours.
             </p>
           </RevealDiv>
         </div>

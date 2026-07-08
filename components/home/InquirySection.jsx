@@ -23,19 +23,35 @@ const LANE_PREFILLS = {
   },
 };
 
+// Context-only prefills (no lane param) — e.g. the GCC page "Request a Quote"
+// links to /inquiry?context=calcium-carbonate.
+const CONTEXT_PREFILLS = {
+  "calcium-carbonate": {
+    polymerType: "Calcium carbonate (GCC) filler",
+    details:
+      "Calcium carbonate (GCC) request.\n\nApplication (masterbatch / film / PVC / other): \nGrade or fineness target (KC-4 / KC-6 / KC-10 / KC-17, or D50 / D97): \nCoated or uncoated: \nDestination: \nVolume (MT): ",
+  },
+};
+
 export default function InquirySection() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
   const [polymerTypeValue, setPolymerTypeValue] = useState("");
   const [detailsValue, setDetailsValue] = useState("");
+  const [leadLane, setLeadLane] = useState("");
+  const [leadContext, setLeadContext] = useState("");
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const lane = params.get("lane");
-    const context = params.get("context");
-    const prefillKey = lane && context ? `${lane}:${context}` : null;
-    const prefill = prefillKey ? LANE_PREFILLS[prefillKey] : null;
+    const lane = params.get("lane") || "";
+    const context = params.get("context") || "";
+    setLeadLane(lane);
+    setLeadContext(context);
+    const prefill =
+      (lane && context && LANE_PREFILLS[`${lane}:${context}`]) ||
+      (context && CONTEXT_PREFILLS[context]) ||
+      null;
     if (prefill) {
       if (prefill.polymerType) setPolymerTypeValue(prefill.polymerType);
       if (prefill.details) setDetailsValue(prefill.details);
@@ -57,11 +73,17 @@ export default function InquirySection() {
     const polymerType = formData.get("polymerType") || "General";
     formData.append("_subject", `New Requirement: ${polymerType}`);
     formData.append("_replyto", formData.get("email"));
+    if (leadLane) formData.append("lane", leadLane);
+    if (leadContext) formData.append("context", leadContext);
+    formData.append("landing_page", attribution.landing_page || "");
 
     const result = await submitForm(FORM_ENDPOINTS.inquiry, formData);
     if (result.ok) {
       setSubmitted(true);
-      trackFormSubmit("inquiry", attribution);
+      trackFormSubmit("inquiry", attribution, {
+        ...(leadLane ? { lane: leadLane } : {}),
+        ...(leadContext ? { context: leadContext } : {}),
+      });
     } else {
       setError(result.error || "Something went wrong. Please try again.");
     }
@@ -89,9 +111,9 @@ export default function InquirySection() {
           </h2>
           <p className="font-sans text-base text-body-text leading-relaxed max-w-[640px] mx-auto">
             You don&apos;t need to sign a contract, schedule a demo, or sit
-            through a pitch deck. Tell us what you need — a polymer type, a
-            grade, an application — and we&apos;ll show you what the broader
-            China market can offer.
+            through a pitch deck. Tell us what you need — a material, a grade,
+            an application — and we&apos;ll come back with matched grades,
+            pricing, and documentation within 24 hours.
           </p>
         </div>
 
@@ -137,14 +159,14 @@ export default function InquirySection() {
               {/* Polymer type */}
               <div>
                 <label htmlFor="inq-polymer" className={labelClasses}>
-                  Polymer type *
+                  Material *
                 </label>
                 <input
                   id="inq-polymer"
                   name="polymerType"
                   required
                   className={inputClasses}
-                  placeholder="e.g., PP, HDPE, PVC, PA6, ABS, PET"
+                  placeholder="e.g., GCC filler, PP, HDPE, PVC, PA6, ABS"
                   value={polymerTypeValue}
                   onChange={(e) => setPolymerTypeValue(e.target.value)}
                 />
