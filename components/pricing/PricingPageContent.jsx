@@ -16,6 +16,7 @@ const UI_STRINGS = {
     subtitle:
       "Indicative CFR market assessment for PP, PE, and PVC, published by the Kantor Materials research team. Check the date below — contact us for current executable pricing.",
     lastUpdated: "Last updated",
+    refNote: "Indicative reference — executable quotes within 24 hours",
     source: "Source",
     colProduct: "Product",
     colGrade: "Grade",
@@ -39,6 +40,7 @@ const UI_STRINGS = {
     subtitle:
       "Đánh giá thị trường FOB Trung Quốc cho hạt nhựa PP, PE, HDPE, LLDPE, PVC và ABS. Xuất bản bởi đội ngũ nghiên cứu Kantor Materials.",
     lastUpdated: "Cập nhật lần cuối",
+    refNote: "Giá tham khảo — báo giá thực hiện trong vòng 24 giờ",
     source: "Nguồn",
     colProduct: "Sản phẩm",
     colGrade: "Mã hàng",
@@ -62,6 +64,7 @@ const UI_STRINGS = {
     subtitle:
       "Çin menşeli PP, PE ve PVC için CFR piyasa değerlendirmesi. Kantor Materials araştırma ekibi tarafından yayımlanır.",
     lastUpdated: "Son güncelleme",
+    refNote: "Gösterge niteliğinde — uygulanabilir teklifler 24 saat içinde",
     source: "Kaynak",
     colProduct: "Ürün",
     colGrade: "Grade",
@@ -85,6 +88,7 @@ const UI_STRINGS = {
     subtitle:
       "Penilaian pasar CFR untuk PP, PE, dan PVC asal Tiongkok. Diterbitkan oleh tim riset Kantor Materials.",
     lastUpdated: "Terakhir diperbarui",
+    refNote: "Referensi indikatif — penawaran eksekusi dalam 24 jam",
     source: "Sumber",
     colProduct: "Produk",
     colGrade: "Grade",
@@ -108,6 +112,7 @@ const UI_STRINGS = {
     subtitle:
       "Evaluación de mercado CFR para PP, PE y PVC de origen chino. Publicado por el equipo de investigación de Kantor Materials.",
     lastUpdated: "Última actualización",
+    refNote: "Referencia indicativa — cotizaciones ejecutables en 24 horas",
     source: "Fuente",
     colProduct: "Producto",
     colGrade: "Grado",
@@ -131,6 +136,7 @@ const UI_STRINGS = {
     subtitle:
       "Avaliação de mercado CFR para PP, PE e PVC de origem chinesa. Publicado pela equipe de pesquisa da Kantor Materials.",
     lastUpdated: "Última atualização",
+    refNote: "Referência indicativa — cotações executáveis em 24 horas",
     source: "Fonte",
     colProduct: "Produto",
     colGrade: "Grade",
@@ -154,6 +160,7 @@ const UI_STRINGS = {
     subtitle:
       "การประเมินราคาตลาด CFR สำหรับ PP, PE และ PVC จากจีน เผยแพร่โดยทีมวิจัย Kantor Materials",
     lastUpdated: "อัปเดตล่าสุด",
+    refNote: "ราคาอ้างอิง — ใบเสนอราคาที่ซื้อขายได้ภายใน 24 ชั่วโมง",
     source: "แหล่งที่มา",
     colProduct: "ผลิตภัณฑ์",
     colGrade: "เกรด",
@@ -176,6 +183,7 @@ const UI_STRINGS = {
     h1: "أسعار البوليمر الصيني اليوم",
     subtitle: "تقييم سوق CFR لـ PP و PE و PVC من الصين. منشور من فريق أبحاث Kantor Materials.",
     lastUpdated: "آخر تحديث",
+    refNote: "مرجع استرشادي — عروض أسعار قابلة للتنفيذ خلال 24 ساعة",
     source: "المصدر",
     colProduct: "المنتج",
     colGrade: "الدرجة",
@@ -196,6 +204,7 @@ const UI_STRINGS = {
     h1: "آج کی چینی پولیمر قیمتیں",
     subtitle: "PP، PE اور PVC کے لیے CFR مارکیٹ تشخیص۔ Kantor Materials ریسرچ ٹیم کی جانب سے شائع۔",
     lastUpdated: "آخری اپ ڈیٹ",
+    refNote: "اشاراتی حوالہ — قابلِ عمل قیمتیں 24 گھنٹے میں",
     source: "ماخذ",
     colProduct: "پروڈکٹ",
     colGrade: "گریڈ",
@@ -216,6 +225,7 @@ const UI_STRINGS = {
     h1: "আজকের চীনা পলিমার মূল্য",
     subtitle: "PP, PE এবং PVC-এর জন্য CFR বাজার মূল্যায়ন। Kantor Materials গবেষণা দল কর্তৃক প্রকাশিত।",
     lastUpdated: "সর্বশেষ আপডেট",
+    refNote: "নির্দেশক রেফারেন্স — কার্যকর কোট ২৪ ঘণ্টার মধ্যে",
     source: "উৎস",
     colProduct: "পণ্য",
     colGrade: "গ্রেড",
@@ -236,6 +246,7 @@ const UI_STRINGS = {
     h1: "Цены на полимеры из Китая сегодня",
     subtitle: "Оценка рынка CFR для PP, PE и PVC китайского происхождения. Публикуется исследовательской командой Kantor Materials.",
     lastUpdated: "Последнее обновление",
+    refNote: "Ориентировочная справка — исполнимые котировки в течение 24 часов",
     source: "Источник",
     colProduct: "Продукт",
     colGrade: "Марка",
@@ -256,6 +267,7 @@ const UI_STRINGS = {
     h1: "Prix des polymères chinois aujourd'hui",
     subtitle: "Évaluation du marché CFR pour PP, PE et PVC d'origine chinoise. Publié par l'équipe de recherche Kantor Materials.",
     lastUpdated: "Dernière mise à jour",
+    refNote: "Référence indicative — devis exécutables sous 24 heures",
     source: "Source",
     colProduct: "Produit",
     colGrade: "Grade",
@@ -324,6 +336,10 @@ export default function PricingPageContent({ locale = "en" }) {
                 {s.source}: {data.source}
               </span>
             </div>
+            <p className="mt-3 inline-flex items-center gap-2 font-sans text-[13px] text-teal">
+              <span className="w-1.5 h-1.5 rounded-full bg-teal shrink-0" />
+              {s.refNote}
+            </p>
           </RevealDiv>
         </div>
       </section>

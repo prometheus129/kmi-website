@@ -111,8 +111,24 @@ const CTA_STRINGS = {
   },
 };
 
+const RESPOND_24H = {
+  en: "We respond within 24 hours.",
+  vi: "Chúng tôi phản hồi trong vòng 24 giờ.",
+  tr: "24 saat içinde yanıt veriyoruz.",
+  id: "Kami merespons dalam 24 jam.",
+  es: "Respondemos en 24 horas.",
+  pt: "Respondemos em 24 horas.",
+  th: "เราตอบกลับภายใน 24 ชั่วโมง",
+  ar: "نرد خلال 24 ساعة.",
+  ur: "ہم 24 گھنٹے میں جواب دیتے ہیں۔",
+  bn: "আমরা ২৪ ঘণ্টার মধ্যে সাড়া দিই।",
+  ru: "Мы отвечаем в течение 24 часов.",
+  fr: "Nous répondons sous 24 heures.",
+};
+
 export default function ArticleCTA({ locale = "en" }) {
   const t = CTA_STRINGS[locale] || CTA_STRINGS.en;
+  const respond24h = RESPOND_24H[locale] || RESPOND_24H.en;
   const subscribePath = locale === "en"
     ? "/polymer-compass#subscribe"
     : `/${locale}/polymer-compass#subscribe`;
@@ -142,6 +158,7 @@ export default function ArticleCTA({ locale = "en" }) {
             />
           </svg>
         </Link>
+        <p className="mt-3 font-sans text-xs text-teal">{respond24h}</p>
       </div>
 
       {/* Secondary CTA */}
