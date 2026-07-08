@@ -97,8 +97,8 @@ export default function Footer() {
               </a>
             </div>
             <p className="font-sans text-[11px] text-subtle leading-relaxed max-w-[280px] mt-4">
-              Kantor Materials International Limited · Flat 6, 10/F, LT Tower,
-              No. 31 Chong Yip Street, Kwun Tong, Hong Kong
+              Kantor Materials Limited · BR No. 51783683 · Flat 6, 10/F, LT
+              Tower, No. 31 Chong Yip Street, Kwun Tong, Hong Kong
             </p>
           </div>
 
@@ -124,7 +124,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/[0.06] pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
           <span className="font-sans text-xs text-subtle">
-            © 2026 Kantor Materials International Limited. All rights reserved.
+            © 2026 Kantor Materials Limited. All rights reserved.
           </span>
           <div className="flex gap-5">
             {languages.map((lang) => {

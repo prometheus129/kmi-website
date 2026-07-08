@@ -160,11 +160,11 @@ export default function TermsPage() {
                 9. Governing Law
               </h2>
               <p>
-                These Terms are entered into with Kantor Materials
-                International Limited, a company incorporated in the Hong Kong
-                Special Administrative Region, with its registered office at
-                Flat 6, 10/F, LT Tower, No. 31 Chong Yip Street, Kwun Tong,
-                Hong Kong. They are governed by the laws of the Hong Kong
+                These Terms are entered into with Kantor Materials Limited
+                (Business Registration No. 51783683), a company incorporated
+                in the Hong Kong Special Administrative Region, with its
+                registered office at Flat 6, 10/F, LT Tower, No. 31 Chong Yip
+                Street, Kwun Tong, Hong Kong. They are governed by the laws of the Hong Kong
                 Special Administrative Region, and any disputes shall be
                 subject to the exclusive jurisdiction of the courts of Hong
                 Kong.

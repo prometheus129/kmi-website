@@ -155,8 +155,7 @@ export default function ApproachPage() {
                       HEADQUARTERS
                     </div>
                     <p className="font-sans text-[14px] text-cream/80">
-                      Kantor Materials International Limited — Hong Kong
-                      (incorporated 2025)
+                      Kantor Materials Limited — Hong Kong · BR No. 51783683
                     </p>
                   </div>
                   <div>

@@ -20,7 +20,13 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Kantor Materials International",
+  legalName: "Kantor Materials Limited",
   alternateName: "KMI",
+  identifier: {
+    "@type": "PropertyValue",
+    propertyID: "Hong Kong Business Registration Number",
+    value: "51783683",
+  },
   url: BASE_URL,
   logo: `${BASE_URL}/kantor-icon.png`,
   description:

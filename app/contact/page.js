@@ -24,7 +24,7 @@ const offices = [
     region: "Hong Kong",
     role: "Registered Office",
     detail:
-      "Kantor Materials International Limited · Flat 6, 10/F, LT Tower, No. 31 Chong Yip Street, Kwun Tong, Hong Kong",
+      "Kantor Materials Limited · BR No. 51783683 · Flat 6, 10/F, LT Tower, No. 31 Chong Yip Street, Kwun Tong, Hong Kong",
   },
   {
     region: "Shenzhen",
@@ -273,8 +273,9 @@ export default function ContactPage() {
                 <p className="font-sans text-xs text-body-text leading-relaxed">
                   Company registry extract, bank reference letter, and
                   certification documents are available to counterparties on
-                  request (NDA where applicable). Kantor Materials International
-                  Limited is a Hong Kong incorporated company.
+                  request (NDA where applicable). Kantor Materials Limited
+                  (Business Registration No. 51783683) is a Hong Kong
+                  incorporated company.
                 </p>
               </div>
             </RevealDiv>
