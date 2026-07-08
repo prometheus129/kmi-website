@@ -8,7 +8,7 @@ export const metadata = {
   title:
     "Premium Calcium Carbonate (GCC) Filler from Vietnam — Kantor Materials",
   description:
-    "Premium Vietnamese ground calcium carbonate (GCC) for plastics — the four-grade KC Series (ultrafine film grade to general filler), high whiteness, coated and uncoated, with TDS, per-lot COA, and Form D / Form AI origin. Paired with China-origin resin under one sourcing desk.",
+    "Premium Vietnamese ground calcium carbonate (GCC) for plastics — the four-grade KC Series (ultrafine film grade to general filler), high whiteness, coated and uncoated, with TDS, per-lot COA, and Form D / Form AI origin. Serving compounders in India, Indonesia, Thailand, and the Philippines. Paired with China-origin resin under one sourcing desk.",
   openGraph: {
     title: "Premium Calcium Carbonate (GCC) Filler — Kantor Materials",
     description:
@@ -25,7 +25,7 @@ const productSchema = {
   name: "Premium Vietnamese Ground Calcium Carbonate (GCC)",
   category: "Plastics Mineral Filler",
   description:
-    "High-whiteness ground calcium carbonate (GCC) powder for plastics modification — the Kantor KC Series: four fineness grades (D97 3.8–17 µm), coated (stearic-acid) or uncoated, supplied with TDS, per-lot COA, and Form D / Form AI certificate of origin.",
+    "High-whiteness ground calcium carbonate (GCC) powder for plastics modification — the Kantor KC Series: four fineness grades (D97 5.5–17 µm), coated (stearic-acid) or uncoated, supplied with TDS, per-lot COA, and Form D / Form AI certificate of origin.",
   brand: {
     "@type": "Brand",
     name: "Kantor Materials International",
@@ -33,9 +33,9 @@ const productSchema = {
   material: "Calcium Carbonate",
   additionalProperty: [
     { "@type": "PropertyValue", name: "Grades", value: "KC-4 / KC-6 / KC-10 / KC-17" },
-    { "@type": "PropertyValue", name: "Whiteness", value: "R457 ≥98 (KC-4, KC-6) · ≥97 (KC-10, KC-17)" },
-    { "@type": "PropertyValue", name: "CaCO₃ purity", value: "≥ 99%" },
-    { "@type": "PropertyValue", name: "Fineness", value: "D97 3.8 / 6 / 10 / 17 µm by grade" },
+    { "@type": "PropertyValue", name: "Whiteness", value: "≥ 98% (all grades) · Brightness R457 / ISO 2470 ≥ 95%" },
+    { "@type": "PropertyValue", name: "CaCO₃ purity", value: "≥ 98%" },
+    { "@type": "PropertyValue", name: "Fineness", value: "D97 5.5 / 6 / 10 / 17 µm by grade" },
     { "@type": "PropertyValue", name: "Surface treatment", value: "Coated (stearic acid) or uncoated" },
     { "@type": "PropertyValue", name: "Origin", value: "Northern Vietnam" },
   ],
@@ -57,9 +57,9 @@ const breadcrumbSchema = {
 
 const spec = [
   { k: "Grades", v: "KC-4 · KC-6 · KC-10 · KC-17 — a fineness ladder from ultrafine film grade to general filler" },
-  { k: "Whiteness", v: "R457 ≥98 (KC-4, KC-6) · ≥97 (KC-10, KC-17) — above typical mid-grade filler powder; confirmed per lot" },
-  { k: "CaCO₃ purity", v: "≥ 99% · Fe₂O₃ ≤ 0.02% · SiO₂ ≤ 0.2%" },
-  { k: "Fineness", v: "Top cut D97 3.8 / 6 / 10 / 17 µm by grade (D50 1.5–3.6 µm) · confirmed per lot on TDS" },
+  { k: "Whiteness", v: "≥ 98% (all grades) · Brightness (R457 / ISO 2470) ≥ 95% — above typical mid-grade filler powder; confirmed per lot" },
+  { k: "CaCO₃ purity", v: "≥ 98% · MgO ≤ 0.5% · Fe₂O₃ ≤ 0.05% · Acid-insoluble ≤ 0.5%" },
+  { k: "Fineness", v: "Top cut D97 5.5 / 6 / 10 / 17 µm by grade (D50 1.5–3.6 µm) · confirmed per lot on TDS" },
   { k: "Surface treatment", v: "Coated (stearic acid) or uncoated" },
   { k: "Forms", v: "Raw powder (lead product) · filler masterbatch on demand" },
   { k: "Origin", v: "Northern Vietnam (premium calcite belt) — vertically integrated, quarry to powder" },
@@ -104,6 +104,11 @@ const guides = [
     title: "India: Masterbatch ADD → Raw Powder",
     desc: "Why India's anti-dumping duty — and the countervailing duty recommended on top in June 2026 — is pushing compounders to raw GCC powder.",
     href: "/insights/india-vietnam-calcium-carbonate-filler-masterbatch-add-raw-powder-2026",
+  },
+  {
+    title: "Indonesia: Filler Masterbatch & Calpet",
+    desc: "Where premium Vietnamese GCC pays in Indonesia's calpet and masterbatch market — and how ATIGA Form D lands it at 0% duty.",
+    href: "/insights/filler-masterbatch-calpet-calcium-carbonate-plastics-indonesia",
   },
 ];
 
