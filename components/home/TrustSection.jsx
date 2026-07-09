@@ -72,7 +72,7 @@ export default function TrustSection() {
               OUR COMPOUNDING OPERATIONS
             </div>
             <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white mb-4 max-w-[800px] mx-auto leading-tight">
-              Our engineering compounds go where failure isn&apos;t an option.
+              Our engineering polymers go where failure isn&apos;t an option.
             </h2>
             <p className="font-sans text-base text-body-text max-w-[680px] mx-auto leading-relaxed">
               Validated in our own production lines — 60,000 MT/yr of
