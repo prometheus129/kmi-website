@@ -8,7 +8,7 @@ export const metadata = {
   title:
     "Engineering Polymers — Chinese Alternatives to Zytel, Ultramid, LNP — Kantor Materials",
   description:
-    "Chinese engineering polymer compounds — PA66, POM, PC, PEEK, PBT equivalent to DuPont Zytel, BASF Ultramid, SABIC LNP. 60,000 MT/yr compounding operations, OEM-validated.",
+    "Chinese engineering polymers — PA66, POM, PC, PEEK, PBT equivalent to DuPont Zytel, BASF Ultramid, SABIC LNP. 60,000 MT/yr compounding operations, OEM-validated.",
   openGraph: {
     title: "Engineering Polymers — Kantor Materials",
     description:
@@ -244,14 +244,14 @@ export default function MaterialsPage() {
                 Validated by Production.
               </h2>
               <p className="font-sans text-[15px] text-body-text leading-relaxed mb-5">
-                Our engineering compounds are manufactured in our compounding
-                operations with 60,000 MT annual capacity. Every compound is
+                Our engineering polymers are manufactured in our compounding
+                operations with 60,000 MT annual capacity. Every grade is
                 validated in our production lines before it reaches yours —
                 over 2 million finished goods manufactured annually with
                 these materials.
               </p>
               <p className="font-sans text-[15px] text-body-text leading-relaxed">
-                Tier 1 OEM clients — BYD, CATL, CALB — run these compounds in
+                Tier 1 OEM clients — BYD, CATL, CALB — run these grades in
                 their production. The same materials, the same quality control,
                 available to your specifications.
               </p>
@@ -297,7 +297,7 @@ export default function MaterialsPage() {
         <div className="max-w-[600px] mx-auto text-center relative z-10">
           <RevealDiv>
             <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-4">
-              Need a Specific Compound?
+              Need a Specific Grade?
             </h2>
             <p className="font-sans text-[15px] text-body-text mb-8">
               Send us your current material specification. We will evaluate
