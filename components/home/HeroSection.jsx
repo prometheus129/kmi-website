@@ -6,9 +6,9 @@ import TradeCorridorMap from "@/components/home/TradeCorridorMap";
 import { trackCTA } from "@/lib/tracking";
 
 const stats = [
-  { value: "98", label: "whiteness — KC Series GCC from our own production" },
+  { value: "98", label: "whiteness · ISO brightness ≥95 (R457), from our own production" },
+  { value: "252,000", label: "MT/year GCC capacity — scaling to ~970,000 by Q4 2027" },
   { value: "4", label: "KC Series grades, coated and uncoated" },
-  { value: "60,000", label: "MT/yr engineering compound capacity" },
 ];
 
 export default function HeroSection() {
