@@ -86,6 +86,11 @@ const applications = [
 
 const guides = [
   {
+    title: "Filler Economics Calculator",
+    desc: "See what a high-whiteness grade is worth on your line — the titanium-dioxide savings, on your own numbers.",
+    href: "/calcium-carbonate/filler-economics",
+  },
+  {
     title: "Coated vs. Uncoated: When to Use Which",
     desc: "Stearic-acid coating, dispersion, moisture pickup — and a practical rule for choosing each.",
     href: "/insights/coated-vs-uncoated-calcium-carbonate-when-to-use-which",
@@ -214,7 +219,13 @@ export default function CalciumCarbonatePage() {
               film, caps, light PVC). It is not a substitute for TiO₂ — CaCO₃
               extends titanium dioxide, it does not replace it. We will tell you
               where the grade earns its premium and where ordinary filler is the
-              right call.
+              right call.{" "}
+              <Link
+                href="/calcium-carbonate/filler-economics"
+                className="text-gold hover:text-gold-light underline underline-offset-2 transition-colors duration-200"
+              >
+                See what the extension is worth on your line →
+              </Link>
             </p>
           </RevealDiv>
         </div>
