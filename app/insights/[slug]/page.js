@@ -81,6 +81,7 @@ export default async function InsightArticlePage({ params }) {
   // article is not swept in.
   const gccSlugs = [
     "which-calcium-carbonate-grade-for-your-application",
+    "calcium-carbonate-whiteness-vs-iso-brightness",
     "coated-vs-uncoated-calcium-carbonate-when-to-use-which",
     "calcium-carbonate-filler-loading-rate-cost-savings",
     "calcium-carbonate-filler-brittleness-how-to-avoid",
