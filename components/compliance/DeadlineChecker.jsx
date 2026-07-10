@@ -159,7 +159,7 @@ export default function DeadlineChecker() {
               <span className="font-semibold text-white">
                 You flagged unverified supplier reports.
               </span>{" "}
-              After July 8, the data in those reports travels with your customs
+              Since July 8, the data in those reports travels with your customs
               entries — and a report that fails verification fails at the worst
               possible moment.{" "}
               <Link
@@ -185,7 +185,7 @@ export default function DeadlineChecker() {
             Want a human read on your actual documents?
           </h3>
           <p className="text-sm text-body-text leading-relaxed mb-4">
-            CertDesk runs a flat-fee July 8 Readiness Review: we review the
+            CertDesk runs a flat-fee Readiness Review: we review the
             certificates and test reports you have, map them against the
             requirements above, and hand you a prioritized gap list.
           </p>

@@ -13,6 +13,12 @@ const n = (s) => {
   const v = parseFloat(s);
   return Number.isFinite(v) ? v : 0;
 };
+// Percentages can't exceed their physical bound — typed values bypass the
+// input's max attribute, so clamp in the handler.
+const clampPct = (s, max) => {
+  const v = parseFloat(s);
+  return Number.isFinite(v) && v > max ? String(max) : s;
+};
 
 const labelCls = "block font-mono text-xs uppercase tracking-[2px] text-teal/80 mb-2";
 const inputCls =
@@ -122,7 +128,7 @@ export default function FillerEconomicsCalculator() {
         <div>
           <label className={labelCls} htmlFor="fe-tio2pct">Titanium-dioxide loading (% of product)</label>
           <input id="fe-tio2pct" type="number" min="0" max="99" step="0.1" inputMode="decimal"
-            value={tio2Pct} onChange={(e) => { markStarted(); setTio2Pct(e.target.value); }} className={inputCls} />
+            value={tio2Pct} onChange={(e) => { markStarted(); setTio2Pct(clampPct(e.target.value, 99)); }} className={inputCls} />
         </div>
         <div>
           <label className={labelCls} htmlFor="fe-tio2price">Your TiO₂ price (USD/MT)</label>
@@ -145,7 +151,7 @@ export default function FillerEconomicsCalculator() {
           </label>
           <input id="fe-disp" type="number" min="0" max="100" step="1" inputMode="decimal"
             placeholder="your lab's number, not ours" value={displacementPct}
-            onChange={(e) => setDisplacementPct(e.target.value)} className={inputCls} />
+            onChange={(e) => setDisplacementPct(clampPct(e.target.value, 100))} className={inputCls} />
           <p className="text-xs text-muted mt-2">
             Leave blank to see the full range. This is a number your lab verifies on your line.
           </p>
@@ -165,6 +171,12 @@ export default function FillerEconomicsCalculator() {
         <p className="text-xs text-muted mt-3">
           The value scales with how much you can displace. That amount is what a free sample proves on your line.
         </p>
+        {lever.perPointMt < 0 && (
+          <p className="text-xs text-gold mt-3">
+            At these numbers your filler costs more per kilogram than the TiO₂ it would displace, so the
+            TiO₂ lever doesn't pay — check the two prices. The table below is floored at $0.
+          </p>
+        )}
       </div>
 
       {/* SENSITIVITY TABLE */}

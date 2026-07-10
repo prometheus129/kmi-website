@@ -129,7 +129,14 @@ export default function FillerEconomicsPage() {
                   Kantor Materials produces its high-whiteness calcium carbonate (KC-Series, whiteness ≥98,
                   brightness ≥95) at the Yên Bái limestone belt in Vietnam and supplies it producer-direct. The
                   calculator uses your numbers and public pigment prices only — no Kantor cost or price is used
-                  or shown.
+                  or shown. Not sure which KC grade your line needs? The{" "}
+                  <a
+                    href="/calcium-carbonate/grade-selector"
+                    className="text-teal hover:text-teal-light underline underline-offset-2 transition-colors"
+                  >
+                    grade selector
+                  </a>{" "}
+                  answers that from your application in two clicks.
                 </p>
               </div>
             </section>

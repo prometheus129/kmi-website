@@ -50,7 +50,7 @@ export const RULES = [
     inForce: false,
     importOnly: true,
     headline:
-      "From July 8, 2026, imported consumer products subject to a CPSC rule must have certificate of compliance data filed electronically with customs at entry.",
+      "Since July 8, 2026, imported consumer products subject to a CPSC rule must have certificate of compliance data filed electronically with customs at entry.",
     detail:
       "Final rule 90 FR 1800 (amending 16 CFR part 1110). Applies to all covered imports — including former low-value parcels and mail (mail uses the CPSC Product Registry before arrival). Foreign Trade Zone entries follow on January 8, 2027. Your broker transmits the data, but you remain responsible for its accuracy.",
     documents: [
@@ -105,7 +105,7 @@ export const RULES = [
     headline:
       "Since August 29, 2025 there is no duty-free de minimis lane — shipments of any value clear through standard ACE entries.",
     detail:
-      "Executive Order 14324 suspended de minimis for all countries; Type 86 entries ended. Former sub-$800 parcels now flow through the same entry types where CPSC certificate eFiling attaches on July 8, 2026.",
+      "Executive Order 14324 suspended de minimis for all countries; Type 86 entries ended. Former sub-$800 parcels now flow through the same entry types where CPSC certificate eFiling has attached since July 8, 2026.",
     documents: [
       "Appropriate ACE entry type per shipment (your broker advises)",
       "Duty payment — postal shipments used per-item bands through February 28, 2026, ad valorem since",
@@ -160,7 +160,7 @@ export const RULES = [
     deadline: "2026-07-01",
     inForce: false,
     headline:
-      "From July 1, 2026, 12 product categories with intentionally added PFAS may only be sold in Connecticut if labeled and reported to CT DEEP.",
+      "Since July 1, 2026, 12 product categories with intentionally added PFAS may only be sold in Connecticut if labeled and reported to CT DEEP.",
     detail:
       "PA 24-59: apparel, carpets and rugs, cleaning products, cookware, cosmetics, dental floss, fabric treatments, juvenile products, menstruation products, textile furnishings, ski wax, upholstered furniture. This is a label-and-notify obligation — the full sales ban arrives January 1, 2028.",
     documents: [
@@ -281,6 +281,11 @@ export const RULES = [
 /**
  * Match rules for a category + list of state ids ("ALL" = nationwide).
  */
+/** A dated rule is in force once its deadline has arrived (midnight ET, same clock as daysUntil). */
+function deadlinePassed(deadline, now = new Date()) {
+  return Boolean(deadline) && new Date(`${deadline}T00:00:00-04:00`) <= now;
+}
+
 export function matchRules(categoryId, stateIds) {
   const nationwide = stateIds.includes("ALL");
   return RULES.filter((rule) => {
@@ -291,5 +296,11 @@ export function matchRules(categoryId, stateIds) {
       return nationwide || stateIds.includes(rule.state);
     }
     return true;
-  });
+  }).map((rule) =>
+    // Derive in-force from the deadline so passed deadlines age out of
+    // "Deadlines ahead" without hand-editing static flags.
+    rule.inForce || !deadlinePassed(rule.deadline)
+      ? rule
+      : { ...rule, inForce: true }
+  );
 }
