@@ -23,6 +23,7 @@ export default function sitemap() {
     { path: "/materials", changeFrequency: "monthly", priority: 0.7 },
     { path: "/calcium-carbonate", changeFrequency: "monthly", priority: 0.7 },
     { path: "/calcium-carbonate/filler-economics", changeFrequency: "monthly", priority: 0.8 },
+    { path: "/calcium-carbonate/grade-selector", changeFrequency: "monthly", priority: 0.8 },
     { path: "/privacy", changeFrequency: "yearly", priority: 0.3 },
     { path: "/terms", changeFrequency: "yearly", priority: 0.3 },
   ];

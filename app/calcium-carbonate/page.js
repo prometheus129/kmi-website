@@ -86,6 +86,11 @@ const applications = [
 
 const guides = [
   {
+    title: "Grade Selector",
+    desc: "Pick your application — film, masterbatch, pipe, injection — and get the right KC grade, with a free sample to qualify it.",
+    href: "/calcium-carbonate/grade-selector",
+  },
+  {
     title: "Filler Economics Calculator",
     desc: "See what a high-whiteness grade is worth on your line — the titanium-dioxide savings, on your own numbers.",
     href: "/calcium-carbonate/filler-economics",
