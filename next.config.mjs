@@ -19,6 +19,19 @@ const nextConfig = {
         destination: "/approach",
         permanent: true,
       },
+      // CertDesk paid-service pages retired (venture wound down, July 2026).
+      // Free checkers and guides remain; the priced-offer pages redirect to
+      // the hub so the 11 in-article links keep resolving.
+      {
+        source: "/compliance/services",
+        destination: "/compliance",
+        permanent: true,
+      },
+      {
+        source: "/compliance/verify-request",
+        destination: "/compliance",
+        permanent: true,
+      },
       {
         source: "/terminal",
         destination: "/polymer-compass",

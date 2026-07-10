@@ -166,14 +166,7 @@ export default function DeadlineChecker() {
                 href="/compliance/how-to-verify-supplier-test-report"
                 className="text-teal hover:text-teal-light"
               >
-                Verify them yourself
-              </Link>{" "}
-              or{" "}
-              <Link
-                href="/compliance/verify-request"
-                className="text-teal hover:text-teal-light"
-              >
-                have CertDesk do it
+                Here is how to verify them yourself
               </Link>
               .
             </p>
@@ -182,19 +175,20 @@ export default function DeadlineChecker() {
 
         <div className="p-6 rounded-lg bg-teal/[0.07] border border-teal/20">
           <h3 className="font-serif text-xl font-bold text-white mb-2">
-            Want a human read on your actual documents?
+            Not sure what a result above means for you?
           </h3>
           <p className="text-sm text-body-text leading-relaxed mb-4">
-            CertDesk runs a flat-fee Readiness Review: we review the
-            certificates and test reports you have, map them against the
-            requirements above, and hand you a prioritized gap list.
+            The emailed checklist maps each requirement to the documents it
+            expects. If something in your situation doesn't fit the screening —
+            an unusual product, a document you're unsure about — write to us
+            and we'll tell you straight.
           </p>
           <Link
-            href="/compliance/services"
-            onClick={() => trackCTA("cta_click", "checker_services", "/compliance/services")}
+            href="/inquiry"
+            onClick={() => trackCTA("cta_click", "checker_inquiry", "/inquiry")}
             className="inline-block bg-teal text-navy-deep font-sans font-semibold text-sm px-6 py-3 rounded hover:bg-teal-light transition-colors duration-200"
           >
-            See services and pricing
+            Ask us directly
           </Link>
         </div>
       </div>

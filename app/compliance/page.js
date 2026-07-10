@@ -11,7 +11,7 @@ import { formatDate } from "@/lib/insights";
 export const metadata = {
   title: "CertDesk — Product Compliance for Importers & Sellers | Kantor Materials",
   description:
-    "CPSC eFiling, CPC and GCC certificates, PFAS state rules, supplier test-report verification. Plain-English guides and a free 2026 deadline checker for small importers.",
+    "CPSC eFiling, CPC and GCC certificates, PFAS state rules, and how to verify supplier test reports. Plain-English guides and free checkers for small importers.",
   alternates: { canonical: "/compliance" },
 };
 
@@ -57,7 +57,7 @@ export default function CompliancePage() {
                 href="/compliance/cpsc-efiling-deadline-july-8-2026-importers-guide"
                 className="border border-white/20 text-white font-sans font-semibold text-sm px-7 py-3.5 rounded hover:border-teal/60 transition-colors duration-200"
               >
-                Start with the July 8 guide
+                Start with the eFiling guide
               </Link>
             </div>
           </RevealDiv>
@@ -97,20 +97,20 @@ export default function CompliancePage() {
 
           <section className="mt-16 p-6 lg:p-8 rounded-lg bg-teal/[0.07] border border-teal/20 max-w-[760px]">
             <h2 className="font-serif text-xl lg:text-2xl font-bold text-white mb-3">
-              Beyond the guides: review and verification, flat-fee
+              A question the guides don't answer?
             </h2>
             <p className="text-sm text-body-text leading-relaxed mb-4">
-              A $250 July 8 Readiness Review of the documents you have, $199
-              verification of a supplier's test report, or $499 to test the
-              material itself against its TDS through our affiliated polymer
-              materials lab. Scope confirmed before anything is billed.
+              The guides and checkers are free and cover the common cases. If
+              your situation doesn't fit — an unusual product, a document you're
+              not sure about — write to us and we'll tell you straight what it
+              needs, or that we're not the right desk for it.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
-                href="/compliance/services"
+                href="/inquiry"
                 className="inline-block bg-teal text-navy-deep font-sans font-semibold text-sm px-6 py-3 rounded hover:bg-teal-light transition-colors duration-200"
               >
-                See services and pricing
+                Ask us directly
               </Link>
               <Link
                 href="/compliance/deadline-checker"
