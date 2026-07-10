@@ -90,6 +90,8 @@ export default async function InsightArticlePage({ params }) {
     "india-vietnam-calcium-carbonate-filler-masterbatch-add-raw-powder-2026",
     "india-switch-masterbatch-to-gcc-powder-compounding",
     "india-masterbatch-anti-dumping-duty-rates-landed-cost-2026",
+    "india-masterbatch-vs-gcc-powder-duty-math-cvd-worked-example",
+    "india-cvd-vietnamese-masterbatch-cbic-notification-2026",
   ];
   const isGCC = gccSlugs.includes(slug);
 
