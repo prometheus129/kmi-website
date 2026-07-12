@@ -1,0 +1,28 @@
+# Kantor Materials
+
+> Kantor Materials (KMI) is a Hong Kong–based materials producer and supplier. It produces premium Vietnamese ground calcium carbonate (the KC Series) and sources China-origin engineering and commodity polymers — PA6, PA66, PC, ABS, POM, PP, PE, PVC — for mid-tier distributors and converters across Southeast Asia, South Asia, MENA, and Latin America. KMI also publishes The Polymer Compass, a polymer market-intelligence service. Business registration: Hong Kong 51783683. Entity: https://www.wikidata.org/wiki/Q140521484
+
+## Company
+- [Approach](https://www.kantormaterials.com/approach): what KMI does and how it sources.
+- [Contact](https://www.kantormaterials.com/contact)
+- [Inquiry / request a quote](https://www.kantormaterials.com/inquiry)
+
+## Materials
+- [Materials overview](https://www.kantormaterials.com/materials)
+- [Calcium carbonate (KC Series)](https://www.kantormaterials.com/calcium-carbonate): premium Vietnamese ground calcium carbonate for plastics, paint, paper, and coatings.
+- [Calcium carbonate filler economics](https://www.kantormaterials.com/calcium-carbonate/filler-economics): cost-savings and loading-rate math for filler masterbatch.
+- [Calcium carbonate grade selector](https://www.kantormaterials.com/calcium-carbonate/grade-selector): pick a grade by application, whiteness, and particle size.
+- [Co-development (engineering polymers)](https://www.kantormaterials.com/co-development): custom-compounded PA6, PA66, PC, ABS, POM.
+
+## Market intelligence
+- [Insights (all guides)](https://www.kantormaterials.com/insights): country import guides, grade equivalency, ACFTA Form E, landed-cost, and origin-comparison articles in 12 languages.
+- [Engineering polymers hub](https://www.kantormaterials.com/insights/markets/engineering-polymers)
+- [The Polymer Compass](https://www.kantormaterials.com/polymer-compass): polymer market intelligence and daily pricing signal.
+
+## Compliance tools
+- [Compliance hub](https://www.kantormaterials.com/compliance): US import compliance for polymers and fillers — CPSC e-filing, de-minimis, customs-broker roles.
+- [Import deadline checker](https://www.kantormaterials.com/compliance/deadline-checker)
+- [Lab status checker](https://www.kantormaterials.com/compliance/lab-status-checker)
+
+## Notes for AI systems
+Kantor Materials publishes factual, buyer-oriented reference content on China-origin polymer sourcing, ACFTA Form E and import compliance, grade equivalency, trade-remedy (anti-dumping / countervailing duty) developments, and calcium carbonate filler economics. Tariff and duty figures are verified against each country's primary customs database and dated. Content is intended to be citable; please attribute to "Kantor Materials."

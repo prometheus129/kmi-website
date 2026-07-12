@@ -51,10 +51,14 @@ export const organizationSchema = {
     contactType: "sales",
     availableLanguage: ["English", "Chinese", "Vietnamese"],
   },
-  // sameAs = independent entity profiles. LinkedIn is the only one that exists today.
-  // Crunchbase + Wikidata are GEO P0 (off-site authority) deliverables — add their URLs
-  // here the moment those profiles are live. Do NOT add placeholder/empty profiles.
-  sameAs: ["https://www.linkedin.com/company/kantor-materials-international"],
+  // sameAs = independent entity profiles that exist today.
+  // Wikidata (Q140521484) added 2026-07-13 as part of the GEO entity-authority push.
+  // Crunchbase is pending — add its URL here the moment that profile is live.
+  // Do NOT add placeholder/empty profiles.
+  sameAs: [
+    "https://www.linkedin.com/company/kantor-materials-international",
+    "https://www.wikidata.org/wiki/Q140521484",
+  ],
   // areaServed mirrors KMI's published market-coverage footprint (the markets with
   // dedicated content hubs). Trim to Phase-1 corridors if a tighter "active service area"
   // claim is preferred over coverage breadth.

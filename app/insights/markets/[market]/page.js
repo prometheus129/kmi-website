@@ -49,11 +49,11 @@ export default async function MarketHubPage({ params }) {
     "@type": "CollectionPage",
     name: `${hub.name} Polymer Market Intelligence`,
     description: hub.description,
-    url: `https://kantormaterials.com/insights/markets/${hub.slug}`,
+    url: `https://www.kantormaterials.com/insights/markets/${hub.slug}`,
     publisher: {
       "@type": "Organization",
       name: "Kantor Materials",
-      url: "https://kantormaterials.com",
+      url: "https://www.kantormaterials.com",
     },
     numberOfItems: articles.length,
   };
