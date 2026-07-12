@@ -13,7 +13,7 @@ import { getAllIssues } from "@/lib/terminal";
 export const metadata = {
   title: "Premium Calcium Carbonate & China Polymers | Kantor Materials",
   description:
-    "Producer of premium Vietnamese calcium carbonate (KC Series) and supplier of China-origin engineering and commodity polymers. One supplier, both sides of your formulation.",
+    "Producer of premium Vietnamese calcium carbonate (Kantor KC Series) and supplier of China-origin engineering and commodity polymers. One supplier, both sides of your formulation.",
   openGraph: {
     title:
       "Kantor Materials — Premium Calcium Carbonate & China-Origin Polymers",

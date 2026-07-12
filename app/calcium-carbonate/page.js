@@ -8,7 +8,7 @@ export const metadata = {
   title:
     "Premium Calcium Carbonate (GCC) Filler from Vietnam — Kantor Materials",
   description:
-    "Premium Vietnamese ground calcium carbonate (GCC) for plastics — the four-grade KC Series (ultrafine film grade to general filler), high whiteness, coated and uncoated, with TDS, per-lot COA, and Form D / Form AI origin. Serving compounders in India, Indonesia, Thailand, and the Philippines. Paired with China-origin resin from one supplier.",
+    "Premium Vietnamese ground calcium carbonate (GCC) for plastics — the four-grade Kantor KC Series (ultrafine film grade to general filler), high whiteness, coated and uncoated, with TDS, per-lot COA, and Form D / Form AI origin. Serving compounders in India, Indonesia, Thailand, and the Philippines. Paired with China-origin resin from one supplier.",
   openGraph: {
     title: "Premium Calcium Carbonate (GCC) Filler — Kantor Materials",
     description:

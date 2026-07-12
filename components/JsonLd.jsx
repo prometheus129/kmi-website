@@ -30,7 +30,7 @@ export const organizationSchema = {
   url: BASE_URL,
   logo: `${BASE_URL}/kantor-icon.png`,
   description:
-    "Producer of premium Vietnamese calcium carbonate (KC Series) and supplier of China-origin engineering and commodity polymers for industrial buyers across Asia and the Global South.",
+    "Producer of premium Vietnamese calcium carbonate (Kantor KC Series) and supplier of China-origin engineering and commodity polymers for industrial buyers across Asia and the Global South.",
   foundingDate: "2025",
   founder: {
     "@type": "Person",
