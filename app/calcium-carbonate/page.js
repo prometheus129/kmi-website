@@ -96,6 +96,11 @@ const guides = [
     href: "/calcium-carbonate/filler-economics",
   },
   {
+    title: "What “KC Grade” Calcium Carbonate Means",
+    desc: "“KC” is a supplier code, not a standard — how to read GCC grade codes by top cut (D97), whiteness, and coating rather than the label.",
+    href: "/insights/what-is-kc-grade-calcium-carbonate",
+  },
+  {
     title: "Coated vs. Uncoated: When to Use Which",
     desc: "Stearic-acid coating, dispersion, moisture pickup — and a practical rule for choosing each.",
     href: "/insights/coated-vs-uncoated-calcium-carbonate-when-to-use-which",
