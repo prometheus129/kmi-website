@@ -60,7 +60,7 @@ export default function LaneCards() {
                 </h3>
                 <p className="text-[15px] text-body-text leading-relaxed font-sans mb-6">
                   Chinese equivalents to DuPont Zytel, BASF Ultramid, SABIC
-                  LNP — compounded in our partner facilities. Match
+                  LNP — produced in our compounding operations. Match
                   Western-premium grades at Chinese cost.
                 </p>
                 <span className="text-sm text-white font-semibold font-sans inline-flex items-center gap-1.5 group-hover:text-teal transition-colors duration-200">

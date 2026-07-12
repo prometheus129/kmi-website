@@ -123,13 +123,14 @@ export default function ApproachPage() {
                 THE COMPANY
               </span>
               <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-6 leading-tight">
-                Hong Kong headquartered. China sourcing. Global South markets.
+                Hong Kong headquartered. Vietnam production. China sourcing.
               </h2>
               <p className="text-body-text text-[15px] leading-relaxed">
-                Kantor Materials is headquartered in Hong Kong with
-                sourcing and compounding operations in China. We serve polymer
-                distributors and converters across Asia, the Middle East, Latin
-                America, and Africa.
+                Kantor Materials is headquartered in Hong Kong, produces
+                calcium carbonate in Vietnam, and runs sourcing and
+                compounding operations in China. We serve polymer distributors
+                and converters across Asia, the Middle East, Latin America, and
+                Africa.
               </p>
             </RevealDiv>
 

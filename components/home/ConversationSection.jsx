@@ -193,20 +193,35 @@ export default function ConversationSection() {
                 />
               </div>
 
-              {/* Email */}
-              <div>
-                <label htmlFor="conv-email" className={labelClasses}>
-                  Email address *
-                </label>
-                <input
-                  id="conv-email"
-                  name="email"
-                  type="email"
-                  required
-                  autoComplete="email"
-                  className={inputClasses}
-                  placeholder="you@company.com"
-                />
+              {/* Email + WhatsApp */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="conv-email" className={labelClasses}>
+                    Email address *
+                  </label>
+                  <input
+                    id="conv-email"
+                    name="email"
+                    type="email"
+                    required
+                    autoComplete="email"
+                    className={inputClasses}
+                    placeholder="you@company.com"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="conv-whatsapp" className={labelClasses}>
+                    WhatsApp / phone — optional
+                  </label>
+                  <input
+                    id="conv-whatsapp"
+                    name="whatsapp"
+                    type="text"
+                    autoComplete="tel"
+                    className={inputClasses}
+                    placeholder="+62…"
+                  />
+                </div>
               </div>
 
               {error && (
