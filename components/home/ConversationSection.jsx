@@ -7,7 +7,7 @@ import { trackCTA, trackFormSubmit, getAttribution } from "@/lib/tracking";
 import RevealDiv from "@/components/RevealDiv";
 
 const samplePrompts = [
-  "I need coated GCC for PP filler masterbatch, 1250 mesh, high whiteness. Shipping to Manila.",
+  "Send me a free sample of coated GCC for PP filler masterbatch \u2014 1250 mesh, high whiteness, shipping to Manila.",
   "I need HDPE blow molding grade, MFI 0.35, for water tanks. Shipping to Ho Chi Minh City.",
   "What\u2019s the Chinese equivalent of LG Chem ME9180?",
 ];
