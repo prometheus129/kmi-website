@@ -9,13 +9,13 @@ faq:
   - question: "How do I verify a Chinese supplier's UL Yellow Card is genuine?"
     answer: "Ask for the supplier's UL file number (format E123456) and search it yourself on UL Product iQ (iq.ul.com) or UL Prospector (prospector.ul.com) — both are publicly accessible. Confirm the specific grade, color, and thickness ratings match what the supplier claims. Never accept a PDF Yellow Card alone: counterfeit and outdated cards circulate, and the live UL database is the only authoritative record. A legitimate UL-certified compounder provides the E-number immediately when asked."
   - question: "Why do polyamide datasheets show two sets of values — dry-as-molded and conditioned?"
-    answer: "Polyamides absorb atmospheric moisture, which plasticizes the polymer and changes its mechanical behavior. Datasheets therefore report properties dry-as-molded (DAM) and conditioned to equilibrium moisture (per ISO 1110 accelerated conditioning at 70°C/62% RH). The differences are large: unreinforced PA66 tensile modulus falls from roughly 3,000 MPa dry to roughly 1,100 MPa conditioned, and yield stress from about 85 to about 50 MPa; glass-reinforced grades lose less in relative terms — a PA66-GF30 drops around 30%. When comparing a Chinese TDS against your incumbent grade's datasheet, confirm both report the same state. A dry value compared against a conditioned value manufactures a performance gap that does not exist — and the reverse mismatch hides a real one."
+    answer: "Polyamides absorb atmospheric moisture, which plasticizes the polymer and changes its mechanical behavior. Datasheets therefore report properties dry-as-molded (DAM) and conditioned to equilibrium moisture (per ISO 1110 accelerated conditioning at 70°C/62% RH). The differences are large: unreinforced PA66 tensile modulus falls from roughly 3,000 MPa dry to roughly 1,100 MPa conditioned, and yield stress from about 85 to about 50 MPa; glass-reinforced grades lose less in relative terms — a PA66-GF30 drops around 30%. When comparing a Chinese TDS against your incumbent grade's datasheet, confirm both report the same state. A dry value compared against a conditioned value creates a performance gap that does not exist — and the reverse mismatch hides a real one."
   - question: "Can I compare a TDS tested to ASTM standards against one tested to ISO standards?"
     answer: "Not directly. ISO and ASTM methods use different specimen geometries, conditioning, and in some cases different units — notched Izod per ISO 180 is reported in kJ/m² while ASTM D256 reports J/m, and heat deflection temperature per ISO 75 versus ASTM D648 uses different specimen dimensions and orientations. Values from different test systems are not interchangeable numbers. Before concluding that two grades differ, request data to the same standard — most Chinese compounders serving export markets can supply ISO-basis data on request — and confirm melt flow conditions match too (PA66 melt volume rate is commonly tested at 275°C/5 kg; comparing against a different temperature or load is meaningless)."
   - question: "How is glass fiber content verified in a delivered engineering compound?"
     answer: "By ash testing — the sample is calcined and the residue weighed, per ISO 3451-1 (general method; ISO 3451-4 is the polyamide-specific part). Nominal '30% GF' on a label is not verification: actual loading in delivered lots can drift 28-32% across producers, which moves stiffness, shrinkage, and dimensional stability. Request the measured glass content on each lot's COA, not just the nominal figure, and specify a loading tolerance on the purchase order — ±1% is a reasonable requirement for structural parts from a quality compounder."
   - question: "What documentation package should accompany a supplier-switch submission to a customer quality team?"
-    answer: "A complete package contains: the UL Yellow Card verified against UL's live database; a recent-lot COA; the SDS; a REACH declaration with accredited-lab test report if the supply chain touches the EU; a RoHS Declaration of Conformity referencing Directive 2011/65/EU as amended by (EU) 2015/863 (all ten substances) for electrical products; an FDA compliance letter or LFGB migration report for food contact; a GRS Transaction Certificate where recycled content is claimed; the trial production report with process parameters; and First Article Inspection results comparing the new material to the incumbent. Incomplete paperwork, more often than material performance, is what sinks supplier-change submissions."
+    answer: "A complete package contains: the UL Yellow Card verified against UL's live database; a recent-lot COA; the SDS; a REACH declaration with accredited-lab test report if the supply chain touches the EU; a RoHS Declaration of Conformity referencing Directive 2011/65/EU as amended by (EU) 2015/863 (all ten substances) for electrical products; an FDA compliance letter or LFGB migration report for food contact; a GRS Transaction Certificate where recycled content is claimed; the trial production report with process parameters; and First Article Inspection results comparing the new material to the incumbent. Incomplete documentation, more often than material performance, is what causes supplier-change submissions to fail."
 ---
 
 Most conversations about switching engineering polymer suppliers start with price. A Chinese compounder quotes PA66-GF30 at 15-20% below your current BASF- or Celanese/Zytel-sourced material, and someone in procurement asks the obvious question: why are we not switching?
@@ -30,7 +30,7 @@ This guide covers the certification landscape that governs engineering polymer s
 
 The UL Yellow Card is a standardized document issued by UL (Underwriters Laboratories) that certifies the properties of a specific plastic material from a specific manufacturer. It is the single most common certification referenced in OEM specification sheets for electrical, electronic, and appliance components.
 
-Each Yellow Card is tied to a unique UL file number (format: E123456). The card lists tested properties for specific grades, colors, and thicknesses. When your customer's spec sheet says "material must be UL94 V-0 at 1.5mm," they are referencing data that lives on a Yellow Card.
+Each Yellow Card is tied to a unique UL file number (format: E123456). The card lists tested properties for specific grades, colors, and thicknesses. When your customer's spec sheet says "material must be UL94 V-0 at 1.5mm," they are referencing data recorded on a Yellow Card.
 
 ### What It Certifies
 
@@ -227,13 +227,13 @@ Your customer's quality team will typically require:
 - Trial production report with dimensional data and process parameters
 - First Article Inspection (FAI) results comparing new material to current material
 
-Present this as a complete package. Incomplete documentation — more often than any material shortfall — is what sinks supplier change requests with customer quality teams.
+Present this as a complete package. Incomplete documentation — more often than any material shortfall — is what causes supplier change requests to fail with customer quality teams.
 
-## Red Flags: When to Walk Away
+## Warning Signs: When to Reject a Supplier
 
 Not every Chinese compounder operates at the certification level required for OEM supply chains. Watch for these warning signs:
 
-**No UL file number available.** If the supplier says they have "equivalent" flame retardant performance but no UL file, they have not been independently tested. For any application requiring UL compliance, this is a non-starter.
+**No UL file number available.** If the supplier says they have "equivalent" flame retardant performance but no UL file, they have not been independently tested. For any application requiring UL compliance, this disqualifies the material.
 
 **Inconsistent COA data.** Request COAs from three different production lots. If MFI, tensile strength, or impact values vary by more than 15% between lots, the production process is not adequately controlled. Lot-to-lot consistency is where the gap between a quality compounder and a price-focused operation becomes visible.
 
@@ -253,7 +253,7 @@ Ask for the supplier's UL file number (format E123456) and search it yourself on
 
 ### Why do polyamide datasheets show two sets of values — dry-as-molded and conditioned?
 
-Polyamides absorb atmospheric moisture, which plasticizes the polymer and changes its mechanical behavior. Datasheets therefore report properties dry-as-molded (DAM) and conditioned to equilibrium moisture (per ISO 1110 accelerated conditioning at 70°C/62% RH). The differences are large: unreinforced PA66 tensile modulus falls from roughly 3,000 MPa dry to roughly 1,100 MPa conditioned, and yield stress from about 85 to about 50 MPa; glass-reinforced grades lose less in relative terms — a PA66-GF30 drops around 30%. When comparing a Chinese TDS against your incumbent grade's datasheet, confirm both report the same state. A dry value compared against a conditioned value manufactures a performance gap that does not exist — and the reverse mismatch hides a real one.
+Polyamides absorb atmospheric moisture, which plasticizes the polymer and changes its mechanical behavior. Datasheets therefore report properties dry-as-molded (DAM) and conditioned to equilibrium moisture (per ISO 1110 accelerated conditioning at 70°C/62% RH). The differences are large: unreinforced PA66 tensile modulus falls from roughly 3,000 MPa dry to roughly 1,100 MPa conditioned, and yield stress from about 85 to about 50 MPa; glass-reinforced grades lose less in relative terms — a PA66-GF30 drops around 30%. When comparing a Chinese TDS against your incumbent grade's datasheet, confirm both report the same state. A dry value compared against a conditioned value creates a performance gap that does not exist — and the reverse mismatch hides a real one.
 
 ### Can I compare a TDS tested to ASTM standards against one tested to ISO standards?
 
@@ -265,7 +265,7 @@ By ash testing — the sample is calcined and the residue weighed, per ISO 3451-
 
 ### What documentation package should accompany a supplier-switch submission to a customer quality team?
 
-A complete package contains: the UL Yellow Card verified against UL's live database; a recent-lot COA; the SDS; a REACH declaration with accredited-lab test report if the supply chain touches the EU; a RoHS Declaration of Conformity referencing Directive 2011/65/EU as amended by (EU) 2015/863 (all ten substances) for electrical products; an FDA compliance letter or LFGB migration report for food contact; a GRS Transaction Certificate where recycled content is claimed; the trial production report with process parameters; and First Article Inspection results comparing the new material to the incumbent. Incomplete paperwork, more often than material performance, is what sinks supplier-change submissions.
+A complete package contains: the UL Yellow Card verified against UL's live database; a recent-lot COA; the SDS; a REACH declaration with accredited-lab test report if the supply chain touches the EU; a RoHS Declaration of Conformity referencing Directive 2011/65/EU as amended by (EU) 2015/863 (all ten substances) for electrical products; an FDA compliance letter or LFGB migration report for food contact; a GRS Transaction Certificate where recycled content is claimed; the trial production report with process parameters; and First Article Inspection results comparing the new material to the incumbent. Incomplete documentation, more often than material performance, is what causes supplier-change submissions to fail.
 
 ---
 
