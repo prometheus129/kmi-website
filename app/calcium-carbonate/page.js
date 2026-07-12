@@ -68,7 +68,7 @@ const spec = [
 const applications = [
   {
     name: "Filler masterbatch",
-    desc: "The cleanest fit. High-whiteness fine powder for compounders making CaCO₃ masterbatch for sacks, film, and sheet.",
+    desc: "The most direct fit. High-whiteness fine powder for compounders making CaCO₃ masterbatch for sacks, film, and sheet.",
   },
   {
     name: "BOPP / BOPET & blown film",
@@ -80,7 +80,7 @@ const applications = [
   },
   {
     name: "White HDPE & closures",
-    desc: "Opaque-white bottles, caps, and closures — the segment where whiteness genuinely earns its premium.",
+    desc: "Opaque-white bottles, caps, and closures — the segment where the whiteness premium is genuinely worth paying.",
   },
 ];
 
@@ -102,7 +102,7 @@ const guides = [
   },
   {
     title: "Loading Rate & Cost Savings",
-    desc: "How far you can push CaCO₃ loading before properties give — and where the real cost savings sit.",
+    desc: "How much CaCO₃ you can load before properties fall — and where the real cost savings are.",
     href: "/insights/calcium-carbonate-filler-loading-rate-cost-savings",
   },
   {
@@ -117,7 +117,7 @@ const guides = [
   },
   {
     title: "Indonesia: Filler Masterbatch & Calpet",
-    desc: "Where premium Vietnamese GCC pays in Indonesia's calpet and masterbatch market — and how ATIGA Form D lands it at 0% duty.",
+    desc: "Where premium Vietnamese GCC pays in Indonesia's calpet and masterbatch market — and how ATIGA Form D brings it in at 0% duty.",
     href: "/insights/filler-masterbatch-calpet-calcium-carbonate-plastics-indonesia",
   },
 ];
@@ -220,11 +220,11 @@ export default function CalciumCarbonatePage() {
               ))}
             </div>
             <p className="font-sans text-[13px] text-muted leading-relaxed mt-4">
-              Whiteness sells the white-and-opaque segment (masterbatch, white
-              film, caps, light PVC). It is not a substitute for TiO₂ — CaCO₃
+              Whiteness matters most in the white-and-opaque segment (masterbatch,
+              white film, caps, light PVC). It is not a substitute for TiO₂ — CaCO₃
               extends titanium dioxide, it does not replace it. We will tell you
-              where the grade earns its premium and where ordinary filler is the
-              right call.{" "}
+              where the grade is worth its premium and where ordinary filler is the
+              right choice.{" "}
               <Link
                 href="/calcium-carbonate/filler-economics"
                 className="text-gold hover:text-gold-light underline underline-offset-2 transition-colors duration-200"

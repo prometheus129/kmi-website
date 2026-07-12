@@ -13,7 +13,7 @@
 export const GRADES = {
   "KC-4": { id: "KC-4", d50: "~1.5 µm", d97: "~5.5 µm", cut: "Finest cut" },
   "KC-6": { id: "KC-6", d50: "~1.7 µm", d97: "~6 µm", cut: "Fine" },
-  "KC-10": { id: "KC-10", d50: "~2.0 µm", d97: "~10 µm", cut: "Workhorse middle" },
+  "KC-10": { id: "KC-10", d50: "~2.0 µm", d97: "~10 µm", cut: "General-purpose middle" },
   "KC-17": { id: "KC-17", d50: "~3.6 µm", d97: "~17 µm", cut: "Coarse & economical" },
 };
 
@@ -35,7 +35,7 @@ export const SHARED_SPEC = [
  */
 export const COATING_NOTES = {
   coated:
-    "Usually coated (stearic acid) here — thin gauges, fine grades, and high loadings in PP/PE are where coating pays off.",
+    "Usually coated (stearic acid) here — thin gauges, fine grades, and high loadings in PP/PE are where coating gives the most benefit.",
   uncoated:
     "Often runs uncoated — thick sections at moderate loadings usually disperse acceptably without coating; confirm against your process.",
   either:
@@ -75,7 +75,7 @@ export const APPLICATIONS = [
     group: "Masterbatch",
     grade: "KC-10",
     coating: "coated",
-    why: "The workhorse middle grade — it balances loading and dispersion for general end-uses.",
+    why: "The general-purpose middle grade — it balances loading and dispersion for general end-uses.",
     refine: {
       question: "Thinnest product this masterbatch ends up in?",
       options: [
@@ -110,7 +110,7 @@ export const APPLICATIONS = [
     group: "Sheet, tape & injection",
     grade: "KC-10",
     coating: "either",
-    why: "The workhorse middle grade — enough fineness for most compounds, economical at high loadings.",
+    why: "The general-purpose middle grade — enough fineness for most compounds, economical at high loadings.",
     refine: {
       question: "Wall thickness?",
       options: [
@@ -119,7 +119,7 @@ export const APPLICATIONS = [
           label: "Standard / thick wall",
           grade: "KC-10",
           default: true,
-          why: "Standard walls take the workhorse middle grade — enough fineness for most compounds, economical at high loadings.",
+          why: "Standard walls suit the general-purpose middle grade — enough fineness for most compounds, economical at high loadings.",
         },
         {
           id: "thin_wall",
@@ -177,7 +177,7 @@ export const APPLICATIONS = [
     group: "Pipe, profile & other",
     grade: "KC-17",
     coating: "either",
-    why: "Where the product doesn't demand a fine top cut, the coarser grade does the job at the best economics.",
+    why: "Where the product doesn't demand a fine top cut, the coarser grade performs well at the lowest cost.",
   },
   // Fallback
   {

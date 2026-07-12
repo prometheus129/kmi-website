@@ -159,7 +159,7 @@ export default function GradeSelector() {
           </p>
           <p className="text-sm lg:text-base text-body-text leading-relaxed">{rec.why}</p>
           <p className="text-xs text-muted mt-3">
-            A starting point, not a verdict — qualify it on your own line before you commit. That is what the free
+            A starting point, not a final answer — qualify it on your own line before you commit. That is what the free
             sample below is for.
           </p>
         </div>
@@ -169,7 +169,7 @@ export default function GradeSelector() {
             Let's pick it together
           </p>
           <p className="text-sm lg:text-base text-body-text leading-relaxed">
-            If your application isn't on the list, the grade is still a straightforward call — it follows your
+            If your application isn't on the list, the grade is still a straightforward decision — it follows your
             product's gauge and surface demands. Request a sample below and reply with your application, gauge or
             wall thickness, and the spec you run today; we'll recommend the grade and send it with a per-lot COA.
           </p>
@@ -240,7 +240,7 @@ export default function GradeSelector() {
         </div>
         <p className="text-xs text-muted mt-3 leading-relaxed">
           Values typical, confirmed per lot on the certificate of analysis. The accredited heavy-metals panel is in
-          progress and travels with the COA once complete — relevant if your end-use is food-contact.
+          progress and will be supplied with the COA once complete — relevant if your end-use is food-contact.
         </p>
       </div>
 
@@ -318,7 +318,7 @@ export default function GradeSelector() {
           href="/calcium-carbonate/filler-economics"
           className="block p-5 rounded-lg bg-white/[0.02] border border-white/10 hover:border-gold/30 transition-colors duration-200 group"
         >
-          <p className="font-mono text-[10px] uppercase tracking-[1.5px] text-muted mb-2">White line?</p>
+          <p className="font-mono text-[10px] uppercase tracking-[1.5px] text-muted mb-2">Running a white product?</p>
           <p className="text-sm text-white font-semibold group-hover:text-gold-light transition-colors">
             Run the TiO₂ economics on your own numbers →
           </p>

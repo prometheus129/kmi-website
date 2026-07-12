@@ -35,7 +35,7 @@ const faq = [
   {
     question: "Why does filler whiteness matter for titanium dioxide extension?",
     answer:
-      "Higher filler whiteness raises the ceiling on how much TiO₂ you can pull before the finished product's whiteness or hiding falls out of spec. An ordinary 90–96% grade limits displacement; a ≥98 whiteness grade lets you push further — which is where the savings come from, because the pigment you stop buying is worth far more than the filler you add.",
+      "Higher filler whiteness raises the ceiling on how much TiO₂ you can remove before the finished product's whiteness or hiding falls out of spec. An ordinary 90–96% grade limits displacement; a ≥98 whiteness grade lets you displace more — which is where the savings come from, because the pigment you stop buying is worth far more than the filler you add.",
   },
   {
     question: "How do I confirm the savings on my own line?",
@@ -90,7 +90,7 @@ export default function FillerEconomicsPage() {
               On a white product, calcium carbonate does not replace titanium dioxide — it{" "}
               <span className="text-white">extends</span> it. TiO₂ carries the opacity; a high-whiteness,
               fine filler lets you displace a portion of it while holding whiteness and hiding in spec. The
-              higher the filler's whiteness, the further you can push — and the pigment you stop buying is
+              higher the filler's whiteness, the more you can displace — and the pigment you stop buying is
               worth far more than the filler you add.
             </p>
             <p className="text-body-text text-base leading-relaxed mb-12">
@@ -114,9 +114,9 @@ export default function FillerEconomicsPage() {
               </h2>
               <div className="space-y-5 text-body-text text-base leading-relaxed">
                 <p>
-                  <span className="text-white font-semibold">Titanium-dioxide extension</span> is the big
+                  <span className="text-white font-semibold">Titanium-dioxide extension</span> is the larger
                   lever on any white line. Because TiO₂ is the most expensive input in the formula, displacing
-                  even a modest share of it dwarfs the cost of the filler that takes its place. A ≥98 whiteness
+                  even a modest share of it saves far more than the cost of the filler that takes its place. A ≥98 whiteness
                   grade is what raises how much you can displace before the finished product drifts out of spec.
                 </p>
                 <p>

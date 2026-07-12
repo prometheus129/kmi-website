@@ -161,7 +161,7 @@ export default function FillerEconomicsCalculator() {
       {/* LEVERAGE */}
       <div className="p-6 rounded-lg bg-gold/[0.08] border-l-2 border-gold/50 border-y border-r border-white/10">
         <p className="font-mono text-[11px] uppercase tracking-[2px] text-gold/80 mb-3">
-          Leverage — what each point of displacement is worth
+          What each point of displacement is worth
         </p>
         <p className="text-xl lg:text-2xl text-white font-serif leading-snug">
           Each <span className="text-gold font-mono">1 point</span> of TiO₂ you displace ≈{" "}
@@ -173,8 +173,8 @@ export default function FillerEconomicsCalculator() {
         </p>
         {lever.perPointMt < 0 && (
           <p className="text-xs text-gold mt-3">
-            At these numbers your filler costs more per kilogram than the TiO₂ it would displace, so the
-            TiO₂ lever doesn't pay — check the two prices. The table below is floored at $0.
+            At these numbers your filler costs more per kilogram than the TiO₂ it would displace, so
+            TiO₂ displacement loses money — check the two prices. The table below shows $0 instead of negative values.
           </p>
         )}
       </div>
@@ -259,7 +259,7 @@ export default function FillerEconomicsCalculator() {
             </p>
             <p className="text-xs text-muted mt-2 leading-relaxed">
               This is the value of filling <em>at all</em> — you likely already capture most of it with your current filler.
-              The switch-specific gain is only the filler price difference; the real edge is the TiO₂ lever above.
+              The switch-specific gain is only the filler price difference; the main saving is the TiO₂ lever above.
             </p>
           </div>
         )}
@@ -281,7 +281,7 @@ export default function FillerEconomicsCalculator() {
               <h3 className="font-serif text-xl lg:text-2xl font-bold text-white mb-1">Prove it on your own line</h3>
               <p className="text-sm text-body-text leading-relaxed">
                 A free sample (under a tonne) with a per-lot certificate of analysis, dispatched within 48 hours. Your
-                numbers above come with it, so we can talk your economics — not a claim.
+                numbers above come with it, so we can discuss your actual economics — not a generic claim.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

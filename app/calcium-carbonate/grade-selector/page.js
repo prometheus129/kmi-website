@@ -25,7 +25,7 @@ const faq = [
   {
     question: "How does the grade selector choose a calcium carbonate grade?",
     answer:
-      "It applies the same rule a technical rep would: match the top cut (D97) to the product's gauge and surface demands. Thinner and glossier products need a finer, tighter cut (KC-4, KC-6); thicker, less surface-critical products run better economics on a coarser grade (KC-10, KC-17). Defects come from the coarse tail of the particle-size distribution, so the top cut — not the average size — is the number that predicts them.",
+      "It applies the same rule a technical rep would: match the top cut (D97) to the product's gauge and surface demands. Thinner and glossier products need a finer, tighter cut (KC-4, KC-6); thicker, less surface-critical products are more economical on a coarser grade (KC-10, KC-17). Defects come from the coarse tail of the particle-size distribution, so the top cut — not the average size — is the number that predicts them.",
   },
   {
     question: "What is the difference between KC-4, KC-6, KC-10, and KC-17?",
@@ -40,12 +40,12 @@ const faq = [
   {
     question: "Do I need coated or uncoated calcium carbonate?",
     answer:
-      "That is a separate decision from the grade number — it follows your loading, gauge, and dispersion process. The rule of thumb: the higher the loading, the thinner the product, and the finer the grade, the more a stearic-acid coating pays off. For low loadings in thick products, uncoated is usually fine. Every KC grade is available both ways.",
+      "That is a separate decision from the grade number — it follows your loading, gauge, and dispersion process. The general rule: the higher the loading, the thinner the product, and the finer the grade, the more benefit a stearic-acid coating gives. For low loadings in thick products, uncoated is usually fine. Every KC grade is available both ways.",
   },
   {
     question: "What if my application is not listed?",
     answer:
-      "Send the application, the gauge or wall thickness, and the spec you run today — the grade is a straightforward call from those three. Request a sample through the selector and reply with the details, or use the inquiry page; we will recommend the grade and send a free sample with a per-lot COA to qualify on your equipment.",
+      "Send the application, the gauge or wall thickness, and the spec you run today — the grade follows directly from those three. Request a sample through the selector and reply with the details, or use the inquiry page; we will recommend the grade and send a free sample with a per-lot COA to qualify on your equipment.",
   },
 ];
 
@@ -94,7 +94,7 @@ export default function GradeSelectorPage() {
             <p className="text-body-text text-base lg:text-lg leading-relaxed mb-4">
               Grade selection is a <span className="text-white">particle-size decision</span>: match the top cut
               (D97) to your product's gauge. The thinner and glossier the product, the finer the grade — a coarse
-              particle a pipe wall never notices becomes a gel, speck, or tear in a thin film. Whiteness does not
+              particle that causes no problem in a pipe wall becomes a gel, speck, or tear in a thin film. Whiteness does not
               enter the choice: every grade in the KC Series runs whiteness ≥98 and ISO brightness ≥95.
             </p>
             <p className="text-body-text text-base leading-relaxed mb-12">
@@ -114,7 +114,7 @@ export default function GradeSelectorPage() {
                 The selection logic
               </p>
               <h2 className="font-serif text-2xl lg:text-3xl font-bold text-white mb-6 leading-snug">
-                Top cut beats average — defects live in the coarse tail
+                Top cut matters more than the average — defects come from the coarse tail
               </h2>
               <div className="space-y-5 text-body-text text-base leading-relaxed">
                 <p>
@@ -125,7 +125,7 @@ export default function GradeSelectorPage() {
                   surface-critical the product, the tighter the top cut it needs.
                 </p>
                 <p>
-                  It is also why "just use the finest grade everywhere" is the wrong instinct. An ultrafine grade in
+                  It is also why "just use the finest grade everywhere" is a mistake. An ultrafine grade in
                   a thick pipe wall adds cost and can make dispersion harder — finer particles agglomerate more —
                   without improving the part. The right grade is the coarsest one your product's gauge tolerates,
                   at the best economics.
