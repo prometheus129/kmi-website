@@ -53,7 +53,7 @@ export default function ResponseExample() {
             <p className="font-sans text-base text-body-text leading-relaxed max-w-[680px] mx-auto mb-4">
               A materials purchase decides on five questions: grade match,
               total landed cost, regulatory requirements, supplier
-              reliability, quality history. Our desk answers all five in
+              reliability, quality history. Our team answers all five in
               one response — for our minerals and for polymers alike.
             </p>
             <p className="font-sans text-sm text-muted leading-relaxed max-w-[600px] mx-auto">

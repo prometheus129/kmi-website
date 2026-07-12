@@ -44,14 +44,14 @@ export default function HeroSection() {
             <br />
             from our own production.
             <br />
-            Polymers from the same desk.
+            Polymers from the same supplier.
           </h1>
           <p className="font-sans text-lg lg:text-xl text-body-text leading-relaxed max-w-[640px] mx-auto mb-10">
             Kantor Materials produces the KC Series — high-whiteness ground
             calcium carbonate, coated and uncoated — through our vertically
-            integrated Vietnamese operation. Engineering and commodity
-            polymers come from the same China desk. One relationship, both
-            sides of your formulation.
+            integrated Vietnamese operation. China-origin engineering and
+            commodity polymers come from the same supplier. One relationship,
+            both sides of your formulation.
           </p>
 
           {/* CTA cluster */}

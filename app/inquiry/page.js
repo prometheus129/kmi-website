@@ -26,7 +26,7 @@ export default function InquiryPage() {
         <div className="max-w-[1200px] mx-auto text-center">
           <RevealDiv>
             <span className="font-sans text-[10px] font-bold uppercase tracking-[3px] text-teal mb-4 block">
-              MINERALS &amp; POLYMERS DESK
+              MINERALS &amp; POLYMERS INQUIRY
             </span>
             <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white mb-6 max-w-3xl mx-auto leading-tight">
               Describe what you need.

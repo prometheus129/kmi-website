@@ -29,7 +29,7 @@ const offices = [
   {
     region: "Shenzhen",
     role: "Sourcing Operations",
-    detail: "China supply desk & merchant evaluation",
+    detail: "China supply team & merchant evaluation",
   },
   {
     region: "Ho Chi Minh City",

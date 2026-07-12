@@ -51,7 +51,7 @@ export default function ThreeTiers() {
         <RevealDiv>
           <div className="text-center mb-12">
             <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-4">
-              HOW THE DESK WORKS
+              HOW IT WORKS
             </div>
             <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white leading-tight max-w-[800px] mx-auto">
               Technical Answers Within 24 Hours.

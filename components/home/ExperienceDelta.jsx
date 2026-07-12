@@ -44,7 +44,7 @@ export default function ExperienceDelta() {
               comes from the material we ship.
             </p>
             <h2 className="font-serif text-3xl lg:text-[40px] font-bold text-white leading-tight">
-              The desk is free to use.
+              The service is free to use.
             </h2>
           </div>
         </RevealDiv>

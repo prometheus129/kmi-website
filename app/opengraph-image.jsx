@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Kantor Materials — Your China Polymer Desk";
+export const alt = "Kantor Materials — Premium Calcium Carbonate & Polymers, One Supplier";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -80,7 +80,7 @@ export default function Image() {
             marginBottom: "16px",
           }}
         >
-          POLYMER SOURCING INTELLIGENCE
+          MINERALS &amp; POLYMERS
         </div>
 
         {/* Headline */}
@@ -94,9 +94,9 @@ export default function Image() {
             marginBottom: "24px",
           }}
         >
-          Your China
+          Premium calcium carbonate,
           <br />
-          <span style={{ color: "#3AADAD" }}>polymer desk.</span>
+          <span style={{ color: "#3AADAD" }}>polymers from one supplier.</span>
         </div>
 
         {/* Subline */}
@@ -108,8 +108,8 @@ export default function Image() {
             maxWidth: "700px",
           }}
         >
-          Matched grades, current pricing, and documentation for polymer
-          distributors across emerging markets.
+          High-whiteness GCC from our own Vietnamese production, plus
+          China-origin polymers — matched grades, pricing, and documentation.
         </div>
 
         {/* Bottom accent line */}

@@ -73,7 +73,7 @@ export default function PrivacyPage() {
                 </li>
                 <li>Respond to pricing inquiries and contact form submissions</li>
                 <li>
-                  Provide procurement services when you engage our sourcing desk
+                  Provide procurement services when you engage our sourcing team
                 </li>
                 <li>
                   Improve our website, content, and services based on usage

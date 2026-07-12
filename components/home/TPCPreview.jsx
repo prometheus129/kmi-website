@@ -56,7 +56,7 @@ export default function TPCPreview({ latestIssue }) {
             <p className="font-sans text-base text-body-text leading-relaxed mb-4">
               Grade substitution analysis, price spreads, and trade-policy
               events across the markets we serve. The same intelligence
-              behind our sourcing desk.
+              behind our sourcing team.
             </p>
             <p className="font-sans text-sm text-muted leading-relaxed mb-8">
               Know when a duty, a discontinuation, or a price spread changes

@@ -27,12 +27,12 @@ export default function CompliancePage() {
           <RevealDiv>
             <CertDeskMark size="lg" linked={false} />
             <h1 className="font-serif text-3xl lg:text-5xl font-bold text-white mt-6 mb-5 leading-tight max-w-[760px]">
-              The compliance desk for small importers and sellers.
+              The compliance service for small importers and sellers.
             </h1>
             <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-[680px] mb-6">
               Certificates, test reports, and the rules behind them — explained
               in plain English, checked against primary sources, and backed by
-              a desk that verifies materials for a living.
+              a team that verifies materials for a living.
             </p>
             <div className="mb-8">
               <DeadlineCountdown
@@ -103,7 +103,7 @@ export default function CompliancePage() {
               The guides and checkers are free and cover the common cases. If
               your situation doesn't fit — an unusual product, a document you're
               not sure about — write to us and we'll tell you straight what it
-              needs, or that we're not the right desk for it.
+              needs, or that we're not the right team for it.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link

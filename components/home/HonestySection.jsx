@@ -39,7 +39,7 @@ export default function HonestySection({ bg = "bg-navy", textureOpacity = 0.035,
                 </h2>
                 <p className="font-sans text-base text-body-text leading-relaxed">
                   We produce minerals, source polymers, and manage execution.
-                  On the desk we match grades and verify documents. Here is
+                  Our team matches grades and verifies documents. Here is
                   what each one cannot guarantee.
                 </p>
               </div>

@@ -8,11 +8,11 @@ export const metadata = {
   title:
     "Premium Calcium Carbonate (GCC) Filler from Vietnam — Kantor Materials",
   description:
-    "Premium Vietnamese ground calcium carbonate (GCC) for plastics — the four-grade KC Series (ultrafine film grade to general filler), high whiteness, coated and uncoated, with TDS, per-lot COA, and Form D / Form AI origin. Serving compounders in India, Indonesia, Thailand, and the Philippines. Paired with China-origin resin under one sourcing desk.",
+    "Premium Vietnamese ground calcium carbonate (GCC) for plastics — the four-grade KC Series (ultrafine film grade to general filler), high whiteness, coated and uncoated, with TDS, per-lot COA, and Form D / Form AI origin. Serving compounders in India, Indonesia, Thailand, and the Philippines. Paired with China-origin resin from one supplier.",
   openGraph: {
     title: "Premium Calcium Carbonate (GCC) Filler — Kantor Materials",
     description:
-      "High-whiteness Vietnamese GCC powder (coated + uncoated) for masterbatch, film, and PVC — documented and paired with China-origin resin under one desk.",
+      "High-whiteness Vietnamese GCC powder (coated + uncoated) for masterbatch, film, and PVC — documented and paired with China-origin resin from one supplier.",
   },
   alternates: { canonical: "/calcium-carbonate" },
 };
@@ -147,14 +147,14 @@ export default function CalciumCarbonatePage() {
             <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-[1000px]">
               Premium Vietnamese calcium carbonate,
               <br className="hidden lg:block" />
-              {" "}under one desk.
+              {" "}resin and filler from one supplier.
             </h1>
             <p className="font-sans text-lg text-body-text leading-relaxed max-w-[700px] mb-10">
               High-whiteness ground calcium carbonate (GCC) — the four-grade KC
               Series, coated and uncoated — for masterbatch, film, and PVC.
               Our flagship line: Kantor Materials produces it through a
               vertically integrated Vietnamese operation, with China-origin
-              resin available through the same desk.
+              resin available from the same supplier.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -242,7 +242,7 @@ export default function CalciumCarbonatePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <RevealDiv>
               <div className="text-[11px] tracking-[4px] text-gold font-sans font-semibold mb-4">
-                ONE DESK, TWO ORIGINS
+                TWO ORIGINS, ONE SUPPLIER
               </div>
               <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
                 Resin and filler, one relationship.
@@ -275,7 +275,7 @@ export default function CalciumCarbonatePage() {
                     "Premium Vietnamese GCC powder, coated or uncoated — Form D / Form AI",
                     "Filler masterbatch on demand",
                     "Matching grade to application, with documentation",
-                    "Sourcing, quality, and logistics under one desk",
+                    "Sourcing, quality, and logistics handled by one supplier",
                   ].map((item) => (
                     <li
                       key={item}

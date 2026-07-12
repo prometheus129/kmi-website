@@ -35,7 +35,7 @@ export const metadata = {
     title:
       "Kantor Materials — Premium Calcium Carbonate & China-Origin Polymers",
     description:
-      "Premium calcium carbonate from our own production. Engineering and commodity polymers from the same desk.",
+      "Premium calcium carbonate from our own production. Engineering and commodity polymers from the same supplier.",
     type: "website",
     locale: "en_US",
     siteName: "Kantor Materials",

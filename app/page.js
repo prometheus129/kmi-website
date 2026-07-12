@@ -13,18 +13,18 @@ import { getAllIssues } from "@/lib/terminal";
 export const metadata = {
   title: "Premium Calcium Carbonate & China Polymers | Kantor Materials",
   description:
-    "Producer of premium Vietnamese calcium carbonate (KC Series) and supplier of China-origin engineering and commodity polymers. One desk, both sides of your formulation.",
+    "Producer of premium Vietnamese calcium carbonate (KC Series) and supplier of China-origin engineering and commodity polymers. One supplier, both sides of your formulation.",
   openGraph: {
     title:
       "Kantor Materials — Premium Calcium Carbonate & China-Origin Polymers",
     description:
-      "Premium calcium carbonate from our own production. Engineering and commodity polymers from the same desk. Matched grades, pricing, and documentation.",
+      "Premium calcium carbonate from our own production. Engineering and commodity polymers from the same supplier. Matched grades, pricing, and documentation.",
   },
   twitter: {
     title:
       "Kantor Materials — Premium Calcium Carbonate & China-Origin Polymers",
     description:
-      "Premium Vietnamese calcium carbonate from our own production, plus China-origin engineering and commodity polymers. One desk, both sides of your formulation.",
+      "Premium Vietnamese calcium carbonate from our own production, plus China-origin engineering and commodity polymers. One supplier, both sides of your formulation.",
   },
   alternates: { canonical: "/" },
 };

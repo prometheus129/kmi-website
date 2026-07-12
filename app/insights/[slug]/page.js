@@ -220,8 +220,8 @@ export default async function InsightArticlePage({ params }) {
               </div>
               <p className="font-sans text-sm text-body-text leading-relaxed">
                 High-whiteness coated and uncoated GCC powder — spec,
-                documentation, and how we pair it with China-origin resin under
-                one desk. <span className="text-gold">View the line →</span>
+                documentation, and how we pair it with China-origin resin from
+                one supplier. <span className="text-gold">View the line →</span>
               </p>
             </Link>
           )}
