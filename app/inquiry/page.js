@@ -34,7 +34,10 @@ export default function InquiryPage() {
             <p className="text-body-text text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
               Calcium carbonate or polymers — tell us the material and
               application. We respond with matched grades, pricing, and
-              documentation in one answer, within 24 hours.
+              documentation in one answer, within 24 hours. For calcium
+              carbonate you can also start with a free sample — under 1 tonne,
+              dispatched within 48 hours. Write &ldquo;sample&rdquo; and your
+              application in the message.
             </p>
           </RevealDiv>
         </div>

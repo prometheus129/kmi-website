@@ -158,16 +158,16 @@ export default function CalciumCarbonatePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/inquiry?context=calcium-carbonate#inquiry"
+                href="/calcium-carbonate/grade-selector"
                 className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-sm tracking-wider px-7 py-3.5 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
               >
-                Request a Quote
+                Request a Free Sample
               </Link>
               <Link
-                href="#guides"
+                href="/inquiry?context=calcium-carbonate#inquiry"
                 className="inline-flex items-center justify-center border border-white/[0.15] text-white font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:border-white/30 hover:bg-white/[0.03]"
               >
-                Technical Guides
+                Request a Quote
               </Link>
             </div>
           </RevealDiv>
@@ -376,6 +376,115 @@ export default function CalciumCarbonatePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Free sample — the sample-led motion's front door */}
+      <section className="bg-ticker-bg py-20 lg:py-[90px] px-6 lg:px-10 relative overflow-hidden">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(212,168,67,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(212,168,67,0.02) 1px, transparent 1px)",
+            backgroundSize: "60px 60px",
+          }}
+        />
+        <div className="max-w-[1000px] mx-auto relative z-10">
+          <RevealDiv>
+            <div className="text-[11px] tracking-[4px] text-gold font-sans font-semibold mb-4">
+              FREE SAMPLE
+            </div>
+            <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
+              Test it on your own line before you buy.
+            </h2>
+            <p className="font-sans text-[15px] text-body-text leading-relaxed max-w-[680px] mb-8">
+              Every KC grade is available as a free sample — under 1 tonne,
+              dispatched within 48 hours, with the TDS and a per-lot
+              certificate of analysis. Run it on your own equipment against
+              the grade you use today, and decide only after you see the
+              results. Tell us your application and we will match the grade —
+              or answer two questions in the{" "}
+              <Link
+                href="/calcium-carbonate/grade-selector"
+                className="text-gold hover:text-gold-light underline underline-offset-2 transition-colors duration-200"
+              >
+                grade selector
+              </Link>{" "}
+              and it is matched for you.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/calcium-carbonate/grade-selector"
+                className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-sm tracking-wider px-7 py-3.5 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
+              >
+                Request a Free Sample
+              </Link>
+              <Link
+                href="/inquiry?context=calcium-carbonate#inquiry"
+                className="inline-flex items-center justify-center border border-white/[0.15] text-white font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:border-white/30 hover:bg-white/[0.03]"
+              >
+                Request a Quote
+              </Link>
+            </div>
+          </RevealDiv>
+        </div>
+      </section>
+
+      {/* Commercial terms — the buyer-facing basics */}
+      <section className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10">
+        <div className="max-w-[1000px] mx-auto">
+          <RevealDiv>
+            <div className="text-[11px] tracking-[4px] text-gold font-sans font-semibold mb-4">
+              COMMERCIAL TERMS
+            </div>
+            <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-10 leading-tight">
+              How ordering works.
+            </h2>
+          </RevealDiv>
+          <RevealDiv delay={120}>
+            <div className="bg-gradient-to-br from-white/[0.04] to-white/[0.01] border border-white/[0.08] rounded-lg overflow-hidden">
+              {[
+                {
+                  k: "Free sample",
+                  v: "Under 1 tonne, free, dispatched within 48 hours — with the TDS and a per-lot certificate of analysis, so your lab can qualify the grade before you commit to anything.",
+                },
+                {
+                  k: "Minimum order",
+                  v: "One 20-foot container — 24 tonnes. The same per-tonne price as large volumes; no extra cost for ordering the minimum.",
+                },
+                {
+                  k: "Delivery term",
+                  v: "FOB Haiphong, Vietnam as standard; CFR or CIF to your port on request. Sea routes to Manila, Jakarta, Bangkok, and Indian ports are short and direct — sailing time is measured in days.",
+                },
+                {
+                  k: "Payment",
+                  v: "30% deposit by bank transfer (T/T), 70% against the bill of lading.",
+                },
+                {
+                  k: "Packaging",
+                  v: "25 kg bags on pallets, or ~1.4 tonne jumbo bags for bulk handling.",
+                },
+                {
+                  k: "Documents",
+                  v: "TDS, per-lot COA, and the certificate of origin for your preferential duty rate — Form D (ASEAN) or Form AI (India).",
+                },
+              ].map((row, i, arr) => (
+                <div
+                  key={row.k}
+                  className={`grid grid-cols-1 sm:grid-cols-[200px_1fr] gap-1 sm:gap-6 px-6 py-4 ${
+                    i !== arr.length - 1 ? "border-b border-white/[0.06]" : ""
+                  }`}
+                >
+                  <div className="font-mono text-[12px] tracking-wide text-gold/80 uppercase pt-0.5">
+                    {row.k}
+                  </div>
+                  <div className="font-sans text-[15px] text-body-text leading-relaxed">
+                    {row.v}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </RevealDiv>
         </div>
       </section>
 

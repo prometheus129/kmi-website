@@ -35,7 +35,8 @@ export default function LaneCards() {
                 <p className="text-[15px] text-body-text leading-relaxed font-sans mb-6">
                   Our flagship line: high-whiteness Vietnamese GCC from our own
                   vertically integrated production — four grades from ultrafine
-                  film grade to general filler, coated and uncoated.
+                  film grade to general filler, coated and uncoated. Free
+                  samples under 1 tonne, dispatched within 48 hours.
                 </p>
                 <span className="text-sm text-white font-semibold font-sans inline-flex items-center gap-1.5 group-hover:text-gold transition-colors duration-200">
                   Explore the KC Series
