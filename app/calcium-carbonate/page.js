@@ -1,7 +1,7 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
-import JsonLd from "@/components/JsonLd";
+import JsonLd, { buildFAQSchema } from "@/components/JsonLd";
 import Link from "next/link";
 
 export const metadata = {
@@ -122,11 +122,50 @@ const guides = [
   },
 ];
 
+// FAQ — every schema Q&A has a visible counterpart in the FAQ section below (Google
+// filters FAQ rich results when schema content is not on the page). Both the FAQPage
+// schema and the rendered section map over this same array, so they cannot drift.
+const faq = [
+  {
+    question: "What is the Kantor KC Series?",
+    answer:
+      "The Kantor KC Series is a four-grade premium Vietnamese ground calcium carbonate (GCC) for plastics — KC-4, KC-6, KC-10, and KC-17 — running from an ultrafine film grade to a general filler. It is produced through a vertically integrated Northern Vietnam operation and supplied with a TDS, a per-lot certificate of analysis, and a Form D or Form AI certificate of origin.",
+  },
+  {
+    question: "What whiteness and brightness does Kantor KC Series GCC have?",
+    answer:
+      "Whiteness ≥98% and ISO brightness (R457 / ISO 2470) ≥95% across all four grades — above typical mid-grade filler powder. CaCO₃ purity is ≥98%, with Fe₂O₃ ≤0.05% and MgO ≤0.5%. Values are typical and confirmed per production lot on the certificate of analysis.",
+  },
+  {
+    question: "What is the difference between KC-4, KC-6, KC-10, and KC-17?",
+    answer:
+      "Particle size only. KC-4 is the finest top cut (D97 about 5.5 µm) and KC-17 the coarsest (D97 about 17 µm); D50 runs about 1.5–3.6 µm. Whiteness and chemistry are the same across the ladder — the grade is matched to your product's gauge, since defects come from the coarse tail of the particle-size distribution.",
+  },
+  {
+    question: "Is Kantor KC Series calcium carbonate coated or uncoated?",
+    answer:
+      "Both — every grade is available uncoated or with a stearic-acid coating. As a rule of thumb, the higher the loading, the thinner the product, and the finer the grade, the more a coating helps dispersion and moisture resistance; low loadings in thick parts are usually fine uncoated.",
+  },
+  {
+    question: "What is the minimum order, sample policy, and delivery term?",
+    answer:
+      "A free sample under one tonne is dispatched within 48 hours with a TDS and per-lot COA. The minimum order is one 20-foot container (24 tonnes) at the same per-tonne price as large volumes. The standard term is FOB Haiphong (CFR or CIF on request); payment is 30% by bank transfer, 70% against the bill of lading.",
+  },
+  {
+    question: "Which countries does Kantor supply, and how is import duty handled?",
+    answer:
+      "Kantor supplies compounders and converters across India, Indonesia, Thailand, and the Philippines. Raw GCC powder (HS 2836.50) ships with the preferential certificate of origin for your market — Form D under ATIGA within ASEAN, or Form AI under the ASEAN–India FTA — which secures the preferential rate (duty-free in most ASEAN markets). We confirm the exact rate for your destination and tariff line before you order.",
+  },
+];
+
+const faqSchema = buildFAQSchema(faq);
+
 export default function CalciumCarbonatePage() {
   return (
     <div className="bg-navy min-h-screen text-white">
       <JsonLd data={productSchema} />
       <JsonLd data={breadcrumbSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
       <Nav />
 
       {/* Hero */}
@@ -150,9 +189,9 @@ export default function CalciumCarbonatePage() {
               {" "}resin and filler from one supplier.
             </h1>
             <p className="font-sans text-lg text-body-text leading-relaxed max-w-[700px] mb-10">
-              High-whiteness ground calcium carbonate (GCC) — the four-grade KC
-              Series, coated and uncoated — for masterbatch, film, and PVC.
-              Our flagship line: Kantor Materials produces it through a
+              High-whiteness ground calcium carbonate (GCC) — the four-grade
+              Kantor KC Series, coated and uncoated — for masterbatch, film, and
+              PVC. Our flagship line: Kantor Materials produces it through a
               vertically integrated Vietnamese operation, with China-origin
               resin available from the same supplier.
             </p>
@@ -187,7 +226,7 @@ export default function CalciumCarbonatePage() {
         <div className="max-w-[1000px] mx-auto relative z-10">
           <RevealDiv>
             <div className="text-[11px] tracking-[4px] text-gold font-sans font-semibold mb-4">
-              THE KC SERIES
+              THE KANTOR KC SERIES
             </div>
             <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
               Premium plastics-modification GCC.
@@ -359,8 +398,8 @@ export default function CalciumCarbonatePage() {
                 d: "Form D or Form AI for Vietnam-origin GCC, and Form E for China-origin resin — preferential duty where it applies.",
               },
               {
-                t: "Heavy-metals testing on request",
-                d: "Third-party heavy-metals panels (Pb / As / Cd / Hg) available on request to support food-contact and premium qualification programs.",
+                t: "Heavy-metals testing",
+                d: "A third-party heavy-metals panel (Pb / As / Cd / Hg) is being finalized with an accredited lab — available on request to support food-contact and premium qualification programs.",
               },
             ].map((c) => (
               <div
@@ -524,6 +563,37 @@ export default function CalciumCarbonatePage() {
                     {g.desc}
                   </p>
                 </Link>
+              </RevealDiv>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ — mirrors the FAQPage schema above; both render from the same `faq` array */}
+      <section
+        id="faq"
+        className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 scroll-mt-24"
+      >
+        <div className="max-w-[820px] mx-auto">
+          <RevealDiv>
+            <div className="text-[11px] tracking-[4px] text-gold font-sans font-semibold mb-4">
+              FREQUENTLY ASKED
+            </div>
+            <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-10 leading-tight">
+              Questions buyers ask.
+            </h2>
+          </RevealDiv>
+          <div className="space-y-8">
+            {faq.map((item, i) => (
+              <RevealDiv key={item.question} delay={i * 60}>
+                <div className="border-b border-white/[0.08] pb-6">
+                  <h3 className="font-sans text-[16px] font-semibold text-white mb-3">
+                    {item.question}
+                  </h3>
+                  <p className="font-sans text-[15px] text-body-text leading-relaxed">
+                    {item.answer}
+                  </p>
+                </div>
               </RevealDiv>
             ))}
           </div>
