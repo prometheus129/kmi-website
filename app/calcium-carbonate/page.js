@@ -606,7 +606,7 @@ export default function CalciumCarbonatePage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-navy py-20 px-6 lg:px-10 relative overflow-hidden">
+      <section className="bg-ticker-bg py-20 px-6 lg:px-10 relative overflow-hidden">
         <div
           className="absolute inset-0"
           style={{

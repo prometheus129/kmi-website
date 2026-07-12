@@ -36,7 +36,7 @@ export default function HeroSection() {
 
       <div className="max-w-[1100px] mx-auto relative z-10 text-center w-full py-24 lg:py-24">
         <div className="animate-[hero-fade-in_0.5s_ease-out_both]">
-          <div className="text-[11px] tracking-[3px] text-teal font-sans font-semibold mb-8">
+          <div className="text-[13px] lg:text-sm tracking-[3px] text-teal font-sans font-semibold mb-8">
             MINERALS &amp; POLYMERS
           </div>
           <h1 className="font-serif text-5xl lg:text-[66px] font-bold text-white leading-[1.08] mb-8">
@@ -79,7 +79,7 @@ export default function HeroSection() {
                 <span className="font-mono text-xl lg:text-2xl font-bold text-teal-light tracking-tight">
                   {s.value}
                 </span>
-                <span className="font-sans text-xs text-muted">
+                <span className="font-sans text-[13px] lg:text-sm text-muted leading-snug">
                   {s.label}
                 </span>
               </div>
