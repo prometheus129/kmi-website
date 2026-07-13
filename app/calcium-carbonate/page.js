@@ -102,6 +102,16 @@ const guides = [
     href: "/insights/what-is-kc-grade-calcium-carbonate",
   },
   {
+    title: "Mesh to Micron Conversion (with Chart)",
+    desc: "A mesh-to-micron chart for calcium carbonate — plus why fine GCC can't actually be sieved, so buy on the D97 in microns, not the mesh number.",
+    href: "/insights/calcium-carbonate-mesh-to-micron-conversion",
+  },
+  {
+    title: "Producer-Direct vs. Trader",
+    desc: "Most sellers of Vietnamese GCC are traders reselling a plant's powder — five checks to tell, and why buying producer-direct changes consistency and traceability.",
+    href: "/insights/producer-direct-vs-trader-calcium-carbonate",
+  },
+  {
     title: "Coated vs. Uncoated: When to Use Which",
     desc: "Stearic-acid coating, dispersion, moisture pickup — and a practical rule for choosing each.",
     href: "/insights/coated-vs-uncoated-calcium-carbonate-when-to-use-which",
