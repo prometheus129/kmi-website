@@ -9,6 +9,9 @@ import { getAllComplianceArticles } from "@/lib/compliance";
 import { formatDate } from "@/lib/insights";
 
 export const metadata = {
+  // Noindexed #360 (David-approved keep/cut): the CertDesk hub reinforces venture-blur
+  // against the GCC producer identity; excluded from sitemap too. Reversible.
+  robots: { index: false, follow: true },
   title: "CertDesk — Product Compliance for Importers & Sellers | Kantor Materials",
   description:
     "CPSC eFiling, CPC and GCC certificates, PFAS state rules, and how to verify supplier test reports. Plain-English guides and free checkers for small importers.",

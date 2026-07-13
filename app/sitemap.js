@@ -14,7 +14,6 @@ export default function sitemap() {
     { path: "/polymer-compass", changeFrequency: "monthly", priority: 0.9 },
     { path: "/co-development", changeFrequency: "monthly", priority: 0.9 },
     { path: "/insights", changeFrequency: "weekly", priority: 0.8 },
-    { path: "/compliance", changeFrequency: "weekly", priority: 0.8 },
     { path: "/compliance/deadline-checker", changeFrequency: "weekly", priority: 0.9 },
     { path: "/compliance/lab-status-checker", changeFrequency: "weekly", priority: 0.8 },
     { path: "/approach", changeFrequency: "monthly", priority: 0.7 },
@@ -99,16 +98,11 @@ export default function sitemap() {
     }
   }
 
-  // CertDesk compliance articles (EN-only)
-  for (const article of getAllComplianceArticles()) {
-    const lastMod = article.frontmatter.dateModified || article.frontmatter.date;
-    articleEntries.push({
-      url: `${BASE_URL}/compliance/${article.slug}`,
-      lastModified: lastMod ? new Date(lastMod).toISOString() : now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    });
-  }
+  // CertDesk compliance articles + the /compliance hub are NOINDEXED (#360, David-approved
+  // keep/cut): off-target US import-compliance traffic (the #2-4 traffic pullers) dilutes
+  // the GCC producer topical signal that GEO citation rewards. Content is retained on disk;
+  // excluded from the sitemap here and marked noindex in each page's metadata. Reversible.
+  // The two free checker tools (deadline-checker, lab-status-checker) stay indexed above.
 
   // Market hub pages
   const hubs = getAllHubs();

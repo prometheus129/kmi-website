@@ -27,6 +27,10 @@ export async function generateMetadata({ params }) {
   return {
     title: `${article.frontmatter.title} — CertDesk by Kantor Materials`,
     description: article.frontmatter.description,
+    // Noindexed #360 (David-approved keep/cut): off-target US-compliance traffic dilutes
+    // the GCC producer topical signal for GEO. Content retained; follow kept so internal
+    // links (GCC articles, free checkers) still pass. Reversible.
+    robots: { index: false, follow: true },
     openGraph: {
       title: article.frontmatter.title,
       description: article.frontmatter.description,
