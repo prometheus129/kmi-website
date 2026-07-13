@@ -21,7 +21,7 @@ export default function HeroSection() {
           alt=""
           fill
           className="object-cover"
-          style={{ objectPosition: "center 60%" }}
+          style={{ objectPosition: "center 45%" }}
           sizes="100vw"
           priority
           quality={70}
