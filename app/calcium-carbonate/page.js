@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
 import JsonLd, { buildFAQSchema } from "@/components/JsonLd";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title:
@@ -528,6 +529,27 @@ export default function CalciumCarbonatePage() {
                 </div>
               ))}
             </div>
+          </RevealDiv>
+
+          {/* Operations proof — finished goods, additive */}
+          <RevealDiv delay={200}>
+            <figure className="relative mt-10 rounded-lg overflow-hidden border border-white/[0.08]">
+              <Image
+                src="/images/ops-warehouse-fibc.jpg"
+                alt="Finished Kantor KC Series calcium carbonate in FIBC jumbo bags, staged for shipment at the Northern Vietnam plant"
+                width={1400}
+                height={1185}
+                sizes="(max-width: 1000px) 100vw, 1000px"
+                quality={72}
+                className="w-full h-[220px] lg:h-[320px] object-cover"
+                style={{ objectPosition: "center 50%" }}
+              />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-deep/95 via-navy-deep/60 to-transparent px-6 py-4">
+                <span className="font-sans text-[13px] text-body-text">
+                  Finished KC Series in FIBC jumbo bags, staged for shipment.
+                </span>
+              </figcaption>
+            </figure>
           </RevealDiv>
         </div>
       </section>

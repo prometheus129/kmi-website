@@ -1,7 +1,7 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/home/HeroSection";
-import ThreeTiers from "@/components/home/ThreeTiers";
+import HowBuyingWorks from "@/components/home/HowBuyingWorks";
 import LaneCards from "@/components/home/LaneCards";
 import TPCPreview from "@/components/home/TPCPreview";
 import HonestySection from "@/components/home/HonestySection";
@@ -42,7 +42,7 @@ export default function HomePage() {
         <HeroSection />
         <LaneCards />
         <TrustSection />
-        <ThreeTiers />
+        <HowBuyingWorks />
         <TPCPreview latestIssue={latestIssue} />
         <HonestySection textureOpacity={0} />
         <ConversationSection />
