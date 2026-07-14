@@ -2,8 +2,9 @@ import RevealDiv from "@/components/RevealDiv";
 
 const promises = [
   {
-    title: "We match grades. We don\u2019t guarantee production outcomes.",
-    text: "A spec match is not a production guarantee. Processing behavior, batch consistency, and downstream quality depend on your equipment and conditions. We provide the data. You make the decision.",
+    title:
+      "We match grades. We don\u2019t promise the first candidate grade passes.",
+    text: "A specification match is a starting point, not a production guarantee \u2014 the proof happens on your line, with your data. For engineering polymers, our engineers adjust the formulation until your part qualifies, and you commit only after it passes.",
   },
   {
     title: "We verify documents. We don\u2019t eliminate customs risk.",
@@ -38,15 +39,15 @@ export default function HonestySection({ bg = "bg-navy", textureOpacity = 0.035,
                   What we don&apos;t promise
                 </h2>
                 <p className="font-sans text-base text-body-text leading-relaxed">
-                  We produce minerals, source polymers, and manage execution.
-                  Our team matches grades and verifies documents. Here is
-                  what each one cannot guarantee.
+                  We produce minerals, compound engineering polymers, and
+                  source commodity resin. Here is what each of those
+                  commitments cannot guarantee.
                 </p>
               </div>
             </RevealDiv>
           </div>
 
-          {/* Right column — the four promise blocks */}
+          {/* Right column — the three promise blocks */}
           <div className="lg:col-span-8">
             <div className="space-y-8">
               {promises.map((p, i) => (

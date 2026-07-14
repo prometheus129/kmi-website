@@ -43,8 +43,8 @@ export default function HomePage() {
         <LaneCards />
         <TrustSection />
         <HowBuyingWorks />
+        <HonestySection bg="bg-navy-deep" textureOpacity={0} />
         <TPCPreview latestIssue={latestIssue} />
-        <HonestySection textureOpacity={0} />
         <ConversationSection />
       </main>
       <Footer />

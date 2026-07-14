@@ -431,6 +431,29 @@ export default function CalciumCarbonatePage() {
               </div>
             ))}
           </div>
+
+          {/* Operations proof — the lines that make repeatability real, additive */}
+          <RevealDiv delay={200}>
+            <figure className="relative mt-10 rounded-lg overflow-hidden border border-white/[0.08]">
+              <Image
+                src="/images/ops-grinding-plant.jpg"
+                alt="Grinding and air-classifying lines at Kantor Materials' Northern Vietnam calcium carbonate plant"
+                width={1400}
+                height={972}
+                sizes="(max-width: 1000px) 100vw, 1000px"
+                quality={72}
+                className="w-full h-[220px] lg:h-[320px] object-cover"
+                style={{ objectPosition: "center 50%" }}
+              />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-deep/95 via-navy-deep/60 to-transparent px-6 py-4">
+                <span className="font-sans text-[13px] text-body-text">
+                  Grinding and air-classifying lines at our Northern Vietnam
+                  plant — where the particle-size distribution of every lot
+                  is set.
+                </span>
+              </figcaption>
+            </figure>
+          </RevealDiv>
         </div>
       </section>
 

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import RevealDiv from "@/components/RevealDiv";
 
 // Three genuinely different buying motions — 1:1 with the three LaneCards:
@@ -266,27 +265,6 @@ export default function HowBuyingWorks() {
             The samples are free. The technical answers are free. We earn from
             the material we ship, not from advice.
           </p>
-        </RevealDiv>
-
-        {/* Proof band — a real production photo grounds the section (additive) */}
-        <RevealDiv delay={80}>
-          <figure className="relative mt-12 rounded-lg overflow-hidden border border-white/[0.08]">
-            <Image
-              src="/images/ops-grinding-plant.jpg"
-              alt="Grinding and air-classifying lines at Kantor Materials' Northern Vietnam calcium carbonate plant"
-              width={1400}
-              height={972}
-              sizes="(max-width: 1200px) 100vw, 1200px"
-              quality={72}
-              className="w-full aspect-[16/9] object-cover"
-              style={{ objectPosition: "center 50%" }}
-            />
-            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-deep/95 via-navy-deep/60 to-transparent px-6 py-4">
-              <span className="font-sans text-[13px] text-body-text">
-                Grinding and air-classifying lines at our Northern Vietnam plant.
-              </span>
-            </figcaption>
-          </figure>
         </RevealDiv>
       </div>
     </section>
