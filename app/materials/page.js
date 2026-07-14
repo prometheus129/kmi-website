@@ -242,6 +242,45 @@ export default function MaterialsPage() {
               <EquivalencyForm />
             </RevealDiv>
           </div>
+
+          {/* Commercial terms — the publishable EP basics */}
+          <RevealDiv delay={120}>
+            <div className="mt-16">
+              <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-5">
+                COMMERCIAL TERMS
+              </div>
+              <div className="bg-gradient-to-br from-white/[0.04] to-white/[0.01] border border-white/[0.08] rounded-lg overflow-hidden">
+                {[
+                  {
+                    k: "Free sample",
+                    v: "Up to 100 kg, free — enough for a lab test first, then a full trial on your production line.",
+                  },
+                  {
+                    k: "Payment",
+                    v: "30% deposit by bank transfer (T/T), 70% against the bill of lading.",
+                  },
+                  {
+                    k: "Documents",
+                    v: "The technical data sheet with your grade match, and a certificate of analysis for every lot you receive.",
+                  },
+                ].map((row, i, arr) => (
+                  <div
+                    key={row.k}
+                    className={`grid grid-cols-1 sm:grid-cols-[200px_1fr] gap-1 sm:gap-6 px-6 py-4 ${
+                      i !== arr.length - 1 ? "border-b border-white/[0.06]" : ""
+                    }`}
+                  >
+                    <div className="font-mono text-[12px] tracking-wide text-teal/80 uppercase pt-0.5">
+                      {row.k}
+                    </div>
+                    <div className="font-sans text-sm text-body-text leading-relaxed">
+                      {row.v}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </RevealDiv>
         </div>
       </section>
 

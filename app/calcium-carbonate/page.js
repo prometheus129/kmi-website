@@ -442,8 +442,7 @@ export default function CalciumCarbonatePage() {
                 height={972}
                 sizes="(max-width: 1000px) 100vw, 1000px"
                 quality={72}
-                className="w-full h-[220px] lg:h-[320px] object-cover"
-                style={{ objectPosition: "center 50%" }}
+                className="w-full h-auto"
               />
               <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-deep/95 via-navy-deep/60 to-transparent px-6 py-4">
                 <span className="font-sans text-[13px] text-body-text">
@@ -540,7 +539,7 @@ export default function CalciumCarbonatePage() {
                 },
                 {
                   k: "Packaging",
-                  v: "25 kg bags on pallets, or ~1.4 tonne jumbo bags for bulk handling.",
+                  v: "Standard ~1.4 tonne jumbo bags (FIBC).",
                 },
                 {
                   k: "Documents",
@@ -574,8 +573,7 @@ export default function CalciumCarbonatePage() {
                 height={1185}
                 sizes="(max-width: 1000px) 100vw, 1000px"
                 quality={72}
-                className="w-full h-[220px] lg:h-[320px] object-cover"
-                style={{ objectPosition: "center 50%" }}
+                className="w-full h-auto"
               />
               <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-deep/95 via-navy-deep/60 to-transparent px-6 py-4">
                 <span className="font-sans text-[13px] text-body-text">
