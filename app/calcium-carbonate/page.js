@@ -295,8 +295,8 @@ export default function CalciumCarbonatePage() {
               <Image
                 src="/images/ops-block-yard.jpg"
                 alt="White calcite blocks staged in the block yard at Kantor Materials' Northern Vietnam plant, before crushing and grinding"
-                width={937}
-                height={798}
+                width={1874}
+                height={1596}
                 sizes="(max-width: 1000px) 100vw, 1000px"
                 quality={80}
                 className="w-full h-auto"
