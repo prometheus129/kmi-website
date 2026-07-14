@@ -288,6 +288,27 @@ export default function CalciumCarbonatePage() {
               </Link>
             </p>
           </RevealDiv>
+
+          {/* Operations proof — the raw material before crushing, additive */}
+          <RevealDiv delay={200}>
+            <figure className="relative mt-10 rounded-lg overflow-hidden border border-white/[0.08]">
+              <Image
+                src="/images/ops-block-yard.jpg"
+                alt="White calcite blocks staged in the block yard at Kantor Materials' Northern Vietnam plant, before crushing and grinding"
+                width={937}
+                height={798}
+                sizes="(max-width: 1000px) 100vw, 1000px"
+                quality={80}
+                className="w-full h-auto"
+              />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-deep/95 via-navy-deep/60 to-transparent px-6 py-4">
+                <span className="font-sans text-[13px] text-body-text">
+                  White calcite blocks staged at our Northern Vietnam plant —
+                  the raw material before it enters crushing and grinding.
+                </span>
+              </figcaption>
+            </figure>
+          </RevealDiv>
         </div>
       </section>
 
