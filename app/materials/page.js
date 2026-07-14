@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import RevealDiv from "@/components/RevealDiv";
 import Link from "next/link";
 import MaterialsFilter from "@/components/materials/MaterialsFilter";
+import EquivalencyForm from "@/components/materials/EquivalencyForm";
 
 export const metadata = {
   title:
@@ -161,10 +162,10 @@ export default function MaterialsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/inquiry?lane=2&context=engineering-substitution#inquiry"
+                href="#equivalency"
                 className="inline-flex items-center justify-center bg-gold text-navy-deep font-semibold text-sm tracking-wider px-7 py-3.5 rounded-lg shadow-[0_2px_12px_rgba(212,168,67,0.25)] hover:brightness-110 hover:-translate-y-px transition-all duration-200"
               >
-                Request a Quote
+                Send us the grade you run today
               </Link>
               <Link
                 href="/insights/markets/engineering-polymers"
@@ -174,6 +175,73 @@ export default function MaterialsPage() {
               </Link>
             </div>
           </RevealDiv>
+        </div>
+      </section>
+
+      {/* Equivalency capture — the EP funnel's landing pad */}
+      <section
+        id="equivalency"
+        className="bg-navy py-20 lg:py-[90px] px-6 lg:px-10 scroll-mt-24"
+      >
+        <div className="max-w-[1200px] mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            {/* Left — how qualification works */}
+            <RevealDiv>
+              <div className="text-[11px] tracking-[4px] text-teal font-sans font-semibold mb-4">
+                GRADE EQUIVALENCY
+              </div>
+              <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-5 leading-tight">
+                Send us the grade you run today.
+              </h2>
+              <p className="font-sans text-[15px] text-body-text leading-relaxed mb-10">
+                An engineering compound is qualified in your part, not on a
+                datasheet. So the process starts with your current grade, and
+                you commit only after your part passes.
+              </p>
+
+              <div className="relative space-y-6">
+                <div
+                  className="absolute left-[13px] top-3 bottom-3 w-px bg-teal/20"
+                  aria-hidden="true"
+                />
+                {[
+                  {
+                    title: "Name your current grade",
+                    body: "Zytel, Ultramid, Bayblend, or any brand you run today — and the part it goes into. Within 24 hours you get the closest matching grade from our catalog, with an honest assessment of where it differs.",
+                  },
+                  {
+                    title: "Get a free sample — up to 100 kg",
+                    body: "Enough for a lab test first, then a full trial on your production line.",
+                  },
+                  {
+                    title: "Co-engineer until your part qualifies",
+                    body: "If the closest catalog grade does not pass your trial, our engineers adjust the compound — and we send another sample — until your part qualifies. You commit only after it passes.",
+                  },
+                  {
+                    title: "Start recurring supply",
+                    body: "The qualified compound, produced in our own compounding operations — with the technical data sheet and a certificate of analysis for every lot.",
+                  },
+                ].map((step, i) => (
+                  <div key={step.title} className="relative pl-11">
+                    <div className="absolute left-0 top-0 w-7 h-7 rounded-full flex items-center justify-center font-mono text-xs font-bold border border-teal/40 bg-teal/10 text-teal">
+                      {i + 1}
+                    </div>
+                    <h3 className="font-sans text-[15px] font-bold text-white mb-1">
+                      {step.title}
+                    </h3>
+                    <p className="font-sans text-[13px] text-body-text leading-relaxed">
+                      {step.body}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </RevealDiv>
+
+            {/* Right — the capture form */}
+            <RevealDiv delay={150}>
+              <EquivalencyForm />
+            </RevealDiv>
+          </div>
         </div>
       </section>
 
@@ -297,25 +365,26 @@ export default function MaterialsPage() {
         <div className="max-w-[600px] mx-auto text-center relative z-10">
           <RevealDiv>
             <h2 className="font-serif text-3xl lg:text-[38px] font-bold text-white mb-4">
-              Need a Specific Grade?
+              Running a premium-brand grade today?
             </h2>
             <p className="font-sans text-[15px] text-body-text mb-8">
-              Send us your current material specification. We will evaluate
-              whether a reverse-engineered alternative can meet your
-              performance requirements at a competitive price.
+              Send us the grade name and the part it goes into. Within 24
+              hours you get the closest matching grade from our catalog, with
+              an honest assessment of where it differs — and a free sample of
+              up to 100 kg when you are ready to test.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/inquiry#inquiry"
+                href="#equivalency"
                 className="inline-flex items-center justify-center bg-gold text-navy-deep font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-px shadow-[0_2px_12px_rgba(212,168,67,0.25)]"
               >
-                Request a Quote
+                Send us your grade
               </Link>
               <Link
-                href="/polymer-compass#subscribe"
+                href="/inquiry#inquiry"
                 className="inline-flex items-center justify-center border border-white/[0.15] text-white font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:border-white/30 hover:bg-white/[0.03]"
               >
-                Subscribe to The Polymer Compass
+                Send a general inquiry
               </Link>
             </div>
           </RevealDiv>

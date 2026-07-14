@@ -45,7 +45,7 @@ const mineralSteps = [
 const engineeringSteps = [
   {
     title: "Send us the grade you run today",
-    body: "Name your current grade — Zytel, Ultramid, Bayblend, or any Western brand — and the part it goes into. Within 24 hours you get the closest matching grade from our catalog, with an honest assessment of where it differs.",
+    body: "Name your current grade — Zytel, Ultramid, Bayblend, or any brand you run today — and the part it goes into. Within 24 hours you get the closest matching grade from our catalog, with an honest assessment of where it differs.",
   },
   {
     title: "Get a free sample — up to 100 kg",
@@ -53,7 +53,7 @@ const engineeringSteps = [
   },
   {
     title: "Co-engineer until your part qualifies",
-    body: "If the closest catalog grade does not pass your trial, our engineers adjust the compound — and we sample again — until your part qualifies. You commit only after it passes.",
+    body: "If the closest catalog grade does not pass your trial, our engineers adjust the compound — and we send another sample — until your part qualifies. You commit only after it passes.",
   },
   {
     title: "Start recurring supply",
@@ -198,7 +198,7 @@ export default function HowBuyingWorks() {
 
               <div className="mt-auto pt-8 flex flex-col items-start gap-4">
                 <Link
-                  href="#inquiry"
+                  href="/materials#equivalency"
                   className="inline-flex items-center justify-center bg-teal text-white font-semibold text-sm tracking-wider px-6 py-3 rounded-lg shadow-[0_2px_12px_rgba(46,139,139,0.3)] hover:brightness-110 hover:-translate-y-px transition-all duration-150"
                 >
                   Send us your grade
