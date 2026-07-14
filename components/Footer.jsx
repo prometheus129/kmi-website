@@ -74,10 +74,10 @@ export default function Footer() {
             </p>
             <div className="space-y-1.5">
               <a
-                href="mailto:inquiry@kantormaterials.com"
+                href="mailto:david@kantor-m.com"
                 className="block font-sans text-[13px] text-muted hover:text-cream transition-colors duration-200"
               >
-                inquiry@kantormaterials.com
+                david@kantor-m.com
               </a>
               <a
                 href="https://wa.me/8618822815720"
