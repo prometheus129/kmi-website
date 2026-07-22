@@ -289,25 +289,44 @@ export default function CalciumCarbonatePage() {
             </p>
           </RevealDiv>
 
-          {/* Operations proof — the raw material before crushing, additive */}
+          {/* Operations proof — in-house QC that substantiates the spec above, additive */}
           <RevealDiv delay={200}>
-            <figure className="relative mt-10 rounded-lg overflow-hidden border border-white/[0.08]">
-              <Image
-                src="/images/ops-block-yard.jpg"
-                alt="White calcite blocks staged in the block yard at Kantor Materials' Northern Vietnam plant, before crushing and grinding"
-                width={1874}
-                height={1596}
-                sizes="(max-width: 1000px) 100vw, 1000px"
-                quality={80}
-                className="w-full h-auto"
-              />
-              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-deep/95 via-navy-deep/60 to-transparent px-6 py-4">
-                <span className="font-sans text-[13px] text-body-text">
-                  White calcite blocks staged at our Northern Vietnam plant —
-                  the raw material before it enters crushing and grinding.
-                </span>
-              </figcaption>
-            </figure>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
+              <figure className="relative rounded-lg overflow-hidden border border-white/[0.08]">
+                <Image
+                  src="/images/ops-lab-whiteness.jpg"
+                  alt="Whiteness and colour tester in Kantor Materials' in-house QC lab, used to verify every lot against the whiteness spec"
+                  width={1400}
+                  height={1513}
+                  sizes="(max-width: 640px) 100vw, 500px"
+                  quality={80}
+                  className="w-full h-auto"
+                />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-deep/95 via-navy-deep/60 to-transparent px-5 py-4">
+                  <span className="font-sans text-[13px] text-body-text">
+                    In-house whiteness testing — every lot checked against the
+                    ≥98 whiteness spec.
+                  </span>
+                </figcaption>
+              </figure>
+              <figure className="relative rounded-lg overflow-hidden border border-white/[0.08]">
+                <Image
+                  src="/images/ops-lab-mastersizer.jpg"
+                  alt="Laser particle-size analyzer in Kantor Materials' in-house QC lab, used to confirm the D97 and D50 fineness of each lot"
+                  width={1400}
+                  height={1409}
+                  sizes="(max-width: 640px) 100vw, 500px"
+                  quality={80}
+                  className="w-full h-auto"
+                />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-deep/95 via-navy-deep/60 to-transparent px-5 py-4">
+                  <span className="font-sans text-[13px] text-body-text">
+                    Laser particle-size analysis — confirms the D97 and D50
+                    fineness on each lot.
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
           </RevealDiv>
         </div>
       </section>
@@ -459,8 +478,8 @@ export default function CalciumCarbonatePage() {
               <Image
                 src="/images/ops-grinding-plant.jpg"
                 alt="Grinding and air-classifying lines at Kantor Materials' Northern Vietnam calcium carbonate plant"
-                width={1400}
-                height={972}
+                width={1621}
+                height={1125}
                 sizes="(max-width: 1000px) 100vw, 1000px"
                 quality={72}
                 className="w-full h-auto"
@@ -590,8 +609,8 @@ export default function CalciumCarbonatePage() {
               <Image
                 src="/images/ops-warehouse-fibc.jpg"
                 alt="Finished Kantor KC Series calcium carbonate in FIBC jumbo bags, staged for shipment at the Northern Vietnam plant"
-                width={1400}
-                height={1185}
+                width={1773}
+                height={1501}
                 sizes="(max-width: 1000px) 100vw, 1000px"
                 quality={72}
                 className="w-full h-auto"

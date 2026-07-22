@@ -1,23 +1,6 @@
 import Link from "next/link";
 import { getAllArticles } from "@/lib/insights";
-
-const LANE2_TAGS = new Set([
-  "engineering polymers",
-  "peek",
-  "pei",
-  "pps",
-  "ppa",
-  "pc/abs",
-  "pbt",
-  "pom",
-  "flame retardant",
-  "glass fiber reinforced",
-  "ul certification",
-]);
-
-function isLane2Article(article) {
-  return article.frontmatter.tags?.some((t) => LANE2_TAGS.has(t.toLowerCase()));
-}
+import { isLane2Article } from "@/lib/lane2";
 
 function getSharedTags(tagsA, tagsB) {
   const setA = new Set(tagsA.map((t) => t.toLowerCase()));

@@ -111,6 +111,27 @@ const CTA_STRINGS = {
   },
 };
 
+// Lane 2 (engineering polymers) entry CTA. The EP buyer arrives holding a grade
+// name, not a purchase order, so the ask is the grade — not "polymer type,
+// application, destination", which is the commodity ask and routes to the wrong
+// form. Copy mirrors the approved homepage EP path (free sample <=100 kg and
+// co-engineering are the risk-reversal; never claim drop-in).
+// EN only: /materials has no localized route, so non-EN EP articles keep the
+// generic CTA rather than linking a non-English reader to an English form.
+const LANE2_CTA = {
+  en: {
+    heading: "Send us the grade you run today.",
+    description:
+      "Name the grade — Zytel, Ultramid, Bayblend, Lexan — plus the part it goes into and your annual volume. We reply within 24 hours with the closest match and an honest assessment of where it differs. Free sample up to 100 kg. If it does not pass on your line, our engineers adjust the compound and send another — you commit only after your part qualifies.",
+    button: "Send us your grade",
+    href: "/materials#equivalency",
+    secondary: "Not ready to send a grade?",
+    secondaryLink: "Browse engineering grades",
+    secondaryHref: "/materials",
+    secondarySub: "PEEK, PPS, PA66, PC/ABS, PBT, POM and more — with the Western grades each one benchmarks against.",
+  },
+};
+
 const RESPOND_24H = {
   en: "We respond within 24 hours.",
   vi: "Chúng tôi phản hồi trong vòng 24 giờ.",
@@ -126,12 +147,57 @@ const RESPOND_24H = {
   fr: "Nous répondons sous 24 heures.",
 };
 
-export default function ArticleCTA({ locale = "en" }) {
-  const t = CTA_STRINGS[locale] || CTA_STRINGS.en;
+export default function ArticleCTA({ locale = "en", lane2 = false }) {
+  const ep = lane2 ? LANE2_CTA[locale] : null;
+  const t = ep || CTA_STRINGS[locale] || CTA_STRINGS.en;
   const respond24h = RESPOND_24H[locale] || RESPOND_24H.en;
   const subscribePath = locale === "en"
     ? "/polymer-compass#subscribe"
     : `/${locale}/polymer-compass#subscribe`;
+
+  if (ep) {
+    return (
+      <section className="mt-16 border border-teal/20 rounded-lg bg-gradient-to-br from-teal/[0.06] to-teal/[0.02] p-8 lg:p-10">
+        <div className="mb-8">
+          <h3 className="font-serif text-2xl lg:text-3xl font-bold text-white mb-3">
+            {ep.heading}
+          </h3>
+          <p className="text-body-text text-sm leading-relaxed max-w-lg mb-6">
+            {ep.description}
+          </p>
+          <Link
+            href={ep.href}
+            className="inline-flex items-center justify-center gap-2 bg-gold text-navy-deep font-sans font-semibold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-px shadow-[0_2px_12px_rgba(212,168,67,0.25)]"
+          >
+            {ep.button}
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M3 8h10m-4-4l4 4-4 4"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </Link>
+          <p className="mt-3 font-sans text-xs text-teal">{respond24h}</p>
+        </div>
+
+        <div className="border-t border-white/[0.08] pt-6">
+          <p className="font-sans text-sm text-body-text mb-1">
+            {ep.secondary}{" "}
+            <Link
+              href={ep.secondaryHref}
+              className="text-teal hover:text-teal-light font-medium transition-colors duration-200"
+            >
+              {ep.secondaryLink}
+            </Link>
+          </p>
+          <p className="font-sans text-xs text-muted">{ep.secondarySub}</p>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="mt-16 border border-teal/20 rounded-lg bg-gradient-to-br from-teal/[0.06] to-teal/[0.02] p-8 lg:p-10">

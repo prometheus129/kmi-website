@@ -9,6 +9,7 @@ import AuthorBio from "@/components/insights/AuthorBio";
 import RelatedMaterials from "@/components/insights/RelatedMaterials";
 import { mdxComponents } from "@/components/insights/MDXComponents";
 import { getArticle, getAllSlugs, formatDate, getLocaleLabel, getLastUpdatedLabel, getInsightsPath } from "@/lib/insights";
+import { isLane2Slug } from "@/lib/lane2";
 import JsonLd, { buildArticleSchema, buildFAQSchema, buildBreadcrumbSchema } from "@/components/JsonLd";
 import Link from "next/link";
 
@@ -67,14 +68,9 @@ export default async function InsightArticlePage({ params }) {
     locale: "en",
   });
 
-  // Lane 2 / engineering / recycled articles → show related materials
-  const lane2Slugs = [
-    "engineering-polymer", "ul-reach-fda", "recycled-polymer", "ppwr-recycled",
-    "thailand-automotive", "peek-polymer", "pei-polyetherimide", "pps-polyphenylene",
-    "pc-abs-alloy", "pbt-polybutylene", "pom-acetal", "halogen-free-flame",
-    "glass-fiber-reinforced",
-  ];
-  const isLane2 = lane2Slugs.some((s) => slug.includes(s));
+  // Lane 2 / engineering / recycled articles → show related materials.
+  // Tag-or-slug via lib/lane2 so this gate and RelatedMaterials agree by construction.
+  const isLane2 = isLane2Slug(slug, frontmatter.tags);
 
   // GCC / calcium carbonate cluster → link up to the product hub.
   // Explicit allowlist (not substring) so the general India polymer-docs
@@ -234,7 +230,7 @@ export default async function InsightArticlePage({ params }) {
 
           {/* Article CTA */}
           <AuthorBio locale="en" />
-          <ArticleCTA locale="en" />
+          <ArticleCTA locale="en" lane2={isLane2} />
         </div>
       </article>
 
