@@ -123,9 +123,19 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/[0.06] pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <span className="font-sans text-xs text-subtle">
-            © 2026 Kantor Materials Limited. All rights reserved.
-          </span>
+          <div className="flex flex-col sm:flex-row items-center gap-x-3 gap-y-1">
+            <span className="font-sans text-xs text-subtle">
+              © 2026 Kantor Materials Limited. All rights reserved.
+            </span>
+            <a
+              href="https://ironstonedrilling.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-sans text-[11px] text-subtle hover:text-cream transition-colors duration-200"
+            >
+              Sister venture: Ironstone Drilling Supply
+            </a>
+          </div>
           <div className="flex gap-5">
             {languages.map((lang) => {
               const isActive = lang.code === currentLocale;
