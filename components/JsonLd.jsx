@@ -52,7 +52,9 @@ export const organizationSchema = {
     availableLanguage: ["English", "Chinese", "Vietnamese"],
   },
   // sameAs = independent entity profiles that exist today.
-  // Wikidata (Q140521484) added 2026-07-13 as part of the GEO entity-authority push.
+  // Wikidata (Q140521484) added 2026-07-13; item hardened 2026-07-23 — industry (P452)
+  // = chemical industry + references on instance-of/inception/country all live.
+  // Treat the Wikidata item as COMPLETE; no further statement/reference work pending.
   // Crunchbase is pending — add its URL here the moment that profile is live.
   // Do NOT add placeholder/empty profiles.
   sameAs: [
