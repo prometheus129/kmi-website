@@ -1,4 +1,4 @@
-import { getAllArticles, SUPPORTED_LOCALES, getInsightsPath } from "@/lib/insights";
+import { getAllArticles, SUPPORTED_LOCALES, SITEMAP_EXCLUDED_LOCALES, getInsightsPath } from "@/lib/insights";
 import { getAllHubs } from "@/lib/hubs";
 import { getAllComplianceArticles } from "@/lib/compliance";
 
@@ -29,6 +29,8 @@ export default function sitemap() {
   // Add locale insights listing pages
   for (const locale of SUPPORTED_LOCALES) {
     if (locale === "en") continue;
+    // Pruned locales (ar/bn/ur noindexed, ru sitemap-only) — see lib/insights.js
+    if (SITEMAP_EXCLUDED_LOCALES.includes(locale)) continue;
     staticPages.push({
       path: `/${locale}/insights`,
       changeFrequency: "weekly",
@@ -38,7 +40,12 @@ export default function sitemap() {
 
   // Pricing pages — daily frequency for SEO freshness signal
   // Paths are relative (for url construction); alternates must be absolute (Google requires it)
-  const pricingPaths = { en: "/pricing", vi: "/vi/pricing", tr: "/tr/pricing", id: "/id/pricing", es: "/es/pricing", pt: "/pt/pricing", th: "/th/pricing", bn: "/bn/pricing", ru: "/ru/pricing", ar: "/ar/pricing", fr: "/fr/pricing", ur: "/ur/pricing" };
+  const allPricingPaths = { en: "/pricing", vi: "/vi/pricing", tr: "/tr/pricing", id: "/id/pricing", es: "/es/pricing", pt: "/pt/pricing", th: "/th/pricing", bn: "/bn/pricing", ru: "/ru/pricing", ar: "/ar/pricing", fr: "/fr/pricing", ur: "/ur/pricing" };
+  // Drop pruned locales from BOTH the sitemap entries and the hreflang alternates —
+  // an indexed pricing page must not advertise an alternate we've deindexed.
+  const pricingPaths = Object.fromEntries(
+    Object.entries(allPricingPaths).filter(([loc]) => !SITEMAP_EXCLUDED_LOCALES.includes(loc))
+  );
   const pricingAlternates = { languages: {} };
   for (const [loc, p] of Object.entries(pricingPaths)) {
     pricingAlternates.languages[loc] = `${BASE_URL}${p}`;
@@ -67,6 +74,10 @@ export default function sitemap() {
   const articleEntries = [];
 
   for (const locale of SUPPORTED_LOCALES) {
+    // Pruned locales contribute no article URLs — see lib/insights.js DEINDEXED_LOCALES.
+    // Their hreflang alternates are already suppressed centrally via
+    // getAvailableTranslations(), so surviving locales won't point at them either.
+    if (SITEMAP_EXCLUDED_LOCALES.includes(locale)) continue;
     const articles = getAllArticles(locale);
     const isDefault = locale === "en";
 

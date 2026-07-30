@@ -8,6 +8,9 @@ export const metadata = {
   title: "বাজার বিশ্লেষণ — Kantor Materials",
   description:
     "বাংলাদেশের পলিমার আমদানিকারকদের জন্য বাজার বিশ্লেষণ, সাপ্লাই চেইন তথ্য এবং ক্রয় কৌশল।",
+  // Deindexed (session #402): 0 Google clicks in 3 months. Content retained on disk;
+  // reverse by removing this locale from DEINDEXED_LOCALES in lib/insights.js.
+  robots: { index: false, follow: true },
   alternates: {
     canonical: "/bn/insights",
     languages: {
@@ -18,11 +21,8 @@ export const metadata = {
       es: "/es/insights",
       pt: "/pt/insights",
       th: "/th/insights",
-      bn: "/bn/insights",
       ru: "/ru/insights",
-      ar: "/ar/insights",
       fr: "/fr/insights",
-      ur: "/ur/insights",
     },
   },
 };

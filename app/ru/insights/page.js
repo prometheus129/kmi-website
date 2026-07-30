@@ -18,11 +18,8 @@ export const metadata = {
       es: "/es/insights",
       pt: "/pt/insights",
       th: "/th/insights",
-      bn: "/bn/insights",
       ru: "/ru/insights",
-      ar: "/ar/insights",
       fr: "/fr/insights",
-      ur: "/ur/insights",
     },
   },
 };

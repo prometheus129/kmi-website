@@ -8,6 +8,9 @@ export const metadata = {
   title: "تحليل سوق البوليمر — Kantor Materials",
   description:
     "تحليل السوق، معلومات سلسلة التوريد، واستراتيجية الشراء لمستوردي البوليمر في الشرق الأوسط وشمال أفريقيا.",
+  // Deindexed (session #402): 0 Google clicks in 3 months. Content retained on disk;
+  // reverse by removing this locale from DEINDEXED_LOCALES in lib/insights.js.
+  robots: { index: false, follow: true },
   alternates: {
     canonical: "/ar/insights",
     languages: {
@@ -18,11 +21,8 @@ export const metadata = {
       es: "/es/insights",
       pt: "/pt/insights",
       th: "/th/insights",
-      bn: "/bn/insights",
       ru: "/ru/insights",
-      ar: "/ar/insights",
       fr: "/fr/insights",
-      ur: "/ur/insights",
     },
   },
 };

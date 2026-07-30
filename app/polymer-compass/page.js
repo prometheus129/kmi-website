@@ -19,11 +19,8 @@ export const metadata = {
       es: "/es/polymer-compass",
       pt: "/pt/polymer-compass",
       th: "/th/polymer-compass",
-      bn: "/bn/polymer-compass",
       ru: "/ru/polymer-compass",
-      ar: "/ar/polymer-compass",
       fr: "/fr/polymer-compass",
-      ur: "/ur/polymer-compass",
     },
   },
 };

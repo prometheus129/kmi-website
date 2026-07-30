@@ -8,6 +8,9 @@ export const metadata = {
   title: "مارکیٹ تجزیہ — Kantor Materials",
   description:
     "پاکستان کے پولیمر درآمد کنندگان کے لیے مارکیٹ تجزیہ، سپلائی چین معلومات اور خریداری کی حکمت عملی۔",
+  // Deindexed (session #402): 0 Google clicks in 3 months. Content retained on disk;
+  // reverse by removing this locale from DEINDEXED_LOCALES in lib/insights.js.
+  robots: { index: false, follow: true },
   alternates: {
     canonical: "/ur/insights",
     languages: {
@@ -18,11 +21,8 @@ export const metadata = {
       es: "/es/insights",
       pt: "/pt/insights",
       th: "/th/insights",
-      bn: "/bn/insights",
       ru: "/ru/insights",
-      ar: "/ar/insights",
       fr: "/fr/insights",
-      ur: "/ur/insights",
     },
   },
 };

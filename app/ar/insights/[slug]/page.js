@@ -23,6 +23,9 @@ export async function generateMetadata({ params }) {
   const meta = {
     title: `${article.frontmatter.title} — Kantor Materials`,
     description: article.frontmatter.description,
+    // Deindexed (session #402): 0 Google clicks in 3 months. Content retained on disk;
+    // reverse by removing this locale from DEINDEXED_LOCALES in lib/insights.js.
+    robots: { index: false, follow: true },
     openGraph: {
       title: article.frontmatter.title,
       description: article.frontmatter.description,
