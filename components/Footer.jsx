@@ -43,6 +43,16 @@ const languages = [
   { code: "ur", display: "UR", href: "/ur/insights" },
 ];
 
+// Sister ventures. Followed links (no nofollow) — these are genuine corporate
+// relationships, and for a newly-registered domain a followed link from an aged
+// sister property is the cheapest legitimate authority seed available.
+// Link the CANONICAL host of each target: slatemore.com is canonical on the
+// apex, so never link www.slatemore.com here.
+const sisterVentures = [
+  { label: "Ironstone Drilling Supply", href: "https://ironstonedrilling.com" },
+  { label: "Slatemore — branded merchandise", href: "https://slatemore.com" },
+];
+
 function getLocaleFromPath(pathname) {
   const match = pathname.match(/^\/(vi|tr|id|es|pt|th|bn|ru|ar|fr|ur)(\/|$)/);
   return match ? match[1] : "en";
@@ -127,14 +137,17 @@ export default function Footer() {
             <span className="font-sans text-xs text-subtle">
               © 2026 Kantor Materials Limited. All rights reserved.
             </span>
-            <a
-              href="https://ironstonedrilling.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-sans text-[11px] text-subtle hover:text-cream transition-colors duration-200"
-            >
-              Sister venture: Ironstone Drilling Supply
-            </a>
+            {sisterVentures.map((venture) => (
+              <a
+                key={venture.href}
+                href={venture.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-sans text-[11px] text-subtle hover:text-cream transition-colors duration-200"
+              >
+                Sister venture: {venture.label}
+              </a>
+            ))}
           </div>
           <div className="flex gap-5">
             {languages.map((lang) => {
